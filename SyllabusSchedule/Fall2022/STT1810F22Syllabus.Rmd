@@ -21,23 +21,23 @@ This course is 100% web-based and will hold synchronous class meetings using Zoo
 
 #### **Course Objectives**
 
-1. Students will demonstrate effective use of selected descriptive statistics methods.
-2. Students will demonstrate effective use of selected inferential statistics methods.
-3. Students will effectively communicate using statistical frameworks and vocabulary.
-4. Students will use statistical thinking to evaluate scholarly research and popular media.
-5. Students will demonstrate preparedness for continued statistics coursework or research.
+1. Students will demonstrate effective use of selected descriptive statistics methods ✔
+2. Students will demonstrate effective use of selected inferential statistics methods ✔
+3. Students will effectively communicate using statistical frameworks and vocabulary ✔
+4. Students will use statistical thinking to evaluate scholarly research and popular media ✔
+5. Students will demonstrate preparedness for continued statistics coursework or research ✔
 
 Participation in STT 1810 is also designed to meet the following [General Education Learning Goals]((https://universitycollege.appstate.edu/programs/general-education-program/program-goals)).
 
-* Goal 1. Thinking Critically and Creatively
-* Goal 2. Communicating Effectively 
+* Goal 1. Thinking Critically and Creatively ✔
+* Goal 2. Communicating Effectively ✔
 
 #### **Class Meetings**
 
 This is a synchronous 100% online class. We will meet at the times below via Zoom.
 
-* Section 102: Class is Tuesday and Thursday from 11:00am – 12:15pm
-* Section 103: Class is Tuesday and Thursday from 12:30pm – 01:45pm
+* Section 102: Class is Tuesday and Thursday from 11:00am to 12:15pm
+* Section 103: Class is Tuesday and Thursday from 12:30pm to 01:45pm
 
 As stated in the ASU Undergraduate Bulletin, students are expected to attend all synchronous course meetings, whether in-person or virtual. Any student who is absent for any reason is completely responsible for all announcements and material covered during class.
 

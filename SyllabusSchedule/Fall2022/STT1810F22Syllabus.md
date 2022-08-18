@@ -13,9 +13,9 @@ output:
 
 #### **Bulletin Description**  
 
-STT1810 is An introduction to statistical problem solving. Topics include organization and presentation of data; measures of location, variation, and association; the normal distribution, sampling distributions, and statistical inference. Emphasis will be on conceptual understanding and interpretation of results rather than theoretical development. Statistical software will be utilized in the analysis of data and in the development of statistical and probabilistic concepts. STT 1810 is not open to students with credit for STT 2810, STT 2820, STT 3850, or STT 4811. (NUMERICAL DATA; COMPUTER; *GEN ED: Quantitative Literacy*)
+STT1810 is an introduction to statistical problem solving. Topics include organization and presentation of data; measures of location, variation, and association; the normal distribution, sampling distributions, and statistical inference. Emphasis will be on conceptual understanding and interpretation of results rather than theoretical development. Statistical software will be utilized in the analysis of data and in the development of statistical and probabilistic concepts. STT 1810 is not open to students with credit for STT 2810, STT 2820, STT 3850, or STT 4811. (NUMERICAL DATA; COMPUTER; *GEN ED: Quantitative Literacy*)
 
-Prerequisite: MAT 1010 or higher. Demonstrated Readiness for College-level Math. 
+Prerequisite: MAT 1010 or higher. Demonstrated readiness for college-level math. 
 
 This course is 100% web-based and will hold synchronous class meetings using Zoom, so you should be comfortable using a computer and must have reliable access to a computer and internet connection. 
 
@@ -86,7 +86,7 @@ The only way to learn statistics is to **DO** statistics, which includes softwar
 
 * **Practice Problems (10%):** These  WileyPLUS assignments are primarily short, *formative* assessments on the current materials, designed to reinforce recently-introduced concepts and help you figure out where you need to review or seek additional help. On each assignment, you will get two tries per question. Late submissions are allowed, but result in reduced points. You will get full credit (1) if you earn 75% or more of the points. You will get half-credit if you earn 50% to 75% of the points. If you earn less than 50% of the points, you will get no credit (0). Points earned will be calculated in WileyPLUS; credit will be manually entered into AsULearn as 0, 0.5, or 1.
 
-* **Chapter Homework (20%):** These WileyPLUS assignments are primarily *summative* assessments intended to show me (and you) what you have learned. On each assignment, you will get three tries per question. The first two attempts give full credit for correct answers; the third attempt has a 10% reduction. Late submissions are allowed, but result in reduced points. Credit earned on these HW assignment will be the number of points earned. Points earned will be calculated in WileyPLUS and manually entered into AsULearn.
+* **Chapter Homework (20%):** These WileyPLUS assignments are primarily *summative* assessments intended to show me (and you) what you have learned. On each assignment, you will get three tries per question. The first two attempts give full credit for correct answers; the third attempt has a 10% reduction. Late submissions are allowed, but result in reduced points. Credit earned on these HW assignments will be the number of points earned. Points earned will be calculated in WileyPLUS and manually entered into AsULearn.
 
 * **Chapter Investigations (15%):** At the end of each chapter, you will complete a guided investigation that applies the material in a different context. These assignments complement the Chapter HW and require you to integrate concepts and explain in your own words. These will be submitted through AsULearn and scored using a rubric. More information will be provided on AsULearn.
 
@@ -137,4 +137,4 @@ As per [AppalachianState University](https://diversity.appstate.edu/) and the [D
 
 <hr>
 
-Updated Thursday, August 18, 2022 @ 02:18 PM
+Updated Thursday, August 18, 2022 @ 02:24 PM

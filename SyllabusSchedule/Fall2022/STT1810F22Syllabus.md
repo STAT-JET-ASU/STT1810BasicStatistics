@@ -21,16 +21,16 @@ This course is 100% web-based and will hold synchronous class meetings using Zoo
 
 #### **Course Objectives**
 
-1. Students will demonstrate effective use of selected descriptive statistics methods ✔
-2. Students will demonstrate effective use of selected inferential statistics methods ✔
-3. Students will effectively communicate using statistical frameworks and vocabulary ✔
-4. Students will use statistical thinking to evaluate scholarly research and popular media ✔
-5. Students will demonstrate preparedness for continued statistics coursework or research ✔
+1. Students will demonstrate effective use of selected descriptive statistics methods.
+2. Students will demonstrate effective use of selected inferential statistics methods.
+3. Students will effectively communicate using statistical frameworks and vocabulary.
+4. Students will use statistical thinking to evaluate scholarly research and popular media.
+5. Students will demonstrate preparedness for continued statistics coursework or research.
 
 Participation in STT 1810 is also designed to meet the following [General Education Learning Goals]((https://universitycollege.appstate.edu/programs/general-education-program/program-goals)).
 
-* Goal 1. Thinking Critically and Creatively ✔
-* Goal 2. Communicating Effectively ✔
+* Goal 1. Thinking Critically and Creatively
+* Goal 2. Communicating Effectively
 
 #### **Class Meetings**
 
@@ -137,4 +137,4 @@ As per [AppalachianState University](https://diversity.appstate.edu/) and the [D
 
 <hr>
 
-Updated Thursday, August 18, 2022 @ 04:17 PM
+Updated Thursday, August 18, 2022 @ 04:23 PM

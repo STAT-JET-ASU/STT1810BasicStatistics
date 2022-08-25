@@ -1,6 +1,6 @@
 Year	Genre	Sex	Time	Performer
 2022	Country	female	111	Mickey Guyton
-2021	"R&B/Soul, Country"	mixed	137	"Jazmine Sullivan, Eric Church"
+2021	"R&B/Soul, Country"	mixed	137	Jazmine Sullivan/Eric Church
 2020	Pop	nonbinary	169	Demi Lovato
 2019	R&B/Soul	female	121	Gladys Knight
 2018	Pop	female	113	P!nk
@@ -15,7 +15,7 @@ Year	Genre	Sex	Time	Performer
 2009	R&B/Soul	female	130	Jennifer Hudson
 2008	Pop	female	114	Jordin Sparks
 2007	Pop	male	90	Billy Joel
-2006	R&B/Soul	mixed	128	"Aaron Neville, Aretha Franklin"
+2006	R&B/Soul	mixed	128	Aaron Neville/Aretha Franklin
 2005	Other	mixed	112	Military Academy Choirs
 2004	Pop	female	129	Beyonce
 2003	Country	female	96	Dixie Chicks

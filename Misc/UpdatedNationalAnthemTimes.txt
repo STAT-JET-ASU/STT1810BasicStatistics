@@ -40,5 +40,5 @@ Year	Genre	Sex	Time	Performer
 2018	Pop	female	113	P!nk
 2019	R&B/Soul	female	121	Gladys_Knight
 2020	Pop	nonbinary	110	Demi_Lovato
-2021	R&B/Soul&Country	mixed	137	Jazmine_Sullivan/Eric_Church
-2022	Country	female	111	Mickey_Guyton
+2021	R&B/Soul&Country	mixed	136	Jazmine_Sullivan/Eric_Church
+2022	Country	female	115	Mickey_Guyton

@@ -17,7 +17,7 @@ Year	Genre	Sex	Time	Performer
 2007	Pop	male	90	Billy Joel
 2006	R&B/Soul	mixed	128	"Aaron Neville, Aretha Franklin"
 2005	Other	mixed	112	Military Academy Choirs
-2004	Pop	female	129	Beyonc�
+2004	Pop	female	129	Beyonce
 2003	Country	female	96	Dixie Chicks
 2002	Pop	female	116	Mariah Carey
 2001	Pop	male	110	Backstreet Boys

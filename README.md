@@ -1,5 +1,9 @@
 # STT1810 Basic Statistics
 
+### **Textbook**
+
+Nathan Tintle, Beth Chance, George Cobb, Allan Rossman, Soma Roy, Todd Swanson, and Jill VanderStoep (2021). [*Introduction to Statistical Investigations, 2nd edition.*](http://www.isi-stats.com/isi/index2nd.html), WileyPLUS.
+
 ### **Course Slides**
 
 **Preliminaries**

@@ -1,4 +1,4 @@
-# STT1810BasicStatistics
+# STT1810 Basic Statistics
 
 ### **Course Slides**
 

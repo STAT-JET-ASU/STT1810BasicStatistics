@@ -1,0 +1,161 @@
+---
+title: "STT1810 --- Section 3.1<br>Confidence Intervals"
+subtitle: "Introduction to Statistical Investigations, 2^nd^ Edition"
+author: "Author: Jill E. Thomley // Appalachian State University"
+date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
+output: 
+  ioslides_presentation:
+    logo: images/logoASU.jpg
+---
+
+```{r global_options, include = FALSE}
+knitr::opts_chunk$set(
+  message = FALSE,
+  warning = FALSE,
+  comment = NA
+)
+```
+
+
+## Recall: The Spiral Process & Four Pillars
+
+:::::: {style="display: flex;"}
+
+::: {}
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("images/sixstepsfourpillars.png", dpi = 100)
+```
+
+:::
+
+::: {}
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+:::
+
+::: {}
+
+* From Section P.1. The four pillars of inference are (in short form): *strength*, *size*, *breadth*, and *cause*.
+
+* We addressed *strength* of evidence with significance tests in Chapter 1.
+
+* We addressed the  *breadth* of results in Chapter 2.
+
+* We will explore the *size* of an effect with estimation / confidence intervals in Chapter 3.
+
+:::
+
+::::
+
+
+## Learning Goals for Chapter 3
+
+Chapter 3 focuses on ***estimation***, which is one of the four pillars of inference introduced in Section P.1. Often, we use estimation to indicate how large an effect is, not as a single number, but as an ***interval*** of statistically-likely values.
+
+<hr>
+
+In this chapter, you will learn to: 
+
+* Construct and interpret a confidence interval for a single population proportion using the range of plausible values technique. [Section 3.1]
+* Construct and interpret a confidence interval for a single population proportion using the 2SD method. [Section 3.2]
+* Identify how factors (confidence level, sample size, SD) affect the width of the confidence interval. [Section 3.4]
+
+
+## Learning Goals for Section 3.1
+
+In Chapter 3, you will learn two different ways to find *confidence intervals*, based on methods from Chapters 1 and 2. The first is an *interval of plausible values* --- those values of the parameter that are *not* rejected in a (two-sided) test of significance. 
+
+<hr>
+
+* Complete multiple two-sided tests of significance, using the same value for the sample proportion but changing the value under the null hypothesis, and obtain an interval of plausible values for the population parameter.
+* Interpret an interval of plausible values as estimating the population parameter and as a confidence interval.
+* Based on the results of a test of significance, infer whether or not a value is in the confidence interval and vice versa.
+
+
+## Section 3.1 New Vocabulary
+
+* confidence interval
+* confidence level
+* estimate / estimation
+* plausible value(s)
+* significance level
+
+This chapter builds on Chapters 1 and 2, so you also will want to be sure that you have solidified vocabulary from those chapters, including (but not limited to) terms such as...
+
+* null hypothesis and parameter
+* sampling distribution
+* test of significance
+
+
+## 
+
+**confidence interval:** An inference tool used to estimate the value of a parameter such as $\pi$, with an associated measure of uncertainty due to the randomness in the sampling method.
+
+**confidence level:** A statement of reliability in the confidence interval method.
+
+**estimation:** In the context of confidence intervals, describes how large an effect is in terms of a range of values for the parameter of interest.
+
+**plausible value:** A parameter value that is tested under the null hypothesis where, based on the observed data, we do not find strong evidence against the null (Ho is not rejected).
+
+**significance level:** A value used as a criterion for deciding how small a *p*-value in a test of significance needs to be to provide convincing evidence against the null hypothesis.
+
+
+## Method of Plausible Values
+
+Test different values of $\pi$ under the null hypothesis.
+
+$$H_0: \pi = \text{value being tested}$$
+
+$$H_a: \pi \ne \text{value being tested}$$
+
+Calculate a two-sided *p*-value using the observed data.
+
+Reject Ho *or* fail to reject Ho using the *p*-value and the chosen level of significance (most commonly 0.05).
+
+If you fail to reject Ho, then the tested value of $\pi$ is a *plausible value* and belongs in the confidence interval.
+
+The interval boundaries are the smallest and largest plausible values, written as (*lower boundary*, *upper boundary*).
+
+
+## Example 3.1 Can Dogs Sniff Cancer?
+
+Researchers tested a dog named Marine to see whether or not she could detect colorectal cancer. She smelled breath in five bags from five different patients, only one of which had cancer. Marine chose correctly in 30 of 33 attempts ($\hat{p} = 0.909$). 
+
+$H_0: \pi = 0.20$ (Marine is just guessing)
+
+$H_a: \pi > 0.20$ (Marine is doing better than guessing)
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("images/fig_03_01_01.png", dpi = 120)
+```
+
+
+##
+
+We would reject Ho at the 0.05 level of significance. But, what is Marine's true probability $\pi$ of detecting cancer?
+
+We can estimate by testing candidate values of $\pi$ on either side of our observed sample proportion $\hat{p} = 0.909$.
+
+| $\pi$ tested in Ho | 0.760 | 0.761 | 0.762 | ...   | 0.973 | 0.974 | 0.975 |
+|--------------------|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:------|
+| two-sided *p*-value| 0.043 | 0.063 | 0.063 | ...   | 0.059 | 0.054 | 0.049 |
+| reject Ho?         | Yes   | No    | No    | No    | No    | No    | Yes   |
+| plausible $\pi$?   | No    | *YES* | *YES* | *YES* | *YES* | *YES* | No    |
+
+We are 95% confident that Marine's true probability of detecting cancer is between 0.761 and 0.974.
+
+This is much stronger than simply stating $\pi > 0.20$ (as in $H_a$).
+
+
+## What Does 95% Confidence Mean?
+
+Let us start with what it does *not* mean. It does not mean that there is a 95% chance that the actual value of the parameter is in the 95% confidence interval. Why not?
+
+The parameter value is fixed and the interval is random. If you chose a different sample, you’d get a different interval, but the parameter value would still be the same. 
+
+What we mean is that 95% of all samples give an interval that covers the true value. The 95% is the “coverage probability” or “capture rate" of the method we are using.
+
+Picture a game of horseshoes. The parameter is the iron stake in the ground, which does not move. Each toss of a horseshoe is an interval. Our method is a like really good player who can get a horseshoe around the stake 95% of the time.
+

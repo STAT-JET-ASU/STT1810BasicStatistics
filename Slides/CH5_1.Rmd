@@ -1,0 +1,118 @@
+---
+title: "STT1810 --- Section 5.1<br>Comparing Two Groups"
+subtitle: "Introduction to Statistical Investigations, 2^nd^ Edition"
+author: "Author: Jill E. Thomley // Appalachian State University"
+date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
+output: 
+  ioslides_presentation:
+    logo: images/logoASU.jpg
+---
+
+```{r global_options, include = FALSE}
+knitr::opts_chunk$set(
+  message = FALSE,
+  warning = FALSE,
+  comment = NA
+)
+```
+
+
+## Recall: The Six-Step Spiral Process
+
+:::::: {style="display: flex;"}
+
+::: {}
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("images/sixstepsfourpillars.png", dpi = 100)
+```
+
+:::
+
+::: {}
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+:::
+
+::: {}
+
+* In Chapters 1 through 4, our research questions usually involved a single proportion parameter $\pi$.
+
+* In Chapter 5 we will look at comparing parameters for two groups ($\pi_1, \pi_2$).
+
+* The investigative process is the same; the six-step "spiral" we introduced in Section P.1.
+
+* Now Ho will be written as a *difference* in parameters.
+
+:::
+
+::::
+
+
+## Learning Goals for Chapter 5
+
+Chapter 5 extends what we learned about statistical significance in previous chapters to compare two groups with parameters $\pi_1$ and $\pi_2$. In this case, rather than testing a null hypothesis about whether $\pi$ is equal to some value, we will typically have a null of $H_0: \pi_1 = \pi_2$ or $H_0: \pi_1 - \pi_2 = 0$ &rarr; there is *no difference*. 
+
+We can also estimate the size of difference between $\pi_1$ and $\pi_2$.
+
+<hr>
+
+In this chapter, you will learn to: 
+
+* Compare two sample proportions numerically and graphically. [Section 5.1]
+* Carry out a simulation-based analysis to investigate the difference between two population proportions. [Section 5.2]
+
+
+## Learning Goals for Section 5.1
+
+* Organize counts into a two-way table, when data are available on two categorical variables for the same set of observational units.
+* Calculate conditional proportion of successes, for different categories of the explanatory variable, and use these conditional proportions to decide whether there is preliminary evidence of an association between the explanatory and response variables.
+* Create a segmented bar chart or mosaic plot to display data available on two categorical variables for the same set of observational units.
+* Calculate and interpret relative risk.
+
+
+## Section 5.1 New Vocabulary
+
+* cells
+* conditional proportion
+* mosaic plot
+* no association
+* relative risk
+* segmented bar graph
+* two by two (2 × 2) table
+* two-way table
+
+
+##
+
+**two-way table:** a tabular summary of two categorical variables, also called a contingency table
+
+**cells:** entries in a two-way table
+
+**two by two (2 × 2) table:** a two-way table where the explanatory and response variables each have two categories
+
+**conditional proportion:** proportion of successes for a given category of the explanatory variable
+
+**relative risk:** the ratio of conditional proportions that indicates how many times greater the risk of an outcome is for one group compared to another group
+
+**no association:** a general statement of the null hypothesis when two or more variables are involved, indicating that two variables are not related to each other
+
+
+## 
+
+**segmented bar graph:** a type of graph display for conditional proportions from a two-way table, with equal-width rectangles totaling 100% for each category of the independent variable, divided by the conditional proportions of the response variable
+
+**mosaic plot:** a segmented bar plot where the widths of the bars are proportional to the sample size
+
+
+## Example 5.1 Buckling Up?
+
+**TBA!**
+
+
+
+
+
+
+

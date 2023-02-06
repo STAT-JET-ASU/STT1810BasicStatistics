@@ -1,0 +1,144 @@
+---
+title: "STT1810 --- Section 3.4<br>What Affects CI Width?"
+subtitle: "Introduction to Statistical Investigations, 2^nd^ Edition"
+author: "Author: Jill E. Thomley // Appalachian State University"
+date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
+output: 
+  ioslides_presentation:
+    logo: images/logoASU.jpg
+---
+
+```{r global_options, include = FALSE}
+knitr::opts_chunk$set(
+  message = FALSE,
+  warning = FALSE,
+  comment = NA
+)
+```
+
+
+## Recall: The Spiral Process & Four Pillars
+
+:::::: {style="display: flex;"}
+
+::: {}
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("images/sixstepsfourpillars.png", dpi = 100)
+```
+
+:::
+
+::: {}
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+:::
+
+::: {}
+
+* From Section P.1. The four pillars of inference are (in short form): *strength*, *size*, *breadth*, and *cause*.
+
+* We addressed *strength* of evidence with significance tests in Chapter 1.
+
+* We addressed the  *breadth* of results in Chapter 2.
+
+* We will explore the *size* of an effect with estimation / confidence intervals in Chapter 3.
+
+:::
+
+::::
+
+
+## Learning Goals for Chapter 3
+
+Chapter 3 focuses on ***estimation***, which is one of the four pillars of inference introduced in Section P.1. Often, we use estimation to indicate how large an effect is, not as a single number, but as an ***interval*** of statistically-likely values.
+
+<hr>
+
+In this chapter, you will learn to: 
+
+* Construct and interpret a confidence interval for a single population proportion using the range of plausible values technique. [Section 3.1]
+* Construct and interpret a confidence interval for a single population proportion using the 2SD method. [Section 3.2]
+* Identify how factors (confidence level, sample size, SD) affect the width of the confidence interval. [Section 3.4]
+
+
+## Learning Goals for Section 3.4
+
+In Sections 3.1 and 3.2 you explored some different confidence intervals strategies. Despite using different methods, the results was interpreted the same way. Section 3.4 explores how sample characteristics can influence confidence interval *width*. 
+
+<hr>
+
+* Recognize that all other things being equal, as the confidence level increases, the width of the confidence interval increases.
+
+    in short: ↑ confidence = ↑ width
+
+* Apply the idea that the confidence level of an interval corresponds to its coverage probability (the proportion of confidence intervals containing the true parameter value across many, many random samples) in the interpretation of confidence intervals.
+
+
+##
+
+* Recognize that all other things being equal, as the sample size increases, the width of the resulting confidence interval decreases.
+
+    in short: ↑ sample size = ↓ width 
+
+* Recognize that all other things being equal, as the sample proportion gets farther from 0.5, standard error decreases and thus a resulting confidence interval will be narrower.
+
+    in short: 0 ← 0.5 → 1 = ↓ sampling variability = ↓ width 
+
+* Recognize that statistical significance on its own does not imply evidence of a large difference from Ho. This issue is especially relevant with large sample sizes. 
+* Know that *p*-values address statistical significance while CIs help assess the plausible size of the parameter.
+
+
+## Section 3.4 New Vocabulary
+
+There is no new vocabulary in this section. Review vocabulary from previous sections to solidify concepts.
+
+<br><br><br><br><br>
+
+<hr>
+
+A note about 3.4:
+
+Much of the specific discussion in Section 3.4 is framed around theoretical confidence intervals, which we did not cover. But, in general, the ideas apply to all confidence intervals. 
+
+<hr>
+
+
+## Example 3.4 American Cat Ownership
+
+In a 2016 poll by the American Veterinary Medical Association, 25.43% of 41,000 respondents said they own at least one cat.
+
+<hr>
+
+$\hat{p} = 0.2543$
+
+$n = 41,000$
+
+*larger % confidence = wider interval*
+
+| 90% CI           | 95% CI               | 99%                  |  
+|:----------------:|:--------------------:|:--------------------:|
+| (0.2508, 0.2578) | **(0.2501, 0.2585)** | **(0.2488, 0.2598)** |
+| width = 0.0070   | **width = 0.0084**   | **width = 0.0110**   |
+
+
+##
+
+$\hat{p} = 0.2543$ &rarr; *larger sample size = narrower interval*
+
+| $n = 500$, 95% CI | $n = 1000$, 95% CI   | $n = 2000$, 95% CI   |  
+|:-----------------:|:--------------------:|:--------------------:|
+| (0.2158, 0.2922)  | **(0.2270, 0.2810)** | **(0.2349, 0.2731)** |
+| width = 0.0764    | **width = 0.0540**   | **width = 0.0382**   |
+
+<br>
+<hr>
+
+$n = 41,000$ &rarr; $\hat{p}$ *closer to 0.5 = wider interval*
+
+| $\hat{p} = 0.2543$, 95% CI | $\hat{p} = 0.3840$, 95% CI |  
+|:--------------------------:|:--------------------:|
+| (0.2508, 0.2578)           | **(0.3793, 0.3887)** |
+| width = 0.0070             | **width = 0.0094**   |
+

@@ -1,0 +1,171 @@
+---
+title: "STT1810 --- Example P.1<br>Organ Donation"
+subtitle: "Introduction to Statistical Investigations, 2^nd^ Edition"
+author: "Author: Jill E. Thomley // Appalachian State University"
+date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
+output: 
+  ioslides_presentation:
+    logo: images/logoASU.jpg
+---
+
+```{r global_options, include = FALSE}
+knitr::opts_chunk$set(
+  message = FALSE,
+  warning = FALSE,
+  comment = NA
+)
+```
+
+
+## The Spiral Approach to Investigation
+
+:::::: {style="display: flex;"}
+
+::: {}
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("images/sixstepsfourpillars.png", dpi = 100)
+```
+
+:::
+
+::: {}
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+:::
+
+::: {}
+
+* Statistical investigations typically include these six steps in some form. 
+
+* These six steps may not always be followed in this exact order, but a good statistical investigation will go through all these steps before completion.
+
+* The findings of one study typically will generate new research questions; that's how science works!
+
+:::
+
+::::
+
+
+## STEP 1: Ask a Research Question
+
+**General Question:** Can we find a way to increase the likelihood that a person agrees to become an organ donor? 
+
+However, this question is just too broad to design a study for. We need to focus it more into a question about which we could reasonably collect data to produce an answer.
+
+Consider: In the United States, everyone 18 years of age or older is eligible to register as an organ donor on their driver's license. What is the process of asking people to be donors?
+
+**Research Question:** Does the default option that is presented to driver’s license applicants influence the likelihood that a person will choose to become an organ donor?
+
+[*Research questions drive our study design and our hypotheses.*]
+
+
+## STEP 2: Design a Study / Collect Data
+
+Researchers recruited participants using online forums and asked them to pretend to apply for a new driver’s license. The participants did not know in advance that organ donation was the main focus of the study or that different options would be given to the respondents.
+
+They offered participants $4.00 to complete an online survey. After the results were collected, the researchers removed data that came from multiple responses from the same IP address, surveys completed in less than five seconds, and respondents whose residential address could not be verified.
+
+*Can you think of any potential problems with this methodology that might affect the results of the study? What are some positive aspects of this design? [We will learn about study design in Chapter 4.]*
+
+
+## Organ Donation Default Options
+
+The participants were asked to imagine they have moved to a new state and are applying for a driver’s license. As part of this application, they were to decide whether or not to become an organ donor. Each was given with one of three choices:
+
+* The default option in the application was *not* to be a donor; participants had to choose to become a donor if they wished (the “opt-in” group).
+
+* The default option in the application was to be a donor; they had to choose to *not* become a donor if they wished (the“opt-out” group).
+
+* No default option in the application; they had to choose to become a donor or not become a donor ("neutral" group).
+
+
+## Additional Study Information
+
+observational units: 
+
+* the 161 recruited volunteers
+
+explanatory variable: 
+
+* default donation option (categorical, three treatments)
+
+response variable: 
+
+* choice to be an organ donor or not (categorical, binary)
+
+study design:
+
+* randomized experiment (*assuming the participants were randomly assigned to the three default donation options*)
+
+
+## STEP 3: Explore the Data
+
+:::::: {style="display: flex;"}
+
+::: {}
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("images/fig_p_01_01.png", dpi = 100)
+```
+
+:::
+
+::: {}
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+:::
+
+::: {}
+
+Who agreed to become donors?
+
+* 41.8% of the opt-in group
+* 82.0% of the opt-out group
+* 78.6% of the neutral group
+
+The neutral and opt-out versions produced higher percentages of organ donors in the sample.
+
+:::
+
+::::
+
+[*We will learn about creating segmented bar graphs in Chapter 5.*]
+
+
+## STEP 4: Draw Inferences
+
+Using methods that we will learn in this course, the researchers analyzed whether the observed differences between the groups were large enough to show that the type of default option had a genuine effect and then estimated the size of that effect. 
+
+This study reported strong evidence that the neutral and opt-out versions lead to a higher chance of agreeing to become a donor, as compared to the opt-in version used in many states. [*We will learn about strength of evidence in Chapter 1.*]
+
+They could be quite confident that the neutral version increases the chances that a person agrees to become a donor by 20 and 54%---enough to save thousands of lives per year in the United States. [*We will learn about estimation in Chapter 3.*]
+
+
+## STEP 5: Formulate Conclusions
+
+In this study, participants given the “opt-in” strategy were much less likely to agree to become donors. Based on their results, the researchers stated their data “suggest changes in defaults could increase donations in the United States of additional thousands of donors a year.” 
+
+[*We will learn more about making generalizations in Chapter 2 and cause-and-effect conclusions in Chapter 4.*]
+
+<hr>
+
+Johnson, Eric J. and Goldstein, Daniel G., Do Defaults Save Lives? (Nov 21, 2003). *Science*, Vol. 302, pp. 1338-1339, 2003, Available at SSRN: [https://ssrn.com/abstract=1324774](https://ssrn.com/abstract=1324774)
+
+
+## STEP 6: Look Back and Ahead
+
+One study limitation is that participants were asked to *imagine* how they would respond; this might not reflect real behavior. 
+
+A new study might look at actual responses to questions about donation or monitor rates for states that adopt a new policy. 
+
+Researchers could examine whether giving educational material on organ donation might increase willingness to donate. 
+
+Another possible improvement would be to include participants from wider demographic groups than these volunteers.
+
+Part of looking back also considers how a study relates to other similar studies that have been conducted previously.
+
+
+

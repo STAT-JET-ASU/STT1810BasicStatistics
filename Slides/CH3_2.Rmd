@@ -1,0 +1,156 @@
+---
+title: "STT1810 --- Section 3.2<br>± 2SD Approximate CIs"
+subtitle: "Introduction to Statistical Investigations, 2^nd^ Edition"
+author: "Author: Jill E. Thomley // Appalachian State University"
+date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
+output: 
+  ioslides_presentation:
+    logo: images/logoASU.jpg
+---
+
+```{r global_options, include = FALSE}
+knitr::opts_chunk$set(
+  message = FALSE,
+  warning = FALSE,
+  comment = NA
+)
+```
+
+
+## Recall: The Spiral Process & Four Pillars
+
+:::::: {style="display: flex;"}
+
+::: {}
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("images/sixstepsfourpillars.png", dpi = 100)
+```
+
+:::
+
+::: {}
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+:::
+
+::: {}
+
+* From Section P.1. The four pillars of inference are (in short form): *strength*, *size*, *breadth*, and *cause*.
+
+* We addressed *strength* of evidence with significance tests in Chapter 1.
+
+* We addressed the  *breadth* of results in Chapter 2.
+
+* We will explore the *size* of an effect with estimation / confidence intervals in Chapter 3.
+
+:::
+
+::::
+
+
+## Learning Goals for Chapter 3
+
+Chapter 3 focuses on ***estimation***, which is one of the four pillars of inference introduced in Section P.1. Often, we use estimation to indicate how large an effect is, not as a single number, but as an ***interval*** of statistically-likely values.
+
+<hr>
+
+In this chapter, you will learn to: 
+
+* Construct and interpret a confidence interval for a single population proportion using the range of plausible values technique. [Section 3.1]
+* Construct and interpret a confidence interval for a single population proportion using the 2SD method. [Section 3.2]
+* Identify how factors (confidence level, sample size, SD) affect the width of the confidence interval. [Section 3.4]
+
+
+## Learning Goals for Section 3.2
+
+In Section 3.1 you learned about estimation using intervals of plausible values. In Section 3.2, you will explore how to create confidence intervals using standardization --- in particular, the *“two standard deviation method”* (or the "2SD method") for an approximate 95% confidence interval.
+
+<hr>
+
+* Compute a confidence interval for a proportion written in terms of its endpoints vs. a confidence interval written in terms of center plus or minus a margin of error.
+* Approximate a 95% confidence interval for a proportion by using the 2SD method.
+
+*Note: We will not be doing the theory-based confidence intervals introduced in this section. Focus on the 2SD method.*
+
+
+## Section 3.2 New Vocabulary
+
+Recall that you learned about $SD(\hat{p})$---the standard deviation of $\hat{p}$---in Section 2.1: Sampling Distributions.
+
+* **2SD method:** approximating a confidence interval by taking the statistic and the standard deviation of the statistic (from simulation or formula) and extending 2 SDs in each direction from the statistic
+
+$$\text{for example: } \hat{p} \pm 2 \times SD(\hat{p})$$
+
+* **margin of error:** the half-width of a confidence interval (for the 2SD method, this is the ± 2SD value)
+
+* **standard error / SE:** an estimate of the standard deviation of a statistic that is based on observed data
+
+
+## Recall: The Central Limit Theorem
+
+The Central Limit Theorem describes the sampling distributions of certain statistics, like $\hat{p}$, if they meet certain criteria... 
+
+We have a large, finite population with parameter $\pi$. Here, *finite* means it is possible to count the observational units.
+
+We are taking samples of size $n$ that are large enough that there are at least 10 successes and 10 failures in each sample.
+
+We are calculating the sample proportion $\hat{p}$ for each sample.
+
+<hr>
+
+**shape:** the sampling distribution will be approximately normal (*unimodal and mound-shaped---the classic "bell curve"*).
+
+<hr>
+
+
+## The Empirical Rule
+
+For a bell-shaped (normal) curve, about 95% of the distribution will be within ±2SD of the mean---the basis of the 2SD method.
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("images/empiricalrule.png", dpi = 110)
+```
+
+We could also create 68% and 99.7% CIs using ±1SD and ±3SD.
+
+
+## The 2SD Method
+
+Calculate the observed sample proportion $\hat{p}$.
+
+Simulate the sampling distribution of  $\hat{p}$ using the same sample size $n$ as the observed sample and $\pi = 0.5$.
+
+Calculating the standard deviation of the simulated distribution to get an estimate for the value of $SD(\hat{p})$.
+
+Plug the values into the equation below to get a 95% confidence interval for $\pi$, based on the sample data.
+
+$$\hat{p} \pm 2 \times SD(\hat{p})$$
+
+<hr>
+
+Recall that we use $\pi = 0.5$ because $SD(\hat{p})$ is the biggest then.
+
+
+## Example 3.2 Cyberbullying
+
+In a March 7–April 10, 2018 survey of a random sample of 743 U.S. teenagers (ages 13 to 17 years), the Pew Research Center found that 59% said they had experienced cyberbullying. Use the [ISI One-Proportion Applet](http://www.rossmanchance.com/applets/2021/oneprop/OneProp.htm) to estimate the SD.
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("images/2SD95CI.PNG", dpi = 100)
+```
+
+
+## Calculating the Interval
+
+Use the sample proportion 0.59 and simulated SD = 0.018.
+
+$$\hat{p} \pm 2 \times SD(\hat{p}) = 0.59 \pm 2 \times 0.018 = 0.59 \pm 0.036$$
+
+We are 95% confident that the true proportion of U.S. teens who have experienced cyberbullying (as defined by the Pew survey) is between $0.59 \pm 0.036$. The margin of error on the estimate is $0.036$ or $3.6\%$.
+
+We can also express the confidence interval as (0.554, 0.626) or as percentages (55.4%, 62.6%).
+
+Note that all of the plausible values are greater than 50%. Based on this, (*sadly*) we can be confident that the true proportion $\pi$ is a majority of teens 13-17 years old.
+

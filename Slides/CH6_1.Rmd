@@ -1,0 +1,227 @@
+---
+title: "STT1810 --- Section 6.1<br>Comparing Two Groups"
+subtitle: "Introduction to Statistical Investigations, 2^nd^ Edition"
+author: "Author: Jill E. Thomley // Appalachian State University"
+date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
+output: 
+  ioslides_presentation:
+    logo: images/logoASU.jpg
+---
+
+```{r global_options, include = FALSE}
+knitr::opts_chunk$set(
+  message = FALSE,
+  warning = FALSE,
+  comment = NA
+)
+```
+
+
+## Recall: The Six-Step Spiral Process
+
+:::::: {style="display: flex;"}
+
+::: {}
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("images/sixstepsfourpillars.png", dpi = 100)
+```
+
+:::
+
+::: {}
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+:::
+
+::: {}
+
+* In Chapters 1 through 4, our research questions usually involved a single proportion parameter $\pi$.
+
+* In Chapter 5 we explored differences in proportions for two groups ($\pi_1 - \pi_2$).
+
+* In Chapter 6, we will apply what we learned to assess *quantitative* variables.
+
+* We will compare means of two groups ($\mu_1 - \mu_2$).
+
+
+:::
+
+::::
+
+
+## Learning Goals for Chapter 6
+
+Chapter 6 extends what we learned about statistical significance in previous chapters to compare two groups with parameters $\mu_1$ and $\mu_2$, where $\mu$ is the population *mean*. A sample mean will be designated with $\bar{x}$. We typically will have a null of $H_0: \mu_1 = \mu_2$ or $H_0: \mu_1 - \mu_2 = 0$ (i.e., *no difference*). 
+
+We can also estimate the size of difference between $\mu_1$ and $\mu_2$.
+
+<hr>
+
+In this chapter, you will learn to: 
+
+* Compare two sample means numerically and graphically. [Section 6.1]
+* Carry out a simulation-based analysis to investigate the difference between two population means. [Section 6.2]
+
+
+## Learning Goals for Section 6.1
+
+* Calculate or estimate the mean, median, quartiles, five number summary, and interquartile range from a dataset and understand what these are measuring.
+* When comparing two quantitative distributions, identify which has the larger mean, median, standard deviation, and inter-quartile range.
+* Identify whether there is likely an association between a binary categorical variable and a quantitative response variable.
+
+
+## Section 6.1 New Vocabulary
+
+* five-number summary
+   * minimum
+   * lower quartile
+   * median
+   * upper quartile
+   * maximum
+* interquartile range
+* boxplot
+
+We also will revisit several vocab terms from the Preliminaries and introduce a guideline for identifying data points that might be considered outliers in a quantitative *distribution*.
+
+
+##
+
+**five-number summary:** a set of five data summaries composed of minimum, lower quartile, median, upper quartile, maximum
+
+**minimum / maximum:** the smallest / largest data values
+
+**lower quartile:** the value for which 25% of the data lie below (and 75% lie above); also known as the 25th percentile
+
+**median:** the value for which 50% of the data lie below (and 50% lie above)---the middle value when the data are sorted in order from smallest to largest; also known as the 50th percentile
+
+**upper quartile:** the value for which 75% of the data lie below (and 55% lie above); also known as the 75th percentile
+
+**interquartile range:** IQR = upper quartile --- lower quartile
+
+**boxplot:** a visual display of the five-number summary
+
+
+## Recall: Exploring Data (Section P.2)
+
+Quantitative data are described by how / where they occur on the number line. Distribution behavior includes:
+
+**shape:** the overall pattern and "clumping" of the data when we graph it (e.g., using a dotplot or histogram)
+
+**center:** a middle or typical value of a quantitative variable; the "center of mass" for the distribution (e.g., mean)
+
+**variability:** once we have identified the center, how spread out are the data---are most within a certain range of values?
+
+**unusual observations / features:** points that deviate markedly from the overall pattern of the other data values (i.e., outliers); also other unusual features such as multiple modes
+
+
+##
+
+Old Faithful (Yellowstone National Park) erupts around 20 times a day. [According to the National Park Service](https://www.yellowstonepark.com/things-to-do/geysers-hot-springs/about-old-faithful/), "... eruptions are predicted with a 90 percent confidence rate, within a 10 minute variation," based on duration/height of the previous eruption.
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("images/ch06/oldfaithful.jpg", dpi = 175)
+```
+
+
+## Example 6.1 Geyser Eruptions
+
+**research question:** Has there been a change in Old Faithful's eruption patterns between 1978 and 2003?
+
+**type of study:** observational study (why?)
+
+**observational units:** individual geyser eruptions
+
+**explanatory variable:** year (binary categorical, 1978 or 2003)
+
+**response variable:** time until the next eruption (quantitative)
+
+**measurement units:** the quantitative variable "time until the next eruption" is measured in minutes
+
+**data:** eruptions that occurred from August 1 to August 8, 1978 (6:00am to midnight), also from the same time interval in 2003
+
+
+## Comparing with Dotplots
+
+We can explore these data in the [ISI Descriptive Statistics Applet](https://www.rossmanchance.com/applets/2021/descstats/Dotplot.htm).
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("images/ch06/fig_06_01_01.jpg", dpi = 150)
+```
+
+* What is the shape of each distribution?
+* What is the center of each distribution?
+* What is the spread (variability) of each distribution?
+* Does either distribution have any unusual points/outliers?
+* How do the two distributions compare to one another?
+
+
+## Comparing with Statistics
+
+| Year | Mean |  SD  | Minimum | Lower<br>Quartile | Median | Upper<br>Quartile | Maximum | Interquartile<br>Range (IQR) |
+|:----:|:----:|:----:|:-------:|:-----------------:|:------:|:-----------------:|:-------:|:----------------------------:|
+| 1978 | 71.1 | 12.9 |    42   |         58        |   75   |         81        |    95   |              23              | 
+| 2003 | 91.2 |  8.5 |    56   |         87        |   91   |         98        |   110   |              11              |
+
+<br>
+
+**Key Idea: Resistant Measures**
+
+* Median is a resistant measure of center, whereas the mean is sensitive to extreme values and skewness.
+* IQR is a resistant measure of variability, whereas the standard deviation is sensitive to extreme values and skewness.
+
+
+## Comparing with Boxplots
+
+The box displays the middle 50% of the distribution; its width  is the IQR. The whiskers extend to the smallest and largest values in the dataset *that are not outliers*.
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("images/ch06/fig_06_01_02.jpg", dpi = 100)
+```
+
+There appear to be two lower outliers in 2003 (the * on the plot).
+
+
+## Anatomy of a Boxplot
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("images/ch06/boxplot.png", dpi = 90)
+```
+
+lower outlier = any data value < $\text{lower quartile} - 1.5 * IQR$
+
+upper outlier = any data value > $\text{upper quartile} + 1.5 * IQR$
+
+
+##
+
+A data point may be an outlier *relative to the group it belongs to*.
+
+**For 1978:**
+
+$\text{lower quartile} - 1.5 * IQR = 58 - (1.5 * 23) = 23.5$ 
+
+$\text{upper quartile} + 1.5 * IQR = 81 + (1.5 * 23) = 115.5$ 
+
+*None of the data points in 1978 fall outside these two boundaries.*
+
+<hr>
+
+**For 2003:**
+
+$\text{lower quartile} - 1.5 * IQR = 87 - (1.5 * 11) = 70.5$ 
+
+$\text{upper quartile} + 1.5 * IQR = 98 + (1.5 * 11) = 114.5$ 
+
+*As we see on both plots, there are two data points less than 70.5.*
+
+
+## Think About It
+
+Based on the distributions of times between eruptions, in which year would you have preferred to be a tourist waiting for the next eruption of Old Faithful? Can you think of one way in which 1978 would have been preferable and a different way in which 2003 would have been preferable?
+
+* If you are a tourist who cares most about having a shorter wait for the next eruption, you would have preferred 1978. This is because the *average* wait time was about 20 minutes less than in 2003. 
+
+* If your primary concern is being able to predict accurately when the next eruption would occur, then you would have preferred 2003. This is because the *variability* in wait times was much smaller than in 1978.
+

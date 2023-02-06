@@ -21,3 +21,7 @@ Tintle, N., Chance, B., Cobb, G., Rossman, A., Roy, S., Swanson, T., VanderStoep
 * [Section 1.2](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CH1_2.html)
 * [Section 1.3](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CH1_3.html)
 * [Section 1.4](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CH1_4.html)
+
+**Chapter 02**
+
+TBA...

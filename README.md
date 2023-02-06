@@ -25,3 +25,5 @@ Tintle, N., Chance, B., Cobb, G., Rossman, A., Roy, S., Swanson, T., VanderStoep
 **Chapter 02**
 
 TBA...
+
+This material is released under an [Attribution-NonCommercial-ShareAlike 3.0 United States](https://creativecommons.org/licenses/by-nc-sa/3.0/us/) license. Original author: [Jill E. Thomley](https://jillthomley.github.io/)

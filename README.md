@@ -11,4 +11,6 @@
 **Chapter 01**
 
 * [Section 1.1](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CH1_1.html#1)
-* [Section 1.2](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides//CH1_2.html#1)
+* [Section 1.2](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CH1_2.html#1)
+* [Section 1.2](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CH1_3.html#1)
+* [Section 1.2](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CH1_4.html#1)

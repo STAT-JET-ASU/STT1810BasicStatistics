@@ -2,7 +2,7 @@
 
 ### **Textbook**
 
-Tintle, N., Chance, B., Cobb, G., Rossman, A., Roy, S., Swanson, T., VanderStoep, J. (2021). [*Introduction to Statistical Investigations, 2nd edition*](http://www.isi-stats.com/isi/index2nd.html). John Wiley & Sons, Inc.
+Tintle, N., Chance, B., Cobb, G., Rossman, A., Roy, S., Swanson, T., VanderStoep, J. (2021). [***Introduction to Statistical Investigations, 2nd edition***](http://www.isi-stats.com/isi/index2nd.html). John Wiley & Sons, Inc.
 
 ### **Course Slides**
 

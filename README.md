@@ -1,5 +1,7 @@
 # STT1810 Basic Statistics
 
+This material is released under an [Attribution-NonCommercial-ShareAlike 3.0 United States](https://creativecommons.org/licenses/by-nc-sa/3.0/us/) license. Original author: [Jill E. Thomley](https://jillthomley.github.io/)
+
 ### **Textbook**
 
 Tintle, N., Chance, B., Cobb, G., Rossman, A., Roy, S., Swanson, T., VanderStoep, J. (2021). [***Introduction to Statistical Investigations, 2nd Edition***](http://www.isi-stats.com/isi/index2nd.html). John Wiley & Sons, Inc.
@@ -26,4 +28,4 @@ Tintle, N., Chance, B., Cobb, G., Rossman, A., Roy, S., Swanson, T., VanderStoep
 
 TBA...
 
-This material is released under an [Attribution-NonCommercial-ShareAlike 3.0 United States](https://creativecommons.org/licenses/by-nc-sa/3.0/us/) license. Original author: [Jill E. Thomley](https://jillthomley.github.io/)
+

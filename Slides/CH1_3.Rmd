@@ -105,11 +105,11 @@ $$H_o: \pi = 0.20$$
 
 $$H_a: \pi > 0.20$$
 
-The mean of the null distribution is 0.20. The standard deviation is 0.08. Suppose that I identify 8 out of 25 cards correctly.
+The mean of the null distribution is 0.20. The standard deviation is 0.08. Suppose that I identify 9 out of 25 cards correctly.
 
-$$\text{standardized statistic} = \frac{8/25 - 0.20}{0.08} = 1.5$$
+$$\text{standardized statistic} = \frac{9/25 - 0.20}{0.08} = 2.0$$
 
-My result is one and a half standard deviations above the mean (i.e., *one and a half times the average deviation from the mean*).
+My result is one and a half standard deviations above the mean; i.e., *two times (twice) the average deviation from the mean*.
 
 
 ## 

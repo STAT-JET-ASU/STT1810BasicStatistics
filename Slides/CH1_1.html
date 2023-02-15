@@ -3162,7 +3162,7 @@ slide:not(.current) .plotly.html-widget{
       <h1 data-config-title><!-- populated from slide_config.json --></h1>
       <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
       <p data-config-presenter><!-- populated from slide_config.json --></p>
-            <p style="margin-top: 6px; margin-left: -2px;">Last updated Sunday, February 05, 2023 @ 03:06 PM</p>
+            <p style="margin-top: 6px; margin-left: -2px;">Last updated Wednesday, February 15, 2023 @ 02:03 PM</p>
           </hgroup>
   </slide>
 
@@ -3176,7 +3176,7 @@ slide:not(.current) .plotly.html-widget{
 <p>     </p></div>
 
 <div>
-<ul>
+<ul class = 'build'>
 <li><p>We will address <em>strength</em> of evidence (significance) in Chapter 1.</p></li>
 <li><p>We will discuss <em>breadth</em> of results (generalization) in Chapter 2.</p></li>
 <li><p>We will learn about <em>size</em> of an effect (estimation) in Chapter 3.</p></li>
@@ -3185,9 +3185,9 @@ slide:not(.current) .plotly.html-widget{
 
 </article></slide><slide class=""><hgroup><h2>Learning Goals for Chapter 1</h2></hgroup><article  id="learning-goals-for-chapter-1">
 
-<ul>
+<ul class = 'build'>
 <li>Use the chance model to determine whether an observed statistic is unlikely to occur. [Section 1.1]</li>
-<li>Calculate and interpret a p-value, and state the strength of evidence it provides against the null hypothesis. [Section 1.2]</li>
+<li>Calculate and interpret a <em>p</em>-value, and state the strength of evidence it provides against the null hypothesis. [Section 1.2]</li>
 <li>Calculate a standardized statistic for a single proportion and evaluate the strength of evidence it provides against a null hypothesis. [Section 1.3]</li>
 <li>Describe how the distance of the observed statistic from the parameter value specified by the null hypothesis, sample size, and one- vs. two-sided tests affect the strength of evidence against the null hypothesis. [Section 1.4]</li>
 </ul>
@@ -3196,7 +3196,7 @@ slide:not(.current) .plotly.html-widget{
 
 </article></slide><slide class=""><hgroup><h2>Learning Goals for Section 1.1</h2></hgroup><article  id="learning-goals-for-section-1.1">
 
-<ul>
+<ul class = 'build'>
 <li>Recognize the difference between parameters and statistics.</li>
 <li>Describe how to use coin tossing to simulate outcomes from a chance model of a random choice between two events.</li>
 <li>Use the <a href='http://www.isi-stats.com/isi2nd/ISIapplets2021.html' title=''>ISI One Proportion Applet</a> to carry out a coin tossing simulation.</li>
@@ -3231,13 +3231,13 @@ Building on these two ideas, what is a <em>chance model</em> ?
 
 <p>(mathematical) <strong>model</strong></p>
 
-<ul>
+<ul class = 'build'>
 <li>A mathematical or probabilistic conceptualization meant to closely match reality, but always making assumptions about that reality, which may or may not be true.</li>
 </ul>
 
 <p><strong>chance model</strong></p>
 
-<ul>
+<ul class = 'build'>
 <li>A real or computerized process to generate data according to a well-understood set of conditions.” — <em>to model some real-life random process we are interested in studying</em></li>
 </ul>
 
@@ -3319,7 +3319,7 @@ Building on these two ideas, what is a <em>chance model</em> ?
 <p>     </p></div>
 
 <div>
-<ul>
+<ul class = 'build'>
 <li><p>The first S (<em>compute a statistic from observed sample data</em>) occurs at Step 3/4 of the process.</p></li>
 <li><p>The second S (<em>devise and perform a simulation to model &ldquo;by chance alone&rdquo; outcomes</em>) and the third S (<em>compare your observed statistic to the distribution of simulated values</em>) are the foundation of Step 4.</p></li>
 <li><p>&ldquo;strength of evidence&rdquo; → part of logic of inference</p></li>
@@ -3330,10 +3330,19 @@ Building on these two ideas, what is a <em>chance model</em> ?
 <div style="display: flex;">
 <div>
 <ul>
-<li><p>Probability of heads = value of parameter</p></li>
-<li><p>Number of tosses = \(n\) (sample size)</p></li>
-<li><p>Number of repetitions = 1000 (or more simulations)</p></li>
-<li><p>Proportion of heads = from sample data</p></li>
+<li>Probability of heads = value of parameter</li>
+</ul>
+
+<ul>
+<li>Number of tosses = \(n\) (sample size)</li>
+</ul>
+
+<ul>
+<li>Number of repetitions = 1000 (or more simulations)</li>
+</ul>
+
+<ul>
+<li>Number of heads = from sample data</li>
 </ul></div>
 
 <div>
@@ -3346,7 +3355,7 @@ Building on these two ideas, what is a <em>chance model</em> ?
 
 <div style="display: flex;">
 <div>
-<ul>
+<ul class = 'build'>
 <li><p>Probability of heads is 0.5 for a fair coin</p></li>
 <li><p>One repetition is 10 flips</p></li>
 <li><p>The plot shows us the results from our 1000 reps; it is the distribution of the randomly varying counts or proportions of heads</p></li>

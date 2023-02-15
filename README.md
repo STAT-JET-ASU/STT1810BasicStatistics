@@ -4,12 +4,12 @@
 
 Tintle, N., Chance, B., Cobb, G., Rossman, A., Roy, S., Swanson, T., VanderStoep, J. (2021). [***Introduction to Statistical Investigations, 2nd Edition***](http://www.isi-stats.com/isi/index2nd.html). John Wiley & Sons, Inc.
 
-### **Course Slides**
+### **Course Content**
 
 **Preliminaries**
 
-* [Zener Card Class Activity Slides](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/ESPZenerCards.html)
-* [Section P.1](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CHP_1.html)
+* [Zener Card Class Activity slides](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/ESPZenerCards.html)
+* [Section P.1: Introduction to Chance Models slides](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CHP_1.html)
 * [Example P.1](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/ExampleP_1.html)
 * [Section P.2](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CHP_2.html)
 * [Example P.2](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/ExampleP_2.html)

@@ -7,13 +7,13 @@ Tintle, N., Chance, B., Cobb, G., Rossman, A., Roy, S., Swanson, T., VanderStoep
 ### **Course Materials**
 
 **Preliminaries**
-
-* [Zener Card Class Activity](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/ESPZenerCards.html) (slides)
-* [Section P.1: Introduction to the Six-Step Method](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CHP_1.html) (slides)
-* [Example P.1: Organ Donation](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/ExampleP_1.html) (slides)
-* [Section P.2: Exploring Data](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CHP_2.html) (slides)
-* [Example P.2: Oh Say Can You Sing?](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/ExampleP_2.html) (slides)
-* [Section P.3: Exploring Random Processes](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CHP_3.html) (slides)
+io
+* [Zener Card Class Activity](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/ESPZenerCards.html) (ioslides)
+* [Section P.1: Introduction to the Six-Step Method](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CHP_1.html) (ioslides)
+* [Example P.1: Organ Donation](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/ExampleP_1.html) (html slides)
+* [Section P.2: Exploring Data](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CHP_2.html) (ioslides)
+* [Example P.2: Oh Say Can You Sing?](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/ExampleP_2.html) (ioslides)
+* [Section P.3: Exploring Random Processes](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CHP_3.html) (ioslides)
 
 **Chapter 01**
 

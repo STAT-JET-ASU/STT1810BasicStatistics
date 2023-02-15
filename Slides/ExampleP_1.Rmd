@@ -72,7 +72,7 @@ They offered participants $4.00 to complete an online survey. After the results 
 
 ## Organ Donation Default Options
 
-The participants were asked to imagine they have moved to a new state and are applying for a driver’s license. As part of this application, they were to decide whether or not to become an organ donor. Each was given with one of three choices:
+The participants were asked to imagine they have moved to a new state and are applying for a driver’s license. As part of this application, they were to decide whether or not to become an organ donor. Each person was given one of three choices.
 
 * The default option in the application was *not* to be a donor; participants had to choose to become a donor if they wished (the “opt-in” group).
 
@@ -83,19 +83,19 @@ The participants were asked to imagine they have moved to a new state and are ap
 
 ## Additional Study Information
 
-observational units: 
+observational units
 
 * the 161 recruited volunteers
 
-explanatory variable: 
+explanatory variable
 
 * default donation option (categorical, three treatments)
 
-response variable: 
+response variable
 
 * choice to be an organ donor or not (categorical, binary)
 
-study design:
+study design
 
 * randomized experiment (*assuming the participants were randomly assigned to the three default donation options*)
 
@@ -152,7 +152,7 @@ In this study, participants given the “opt-in” strategy were much less likel
 
 <hr>
 
-Johnson, Eric J. and Goldstein, Daniel G., Do Defaults Save Lives? (Nov 21, 2003). *Science*, Vol. 302, pp. 1338-1339, 2003, Available at SSRN: [https://ssrn.com/abstract=1324774](https://ssrn.com/abstract=1324774)
+Johnson, Eric J. and Goldstein, Daniel G., Do Defaults Save Lives? (Nov 21, 2003). *Science*, Vol. 302, pp. 1338-1339. Available SSRN: [https://ssrn.com/abstract=1324774](https://ssrn.com/abstract=1324774)
 
 
 ## STEP 6: Look Back and Ahead

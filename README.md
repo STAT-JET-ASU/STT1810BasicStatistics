@@ -17,10 +17,10 @@ io
 
 **Chapter 01**
 
-* [Section 1.1](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CH1_1.html)
-* [Section 1.2](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CH1_2.html)
-* [Section 1.3](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CH1_3.html)
-* [Section 1.4](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CH1_4.html)
+* [Section 1.1: Introduction to Chance Models](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CH1_1.html) (ioslides)
+* [Section 1.2: Measuring the Strength of Evidence](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CH1_2.html) (ioslides)
+* [Section 1.3: Alternative Measures of Strength of Evidence](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CH1_3.html) (ioslides)
+* [Section 1.4: What Impacts Strength of Evidence?](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CH1_4.html) (ioslides)
 
 **Chapter 02**
 

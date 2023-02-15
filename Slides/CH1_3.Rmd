@@ -5,6 +5,7 @@ author: "Author: Jill E. Thomley // Appalachian State University"
 date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
 output: 
   ioslides_presentation:
+    incremental: true
     logo: images/logoASU.jpg
 ---
 
@@ -37,13 +38,13 @@ knitr::include_graphics("images/sixstepsfourpillars.png", dpi = 100)
 
 ::: {}
 
-* We will address *strength* of evidence (significance) in Chapter 1.
+> * We will address *strength* of evidence (significance) in Chapter 1.
 
-* We will discuss *breadth* of results (generalization) in Chapter 2.
+> * We will discuss *breadth* of results (generalization) in Chapter 2.
 
-* We will learn about *size* of an effect (estimation) in Chapter 3.
+> * We will learn about *size* of an effect (estimation) in Chapter 3.
 
-* Chapter 4 will introduce the idea of *causation*, the last of the four pillars. 
+> * Chapter 4 will introduce the idea of *causation*, the last of the four pillars. 
 
 :::
 
@@ -52,10 +53,10 @@ knitr::include_graphics("images/sixstepsfourpillars.png", dpi = 100)
 
 ## Learning Goals for Chapter 1
 
-* Use the chance model to determine whether an observed statistic is unlikely to occur. [Section 1.1]
-* Calculate and interpret a p-value, and state the strength of evidence it provides against the null hypothesis. [Section 1.2]
-* Calculate a standardized statistic for a single proportion and evaluate the strength of evidence it provides against a null hypothesis. [Section 1.3]
-* Describe how the distance of the observed statistic from the parameter value specified by the null hypothesis, sample size, and one- vs. two-sided tests affect the strength of evidence against the null hypothesis. [Section 1.4]
+> * Use the chance model to determine whether an observed statistic is unlikely to occur. [Section 1.1]
+> * Calculate and interpret a *p*-value, and state the strength of evidence it provides against the null hypothesis. [Section 1.2]
+> * Calculate a standardized statistic for a single proportion and evaluate the strength of evidence it provides against a null hypothesis. [Section 1.3]
+> * Describe how the distance of the observed statistic from the parameter value specified by the null hypothesis, sample size, and one- vs. two-sided tests affect the strength of evidence against the null hypothesis. [Section 1.4]
 
 We will *not* be covering Section 1.5, which discusses the theory-based approach to inference for a single proportion.
 
@@ -109,7 +110,7 @@ The mean of the null distribution is 0.20. The standard deviation is 0.08. Suppo
 
 $$\text{standardized statistic} = \frac{9/25 - 0.20}{0.08} = 2.0$$
 
-My result is one and a half standard deviations above the mean; i.e., *two times (twice) the average deviation from the mean*.
+Since $z = 2.0$, my result is two standard deviations above the mean; i.e., *two times (twice) the average distance from the mean*.
 
 
 ## 

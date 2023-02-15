@@ -7,7 +7,7 @@ Tintle, N., Chance, B., Cobb, G., Rossman, A., Roy, S., Swanson, T., VanderStoep
 ### **Course Materials**
 
 **Preliminaries**
-io
+
 * [Zener Card Class Activity](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/ESPZenerCards.html) (ioslides)
 * [Section P.1: Introduction to the Six-Step Method](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CHP_1.html) (ioslides)
 * [Example P.1: Organ Donation](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/ExampleP_1.html) (html slides)

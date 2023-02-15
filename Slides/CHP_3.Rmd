@@ -5,6 +5,7 @@ author: "Author: Jill E. Thomley // Appalachian State University"
 date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
 output: 
   ioslides_presentation:
+    incremental: true
     logo: images/logoASU.jpg
 ---
 
@@ -19,9 +20,9 @@ knitr::opts_chunk$set(
 
 ## Learning Goals for Preliminaries
 
-* Use the six-step statistical investigation method to carry out any statistical study. [Section P.1]
-* Describe distributions of quantitative variables. [Section P.2]
-* Use simulations to explore and understand probabilities. [Section P.3]
+> * Use the six-step statistical investigation method to carry out any statistical study. [Section P.1]
+> * Describe distributions of quantitative variables. [Section P.2]
+> * Use simulations to explore and understand probabilities. [Section P.3]
 
   *We will use these investigative methods throughout the course.* 
 
@@ -43,18 +44,18 @@ You need to **"speak the language"** to understand what is being taught in class
 
 ## Section P.3 New Vocabulary
 
-* probability
+> * probability
 
-* probability distribution
+> * probability distribution
 
-* random process
+> * random process
 
-* simulation
+> * simulation
 
 When we talk about probabilities and distributions, we need to keep in mind the distinction between what is **possible** (what *can* happen) and what is **probable** (more or less *likely* to happen). 
 
 * If something is *impossible*, its probability is 0. 
-* If something is *certain*, its probability is 1.
+* If something is *certain* to happen, its probability is 1.
 * Something that is *possible* has a probability between 0 and 1.
 
 ## Definitions

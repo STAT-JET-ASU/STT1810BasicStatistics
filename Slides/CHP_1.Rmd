@@ -5,6 +5,7 @@ author: "Author: Jill E. Thomley // Appalachian State University"
 date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
 output: 
   ioslides_presentation:
+    incremental: true
     logo: images/logoASU.jpg
 ---
 

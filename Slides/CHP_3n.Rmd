@@ -1,0 +1,96 @@
+---
+title: "STT1810 --- Section P.3<br>Random Processes"
+subtitle: "Introduction to Statistical Investigations, 2^nd^ Edition"
+author: "Author: Jill E. Thomley // Appalachian State University"
+date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
+output: 
+  ioslides_presentation:
+    logo: images/logoASU.jpg
+---
+
+```{r global_options, include = FALSE}
+knitr::opts_chunk$set(
+  message = FALSE,
+  warning = FALSE,
+  comment = NA
+)
+```
+
+
+## Learning Goals for Preliminaries
+
+* Use the six-step statistical investigation method to carry out any statistical study. [Section P.1]
+* Describe distributions of quantitative variables. [Section P.2]
+* Use simulations to explore and understand probabilities. [Section P.3]
+
+  *We will use these investigative methods throughout the course.* 
+
+<hr>
+
+One more important goal of this and (every other section) is for you to learn the vocabulary of statistical investigations/thinking. 
+
+You need to **"speak the language"** to understand what is being taught in class, and also to convey ideas that will demonstrate your understanding and proficiency with the material. 
+
+
+## Learning Goals for Section P.3
+
+* Write an interpretation of a probability as a long-run proportion.
+* Describe how to use physical devices such as coins and cards to simulate a random process.
+* Conduct a simulation analysis to approximate a probability.
+* Describe the effect of increasing the number of repetitions in a simulation analysis on the accuracy of an approximate probability (or a simulated probability distribution).
+* Select an appropriate decision involving a random process, based on probabilities and/or simulation results.
+
+
+## Section P.3 New Vocabulary
+
+* probability
+
+* probability distribution
+
+* random process
+
+* simulation
+
+When we talk about probabilities and distributions, we need to keep in mind the distinction between what is **possible** (what *can* happen) and what is **probable** (more or less *likely* to happen). 
+
+* If something is *impossible*, its probability is 0. 
+* If something is *certain* to happen, its probability is 1.
+* Something that is *possible* has a probability between 0 and 1.
+
+## Definitions
+
+**process:** an endless series of potential observations
+
+**random process:** a repeatable process that has unknown individual (short-term) outcomes but a long-run pattern of outcomes
+
+**probability:** the long-run proportion of times an outcome from a random process occurs
+
+**probability distribution:** the long-run pattern of outcomes from a random process
+
+**simulation:** an artificial re-creation of a random process using a computer or tactile tools such as coins, dice, cards, or spinners
+
+
+## Exploration P.3 --- "Cars or Goats?"
+
+On the game show *Let’s Make a Deal* (hosted by Monty Hall), new cars were often hidden behind one of three doors. Behind the other doors were lesser prizes. The contestant picked one door, and if they chose correctly, they won the car!
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("images/montyhalldoors.jpg", dpi = 90)
+```
+
+
+## Winner!
+
+One actual prize, a vintage Pontiac LeMans T-37 (1970 to 1972).
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("images/pontiaclemans.jpg", dpi = 80)
+```
+
+
+## Not so much winning...
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("images/sillygoat.jpeg", dpi = 190)
+```
+

@@ -5,6 +5,7 @@ author: "Author: Jill E. Thomley // Appalachian State University"
 date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
 output: 
   ioslides_presentation:
+    incremental: true
     logo: images/logoASU.jpg
 ---
 
@@ -100,15 +101,15 @@ In the real world we are almost always dealing with incomplete data (i.e., *samp
 
 ## Section 1.1 New Vocabulary
 
-* chance model
-* parameter
-* sample
-* sample size
-* simulate
-* statistic
-* statistically significant
-* strength of evidence
-* 3S strategy
+> * chance model
+> * parameter
+> * sample
+> * sample size
+> * simulate
+> * statistic
+> * statistically significant
+> * strength of evidence
+> * 3S strategy
 
 ## 
 
@@ -202,13 +203,13 @@ knitr::include_graphics("images/sixstepsfourpillars.png", dpi = 100)
 
 ::: {}
 
-* Probability of heads = value of parameter
+> * Probability of heads = value of parameter
 
-* Number of tosses = $n$ (sample size)
+> * Number of tosses = $n$ (sample size)
 
-* Number of repetitions = 1000 (or more simulations)
+> * Number of repetitions = 1000 (or more simulations)
 
-* Number of heads = from sample data
+> * Number of heads = from sample data
 
 :::
 

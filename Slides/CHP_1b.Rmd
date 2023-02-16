@@ -5,6 +5,7 @@ author: "Author: Jill E. Thomley // Appalachian State University"
 date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
 output: 
   ioslides_presentation:
+    incremental: true
     logo: images/logoASU.jpg
 ---
 
@@ -170,9 +171,9 @@ The ***scope*** of inference concerns the extent to which results can be general
 
 You decide to collect data on all Major League Baseball games (observational units) being played in one week. You could record data on variables such as total number of runs scored, whether the home team wins the game, and the attendance at the game. Is each of these variables *categorical* or *quantitative*?
 
-* total number of runs scored
-* whether the home team wins
-* total attendance at the game
+> * total number of runs scored
+> * whether the home team wins
+> * total attendance at the game
 
 <hr>
 
@@ -193,9 +194,9 @@ Study: Ackerman, J. M., Griskevicius, V., & Li, N. P. (2011). Let's get serious:
 
 **Study Questions**
 
-* What are the observational units?
-* What is the variable of interest?
-* What type of variable is it?
+> * What are the observational units?
+> * What is the variable of interest?
+> * What type of variable is it?
 
 
 ## Some of the Results

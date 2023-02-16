@@ -5,7 +5,6 @@ author: "Author: Jill E. Thomley // Appalachian State University"
 date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
 output: 
   ioslides_presentation:
-    incremental: true
     logo: images/logoASU.jpg
 ---
 
@@ -20,9 +19,9 @@ knitr::opts_chunk$set(
 
 ## Learning Goals for Preliminaries
 
-> * Use the six-step statistical investigation method to carry out any statistical study. [Section P.1]
-> * Describe distributions of quantitative variables. [Section P.2]
-> * Use simulations to explore and understand probabilities. [Section P.3]
+* Use the six-step statistical investigation method to carry out any statistical study. [Section P.1]
+* Describe distributions of quantitative variables. [Section P.2]
+* Use simulations to explore and understand probabilities. [Section P.3]
 
   *We will use these investigative methods throughout the course.* 
 
@@ -65,12 +64,12 @@ We process raw ***data*** with statistical methods to extract usable ***informat
 
 Let's review (*Section 1.1) and expand our statistics vocabulary!
 
-> * data table *
-> * units of measurement
-> * spread / variability
-> * quantitative variable *
-> * standard deviation (or SD)
-> * describing the behavior (distribution) of a variable
+* data table *
+* units of measurement
+* spread / variability
+* quantitative variable *
+* standard deviation (or SD)
+* describing the behavior (distribution) of a variable
 >    - shape
 >    - center
 >    - variability
@@ -155,11 +154,11 @@ knitr::include_graphics("https://stat-jet-asu.github.io/Moodlepics/histogram.png
 
 **variability:** once we have identified the center, how spread out are the data---are most within a certain range of values?
 
-> * standard deviation is one of the most common quantitative measures of variability; we will abbreviate it as **SD**
+* standard deviation is one of the most common quantitative measures of variability; we will abbreviate it as **SD**
 
 **unusual observations / features:** points that deviate markedly from the overall pattern of the other data values (i.e., outliers); also other unusual features such as multiple modes
     
-> * sometimes we can explain unusual features or outliers using another variable (e.g., some kind of grouping)
+* sometimes we can explain unusual features or outliers using another variable (e.g., some kind of grouping)
 
 
 ## Possible Reasons for Outliers
@@ -175,9 +174,9 @@ knitr::include_graphics("https://stat-jet-asu.github.io/Moodlepics/histogram.png
 
 Mary records the ages of people entering a McDonald’s near the interstate (today). Colleen records the ages of people entering a snack bar on a college campus (today). Which would you expect to have a *larger* standard deviation of ages?
 
-> * Mary (McDonald’s)
+* Mary (McDonald’s)
 
-> * Colleen (campus snack bar)
+* Colleen (campus snack bar)
 
 Explain how you made your decision and support your answer.
 

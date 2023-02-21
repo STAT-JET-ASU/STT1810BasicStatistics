@@ -63,9 +63,9 @@ We will *not* be covering Section 1.5, which discusses the theory-based approach
 
 ## Learning Goals for Section 1.3
 
-* Find a standardized statistic from the observed proportion of “successes” in the data, the hypothesized mean of the null distribution (i.e., *the value of the parameter that is specified in Ho*), and standard deviation (SD) of the null distribution as produced by the [ISI One Proportion Applet](http://www.isi-stats.com/isi2nd/ISIapplets2021.html) (i.e., simulation).
+* Find a standardized statistic from the observed proportion of “successes” in the data, the hypothesized mean of the null distribution (i.e., *the value of the parameter that is specified in $H_0$*), and standard deviation (SD) of the null distribution as produced by the [ISI One Proportion Applet](http://www.isi-stats.com/isi2nd/ISIapplets2021.html) (i.e., simulation).
 * Interpret a standardized statistic.
-* State a conclusion about the alternative hypothesis (and null hypothesis Ho) based on the magnitude of the standardized statistic.
+* State a conclusion about the alternative hypothesis (and null hypothesis $H_0$) based on the magnitude of the standardized statistic.
 * Recognize that standardizing the statistic is an alternative measure of strength of evidence.
 
 
@@ -75,11 +75,11 @@ We will *not* be covering Section 1.5, which discusses the theory-based approach
 
 This is the formal process we usually follow for any assessment of strength of evidence.
 
-(1) Make a claim about the parameter of interest (Ho and Ha) 
+(1) Make a claim about the parameter of interest ($H_0$ and $H_a$) 
 (2) Gather and explore data relevant to the claim
 (3) Calculate an observed statistic from the data
-(4) Simulate a null distribution (assuming that Ho is true)
-(5) Measure the strength of evidence that the observed statistic provides against Ho (using the null distribution as a "ruler")
+(4) Simulate a null distribution (assuming that $H_0$ is true)
+(5) Measure the strength of evidence that the observed statistic provides against $H_0$ (using the null distribution as a "ruler")
 (6) Draw a conclusion about the null hypothesis 
 
 *Recall that steps 3, 4, and 5 are the components of the 3S process!*
@@ -108,7 +108,7 @@ $$H_a: \pi > 0.20$$
 
 The mean of the null distribution is 0.20. The standard deviation is 0.08. Suppose that I identify 9 out of 25 cards correctly.
 
-$$\text{standardized statistic} = \frac{9/25 - 0.20}{0.08} = 2.0$$
+$$\text{standardized statistic} = z = \frac{9/25 - 0.20}{0.08} = 2.0$$
 
 Since $z = 2.0$, my result is two standard deviations above the mean; i.e., *two times (twice) the average distance from the mean*.
 
@@ -126,20 +126,20 @@ knitr::include_graphics("images/OneProportionAppletZener.png", dpi = 150)
 
 As with *p*-values, there are some guidelines for interpretation. A large standardized score generally indicates the observed value is in one of the *tails* of the null distribution rather than near the center (it is farther away from being a "typical" value).
 
-| Magnitude                | Guideline for Inference                       |
-|--------------------------|-----------------------------------------------|
-| between -1.5 and +1.5    | not much evidence against Ho; Ho is plausible |
-| below -1.5 or above +1.5 | moderate evidence against Ho                  |
-| below -2.0 or above +2.0 | strong evidence against Ho                    |
-| below -3.0 or above +3.0 | very strong evidence against Ho               |
+| Magnitude                | Strength of Evidence                              |
+|--------------------------|---------------------------------------------------|
+| between -1.5 and +1.5    | not much evidence against the null hypothesis     |
+| below -1.5 or above +1.5 | moderate evidence against the null hypothesis     |
+| below -2.0 or above +2.0 | strong evidence against the null hypothesis       |
+| below -3.0 or above +3.0 | very strong evidence against  the null hypothesis |
 
 
 ## Mound-Shaped Example
 
-Notice that the center of the distribution is 0. Values *below* the mean will have a negative standardized score.
+Notice that the center of the distribution is 0. Values *below* the mean have a negative *z*-score. Observations more than 2 or 3 SDs from the mean can be considered "in the tail".
 
 ```{r, echo = FALSE, fig.align="center", fig.cap="standardized statistics on a bell-shaped distribution." }
-knitr::include_graphics("images/stdstatbellcurve.png", dpi = 110)
+knitr::include_graphics("images/stdstatbellcurve.png", dpi = 120)
 ```
 
 The farther from zero the standardized statistic is, the stronger the evidence against the null hypothesis. Like a *p*-value, we can directly compare standardized values across datasets.

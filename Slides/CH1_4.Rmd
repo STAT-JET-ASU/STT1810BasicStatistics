@@ -85,11 +85,11 @@ In this case, "extreme" would be measured on *both* sides of the null distributi
 
 Three important components of a test of significance influence the strength provided by the data evidence.
 
-* **extremeness:** The farther away the observed statistic is from the average value of the null distribution (i.e., the value that is specified for  $\pi$ in Ho), the more evidence there is against $H_0$.
+* **extremeness:** The farther away the observed statistic is from the average value of the null distribution (i.e., the value that is specified for  $\pi$ in $H_0$), the more evidence there is against $H_0$.
 
-* **sample size:** As the sample size increases (while the values of the observed sample statistic $\hat{p}$ and $H_a$ stay the same) the strength of evidence against $H_0$ increases.
+* **sample size:** As the sample size increases (while the value of the observed sample statistic $\hat{p}$ and our $H_a$ stay the same) the strength of evidence against $H_0$ increases.
 
-* **one- vs. two-tailed Ha:** Because the *p*-value for a two-sided test is about twice as large as we would get for a one-sided test using the same data, it provides less evidence against $H_0$. (*Two-sided tests are used more often in scientific practice.*)
+* **one- vs. two-sided $H_a$:** Because the *p*-value for a two-sided test is about twice as large as we would get for a one-sided test using the same data, it provides less evidence against $H_0$. (*Two-sided tests are used more often in scientific practice.*)
 
 
 ## Flashback: [ESP Test](https://stat-jet-asu.github.io/Slides/STT1810/ESPZenerCards.html)

@@ -3162,7 +3162,7 @@ slide:not(.current) .plotly.html-widget{
       <h1 data-config-title><!-- populated from slide_config.json --></h1>
       <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
       <p data-config-presenter><!-- populated from slide_config.json --></p>
-            <p style="margin-top: 6px; margin-left: -2px;">Last updated Thursday, February 16, 2023 @ 01:31 AM</p>
+            <p style="margin-top: 6px; margin-left: -2px;">Last updated Tuesday, February 21, 2023 @ 02:02 PM</p>
           </hgroup>
   </slide>
 
@@ -3235,11 +3235,11 @@ slide:not(.current) .plotly.html-widget{
 
 <p><em>Recall from our Section 1.1 vocabulary: A parameter is a long-run numerical property of some real-world random process.</em></p>
 
-<p><strong>null hypothesis (Ho):</strong> &ldquo;by chance alone&rdquo; or &ldquo;there is no effect&rdquo; explanation, which can be modeled by random simulation</p>
+<p><strong>null hypothesis (\(H_0\)):</strong> &ldquo;by chance alone&rdquo; or &ldquo;there is no effect&rdquo; explanation, which can be modeled by random simulation</p>
 
-<p><strong>null distribution:</strong> a distribution of simulated statistics that are a representation of what <em>could have</em> happened in the actual study if the null hypothesis were true (we <em>assume</em> Ho is true when we conduct a simulation)</p>
+<p><strong>null distribution:</strong> a distribution of simulated statistics that are a representation of what <em>could have</em> happened in the actual study if the null hypothesis were true (we <em>assume</em> \(H_0\) is true when we conduct a simulation)</p>
 
-<p><strong>alternative hypothesis (Ha):</strong> &ldquo;not by chance alone&rdquo; or &ldquo;there is an effect&rdquo; explanation, typically reflects our research conjecture (it is also sometimes referred to as the <em>research hypothesis</em>)</p>
+<p><strong>alternative hypothesis (\(H_a\)):</strong> &ldquo;not by chance alone&rdquo; or &ldquo;there is an effect&rdquo; explanation, typically reflects our research conjecture (it is also sometimes referred to as the <em>research hypothesis</em>)</p>
 
 </article></slide><slide class=""><hgroup><h2>Symbols</h2></hgroup><article  id="symbols">
 
@@ -3258,21 +3258,21 @@ slide:not(.current) .plotly.html-widget{
 <p>In the field of Statistics, a <em>test of significance</em> is a procedure for measuring the <em>strength of evidence</em> against our null hypothesis regarding the parameter of interest.</p>
 
 <ol class = 'build'>
-<li>make a claim about the parameter of interest (Ho and Ha)</li>
+<li>make a claim about the parameter of interest (\(H_0\) and \(H_a\))</li>
 <li>gather and explore data</li>
 <li>follow the <u>3S</u> strategy to
 
 <ul class = 'build'>
 <li>calculate an observed <u>statistic</u> from the data</li>
-<li><u>simulate</u> a null distribution (<em>scenario assuming Ho is true</em>)</li>
-<li>compare the observed statistic to the null distribution to measure the <u>strength of evidence</u> it provides <em>against</em> Ho.<br/></li>
+<li><u>simulate</u> a null distribution (<em>scenario assuming \(H_0\) is true</em>)</li>
+<li>compare the observed statistic to the null distribution to measure the <u>strength of evidence</u> it provides <em>against</em> \(H_0\).<br/></li>
 </ul></li>
-<li>draw a conclusion about the plausibility of Ho</li>
+<li>draw a conclusion about the plausibility of \(H_0\)</li>
 </ol>
 
 </article></slide><slide class=""><hgroup><h2>Quantifying Strength of Evidence</h2></hgroup><article  id="quantifying-strength-of-evidence">
 
-<p>One way to assess strength is to use a <em>p</em>-value. The <strong>p</strong> stands for <em>probability</em>—it is the probability of getting a purely random value of the statistic (e.g., from simulation) that is at least as extreme (<em>in the direction of Ha</em>) as the observed statistic when Ho is true.</p>
+<p>One way to assess strength is to use a <em>p</em>-value. The <strong>p</strong> stands for <em>probability</em>—it is the probability of getting a purely random value of the statistic (e.g., from simulation) that is at least as extreme (<em>in the direction of \(H_a\)</em>) as the observed statistic when \(H_0\) is true.</p>
 
 <table class = 'rmdtable'>
 <col width="28.089888%" />
@@ -3283,7 +3283,7 @@ slide:not(.current) .plotly.html-widget{
 </tr>
 <tr class="odd">
 <td align="left"><em>p</em>-value &gt; 0.10</td>
-<td align="left">not much evidence against the null hypothesis; Ho is plausible</td>
+<td align="left">not much evidence against the null hypothesis; \(H_0\) is plausible</td>
 </tr>
 <tr class="even">
 <td align="left">0.05 &lt; <em>p</em>-value ≤ 0.10</td>
@@ -3301,11 +3301,11 @@ slide:not(.current) .plotly.html-widget{
 
 </article></slide><slide class=""><hgroup><h2>Additional Guidelines (0.05)</h2></hgroup><article  id="additional-guidelines-0.05">
 
-<p>Researchers across a variety of disciplines consider a <em>p</em>-value less than or equal to 0.05 (i.e., at most a 5% chance) to be the threshold where we can claim data have <em>statistical significance</em> and declare the chance model (Ho) to be implausible.</p>
+<p>Researchers across a variety of disciplines consider a <em>p</em>-value less than or equal to 0.05 (i.e., at most a 5% chance) to be the threshold where we can claim data have <em>statistical significance</em> and declare the chance model (\(H_0\)) to be implausible.</p>
 
 <p>A <em>p</em>-value ≤ 0.05 corresponds to <em>strong</em> or <em>very strong evidence</em> against the null hypothesis in our textbook guidelines.</p>
 
-<p>However, in some situations you may want stronger evidence. For example, in medicine, rejecting Ho may have life or death consequences, so researchers could choose to use a value like 0.01 (<em>very strong evidence</em>) instead when assessing data.</p>
+<p>However, in some situations you may want stronger evidence. For example, in medicine, rejecting \(H_0\) may have life or death consequences, so researchers could choose to use a value like 0.01 (<em>very strong evidence</em>) instead when assessing data.</p>
 
 <p>Why 0.05? It’s honestly an arbitrary value. Ronald Fisher wrote <em>Statistical Methods for Research Workers</em> in 1925 and used 1/20 (5%) as his general guide; it has propagated over time.</p>
 
@@ -3357,7 +3357,7 @@ slide:not(.current) .plotly.html-widget{
 </tr>
 <tr class="odd">
 <td align="left"><em>p</em>-value &gt; 0.10</td>
-<td align="left">not much evidence against the null hypothesis; Ho is plausible</td>
+<td align="left">not much evidence against the null hypothesis; \(H_0\) is plausible</td>
 </tr>
 <tr class="even">
 <td align="left">0.05 &lt; <em>p</em>-value ≤ 0.10</td>
@@ -3381,7 +3381,7 @@ slide:not(.current) .plotly.html-widget{
 
 <p>It’s still <em>possible</em> that the results were due to random chance and we drew an incorrect decision based on the data.</p>
 
-<p>If our data and <em>test of significance</em> process lead us to declare our results to be statistically significant and we reject Ho (the chance model) as a plausible explanation when the study outcomes are indeed due solely to chance, that is referred to as a <em>Type I Error</em>. We will discus this more in Section 1.4.</p>
+<p>If our data and <em>test of significance</em> process lead us to declare our results to be statistically significant and we reject \(H_0\) (chance model) as a plausible explanation when the study outcomes are indeed due solely to chance, that is referred to as a <em>Type I Error</em>. We will discus this more in Section 1.4.</p>
 
 <p>Look back and ahead: how can we improve our data collection?</p></article></slide>
 

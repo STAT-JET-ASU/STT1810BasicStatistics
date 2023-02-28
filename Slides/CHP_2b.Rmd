@@ -65,16 +65,16 @@ We process raw ***data*** with statistical methods to extract usable ***informat
 
 Let's review (*Section 1.1) and expand our statistics vocabulary!
 
-> * data table *
+> * data table
 > * units of measurement
 > * spread / variability
-> * quantitative variable *
+> * quantitative variable
 > * standard deviation (or SD)
-> * describing the behavior (distribution) of a variable
->    - shape
->    - center
->    - variability
->    - unusual observations / features
+> * describing the behavior (distribution) of a variable<br>
+-- shape<br>
+-- center<br>
+-- variability<br>
+-- unusual observations / features
 
 
 ## "Tidy" Dataset

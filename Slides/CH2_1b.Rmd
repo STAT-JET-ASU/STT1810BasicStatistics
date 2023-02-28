@@ -5,6 +5,7 @@ author: "Author: Jill E. Thomley // Appalachian State University"
 date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
 output: 
   ioslides_presentation:
+    incremental: true
     logo: images/logoASU.jpg
 ---
 
@@ -87,17 +88,17 @@ Section 2.1 provides a foundation for the upcoming Section 3.2.
 
 ## Section 2.1 New Vocabulary
 
-* bias
-* census
-* nonsampling concerns
-* population
-* sample (*recall, this can be an adjective, noun, or verb*)
-  * convenience sample
-  * random sample
-  * simple random sample
-  * sampling frame
-* sampling distribution / Central Limit Theorem
-* sampling variability
+> * bias
+> * census
+> * nonsampling concerns
+> * population
+> * sample (*recall, this can be an adjective, noun, or verb*) <br>
+-- convenience sample <br>
+-- random sample <br>
+-- simple random sample <br>
+-- sampling frame <br>
+> * sampling distribution / Central Limit Theorem
+> * sampling variability
 
 
 ## 

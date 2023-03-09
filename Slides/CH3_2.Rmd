@@ -99,7 +99,7 @@ knitr::include_graphics("images/empiricalrule.png", dpi = 110)
 We could also create 68% and 99.7% CIs using ±1SD and ±3SD.
 
 
-## The 2 Standard Deviation Method
+## The 2 Standard Deviation (SD) Method
 
 Calculate the observed sample proportion $\hat{p}$.
 

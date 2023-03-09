@@ -41,9 +41,9 @@ knitr::include_graphics("images/sixstepsfourpillars.png", dpi = 100)
 
 * We addressed *strength* of evidence with significance tests in Chapter 1.
 
-* We addressed the  *breadth* of results in Chapter 2.
+* We addressed *breadth* of results in Chapter 2.
 
-* We will explore the *size* of an effect with estimation / confidence intervals in Chapter 3.
+* We will explore the *size* of an effect with estimation and confidence intervals in Chapter 3.
 
 :::
 
@@ -52,7 +52,7 @@ knitr::include_graphics("images/sixstepsfourpillars.png", dpi = 100)
 
 ## Learning Goals for Chapter 3
 
-Chapter 3 focuses on ***estimation***, which is one of the four pillars of inference introduced in Section P.1. Often, we use estimation to indicate how large an effect is, not as a single number, but as an ***interval*** of statistically-likely values.
+Chapter 3 focuses on estimation, which is one of the four pillars of inference introduced in Section P.1. Often, we use estimation to indicate how large an effect is, not as a single number, but as an interval of statistically likely or plausible values.
 
 <hr>
 
@@ -65,7 +65,7 @@ In this chapter, you will learn to:
 
 ## Learning Goals for Section 3.1
 
-In Chapter 3, you will learn two different ways to find *confidence intervals*, based on methods from Chapters 1 and 2. The first is an *interval of plausible values* --- those values of the parameter that are *not* rejected in a (two-sided) test of significance. 
+In Chapter 3, you will learn two different ways to find confidence intervals, based on methods from Chapters 1 and 2. The first is an interval of plausible values --- those values of the parameter that are *not* rejected in a (two-sided) test of significance. 
 
 <hr>
 
@@ -104,7 +104,7 @@ This chapter builds on Chapters 1 and 2, so you also will want to be sure that y
 
 ## Method of Plausible Values
 
-Test different values of $\pi$ under the null hypothesis.
+Test many different values of $\pi$ as the null hypothesis.
 
 $$H_0: \pi = \text{value being tested}$$
 
@@ -112,7 +112,7 @@ $$H_a: \pi \ne \text{value being tested}$$
 
 Calculate a two-sided *p*-value using the observed data.
 
-Reject Ho *or* fail to reject Ho using the *p*-value and the chosen level of significance (most commonly 0.05).
+Reject Ho *or* fail to reject Ho using the *p*-value and the chosen level of significance (most commonly $\alpha = 0.05$).
 
 If you fail to reject Ho, then the tested value of $\pi$ is a *plausible value* and belongs in the confidence interval.
 
@@ -121,7 +121,7 @@ The interval boundaries are the smallest and largest plausible values, written a
 
 ## Example 3.1 Can Dogs Sniff Cancer?
 
-Researchers tested a dog named Marine to see whether or not she could detect colorectal cancer. She smelled breath in five bags from five different patients, only one of which had cancer. Marine chose correctly in 30 of 33 attempts ($\hat{p} = 0.909$). 
+Researchers tested a dog named Marine to see whether or not she could detect colorectal cancer via smell. She sniffed breath in 5 bags from 5 different patients, only 1 of which had cancer. Marine chose correctly in 30 of 33 trials ($\hat{p} = 0.909$). 
 
 $H_0: \pi = 0.20$ (Marine is just guessing)
 
@@ -136,7 +136,7 @@ knitr::include_graphics("images/fig_03_01_01.png", dpi = 120)
 
 We would reject Ho at the 0.05 level of significance. But, what is Marine's true probability $\pi$ of detecting cancer?
 
-We can estimate by testing candidate values of $\pi$ on either side of our observed sample proportion $\hat{p} = 0.909$.
+We can estimate the value by testing the potential values of $\pi$ on either side of our observed sample proportion $\hat{p} = 0.909$.
 
 | $\pi$ tested in Ho | 0.760 | 0.761 | 0.762 | ...   | 0.973 | 0.974 | 0.975 |
 |--------------------|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:------|
@@ -144,9 +144,9 @@ We can estimate by testing candidate values of $\pi$ on either side of our obser
 | reject Ho?         | Yes   | No    | No    | No    | No    | No    | Yes   |
 | plausible $\pi$?   | No    | *YES* | *YES* | *YES* | *YES* | *YES* | No    |
 
-We are 95% confident that Marine's true probability of detecting cancer is between 0.761 and 0.974.
+We are 95% confident that Marine's true probability of detecting cancer ($\pi$) is between 0.761 and 0.974.
 
-This is much stronger than simply stating $\pi > 0.20$ (as in $H_a$).
+This is more informative than just stating $\pi > 0.20$ (as in $H_a$).
 
 
 ## What Does 95% Confidence Mean?

@@ -41,9 +41,9 @@ knitr::include_graphics("images/sixstepsfourpillars.png", dpi = 100)
 
 * We addressed *strength* of evidence with significance tests in Chapter 1.
 
-* We addressed the  *breadth* of results in Chapter 2.
+* We addressed *breadth* of results in Chapter 2.
 
-* We will explore the *size* of an effect with estimation / confidence intervals in Chapter 3.
+* We will explore the *size* of an effect with estimation and confidence intervals in Chapter 3.
 
 :::
 
@@ -52,7 +52,7 @@ knitr::include_graphics("images/sixstepsfourpillars.png", dpi = 100)
 
 ## Learning Goals for Chapter 3
 
-Chapter 3 focuses on ***estimation***, which is one of the four pillars of inference introduced in Section P.1. Often, we use estimation to indicate how large an effect is, not as a single number, but as an ***interval*** of statistically-likely values.
+Chapter 3 focuses on estimation, which is one of the four pillars of inference introduced in Section P.1. Often, we use estimation to indicate how large an effect is, not as a single number, but as an interval of statistically likely or plausible values.
 
 <hr>
 
@@ -65,7 +65,7 @@ In this chapter, you will learn to:
 
 ## Learning Goals for Section 3.2
 
-In Section 3.1 you learned about estimation using intervals of plausible values. In Section 3.2, you will explore how to create confidence intervals using standardization --- in particular, the *“two standard deviation method”* (or the "2SD method") for an approximate 95% confidence interval.
+In Section 3.1 you learned about estimation using intervals of plausible values. In Section 3.2, you will explore how to create confidence intervals using standardization --- in particular, the “two standard deviation method” (or the "2SD method") for an approximate 95% confidence interval.
 
 <hr>
 
@@ -77,35 +77,18 @@ In Section 3.1 you learned about estimation using intervals of plausible values.
 
 ## Section 3.2 New Vocabulary
 
-Recall that you learned about $SD(\hat{p})$---the standard deviation of $\hat{p}$---in Section 2.1: Sampling Distributions.
+Recall that you learned about $SD(\hat{p})$---standard deviation of $\hat{p}$---and the Central Limit Theorem in Section 2.1 
 
-* **2SD method:** approximating a confidence interval by taking the statistic and the standard deviation of the statistic (from simulation or formula) and extending 2 SDs in each direction from the statistic
+**2SD method:** we can approximate a 95% confidence interval (*if the sampling distribution of a statistic is approximately normal*) by taking the statistic and the SD of the statistic and extending the interval 2 SDs in each direction from the statistic...
 
 $$\text{for example: } \hat{p} \pm 2 \times SD(\hat{p})$$
 
-* **margin of error:** the half-width of a confidence interval (for the 2SD method, this is the ± 2SD value)
+**margin of error:** the half-width of a confidence interval (for the 2SD method, this is the ± 2SD value)
 
-* **standard error / SE:** an estimate of the standard deviation of a statistic that is based on observed data
-
-
-## Recall: The Central Limit Theorem
-
-The Central Limit Theorem describes the sampling distributions of certain statistics, like $\hat{p}$, if they meet certain criteria... 
-
-We have a large, finite population with parameter $\pi$. Here, *finite* means it is possible to count the observational units.
-
-We are taking samples of size $n$ that are large enough that there are at least 10 successes and 10 failures in each sample.
-
-We are calculating the sample proportion $\hat{p}$ for each sample.
-
-<hr>
-
-**shape:** the sampling distribution will be approximately normal (*unimodal and mound-shaped---the classic "bell curve"*).
-
-<hr>
+**standard error / SE:** an estimate of the standard deviation of a statistic that is based on observed data
 
 
-## The Empirical Rule
+## Empirical Rule: Why the 2SD Works
 
 For a bell-shaped (normal) curve, about 95% of the distribution will be within ±2SD of the mean---the basis of the 2SD method.
 
@@ -116,13 +99,13 @@ knitr::include_graphics("images/empiricalrule.png", dpi = 110)
 We could also create 68% and 99.7% CIs using ±1SD and ±3SD.
 
 
-## The 2SD Method
+## The 2 Standard Deviation Method
 
 Calculate the observed sample proportion $\hat{p}$.
 
 Simulate the sampling distribution of  $\hat{p}$ using the same sample size $n$ as the observed sample and $\pi = 0.5$.
 
-Calculating the standard deviation of the simulated distribution to get an estimate for the value of $SD(\hat{p})$.
+Calculate the standard deviation of the simulated distribution to get an estimate for the value of $SD(\hat{p})$.
 
 Plug the values into the equation below to get a 95% confidence interval for $\pi$, based on the sample data.
 
@@ -132,10 +115,22 @@ $$\hat{p} \pm 2 \times SD(\hat{p})$$
 
 Recall that we use $\pi = 0.5$ because $SD(\hat{p})$ is the biggest then.
 
+## Example: Where is the Largest SD?
+
+| $n$   |  $\pi$ |  $SD(\hat{p})$  |
+|:-----:|:------:|:---------------:|
+|  100  |  0.10  |     0.0300      |
+|  100  |  0.25  |     0.0433      |
+|  100  |  0.40  |     0.0490      |
+|  100  |  0.50  |     0.0500      |
+|  100  |  0.60  |     0.0490      |
+|  100  |  0.75  |     0.0433      |
+|  100  |  0.90  |     0.0300      |
+
 
 ## Example 3.2 Cyberbullying
 
-In a March 7–April 10, 2018 survey of a random sample of 743 U.S. teenagers (ages 13 to 17 years), the Pew Research Center found that 59% said they had experienced cyberbullying. Use the [ISI One-Proportion Applet](http://www.rossmanchance.com/applets/2021/oneprop/OneProp.htm) to estimate the SD.
+In a March 7–April 10, 2018 survey of a random sample of 743 U.S. teenagers (ages 13 to 17 years), the Pew Research Center found that 59% said they had experienced cyberbullying. Use the [ISI One-Proportion applet](http://www.isi-stats.com/isi2nd/ISIapplets2021.html) to estimate the SD.
 
 ```{r, echo = FALSE, fig.align="center"}
 knitr::include_graphics("images/2SD95CI.PNG", dpi = 100)
@@ -144,7 +139,7 @@ knitr::include_graphics("images/2SD95CI.PNG", dpi = 100)
 
 ## Calculating the Interval
 
-Use the sample proportion 0.59 and simulated SD = 0.018.
+Use the sample proportion 0.59 and the simulated SD = 0.018.
 
 $$\hat{p} \pm 2 \times SD(\hat{p}) = 0.59 \pm 2 \times 0.018 = 0.59 \pm 0.036$$
 
@@ -152,5 +147,5 @@ We are 95% confident that the true proportion of U.S. teens who have experienced
 
 We can also express the confidence interval as (0.554, 0.626) or as percentages (55.4%, 62.6%).
 
-Note that all of the plausible values are greater than 50%. Based on this, (*sadly*) we can be confident that the true proportion $\pi$ is a majority of teens 13-17 years old.
+Note that all of the plausible values are greater than 50%. Based on this, we can be (*sadly*) confident that the true proportion $\pi$ is a majority of teens 13-17 years old.
 

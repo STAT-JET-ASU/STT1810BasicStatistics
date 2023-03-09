@@ -244,7 +244,7 @@ knitr::include_graphics("images/SamplingDist10.png", dpi = 100)
 $\text{sample size}(n) = 100$</center>
 
 
-## Different Sample Size, Same $\pi$
+## Different $n$, Same $\pi$---Notice SD
 
 | $n$    |  $\text{Mean}(\hat{p}) = \pi$  |  $SD(\hat{p})$  |
 |:------:|:------------------------------:|:---------------:|
@@ -257,7 +257,7 @@ $\text{sample size}(n) = 100$</center>
 |  1000  |             0.50               |     0.0158      |
 
 
-## Same Sample Size, Different $\pi$
+## Same $n$, Different $\pi$---Notice SD
 
 | $n$   |  $\text{Mean}(\hat{p}) = \pi$  |  $SD(\hat{p})$  |
 |:-----:|:------------------------------:|:---------------:|

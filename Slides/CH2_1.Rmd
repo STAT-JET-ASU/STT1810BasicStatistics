@@ -244,7 +244,7 @@ knitr::include_graphics("images/SamplingDist10.png", dpi = 100)
 $\text{sample size}(n) = 100$</center>
 
 
-## Different $n$, Same $\pi$---Notice SD
+## Increasing $n$, Same $\pi$---Notice $SD(\hat{p})$
 
 | $n$    |  $\text{Mean}(\hat{p}) = \pi$  |  $SD(\hat{p})$  |
 |:------:|:------------------------------:|:---------------:|
@@ -254,20 +254,21 @@ $\text{sample size}(n) = 100$</center>
 |  200   |             0.50               |     0.0354      |
 |  400   |             0.50               |     0.0250      |
 |  800   |             0.50               |     0.0177      |
-|  1000  |             0.50               |     0.0158      |
+
+Observe that $SD(\hat{p})$ gets progressively smaller as $n$ gets larger.
 
 
-## Same $n$, Different $\pi$---Notice SD
+## Same $n$, Different $\pi$---Notice $SD(\hat{p})$
 
 | $n$   |  $\text{Mean}(\hat{p}) = \pi$  |  $SD(\hat{p})$  |
 |:-----:|:------------------------------:|:---------------:|
 |  100  |              0.10              |     0.0300      |
 |  100  |              0.25              |     0.0433      |
-|  100  |              0.40              |     0.0490      |
 |  100  |              0.50              |     0.0500      |
-|  100  |              0.60              |     0.0490      |
 |  100  |              0.75              |     0.0433      |
 |  100  |              0.90              |     0.0300      |
+
+Observe that $SD(\hat{p})$ is largest when $\pi = 0.50$ and gets smaller as $\pi$ gets closer to either $0$ or $1$. We will revisit this idea when we get to confidence interval estimation in Chapter 3.
 
 
 ## Type of Sampling Matters!

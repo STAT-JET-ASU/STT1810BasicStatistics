@@ -1,6 +1,5 @@
 ---
 title: "Probability of a Perfect March Madness Bracket"
-subtitle: "Introduction to Statistical Investigations, 2^nd^ Edition"
 author: "Author: Jill E. Thomley // Appalachian State University"
 date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
 output: 
@@ -76,7 +75,9 @@ So what probability of choosing a game winner is implied by "if you know a littl
 *Currently, the best computer models guess right ~ 75% of the time.*
 
 
-## Guessing a Perfect Bracket
+## Model: Guessing a Perfect Bracket
+
+We can think of the tournament as another random process.
 
 What if someone is just randomly guessing the winner of every game? They would have a 50% chance of correctly choosing the winner of each game. If we assume the games are independent of each other, like flips of a coin...
 
@@ -90,7 +91,7 @@ For 67 games, it would be $(0.5)^{67}$&mdash;roughly $1$ in $147$ quintillion.
 
 ## Better than Guessing?
 
-What if somebody can do better than guessing? To simplify the model, we will assume their chance is the same for every game. What $\pi$ seems to equate to "know a little something"?
+What if a person can do better than guessing? To simplify our model, we will assume their chance is the same for every game. What $\pi$ matches with the NCAA's "know a little something"?
 
 | Single-Game        | Probability of Having a Perfect Bracket for 63 Games                                         |
 |:------------------:|:--------------------------------------------------------------------------------------------:|
@@ -109,6 +110,5 @@ If the 63 games are not all independent of one another, we can still calculate t
 
 What variables do you think might influence the probability that a given team wins their game against a given opponent?
 
-The longest verifiable streak of correct picks as of March 2023 (49 games---just into the Sweet 16) happened in 2019. What is the probability of that achievement?
-
+The longest verifiable streak of correct picks as of March 2023 (49 games---just into the Sweet 16) happened in 2019. What is the probability of that achievement? What assumptions do we have to make in order to model this scenario?
 

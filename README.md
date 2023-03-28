@@ -40,7 +40,7 @@ Tintle, N., Chance, B., Cobb, G., Rossman, A., Roy, S., Swanson, T., VanderStoep
 * [Section 3.1 Statistical Inference: Confidence Intervals](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CH3_1.html) (ioslides)
 * [Section 3.2 2SD Confidence Intervals for a Single Proportion](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CH3_2.html) (ioslides)
 
-**Extras**
+**Miscellaneous**
 
 * [Probability of a Perfect March Madness Bracket](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/PerfectBracketMM.html) (ioslides)
 

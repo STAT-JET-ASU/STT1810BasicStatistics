@@ -1,4 +1,13 @@
 # STT1810 Basic Statistics
+## @Appalachian State University
+
+### Catalogue Description
+
+An introduction to statistical problem solving. Topics include organization and presentation of data; measures of location, variation, and association; the normal distribution, sampling distributions, and statistical inference. Emphasis will be on conceptual understanding and interpretation of results rather than theoretical development. Statistical software will be utilized in the analysis of data and in the development of statistical and probabilistic concepts. STT 1810 is not open to students with credit for STT 2810, STT 2820, STT 3850, or STT 4811. (NUMERICAL DATA; COMPUTER)
+
+* When Offered: Fall; Spring
+* GEN ED: Quantitative Literacy
+* Prerequisite: MAT 1010 or higher.
 
 ### **Textbook**
 
@@ -24,6 +33,15 @@ Tintle, N., Chance, B., Cobb, G., Rossman, A., Roy, S., Swanson, T., VanderStoep
 
 **Chapter 02**
 
-TBA...
+* [Section 2.1 Sampling from a Finite Population: Proportions](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CH2_1.html) (ioslides)
+
+**Chapter 03**
+
+* [Section 3.1 Statistical Inference: Confidence Intervals](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CH3_1.html) (ioslides)
+* [Section 3.2 2SD Confidence Intervals for a Single Proportion](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CH3_2.html) (ioslides)
+
+**Miscellaneous**
+
+* [Probability of a Perfect March Madness Bracket](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/PerfectBracketMM.html) (ioslides)
 
 This material is released under an [Attribution-NonCommercial-ShareAlike 3.0 United States](https://creativecommons.org/licenses/by-nc-sa/3.0/us/) license. Original author: [Jill E. Thomley](https://jillthomley.github.io/)

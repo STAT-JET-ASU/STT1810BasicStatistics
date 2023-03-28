@@ -37,8 +37,8 @@ Tintle, N., Chance, B., Cobb, G., Rossman, A., Roy, S., Swanson, T., VanderStoep
 
 **Chapter 03**
 
-* [Section 3.1 Statistical Inference: Confidence Intervals](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CH3.1.html) (ioslides)
-* [Section 3.2 2SD Confidence Intervals for a Single Proportion](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CH3.2.html) (ioslides)
+* [Section 3.1 Statistical Inference: Confidence Intervals](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CH3_1.html) (ioslides)
+* [Section 3.2 2SD Confidence Intervals for a Single Proportion](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CH3_2.html) (ioslides)
 
 TBA...
 

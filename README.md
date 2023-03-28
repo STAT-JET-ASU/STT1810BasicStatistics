@@ -6,7 +6,7 @@ An introduction to statistical problem solving. Topics include organization and 
 
 * When Offered: Fall; Spring
 * GEN ED: Quantitative Literacy
-* Prerequisite: MAT 1010 or higher. (ND Prerequisite: passing the math placement test or successful completion of MAT 0010.)
+* Prerequisite: MAT 1010 or higher.
 
 ### **Textbook**
 

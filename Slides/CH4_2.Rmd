@@ -43,7 +43,7 @@ knitr::include_graphics("images/sixstepsfourpillars.png", dpi = 100)
 
 * We addressed the *size* of an effect (estimation) in Chapter 3.
 
-* Chapter 4 introduces the idea of *causation*, the last of the four pillars. 
+* <div style = "border-width:2px; border-style:solid;">Chapter 4 introduces the idea of **causation**, the last of the four pillars.</div>
 
 :::
 
@@ -200,3 +200,4 @@ knitr::include_graphics("images/fig_04_02_03.jpg", dpi = 120)
 ```
 
 A “randomized, double-blind, placebo controlled experiment” is considered by some to be the gold standard in scientific studies.
+

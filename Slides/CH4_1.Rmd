@@ -174,19 +174,18 @@ ggplot(df, aes(x = group, y = nearsighted * 100)) +
 ```
 
 
-
 ## Alternative Explanation #1
 
-A *confounding varible* is related to the explanatory and response variables in such a way that its effects on the response variable cannot be separated from those of the explanatory variable. In this case, myopia is often inherited from parents (so *genetics* is a possible confound). Maybe these parents are also more likely to use a room light or a night light for their kids.
-
 ```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("images/fig_04_01_01.jpg", dpi = 150)
+knitr::include_graphics("images/fig_04_01_01.jpg", dpi = 120)
 ```
+
+Mopia is often inherited from parents (so *genetics* is a possible confound). Maybe parents who are nearsighted are more likely to use a room light or a night light for their kids.
 
 
 ## Alternative Explanation #2
 
-This is an observational study; we will revisit this term in Section 4.2. The researcher did not decide which children would sleep in which levels of light. Thus, even if we find an association, it does not prove that a *cause and effect* relationship exists. It could be that the direction of the relationship is actually the *opposite* of what we first expect.
+This is an observational study; we will revisit this term in Section 4.2. The researcher did not decide which children would sleep in which levels of light. Thus, even if we find an association, it does not prove that a ***cause and effect*** relationship exists. We might even find that the direction of the relationship is the *opposite* of what we first expect.
 
 In this case, maybe children who are already developing myopia (i.e., starting to get nearsighted) are more likely to want to sleep with some kind of light in their rooms. 
 

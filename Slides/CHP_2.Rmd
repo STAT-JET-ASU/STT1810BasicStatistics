@@ -131,7 +131,7 @@ If two or more observations share the same value, which is very common, the dots
 ***Example:*** The dotplot below shows the final exam scores for 93 statistics students. What were the lowest and highest scores?
 
 ```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("https://stat-jet-asu.github.io/Moodlepics/dotplot.jpg")
+knitr::include_graphics("https://stat-jet-asu.github.io/Moodlepics/glossary/dotplot.jpg")
 ```
 
 
@@ -144,7 +144,7 @@ The y-axis shows the count of data points in each bin (height of the bars). Ever
 ***Example:*** Histogram of the final exam scores. What is the shape?
 
 ```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("https://stat-jet-asu.github.io/Moodlepics/histogram.png")
+knitr::include_graphics("https://stat-jet-asu.github.io/Moodlepics/glossary/histogram.png")
 ```
 
 

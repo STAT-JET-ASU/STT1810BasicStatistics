@@ -43,7 +43,7 @@ knitr::include_graphics("images/sixstepsfourpillars.png", dpi = 100)
 
 * We addressed the *size* for an effect (**estimation**) in Chapter 3. ✔ ***Great job!***
 
-* <div style = "border-width:2px; border-style:solid;">Chapter 4 introduces the idea of **causation**, the last of the four pillars.</div>
+* &#187; Chapter 4 introduces the idea of **causation**, the last of the four pillars. &#171;
 
 :::
 
@@ -75,14 +75,25 @@ In this chapter, you will learn to:
 
 **associated:** two variables are associated or related to each other if the distribution of one variable is different across the values of the other variable
 
+***Example:*** In the game of Monopoly, as you move around the four sides of the board from Go, each side has higher prices than the preceding side. Side and price are associated.
+
 **explanatory variable:** if the alternative hypothesis is true, this is the variable that explains changes in the response variable (also known as the **independent** / **predictor variable**). 
+
+***Example:*** In Example P.2, we explored the duration (in minutes) of Super Bowl national anthem performances. We considered other variables like gender and musical genre to try to explain observed differences in performance lengths.
+
+
+##
 
 **response variable:** if the alternative hypothesis is true, this is the variable that is impacted by the explanatory variable (also known as the **dependent variable**)
 
+***Example:*** In Example P.2, the response variable is performance length. This variable may depend on a number of other factors, like the gender of the singer, the musical genre, the year of the performance, or whether it is a solo/group performance.
+
 **confounding variable:** a variable that is related to both the explanatory and response variables in such a way that its effects on the response variable cannot be separated from those of the explanatory variable
 
+*We will see examples of confounding variables on upcoming slides.*
 
-## Uncovering Relationships
+
+## Uncovering Associations
 
 Alternative definition: two variables are *associated* (or related) if the value of one variable gives you information about the value of the other variable. When comparing groups, the proportions or means of one variable (*response variable*) are different within different groups (*categories of the independent variable*).
 

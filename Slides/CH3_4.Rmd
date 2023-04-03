@@ -37,13 +37,13 @@ knitr::include_graphics("images/sixstepsfourpillars.png", dpi = 100)
 
 ::: {}
 
-* From Section P.1. The four pillars of inference are (in short form): *strength*, *size*, *breadth*, and *cause*.
+* We addressed *strength* of evidence (**significance**) in Chapter 1. ✔ ***Good job!***
 
-* We addressed *strength* of evidence with significance tests in Chapter 1.
+* We will discuss *breadth* of results (**generalization**) in Chapter 2. ✔ ***Good job!***
 
-* We addressed the  *breadth* of results in Chapter 2.
+* &#187; We will learn about *size* for an effect (**estimation**) in Chapter 3. &#171;
 
-* We will explore the *size* of an effect with estimation / confidence intervals in Chapter 3.
+* Chapter 4 will introduce the idea of **causation**, the last of the four pillars. 
 
 :::
 
@@ -65,7 +65,7 @@ In this chapter, you will learn to:
 
 ## Learning Goals for Section 3.4
 
-In Sections 3.1 and 3.2 you explored some different confidence intervals strategies. Despite using different methods, the results was interpreted the same way. Section 3.4 explores how sample characteristics can influence confidence interval *width*. 
+In Sections 3.1 and 3.2 you explored some different confidence intervals strategies. Despite using different methods, the results was interpreted the same way. Section 3.4 explores how sample characteristics can influence confidence interval ***width***. 
 
 <hr>
 

@@ -37,13 +37,13 @@ knitr::include_graphics("images/sixstepsfourpillars.png", dpi = 100)
 
 ::: {}
 
-* We will address *strength* of evidence (significance) in Chapter 1.
+* &#187; We will address *strength* of evidence (**significance**) in Chapter 1. &#171;
 
-* We will discuss *breadth* of results (generalization) in Chapter 2.
+* We will discuss *breadth* of results (**generalization**) in Chapter 2.
 
-* We will learn about *size* of an effect (estimation) in Chapter 3.
+* We will learn about *size* for an effect (**estimation**) in Chapter 3.
 
-* Chapter 4 will introduce the idea of *causation*, the last of the four pillars. 
+* Chapter 4 will introduce the idea of **causation**, the last of the four pillars. 
 
 :::
 

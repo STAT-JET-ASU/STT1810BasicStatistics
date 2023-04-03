@@ -37,13 +37,13 @@ knitr::include_graphics("images/sixstepsfourpillars.png", dpi = 100)
 
 ::: {}
 
-* We addressed *strength* of evidence (significance) in Chapter 1.
+* We addressed *strength* of evidence (**significance)** in Chapter 1. ✔ ***Great job!***
 
-* We addressed the  *breadth* of results (generalization) in Chapter 2.
+* We addressed the  *breadth* of results (**generalization**) in Chapter 2. ✔ ***Great job!***
 
-* We addressed the *size* of an effect (estimation) in Chapter 3.
+* We addressed the *size* for an effect (**estimation**) in Chapter 3. ✔ ***Great job!***
 
-* Chapter 4 introduces the idea of *causation*, the last of the four pillars. 
+* <div style = "border-width:2px; border-style:solid;">Chapter 4 introduces the idea of **causation**, the last of the four pillars.</div>
 
 :::
 
@@ -73,18 +73,18 @@ In this chapter, you will learn to:
 
 ## Section 4.1 New Vocabulary
 
-* **associated:** two variables are associated or related to each other if the distribution of one variable is different across the values of the other variable
+**associated:** two variables are associated or related to each other if the distribution of one variable is different across the values of the other variable
 
-* **explanatory variable:** if the alternative hypothesis is true, this is the variable that explains changes in the response variable (also known as the **independent** / **predictor variable**). 
+**explanatory variable:** if the alternative hypothesis is true, this is the variable that explains changes in the response variable (also known as the **independent** / **predictor variable**). 
 
-* **response variable:** if the alternative hypothesis is true, this is the variable that is impacted by the explanatory variable (also known as the **dependent variable**)
+**response variable:** if the alternative hypothesis is true, this is the variable that is impacted by the explanatory variable (also known as the **dependent variable**)
 
-* **confounding variable:** a variable that is related to both the explanatory and response variables in such a way that its effects on the response variable cannot be separated from those of the explanatory variable
+**confounding variable:** a variable that is related to both the explanatory and response variables in such a way that its effects on the response variable cannot be separated from those of the explanatory variable
 
 
 ## Uncovering Relationships
 
-Alternative definition: two variables are *associated* (or related) if the value of one variable gives you information about the value of the other variable. When comparing groups, the proportions (or means) of one variable (e.g., the proposed response variable) are different within different groups (e.g., different categories of the independent variable).
+Alternative definition: two variables are *associated* (or related) if the value of one variable gives you information about the value of the other variable. When comparing groups, the proportions or means of one variable (*response variable*) are different within different groups (*categories of the independent variable*).
 
 <hr>
 
@@ -93,6 +93,7 @@ The association/relationship we are trying to study...
 ```{r, echo = FALSE, fig.align="center"}
 knitr::include_graphics("images/confound01.png", dpi = 100)
 ```
+<br><div style = "text-align: center; font-size: 18px;">Image from [*Statology: What is a Confounding Variable?*](https://www.statology.org/confounding-variable/) by Zach Bobbitt <div>
 
 
 ## Confounding: Alternative Explanation
@@ -101,6 +102,15 @@ Does regular exercise reduce blood pressure? An example of a confounding variabl
 
 ```{r, echo = FALSE, fig.align="center"}
 knitr::include_graphics("images/confound02.png", dpi = 200)
+```
+
+
+## Confounding: Another Example
+
+Does eating ice cream cause a person to be more vulnerable to shark attack? I really hope not... 😬
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("images/confound03.png", dpi = 111)
 ```
 
 
@@ -116,7 +126,7 @@ Myopia, or nearsightedness, typically develops during childhood years. Is there 
 
 ## The Observed Data
 
-We can display the study data in a *contingency table*. This shows the number of children who fall into each combination of the two variables; for example, nearsighted *and* slept in darkness. We can also see the total for each variable alone in the *margins* of the table (far right column and bottom row).
+We can display the study data in a *contingency table*. This shows the number of children who are grouped into each combination of the two variables; for example, who are nearsighted *and* slept in darkness. We can also see the total for each variable alone in the *margins* of the table (far right column and bottom row).
 
 
 |                 | Darkness | Night Light | Room Light |    Total |
@@ -144,9 +154,30 @@ We can calculate percentages of children with nearsightedness *conditional* on t
 There is higher percentage of nearsighted children among those using a room light (54.7%) or with a night light (33.6%) compared to children who slept in darkness (10.5%). The variables (amount of light and eye condition) are *associated*---probability of having myopia is different for the three amounts of light.
 
 
+## Visualize the % of Nearsighted Children
+
+```{r echo = FALSE}
+library(tidyverse)
+df <- tibble(
+  group = c("Darkness", "Night Light", "Room Light"),
+  nearsighted = c(0.105, 0.336, 0.547)
+)
+ggplot(df, aes(x = group, y = nearsighted * 100)) +
+  geom_col(width = 0.75, fill = "lightblue", color = "darkgray") +
+  geom_hline(yintercept = 0) +
+  scale_y_continuous(breaks = seq(0, 100, 5)) +
+  theme_minimal() +
+  labs(title = "Association Between Nightlights and Myopia",
+    x = "amount of light in the bedroom",
+    y = "% of children who are nearsighted"
+  )
+```
+
+
+
 ## Alternative Explanation #1
 
-A *confounding varible* is related to the explanatory and response variables in such a way that its effects on the response variable cannot be separated from those of the explanatory variable. In this case, myopia is often inherited from parents (so **genetics** is a possible confound). Maybe these parents are also more likely to use a room light or a night light for their kids.
+A *confounding varible* is related to the explanatory and response variables in such a way that its effects on the response variable cannot be separated from those of the explanatory variable. In this case, myopia is often inherited from parents (so *genetics* is a possible confound). Maybe these parents are also more likely to use a room light or a night light for their kids.
 
 ```{r, echo = FALSE, fig.align="center"}
 knitr::include_graphics("images/fig_04_01_01.jpg", dpi = 150)
@@ -155,7 +186,7 @@ knitr::include_graphics("images/fig_04_01_01.jpg", dpi = 150)
 
 ## Alternative Explanation #2
 
-This is an observational study (we will see this again in Section 4.2) with data taken after the fact. That means that even if we find an association, it does not mean there is *cause and effect*. The direction of the relationship might even be the opposite of what we first expect.
+This is an observational study; we will revisit this term in Section 4.2. The researcher did not decide which children would sleep in which levels of light. Thus, even if we find an association, it does not prove that a *cause and effect* relationship exists. It could be that the direction of the relationship is actually the *opposite* of what we first expect.
 
 In this case, maybe children who are already developing myopia (i.e., starting to get nearsighted) are more likely to want to sleep with some kind of light in their rooms. 
 

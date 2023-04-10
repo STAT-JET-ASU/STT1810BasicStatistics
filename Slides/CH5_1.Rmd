@@ -76,43 +76,156 @@ In this chapter, you will learn to:
 
 * cells
 * conditional proportion
+* increased risk*
 * mosaic plot
 * no association
-* relative risk
+* odds / odds ratio*
+* relative risk*
 * segmented bar graph
 * two by two (2 × 2) table
 * two-way table
+
+(*) Expanded from the textbook presentation
 
 
 ##
 
 **two-way table:** a tabular summary of two categorical variables, also called a contingency table
 
-**cells:** entries in a two-way table
+**cells:** the individual entries in a two-way table that show where the two variables intersect (not the row and column totals)
 
 **two by two (2 × 2) table:** a two-way table where the explanatory and response variables each have two categories
 
-**conditional proportion:** proportion of successes for a given category of the explanatory variable
-
-**relative risk:** the ratio of conditional proportions that indicates how many times greater the risk of an outcome is for one group compared to another group
+**conditional proportion:** the proportion of successes for a given category of the explanatory variable, or its **probability**; in some contexts (e.g., health care literature) this value may be called the **absolute risk** for the given category
 
 **no association:** a general statement of the null hypothesis when two or more variables are involved, indicating that two variables are not related to each other
 
 
-## 
+##
 
-**segmented bar graph:** a type of graph display for conditional proportions from a two-way table, with equal-width rectangles totaling 100% for each category of the independent variable, divided by the conditional proportions of the response variable
+**segmented bar graph:** a type of graph display for conditional proportions from a two-way table, with equal-width rectangles totaling 100% for each category of the independent variable, divided by the conditional proportions for the categories of the response variable
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("images/titanicsurvival01.png", dpi = 230)
+```
+
+<div style = "font-size: 18px; text-align: center;">Survival Rates for Titanic Passengers by Sex</div>
+
+
+##
+
+An example with three variables...
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("images/titanicsurvival02.png", dpi = 175)
+```
+
+<div style = "font-size: 18px; text-align: center;">Survival Rates for Titanic Passengers by Sex and Class</div>
+
+
+##
 
 **mosaic plot:** a segmented bar plot where the widths of the bars are proportional to the sample size
 
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("images/titanicsurvival03.png", dpi = 230)
+```
 
-## Example 5.1 Buckling Up?
+<div style = "font-size: 18px; text-align: center;">Survival Rates for Titanic Passengers by Sex</div>
 
-**TBA!**
+<br>
+
+There were more male than female passengers aboard Titanic.
+
+
+## 
+
+**relative risk:** the ratio of conditional proportions that indicates how many times greater the risk of an outcome is for one group compared to another group (also sometimes called **risk ratio**)
+
+$$RR = \frac{\text{proportion (risk) in explanatory category 2}}{\text{proportion (risk) in explanatory category 1}}$$
+
+***Example:*** Consider the incidence of oral cancer among smokers and non-smokers (smoking or not is the explanatory variable).
+
+|Oral Cancer? | Non-Smoker | Smoker     |
+|-------------|:----------:|:----------:|
+| Yes         | 27 (23%)   | 484 (56%)  |
+| No          | 90 (77%)   | 385 (44%)  |
+| Total       | 117 (100%) | 869 (100%) |
+
+
+##
+
+We can calculate the relative risk or risk ratio.
+
+$$RR = \frac{\text{oral cancer risk for smokers}}{\text{oral cancer risk for non-smokers}} = \frac{0.56}{0.23} = 2.43$$
+
+According to the data, people who smoke are 2.43 times as likely to develop oral cancer as people who do not smoke.
+
+$$RR = \frac{\text{oral cancer risk for non-smokers}}{\text{oral cancer risk for smokers}} = \frac{0.23}{0.56} = 0.41$$
+
+The decimal value 0.41 is about 2/5, so we can say non-smokers are about two-fifths as likely to develop oral cancer as smokers.
+
+These are equivalent expressions, but the first version might be more understandable. We just need to be clear how the groups are being compared when stating risk ratios.
 
 
 
+## 
+
+**percent increased risk:** this quantity re-expresses the absolute difference in risks as a fraction of the "baseline" risk
+
+$$\%IR = \frac{\text{risk in category 2 - risk in category 1}}{\text{risk in category 1}} \times 100\%$$
+
+We can also write this as a function of relative risk. First...
+
+$$= \bigg( \frac{\text{risk in category 2}}{\text{risk in category 1}} - \frac{\text{risk in category 1}}{\text{risk in category 1}} \bigg) \times 100\%$$
+
+Which simplifies to...
+
+$$\%IR = (RR - 1) \times 100\%$$
+
+***Example:*** Revisit the incidence of oral cancer among smokers and non-smokers (smoking or not is the explanatory variable).
 
 
+##
+
+If we let non-smokers be category 1...
+
+$$\%IR = \frac{0.56 - 0.23}{0.23} \times 100\% = 143\%$$
+
+The percent *change* or *increase* in the risk of oral cancer is 143% for smokers as compared to non-smokers (i.e., the risk went up by 143% of the original 23% probability; 23% + 1.43(23%) = 56%). 
+
+What if we reverse the two groups?
+
+$$\%IR = \frac{0.23 - 0.56}{0.56} \times 100\% = -59\%$$
+
+A negative percent increased risk is a *decrease*. This should make sense---the risk of oral cancer is decreased if someone does *not* smoke, relative to smokers. In this case, risk decreases by more than half, from 56% to 23%.
+
+
+##
+
+**odds:** odds is similar to probability (risk), except that instead of looking at the fraction of times an event occurs out of the whole, odds is a ratio of how often an event happens versus how often it does not happen
+
+***Example 1:*** The odds of getting a head versus a tail on a coin flip are 1:1 (for every 1 time a head occurs, we would expect 1 tail)
+
+***Example 2:*** The odds of rolling 6 on a standard die are 1:5, since there are five outcomes that are not a 6 (1, 2, 3, 4, 5)
+
+***Example 3:*** In the oral cancer example, odds of a smoker getting oral cancer are 484 to 385. If we divide both sides by the smaller number, the odds are about 1.26 to 1 --- for every 1 smoker who does not get oral cancer, about 1.26 will.
+
+For the non-smokers, odds of getting cancer are 27 to 90 or 1 to 3.33. For every 1 nonsmoker who gets cancer, 3.33 will not.
+
+
+##
+
+**odds ratio:** odds ratio is similar to risk ratio, except using odds instead of risks; the odds are expressed as fractions in this case
+
+$$OR = \frac{\text{odds in explanatory category 2}}{\text{odds in explanatory category 1}}$$
+
+***Example:*** What is the odds ratio of oral cancer among smokers versus nonsmokers?
+
+$$OR = \frac{\text{yes for smokers}/\text{no for smokers}}{\text{yes for non-smokers}/\text{no for non-smokers}}$$
+
+$$= \frac{484/385}{\text{27/90}} = 4.2$$
+
+The odds of oral cancer among smokers is 4.2 times the odds of oral cancer among non-smokers.
 
 

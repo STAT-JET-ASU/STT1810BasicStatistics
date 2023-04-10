@@ -143,7 +143,7 @@ So for every 100 people observed wearing seat belts in 2008, we would see an *ad
 
 We can also talk about increased risk, which is the difference in the two conditional proportions, which we computed earlier, as a fraction of the starting (or baseline) proportion.
 
-$$\%IR = \frac{\text{Proportion in 2018 - Proportion in 2008}}{\text{Proportion in 2008}} \times 100\%$$
+$$\%IR = \frac{\text{proportion in 2018 - proportion in 2008}}{\text{proportion in 2008}} \times 100\%$$
 
 Alternatively...
 

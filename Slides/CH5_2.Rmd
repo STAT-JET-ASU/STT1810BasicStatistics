@@ -75,33 +75,11 @@ In Section 5.2 we are using all our statistical knowledge gained in Chapters 1 t
 
 ##
 
-* Use the [ISI Two Proportions Applet](https://www.rossmanchance.com/applets/2021/chisqshuffle/ChiSqShuffle.htm) to conduct a simulation of the null hypothesis and be able to read the applet output.
+* Use the [ISI Two Proportions applet](http://www.isi-stats.com/isi2nd/ISIapplets2021.html) to conduct a simulation of the null hypothesis and be able to read the applet output.
 * Find and interpret the standardized statistic and the *p*-value for a test of two proportions.
 * Use the 2SD method to find a 95% confidence interval for the difference in long-run proportion of success for two “treatment” groups, and interpret the interval in the context of the study.
 * Interpret what it means for the 95% confidence interval for difference in proportions to contain zero.
 * State a complete conclusion about the alternative hypothesis (and null hypothesis) based on the *p*-value and/or standardized statistic and the study design, including statistical significance, estimation (confidence interval), generalizability, and causation.
-
-
-## Review Section 5.1 Vocabulary
-
-**two-way table:** a tabular summary of two categorical variables, also called a contingency table
-
-**cells:** entries in a two-way table
-
-**two by two (2 × 2) table:** a two-way table where the explanatory and response variables each have two categories
-
-**conditional proportion:** the proportion of successes for a given category of the explanatory variable
-
-**relative risk:** the ratio of conditional proportions that indicates how many times greater the risk of an outcome is for one group compared to another group
-
-
-##
-
-**no association:** a general statement of the null hypothesis when two or more variables are involved, indicating that two variables are not related to each other
-
-**segmented bar graph:** a type of graph display for conditional proportions from a two-way table, with equal-width rectangles totaling 100% for each category of the independent variable, divided by the conditional proportions of the response variable
-
-**mosaic plot:** a segmented bar plot where the widths of the bars are proportional to the sample size
 
 
 ## Section 5.2 New Vocabulary
@@ -199,7 +177,7 @@ Since the groups are equally sized ($n = 15$ each), the barplot and mosaic plot 
 
 ## Draw Inferences
 
-We can use the [ISI Two-Proportion Applet](https://www.rossmanchance.com/applets/2021/chisqshuffle/ChiSqShuffle.htm?dolphins=1) to obtain a simulated *p*-value. The two groups are shuffled together and randomly re-divided between the two treatment groups. From the regrouped data we recalculate the statistic to get a null distribution. Where would the observed statistic be on this plot?
+We can use the [ISI Two-Proportion applet](http://www.isi-stats.com/isi2nd/ISIapplets2021.html) to obtain a simulated *p*-value. The two groups are shuffled together and randomly re-divided between the two treatment groups. From the regrouped data we recalculate the statistic to get a null distribution. Where would the observed statistic be on this plot?
 
 ```{r, echo = FALSE, fig.align="center"}
 knitr::include_graphics("images/fig_05_02_05.jpg", dpi = 120)

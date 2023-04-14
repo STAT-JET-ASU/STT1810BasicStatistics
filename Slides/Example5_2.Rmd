@@ -1,0 +1,230 @@
+---
+title: "STT1810 --- Example 5.2<br>Swimming with Dolphins"
+subtitle: "Introduction to Statistical Investigations, 2^nd^ Edition"
+author: "Author: Jill E. Thomley // Appalachian State University"
+date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
+output: 
+  ioslides_presentation:
+    logo: images/logoASU.jpg
+---
+
+```{r global_options, include = FALSE}
+knitr::opts_chunk$set(
+  message = FALSE,
+  warning = FALSE,
+  comment = NA
+)
+```
+
+
+## The Spiral Approach to Investigation
+
+:::::: {style="display: flex;"}
+
+::: {}
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("images/sixstepsfourpillars.png", dpi = 100)
+```
+
+:::
+
+::: {}
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+:::
+
+::: {}
+
+* Statistical investigations typically include these six steps in some form. 
+
+* These six steps may not always be followed in this exact order, but a good statistical investigation will go through all these steps before completion.
+
+* The findings of one study typically will generate new research questions; that's how science works!
+
+:::
+
+::::
+
+
+## STEP 1: Ask a Research Question
+
+[Dolphin-assisted therapy (DAT)](https://en.wikipedia.org/wiki/Swimming_with_dolphins) has been around since roughly the late seventies. Proponents of DAT claim that interacting with dolphins can help treat mental and physical disorders in people, but there is limited scientific evidence to back up its supposed benefits. 
+
+At least one [animal welfare organization](https://awionline.org/content/swim-attractions-dolphin-assisted-therapy) is a strong opponent, claiming that "DAT proponents foster an unproven belief that touching and being close to a dolphin has unique motivational or healthful powers, although studies show that such claims are without scientific merit."
+
+<hr>
+
+**Research Question:** Is swimming with dolphins therapeutic for patients suffering from clinical depression?
+
+
+## STEP 2: Design a Study / Collect Data
+
+
+
+
+
+## Additional Study Information
+
+* **study type:** randomized experiment (*possibly single blind*)
+
+* **experimental units:** 30 recruited subjects aged 18–65 with a clinical diagnosis of mild to moderate depression
+
+* **explanatory variable (treatment groups):** (1) one hour of swimming/snorkling each day *with* bottlenose dolphins, or <br>(2) one hour of swimming/snorkling each day *without* any dolphins (control group); binary categorical
+
+* **response variable:** whether or not the participants achieved substantial reduction (i.e., improvement) in their depression symptoms, coded as yes or no; binary categorical
+
+* **sample size:** 30 total, with $n_{dolphin}$ = 15 and $n_{control}$ = 15
+
+
+## The Hypotheses: Two Expressions
+
+**Using the association language of Chapter 4...**
+
+* Ho: Presence of dolphins does not help (i.e., whether or not someone swims with dolphins has *no association* with their depression symptoms).
+* Ha: Presence of dolphins helps (i.e., there *is an association* and swimming with dolphins will increase the probability of substantial improvement in depression symptoms).
+
+<hr>
+
+Hypotheses expressed in this form generally would be assessed with a procedure called a $\chi^2$ (chi-square) test, which is covered in Chapter 8 of the textbook. That test can compare two *or more* proportions---two-way tables that are larger than 2 x 2.
+
+
+##
+
+**Using parameters, as in Chapter 1 and Chapter 3...**
+
+State hypotheses in words, based on the research question.
+
+* Ho: probability of improvement after swimming with dolphins is the same as without dolphins.
+* Ha: Probability of improvement after swimming with dolphins is greater than without dolphins.
+
+<hr>
+
+Now define two parameters in the context of the problem.
+
+* $\pi_\text{control}$ = the probability of significant improvement after not swimming with dolphins
+
+* $\pi_\text{dolphin}$ = the probability of significant improvement after swimming with dolphins
+
+
+## Stating the Hypotheses With Symbols
+
+As before, we can convert the words to symbols.
+
+$$H_0: \pi_\text{dolphin} = \pi_\text{control}$$
+
+$$H_a: \pi_\text{dolphin} > \pi_\text{control}$$
+
+We are really interested in the *difference* between the groups, so the hypotheses can be expressed as a mathematical difference. Algebraically, subtract $\pi_\text{control}$ from both sides, and we get...
+
+$$H_0: \pi_\text{dolphin} - \pi_\text{control} = 0$$
+
+$$H_a: \pi_\text{dolphin} - \pi_\text{control} > 0$$
+
+The observed statistic for this test will be ($\hat{p}_\text{dolphin} - \hat{p}_\text{control}$).
+
+
+## STEP 3: Explore the data.
+
+Compute conditional proportions of those who demonstrated a "substantial improvement" in symptoms after two weeks, within each treatment group.
+
+| Substantial improvement? | Dolphin     | Control     | Total       |
+|--------------------------|:-----------:|:-----------:|:-----------:|
+| Yes                      | 10 (66.67%) |  3 (20.00%) | 13 (43.33%) |
+| No                       |  5 (33.33%) | 12 (80.00%) | 17 (56.67%) |
+| Total                    | 15 (100%)   | 15 (100%)   | 30 (100%)   |
+
+<br>
+
+$$\hat{p}_\text{dolphin} - \hat{p}_\text{control} = 0.6667 - 0.2000 = 0.4667$$
+
+
+## Visualize with a Barplot
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("images/fig_05_02_01.jpg", dpi = 80)
+```
+
+Since the groups are equal in size ($n = 15$ each), a barplot and a mosaic plot would be essentially the same.
+
+
+## STEP 4: Draw Inferences
+
+We can use the [ISI Two-Proportion applet](http://www.isi-stats.com/isi2nd/ISIapplets2021.html) to obtain a simulated *p*-value. The two groups are shuffled together and randomly re-divided between the two treatment groups. From the regrouped data we recalculate the statistic to get a null distribution. Where would the observed statistic be on this plot?
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("images/fig_05_02_05.jpg", dpi = 120)
+```
+
+
+## Assess Statistical Significance
+
+Recall our guidelines for *p*-values from Section 1.2.
+
+| Magnitude               | Guideline for Inference                                        |
+|-------------------------|----------------------------------------------------------------|
+| *p*-value > 0.10        | not much evidence against the null hypothesis; Ho is plausible |
+| 0.05 < *p*-value ≤ 0.10 | moderate evidence against the null hypothesis                  |
+| 0.01 < *p*-value ≤ 0.05 | strong evidence against the null hypothesis                    |
+| *p*-value ≤ 0.01        | very strong evidence against the null hypothesis               |
+
+<br>
+
+In the text, there were 13 simulated differences $\ge$ 0.4667, so the *p*-value is 0.013, which provides strong evidence against $H_0$.
+
+
+## 
+
+$$\text{z-score} = \frac{\text{stat} - \text{mean of null dist.}}{\text{SD of null dist.}} = \frac{0.4667 - 0}{0.185} = 2.52$$
+
+The standardized score also yields strong evidence against $H_0$.
+
+<hr>
+
+Recall our guidelines for z-scores from Section 1.3.
+
+| Magnitude                | Guideline for Inference                       |
+|--------------------------|-----------------------------------------------|
+| between -1.5 and +1.5    | not much evidence against Ho; Ho is plausible |
+| below -1.5 or above +1.5 | moderate evidence against Ho                  |
+| below -2.0 or above +2.0 | strong evidence against Ho                    |
+| below -3.0 or above +3.0 | very strong evidence against Ho               |
+
+
+## Estimate Magnitude of Difference
+
+We can estimate the magnitude of the difference between two parameters with a confidence interval. Recall what we learned in Section 3.2, with a little modification for this scenario...
+
+$$\text{95% CI} = (\hat{p}_1 - \hat{p}_2)  \pm 2 \times SD(\hat{p}_1 - \hat{p}_2)$$
+
+Use the difference in sample proportions 0.4667 and simulated SD of the difference between sample proportions, 0.185.
+
+$$0.4667 \pm 2 \times 0.185 = 0.4667 \pm 0.370$$
+
+We are 95% confident that the estimated interval (0.097, 0.837) captures the true value of $\pi_\text{dolphin} - \pi_\text{control}$.
+
+Notice that zero is *not* within the interval. This is consistent with rejecting Ho. Zero is not a plausible value for the difference.
+
+
+## STEP 5: Formulate Conclusions
+
+Recall --- In Section 4.2 we learned about how random selection and random assignment influence conclusions about cause and effect and generalization for a given study.
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("images/fig_04_02_03.jpg", dpi = 105)
+```
+
+
+## Discussion of Findings
+
+This study was a randomized experiment and the data provided strong evidence against the null hypothesis, so we can conclude that swimming with dolphins caused a significant improvement in depression symptoms. 
+
+The magnitude of the difference in the probability of patients showing significant improvement is somewhere between 9.7% and 83.7%. *To get a narrower interval, we'd need more data.*
+
+We can also compute the relative risk, which is $\frac{0.6667}{0.2000} = 3.33$.
+
+Participants in the dolphin therapy treatment group were 3.33 times as likely to improve as control subjects.
+
+However, participants were not randomly selected, so we would be limited in our ability to generalize these results.
+

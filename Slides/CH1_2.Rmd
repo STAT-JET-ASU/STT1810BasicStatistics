@@ -65,7 +65,7 @@ We will *not* be covering Section 1.5, which discusses the theory-based approach
 * Use appropriate symbols for parameter and statistic.
 * State the null and the alternative hypotheses in words and in terms of the symbol $\pi$, the long-run proportion.
 * Explain how to conduct a simulation using a null hypothesis probability that is not 50-50.
-* Use the [ISI One Proportion Applet](http://www.isi-stats.com/isi2nd/ISIapplets2021.html) to obtain the *p*-value after carrying out an appropriate simulation.
+* Use the [ISI One Proportion applet](http://www.isi-stats.com/isi2nd/ISIapplets2021.html) to obtain the *p*-value after carrying out an appropriate simulation.
 * Anticipate the null distribution's center and how it changes based on using proportion or count as the statistic.
 * Interpret the *p*-value and explain why a smaller *p*-value provides stronger evidence against the null hypothesis.
 * State a conclusion about the alternative hypothesis and null hypothesis based on the *p*-value.

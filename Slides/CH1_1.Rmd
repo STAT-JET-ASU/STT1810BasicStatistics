@@ -64,7 +64,7 @@ We will *not* be covering Section 1.5, which discusses the theory-based approach
 
 * Recognize the difference between parameters and statistics.
 * Describe how to use coin tossing to simulate outcomes from a chance model of a random choice between two events.
-* Use the [ISI One Proportion Applet](http://www.isi-stats.com/isi2nd/ISIapplets2021.html) to carry out a coin tossing simulation.
+* Use the [ISI One Proportion applet](http://www.isi-stats.com/isi2nd/ISIapplets2021.html) to carry out a coin tossing simulation.
 * Identify whether or not the results of a study are statistically significant and whether or not a chance model is a plausible explanation for the data.
 * Implement the 3S strategy: find a statistic, simulate results from a chance model, and determine strength of evidence.
 * Differentiate between saying a chance model is plausible and a chance model is the correct explanation for observed data (i.e., whether or not we have "proven" a result).

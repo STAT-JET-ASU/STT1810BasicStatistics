@@ -13,7 +13,7 @@ An introduction to statistical problem solving. Topics include organization and 
 
 Tintle, N., Chance, B., Cobb, G., Rossman, A., Roy, S., Swanson, T., VanderStoep, J. (2021). [***Introduction to Statistical Investigations, 2nd Edition***](http://www.isi-stats.com/isi/index2nd.html). John Wiley & Sons, Inc.
 
-### **Course Materials**
+### **Textbook-Related Materials**
 
 **Preliminaries**
 

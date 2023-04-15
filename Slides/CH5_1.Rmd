@@ -67,34 +67,49 @@ In this chapter, you will learn to:
 ## Learning Goals for Section 5.1
 
 * Organize counts into a two-way table, when data are available on two categorical variables for the same set of observational units.
+
 * Calculate conditional proportion of successes, for different categories of the explanatory variable, and use these conditional proportions to decide whether there is preliminary evidence of an association between the explanatory and response variables.
+
 * Create a segmented bar chart or mosaic plot to display data available on two categorical variables for the same set of observational units.
-* Calculate and interpret relative risk.
+
+* Calculate and interpret relative risk (also called risk ratio).
+
+
+## Added Learning Goals (Not in the Text)
+
+* Calculate and interpret percent increased risk.
+
+* Calculate and interpret odds.
+
+* Calculate and interpret odds ratio.
+
+I will provide supplemental material on these concepts. These plus relative risk are ways to express the relative magnitude of two conditional proportions.
+
+The terms relative risk, increased risk, odds, and odds ratio are commonly found in published research literature, especially in health care settings.
 
 
 ## Section 5.1 New Vocabulary
 
 * cells
 * conditional proportion
-* increased risk*
+* percent increased risk*
 * mosaic plot
 * no association
-* odds / odds ratio*
+* odds *
+* odds ratio*
 * relative risk*
 * segmented bar graph
 * two by two (2 × 2) table
 * two-way table
-
-(*) Expanded from the textbook presentation
 
 
 ##
 
 **two-way table:** a tabular summary of two categorical variables, also called a contingency table
 
-**cells:** the individual entries in a two-way table that show where the two variables intersect (not the row and column totals)
-
 **two by two (2 × 2) table:** a two-way table where the explanatory and response variables each have two categories
+
+**cells:** the individual entries in a two-way table that show where the two variables intersect (usually not including the row and column totals)
 
 **conditional proportion:** the proportion of successes for a given category of the explanatory variable, or its **probability**; in some contexts (e.g., health care literature) this value may be called the **absolute risk** for the given category
 
@@ -103,7 +118,7 @@ In this chapter, you will learn to:
 
 ##
 
-**segmented bar graph:** a type of graph display for conditional proportions from a two-way table, with equal-width rectangles totaling 100% for each category of the independent variable, divided by the conditional proportions for the categories of the response variable
+**segmented bar graph:** a type of graph display for conditional proportions from a two-way table, with equal-width rectangles totaling 1 (100%) for each category of the explanatory variable, split up by the conditional proportions for the categories of the response variable
 
 ```{r, echo = FALSE, fig.align="center"}
 knitr::include_graphics("images/titanicsurvival01.png", dpi = 230)
@@ -114,7 +129,7 @@ knitr::include_graphics("images/titanicsurvival01.png", dpi = 230)
 
 ##
 
-An example with three variables...
+An example with three variables: sex, survival, and ticket class.
 
 ```{r, echo = FALSE, fig.align="center"}
 knitr::include_graphics("images/titanicsurvival02.png", dpi = 175)
@@ -144,7 +159,7 @@ There were more male than female passengers aboard Titanic.
 
 $$RR = \frac{\text{proportion (risk) in explanatory category 2}}{\text{proportion (risk) in explanatory category 1}}$$
 
-***Example:*** Consider the incidence of oral cancer among smokers and non-smokers (smoking or not is the explanatory variable).
+***Example:*** Consider the incidence of oral cancer among a group of smokers and non-smokers (smoking = explanatory variable).
 
 |Oral Cancer? | Non-Smoker | Smoker     |
 |-------------|:----------:|:----------:|
@@ -159,7 +174,7 @@ We can calculate the relative risk or risk ratio.
 
 $$RR = \frac{\text{oral cancer risk for smokers}}{\text{oral cancer risk for non-smokers}} = \frac{0.56}{0.23} = 2.43$$
 
-According to the data, people who smoke are 2.43 times as likely to develop oral cancer as people who do not smoke.
+According to the data, those who smoke are 2.43 times as likely to develop oral cancer as those who do not smoke.
 
 $$RR = \frac{\text{oral cancer risk for non-smokers}}{\text{oral cancer risk for smokers}} = \frac{0.23}{0.56} = 0.41$$
 
@@ -198,7 +213,7 @@ What if we reverse the two groups?
 
 $$\%IR = \frac{0.23 - 0.56}{0.56} \times 100\% = -59\%$$
 
-A negative percent increased risk is a *decrease*. This should make sense---the risk of oral cancer is decreased if someone does *not* smoke, relative to smokers. In this case, risk decreases by more than half, from 56% to 23%.
+A negative percent increased risk is a *decrease*. This should make sense---the risk of oral cancer is decreased if someone does *not* smoke, relative to smokers. In this case, risk decreases by more than half, from 56% down to 23%.
 
 
 ##
@@ -207,7 +222,7 @@ A negative percent increased risk is a *decrease*. This should make sense---the 
 
 ***Example 1:*** The odds of getting a head versus a tail on a coin flip are 1:1 (for every 1 time a head occurs, we would expect 1 tail)
 
-***Example 2:*** The odds of rolling 6 on a standard die are 1:5, since there are five outcomes that are not a 6 (1, 2, 3, 4, 5)
+***Example 2:*** The odds of rolling 6 on a standard die are 1:5, since there are five outcomes that are not a 6 (i.e., 1 through 5)
 
 ***Example 3:*** In the oral cancer example, odds of a smoker getting oral cancer are 484 to 385. If we divide both sides by the smaller number, the odds are about 1.26 to 1 --- for every 1 smoker who does not get oral cancer, about 1.26 will.
 
@@ -220,7 +235,7 @@ For the non-smokers, odds of getting cancer are 27 to 90 or 1 to 3.33. For every
 
 $$OR = \frac{\text{odds in explanatory category 2}}{\text{odds in explanatory category 1}}$$
 
-***Example:*** What is the odds ratio of oral cancer among smokers versus nonsmokers?
+***Example:*** What is the odds ratio of oral cancer among smokers versus nonsmokers? Turn the yes/no values into fractions.
 
 $$OR = \frac{\text{yes for smokers}/\text{no for smokers}}{\text{yes for non-smokers}/\text{no for non-smokers}}$$
 
@@ -228,4 +243,33 @@ $$= \frac{484/385}{\text{27/90}} = 4.2$$
 
 The odds of oral cancer among smokers is 4.2 times the odds of oral cancer among non-smokers.
 
+
+## Interpreting Measures
+
+So what is a large relative risk, percent increased risk, odds, or odds ratio? *Let's explore...*
+
+<hr>
+
+Suppose the two probabilities being compared are the same. Let's choose 0.25 for both as an example.
+
+$$RR = \frac{\text{risk in explanatory category 2}}{\text{risk in explanatory category 1}} = \frac{0.25}{0.25} = 1$$
+
+When the two probabilities are the same, their risk ratio is 1 --- the probability in one group is one times the probability in the other group. 
+
+The more the probabilities differ, the farther the value will get from 1. Values can be between 0 and $\infty$; never negative.
+
+
+##
+
+$$\%IR = \frac{\text{risk2 - risk1}}{\text{risk1}} \times 100\% = \frac{.25 - .25}{.25} \times 100\% = 0\%$$
+
+If two probabilities are equal, there is zero increase or decrease. The largest possible decrease is $-100\%$ (when risk 2 = 0), while increase can technically be as large as $\infty$.
+
+<hr>
+
+$$OR = \frac{\text{odds in explanatory category 2}}{\text{odds in explanatory category 1}} = \frac{.25/.75}{.25/.75} = 1$$
+
+When the two probabilities are the same, their odds ratio is 1, as we saw with relative risk.
+
+Additionally, like relative risk, values for OR can range between 0 and $\infty$; never negative.
 

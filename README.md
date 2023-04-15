@@ -40,6 +40,18 @@ Tintle, N., Chance, B., Cobb, G., Rossman, A., Roy, S., Swanson, T., VanderStoep
 * [Section 3.1 Statistical Inference: Confidence Intervals](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CH3_1.html) (ioslides)
 * [Section 3.2 2SD Confidence Intervals for a Single Proportion](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CH3_2.html) (ioslides)
 
+**Chapter 04**
+
+* [Section 4.1 Association and Confounding](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CH4_1.html) (ioslides)
+* [Section 4.2 Observational Studies Versus Experiments](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CH4_2.html) (ioslides)
+
+**Chapter 05**
+
+* [Section 5.1 Comparing Two Groups: Categorical Response](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CH5_1.html) (ioslides)
+* [Example 5.1 Buckling Up?](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/Example5_1.html) (ioslides)
+* [Section 5.2 Comparing Two Proportions: Simulation-Based Approach](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CH5_2.html) (ioslides)
+* [Example 5.2 Swimming with Dolphins](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/Example5_2.html) (ioslides)
+
 **Miscellaneous**
 
 * [Probability of a Perfect March Madness Bracket](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/PerfectBracketMM.html) (ioslides)

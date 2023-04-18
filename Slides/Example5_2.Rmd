@@ -69,11 +69,11 @@ At least one [animal welfare organization](https://awionline.org/content/swim-at
 * At the end of two weeks, each subject’s level of depression was evaluated, as it had been at the beginning of the study. 
 
 
-## Additional Study Information
+## Brief Summary of Design
 
 * **study type:** randomized experiment (*possibly single blind*)
 
-* **experimental units:** 30 recruited subjects aged 18–65 with a clinical diagnosis of mild to moderate depression
+* **experimental units:** 30 recruited subjects (ages 18–65) with a clinical diagnosis of mild to moderate depression
 
 * **explanatory variable (treatment groups):** (1) one hour of swimming/snorkling each day *with* bottlenose dolphins, or <br>(2) one hour of swimming/snorkling each day *without* any dolphins (control group); binary categorical
 

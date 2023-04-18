@@ -13,11 +13,10 @@ An introduction to statistical problem solving. Topics include organization and 
 
 Tintle, N., Chance, B., Cobb, G., Rossman, A., Roy, S., Swanson, T., VanderStoep, J. (2021). [***Introduction to Statistical Investigations, 2nd Edition***](http://www.isi-stats.com/isi/index2nd.html). John Wiley & Sons, Inc.
 
-### **Course Materials**
+### **Textbook-Related Materials**
 
 **Preliminaries**
 
-* [Zener Card Class Activity](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/ESPZenerCards.html) (ioslides)
 * [Section P.1 Introduction to the Six-Step Method](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CHP_1.html) (ioslides)
    * [Example P.1 Organ Donation](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/ExampleP_1.html) (ioslides)
 * [Section P.2 Exploring Data](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CHP_2.html) (ioslides)
@@ -40,8 +39,21 @@ Tintle, N., Chance, B., Cobb, G., Rossman, A., Roy, S., Swanson, T., VanderStoep
 * [Section 3.1 Statistical Inference: Confidence Intervals](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CH3_1.html) (ioslides)
 * [Section 3.2 2SD Confidence Intervals for a Single Proportion](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CH3_2.html) (ioslides)
 
+**Chapter 04**
+
+* [Section 4.1 Association and Confounding](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CH4_1.html) (ioslides)
+* [Section 4.2 Observational Studies Versus Experiments](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CH4_2.html) (ioslides)
+
+**Chapter 05**
+
+* [Section 5.1 Comparing Two Groups: Categorical Response](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CH5_1.html) (ioslides)
+   * [Example 5.1 Buckling Up?](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/Example5_1.html) (ioslides)
+* [Section 5.2 Comparing Two Proportions: Simulation-Based Approach](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CH5_2.html) (ioslides)
+   * [Example 5.2 Swimming with Dolphins](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/Example5_2.html) (ioslides)
+
 **Miscellaneous**
 
+* [Zener Card Class Activity](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/ESPZenerCards.html) (ioslides)
 * [Probability of a Perfect March Madness Bracket](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/PerfectBracketMM.html) (ioslides)
 
 This material is released under an [Attribution-NonCommercial-ShareAlike 3.0 United States](https://creativecommons.org/licenses/by-nc-sa/3.0/us/) license. Original author: [Jill E. Thomley](https://jillthomley.github.io/)

@@ -61,8 +61,12 @@ At least one [animal welfare organization](https://awionline.org/content/swim-at
 
 ## STEP 2: Design a Study / Collect Data
 
-
-
+* Researchers recruited 30 participants (ages 18–65) with a clinical diagnosis of mild to moderate depression. 
+* Participants discontinued antidepressants and therapy four weeks prior to and during the experiment.
+* All participants went to an island off the coast of Honduras; they were randomly assigned to one of two treatment groups. 
+* Both groups had one hour of swimming and snorkeling each day. One group did so in the presence of bottlenose dolphins and the other group did not. 
+* All other conditions for the two groups (e.g., meals, lodging) were identical *except* for the presence of dolphins.
+* At the end of two weeks, each subject’s level of depression was evaluated, as it had been at the beginning of the study. 
 
 
 ## Additional Study Information
@@ -96,16 +100,16 @@ Hypotheses expressed in this form generally would be assessed with a procedure c
 
 State hypotheses in words, based on the research question.
 
-* Ho: probability of improvement after swimming with dolphins is the same as without dolphins.
-* Ha: Probability of improvement after swimming with dolphins is greater than without dolphins.
+* Ho: Probability of substantial improvement after swimming with dolphins is *the same as* probability without dolphins.
+* Ha: Probability of substantial improvement after swimming with dolphins is *greater than* probability without dolphins.
 
 <hr>
 
 Now define two parameters in the context of the problem.
 
-* $\pi_\text{control}$ = the probability of significant improvement after not swimming with dolphins
+* $\pi_\text{control}$ = probability of experiencing substantial symptom improvement after *not* swimming with dolphins
 
-* $\pi_\text{dolphin}$ = the probability of significant improvement after swimming with dolphins
+* $\pi_\text{dolphin}$ = probability of experiencing substantial symptom improvement after swimming with dolphins
 
 
 ## Stating the Hypotheses With Symbols

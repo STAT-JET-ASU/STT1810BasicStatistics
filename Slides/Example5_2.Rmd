@@ -50,7 +50,7 @@ knitr::include_graphics("images/sixstepsfourpillars.png", dpi = 100)
 
 ## STEP 1: Ask a Research Question
 
-[Dolphin-assisted therapy (DAT)](https://en.wikipedia.org/wiki/Swimming_with_dolphins) has been around since roughly the late seventies. Proponents of DAT claim that interacting with dolphins can help treat mental and physical disorders in people, but there is limited scientific evidence to back up its supposed benefits. 
+[Dolphin-assisted therapy (DAT)](https://en.wikipedia.org/wiki/Swimming_with_dolphins) has been around since roughly the late 1970s. Proponents of DAT claim that interacting with dolphins can help treat a wide variety of mental and physical issues in people, but there is limited scientific evidence to back up its supposed benefits. 
 
 At least one [animal welfare organization](https://awionline.org/content/swim-attractions-dolphin-assisted-therapy) is a strong opponent, claiming that "DAT proponents foster an unproven belief that touching and being close to a dolphin has unique motivational or healthful powers, although studies show that such claims are without scientific merit."
 

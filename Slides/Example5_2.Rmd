@@ -129,11 +129,11 @@ $$H_a: \pi_\text{dolphin} - \pi_\text{control} > 0$$
 The observed statistic for this test will be ($\hat{p}_\text{dolphin} - \hat{p}_\text{control}$).
 
 
-## STEP 3: Explore the data.
+## STEP 3: Explore the Data
 
 Compute conditional proportions of those who demonstrated a "substantial improvement" in symptoms after two weeks, within each treatment group.
 
-| Substantial improvement? | Dolphin     | Control     | Total       |
+| Substantial Improvement? | Dolphin     | Control     | Total       |
 |--------------------------|:-----------:|:-----------:|:-----------:|
 | Yes                      | 10 (66.67%) |  3 (20.00%) | 13 (43.33%) |
 | No                       |  5 (33.33%) | 12 (80.00%) | 17 (56.67%) |
@@ -144,7 +144,7 @@ Compute conditional proportions of those who demonstrated a "substantial improve
 $$\hat{p}_\text{dolphin} - \hat{p}_\text{control} = 0.6667 - 0.2000 = 0.4667$$
 
 
-## Visualize with a Barplot
+## Visualize With a Barplot
 
 ```{r, echo = FALSE, fig.align="center"}
 knitr::include_graphics("images/fig_05_02_01.jpg", dpi = 80)
@@ -164,6 +164,10 @@ knitr::include_graphics("images/fig_05_02_05.jpg", dpi = 120)
 
 ## Assess Statistical Significance
 
+There were 13 simulated differences $\ge$ 0.4667, so the *p*-value is 0.013, which provides strong evidence against $H_0$.
+
+<hr>
+
 Recall our guidelines for *p*-values from Section 1.2.
 
 | Magnitude               | Guideline for Inference                                        |
@@ -172,10 +176,6 @@ Recall our guidelines for *p*-values from Section 1.2.
 | 0.05 < *p*-value ≤ 0.10 | moderate evidence against the null hypothesis                  |
 | 0.01 < *p*-value ≤ 0.05 | strong evidence against the null hypothesis                    |
 | *p*-value ≤ 0.01        | very strong evidence against the null hypothesis               |
-
-<br>
-
-In the text, there were 13 simulated differences $\ge$ 0.4667, so the *p*-value is 0.013, which provides strong evidence against $H_0$.
 
 
 ## 

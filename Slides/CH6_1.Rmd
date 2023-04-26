@@ -16,6 +16,19 @@ knitr::opts_chunk$set(
 )
 ```
 
+## Before We Begin…
+
+These slides are intended to accompany Section 6.1 Comparing Two Groups: Quantitative Response in [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html). 
+
+*This content does not replace reading the textbook section.* It is for class presentation and reference.
+
+See Also:
+
+* [Section 2.1 Exploring Data](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CH2_1.html)
+* [Example 2.1 Oh, Say Can You Sing?](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/Example2_1.html)
+* [Example 6.1 Geyser Eruptions](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/Example6_1.html)
+* [Section 6.2 Compare Two Means: Simulation-Based Approach](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CH6_2.html)
+
 
 ## Recall: The Six-Step Spiral Process
 
@@ -43,7 +56,7 @@ knitr::include_graphics("images/sixstepsfourpillars.png", dpi = 100)
 
 * In Chapter 6, we will apply what we learned to assess *quantitative* variables.
 
-* We will compare means of two groups ($\mu_1 - \mu_2$).
+* We will compare *means* of two groups ($\mu_1 - \mu_2$).
 
 
 :::
@@ -68,7 +81,9 @@ In this chapter, you will learn to:
 ## Learning Goals for Section 6.1
 
 * Calculate or estimate the mean, median, quartiles, five number summary, and interquartile range from a dataset and understand what these are measuring.
+
 * When comparing two quantitative distributions, identify which has the larger mean, median, standard deviation, and inter-quartile range.
+
 * Identify whether there is likely an association between a binary categorical variable and a quantitative response variable.
 
 
@@ -86,142 +101,108 @@ In this chapter, you will learn to:
 We also will revisit several vocab terms from the Preliminaries and introduce a guideline for identifying data points that might be considered outliers in a quantitative *distribution*.
 
 
-##
+## Descriptive Statistics
 
-**five-number summary:** a set of five data summaries composed of minimum, lower quartile, median, upper quartile, maximum
+**minimum:** the smallest value observed for the variable
 
-**minimum / maximum:** the smallest / largest data values
+**lower quartile:** the value that divides the variable so that 25% of the data values lie below (and 75% lie above); also known as the 25th percentile
 
-**lower quartile:** the value for which 25% of the data lie below (and 75% lie above); also known as the 25th percentile
+**median:** a measure of center where 50% of the data values lie below and 50% lie above, when data values are arranged from minimum to maximum; also called the 50th percentile
 
-**median:** the value for which 50% of the data lie below (and 50% lie above)---the middle value when the data are sorted in order from smallest to largest; also known as the 50th percentile
+**upper quartile:** the value that divides the variable so that 75% of the data values lie below (and 25% lie above); also known as the 75th percentile
 
-**upper quartile:** the value for which 75% of the data lie below (and 55% lie above); also known as the 75th percentile
+**maximum:** the largest value observed for the variable
 
-**interquartile range:** IQR = upper quartile --- lower quartile
 
-**boxplot:** a visual display of the five-number summary
+## 
+
+**five-number summary:** a set of five data summaries composed of minimum, lower quartile, median, upper quartile, maximum. These five values break the data into four parts, with each part containing 25% of the data points.
+
+**interquartile range:** a measure of spread for the middle 50% of the data values, which is found by taking the distance between the quartiles; IQR = upper quartile --- lower quartile
+
+**boxplot:** a visual display of the five-number summary, which can help us identify symmetry and outliers
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("images/boxplotkernler01.gif", dpi = 175)
+```
+<p style = "text-align: center; font-size: 10px;"><br>Image Source: [Prof. Dan Kernler for Mth120 Statistics I at Elgin Community College](https://faculty.elgin.edu/dkernler/statistics/ch03/3-5.html)</p>
 
 
 ## Recall: Exploring Data (Section P.2)
 
 Quantitative data are described by how / where they occur on the number line. Distribution behavior includes:
 
-**shape:** the overall pattern and "clumping" of the data when we graph it (e.g., using a dotplot or histogram)
+**shape:** the overall pattern and "clumping" of the data when we graph it (e.g., using a dotplot or histogram; *now also a boxplot*)
 
-**center:** a middle or typical value of a quantitative variable; the "center of mass" for the distribution (e.g., mean)
+**center:** a middle or typical value of a quantitative variable; the "center of mass" for the distribution (e.g., mean *or median*)
 
-**variability:** once we have identified the center, how spread out are the data---are most within a certain range of values?
+**variability:** once we have identified the center, how spread out are the data---are most within a certain range (e.g., SD *or IQR*)?
 
-**unusual observations / features:** points that deviate markedly from the overall pattern of the other data values (i.e., outliers); also other unusual features such as multiple modes
-
-
-##
-
-Old Faithful (Yellowstone National Park) erupts around 20 times a day. [According to the National Park Service](https://www.yellowstonepark.com/things-to-do/geysers-hot-springs/about-old-faithful/), "... eruptions are predicted with a 90 percent confidence rate, within a 10 minute variation," based on duration/height of the previous eruption.
-
-```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("images/ch06/oldfaithful.jpg", dpi = 175)
-```
-
-
-## Example 6.1 Geyser Eruptions
-
-**research question:** Has there been a change in Old Faithful's eruption patterns between 1978 and 2003?
-
-**type of study:** observational study (why?)
-
-**observational units:** individual geyser eruptions
-
-**explanatory variable:** year (binary categorical, 1978 or 2003)
-
-**response variable:** time until the next eruption (quantitative)
-
-**measurement units:** the quantitative variable "time until the next eruption" is measured in minutes
-
-**data:** eruptions that occurred from August 1 to August 8, 1978 (6:00am to midnight), also from the same time interval in 2003
-
-
-## Comparing with Dotplots
-
-We can explore these data in the [ISI Descriptive Statistics Applet](https://www.rossmanchance.com/applets/2021/descstats/Dotplot.htm).
-
-```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("images/ch06/fig_06_01_01.jpg", dpi = 150)
-```
-
-* What is the shape of each distribution?
-* What is the center of each distribution?
-* What is the spread (variability) of each distribution?
-* Does either distribution have any unusual points/outliers?
-* How do the two distributions compare to one another?
-
-
-## Comparing with Statistics
-
-| Year | Mean |  SD  | Minimum | Lower<br>Quartile | Median | Upper<br>Quartile | Maximum | Interquartile<br>Range (IQR) |
-|:----:|:----:|:----:|:-------:|:-----------------:|:------:|:-----------------:|:-------:|:----------------------------:|
-| 1978 | 71.1 | 12.9 |    42   |         58        |   75   |         81        |    95   |              23              | 
-| 2003 | 91.2 |  8.5 |    56   |         87        |   91   |         98        |   110   |              11              |
-
-<br>
-
-**Key Idea: Resistant Measures**
-
-* Median is a resistant measure of center, whereas the mean is sensitive to extreme values and skewness.
-* IQR is a resistant measure of variability, whereas the standard deviation is sensitive to extreme values and skewness.
-
-
-## Comparing with Boxplots
-
-The box displays the middle 50% of the distribution; its width  is the IQR. The whiskers extend to the smallest and largest values in the dataset *that are not outliers*.
-
-```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("images/ch06/fig_06_01_02.jpg", dpi = 100)
-```
-
-There appear to be two lower outliers in 2003 (the * on the plot).
+**unusual observations / features:** points that deviate markedly from the overall pattern of the other data values (i.e., *now we can use boxplots to detect outliers*); also other unusual features such as multiple modes (note: boxplots are *not* good for this)
 
 
 ## Anatomy of a Boxplot
 
+Boxplots may be drawn horizontally or vertically (*left* = *lower*).
+
 ```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("images/ch06/boxplot.png", dpi = 90)
+knitr::include_graphics("images/boxplotanatomy.png", dpi = 100)
 ```
 
-lower outlier = any data value < $\text{lower quartile} - 1.5 * IQR$
+* lower outlier = data value < $\text{lower quartile} - 1.5 * IQR$
+* upper outlier = data value > $\text{upper quartile} + 1.5 * IQR$
 
-upper outlier = any data value > $\text{upper quartile} + 1.5 * IQR$
+
+## Boxplots and Skewness
+
+**Symmetric:** The lower quartile is (roughly) equally far from the median as the upper quartile; he left whisker is (roughly) equal in length to the right whisker. Overall, does not demonstrate a consistent pattern of skewness (*see next slide*).
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("images/boxplotkernler02.gif")
+```
+
+The smaller the sample size, the less useful a boxplot might be for discussing shape. In any case, it should be used along with another plot like a histogram.
 
 
 ##
 
-A data point may be an outlier *relative to the group it belongs to*.
+**Left Skewed:** The lower quartile is further from the median than the upper quartile; left whisker is longer than right whisker.
 
-**For 1978:**
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("images/boxplotkernler03.gif")
+```
 
-$\text{lower quartile} - 1.5 * IQR = 58 - (1.5 * 23) = 23.5$ 
+**Right Skewed:** It is the reverse or "mirror image" of left skewed.
 
-$\text{upper quartile} + 1.5 * IQR = 81 + (1.5 * 23) = 115.5$ 
-
-*None of the data points in 1978 fall outside these two boundaries.*
-
-<hr>
-
-**For 2003:**
-
-$\text{lower quartile} - 1.5 * IQR = 87 - (1.5 * 11) = 70.5$ 
-
-$\text{upper quartile} + 1.5 * IQR = 98 + (1.5 * 11) = 114.5$ 
-
-*As we see on both plots, there are two data points less than 70.5.*
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("images/boxplotkernler04.gif")
+```
+<p style = "text-align: center; font-size: 10px;"><br>Image Source: [Prof. Dan Kernler for Mth120 Statistics I at Elgin Community College](https://faculty.elgin.edu/dkernler/statistics/ch03/3-5.html)</p>
 
 
-## Think About It
+## Which Measures Do We Use?
 
-Based on the distributions of times between eruptions, in which year would you have preferred to be a tourist waiting for the next eruption of Old Faithful? Can you think of one way in which 1978 would have been preferable and a different way in which 2003 would have been preferable?
+Why do we need more than one measure to quantify / describe center and variability?
 
-* If you are a tourist who cares most about having a shorter wait for the next eruption, you would have preferred 1978. This is because the *average* wait time was about 20 minutes less than in 2003. 
+Skewness and outliers, especially in extreme cases, impact some measures more strongly than others.
 
-* If your primary concern is being able to predict accurately when the next eruption would occur, then you would have preferred 2003. This is because the *variability* in wait times was much smaller than in 1978.
+* Median is a resistant measure of center, whereas the mean is more sensitive to extreme values and skewness.
+
+* IQR is a resistant measure of variability, whereas the standard deviation is sensitive to extreme values and skewness.
+
+Our preference is usually to use mean and standard deviation, but for strongly skewed data or data with large outliers, we may choose median and IQR instead.
+
+
+## Impact of Skewness / Outliers
+
+The greater the skew, the more different the mean and median will tend to be for a given distribution.
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("images/meanmedianmode.png", dpi = 210)
+```
+<p style = "text-align: center; font-size: 10px;"><br>Image Source: [Author Diva Jain on Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Relationship_between_mean_and_median_under_different_skewness.png)</p>
+
+<br>
+
+Outliers tend to pull the mean in their direction---large outliers pull the mean up, small outliers pull the mean down.
 

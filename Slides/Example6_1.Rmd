@@ -1,0 +1,168 @@
+---
+title: "STT1810 --- Example 6.1<br>Geyser Eruptions"
+subtitle: "Introduction to Statistical Investigations, 2^nd^ Edition"
+author: "Author: Jill E. Thomley // Appalachian State University"
+date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
+output: 
+  ioslides_presentation:
+    logo: images/logoASU.jpg
+---
+
+```{r global_options, include = FALSE}
+knitr::opts_chunk$set(
+  message = FALSE,
+  warning = FALSE,
+  comment = NA
+)
+```
+
+## Before We Begin…
+
+These slides are intended to accompany Section 6.1 Comparing Two Groups: Quantitative Response in [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html). 
+
+*This content does not replace reading the textbook section.* It is for class presentation and reference.
+
+See Also:
+
+* [Section 2.1 Exploring Data](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CH2_1.html)
+* [Example 2.1 Oh, Say Can You Sing?](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/Example2_1.html)
+* [Section 6.1 Geyser Eruptions](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CH6_1.html)
+* [Section 6.2 Compare Two Means: Simulation-Based Approach](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CH6_2.html)
+
+
+##
+
+Old Faithful (Yellowstone National Park) erupts around 20 times a day. [According to the National Park Service](https://www.yellowstonepark.com/things-to-do/geysers-hot-springs/about-old-faithful/), "... eruptions are predicted with a 90 percent confidence rate, within a 10 minute variation," based on duration/height of the previous eruption.
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("images/oldfaithfulsign.jpg", dpi = 175)
+```
+
+
+## STEP 1: Ask a Research Question
+
+The National Park Service's website presents a question that has been asked many times: "I heard Old Faithful isn’t as faithful as it used to be. Is it slowing down?"
+
+Their answer is the information presented on the previous slide about being able to predict eruptions, and that the number may have decreased a little over time. Perhaps we can better explore this question by examining some data.
+
+**research question:** Has there been a change in Old Faithful's eruption pattern between 1978 and 2003?
+
+Note: We will be exploring *time between eruptions*; however, if the time between eruptions changes, then so does the number or pattern of eruptions per day.
+
+
+## STEP 2: Design a Study / Collect Data
+
+**type of study:** observational study (*why*?)
+
+**observational units:** individual geyser eruptions
+
+**explanatory variable:** year (binary categorical, 1978 or 2003)
+
+**response variable:** time until the next eruption (quantitative)
+
+**measurement units:** the quantitative variable "time until the next eruption" is measured in minutes
+
+**data:** eruptions that occurred from August 1 to August 8, 1978 (6:00am to midnight), also from the same time interval in 2003
+
+*Choosing the same time period for both years helps to reduce some of the possible confounding variables.*
+
+
+## STEP 3: Explore the Data
+
+We can explore these data in the [ISI Descriptive Statistics applet](http://www.isi-stats.com/isi2nd/ISIapplets2021.html).
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("images/fig_06_01_01.jpg", dpi = 150)
+```
+
+* What is the shape of each distribution?
+* What is the center of each distribution?
+* What is the spread (variability) of each distribution?
+* Does either distribution have any unusual points/outliers?
+* How do the two distributions compare to one another?
+
+
+## Comparing with Statistics
+
+| Year | Mean |  SD  | Minimum | Lower<br>Quartile | Median | Upper<br>Quartile | Maximum | Interquartile<br>Range (IQR) |
+|:----:|:----:|:----:|:-------:|:-----------------:|:------:|:-----------------:|:-------:|:----------------------------:|
+| 2003 | 91.2 |  8.5 |    56   |         87        |   91   |         98        |   110   |              11              |
+| 1978 | 71.1 | 12.9 |    42   |         58        |   75   |         81        |    95   |              23              | 
+| diff | 20.1 | -4.4 |    14   |         29        |   16   |         17        |    15   |             -12              |
+
+<br>
+
+* Measures of center increased (mean, median)
+
+* Measures of variability decreased (SD, IQR)
+
+* Five-number summary increased (min, Q<sub>1</sub>, med, Q<sub>3</sub>, max)
+
+
+## Comparing with Boxplots
+
+The box displays the middle 50% of the distribution; its width  is the IQR. The whiskers extend to the smallest and largest values in the dataset *that are not outliers*.
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("images/fig_06_01_02.jpg", dpi = 110)
+```
+
+There appear to be two lower outliers in 2003 (the * on the plot). What are the cutoffs for outliers in each of the two years?
+
+
+##
+
+A data point may be an outlier *relative to the group it belongs to*.
+
+**For 1978:**
+
+$\text{lower quartile} - 1.5 * IQR = 58 - (1.5 * 23) = 23.5$ 
+
+$\text{upper quartile} + 1.5 * IQR = 81 + (1.5 * 23) = 115.5$ 
+
+*None of the data points in 1978 fall outside these two boundaries.*
+
+<hr>
+
+**For 2003:**
+
+$\text{lower quartile} - 1.5 * IQR = 87 - (1.5 * 11) = 70.5$ 
+
+$\text{upper quartile} + 1.5 * IQR = 98 + (1.5 * 11) = 114.5$ 
+
+*As we can see on our plots, there are two data points < 70.5.*
+
+
+## STEP 4: Draw Inferences
+
+In Section 6.2, you will learn how to use simulation to compare two group means to assess a statistical significance.
+
+As we did with proportions, we will be looking at the difference between the two groups. We will use $\mu_1 - \mu_2$ to represent the difference in the population and $\bar{x}_1 - \bar{x}_2$ for the sample.
+
+Here we have $\bar{x}_{2003} - \bar{x}_{1978}$ = 91.2 - 71.1 = 20.1 minutes. Is this difference just random chance, or has Old Faithful's underlying process changed?
+
+The same method could also be used to compare two *medians*, if the median is a better measure of center. 
+
+Researchers have to be careful about the scope of conclusions they draw from this kind of observational study.
+
+
+## Think About It...
+
+Based on the distributions of times between eruptions, in which year would you have preferred to be a tourist waiting for the next eruption of Old Faithful? Can you think of one way in which 1978 would have been preferable and a different way in which 2003 would have been preferable?
+
+* If you are a tourist who cares most about having a shorter wait for the next eruption, you would have preferred 1978. This is because the *average* wait time was about 20 minutes less than in 2003. 
+
+* If your primary concern is being able to predict accurately when the next eruption would occur, then you would have preferred 2003. This is because the *variability* in wait times was much smaller than in 1978.
+
+
+## For the Curious...
+
+$$H_0: \mu_{2003} = \mu_{1978} \text{ vs. } H_a: \mu_{2003} > \mu_{1978}$$
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("images/oldfaithfultest.png", dpi = 150)
+```
+
+Based on the data, what should we conclude about Old Faithful?
+
+

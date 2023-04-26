@@ -68,14 +68,20 @@ In this chapter, you will learn to:
 ## Learning Goals for Section 6.2
 
 * State the null and the alternative hypotheses in terms of “no association” versus “there is an association” as well as in terms of comparing means (i.e., $\mu_1$ and $\mu_2$) for an explanatory variable with two categories.
+
 * Implement the 3S strategy to compare two means: find a statistic, simulate, and compute the strength of evidence against observed study results happening by chance alone.
+
 * Describe how to use cards to simulate what outcomes (in terms of difference in means or median) are to be expected in repeated random assignments, if there is no association between the two variables.
-* Use the [ISI Multiple Means Applet](https://www.rossmanchance.com/applets/2021/anovashuffle/AnovaShuffle.htm) to conduct a simulation of the null hypothesis and be able to read the applet's output.
+
+* Use the [ISI Multiple Means applet](http://www.isi-stats.com/isi2nd/ISIapplets2021.html) to conduct a simulation of the null hypothesis and be able to read the applet's output.
+
 
 ##
 
-* Find and interpret the standardized statistic and the *p*-value for a test of two means
+* Find and interpret the standardized statistic and the *p*-value for a test of two means.
+
 * Use the 2SD method to find a 95% confidence interval for the difference in population means for two “treatment” groups, and interpret the interval in the context of the study; interpret what it means for the 95% confidence interval for difference in means to contain zero.
+
 * State a complete conclusion about the alternative hypothesis (and null hypothesis) based on the *p*-value and/or standardized statistic and the study design, including statistical significance, estimation, generalizability, and causation.
 
 

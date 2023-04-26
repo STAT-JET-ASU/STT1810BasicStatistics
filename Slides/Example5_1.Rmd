@@ -87,7 +87,7 @@ NOPUS states that it provides a reliable estimate of use, whose error can be mea
 The study report for 2003 with more details can be found at [crashstats.nhtsa.dot.gov/Api/Public/Publication/809646](crashstats.nhtsa.dot.gov/Api/Public/Publication/809646) (pdf).
 
 
-## Additional Study Information
+## Brief Summary of Design
 
 * **study type:** observational study
 
@@ -102,7 +102,7 @@ The study report for 2003 with more details can be found at [crashstats.nhtsa.do
 *What other variables would you consider recording to learn more about the different factors associated with seatbelt use?*
 
 
-## STEP 3: Explore the data.
+## STEP 3: Explore the Data
 
 Does seat belt use seem to have changed from 2008 to 2018?
 
@@ -134,7 +134,7 @@ More people are using seat belts --- this is thousands of drivers and passengers
 Perhaps visualizing proportions for these two years would help.
 
 
-## Mosaic Plot of the Data
+## Mosaic Plot
 
 ```{r, echo = FALSE, fig.align="center"}
 knitr::include_graphics("images/fig_05_01_02.jpg", dpi = 100)

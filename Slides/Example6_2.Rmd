@@ -100,24 +100,33 @@ In this chapter, you will learn to:
 
 ## Section 6.2 New Vocabulary
 
-None! However, you will want to review and be familiar with the vocabulary and methods from previous chapters. Everything we do here builds on the Preliminaries through Chapter 5.
+None! However, you will want to review and be familiar with the vocabulary and methods from previous chapters. 
 
 <hr>
 
 Also, keep in mind the new symbols for this chapter...
 
-* $\mu$ = population mean (Greek letter mu, pronounced "mew")
+$\mu$ = population mean (pronounced "mu")
 
-* $\bar{x}$ = sample mean (usually pronounced "x-bar")
+$\bar{x}$ = sample mean (pronounced "x-bar")
 
 
-## Comments on Strength of Evidence
+## Example 6.2 Dung Beetles
 
-In earlier chapters we talked about factors that impact the size of the *p*-value in a test of significance. The extremeness of the statistic relative to $H_0$, sample size, and one-sided versus two-sided tests still matter in much the same way. 
+**research question:** On a dark night (i.e., no moon), are dung beetles able to navigate using stars??
 
-With quantitative data there is another aspect that impacts size of the *p*-value: the underlying data variability, as measured by the standard deviations in each group. 
+**type of study:** randomized experiment
 
-If there is more variability in the data (larger SD values in the groups), the variability in the null distribution would be larger and so the *p*-value would be larger as well.
+**observational units:** 18 individual dung beetles
 
-Basically, if there is more variability *within* each group, then it becomes harder to tell a difference *between* the groups.
+**explanatory variable:** type of cap the dung beetle was wearing (binary categorical, black or clear)
+
+**response variable:** amount of time required to roll a dung ball off a platform (quantitative)
+
+**measurement units:** the quantitative variable "amount of time required" is measured in seconds
+
+
+## The Hypotheses
+
+TBA!
 

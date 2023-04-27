@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>STT1810 — Section 6.2 Comparing Two Means</title>
+  <title>STT1810 — Section 6.2 Simulation: Two Means</title>
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
@@ -19,7 +19,7 @@
     var SLIDE_CONFIG = {
       // Slide settings
       settings: {
-                title: 'STT1810 — Section 6.2<br>Comparing Two Means',
+                title: 'STT1810 — Section 6.2<br>Simulation: Two Means',
                         subtitle: 'Introduction to Statistical Investigations, 2<sup>nd</sup> Edition',
                 useBuilds: true,
         usePrettify: true,
@@ -3162,11 +3162,27 @@ slide:not(.current) .plotly.html-widget{
       <h1 data-config-title><!-- populated from slide_config.json --></h1>
       <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
       <p data-config-presenter><!-- populated from slide_config.json --></p>
-            <p style="margin-top: 6px; margin-left: -2px;">Last updated Saturday, April 15, 2023 @ 02:25 AM</p>
+            <p style="margin-top: 6px; margin-left: -2px;">Last updated Thursday, April 27, 2023 @ 02:00 AM</p>
           </hgroup>
   </slide>
 
-<slide class=""><hgroup><h2>Recall: The Six-Step Spiral Process</h2></hgroup><article  id="recall-the-six-step-spiral-process">
+<slide class=""><hgroup><h2>Before We Begin…</h2></hgroup><article  id="before-we-begin">
+
+<p>These slides are intended to accompany Section 6.2 Comparing Two Means: Simulation-Based Approach in <a href='http://www.isi-stats.com/isi/index2nd.html' title=''><em>Introduction to Statistical Investigations, 2nd Edition</em></a>.</p>
+
+<p><em>This content does not replace reading the textbook section.</em> It is for class presentation and reference.</p>
+
+<p>See Also:</p>
+
+<ul>
+<li><a href='https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CHP_2.html' title=''>Section P.2 Exploring Data</a></li>
+<li><a href='https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/ExampleP_2.html' title=''>Example P.2 Oh, Say Can You Sing?</a></li>
+<li><a href='https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CH6_1.html' title=''>Section 6.1 Comparing Two Groups: Quantitative Response</a></li>
+<li><a href='https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/Example6_1.html' title=''>Example 6.1 Geyser Eruptions</a></li>
+<li>Example 6.2 Dung Beetles (TBA)</li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Recall: The Six-Step Spiral Process</h2></hgroup><article  id="recall-the-six-step-spiral-process">
 
 <div style="display: flex;">
 <div>
@@ -3217,33 +3233,26 @@ slide:not(.current) .plotly.html-widget{
 
 </article></slide><slide class=""><hgroup><h2>Section 6.2 New Vocabulary</h2></hgroup><article  id="section-6.2-new-vocabulary">
 
-<p>None! However, you will want to review and be familiar with the vocabulary and methods from previous chapters.</p>
+<p>None! However, you will want to review and be familiar with the vocabulary and methods from previous chapters. Everything we do here builds on the Preliminaries through Chapter 5.</p>
 
 <hr>
 
 <p>Also, keep in mind the new symbols for this chapter…</p>
 
-<p>\(\mu\) = population mean (pronounced &ldquo;mu&rdquo;)</p>
+<ul>
+<li><p>\(\mu\) = population mean (Greek letter mu, pronounced &ldquo;mew&rdquo;)</p></li>
+<li><p>\(\bar{x}\) = sample mean (usually pronounced &ldquo;x-bar&rdquo;)</p></li>
+</ul>
 
-<p>\(\bar{x}\) = sample mean (pronounced &ldquo;x-bar&rdquo;)</p>
+</article></slide><slide class=""><hgroup><h2>Comments on Strength of Evidence</h2></hgroup><article  id="comments-on-strength-of-evidence">
 
-</article></slide><slide class=""><hgroup><h2>Example 6.2 Dung Beetles</h2></hgroup><article  id="example-6.2-dung-beetles">
+<p>In earlier chapters we talked about factors that impact the size of the <em>p</em>-value in a test of significance. The extremeness of the statistic relative to \(H_0\), sample size, and one-sided versus two-sided tests still matter in much the same way.</p>
 
-<p><strong>research question:</strong> On a dark night (i.e., no moon), are dung beetles able to navigate using stars??</p>
+<p>With quantitative data there is another aspect that impacts size of the <em>p</em>-value: the underlying data variability, as measured by the standard deviations in each group.</p>
 
-<p><strong>type of study:</strong> randomized experiment</p>
+<p>If there is more variability in the data (larger SD values in the groups), the variability in the null distribution would be larger and so the <em>p</em>-value would be larger as well.</p>
 
-<p><strong>observational units:</strong> 18 individual dung beetles</p>
-
-<p><strong>explanatory variable:</strong> type of cap the dung beetle was wearing (binary categorical, black or clear)</p>
-
-<p><strong>response variable:</strong> amount of time required to roll a dung ball off a platform (quantitative)</p>
-
-<p><strong>measurement units:</strong> the quantitative variable &ldquo;amount of time required&rdquo; is measured in seconds</p>
-
-</article></slide><slide class=""><hgroup><h2>The Hypotheses</h2></hgroup><article  id="the-hypotheses">
-
-<p>TBA!</p></article></slide>
+<p>Basically, if there is more variability <em>within</em> each group, then it becomes harder to tell a difference <em>between</em> the groups.</p></article></slide>
 
 
   <slide class="backdrop"></slide>

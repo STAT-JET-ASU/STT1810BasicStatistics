@@ -24,10 +24,10 @@ These slides are intended to accompany Section 6.1 Comparing Two Groups: Quantit
 
 See Also:
 
-* [Section 2.1 Exploring Data](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CH2_1.html)
-* [Example 2.1 Oh, Say Can You Sing?](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/Example2_1.html)
-* [Section 6.1 Compare Two Groups: Quantitative Response](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CH6_1.html)
-* [Section 6.2 Compare Two Means: Simulation-Based](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CH6_2.html)
+* [Section P.2 Exploring Data](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CHP_2.html)
+* [Example O.2 Oh, Say Can You Sing?](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/ExampleP_2.html)
+* [Section 6.1 Comparing Two Groups: Quantitative Response](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CH6_1.html)
+* [Section 6.2 Comparing Two Means: Simulation-Based](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CH6_2.html)
 * Example 6.2 Dung Beetles (TBA)
 
 ##

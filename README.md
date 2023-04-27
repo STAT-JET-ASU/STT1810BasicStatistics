@@ -15,7 +15,7 @@ Tintle, N., Chance, B., Cobb, G., Rossman, A., Roy, S., Swanson, T., VanderStoep
 
 ### **Textbook-Related Materials**
 
-These slides are intended to accompany the textbook. This content does not replace reading the textbook section. It is for class presentation and reference.
+These slides are intended to accompany the textbook listed above. *This content does not replace reading the assigned textbook sections.* The slides are for class presentation and review/reference.
 
 **Preliminaries**
 

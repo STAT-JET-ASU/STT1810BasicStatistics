@@ -17,7 +17,7 @@ Tintle, N., Chance, B., Cobb, G., Rossman, A., Roy, S., Swanson, T., VanderStoep
 
 ### **Textbook-Related Materials**
 
-These slides are intended to accompany the course textbook listed above. *This content does not replace reading the assigned textbook sections.* The slides are for class presentation and review/reference during explorations and investigations.
+These slides are intended to accompany the course textbook listed above. *This content does not replace reading the assigned textbook sections.* The slides are for in-class presentation and review/reference during class explorations and investigations.
 
 **Preliminaries**
 
@@ -67,4 +67,4 @@ These slides are intended to accompany the course textbook listed above. *This c
 * [Zener Card Class Activity](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/ESPZenerCards.html) (ioslides)
 * [Probability of a Perfect March Madness Bracket](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/PerfectBracketMM.html) (ioslides)
 
-This material is released under an [Attribution-NonCommercial-ShareAlike 3.0 United States](https://creativecommons.org/licenses/by-nc-sa/3.0/us/) license. Original author: [Jill E. Thomley](https://jillthomley.github.io/)
+This material is released under an [Attribution-NonCommercial-ShareAlike 3.0 United States](https://creativecommons.org/licenses/by-nc-sa/3.0/us/) license. Original author: [Jill E. Thomley](https://jillthomley.github.io/), using materials from the textbook.

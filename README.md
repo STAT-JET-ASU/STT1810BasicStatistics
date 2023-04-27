@@ -51,6 +51,13 @@ Tintle, N., Chance, B., Cobb, G., Rossman, A., Roy, S., Swanson, T., VanderStoep
 * [Section 5.2 Comparing Two Proportions: Simulation-Based Approach](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CH5_2.html) (ioslides)
    * [Example 5.2 Swimming with Dolphins](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/Example5_2.html) (ioslides)
 
+**Chapter 06**
+
+* [Section 6.1 Comparing Two Groups: Quantitative Response](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CH6_1.html) (ioslides)
+   * [Example 6.1 Geyser Eruptions](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/Example6_1.html) (ioslides)
+* [Section 6.2 Comparing Two Means: Simulation-Based Approach](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CH6_2.html) (ioslides)
+   * Example 6.2 Dung Beetles (TAB) (ioslides)
+   
 **Miscellaneous**
 
 * [Zener Card Class Activity](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/ESPZenerCards.html) (ioslides)

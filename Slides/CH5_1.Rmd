@@ -1,5 +1,5 @@
 ---
-title: "STT1810 --- Section 5.1<br>Comparing Two Groups"
+title: "STT1810 --- Section 5.1<br>Compare Two Groups"
 subtitle: "Introduction to Statistical Investigations, 2^nd^ Edition"
 author: "Author: Jill E. Thomley // Appalachian State University"
 date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"

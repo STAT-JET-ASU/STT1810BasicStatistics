@@ -26,9 +26,9 @@ See Also:
 
 * [Section 2.1 Exploring Data](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CH2_1.html)
 * [Example 2.1 Oh, Say Can You Sing?](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/Example2_1.html)
-* [Section 6.1 Geyser Eruptions](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CH6_1.html)
-* [Section 6.2 Compare Two Means: Simulation-Based Approach](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CH6_2.html)
-
+* [Section 6.1 Compare Two Groups: Quantitative Response](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CH6_1.html)
+* [Section 6.2 Compare Two Means: Simulation-Based](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CH6_2.html)
+* Example 6.2 Dung Beetles (TBA)
 
 ##
 
@@ -43,11 +43,11 @@ knitr::include_graphics("images/oldfaithfulsign.jpg", dpi = 175)
 
 The National Park Service's website presents a question that has been asked many times: "I heard Old Faithful isn’t as faithful as it used to be. Is it slowing down?"
 
-Their answer is the information presented on the previous slide about being able to predict eruptions, and that the number may have decreased a little over time. Perhaps we can better explore this question by examining some data.
+Their answer is the information presented on the previous slide about being able to predict eruptions, and also that the number *may* have decreased a little over time. Perhaps we can better explore this question by examining some data.
 
-**research question:** Has there been a change in Old Faithful's eruption pattern between 1978 and 2003?
+**research question:** Has there been a change in Old Faithful's eruption pattern between 1978 and 2003? Is it slowing down?
 
-Note: We will be exploring *time between eruptions*; however, if the time between eruptions changes, then so does the number or pattern of eruptions per day.
+Note: We will be exploring *time between eruptions*. However, if the time *between* eruptions changes, then so does the number or pattern of eruptions per day.
 
 
 ## STEP 2: Design a Study / Collect Data
@@ -139,9 +139,9 @@ In Section 6.2, you will learn how to use simulation to compare two group means 
 
 As we did with proportions, we will be looking at the difference between the two groups. We will use $\mu_1 - \mu_2$ to represent the difference in the population and $\bar{x}_1 - \bar{x}_2$ for the sample.
 
-Here we have $\bar{x}_{2003} - \bar{x}_{1978}$ = 91.2 - 71.1 = 20.1 minutes. Is this difference just random chance, or has Old Faithful's underlying process changed?
+Here we have $\bar{x}_{2003} - \bar{x}_{1978}$ = 91.2 - 71.1 = 20.1 minutes. Is this difference just random chance, or has Old Faithful's underlying process really changed?
 
-The same method could also be used to compare two *medians*, if the median is a better measure of center. 
+The same method could also be used to compare two *medians*, if we think the median is a better measure of center. 
 
 Researchers have to be careful about the scope of conclusions they draw from this kind of observational study.
 
@@ -150,7 +150,7 @@ Researchers have to be careful about the scope of conclusions they draw from thi
 
 Based on the distributions of times between eruptions, in which year would you have preferred to be a tourist waiting for the next eruption of Old Faithful? Can you think of one way in which 1978 would have been preferable and a different way in which 2003 would have been preferable?
 
-* If you are a tourist who cares most about having a shorter wait for the next eruption, you would have preferred 1978. This is because the *average* wait time was about 20 minutes less than in 2003. 
+* If you are a tourist who cares most about having a shorter wait for the next eruption, you would have preferred 1978. This is because the *average* wait time was about 20 minutes less in 1978 than in 2003. 
 
 * If your primary concern is being able to predict accurately when the next eruption would occur, then you would have preferred 2003. This is because the *variability* in wait times was much smaller than in 1978.
 

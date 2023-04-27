@@ -15,6 +15,8 @@ Tintle, N., Chance, B., Cobb, G., Rossman, A., Roy, S., Swanson, T., VanderStoep
 
 ### **Textbook-Related Materials**
 
+These slides are intended to accompany the textbook. This content does not replace reading the textbook section. It is for class presentation and reference.
+
 **Preliminaries**
 
 * [Section P.1 Introduction to the Six-Step Method](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CHP_1.html) (ioslides)

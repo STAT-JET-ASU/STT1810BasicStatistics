@@ -16,6 +16,17 @@ knitr::opts_chunk$set(
 )
 ```
 
+## Before We Begin…
+
+These slides are intended to accompany Section P.1 Introduction to the Six-Step Method in [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html). 
+
+*This content does not replace reading the textbook section.* It is for class presentation and reference.
+
+See Also:
+
+* Glossary of ISI Textbook Vocabulary on AsULearn
+* [Section P.1 Introduction to the Six-Step Method](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CHP_1.html)
+
 
 ## The Spiral Approach to Investigation
 
@@ -168,4 +179,11 @@ Another possible improvement would be to include participants from wider demogra
 Part of looking back also considers how a study relates to other similar studies that have been conducted previously.
 
 
+## Looking Ahead: Variation in Data
+
+ATS (access to transplant) score indicates a waitlist candidate’s likelihood of receiving a deceased donor transplant in the U.S. Variation in scores reflects the degree to which the allocation system is equitable. Less variation means more equity. We will learn about SD in Section P.2. (Source: [OTPN / UNOS](https://insights.unos.org/equity-in-access/))
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("images/accesstotransplants.png", dpi = 150)
+```
 

@@ -16,6 +16,18 @@ knitr::opts_chunk$set(
 )
 ```
 
+## Before We Begin…
+
+These slides are intended to accompany Section P.2 Exploring Data in [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html). 
+
+*This content does not replace reading the textbook section.* It is for class presentation and reference.
+
+See Also:
+
+* Glossary of ISI Textbook Vocabulary on AsULearn
+* [Section P.1 Introduction to the Six-Step Method](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CHP_1.html)
+* [Example P.2 Oh Say Can You Sing?](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/ExampleP_2.html)
+
 
 ## Learning Goals for Preliminaries
 
@@ -41,7 +53,7 @@ You need to **"speak the language"** to understand what is being taught in class
 * Interpret graphs that contain a color-coded third variable.
 * Make predictions about centers/means, and about variability / standard deviations, based on the context of the variable.
 
-*To draw conclusions from data, we need to understand the data.*
+***To draw conclusions from data, we need to understand the data.***
 
 
 ##
@@ -82,7 +94,7 @@ Data are usually stored in a rectangular representation that has various names, 
 
 Most of the data we will work with in STT1810 is in this format. Real life data is usually far messier and can require a great deal of tidying up, but that is beyond the scope of this class.
 
-<p style="text-align:center; font-size: 16px;"><img src="https://d33wubrfki0l68.cloudfront.net/6f1ddb544fc5c69a2478e444ab8112fb0eea23f8/91adc/images/tidy-1.png" width = 775><br>Source: [R for Data Science: Tidy Data](http://r4ds.had.co.nz/tidy-data.html) --- note that *observations* is another name for *observational units*<br></p>
+<p style="text-align:center; font-size: 10px;"><img src="https://d33wubrfki0l68.cloudfront.net/6f1ddb544fc5c69a2478e444ab8112fb0eea23f8/91adc/images/tidy-1.png" width = 775><br>Source: [R for Data Science: Tidy Data](http://r4ds.had.co.nz/tidy-data.html) --- note that *observations* is another name for *observational units*<br></p>
 
 
 ## Units & Spread

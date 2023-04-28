@@ -17,6 +17,20 @@ knitr::opts_chunk$set(
 ```
 
 
+## Before We Begin…
+
+These slides are intended to accompany Section P.3 Exploring Random Processes in [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html). 
+
+*This content does not replace reading the textbook section.* It is for class presentation and reference.
+
+See Also:
+
+* Glossary of ISI Textbook Vocabulary on AsULearn
+* [Section P.1 Introduction to the Six-Step Method](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CHP_1.html)
+* [Section P.2 Exploring Data](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CHP_2.html)
+* Exploration P.3 Cars or Goats (TBA)
+
+
 ## Learning Goals for Preliminaries
 
 * Use the six-step statistical investigation method to carry out any statistical study. [Section P.1]
@@ -57,40 +71,16 @@ When we talk about probabilities and distributions, we need to keep in mind the 
 * If something is *certain* to happen, its probability is 1.
 * Something that is *possible* has a probability between 0 and 1.
 
+
 ## Definitions
 
-**process:** an endless series of potential observations
+**process:** an endless series of potential observations (just about anything we want to explore can be thought of as a process)
 
-**random process:** a repeatable process that has unknown individual (short-term) outcomes but a long-run pattern of outcomes
+**random process:** a process that has unknown individual (short-term) outcomes but a long-run pattern of outcomes; we explore these patterns through repeated observation
 
-**probability:** the long-run proportion of times an outcome from a random process occurs
+**probability:** the long-run proportion of times an outcome from a random process occurs; probability is the language we use to characterize random processes
 
 **probability distribution:** the long-run pattern of outcomes from a random process
 
 **simulation:** an artificial re-creation of a random process using a computer or tactile tools such as coins, dice, cards, or spinners
-
-
-## Exploration P.3 --- "Cars or Goats?"
-
-On the game show *Let’s Make a Deal* (hosted by Monty Hall), new cars were often hidden behind one of three doors. Behind the other doors were lesser prizes. The contestant picked one door, and if they chose correctly, they won the car!
-
-```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("images/montyhalldoors.jpg", dpi = 90)
-```
-
-
-## Winner!
-
-One actual prize, a vintage Pontiac LeMans T-37 (1970 to 1972).
-
-```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("images/pontiaclemans.jpg", dpi = 80)
-```
-
-
-## Not so much winning...
-
-```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("images/sillygoat.jpeg", dpi = 190)
-```
 

@@ -1,0 +1,57 @@
+---
+title: "STT1810 --- Exploration<br>P.3 Cars or Goats"
+subtitle: "Introduction to Statistical Investigations, 2^nd^ Edition"
+author: "Author: Jill E. Thomley // Appalachian State University"
+date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
+output: 
+  ioslides_presentation:
+    logo: images/logoASU.jpg
+---
+
+```{r global_options, include = FALSE}
+knitr::opts_chunk$set(
+  message = FALSE,
+  warning = FALSE,
+  comment = NA
+)
+```
+
+
+## Before We Begin…
+
+These slides are intended to accompany Section P.3 Exploring Random Processes in [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html). 
+
+*This content does not replace reading the textbook section.* It is for class presentation and reference.
+
+See Also:
+
+* Glossary of ISI Textbook Vocabulary on AsULearn
+* [Section P.1 Introduction to the Six-Step Method](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CHP_1.html)
+* [Section P.2 Exploring Data](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CHP_2.html)
+* Example P.3 Cars or Goats (TBA)
+
+
+## Exploration P.3 --- "Cars or Goats?"
+
+On the game show *Let’s Make a Deal* (hosted by Monty Hall), new cars were often hidden behind one of three doors. Behind the other doors were lesser prizes. The contestant picked one door, and if they chose correctly, they won the car!
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("images/montyhalldoors.jpg", dpi = 90)
+```
+
+
+## Winner!
+
+One actual prize, a vintage Pontiac LeMans T-37 (1970 to 1972).
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("images/pontiaclemans.jpg", dpi = 80)
+```
+
+
+## Not so much winning...
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("images/sillygoat.jpeg", dpi = 190)
+```
+

@@ -1,5 +1,5 @@
 ---
-title: "STT1810 --- Section P.1<br>Intro to 6-Step Method"
+title: "STT1810 --- Section P.1<br>Intro: The 6-Step Method"
 subtitle: "Introduction to Statistical Investigations, 2^nd^ Edition"
 author: "Author: Jill E. Thomley // Appalachian State University"
 date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
@@ -16,6 +16,17 @@ knitr::opts_chunk$set(
 )
 ```
 
+## Before We Begin…
+
+These slides are intended to accompany Section P.1 Introduction to the Six-Step Method in [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html). 
+
+*This content does not replace reading the textbook section.* It is for class presentation and reference.
+
+See Also:
+
+* Glossary of ISI Textbook Vocabulary on AsULearn
+
+
 ##
 
 ```{r, echo = FALSE, fig.align="center"}
@@ -30,7 +41,7 @@ knitr::include_graphics("https://stat-jet-asu.github.io/Moodlepics/statsisascien
 * Describe distributions of quantitative variables. [Section P.2]
 * Use simulations to explore and understand probabilities. [Section P.3]
 
-  *We will use these investigative methods throughout the course.* 
+***We will use these investigative methods throughout the course.***
 
 <hr>
 
@@ -47,7 +58,7 @@ You need to **"speak the language"** to understand what is being taught in class
 
 * Think of / write research questions that could be investigated with a statistical study.
 
-  *Investigation at any level is driven by **questions**; how we ask the question will shape our next steps in the process.*
+  *Investigation at any level is driven by **questions**; how we ask the question will shape the rest of the steps in the process.*
 
 * Identify observational units / variables in a statistical study.
 
@@ -75,7 +86,7 @@ Data are usually stored in a rectangular representation that has various names, 
 
 Most of the data we will work with in STT1810 is in this format. Real life data is usually far messier and can require a great deal of tidying up, but that is beyond the scope of this class.
 
-<p style="text-align:center; font-size: 16px;"><img src="https://d33wubrfki0l68.cloudfront.net/6f1ddb544fc5c69a2478e444ab8112fb0eea23f8/91adc/images/tidy-1.png" width = 775><br>Source: [R for Data Science: Tidy Data](http://r4ds.had.co.nz/tidy-data.html) --- note that *observations* is another name for *observational units*<br></p>
+<p style="text-align:center; font-size: 10px;"><img src="https://d33wubrfki0l68.cloudfront.net/6f1ddb544fc5c69a2478e444ab8112fb0eea23f8/91adc/images/tidy-1.png" width = 775><br>Source: [R for Data Science: Tidy Data](http://r4ds.had.co.nz/tidy-data.html) --- note that *observations* is another name for *observational units*<br></p>
 
 
 ## 
@@ -183,9 +194,7 @@ Can you think of other quantitative variables you might collect?
 
 ## *Think About It #2*
 
-<hr>
-
-Study: Ackerman, J. M., Griskevicius, V., & Li, N. P. (2011). Let's get serious: Communicating commitment in romantic relationships. Journal of Personality and Social Psychology, 100(6), 1079–1094. https://doi.org/10.1037/a0022412
+Study: Ackerman, J. M., Griskevicius, V., & Li, N. P. (2011). Let's get serious: communicating commitment in romantic relationships. Journal of Personality and Social Psychology, 100(6), 1079–1094. https://doi.org/10.1037/a0022412
 
 **Research Question:** Among heterosexual couples who are in committed relationships, are the men or women more likely to confess love first?
 
@@ -218,13 +227,4 @@ What else would you like to know about the design of this study before you apply
 What new research questions do the results of this study inspire in you? What related ideas could you to explore?
 
 How would you collect additional data to help you answer these new research questions?
-
-
-## *More Food for Thought...*
-
-```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("images/realworldvsdata.png", dpi = 150)
-```
-
-What is this cartoon trying to tell us about the nature of data?
 

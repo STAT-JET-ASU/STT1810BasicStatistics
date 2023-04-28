@@ -13,7 +13,11 @@ An introduction to statistical problem solving. Topics include organization and 
 
 Tintle, N., Chance, B., Cobb, G., Rossman, A., Roy, S., Swanson, T., VanderStoep, J. (2021). [***Introduction to Statistical Investigations, 2nd Edition***](http://www.isi-stats.com/isi/index2nd.html). John Wiley & Sons, Inc.
 
+[Textbook Applets and Data](http://www.isi-stats.com/isi2nd/ISIapplets2021.html)
+
 ### **Textbook-Related Materials**
+
+These slides are intended to accompany the course textbook listed above. *This content does not replace reading the assigned textbook sections.* The slides are for in-class presentation and review/reference during class explorations and investigations.
 
 **Preliminaries**
 
@@ -51,9 +55,16 @@ Tintle, N., Chance, B., Cobb, G., Rossman, A., Roy, S., Swanson, T., VanderStoep
 * [Section 5.2 Comparing Two Proportions: Simulation-Based Approach](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CH5_2.html) (ioslides)
    * [Example 5.2 Swimming with Dolphins](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/Example5_2.html) (ioslides)
 
+**Chapter 06**
+
+* [Section 6.1 Comparing Two Groups: Quantitative Response](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CH6_1.html) (ioslides)
+   * [Example 6.1 Geyser Eruptions](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/Example6_1.html) (ioslides)
+* [Section 6.2 Comparing Two Means: Simulation-Based Approach](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CH6_2.html) (ioslides)
+   * Example 6.2 Dung Beetles (TAB) (ioslides)
+   
 **Miscellaneous**
 
 * [Zener Card Class Activity](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/ESPZenerCards.html) (ioslides)
 * [Probability of a Perfect March Madness Bracket](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/PerfectBracketMM.html) (ioslides)
 
-This material is released under an [Attribution-NonCommercial-ShareAlike 3.0 United States](https://creativecommons.org/licenses/by-nc-sa/3.0/us/) license. Original author: [Jill E. Thomley](https://jillthomley.github.io/)
+This material is released under an [Attribution-NonCommercial-ShareAlike 3.0 United States](https://creativecommons.org/licenses/by-nc-sa/3.0/us/) license. Original author: [Jill E. Thomley](https://jillthomley.github.io/), using materials from the textbook.

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>STT1810 — Section P.2 Exploring Data (EDA)</title>
+  <title>Section P.2 Exploring Data (Descriptive Statistics / EDA)</title>
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
@@ -19,8 +19,8 @@
     var SLIDE_CONFIG = {
       // Slide settings
       settings: {
-                title: 'STT1810 — Section P.2<br>Exploring Data (EDA)',
-                        subtitle: 'Introduction to Statistical Investigations, 2<sup>nd</sup> Edition',
+                title: 'Section P.2 Exploring Data (<em>Descriptive Statistics / EDA</em>)',
+                        subtitle: '<em>Introduction to Statistical Investigations, 2<sup>nd</sup> Edition</em>',
                 useBuilds: true,
         usePrettify: true,
         enableSlideAreas: true,
@@ -31,7 +31,7 @@
       // Author information
       presenters: [
             {
-        name:  'Author: Jill E. Thomley // Appalachian State University' ,
+        name:  'Jill E. Thomley // STT 1810 Basic Statistics // Appalachian State University' ,
         company: '',
         gplus: '',
         twitter: '',
@@ -3162,7 +3162,7 @@ slide:not(.current) .plotly.html-widget{
       <h1 data-config-title><!-- populated from slide_config.json --></h1>
       <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
       <p data-config-presenter><!-- populated from slide_config.json --></p>
-            <p style="margin-top: 6px; margin-left: -2px;">Last updated Friday, April 28, 2023 @ 01:29 PM</p>
+            <p style="margin-top: 6px; margin-left: -2px;">Last updated Tuesday, June 13, 2023 @ 07:15 PM</p>
           </hgroup>
   </slide>
 
@@ -3170,13 +3170,12 @@ slide:not(.current) .plotly.html-widget{
 
 <p>These slides are intended to accompany Section P.2 Exploring Data in <a href='http://www.isi-stats.com/isi/index2nd.html' title=''><em>Introduction to Statistical Investigations, 2nd Edition</em></a>.</p>
 
-<p><em>This content does not replace reading the textbook section.</em> It is for class presentation and reference.</p>
+<p><em>This content does not replace reading the textbook section.</em> It is for class presentation and/or reference in STT1810 Basic Statistics.</p>
 
-<p>See Also:</p>
+<p>See also:</p>
 
 <ul>
 <li>Glossary of ISI Textbook Vocabulary on AsULearn</li>
-<li><a href='https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CHP_1.html' title=''>Section P.1 Introduction to the Six-Step Method</a></li>
 <li><a href='https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/ExampleP_2.html' title=''>Example P.2 Oh Say Can You Sing?</a></li>
 </ul>
 
@@ -3192,9 +3191,9 @@ slide:not(.current) .plotly.html-widget{
 
 <hr>
 
-<p>One more important goal of this and (every other section) is for you to learn the vocabulary of statistical investigations/thinking.</p>
+<p>One more important goal of this (and every other) section is for you to learn the vocabulary of statistical investigations/thinking.</p>
 
-<p>You need to <strong>&ldquo;speak the language&rdquo;</strong> to understand what is being taught in class, and also to convey ideas that will demonstrate your understanding and proficiency with the material.</p>
+<p>You need to <strong>&ldquo;speak the language&rdquo;</strong> to understand what is being taught in class, and also to express ideas that will demonstrate your understanding and proficiency with the material.</p>
 
 </article></slide><slide class=""><hgroup><h2>Learning Goals for Section P.2</h2></hgroup><article  id="learning-goals-for-section-p.2">
 
@@ -3252,7 +3251,7 @@ Tukey also advocated for development of computerized tools to facilitate EDA, so
 <li>describing the behavior (distribution) of a variable<br> – shape<br> – center<br> – variability<br> – unusual observations / features</li>
 </ul>
 
-</article></slide><slide class=""><hgroup><h2>&ldquo;Tidy&rdquo; Dataset</h2></hgroup><article  id="tidy-dataset">
+</article></slide><slide class=""><hgroup><h2>A &ldquo;Tidy&rdquo; Dataset</h2></hgroup><article  id="a-tidy-dataset">
 
 <p>Data are usually stored in a rectangular representation that has various names, including <strong><em>data table</em></strong> or statistical spreadsheet.</p>
 
@@ -3336,10 +3335,12 @@ Tukey also advocated for development of computerized tools to facilitate EDA, so
 
 </article></slide><slide class=""><hgroup><h2>Possible Reasons for Outliers</h2></hgroup><article  id="possible-reasons-for-outliers">
 
+<p>This information does not appear in your ISI textbook, but it is good to know when discussing outliers in data!</p>
+
 <ul>
 <li><p>The outlier is a legitimate value and it represents the natural variability for the group and variable measured. Sometimes these are the <em>most</em> interesting data points!</p></li>
-<li><p>The outlier is a mistake in measurement, recording, or data entry. It should be corrected or discarded.</p></li>
-<li><p>The measurement is accurate, but the observational unit it was collected from does not belong to the group we intended to measure; for example, including a kindergartener’s height in a dataset that is meant to answer a question about college students’ biometric measurements.</p></li>
+<li><p>The outlier is a mistake in measurement, recording, or data entry. <em>It should be corrected or discarded.</em></p></li>
+<li><p>The measurement is accurate, but the observational unit it was collected from does not belong to the group we intended to measure; for example, including a kindergartener’s height in a dataset that is meant to answer a question about college students’ measurements. <em>It should be discarded.</em></p></li>
 </ul>
 
 </article></slide><slide class=""><hgroup><h2><em>Think About It</em></h2></hgroup><article  id="think-about-it">
@@ -3353,7 +3354,9 @@ Tukey also advocated for development of computerized tools to facilitate EDA, so
 
 <p>Explain how you made your decision and support your answer.</p>
 
-<p><em>Extension:</em> Would a 60-year-old be an outlier in either group?</p></article></slide>
+<p><strong>Extension:</strong> Would a 60-year-old person be an outlier in either of the two groups? Why or why not?</p>
+
+<p><em>Hint: Would a sixty-year old be common to see at McDonald’s? What about at a college snack bar?</em></p></article></slide>
 
 
   <slide class="backdrop"></slide>

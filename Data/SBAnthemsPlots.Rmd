@@ -1,0 +1,63 @@
+---
+title: "SB Anthems Analysis"
+author: "Jill E. Thomley for STT1810 Basic Statistics"
+date: "Last rendered on `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
+output: 
+  html_document: 
+    theme: yeti
+    toc: true
+    toc_depth: 4
+---
+
+```{r globaloptions, include = FALSE}
+knitr::opts_chunk$set(
+  echo = FALSE,
+  message = FALSE,
+  warning = FALSE,
+  comment = NA
+)
+```
+
+```{r}
+library(tidyverse)
+```
+
+```{r}
+sbdata <- read_csv("https://raw.githubusercontent.com/STAT-JET-ASU/Datasets/master/Other/SBAnthems.csv")
+```
+
+```{r}
+ggplot(sbdata, aes(x = Year, y = Time)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(breaks = seq(1980, 2020, 5)) +
+  scale_y_continuous(breaks = seq(60, 150, 10)) +
+  theme_minimal() +
+  labs(title = "Length of the National Anthem for Super Bowls from 1980 to 2022",
+       subtitle = "includes a trend line fitted using the method of least squares",
+       y = "Time (seconds)")
+```
+
+```{r}
+ggplot(sbdata, aes(x = Year, y = Time, shape = Sex, color = Sex)) +
+  geom_point(size = 5) +
+  scale_x_continuous(breaks = seq(1980, 2020, 5)) +
+  scale_y_continuous(breaks = seq(60, 150, 10)) +
+  theme_minimal() +
+  labs(title = "Length of the National Anthem for Super Bowls from 1980 to 2022",
+       subtitle = "includes the sex of the performer indicated by color and shape",
+       y = "Time (seconds)")
+```
+
+```{r}
+ggplot(sbdata, aes(x = Year, y = Time, shape = Sex, color = Sex)) +
+  geom_point(size = 3) +
+  scale_x_continuous(breaks = seq(1980, 2020, 5)) +
+  scale_y_continuous(breaks = seq(60, 150, 20)) +
+  facet_grid(Sex ~ .) +
+  theme_linedraw() +
+  theme(legend.position = "none") +
+  labs(title = "Length of the National Anthem for Super Bowls from 1980 to 2022",
+       subtitle = "includes the sex of the performer indicated by color and shape",
+       y = "Time (seconds)")
+```

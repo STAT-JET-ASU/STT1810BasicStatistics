@@ -1,7 +1,7 @@
 ---
-title: "STT1810 --- Section P.2<br>Exploring Data (EDA)"
-subtitle: "Introduction to Statistical Investigations, 2^nd^ Edition"
-author: "Author: Jill E. Thomley // Appalachian State University"
+title: "Section P.2 Exploring Data (*Descriptive Statistics / EDA*)"
+subtitle: "*Introduction to Statistical Investigations, 2^nd^ Edition*"
+author: "Jill E. Thomley // STT 1810 Basic Statistics // Appalachian State University"
 date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
 output: 
   ioslides_presentation:
@@ -21,12 +21,11 @@ knitr::opts_chunk$set(
 
 These slides are intended to accompany Section P.2 Exploring Data in [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html). 
 
-*This content does not replace reading the textbook section.* It is for class presentation and reference.
+*This content does not replace reading the textbook section.* It is for class presentation and/or reference in STT1810 Basic Statistics.
 
-See Also:
+See also:
 
 * Glossary of ISI Textbook Vocabulary on AsULearn
-* [Section P.1 Introduction to the Six-Step Method](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CHP_1.html)
 * [Example P.2 Oh Say Can You Sing?](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/ExampleP_2.html)
 
 
@@ -40,9 +39,9 @@ See Also:
 
 <hr>
 
-One more important goal of this and (every other section) is for you to learn the vocabulary of statistical investigations/thinking. 
+One more important goal of this (and every other) section is for you to learn the vocabulary of statistical investigations/thinking. 
 
-You need to **"speak the language"** to understand what is being taught in class, and also to convey ideas that will demonstrate your understanding and proficiency with the material.
+You need to **"speak the language"** to understand what is being taught in class, and also to express ideas that will demonstrate your understanding and proficiency with the material. 
 
 
 ## Learning Goals for Section P.2
@@ -89,7 +88,7 @@ Let's review (Section 1.1) and expand our statistics vocabulary!
 -- unusual observations / features
 
 
-## "Tidy" Dataset
+## A "Tidy" Dataset
 
 Data are usually stored in a rectangular representation that has various names, including ***data table*** or statistical spreadsheet.
 
@@ -176,11 +175,13 @@ knitr::include_graphics("https://stat-jet-asu.github.io/Moodlepics/glossary/hist
 
 ## Possible Reasons for Outliers
 
+This information does not appear in your ISI textbook, but it is good to know when discussing outliers in data!
+
 * The outlier is a legitimate value and it represents the natural variability for the group and variable measured. Sometimes these are the *most* interesting data points!
 
-* The outlier is a mistake in measurement, recording, or data entry. It should be corrected or discarded.
+* The outlier is a mistake in measurement, recording, or data entry. *It should be corrected or discarded.*
 
-* The measurement is accurate, but the observational unit it was collected from does not belong to the group we intended to measure; for example, including a kindergartener's height in a dataset that is meant to answer a question about college students' biometric measurements.
+* The measurement is accurate, but the observational unit it was collected from does not belong to the group we intended to measure; for example, including a kindergartener's height in a dataset that is meant to answer a question about college students' measurements. *It should be discarded.*
 
 
 ## *Think About It*
@@ -193,5 +194,7 @@ Mary records the ages of people entering a McDonald’s near the interstate (tod
 
 Explain how you made your decision and support your answer.
 
-*Extension:* Would a 60-year-old be an outlier in either group?
+**Extension:** Would a 60-year-old person be an outlier in either of the two groups? Why or why not?
+
+*Hint: Would a sixty-year old be common to see at McDonald's? What about at a college snack bar?* 
 

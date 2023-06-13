@@ -1,7 +1,7 @@
 ---
-title: "STT1810 --- Example P.2<br>Oh Say Can You Sing?"
+title: "Example P.2<br>Oh Say Can You Sing?"
 subtitle: "Introduction to Statistical Investigations, 2^nd^ Edition"
-author: "Author: Jill E. Thomley // Appalachian State University"
+author: "Jill E. Thomley // STT1810 Basic Statistics // Appalachian State University"
 date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
 output: 
   ioslides_presentation:
@@ -17,7 +17,7 @@ knitr::opts_chunk$set(
 ```
 
 
-## Super Bowl National Anthems
+## STEP 1: Ask a Research Question
 
 ```{r, echo = FALSE, fig.align="center"}
 knitr::include_graphics("images/whitneyssb.png", dpi = 175)
@@ -26,7 +26,7 @@ knitr::include_graphics("images/whitneyssb.png", dpi = 175)
 How long does it take performers to sing the national anthem? (*People actually bet money on this! But practically speaking, Super Bowl planners would also want to know. Time is $ in the big game.*)
 
 
-## The Dataset (partial view)
+## STEP 2: Design a Study / Collect Data
 
 **Table P.2.1** Selected data about Super Bowl performances of the Star Spangled Banner from 2010 to 2019
 
@@ -34,7 +34,21 @@ How long does it take performers to sing the national anthem? (*People actually 
 knitr::include_graphics("images/table_p_02_01.jpg", dpi = 105)
 ```
 
-The [National Anthem dataset](http://www.isi-stats.com/isi/data/prelim/NationalAnthemTimes.txt) contains data from 1980 to 2019. We can explore the data using the [Descriptive Statistics applet](https://www.rossmanchance.com/applets/2021/descstats/Dotplot.htm?hideExtras=2), which also contains updated data for years after 2019.
+The [National Anthem dataset](http://www.isi-stats.com/isi/data/prelim/NationalAnthemTimes.txt) contains data from 1980 to 2019. We can explore it using the [Descriptive Statistics applet](http://www.isi-stats.com/isi2nd/ISIapplets2021.html), which contains updated data (*SB Anthems*) for years after 2019.
+
+
+## The SB Anthems Dataset
+
+The applet dataset includes more variables than the example shown in the textbook.
+
+* `Year`: the year of the Super Bowl
+* `SuperBowl`: the number of the Super Bowl
+* `Performer`: name of the performer(s)
+* `Genre`: the performer's musical genre
+* `Genre2`: different genre classification (includes "other")
+* `Time`: anthem length in seconds (*source not specified*)
+* `Sex`: sex of the performer(s) --- male, female, mixed
+* `sbdTime`: anthem length from sportsbettingdime.com
 
 
 ## Observational Units and Variables
@@ -52,7 +66,7 @@ The textbook states, "So, we collected data on the length of the performance of 
 * How can we explore the data to produce useful information?
 
 
-## How We Describe Distributions
+## Describing a Variable's Distribution
 
 **Categorical Variables**
 
@@ -70,13 +84,6 @@ The textbook states, "So, we collected data on the length of the performance of 
 *Shape, center, and spread describe the pattern of the distribution. Unusual observations are deviations from the pattern.*
 
 
-## A Less-Than-Ideal Graph
-
-```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("images/fig_p_02_01.jpg", dpi = 100)
-```
-
-Why is this graph *not* effective for exploring the question "How long does it take performers to sing the national anthem?" 
 
 
 ## What Makes an Effective Graph?
@@ -89,15 +96,24 @@ Why is this graph *not* effective for exploring the question "How long does it t
 
 * Include a title and/or a figure caption.
 
-* Scale any quantitative axes appropriately (e.g., it would be misleading if the horizontal axis in the previous graph had begun at 60 seconds).
+* Scale any quantitative axes appropriately (e.g., it can be very misleading if a quantitative axis does not start at zero).
 
 Ideally a graph should be a reasonably stand-alone method of conveying information.
+
+
+## STEP 3: Explore the Data
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("images/fig_p_02_01.jpg", dpi = 110)
+```
+
+Why is this graph *not* effective for exploring the question "How long does it take performers to sing the national anthem?" (*Go back and check the guidelines for an effective graph.*)
 
 
 ## A Better Representation
 
 <hr>
-Superbowl National Anthem Lengths (1980 to 2019)
+Length of Superbowl National Anthems (1980 to 2019)
 
 ```{r, echo = FALSE, fig.align="center"}
 knitr::include_graphics("images/fig_p_02_02.jpg", dpi = 100)
@@ -111,6 +127,8 @@ knitr::include_graphics("images/fig_p_02_02.jpg", dpi = 100)
 * What does each dot represent?
 
 * Can you describe the variable distribution?
+
+* What are the measurement units? Why do they matter?
 
 
 ## 
@@ -136,12 +154,12 @@ knitr::include_graphics("images/fig_p_02_03.jpg", dpi = 100)
 
 * **spread**: the SD is 19.2 sec and the range is 156 -- 64 = 92 sec
 
-* **unusual observations**: There are three performances in this dataset that stand out. Neil Diamond appears to have taken an unusually short time at 64 seconds. On the other side of the distribution, Natalie Cole and Alicia Keys both took about 150 seconds (two and a half minutes).
+* **unusual observations**: There are three performances in this dataset that stand out. Neil Diamond appears to have sung an unusually short time at 64 seconds. On the other side of the distribution, both Natalie Cole and Alicia Keys performed for about 150 seconds (two and a half minutes).
 
-Are there any other variables that can help us explain/predict why national anthem performances at the Super Bowl vary in terms of time?
+Are there any other variables that can help us explain/predict why national anthem performances at the Super Bowl vary in terms of the length of time they last?
 
 
-## Time by Sex*
+## Time Grouped by Sex*
 
 We can use a categorical variable to provide more information.
 
@@ -154,34 +172,54 @@ knitr::include_graphics("images/fig_p_02_04.jpg", dpi = 100)
 &#42;*We often run into binary gender groupings in research, especially when working with older observations. It may also be true that all performers so far identify solely as male or female. What might be some of the consequences if someone is misclassified?*
 
 
-## Time by Genre
+## Time Grouped by Genre
 
 ```{r, echo = FALSE, fig.align="center"}
 knitr::include_graphics("images/fig_p_02_05.jpg", dpi = 105)
 ```
 
-For which genre might we be able to make the best estimates? Why do you think so?
+For which genre might we be able to make the best estimates? Why do you think so? (*Hint: Does one have more similar times?*)
 
 
-## Time by Sex and Genre
+## Time Grouped by Sex *and* Genre
 
 ```{r, echo = FALSE, fig.align="center"}
 knitr::include_graphics("images/fig_p_02_06.jpg", dpi = 100)
 ```
 
-Are differences between men and women the same in genres?
+Are any sex-based differences in length the same within genres?
 
 
-## Has Time Changed over the Years?
+## Has Length Changed over the Years?
 
 ```{r, echo = FALSE, fig.align="center"}
 knitr::include_graphics("images/fig_p_02_07.jpg", dpi = 90)
 ```
 
-To make this kind of plot, we need to use the [Multiple Variables applet](https://www.rossmanchance.com/applets/2021/multreg/multreg.html) with the dataset.
+To create this kind of plot, we need to paste the dataset into the [Correlation/Regression applet](http://www.isi-stats.com/isi2nd/ISIapplets2021.html).
 
 
-## Add Coding by Sex
+## Let's Add Some More Information
+
+Do you see a trend in anthem length over the years? What is it?
+
+```{r echo = FALSE, fig.align = "center"}
+library(tidyverse)
+sbdata <- read_csv("https://raw.githubusercontent.com/STAT-JET-ASU/Datasets/master/Other/SBAnthems.csv")
+ggplot(sbdata, aes(x = Year, y = Time)) +
+  geom_point() +
+  geom_hline(yintercept = 110, color = "orange", linetype = "dashed") +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(breaks = seq(1980, 2020, 5)) +
+  scale_y_continuous(breaks = seq(60, 150, 10)) +
+  theme_linedraw() +
+  labs(title = "Length of the National Anthem for Super Bowls from 1980 to 2022",
+       subtitle = "includes a trend line fitted using the method of least squares",
+       y = "Time (seconds)")
+```
+
+
+## Observations Grouped by Sex
 
 ```{r, echo = FALSE, fig.align="center"}
 knitr::include_graphics("images/fig_p_02_08.jpg", dpi = 90)
@@ -190,3 +228,20 @@ knitr::include_graphics("images/fig_p_02_08.jpg", dpi = 90)
 Can we detect any other patterns here? Overall, what do these graphs and statistics tell us? What other data would you like to have to help explain the amount of time?
 
 
+## Another Visualization of the Data
+
+Do you see a trend in performer sex over the years? What is it?
+
+```{r echo = FALSE, fig.align = "center"}
+ggplot(sbdata, aes(x = Year, y = Time, shape = Sex, color = Sex)) +
+  geom_point(size = 3) +
+  geom_hline(yintercept = 110, color = "orange", linetype = "dashed") +
+  scale_x_continuous(breaks = seq(1980, 2020, 5)) +
+  scale_y_continuous(breaks = seq(60, 150, 20)) +
+  facet_grid(Sex ~ .) +
+  theme_linedraw() +
+  theme(legend.position = "none") +
+  labs(title = "Length of the National Anthem for Super Bowls from 1980 to 2022",
+       subtitle = "includes the sex of the performer indicated by color and shape",
+       y = "Time (seconds)")
+```

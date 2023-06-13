@@ -1,7 +1,7 @@
 ---
-title: "STT1810 --- Section P.1<br>Intro: The 6-Step Method"
-subtitle: "Introduction to Statistical Investigations, 2^nd^ Edition"
-author: "Author: Jill E. Thomley // Appalachian State University"
+title: "Section P.1 Introduction<br>to the Six-Step Method"
+subtitle: "*Introduction to Statistical Investigations, 2^nd^ Edition*"
+author: "Jill E. Thomley // STT1810 Basic Statistics // Appalachian State University"
 date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
 output: 
   ioslides_presentation:
@@ -21,9 +21,9 @@ knitr::opts_chunk$set(
 
 These slides are intended to accompany Section P.1 Introduction to the Six-Step Method in [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html). 
 
-*This content does not replace reading the textbook section.* It is for class presentation and reference.
+*This content does not replace reading the textbook section.* It is for class presentation and/or reference in STT1810 Basic Statistics.
 
-See Also:
+See also:
 
 * Glossary of ISI Textbook Vocabulary on AsULearn
 * [Example P.1 Organ Donation](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/ExampleP_1.html)
@@ -32,7 +32,7 @@ See Also:
 ##
 
 ```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("https://stat-jet-asu.github.io/Moodlepics/statsisascience.png")
+knitr::include_graphics("https://stat-jet-asu.github.io/Moodlepics/admin/statsisascience.png")
 ```
 * Tukey pioneered *exploratory data analysis* and other methods
 
@@ -47,9 +47,9 @@ knitr::include_graphics("https://stat-jet-asu.github.io/Moodlepics/statsisascien
 
 <hr>
 
-One more important goal of this and (every other section) is for you to learn the vocabulary of statistical investigations/thinking. 
+One more important goal of this (and every other) section is for you to learn the vocabulary of statistical investigations/thinking. 
 
-You need to **"speak the language"** to understand what is being taught in class, and also to convey ideas that will demonstrate your understanding and proficiency with the material. 
+You need to **"speak the language"** to understand what is being taught in class, and also to express ideas that will demonstrate your understanding and proficiency with the material. 
 
 
 ## Learning Goals for Section P.1
@@ -82,7 +82,7 @@ In some situations, an observational unit may be referred to as a *case*, a *sub
 Data are often organized in a spreadsheet-type format in which each *row* is an observational unit and each *column* is a variable.
 
 
-## "Tidy" Dataset
+## A "Tidy" Dataset
 
 Data are usually stored in a rectangular representation that has various names, including **data table** or **statistical spreadsheet**.
 
@@ -147,7 +147,7 @@ knitr::include_graphics("images/sixstepsfourpillars.png", dpi = 100)
 
 * Statistical investigations typically include these six steps in some form. 
 
-* These six steps may not always be followed in this exact order, but a good statistical investigation will go through all these steps before completion.
+* The steps may not always be followed in this exact order; however, a good statistical investigation will go through all six of these steps before completion.
 
 * The findings of one study typically will generate new research questions; that's how science works!
 

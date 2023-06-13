@@ -1,7 +1,7 @@
 ---
-title: "STT1810 --- Example P.1<br>Organ Donation"
+title: "Example P.1<br>Organ Donation"
 subtitle: "Introduction to Statistical Investigations, 2^nd^ Edition"
-author: "Author: Jill E. Thomley // Appalachian State University"
+author: "Jill E. Thomley // STT1810 Basic Statistics // Appalachian State University"
 date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
 output: 
   ioslides_presentation:
@@ -23,7 +23,7 @@ These slides are intended to accompany Section P.1 Introduction to the Six-Step 
 
 *This content does not replace reading the textbook section.* It is for class presentation and reference.
 
-See Also:
+See also:
 
 * Glossary of ISI Textbook Vocabulary on AsULearn
 * [Section P.1 Introduction to the Six-Step Method](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CHP_1.html)
@@ -64,13 +64,13 @@ knitr::include_graphics("images/sixstepsfourpillars.png", dpi = 100)
 
 **General Question:** Can we find a way to increase the likelihood that a person agrees to become an organ donor? 
 
-However, this question is just too broad to design a study for. We need to focus it more into a question about which we could reasonably collect data to produce an answer.
+However, this question is simply too broad to design a study for. We need to focus it more into a question about which we could reasonably collect data to produce an answer.
 
 Consider: In the United States, everyone 18 years of age or older is eligible to register as an organ donor on their driver's license. What is the process of asking people to be donors?
 
 **Research Question:** Does the default option that is presented to driver’s license applicants influence the likelihood that a person will choose to become an organ donor?
 
-[*Research questions drive our study design and our hypotheses.*]
+[*The research question influences our study design and hypotheses.*]
 
 
 ## STEP 2: Design a Study / Collect Data
@@ -82,22 +82,22 @@ They offered participants $4.00 to complete an online survey. After the results 
 *Can you think of any potential problems with this methodology that might affect the results of the study? What are some positive aspects of this design? [We will learn about study design in Chapter 4.]*
 
 
-## Organ Donation Default Options
+## Organ Donation Options
 
 The participants were asked to imagine they have moved to a new state and are applying for a driver’s license. As part of this application, they were to decide whether or not to become an organ donor. Each person was given one of three choices.
 
-* The default option in the application was *not* to be a donor; participants had to choose to become a donor if they wished (the “opt-in” group).
+* The default option in the application was *not* to be a donor; participants had to choose to become a donor if they wished (the *opt-in* group).
 
-* The default option in the application was to be a donor; they had to choose to *not* become a donor if they wished (the“opt-out” group).
+* The default option in the application was to be a donor; thus, they had to choose *not* to become a donor if they wished (the *opt-out* group).
 
-* No default option in the application; they had to choose to become a donor or not become a donor ("neutral" group).
+* No default option in the application; people had to choose to become a donor or not become a donor (the *neutral* group).
 
 
-## Additional Study Information
+## Additional Design Details
 
 observational units
 
-* the 161 recruited volunteers
+* 161 recruited volunteers
 
 explanatory variable
 
@@ -109,7 +109,7 @@ response variable
 
 study design
 
-* randomized experiment (*assuming the participants were randomly assigned to the three default donation options*)
+* randomized experiment (*assuming participants were randomly assigned to the three donation options*)
 
 
 ## STEP 3: Explore the Data
@@ -138,27 +138,32 @@ Who agreed to become donors?
 * 82.0% of the opt-out group
 * 78.6% of the neutral group
 
-The neutral and opt-out versions produced higher percentages of organ donors in the sample.
+The neutral and opt-out conditions yielded higher percentages of organ donors than the opt-in condition.
 
 :::
 
 ::::
 
-[*We will learn about creating segmented bar graphs in Chapter 5.*]
+* 82.0 / 41.8 ≈ 2 &rarr; twice as likely to agree to become a donor
+* 78.6 / 41.8 ≈ 1.88 &rarr; 1.88 times (*almost twice*) as likely to agree 
+
+[*We will explore segmented bar graphs and risk ratios in Chapter 5.*]
 
 
 ## STEP 4: Draw Inferences
 
-Using methods that we will learn in this course, the researchers analyzed whether the observed differences between the groups were large enough to show that the type of default option had a genuine effect and then estimated the size of that effect. 
+Using methods that we will learn in this course, the researchers analyzed whether the observed differences between the groups were large enough to show that the type of default option had a genuine effect. Then they estimated the size of that effect. 
 
-This study reported strong evidence that the neutral and opt-out versions lead to a higher chance of agreeing to become a donor, as compared to the opt-in version used in many states. [*We will learn about strength of evidence in Chapter 1.*]
+This study reported strong evidence that the neutral and opt-out versions produced a higher chance of a person choosing to be a donor, as compared to the opt-in version used by many states. [*We will learn about strength of evidence in Chapter 1.*]
 
-They could be quite confident that the neutral version increases the chances that a person agrees to become a donor by 20 and 54%---enough to save thousands of lives per year in the United States. [*We will learn about estimation in Chapter 3.*]
+Given the sample percentages and the sample size, they could be confident that the neutral version increases the chances a person agrees to be a donor by somewhere between 20% and 54%. [*We will learn about estimation in Chapter 3.*]
 
 
 ## STEP 5: Formulate Conclusions
 
-In this study, participants given the “opt-in” strategy were much less likely to agree to become donors. Based on their results, the researchers stated their data “suggest changes in defaults could increase donations in the United States of additional thousands of donors a year.” 
+In this study, participants given the “opt-in” strategy were much less likely than others to agree to become donors. 
+
+The researchers concluded that their data “suggest changes in defaults could increase donations in the [U.S.] of additional thousands of donors a year.” 
 
 [*We will learn more about making generalizations in Chapter 2 and cause-and-effect conclusions in Chapter 4.*]
 
@@ -182,7 +187,7 @@ Part of looking back also considers how a study relates to other similar studies
 
 ## Looking Ahead: Variation in Data
 
-ATS (access to transplant) score indicates a waitlist candidate’s likelihood of receiving a deceased donor transplant in the U.S. Variation in scores reflects the degree to which the allocation system is equitable. Less variation means more equity. We will learn about SD in Section P.2. (Source: [OTPN / UNOS](https://insights.unos.org/equity-in-access/))
+ATS (access to transplant) score indicates a waitlist candidate’s likelihood of receiving a deceased donor transplant in the U.S. Variation in the scores reflects the equity (fairness) of the  the allocation system. *Less* variation means *more* equity --- chances are more alike across all candidates We will learn about SD in Section P.2. (Source: [OTPN / UNOS](https://insights.unos.org/equity-in-access/))
 
 ```{r, echo = FALSE, fig.align="center"}
 knitr::include_graphics("images/accesstotransplants.png", dpi = 150)

@@ -1,0 +1,267 @@
+---
+title: "STT1810 Basic Statistics<br>Course Pacing for Fall 2023"
+output: 
+  html_document: 
+    theme: yeti
+    highlight: textmate
+    toc: true
+    toc_depth: 5
+    toc_float: true
+    css: "../../css/style.css"
+    keep_md: yes
+---
+
+**Contact Dr. Thomley via your Private Forum on [AsULearn](https://asulearn.appstate.edu/) or come by office hours if you have any questions about course materials, technologies, assessments, due dates, etc.**
+
+* [Course Syllabus]() 
+* [Learning Goals]()
+
+<hr>
+
+### Week 01
+
+#### August 22 (TUE)
+
+* **READ:** Section P.1 Introduction to the Six-Step Method
+* Dr. Thomley's [Section P.1 Slides](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CHP_1.html)
+* Dr. Thomley's [Example P.1 Slides](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/ExampleP_1.html)
+* WileyPLUS Section P.1 Practice Problems
+
+#### August 24 (THU)
+
+* **READ:** Section P.2 Exploring Data
+* Dr. Thomley's [Section P.2 Slides](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CHP_2.html)
+* Dr. Thomley's [Example P.2 Slides](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/ExampleP_2.html)
+
+
+<hr>
+### Week 02
+
+#### August 29 (TUE)
+
+* **READ:** Section P.2 Exploring Data
+* Dr. Thomley's [Section P.2 Slides](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CHP_2.html)
+* Dr. Thomley's [Example P.2 Slides](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/ExampleP_2.html)
+* **DO:** WileyPLUS Section P.2 Practice Problems
+* <div style = "color: #FF8C00;">DUE: WileyPLUS Section P.1 Practice Problems</div>
+
+#### August 31 (THU)
+
+* **READ:** Section P.3 Exploring Random Processes
+
+
+<hr>
+### Week 03
+
+#### September 05 (TUE)
+
+* **READ:** Section P.3 Exploring Random Processes
+* Dr. Thomley's [Section P.3 Slides](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CHP_3.html)
+* Dr. Thomley's [Exploration P.3 Slides](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/ExampleP_3.html)
+* **DO:** WileyPLUS Section P.3 Practice Problems
+* <div style = "color: #FF8C00;">DUE: WileyPLUS Section P.2 Practice Problems</div>
+
+#### September 07 (THU)
+
+* **READ:** Section 1.1 Introduction to Chance Models
+
+
+<hr>
+### Week 04
+
+#### September 12 (TUE)
+
+* **READ:** Section 1.1 Introduction to Chance Models
+* **DO:** WileyPLUS Section 1.1 Practice Problems
+* <div style = "color: #FF8C00;">DUE: WileyPLUS Section P.3 Practice Problems</div>
+
+#### September 14 (THU)
+
+* **READ:** Section 1.2 Measuring the Strength of Evidence
+
+
+<hr>
+### Week 05
+
+#### September 19 (TUE)
+
+* **READ:** Section 1.2 Measuring the Strength of Evidence
+* **DO:** WileyPLUS Section 1.2 Practice Problems
+* <div style = "color: #FF8C00;">DUE: WileyPLUS Section 1.1 Practice Problems</div>
+
+#### September 21 (THU)
+
+* **READ:** Section 1.3 Alternative Measure of Strength of Evidence
+* **DO:** WileyPLUS Section 1.3 Practice Problems
+
+
+<hr>
+### Week 06
+
+#### September 26 (TUE)
+
+* **READ:** Section 1.4 What Impacts Strength of Evidence?
+* **DO:** WileyPLUS Section 1.4 Practice Problems
+* <div style = "color: #FF8C00;">DUE: WileyPLUS Section 1.2 Practice Problems</div>
+
+#### September 28 (THU)
+
+* Research Article #1
+* <div style = "color: #FF8C00;">DUE: WileyPLUS Section 1.3 Practice Problems</div>
+
+
+<hr>
+### Week 07
+
+#### October 03 (TUE)
+
+* **READ:** Section 2.1 Sampling from a Finite Population: Proportions
+* <div style = "color: #FF8C00;">DUE: WileyPLUS Section 1.4 Practice Problems</div>
+
+#### October 05 (THU)
+
+* **READ:** Section 2.1 Sampling from a Finite Population: Proportions
+* WileyPLUS Section 2.1 Practice Problems
+
+
+<hr>
+### Week 08
+
+#### October 10 (TUE)
+
+* **READ:** Section 3.1 Statistical Inference: Confidence Intervals
+
+#### October 12 (THU)
+
+* **READ:** Section 3.2 2SD Confidence Intervals for a Single Proportion
+* **DO:** WileyPLUS Section 3.1 & 3.2 Practice Problems
+* <div style = "color: #FF8C00;">DUE: WileyPLUS Section 2.1 Practice Problems</div>
+
+
+<hr>
+### Week 09
+
+#### October 17 (TUE)
+
+* NO CLASS---FALL BREAK
+
+#### October 19 (THU)
+
+* **READ:** Section 3.4 Factors That Affect the Width of a Confidence Interval
+* **DO:** WileyPLUS Section 3.4 Practice Problems
+* <div style = "color: #FF8C00;">DUE: WileyPLUS Section 3.1 & 3.2 Practice Problems</div>
+
+
+<hr>
+### Week 10
+
+#### October 24 (TUE)
+
+* **READ:** Section 4.1 Association and Confounding
+* WileyPLUS Section 4.1 Practice Problems
+
+#### October 26 (THU)
+
+* **READ:** Section 4.2 Observational Studies Versus Experiments
+* **DO:** WileyPLUS Section 4.2 Practice Problems
+* <div style = "color: #FF8C00;">DUE: WileyPLUS Section 3.4 Practice Problems</div>
+
+
+<hr>
+### Week 11
+
+#### October 31 (TUE)
+
+* **READ:** Section 5.1 Compare Two Groups: Categorical Response
+* **DO:** WileyPLUS Section 5.1 Practice Problems
+* <div style = "color: #FF8C00;">DUE: WileyPLUS Section 4.1 Practice Problems</div>
+
+#### November 02 (THU)
+
+* **READ:** Section 5.2 Comparing Two Proportions: Simulation-Based Approach
+* <div style = "color: #FF8C00;">DUE: WileyPLUS Section 4.2 Practice Problems</div>
+
+
+<hr>
+### Week 12
+
+#### November 07 (TUE)
+
+* **READ:** Section 5.2 Comparing Two Proportions: Simulation-Based Approach
+* **DO:** WileyPLUS Section 5.2 Practice Problems
+* <div style = "color: #FF8C00;">DUE: WileyPLUS Section 5.1 Practice Problems</div>
+
+#### November 09 (THU)
+
+* **READ:** Section 6.1 Comparing Two Groups: Quantitative Response
+* WileyPLUS Section 6.1 Practice Problems
+
+
+<hr>
+### Week 13
+
+#### November 14 (TUE)
+
+* **READ:** Section 6.2 Comparing Two Means: Simulation-Based Approach
+* <div style = "color: #FF8C00;">DUE: WileyPLUS Section 5.2 Practice Problems</div>
+
+#### November 16 (THU)
+
+* **READ:** Section 6.2 Comparing Two Means: Simulation-Based Approach
+* **DO:** WileyPLUS Section 6.2 Practice Problems
+* <div style = "color: #FF8C00;">DUE: WileyPLUS Section 6.1 Practice Problems</div>
+
+
+<hr>
+### Week 14
+
+#### November 21 (TUE)
+
+* **READ:** Section 7.1 Paired Designs
+* **DO:** WileyPLUS Section 7.1 Practice Problems
+
+#### November 23 (THU)
+
+* NO CLASS---THANKSGIVING BREAK
+
+
+<hr>
+### Week 15
+
+#### November 28 (TUE)
+
+* **READ:** Section 7.2 Simulation-Based Approach to Analyzing Paired Data
+* **DO:** WileyPLUS Section 7.2 Practice Problems
+* <div style = "color: #FF8C00;">DUE: WileyPLUS Section 6.2 Practice Problems (date adjusted for Thanksgiving)</div>
+
+#### November 30 (THU)
+
+* TBA
+* <div style = "color: #FF8C00;">DUE: WileyPLUS Section 7.1 Practice Problems (date adjusted for Thanksgiving)</div>
+
+<hr>
+### Week 16
+
+#### December 05 (TUE)
+
+* TBA
+* <div style = "color: #FF8C00;">DUE: WileyPLUS Section 7.2 Practice Problems</div>
+
+
+#### December 06 (WED)
+
+* READING DAY
+
+
+<hr>
+### Final Exams
+
+#### December 07 (TUE)
+
+* Project Presentations @ 11:00am to 01:30pm for Section 102 (11:00am Section) 
+* Project Presentations @ 02:00pm to 04:30pm for Section 103 (02:00pm Section) 
+
+<hr>
+
+Updated Tuesday, June 13, 2023 @ 03:12 PM
+

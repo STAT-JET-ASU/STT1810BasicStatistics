@@ -35,7 +35,7 @@ Participation in STT 1810 is also designed to meet the following [General Educat
 <hr>
 ### PRELIMINARIES
 
-#### Section P.1 Learning Goals
+#### **Section P.1** Learning Goals
 
 **Overall Goal: Use the six-step statistical investigation method to carry out any statistical study.**
 
@@ -44,7 +44,7 @@ Participation in STT 1810 is also designed to meet the following [General Educat
 * Identify observational units / variables in a statistical study.
 * Classify variables as categorical or quantitative.
 
-#### Section P.2 Learning Goals
+#### **Section P.2** Learning Goals
 
 **Overall Goal: Describe distributions of quantitative variables.**
 
@@ -55,7 +55,7 @@ Participation in STT 1810 is also designed to meet the following [General Educat
 * Interpret graphs that contain a color-coded third variable.
 * Make predictions about centers/means, and about variability / standard deviations, based on the context of the variable.
 
-#### Section P.3 Learning Goals
+#### **Section P.3** Learning Goals
 
 **Overall Goal: Use simulations to explore and understand probabilities.**
 
@@ -69,7 +69,7 @@ Participation in STT 1810 is also designed to meet the following [General Educat
 <hr>
 ### CHAPTER 01
 
-#### Section 1.1 Learning Goals
+#### **Section 1.1** Learning Goals
 
 **Overall Goal: Use the chance model to determine whether an observed statistic is unlikely to occur.**
 
@@ -80,7 +80,7 @@ Participation in STT 1810 is also designed to meet the following [General Educat
 * Implement the 3S strategy: find a statistic, simulate results from a chance model, and determine strength of evidence.
 * Differentiate between saying a chance model is plausible and a chance model is the correct explanation for observed data (i.e., whether or not we have "proven" a result).
 
-#### Section 1.2 Learning Goals
+#### **Section 1.2** Learning Goals
 
 **Overall Goal: Calculate and interpret a *p*-value, and state the strength of evidence it provides against the null hypothesis.**
 
@@ -92,7 +92,7 @@ Participation in STT 1810 is also designed to meet the following [General Educat
 * Interpret the *p*-value and explain why a smaller *p*-value provides stronger evidence against the null hypothesis.
 * State a conclusion about the alternative hypothesis and null hypothesis based on the *p*-value.
 
-#### Section 1.3 Learning Goals
+#### **Section 1.3** Learning Goals
 
 **Overall Goal: Calculate a standardized statistic for a single proportion and evaluate the strength of evidence it provides against a null hypothesis.**
 
@@ -101,7 +101,7 @@ Participation in STT 1810 is also designed to meet the following [General Educat
 * State a conclusion about the alternative hypothesis (and null hypothesis Ho) based on the magnitude of the standardized statistic.
 * Recognize that standardizing the statistic is an alternative measure of strength of evidence.
 
-#### Section 1.4 Learning Goals
+#### **Section 1.4** Learning Goals
 
 **Overall Goal: Describe how the distance of the observed statistic from the parameter value specified by the null hypothesis, sample size, and one- vs. two-sided tests affect the strength of evidence against the null hypothesis.**
 
@@ -114,7 +114,7 @@ Participation in STT 1810 is also designed to meet the following [General Educat
 <hr>
 ### CHAPTER 02
 
-#### Section 2.1 Learning Goals
+#### **Section 2.1** Learning Goals
 
 **Overall Goal: Describe how to select a random sample and predict sampling distributions for a sample proportion.**
 
@@ -134,20 +134,20 @@ Participation in STT 1810 is also designed to meet the following [General Educat
 
 **Overall Goal: Construct and interpret a confidence interval for a single population proportion using the range of plausible values technique.**
 
-#### Section 3.1 Learning Goals
+#### **Section 3.1** Learning Goals
 
 * Complete multiple two-sided tests of significance, using the same value for the sample proportion but changing the value under the null hypothesis, and obtain an interval of plausible values for the population parameter.
 * Interpret an interval of plausible values as estimating the population parameter and as a confidence interval.
 * Based on the results of a test of significance, infer whether or not a value is in the confidence interval and vice versa.
 
-#### Section 3.2 Learning Goals
+#### **Section 3.2** Learning Goals
 
 **Overall Goal: Construct and interpret a confidence interval for a single population proportion using the 2SD method.**
 
 * Compute a confidence interval for a proportion written in terms of its endpoints vs. a confidence interval written in terms of center plus or minus a margin of error.
 * Approximate a 95% confidence interval for a proportion by using the 2SD method.
 
-#### Section 3.4 Learning Goals
+#### **Section 3.4** Learning Goals
 
 **Overall Goal: Identify how factors (confidence level, sample size, SD) affect the width of the confidence interval.**
 
@@ -162,7 +162,7 @@ Participation in STT 1810 is also designed to meet the following [General Educat
 <hr>
 ### CHAPTER 04
 
-#### Section 4.1 Learning Goals
+#### **Section 4.1** Learning Goals
 
 **Overall Goal: Identify confounding variables in observational studies.**
 
@@ -172,7 +172,7 @@ Participation in STT 1810 is also designed to meet the following [General Educat
 * Identify potential confounding variables and explain how they provide an alternative explanation for the observed association between the explanatory variable and the response variable.
 * Draw a diagram to show how the confounding variable provides an alternative explanation for the observed association between the explanatory variable and the response variable.
 
-#### Section 4.2 Learning Goals
+#### **Section 4.2** Learning Goals
 
 **Overall Goal: Explain how studies using random assignment are able to draw cause-and-effect conclusions.**
 
@@ -185,7 +185,7 @@ Participation in STT 1810 is also designed to meet the following [General Educat
 <hr>
 ### CHAPTER 05
 
-#### Section 5.1 Learning Goals
+#### **Section 5.1** Learning Goals
 
 **Overall Goal: Compare two sample proportions numerically and graphically.**
 
@@ -194,7 +194,7 @@ Participation in STT 1810 is also designed to meet the following [General Educat
 * Create a segmented bar chart or mosaic plot to display data available on two categorical variables for the same set of observational units.
 * Calculate and interpret relative risk (also called risk ratio).
 
-#### Section 5.2 Learning Goals
+#### **Section 5.2** Learning Goals
 
 **Overall Goal: Carry out a simulation-based analysis to investigate the difference between two population proportions.**
 
@@ -206,7 +206,7 @@ Participation in STT 1810 is also designed to meet the following [General Educat
 <hr>
 ### CHAPTER 06
 
-#### Section 6.1 Learning Goals
+#### **Section 6.1** Learning Goals
 
 **Overall Goal: Compare two sample means numerically and graphically.**
 
@@ -214,7 +214,7 @@ Participation in STT 1810 is also designed to meet the following [General Educat
 * When comparing two quantitative distributions, identify which has the larger mean, median, standard deviation, and inter-quartile range.
 * Identify whether there is likely an association between a binary categorical variable and a quantitative response variable.
 
-#### Section 6.2 Learning Goals
+#### **Section 6.2** Learning Goals
 
 **Overall Goal: Carry out a simulation-based analysis to investigate the difference between two population means.**
 
@@ -227,14 +227,14 @@ Participation in STT 1810 is also designed to meet the following [General Educat
 <hr>
 ### CHAPTER 07
 
-#### Section 7.1 Learning Goals
+#### **Section 7.1** Learning Goals
 
 **Overall Goal: Identify a study design as paired using repeated measures or paired using matching.**
 
 * Identify a study design as having pairing or independent groups.
 * Identify a study design as paired using repeated measures or paired using matching.
 
-#### Section 7.2 Learning Goals
+#### **Section 7.2** Learning Goals
 
 **Overall Goal: Perform and interpret a simulation-based analysis of paired data for a quantitative response.**
 
@@ -244,5 +244,5 @@ Participation in STT 1810 is also designed to meet the following [General Educat
 
 <hr>
 
-Updated Tuesday, June 13, 2023 @ 01:24 PM
+Updated Tuesday, June 27, 2023 @ 03:01 PM
 

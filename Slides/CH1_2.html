@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>STT1810 — Section 1.2 Strength of Evidence #1</title>
+  <title>Section 1.2 Measuring the Strength of Evidence</title>
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
@@ -19,8 +19,8 @@
     var SLIDE_CONFIG = {
       // Slide settings
       settings: {
-                title: 'STT1810 — Section 1.2<br>Strength of Evidence #1',
-                        subtitle: 'Introduction to Statistical Investigations, 2<sup>nd</sup> Edition',
+                title: 'Section 1.2 Measuring<br>the Strength of Evidence',
+                        subtitle: '<em>Introduction to Statistical Investigations, 2<sup>nd</sup> Edition</em>',
                 useBuilds: true,
         usePrettify: true,
         enableSlideAreas: true,
@@ -31,7 +31,7 @@
       // Author information
       presenters: [
             {
-        name:  'Author: Jill E. Thomley // Appalachian State University' ,
+        name:  'Jill E. Thomley // STT1810 Basic Statistics // Appalachian State University' ,
         company: '',
         gplus: '',
         twitter: '',
@@ -3162,11 +3162,25 @@ slide:not(.current) .plotly.html-widget{
       <h1 data-config-title><!-- populated from slide_config.json --></h1>
       <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
       <p data-config-presenter><!-- populated from slide_config.json --></p>
-            <p style="margin-top: 6px; margin-left: -2px;">Last updated Friday, April 14, 2023 @ 09:04 PM</p>
+            <p style="margin-top: 6px; margin-left: -2px;">Last updated Tuesday, June 27, 2023 @ 06:55 PM</p>
           </hgroup>
   </slide>
 
-<slide class=""><hgroup><h2>Recall: Spiral Approach &amp; Four Pillars</h2></hgroup><article  id="recall-spiral-approach-four-pillars">
+<slide class=""><hgroup><h2>Before We Begin…</h2></hgroup><article  id="before-we-begin">
+
+<p>These slides are intended to accompany Section 1.2 Measuring the Strength of Evidence in <a href='http://www.isi-stats.com/isi/index2nd.html' title=''><em>Introduction to Statistical Investigations, 2nd Edition</em></a>.</p>
+
+<p><em>This content does not replace reading the textbook section.</em> It is for class presentation and/or reference in STT1810 Basic Statistics.</p>
+
+<p>See also:</p>
+
+<ul>
+<li>Glossary of ISI Textbook Vocabulary on AsULearn</li>
+<li><a href='https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CH1_1.html' title=''>Section 1.1 Introduction to Chance Models</a></li>
+<li><a href='https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/Example1_2.html' title=''>Example 1.2 Rock-Paper-Scissors</a></li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Recall: Spiral Approach &amp; Four Pillars</h2></hgroup><article  id="recall-spiral-approach-four-pillars">
 
 <div style="display: flex;">
 <div>
@@ -3177,7 +3191,7 @@ slide:not(.current) .plotly.html-widget{
 
 <div>
 <ul>
-<li><p>» We will address <em>strength</em> of evidence (<strong>significance</strong>) in Chapter 1. «</p></li>
+<li><p><strong>» We will address <em>strength</em> of evidence (significance) in Chapter 1. «</strong></p></li>
 <li><p>We will discuss <em>breadth</em> of results (<strong>generalization</strong>) in Chapter 2.</p></li>
 <li><p>We will learn about <em>size</em> for an effect (<strong>estimation</strong>) in Chapter 3.</p></li>
 <li><p>Chapter 4 will introduce the idea of <strong>causation</strong>, the last of the four pillars.</p></li>
@@ -3251,23 +3265,23 @@ slide:not(.current) .plotly.html-widget{
 <ol>
 <li>make a claim about the parameter of interest (\(H_0\) and \(H_a\))</li>
 <li>gather and explore data</li>
-<li>follow the <u>3S</u> strategy to
+<li>follow the <strong>3S</strong> strategy to
 
 <ul>
-<li>calculate an observed <u>statistic</u> from the data</li>
-<li><u>simulate</u> a null distribution (<em>scenario assuming \(H_0\) is true</em>)</li>
-<li>compare the observed statistic to the null distribution to measure the <u>strength of evidence</u> it provides <em>against</em> \(H_0\).<br/></li>
+<li>calculate an observed <strong><em>Statistic</em></strong> from the data</li>
+<li><strong><em>Simulate</em></strong> a null distribution (<em>scenario assuming \(H_0\) is true</em>)</li>
+<li>compare the observed statistic to the null distribution to measure the <strong><em>Strength of evidence</em></strong> it provides <em>against</em> \(H_0\).<br/></li>
 </ul></li>
 <li>draw a conclusion about the plausibility of \(H_0\)</li>
 </ol>
 
 </article></slide><slide class=""><hgroup><h2>Quantifying Strength of Evidence</h2></hgroup><article  id="quantifying-strength-of-evidence">
 
-<p>One way to assess strength is to use a <em>p</em>-value. The <strong>p</strong> stands for <em>probability</em>—it is the probability of getting a purely random value of the statistic (e.g., from simulation) that is at least as extreme (<em>in the direction of \(H_a\)</em>) as the observed statistic when \(H_0\) is true.</p>
+<p>One way to assess strength is to use a <em>p</em>-value. The <strong>p</strong> stands for <em>probability</em>—it is the probability of getting a purely random value of the statistic (e.g., from simulation) that is at least as extreme as the observed statistic (<em>in the direction of \(H_a\)</em>) when \(H_0\) is true.</p>
 
 <table class = 'rmdtable'>
-<col width="28.089888%" />
-<col width="71.910112%" />
+<col width="27.173913%" />
+<col width="72.826087%" />
 <tr class="header">
 <th align="left">Magnitude</th>
 <th align="left">Guideline for Inference</th>
@@ -3290,7 +3304,7 @@ slide:not(.current) .plotly.html-widget{
 </tr>
 </table>
 
-</article></slide><slide class=""><hgroup><h2>Additional Guidelines (0.05)</h2></hgroup><article  id="additional-guidelines-0.05">
+</article></slide><slide class=""><hgroup><h2>Additional Guidelines (<em>p</em>-value ≤ 0.05)</h2></hgroup><article  id="additional-guidelines-p-value-0.05">
 
 <p>Researchers across a variety of disciplines consider a <em>p</em>-value less than or equal to 0.05 (i.e., at most a 5% chance) to be the threshold where we can claim data have <em>statistical significance</em> and declare the chance model (\(H_0\)) to be implausible.</p>
 
@@ -3298,7 +3312,7 @@ slide:not(.current) .plotly.html-widget{
 
 <p>However, in some situations you may want stronger evidence. For example, in medicine, rejecting \(H_0\) may have life or death consequences, so researchers could choose to use a value like 0.01 (<em>very strong evidence</em>) instead when assessing data.</p>
 
-<p>Why 0.05? It’s honestly an arbitrary value. Ronald Fisher wrote <em>Statistical Methods for Research Workers</em> in 1925 and used 1/20 (5%) as his general guide; it has propagated over time.</p>
+<p>Why 0.05? Ronald Fisher wrote <em>Statistical Methods for Research Workers</em> in 1925 and used 1/20 (5%) as his general guide.</p>
 
 </article></slide><slide class=""><hgroup><h2><a href='http://www.isi-stats.com/isi2nd/ISIapplets2021.html' title=''>ISI One Proportion Applet</a></h2></hgroup><article  id="isi-one-proportion-applet">
 
@@ -3337,30 +3351,30 @@ slide:not(.current) .plotly.html-widget{
 
 </article></slide><slide class=""><hgroup><h2>Strength of Evidence/Conclusions</h2></hgroup><article  id="strength-of-evidenceconclusions">
 
-<p>The <em>p</em>-value from my simulation is 0.0490. This falls in the range of 0.01 &lt; <em>p</em>-value ≤ 0.05, which indicates strong evidence against the null hypothesis. The results are statistically significant: that is, unlikely to be due to chance alone. The chance model is <em>not plausible</em> in this case. We will conclude \(H_a\) — I have ESP!</p>
+<p>The estimated <em>p</em>-value from my simulation is 0.0490. The results are statistically significant—that is, unlikely to be due to chance alone. We will conclude \(H_a\) instead. I have ESP!</p>
 
 <table class = 'rmdtable'>
-<col width="27.173913%" />
-<col width="72.826087%" />
+<col width="24.509804%" />
+<col width="75.490196%" />
 <tr class="header">
 <th align="left">Magnitude</th>
 <th align="left">Guideline for Inference</th>
 </tr>
 <tr class="odd">
 <td align="left"><em>p</em>-value &gt; 0.10</td>
-<td align="left">not much evidence against the null hypothesis; \(H_0\) is plausible</td>
+<td align="left">not much evidence against \(H_0\)</td>
 </tr>
 <tr class="even">
 <td align="left">0.05 &lt; <em>p</em>-value ≤ 0.10</td>
-<td align="left">moderate evidence against the null hypothesis</td>
+<td align="left">moderate evidence against \(H_0\)</td>
 </tr>
 <tr class="odd">
 <td align="left">0.01 &lt; <em>p</em>-value ≤ 0.05</td>
-<td align="left">strong evidence against the null hypothesis</td>
+<td align="left">strong evidence against \(H_0\) <strong>← my estimated <em>p</em>-value falls here!</strong></td>
 </tr>
 <tr class="even">
 <td align="left"><em>p</em>-value ≤ 0.01</td>
-<td align="left">very strong evidence against the null hypothesis</td>
+<td align="left">very strong evidence against \(H_0\)</td>
 </tr>
 </table>
 
@@ -3372,7 +3386,7 @@ slide:not(.current) .plotly.html-widget{
 
 <p>It’s still <em>possible</em> that the results were due to random chance and we drew an incorrect decision based on the data.</p>
 
-<p>If our data and <em>test of significance</em> process lead us to declare our results to be statistically significant and we reject \(H_0\) (chance model) as a plausible explanation when the study outcomes are indeed due solely to chance, that is referred to as a <em>Type I Error</em>. We will discus this more in Section 1.4.</p>
+<p>If our data and testing process lead us to declare our results to be statistically significant and we reject \(H_0\) (the chance model), but the study outcomes are actually due solely to chance, that is called a <em>Type I Error</em>. We will discuss this more in Section 1.4.</p>
 
 <p>Look back and ahead: how can we improve our data collection?</p></article></slide>
 

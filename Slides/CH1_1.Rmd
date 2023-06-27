@@ -1,7 +1,7 @@
 ---
-title: "STT1810 --- Section 1.1<br>Intro to Chance Models"
-subtitle: "Introduction to Statistical Investigations, 2^nd^ Edition"
-author: "Author: Jill E. Thomley // Appalachian State University"
+title: "Section 1.1 Introduction<br>to Chance Models"
+subtitle: "*Introduction to Statistical Investigations, 2^nd^ Edition*"
+author: "Jill E. Thomley // STT1810 Basic Statistics // Appalachian State University"
 date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
 output: 
   ioslides_presentation:
@@ -15,6 +15,18 @@ knitr::opts_chunk$set(
   comment = NA
 )
 ```
+
+
+## Before We Begin…
+
+These slides are intended to accompany Section 1.1 Intro to Chance Models in [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html). 
+
+*This content does not replace reading the textbook section.* It is for class presentation and/or reference in STT1810 Basic Statistics.
+
+See also:
+
+* Glossary of ISI Textbook Vocabulary on AsULearn
+* [Example 1.1 Can Dolphins Communicate?](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/Example1_1.html)
 
 
 ## Recall: Spiral Approach & Four Pillars
@@ -37,7 +49,7 @@ knitr::include_graphics("images/sixstepsfourpillars.png", dpi = 100)
 
 ::: {}
 
-* &#187; We will address *strength* of evidence (**significance**) in Chapter 1. &#171;
+* **&#187; We will address *strength* of evidence (significance) in Chapter 1. &#171;**
 
 * We will discuss *breadth* of results (**generalization**) in Chapter 2.
 
@@ -239,7 +251,7 @@ knitr::include_graphics("images/OneProportionApplet.png", dpi = 120)
 
 * One repetition is 10 flips
 
-* The plot shows us the results from our 1000 reps; it is the distribution of the randomly varying counts or proportions of heads
+* The plot shows us the results from our 1000 reps; it is the distribution of the randomly varying *counts* or *proportions* of heads
 
 :::
 

@@ -1,5 +1,5 @@
 ---
-title: "STT1810 --- Section P.3<br>Random Processes"
+title: "Section P.3 Random Processes"
 subtitle: "Introduction to Statistical Investigations, 2^nd^ Edition"
 author: "Author: Jill E. Thomley // Appalachian State University"
 date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
@@ -19,16 +19,13 @@ knitr::opts_chunk$set(
 
 ## Before We Begin…
 
-These slides are intended to accompany Section P.3 Exploring Random Processes in [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html). 
+These slides are intended to accompany Section P.3 Exploring Data in [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html). 
 
-*This content does not replace reading the textbook section.* It is for class presentation and reference.
+*This content does not replace reading the textbook section.* It is for class presentation and/or reference in STT1810 Basic Statistics.
 
-See Also:
+See also:
 
 * Glossary of ISI Textbook Vocabulary on AsULearn
-* [Section P.1 Introduction to the Six-Step Method](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CHP_1.html)
-* [Section P.2 Exploring Data](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CHP_2.html)
-* Exploration P.3 Cars or Goats (TBA)
 
 
 ## Learning Goals for Preliminaries
@@ -85,5 +82,41 @@ When we talk about probabilities and distributions, we need to keep in mind the 
 **simulation:** an artificial re-creation of a random process using a computer or tactile tools such as coins, dice, cards, or spinners
 
 
-## TBA---more about probability
+## Exploration P.3 --- "Cars or Goats?"
 
+On the game show *Let’s Make a Deal* (hosted by Monty Hall), new cars were often hidden behind one of three doors. Behind the other doors were lesser prizes. The contestant picked one door, and if they chose correctly, they won the car!
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("images/montyhalldoors.jpg", dpi = 90)
+```
+
+
+## Winner!
+
+One actual prize, a vintage Pontiac LeMans T-37 (1970 to 1972).
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("images/pontiaclemans.jpg", dpi = 80)
+```
+
+
+## Not so much winning...
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("images/sillygoat.jpeg", dpi = 190)
+```
+
+
+## Probabilistic Properties of the Game
+
+What is the *random process*? What are its possible outcomes?
+
+What is the *probability* of each outcome in the random process? 
+
+Summarized, what is the *probability distribution* for the process?
+
+How can we simulate the random process using a computer, or alternatively tactile tools such as coins, dice, cards, or spinners?
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("images/tactiletools.jpg", dpi = 175)
+```

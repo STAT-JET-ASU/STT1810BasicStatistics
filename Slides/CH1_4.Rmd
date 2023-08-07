@@ -194,7 +194,7 @@ Unknown Truth: You DO NOT have COVID-19.
 Unknown Truth: You DO have COVID-19.
 
 * Test says you do have the virus---again, a correct decision!
-* Test says you do not have the virus---false negative (Type II)
+* Test says you do not have the virus---false negative (Type II error)
 
 
 ## Type I Error and Significance

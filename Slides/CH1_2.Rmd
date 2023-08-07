@@ -103,11 +103,11 @@ An essential part of our statistical *logic of inference* is creating a pair of 
 
 *Recall from our Section 1.1 vocabulary: A parameter is a long-run numerical property of some real-world random process.*
 
-**null hypothesis ($H_0$):** "by chance alone" or "there is no effect" explanation, which can be modeled by random simulation
+**null hypothesis ($H_0$) :** "by chance alone" or "there is no effect" explanation, which can be modeled by random simulation
 
-**null distribution:** a distribution of simulated statistics that are a representation of what *could have* happened in the actual study if the null hypothesis were true (we *assume* $H_0$ is true when we conduct a simulation)
+**null distribution :** a distribution of simulated statistics that are a representation of what *could have* happened in the actual study if the null hypothesis were true (we *assume* $H_0$ is true when we conduct a simulation)
 
-**alternative hypothesis ($H_a$):** "not by chance alone" or "there is an effect" explanation, typically reflects our research conjecture (it is also sometimes referred to as the *research hypothesis*)
+**alternative hypothesis ($H_a$) :** "not by chance alone" or "there is an effect" explanation, typically reflects our research conjecture (it is also sometimes referred to as the *research hypothesis*)
 
 
 ## Symbols
@@ -116,11 +116,11 @@ We often use symbols to communicate or represent different quantities in a stati
 
 It is common to use Greek letters to represent parameters and Roman letters (our regular English alphabet) for statistics.
 
-$\pi$ (pi): The Greek letter for p, pronounced “pie.” This represents a parameter that is a proportion or probability (*not* 3.14159).
+$\pi$ : The Greek letter pi (or *p*), pronounced “pie.” This represents a parameter that is a proportion or probability (*not* 3.14159).
 
-$\hat{p}$: The Roman letter p with a ^ above it, pronounced as "p-hat." It is the proportion of observational units in a sample that have a particular characteristic (or an *estimated probability*). For a *test of significance*, this would be the observed statistic.
+$\hat{p}$ : The Roman letter p with a ^ above it, pronounced as "p-hat." It is the proportion of observational units in a sample that have a particular characteristic (or an *estimated probability*). For a *test of significance*, this would be the observed statistic.
 
-$n$: sample size; the number of observational units in the sample
+$n$ : sample size; the number of observational units in the sample
 
 
 ## Test of Significance
@@ -202,7 +202,7 @@ $$H_0: \pi = 0.20 \text{ (guessing)}$$
 
 $$H_a: \pi > 0.20 \text{ (has ESP)}$$
 
-Suppose I correctly identified 9 cards, so my sample proportion is $\hat{p} = 9/25 = 0.36.$
+Suppose I correctly identified 9 cards. My sample proportion is therefore $\hat{p} = 9/25 = 0.36.$
 
 What *strength of evidence* is provided by these ESP test results?
 

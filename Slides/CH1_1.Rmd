@@ -84,7 +84,7 @@ We will *not* be covering Section 1.5, which discusses the theory-based approach
 
 ## What is a Chance Model?
 
-<h3 style="text-align: center;">Discuss: in general, what is a *model* ?</h3>
+<h3 style="text-align: center;">Generally speaking, what is a *model* ?</h3>
 
 <h3 style="text-align: center;">What about a *mathematical model* ?</h3>
 

@@ -1,5 +1,5 @@
 ---
-title: "STT1810 Basic Statistics<br>Syllabus for Fall 2023"
+title: "STT 1810 Basic Statistics<br>Syllabus for Fall 2023"
 output: 
   html_document: 
     theme: cosmo
@@ -16,19 +16,18 @@ INSTRUCTOR INFO
 
 #### **Bulletin Description**  
 
-STT1810 is an introduction to statistical problem solving. Topics include organization and presentation of data; measures of location, variation, and association; the normal distribution, sampling distributions, and statistical inference. Emphasis will be on conceptual understanding and interpretation of results rather than theoretical development. Statistical software will be utilized in the analysis of data and in the development of statistical and probabilistic concepts. STT 1810 is not open to students with credit for STT 2810, STT 2820, STT 3850, or STT 4811. (NUMERICAL DATA; COMPUTER; *GEN ED: Quantitative Literacy*)
+STT 1810 is an introduction to statistical problem solving. Topics include organization and presentation of data; measures of location, variation, and association; the normal distribution, sampling distributions, and statistical inference. Emphasis will be on conceptual understanding and interpretation of results rather than theoretical development. Statistical software will be utilized in the analysis of data and in the development of statistical and probabilistic concepts. STT 1810 is not open to students with credit for STT 2810, STT 2820, STT 3850, or STT 4811. (NUMERICAL DATA; COMPUTER; *GEN ED: Quantitative Literacy*)
 
 Prerequisite: MAT 1010 or higher. Demonstrated readiness for college-level math. 
-
-This course is 100% web-based and will hold synchronous class meetings using Zoom, so you should be comfortable using a computer and must have reliable access to a computer and internet connection. 
 
 #### **Course Learning Goals**
 
 1. Students will demonstrate effective use of selected descriptive statistics methods.
 2. Students will demonstrate effective use of selected inferential statistics methods.
-3. Students will effectively communicate using statistical frameworks and vocabulary.
-4. Students will use statistical thinking to evaluate scholarly research and popular media.
-5. Students will demonstrate preparedness for continued statistics coursework or research.
+3. Students will effectively discuss the roles of randomness in statistical processes.
+4. Students will effectively communicate using statistical frameworks and vocabulary.
+5. Students will use statistical thinking to evaluate scholarly research and popular media.
+6. Students will demonstrate preparedness for continued statistics coursework or research.
 
 Participation in STT 1810 is also designed to meet the following [General Education Learning Goals]((https://universitycollege.appstate.edu/programs/general-education-program/program-goals)).
 
@@ -113,7 +112,7 @@ By submitting work under your name, you are attesting that you have abided by th
 
 **Be proactive and take charge of your own learning!** Appalachian students are expected to make engagement with courses their first priority. If you have not done the assigned textbook readings and other class prep assignments before coming to class, or if you have not tried the problems on WileyPLUS or other assignments before coming to office hours, you likely will be confused, feel lost, and have a poor experience in this course. I DO NOT WANT THAT TO HAPPEN! Please help me to help you.
 
-Each of you has the capability to succeed in STT1810. However, sometimes we have to change certain behaviors, study habits, and/or emotional reactions to achieve that success. In this course, you will be challenged with concepts and problems you have never seen before. I do not expect you to be able to understand them all immediately. A critical first step in learning new material is seeing what you can do on your own. This may feel uncomfortable and frustrating. Success in statistics is not based on whether it "comes naturally" to you or whether a topic seems “clear” the first time you are introduced to it. Instead, success is about learning to use mistakes and material we may be struggling with to grow. Each time we get stuck, it teaches us something about the problem we are working on and leads us to develop greater skill and better understanding of the content---a firm foundation for the next layer of course material. 
+Each of you has the capability to succeed in STT 1810. However, sometimes we have to change certain behaviors, study habits, and/or emotional reactions to achieve that success. In this course, you will be challenged with concepts and problems you have never seen before. I do not expect you to be able to understand them all immediately. A critical first step in learning new material is seeing what you can do on your own. This may feel uncomfortable and frustrating. Success in statistics is not based on whether it "comes naturally" to you or whether a topic seems “clear” the first time you are introduced to it. Instead, success is about learning to use mistakes and material we may be struggling with to grow. Each time we get stuck, it teaches us something about the problem we are working on and leads us to develop greater skill and better understanding of the content---a firm foundation for the next layer of course material. 
 
 ##### **Invest Appropriate Time**
 
@@ -131,4 +130,4 @@ This course conforms to all Appalachian State University policies with respect t
 
 <hr>
 
-Updated Monday, August 14, 2023 @ 04:17 PM
+Updated Tuesday, August 15, 2023 @ 12:54 PM

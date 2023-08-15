@@ -12,7 +12,13 @@ output:
 
 <hr>
 
-INSTRUCTOR INFO
+#### **Instructor Information** 
+
+Dr. Jill E. Thomley<br>
+Walker Hall 228<br>
+828-773-3273<br>
+thomleyje@appstate.edu<br>
+<https://jillthomley.github.io/>
 
 #### **Bulletin Description**  
 
@@ -130,4 +136,4 @@ This course conforms to all Appalachian State University policies with respect t
 
 <hr>
 
-Updated Tuesday, August 15, 2023 @ 02:15 PM
+Updated Tuesday, August 15, 2023 @ 06:20 PM

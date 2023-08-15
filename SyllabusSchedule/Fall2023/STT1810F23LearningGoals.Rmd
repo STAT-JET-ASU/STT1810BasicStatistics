@@ -6,7 +6,7 @@ output:
     highlight: textmate
     toc: true
     toc_depth: 5
-    toc_float: true
+    toc_float: false
     css: "../../css/style.css"
     keep_md: yes
 ---
@@ -14,28 +14,29 @@ output:
 <hr>
 ### TEXTBOOK
 
-The course textbook for STT1810 is [***Introduction to Statistical Investigations, 2nd Edition***](http://www.isi-stats.com/isi/index2nd.html) by Nathan Tintle, Beth Chance, George Cobb, Allan Rossman, Soma Roy, Todd Swanson, and Jill VanderStoep. You will have access to the textbook online via [WileyPLUS](https://www.wileyplus.com/).
+The course textbook for STT1810 is [***Introduction to Statistical Investigations, 2nd Edition***](http://www.isi-stats.com/isi/index2nd.html) by Nathan Tintle, Beth Chance, George Cobb, Allan Rossman, Soma Roy, Todd Swanson, and Jill VanderStoep. You will have access to the textbook online via [**WileyPLUS**](https://www.wileyplus.com/).
 
 We will use selected sections of the textbook to facilitate the **Course Learning Goals**.
 
 1. Students will demonstrate effective use of selected descriptive statistics methods.
 2. Students will demonstrate effective use of selected inferential statistics methods.
-3. Students will effectively communicate using statistical frameworks and vocabulary.
-4. Students will use statistical thinking to evaluate scholarly research and popular media.
-5. Students will demonstrate preparedness for continued statistics coursework or research.
+3. Students will effectively discuss the roles of randomness in statistical processes.
+4. Students will effectively communicate using statistical frameworks and vocabulary.
+5. Students will use statistical thinking to evaluate scholarly research and popular media.
+6. Students will demonstrate preparedness for continued statistics coursework or research.
 
 Participation in STT 1810 is also designed to meet the following [General Education Learning Goals]((https://universitycollege.appstate.edu/programs/general-education-program/program-goals)).
 
 * Goal 1. Thinking Critically and Creatively
 * Goal 2. Communicating Effectively
 
-**You may use this as a checklist of knowledge and skills you need to acquire to be successful in this course.**
+**You may use this as a checklist of knowledge and skills you need to acquire from the text to be successful in this course.**
 
 
 <hr>
-### PRELIMINARIES
+### PRELIMINARIES *Introduction to Statistical Investigations*
 
-#### **Section P.1** Learning Goals
+#### **Section P.1** Introduction to the Six-Step Method
 
 **Overall Goal: Use the six-step statistical investigation method to carry out any statistical study.**
 
@@ -44,7 +45,7 @@ Participation in STT 1810 is also designed to meet the following [General Educat
 * Identify observational units / variables in a statistical study.
 * Classify variables as categorical or quantitative.
 
-#### **Section P.2** Learning Goals
+#### **Section P.2** Exploring Data
 
 **Overall Goal: Describe distributions of quantitative variables.**
 
@@ -55,7 +56,7 @@ Participation in STT 1810 is also designed to meet the following [General Educat
 * Interpret graphs that contain a color-coded third variable.
 * Make predictions about centers/means, and about variability / standard deviations, based on the context of the variable.
 
-#### **Section P.3** Learning Goals
+#### **Section P.3** Exploring Random Processes
 
 **Overall Goal: Use simulations to explore and understand probabilities.**
 
@@ -67,9 +68,7 @@ Participation in STT 1810 is also designed to meet the following [General Educat
 
 
 <hr>
-### CHAPTER 01
-
-#### **Section 1.1** Learning Goals
+### CHAPTER 01 *Significance: How Strong is the Evidence?*
 
 **Overall Goal: Use the chance model to determine whether an observed statistic is unlikely to occur.**
 
@@ -80,19 +79,19 @@ Participation in STT 1810 is also designed to meet the following [General Educat
 * Implement the 3S strategy: find a statistic, simulate results from a chance model, and determine strength of evidence.
 * Differentiate between saying a chance model is plausible and a chance model is the correct explanation for observed data (i.e., whether or not we have "proven" a result).
 
-#### **Section 1.2** Learning Goals
+#### **Section 1.2** Measuring the Strength of Evidence
 
-**Overall Goal: Calculate and interpret a *p*-value, and state the strength of evidence it provides against the null hypothesis.**
+**Overall Goal: Calculate and interpret a $p$-value, and state the strength of evidence it provides against the null hypothesis.**
 
 * Use appropriate symbols for parameter and statistic.
 * State the null and the alternative hypotheses in words and in terms of the symbol $\pi$, the long-run proportion.
 * Explain how to conduct a simulation using a null hypothesis probability that is not 50-50.
-* Use the [ISI One Proportion applet](http://www.isi-stats.com/isi2nd/ISIapplets2021.html) to obtain the *p*-value after carrying out an appropriate simulation.
+* Use the [ISI One Proportion applet](http://www.isi-stats.com/isi2nd/ISIapplets2021.html) to obtain the $p$-value after carrying out an appropriate simulation.
 * Anticipate the null distribution's center and how it changes based on using proportion or count as the statistic.
-* Interpret the *p*-value and explain why a smaller *p*-value provides stronger evidence against the null hypothesis.
-* State a conclusion about the alternative hypothesis and null hypothesis based on the *p*-value.
+* Interpret the $p$-value and explain why a smaller $p$-value provides stronger evidence against the null hypothesis.
+* State a conclusion about the alternative hypothesis and null hypothesis based on the $p$-value.
 
-#### **Section 1.3** Learning Goals
+#### **Section 1.3** Alternative Measure of Strength of Evidence
 
 **Overall Goal: Calculate a standardized statistic for a single proportion and evaluate the strength of evidence it provides against a null hypothesis.**
 
@@ -101,20 +100,20 @@ Participation in STT 1810 is also designed to meet the following [General Educat
 * State a conclusion about the alternative hypothesis (and null hypothesis Ho) based on the magnitude of the standardized statistic.
 * Recognize that standardizing the statistic is an alternative measure of strength of evidence.
 
-#### **Section 1.4** Learning Goals
+#### **Section 1.4** What Impacts Strength of Evidence?
 
 **Overall Goal: Describe how the distance of the observed statistic from the parameter value specified by the null hypothesis, sample size, and one- vs. two-sided tests affect the strength of evidence against the null hypothesis.**
 
-* Anticipate and explain why, when everything else remains the same, the *p*-value is smaller when the observed proportion of successes is farther away from the hypothesized value of the long-run proportion of successes.
-* Anticipate and explain why, when everything else remains the same, the *p*-value is smaller when the sample size is larger.
+* Anticipate and explain why, when everything else remains the same, the $p$-value is smaller when the observed proportion of successes is farther away from the hypothesized value of the long-run proportion of successes.
+* Anticipate and explain why, when everything else remains the same, the $p$-value is smaller when the sample size is larger.
 * Recognize when a two-sided test / alternative hypothesis is suggested by the research question.
-* Anticipate and explain why, when everything else remains the same, the *p*-value is larger when the alternative hypothesis is two-sided.
+* Anticipate and explain why, when everything else remains the same, the $p$-value is larger when the alternative hypothesis is two-sided.
 
 
 <hr>
-### CHAPTER 02
+### CHAPTER 02 *Generalization: How Broadly Do the Results Reply?*
 
-#### **Section 2.1** Learning Goals
+#### **Section 2.1** Sampling from a Finite Population: Proportions
 
 **Overall Goal: Describe how to select a random sample and predict sampling distributions for a sample proportion.**
 
@@ -124,30 +123,30 @@ Participation in STT 1810 is also designed to meet the following [General Educat
 * Identify whether a sampling method is likely to be biased and explain the potential impact.
 * Describe how to select a random sample and recognize that one advantage of a random sample is that it is likely to be representative of the population regardless of sample size.
 * Fill in a data table where rows are the observational units and columns are the variables.
-* Predict the mean, standard deviation, and shape of the sampling distribution of a sample proportion from a random sample of size n, where the population proportion  is known.
+* Predict the mean, standard deviation, and shape of the sampling distribution of a sample proportion from a random sample of size n, where the population proportion is known.
 * Apply simulation-based inference methods for a population proportion to research studies involving random samples from finite populations.
 * Identify whether a study may be impacted by non-sampling concerns and explain the potential impact.
 
 
 <hr>
-### CHAPTER 03
+### CHAPTER 03 *Estimation: How Large is the Effect?*
 
 **Overall Goal: Construct and interpret a confidence interval for a single population proportion using the range of plausible values technique.**
 
-#### **Section 3.1** Learning Goals
+#### **Section 3.1** Statistical Inference: Confidence Intervals
 
 * Complete multiple two-sided tests of significance, using the same value for the sample proportion but changing the value under the null hypothesis, and obtain an interval of plausible values for the population parameter.
 * Interpret an interval of plausible values as estimating the population parameter and as a confidence interval.
 * Based on the results of a test of significance, infer whether or not a value is in the confidence interval and vice versa.
 
-#### **Section 3.2** Learning Goals
+#### **Section 3.2** 2SD and Theory-Based Confidence Intervals for a Single Proportion
 
 **Overall Goal: Construct and interpret a confidence interval for a single population proportion using the 2SD method.**
 
 * Compute a confidence interval for a proportion written in terms of its endpoints vs. a confidence interval written in terms of center plus or minus a margin of error.
 * Approximate a 95% confidence interval for a proportion by using the 2SD method.
 
-#### **Section 3.4** Learning Goals
+#### **Section 3.4** Factors That Affect the Width of a Confidence Interval
 
 **Overall Goal: Identify how factors (confidence level, sample size, SD) affect the width of the confidence interval.**
 
@@ -156,13 +155,13 @@ Participation in STT 1810 is also designed to meet the following [General Educat
 * Recognize that all other things being equal, as the sample size increases, the width of the resulting confidence interval decreases.
 * Recognize that all other things being equal, as the sample proportion gets farther from 0.5, standard error decreases and thus a resulting confidence interval will be narrower.
 * Recognize that statistical significance on its own does not imply evidence of a large difference from Ho. This issue is especially relevant with large sample sizes. 
-* Know that *p*-values address statistical significance while CIs help assess the plausible size of the parameter.
+* Know that $p$-values address statistical significance while CIs help assess the plausible size of the parameter.
 
 
 <hr>
-### CHAPTER 04
+### CHAPTER 04 *Causation: Can We Say What Caused the Effect*
 
-#### **Section 4.1** Learning Goals
+#### **Section 4.1** Association and Confounding
 
 **Overall Goal: Identify confounding variables in observational studies.**
 
@@ -172,7 +171,7 @@ Participation in STT 1810 is also designed to meet the following [General Educat
 * Identify potential confounding variables and explain how they provide an alternative explanation for the observed association between the explanatory variable and the response variable.
 * Draw a diagram to show how the confounding variable provides an alternative explanation for the observed association between the explanatory variable and the response variable.
 
-#### **Section 4.2** Learning Goals
+#### **Section 4.2** Observational Studies Versus Experiments
 
 **Overall Goal: Explain how studies using random assignment are able to draw cause-and-effect conclusions.**
 
@@ -183,9 +182,9 @@ Participation in STT 1810 is also designed to meet the following [General Educat
 
 
 <hr>
-### CHAPTER 05
+### CHAPTER 05 *Comparing Two Proportions*
 
-#### **Section 5.1** Learning Goals
+#### **Section 5.1** Comparing Two Groups: Categorical Response
 
 **Overall Goal: Compare two sample proportions numerically and graphically.**
 
@@ -194,7 +193,7 @@ Participation in STT 1810 is also designed to meet the following [General Educat
 * Create a segmented bar chart or mosaic plot to display data available on two categorical variables for the same set of observational units.
 * Calculate and interpret relative risk (also called risk ratio).
 
-#### **Section 5.2** Learning Goals
+#### **Section 5.2** Comparing Two Proportions: Simulation-Based Approach
 
 **Overall Goal: Carry out a simulation-based analysis to investigate the difference between two population proportions.**
 
@@ -204,9 +203,9 @@ Participation in STT 1810 is also designed to meet the following [General Educat
 
 
 <hr>
-### CHAPTER 06
+### CHAPTER 06 *Comparing Two Means*
 
-#### **Section 6.1** Learning Goals
+#### **Section 6.1** Comparing Two Groups: Quantitative Response
 
 **Overall Goal: Compare two sample means numerically and graphically.**
 
@@ -214,7 +213,7 @@ Participation in STT 1810 is also designed to meet the following [General Educat
 * When comparing two quantitative distributions, identify which has the larger mean, median, standard deviation, and inter-quartile range.
 * Identify whether there is likely an association between a binary categorical variable and a quantitative response variable.
 
-#### **Section 6.2** Learning Goals
+#### **Section 6.2** Comparing Two Means: Simulation-Based Approach
 
 **Overall Goal: Carry out a simulation-based analysis to investigate the difference between two population means.**
 
@@ -225,21 +224,21 @@ Participation in STT 1810 is also designed to meet the following [General Educat
 
 
 <hr>
-### CHAPTER 07
+### CHAPTER 07 *Paired Data: One Quantitative Variable*
 
-#### **Section 7.1** Learning Goals
+#### **Section 7.1** Paired Designs
 
 **Overall Goal: Identify a study design as paired using repeated measures or paired using matching.**
 
 * Identify a study design as having pairing or independent groups.
 * Identify a study design as paired using repeated measures or paired using matching.
 
-#### **Section 7.2** Learning Goals
+#### **Section 7.2** Simulation-Based Approach to Analyzing Paired Data
 
 **Overall Goal: Perform and interpret a simulation-based analysis of paired data for a quantitative response.**
 
 * Understand the difference between independent samples and paired samples in terms of the study design and how variability can be lower in a paired design and how this can influence the strength of evidence.
-* Complete a simulation-based test of significance of a paired design by writing out the hypothesis, determining the observed statistic, computing the p-value, and writing out an appropriate conclusion.
+* Complete a simulation-based test of significance of a paired design by writing out the hypothesis, determining the observed statistic, computing the $p$-value, and writing out an appropriate conclusion.
 
 
 <hr>

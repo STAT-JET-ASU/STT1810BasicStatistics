@@ -218,19 +218,19 @@ knitr::include_graphics("images/OneProportionAppletZenerB.png", dpi = 140)
 
 The estimated *p*-value from my simulation is 0.0490. The results are statistically significant&mdash;that is, unlikely to be due to chance alone. We will conclude $H_a$ instead. I have ESP!
 
-| Magnitude               | Guideline for Inference                                                     |
-|-------------------------|-----------------------------------------------------------------------------|
-| *p*-value > 0.10        | not much evidence against $H_0$                                             |
-| 0.05 < *p*-value ≤ 0.10 | moderate evidence against $H_0$                                             |
-| 0.01 < *p*-value ≤ 0.05 | strong evidence against $H_0$ **&larr; my estimated *p*-value falls here!** |
-| *p*-value ≤ 0.01        | very strong evidence against $H_0$                                          |
+| Magnitude               | Guideline for Inference                                                   |
+|-------------------------|---------------------------------------------------------------------------|
+| *p*-value > 0.10        | not much evidence; $H_0$ is plausible                                     |
+| 0.05 < *p*-value ≤ 0.10 | moderate evidence against $H_0$                                           |
+| 0.01 < *p*-value ≤ 0.05 | strong evidence against $H_0$ **&larr; my estimated p-value falls here!** |
+| *p*-value ≤ 0.01        | very strong evidence against $H_0$                                        |
 
 
 ## Generalization
 
 *Okay, so maybe I don't have ESP... *
 
-From a probability point of view, we *did* reject the plausibility of the chance model, but the breath of our conclusions are limited by the nature of the experiment and our sample.
+From a probability point of view, we *did* reject the plausibility of the chance model, but the breadth of conclusions are limited by the nature of the experiment and our sample.
 
 It's still *possible* that the results were due to random chance and we drew an incorrect decision based on the data.
 

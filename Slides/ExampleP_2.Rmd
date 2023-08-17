@@ -14,6 +14,8 @@ knitr::opts_chunk$set(
   warning = FALSE,
   comment = NA
 )
+library(readr)
+library(ggplot2)
 ```
 
 
@@ -150,7 +152,7 @@ knitr::include_graphics("images/fig_p_02_03.jpg", dpi = 100)
 
 * **shape**: relatively symmetric, perhaps bimodal (two peaks)
 
-* **center**: the mean time is 108.0 seconds (1 min and 48 sec)
+* **center**: the mean time is 108.0 seconds (1 min and 48 sec); Carrie Underwood's rendition was about "average" length
 
 * **spread**: the SD is 19.2 sec and the range is 156 -- 64 = 92 sec
 
@@ -204,7 +206,6 @@ To create this kind of plot, we need to paste the dataset into the [Correlation/
 Do you see a trend in anthem length over the years? What is it?
 
 ```{r echo = FALSE, fig.align = "center"}
-library(tidyverse)
 sbdata <- read_csv("https://raw.githubusercontent.com/STAT-JET-ASU/Datasets/master/Other/SBAnthems.csv")
 ggplot(sbdata, aes(x = Year, y = Time)) +
   geom_point() +

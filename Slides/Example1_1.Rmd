@@ -1,0 +1,174 @@
+---
+title: "Example 1.1 Can<br>Dolphins Communicate?"
+subtitle: "Introduction to Statistical Investigations, 2^nd^ Edition"
+author: "Jill E. Thomley // STT1810 Basic Statistics // Appalachian State University"
+date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
+output: 
+  ioslides_presentation:
+    logo: images/logoASU.jpg
+---
+
+```{r global_options, include = FALSE}
+knitr::opts_chunk$set(
+  message = FALSE,
+  warning = FALSE,
+  comment = NA
+)
+```
+
+
+## Before We Begin…
+
+These slides are intended to accompany Section P.1 Introduction to the Six-Step Method in [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html). 
+
+*This content does not replace reading the textbook section.* It is for class presentation and reference.
+
+See also:
+
+* Glossary of ISI Textbook Vocabulary on AsULearn
+* [Section 1.1 Introduction to Chance Models](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CH1_1.html)
+
+
+## The Spiral Approach to Investigation
+
+:::::: {style="display: flex;"}
+
+::: {}
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("images/sixstepsfourpillars.png", dpi = 100)
+```
+
+:::
+
+::: {}
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+:::
+
+::: {}
+
+* Statistical investigations typically include these six steps in some form. 
+
+* These six steps may not always be followed in this exact order, but a good statistical investigation will go through all these steps before completion.
+
+* The findings of one study typically will generate new research questions; that's how science works!
+
+:::
+
+::::
+
+
+## STEP 1: Ask a Research Question
+
+**General Question:** Can dolphins communicate with one another in an abstract manner?
+
+**Research Question:** TBA?
+
+[*The research question influences our study design and hypotheses.*]
+
+
+## STEP 2: Design a Study / Collect Data
+
+TBA
+
+*Can you think of any potential problems with this methodology that might affect the results of the study? What are some positive aspects of this design?*
+
+
+## TBA
+
+TBA
+
+
+## Additional Design Details
+
+observational units
+
+* each of Buzz's attempts (sometimes called *trials*)
+
+explanatory variable
+
+* whether the light was blinking or steady (two treatments)
+
+response variable
+
+* whether or not Buzz pushed the correct button on each trial (categorical, binary)
+
+study design
+
+* randomized experiment (*assuming the two light options were randomized across the trials*)
+
+
+## STEP 3: Explore the Data
+
+:::::: {style="display: flex;"}
+
+::: {}
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("images/fig_p_01_01.png", dpi = 100)
+```
+
+:::
+
+::: {}
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+:::
+
+::: {}
+
+Who agreed to become donors?
+
+* 41.8% of the opt-in group
+* 82.0% of the opt-out group
+* 78.6% of the neutral group
+
+The neutral and opt-out conditions yielded higher percentages of organ donors than the opt-in condition.
+
+:::
+
+::::
+
+* 82.0 / 41.8 ≈ 2 &rarr; twice as likely to agree to become a donor
+* 78.6 / 41.8 ≈ 1.88 &rarr; 1.88 times (*almost twice*) as likely to agree 
+
+[*We will explore segmented bar graphs and risk ratios in Chapter 5.*]
+
+
+## STEP 4: Draw Inferences
+
+Using methods that we will learn in this course, the researchers analyzed whether the observed differences between the groups were large enough to show that the type of default option had a genuine effect. Then they estimated the size of that effect. 
+
+This study reported strong evidence that the neutral and opt-out versions produced a higher chance of a person choosing to be a donor, as compared to the opt-in version used by many states. [*We will learn about strength of evidence in Chapter 1.*]
+
+Given the sample percentages and the sample size, they could be confident that the neutral version increases the chances a person agrees to be a donor by somewhere between 20% and 54%. [*We will learn about estimation in Chapter 3.*]
+
+
+## STEP 5: Formulate Conclusions
+
+In this study, participants given the “opt-in” strategy were much less likely than others to agree to become donors. 
+
+The researchers concluded that their data “suggest changes in defaults could increase donations in the [U.S.] of additional thousands of donors a year.” 
+
+[*We will learn more about making generalizations in Chapter 2 and cause-and-effect conclusions in Chapter 4.*]
+
+<hr>
+
+Johnson, Eric J. and Goldstein, Daniel G., Do Defaults Save Lives? (Nov 21, 2003). *Science*, Vol. 302, pp. 1338-1339. Available SSRN: [https://ssrn.com/abstract=1324774](https://ssrn.com/abstract=1324774)
+
+
+## STEP 6: Look Back and Ahead
+
+One study limitation is that participants were asked to *imagine* how they would respond; this might not reflect real behavior. 
+
+A new study might look at actual responses to questions about donation or monitor rates for states that adopt a new policy. 
+
+Researchers could examine whether giving educational material on organ donation might increase willingness to donate. 
+
+Another possible improvement would be to include participants from wider demographic groups than these volunteers.
+
+Part of looking back also considers how a study relates to other similar studies that have been conducted previously.
+

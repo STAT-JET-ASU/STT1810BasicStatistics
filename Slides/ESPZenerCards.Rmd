@@ -1,7 +1,7 @@
 ---
 title: "Do You Have ESP?"
 subtitle: "Introductory Zener Card Exploration"
-author: "Author: Jill E. Thomley // Appalachian State University"
+author: "Jill E. Thomley // STT 1810 Basic Statistics // Appalachian State University"
 date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
 output: 
   ioslides_presentation:
@@ -14,8 +14,6 @@ knitr::opts_chunk$set(
   warning = FALSE,
   comment = NA
 )
-library(tidyverse)
-library(kableExtra)
 ```
 
 
@@ -33,7 +31,7 @@ The term "extrasensory perception" was widely popularized by J.B. Rhine in the 1
 Psychologists Karl Zener (1903-64) and J.B. Rhine (1895-1980), who worked at Duke University's Parapsychology Laboratory, designed a deck of cards to use in ESP research.
 
 ```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("https://stat-jet-asu.github.io/Moodlepics/zenercards.jpg")
+knitr::include_graphics("https://stat-jet-asu.github.io/Moodlepics/admin/zenercards.jpg")
 ```
 
 The classic Zener card deck has twenty five cards, five of each symbol: a circle, a plus sign, three vertical wavy lines, a square, and a five-pointed star. 

@@ -21,7 +21,7 @@ knitr::opts_chunk$set(
 
 These slides are intended to accompany Section 1.4 What Impacts Strength of Evidence? in [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html). 
 
-*This content does not replace reading the textbook section.* It is for class presentation and/or reference in STT1810 Basic Statistics. Includes supplemental material about Type I and Type II errors.
+*This content does not replace reading the textbook section.* It is for class presentation and/or reference. Also includes supplemental material about Type I and Type II errors.
 
 See also:
 
@@ -67,7 +67,7 @@ knitr::include_graphics("images/sixstepsfourpillars.png", dpi = 100)
 ## Learning Goals for Chapter 1
 
 * Use the chance model to determine whether an observed statistic is unlikely to occur. [Section 1.1]
-* Calculate and interpret a *p*-value, and state the strength of evidence it provides against the null hypothesis. [Section 1.2]
+* Calculate and interpret a $p$-value, and state the strength of evidence it provides against the null hypothesis. [Section 1.2]
 * Calculate a standardized statistic for a single proportion and evaluate the strength of evidence it provides against a null hypothesis. [Section 1.3]
 * Describe how the distance of the observed statistic from the parameter value specified by the null hypothesis, sample size, and one- vs. two-sided tests affect the strength of evidence against the null hypothesis. [Section 1.4]
 
@@ -76,10 +76,10 @@ We will *not* be covering Section 1.5, which discusses the theory-based approach
 
 ## Learning Goals for Section 1.4
 
-* Anticipate and explain why, when everything else remains the same, the *p*-value is smaller when the observed proportion of successes is farther away from the hypothesized value of the long-run proportion of successes.
-* Anticipate and explain why, when everything else remains the same, the *p*-value is smaller when the sample size is larger.
+* Anticipate and explain why, when everything else remains the same, the $p$-value is smaller when the observed proportion of successes is farther away from the hypothesized value of the long-run proportion of successes.
+* Anticipate and explain why, when everything else remains the same, the $p$-value is smaller when the sample size is larger.
 * Recognize when a two-sided test / alternative hypothesis is suggested by the research question.
-* Anticipate and explain why, when everything else remains the same, the *p*-value is larger when the alternative hypothesis is two-sided.
+* Anticipate and explain why, when everything else remains the same, the $p$-value is larger when the alternative hypothesis is two-sided.
 
 
 ## Section 1.4 New Vocabulary
@@ -103,7 +103,7 @@ Three important components of a test of significance influence the strength prov
 
 * **sample size:** As the sample size increases (while the value of the observed sample statistic $\hat{p}$ and our $H_a$ stay the same) the strength of evidence against $H_0$ increases.
 
-* **one- vs. two-sided $H_a$:** Because the *p*-value for a two-sided test is about twice as large as we would get for a one-sided test using the same data, it provides less evidence against $H_0$. (*Two-sided tests are used more often in scientific practice.*)
+* **one- vs. two-sided $H_a$:** Because the $p$-value for a two-sided test is about twice as large as we would get for a one-sided test using the same data, it provides less evidence against $H_0$. (*Two-sided tests are used more often in scientific practice.*)
 
 
 ## Flashback: [ESP Test](https://stat-jet-asu.github.io/Slides/STT1810/ESPZenerCards.html)
@@ -116,7 +116,7 @@ $$H_a: \pi > 0.20$$
 
 Let's say my results were 6 out of 25 cards correct.
 
-* What is the *p*-value for this particular test result?
+* What is the $p$-value for this particular test result?
 * What if I'd done a test with 50 cards and got 12 right?
 * What if I'd scored 9 correct instead of just 6 on the test?
 * What if I'd tested for both psi-hitting and psi-missing? 
@@ -160,21 +160,21 @@ knitr::include_graphics("images/OneProportionAppletZenerD.png", dpi = 150)
 
 ## Summary of Results
 
-Each case changes one input from the baseline test. The table shows the predicted increases or decreases in the *p*-values. We always have the same $H_0$ (*results are due to random chance*).
+Each case changes one input from the baseline test. The table shows the predicted increases or decreases in the $p$-values. We always have the same $H_0$ (*results are due to random chance*).
 
-| null             | alternative         | $n$ | $\hat{p}$ | *p*-value | change      |
+| null             | alternative         | $n$ | $\hat{p}$ | $p$-value | change      |
 |:----------------:|:-------------------:|:---:|:---------:|:---------:|:-----------:|
 | $H_0:\pi = 0.20$ | $H_a:\pi > 0.20$    | 25  | 0.24      | 0.3810    | (*initial*) |
 | $H_0:\pi = 0.20$ | $H_a:\pi > 0.20$    | 50  | 0.24      | 0.2850    | sample size |
 | $H_0:\pi = 0.20$ | $H_a:\pi > 0.20$    | 25  | 0.36      | 0.0490    | extremeness |
 | $H_0:\pi = 0.20$ | $H_a:\pi \neq 0.20$ | 25  | 0.24      | 0.6173    | alternative |
 
-Remember: Smaller *p*-values provide *more* evidence against $H_0$.
+Remember: Smaller $p$-values provide *more* evidence against $H_0$.
 
 
 ## Type I & Type II Errors
 
-Our estimated *p*-values are probabilities, not proof. When we do a significance test, we might make a decision error. For example, a small sample size is a common reason for a Type II error.
+Our estimated $p$-values are probabilities, not proof. When we do a significance test, we might make a decision error. For example, a small sample size is a common reason for a Type II error.
 
 ```{r, echo = FALSE, fig.align="center"}
 knitr::include_graphics("images/errortypes.png", dpi = 225)
@@ -201,7 +201,7 @@ Unknown Truth: You DO have COVID-19.
 
 A Type I error happens when you conclude that your results are statistically significant when, in reality, they happened purely by chance. Essentially, you had the misfortune of getting a random result that is *improbable* but not *impossible*.
 
-The risk of committing this error is the significance level (α) you choose. That is the value that you set at the start of your study to assess the statistical probability of obtaining your results just by random chance (i.e., your *p*-value).
+The risk of committing this error is the significance level (α) you choose. That is the value that you set at the start of your study to assess the statistical probability of obtaining your results just by random chance (i.e., your $p$-value).
 
 As discussed before, significance level is commonly set at 0.05 (5%). This means that your results have *at most* a 5% chance of occurring if the null hypothesis is actually true.
 

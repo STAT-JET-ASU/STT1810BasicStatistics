@@ -21,7 +21,7 @@ knitr::opts_chunk$set(
 
 These slides are intended to accompany Section 1.3 Alternative Measure of Strength of Evidence in [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html). 
 
-*This content does not replace reading the textbook section.* It is for class presentation and/or reference in STT1810 Basic Statistics.
+*This content does not replace reading the textbook section.* It is for class presentation and/or reference.
 
 See also:
 
@@ -149,7 +149,7 @@ As with *p*-values, there are some guidelines for interpretation. A large standa
 
 ## Mound-Shaped Example
 
-Notice that the center of the distribution is 0. Values *below* the mean have a negative *z*-score. Observations more than 2 or 3 SDs from the mean can be considered "in the tail".
+Notice that the center of the distribution is 0. Values *below* the mean have a negative $z$-score. Observations more than 2 or 3 SDs from the mean can be considered "in the tail".
 
 ```{r, echo = FALSE, fig.align="center", fig.cap="standardized statistics on a bell-shaped distribution."}
 knitr::include_graphics("images/stdstatbellcurve.png", dpi = 120)

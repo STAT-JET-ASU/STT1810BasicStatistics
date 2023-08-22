@@ -21,7 +21,7 @@ knitr::opts_chunk$set(
 
 These slides are intended to accompany Section P.2 Exploring Data in [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html). 
 
-*This content does not replace reading the textbook section.* It is for class presentation and/or reference in STT1810 Basic Statistics.
+*This content does not replace reading the textbook section.* It is for class presentation and/or reference.
 
 See also:
 

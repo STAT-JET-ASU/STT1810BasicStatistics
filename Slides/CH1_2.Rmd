@@ -21,7 +21,7 @@ knitr::opts_chunk$set(
 
 These slides are intended to accompany Section 1.2 Measuring the Strength of Evidence in [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html). 
 
-*This content does not replace reading the textbook section.* It is for class presentation and/or reference in STT1810 Basic Statistics.
+*This content does not replace reading the textbook section.* It is for class presentation and/or reference.
 
 See also:
 
@@ -66,7 +66,7 @@ knitr::include_graphics("images/sixstepsfourpillars.png", dpi = 100)
 ## Learning Goals for Chapter 1
 
 * Use the chance model to determine whether an observed statistic is unlikely to occur. [Section 1.1]
-* Calculate and interpret a *p*-value, and state the strength of evidence it provides against the null hypothesis. [Section 1.2]
+* Calculate and interpret a $p$-value, and state the strength of evidence it provides against the null hypothesis. [Section 1.2]
 * Calculate a standardized statistic for a single proportion and evaluate the strength of evidence it provides against a null hypothesis. [Section 1.3]
 * Describe how the distance of the observed statistic from the parameter value specified by the null hypothesis, sample size, and one- vs. two-sided tests affect the strength of evidence against the null hypothesis. [Section 1.4]
 
@@ -78,10 +78,10 @@ We will *not* be covering Section 1.5, which discusses the theory-based approach
 * Use appropriate symbols for parameter and statistic.
 * State the null and the alternative hypotheses in words and in terms of the symbol $\pi$, the long-run proportion.
 * Explain how to conduct a simulation using a null hypothesis probability that is not 50-50.
-* Use the [ISI One Proportion applet](http://www.isi-stats.com/isi2nd/ISIapplets2021.html) to obtain the *p*-value after carrying out an appropriate simulation.
+* Use the [ISI One Proportion applet](http://www.isi-stats.com/isi2nd/ISIapplets2021.html) to obtain the $p$-value after carrying out an appropriate simulation.
 * Anticipate the null distribution's center and how it changes based on using proportion or count as the statistic.
-* Interpret the *p*-value and explain why a smaller *p*-value provides stronger evidence against the null hypothesis.
-* State a conclusion about the alternative hypothesis and null hypothesis based on the *p*-value.
+* Interpret the $p$-value and explain why a smaller $p$-value provides stronger evidence against the null hypothesis.
+* State a conclusion about the alternative hypothesis and null hypothesis based on the $p$-value.
 
 
 ## Section 1.2 New Vocabulary
@@ -116,7 +116,7 @@ We often use symbols to communicate or represent different quantities in a stati
 
 It is common to use Greek letters to represent parameters and Roman letters (our regular English alphabet) for statistics.
 
-$\pi$ : The Greek letter pi (or *p*), pronounced “pie.” This represents a parameter that is a proportion or probability (*not* 3.14159).
+$\pi$ : The Greek letter pi (or $p$), pronounced “pie.” This represents a parameter that is a proportion or probability (*not* 3.14159).
 
 $\hat{p}$ : The Roman letter p with a ^ above it, pronounced as "p-hat." It is the proportion of observational units in a sample that have a particular characteristic (or an *estimated probability*). For a *test of significance*, this would be the observed statistic.
 
@@ -138,21 +138,21 @@ In the field of Statistics, a *test of significance* is a procedure for measurin
 
 ## Quantifying Strength of Evidence
 
-One way to assess strength is to use a *p*-value. The **p** stands for *probability*---it is the probability of getting a purely random value of the statistic (e.g., from simulation) that is at least as extreme as the observed statistic (*in the direction of $H_a$*) when $H_0$ is true.
+One way to assess strength is to use a $p$-value. The *$p$* stands for *probability*---it is the probability of getting a purely random value of the statistic (e.g., from simulation) that is at least as extreme as the observed statistic (*in the direction of $H_a$*) when $H_0$ is true.
 
 | Magnitude               | Guideline for Inference                                           |
 |-------------------------|-------------------------------------------------------------------|
-| *p*-value > 0.10        | not much evidence against the null hypothesis; $H_0$ is plausible |
-| 0.05 < *p*-value ≤ 0.10 | moderate evidence against the null hypothesis                     |
-| 0.01 < *p*-value ≤ 0.05 | strong evidence against the null hypothesis                       |
-| *p*-value ≤ 0.01        | very strong evidence against the null hypothesis                  |
+| $p$-value > 0.10        | not much evidence against the null hypothesis; $H_0$ is plausible |
+| 0.05 < $p$-value ≤ 0.10 | moderate evidence against the null hypothesis                     |
+| 0.01 < $p$-value ≤ 0.05 | strong evidence against the null hypothesis                       |
+| $p$-value ≤ 0.01        | very strong evidence against the null hypothesis                  |
 
 
-## Additional Guidelines (*p*-value &leq; 0.05)
+## Additional Guidelines ($p$-value &leq; 0.05)
 
-Researchers across a variety of disciplines consider a *p*-value less than or equal to 0.05 (i.e., at most a 5% chance) to be the threshold where we can claim data have *statistical significance* and declare the chance model ($H_0$) to be implausible. 
+Researchers across a variety of disciplines consider a $p$-value less than or equal to 0.05 (i.e., at most a 5% chance) to be the threshold where we can claim data have *statistical significance* and declare the chance model ($H_0$) to be implausible. 
 
-A *p*-value ≤ 0.05 corresponds to *strong* or *very strong evidence* against the null hypothesis in our textbook guidelines.
+A $p$-value ≤ 0.05 corresponds to *strong* or *very strong evidence* against the null hypothesis in our textbook guidelines.
 
 However, in some situations you may want stronger evidence. For example, in medicine, rejecting $H_0$ may have life or death consequences, so researchers could choose to use a value like 0.01 (*very strong evidence*) instead when assessing data.
 
@@ -216,14 +216,14 @@ knitr::include_graphics("images/OneProportionAppletZenerB.png", dpi = 140)
 
 ## Strength of Evidence/Conclusions
 
-The estimated *p*-value from my simulation is 0.0490. The results are statistically significant&mdash;that is, unlikely to be due to chance alone. We will conclude $H_a$ instead. I have ESP!
+The estimated $p$-value from my simulation is 0.0490. The results are statistically significant&mdash;that is, unlikely to be due to chance alone. We will conclude $H_a$ instead. I have ESP!
 
-| Magnitude               | Guideline for Inference                                                   |
-|-------------------------|---------------------------------------------------------------------------|
-| *p*-value > 0.10        | not much evidence; $H_0$ is plausible                                     |
-| 0.05 < *p*-value ≤ 0.10 | moderate evidence against $H_0$                                           |
-| 0.01 < *p*-value ≤ 0.05 | strong evidence against $H_0$ **&larr; my estimated p-value falls here!** |
-| *p*-value ≤ 0.01        | very strong evidence against $H_0$                                        |
+| Magnitude               | Guideline for Inference                                     |
+|-------------------------|-------------------------------------------------------------|
+| $p$-value > 0.10        | not much evidence; $H_0$ is plausible                       |
+| 0.05 < $p$-value ≤ 0.10 | moderate evidence against $H_0$                             |
+| 0.01 < $p$-value ≤ 0.05 | strong evidence against $H_0$ **&larr; 0.0490 falls here!** |
+| $p$-value ≤ 0.01        | very strong evidence against $H_0$                          |
 
 
 ## Generalization

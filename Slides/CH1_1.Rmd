@@ -208,7 +208,7 @@ knitr::include_graphics("images/sixstepsfourpillars.png", dpi = 100)
 ::::
 
 
-## [ISI One Proportion Applet](https://www.rossmanchance.com/applets/2021/oneprop/OneProp.htm?hideExtras=1)
+## [ISI One Proportion Applet](https://www.isi-stats.com/isi2nd/ISIapplets2021.html)
 
 :::::: {style="display: flex;"}
 

@@ -1,8 +1,7 @@
 ---
 title: "Sort the Spread!"
 subtitle: "Standard Deviation Practice Exploration"
-author: "Jill E. Thomley // Appalachian State University"
-date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
+author: "Jill E. Thomley // STT 1810 Basic Statistics // Appalachian State University"
 output: 
   ioslides_presentation:
     logo: images/logoASU.jpg

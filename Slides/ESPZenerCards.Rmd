@@ -103,7 +103,7 @@ Review Preliminaries Section P.1 of the *Introduction to Statistical Investigati
 
 As we introduce the **Six Steps of a Statistical Investigation** and the **Four Pillars of Statistical Inference**, can you connect those ideas to what we did and talked about in this activity?
 
-What might **anecdotal evidence** (e.g., personal observations of striking examples) consist of in the context of trying to figure out whether some people *really* possess ESP ability? Why is this kind of "evidence" less valid that a statistical investigation?
+What might **anecdotal evidence** (e.g., personal observations of striking examples) consist of in the context of trying to figure out whether some people *really* possess ESP ability? Why is this kind of "evidence" less valid than a statistical investigation?
 
 <hr>
 <p style="text-align: center; color: red; font-weight: bold;">ONWARD!</p>

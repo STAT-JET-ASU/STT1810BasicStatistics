@@ -1,7 +1,7 @@
 ---
 title: "Section 2.1 Sampling Distributions"
-subtitle: "*Introduction to Statistical Investigations, 2^nd^ Edition*"
-author: "Jill E. Thomley // STT1810 Basic Statistics // Appalachian State University"
+subtitle: "Introduction to Statistical Investigations, 2^nd^ Edition"
+author: "Jill E. Thomley | **STT 1810 BASIC STATISTICS** | Appalachian State University"
 date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
 output: 
   ioslides_presentation:
@@ -15,6 +15,17 @@ knitr::opts_chunk$set(
   comment = NA
 )
 ```
+
+## Before We Begin…
+
+These slides are intended to accompany Section 2.1 Sampling from a Finite Population: Proportions in [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html). 
+
+*This content does not replace reading the textbook section.* It is for class presentation and/or reference.
+
+See also:
+
+* Glossary of ISI Textbook Vocabulary on AsULearn
+* Example 2.1 Voter Turnout (slides TBA)
 
 
 ## Recall: Spiral Approach & Four Pillars
@@ -52,9 +63,9 @@ knitr::include_graphics("images/sixstepsfourpillars.png", dpi = 100)
 
 ## *So* ... What's Different from Chapter 1?
 
-In Chapter 1, you were generating hypothetical samples from a probability model to reflect our null hypothesis Ho. In that case, $\pi$ is a *hypothetical value* assumed in Ho.
+In Chapter 1, you were generating hypothetical samples from a probability model to reflect our null hypothesis Ho. In that case, $\pi$ is a *hypothetical value* we assumed in Ho.
 
-In a test of significance, we use the hypothetical $\pi$ to try to make an inference about an actual population $\pi$.
+In a test of significance, we use the *hypothetical* $\pi$ to try to make an inference about an *actual population* $\pi$.
 
 Now, we are taking samples from an actual population. Why? So we can explore what kinds of samples we might get. In this case, $\pi$ is an *actual population value* we specify.
 
@@ -325,7 +336,7 @@ ggplot(df2, aes(x = pi, y = SD)) +
 
 ## Why "Central"?
 
-The term *central* in the name Central Limit Theorem refers to its overall importance; it is central to much of statistical theory and methods. Mathematician George Polya is credited with inventing the name (though not the idea) in a 1920 paper.
+The term *central* in the name Central Limit Theorem refers to its overall importance; it is **central** to much of statistical theory and methods. Mathematician George Polya is credited with inventing the name (though not the idea) in a 1920 paper.
 
 <hr>
 

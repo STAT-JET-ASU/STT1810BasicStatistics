@@ -1,7 +1,7 @@
 ---
 title: "Section P.3<br>Random Processes"
-subtitle: "*Introduction to Statistical Investigations, 2^nd^ Edition*"
-author: "Jill E. Thomley // STT 1810 Basic Statistics // Appalachian State University"
+subtitle: "Introduction to Statistical Investigations, 2^nd^ Edition"
+author: "Jill E. Thomley | **STT 1810 BASIC STATISTICS** | Appalachian State University"
 date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
 output: 
   ioslides_presentation:
@@ -26,7 +26,7 @@ These slides are intended to accompany Section P.3 Exploring Data in [*Introduct
 See also:
 
 * Glossary of ISI Textbook Vocabulary on AsULearn
-* Slides for Preliminaries [Section P.1](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CHP_1.html()) and [Section P.2](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CHP_2.html)
+* Slides for Preliminaries [Section P.1](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CHP_1.html) and [Section P.2](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CHP_2.html)
 
 
 ## Learning Goals for Preliminaries

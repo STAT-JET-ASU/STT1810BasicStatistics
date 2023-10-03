@@ -20,7 +20,7 @@
       // Slide settings
       settings: {
                 title: 'Section P.3<br>Random Processes',
-                        subtitle: '<em>Introduction to Statistical Investigations, 2<sup>nd</sup> Edition</em>',
+                        subtitle: 'Introduction to Statistical Investigations, 2<sup>nd</sup> Edition',
                 useBuilds: true,
         usePrettify: true,
         enableSlideAreas: true,
@@ -31,7 +31,7 @@
       // Author information
       presenters: [
             {
-        name:  'Jill E. Thomley // STT 1810 Basic Statistics // Appalachian State University' ,
+        name:  'Jill E. Thomley | <strong>STT 1810 BASIC STATISTICS</strong> | Appalachian State University' ,
         company: '',
         gplus: '',
         twitter: '',
@@ -3070,18 +3070,21 @@ var loadDeck = function(event) {
   });
 };
 
-if (document.readyState !== "loading" &&
-    document.querySelector('slides') === null) { 
-  // if the document is done loading but our element hasn't yet appeared, defer
-  // loading of the deck
-  window.setTimeout(function() {
-    loadDeck(null);
-  }, 0);
-} else {
-  // still loading the DOM, so wait until it's finished
-  document.addEventListener("DOMContentLoaded", loadDeck);
-}
+if (!window.Shiny) {
+  // If Shiny is loaded, the slide deck is initialized in ioslides template
 
+  if (document.readyState !== "loading" &&
+      document.querySelector('slides') === null) {
+    // if the document is done loading but our element hasn't yet appeared, defer
+    // loading of the deck
+    window.setTimeout(function() {
+      loadDeck(null);
+    }, 0);
+  } else {
+    // still loading the DOM, so wait until it's finished
+    document.addEventListener("DOMContentLoaded", loadDeck);
+  }
+}
 
 
 </script>
@@ -3154,7 +3157,7 @@ line-height: 1.9;
       <h1 data-config-title><!-- populated from slide_config.json --></h1>
       <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
       <p data-config-presenter><!-- populated from slide_config.json --></p>
-            <p style="margin-top: 6px; margin-left: -2px;">Last updated Wednesday, August 30, 2023 @ 07:31 PM</p>
+            <p style="margin-top: 6px; margin-left: -2px;">Last updated Tuesday, October 03, 2023 @ 12:16 AM</p>
           </hgroup>
   </slide>
 
@@ -3168,7 +3171,7 @@ line-height: 1.9;
 
 <ul>
 <li>Glossary of ISI Textbook Vocabulary on AsULearn</li>
-<li>Slides for Preliminaries <a href='https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CHP_1.html()' title=''>Section P.1</a> and <a href='https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CHP_2.html' title=''>Section P.2</a></li>
+<li>Slides for Preliminaries <a href='https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CHP_1.html' title=''>Section P.1</a> and <a href='https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CHP_2.html' title=''>Section P.2</a></li>
 </ul>
 
 </article></slide><slide class=""><hgroup><h2>Learning Goals for Preliminaries</h2></hgroup><article  id="learning-goals-for-preliminaries">
@@ -3279,6 +3282,11 @@ line-height: 1.9;
        window.jQuery(document).on('slideenter', function(e) {
          window.jQuery(e.target).trigger('shown');
       });
+    }
+    if (window.Shiny) {
+      // Initialize slides when this script appears on the page, since it
+      // indicates that the <slides> markup has been fully loaded.
+      window.loadDeck();
     }
   })();
 </script>

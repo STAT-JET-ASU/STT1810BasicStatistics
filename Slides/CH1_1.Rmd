@@ -1,7 +1,7 @@
 ---
 title: "Section 1.1 Introduction<br>to Chance Models"
-subtitle: "*Introduction to Statistical Investigations, 2^nd^ Edition*"
-author: "Jill E. Thomley // STT1810 Basic Statistics // Appalachian State University"
+subtitle: "Introduction to Statistical Investigations, 2^nd^ Edition"
+author: "Jill E. Thomley | **STT 1810 BASIC STATISTICS** | Appalachian State University"
 date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
 output: 
   ioslides_presentation:
@@ -26,7 +26,7 @@ These slides are intended to accompany Section 1.1 Intro to Chance Models in [*I
 See also:
 
 * Glossary of ISI Textbook Vocabulary on AsULearn
-* [Example 1.1 Can Dolphins Communicate?](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/Example1_1.html)
+* Example 1.1 Can Dolphins Communicate? (slides TBA)
 
 
 ## Recall: Spiral Approach & Four Pillars

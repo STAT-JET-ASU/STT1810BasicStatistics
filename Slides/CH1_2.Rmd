@@ -1,7 +1,7 @@
 ---
 title: "Section 1.2 Measuring<br>the Strength of Evidence"
-subtitle: "*Introduction to Statistical Investigations, 2^nd^ Edition*"
-author: "Jill E. Thomley // STT1810 Basic Statistics // Appalachian State University"
+subtitle: "Introduction to Statistical Investigations, 2^nd^ Edition"
+author: "Jill E. Thomley | **STT 1810 BASIC STATISTICS** | Appalachian State University"
 date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
 output: 
   ioslides_presentation:
@@ -19,7 +19,7 @@ knitr::opts_chunk$set(
 
 ## Before We Begin…
 
-These slides are intended to accompany Section 1.2 Measuring the Strength of Evidence in [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html). 
+These slides are intended to accompany Section 1.2 Measuring Strength of Evidence in [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html). 
 
 *This content does not replace reading the textbook section.* It is for class presentation and/or reference.
 
@@ -27,7 +27,7 @@ See also:
 
 * Glossary of ISI Textbook Vocabulary on AsULearn
 * [Section 1.1 Introduction to Chance Models](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CH1_1.html)
-* [Example 1.2 Rock-Paper-Scissors](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/Example1_2.html)
+* Example 1.2 Rock-Paper-Scissors (slides TBA)
 
 
 ## Recall: Spiral Approach & Four Pillars

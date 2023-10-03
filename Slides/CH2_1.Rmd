@@ -184,7 +184,7 @@ If we take many, many random samples of the same size from a population with par
 
 ## Key CLT Ideas
 
-The Central Limit Theorem describes the sampling distributions of certain statistics, like $\hat{p}$, if they meet certain criteria... 
+The Central Limit Theorem describes the sampling distributions of certain statistics from finite populations, like $\hat{p}$, if we meet the necessary criteria... 
 
 * We have a large, finite population with parameter $\pi$. Here, *finite* means it is possible to count the observational units.
 

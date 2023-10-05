@@ -1,7 +1,7 @@
 ---
-title: "STT1810 --- Section 3.1<br>Confidence Intervals"
+title: "Section 3.1<br>Confidence Intervals"
 subtitle: "Introduction to Statistical Investigations, 2^nd^ Edition"
-author: "Author: Jill E. Thomley // Appalachian State University"
+author: "Jill E. Thomley | **STT 1810 BASIC STATISTICS** | Appalachian State University"
 date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
 output: 
   ioslides_presentation:
@@ -15,6 +15,17 @@ knitr::opts_chunk$set(
   comment = NA
 )
 ```
+
+## Before We Begin…
+
+These slides are intended to accompany Section 3.1 Estimation: How Large Is the Effect? in [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html). 
+
+*This content does not replace reading the textbook section.* It is for class presentation and/or reference.
+
+See also:
+
+* Glossary of ISI Textbook Vocabulary on AsULearn
+* Example 3.1 Can Dogs Sniff Out Cancer (slides TBA)
 
 
 ## Recall: The Spiral Process & Four Pillars
@@ -114,46 +125,55 @@ Calculate a two-sided *p*-value using the observed data.
 
 Reject Ho *or* fail to reject Ho using the *p*-value and the chosen level of significance (most commonly $\alpha = 0.05$).
 
-If you fail to reject Ho, then the tested value of $\pi$ is a *plausible value* and belongs in the confidence interval.
+If you fail to reject Ho, then the tested value of $\pi$ is a *plausible value* and therefore it belongs in the confidence interval.
 
-The interval boundaries are the smallest and largest plausible values, written as (*lower boundary*, *upper boundary*).
-
-
-## Example 3.1 Can Dogs Sniff Cancer?
-
-Researchers tested a dog named Marine to see whether or not she could detect colorectal cancer via smell. She sniffed breath in 5 bags from 5 different patients, only 1 of which had cancer. Marine chose correctly in 30 of 33 trials ($\hat{p} = 0.909$). 
-
-$H_0: \pi = 0.20$ (Marine is just guessing)
-
-$H_a: \pi > 0.20$ (Marine is doing better than guessing)
-
-```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("images/fig_03_01_01.png", dpi = 120)
-```
-
-
-##
-
-We would reject Ho at the 0.05 level of significance. But, what is Marine's true probability $\pi$ of detecting cancer? We can estimate the value by testing many potential values of $\pi$ on either side of our observed sample proportion $\hat{p} = 0.909$.
-
-| $\pi$ tested in Ho | 0.760 | 0.761 | 0.762 | ...   | 0.973 | 0.974 | 0.975 |
-|--------------------|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:------|
-| two-sided *p*-value| 0.043 | 0.063 | 0.063 | ...   | 0.059 | 0.054 | 0.049 |
-| reject Ho?         | Yes   | No    | No    | No    | No    | No    | Yes   |
-| plausible $\pi$?   | No    | *YES* | *YES* | *YES* | *YES* | *YES* | No    |
-
-We are 95% confident that Marine's true probability of detecting cancer ($\pi$) is between 0.761 and 0.974.
-
-This is more informative than just stating $\pi > 0.20$ (as in $H_a$).
+The interval boundaries are the smallest and largest plausible values, often written as (*lower boundary*, *upper boundary*).
 
 
 ## What Does 95% Confidence Mean?
 
-Let us start with what it does *not* mean. It does not mean that there is a 95% chance that the actual value of the parameter is in the 95% confidence interval. Why not?
+Let us start with what it does *not* mean. It does not mean that there is a 95% chance that the actual value of the parameter is in the 95% confidence interval. *Why not?*
 
 The parameter value is fixed and the interval is random. If you chose a different sample, you’d get a different interval, but the parameter value would still be the same. 
 
-What we mean is that 95% of all samples give an interval that covers the true value. The 95% is the “coverage probability” or “capture rate" of the method we are using.
+What we mean is that 95% of all samples give an interval that covers the true value. The 95% is the “coverage probability” or “capture rate" of the **method** we are using. This is like Section 2.1, where we said that "unbiased" is a property of a sampling method, not an individual sample.
 
-Picture a game of horseshoes. The parameter is the iron stake in the ground, which does not move. Each toss of a horseshoe is an interval. Our method is a like really good player who can get a horseshoe around the stake 95% of the time.
+In statistics, we validate our **methods**, because we cannot know for sure how our sample relates to a population.
+
+
+## Another Analogy
+
+Picture a game of horseshoes. The parameter is the iron stake in the ground, which does not move. Each toss of a horseshoe is an interval. We might barely catch the stake, or we might get a solid ringer. Both count! Our method is a like really good player who can get a horseshoe around the stake 95% of the time.
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("images/garfieldCI.jpg", dpi = 100)
+```
+
+We could have a 100% confidence interval for a $\pi$ if we said the value was between 0 and 1 --- but that wouldn't be particularly useful in most contexts, would it?
+
+
+## Flashback: Harley the Wonder Doggo
+
+In Section 1.1, we explored the question "Can Dogs Understand Human Cues?" In a particular set of 10 trials, Harley was able to pick the correct cup 9 out of 10 times. We decided that this was statistically significant and $H_0: \pi = 0.50$ was implausible. 
+
+So, if Harley is not purely guessing when the experimenter bows toward the cup, what is his true long-run probability $\pi$ of picking the correct cup? After the test we just know $H_a: \pi > 0.5$.
+
+Given that $\hat{p}$ is 0.90, that might be a good estimate (i.e., *informed guess*) for the value of $\pi$. We call that a *point estimate*.
+
+However, this is sample data, and we all know that it has some random variability. Maybe $\pi$ is a little bit different than 0.90, like 0.89. Could it be more different, like 0.80? Or even 0.70? 
+
+
+##
+
+We can systematically test different values for $\pi$ on either side of $\pi = 0.90$, until we get to values that are implausible. We will use the same kind of simulation we did for the original test.
+
+| $\pi$ tested in Ho |  0.56 |  0.57 |  ...  |  0.85 |  0.90 |  0.95 |  0.99 |  1.00 |
+|--------------------|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
+| two-sided *p*-value| 0.049 | 0.052 |  ...  | 1.000 | 1.000 | 0.404 | 0.096 | NA    |
+| reject Ho?         | Yes   | No    |  ...  | No    | No    | No    | No    | NA    |
+| plausible $\pi$?   | **NO**| Yes   |  ...  | Yes   | Yes   | Yes   | Yes   | **NO**|
+
+We know 1 is not possible; that would mean Harley is *guaranteed* to always choose the correct cup. Data shows that is false.
+
+We are 95% confident that $\pi$ is between 0.57 and 0.99. We need more data if we want a narrower interval of plausible values.
 

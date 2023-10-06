@@ -1,7 +1,7 @@
 ---
-title: "STT1810 --- Section 3.2<br>± 2SD Approximate CIs"
+title: "Section 3.2<br> ± 2SD Approximate CIs"
 subtitle: "Introduction to Statistical Investigations, 2^nd^ Edition"
-author: "Author: Jill E. Thomley // Appalachian State University"
+author: "Jill E. Thomley | **STT 1810 BASIC STATISTICS** | Appalachian State University"
 date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
 output: 
   ioslides_presentation:
@@ -15,6 +15,17 @@ knitr::opts_chunk$set(
   comment = NA
 )
 ```
+
+## Before We Begin…
+
+These slides are intended to accompany Section 3.2 2SD <strike>and Theory-Based</strike> Confidence Intervals for a Single Proportion in [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html). 
+
+*This content does not replace reading the textbook section.* It is for class presentation and/or reference.
+
+See also:
+
+* Glossary of ISI Textbook Vocabulary on AsULearn
+* Example 3.2 Cyberbullying (slides TBA)
 
 
 ## Recall: The Spiral Process & Four Pillars
@@ -128,24 +139,38 @@ Recall that we use $\pi = 0.5$ because $SD(\hat{p})$ is the biggest then.
 |  100  |  0.90  |     0.0300      |
 
 
-## Example 3.2 Cyberbullying
+## Flashback: Harley the Wonder Doggo
 
-In a March 7–April 10, 2018 survey of a random sample of 743 U.S. teenagers (ages 13 to 17 years), the Pew Research Center found that 59% said they had experienced cyberbullying. Use the [ISI One-Proportion applet](http://www.isi-stats.com/isi2nd/ISIapplets2021.html) to estimate the SD.
+Use the sample proportion 0.90 and the simulated SD = 0.158 (refer to Exploration 1.1 if needed) in the calculation.
 
-```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("images/2SD95CI.PNG", dpi = 100)
-```
+$$\hat{p} \pm 2 \times SD(\hat{p}) = 0.90 \pm 2 \times 0.158 = 0.90 \pm 0.316$$
+
+We are 95% confident that Harley's true chance of choosing the correct cup is is between $0.90 \pm 0.316$. The margin of error on the estimate is $0.316$ or $31.6\%$.
+
+We can also write the CI as (0.584, 1.216). We know $\pi$ cannot be &geq; 1 (*certainty*), so the interval is effectively (0.584, 0.999)
+
+Note that all plausible values included in the interval are greater than 50%. Based on this, we can be confident in this context that the true proportion is greater than random chance.
 
 
-## Calculating the Interval
+## Flashback: Bottled vs. Tap Water
 
-Use the sample proportion 0.59 and the simulated SD = 0.018.
+The sample proportion of people who preferred tap water was $\hat{p} = 0.1111$. Use the sample size $n = 27$ and $\pi = 0.5$ to find the simulated SD, which should be about $0.096$.
 
-$$\hat{p} \pm 2 \times SD(\hat{p}) = 0.59 \pm 2 \times 0.018 = 0.59 \pm 0.036$$
+$$\hat{p} \pm 2 \times SD(\hat{p}) = 0.111 \pm 2 \times 0.096 = 0.111 \pm 0.192$$
 
-We are 95% confident that the true proportion of U.S. teens who have experienced cyberbullying (as defined by the Pew survey) is between $0.59 \pm 0.036$. The margin of error on the estimate is $0.036$ or $3.6\%$.
+We are 95% confident that the long-run probability someone would prefer tap water to bottled water when presented with the kind of choice offered in the experiment is between -0.081 and 0.303, or effectively about 0% to 30.3%
 
-We can also express the confidence interval as (0.554, 0.626) or as percentages (55.4%, 62.6%).
+Note that $\pi = 0.25$ is among the plausible values included in the interval. This is consistent with our failure to find statistical significance in Exploration 1.2. *Random choice is plausible.*
 
-Note that all of the plausible values are greater than 50%. Based on this, we can be (*sadly*) confident that the true proportion $\pi$ is a majority of teens 13-17 years old.
+
+## Flashback: Bob or Tim?
+
+Across two classes of students, 31 of 38 students $(\hat{p} = 0.816)$ assigned the name Tim to the left face. Using simulation, our estimated $SD = 0.081$.
+
+$$\hat{p} \pm 2 \times SD(\hat{p}) = 0.816 \pm 2 \times 0.081 = 0.816 \pm 0.162$$
+
+We are $95\%$ confident that the long-run proportion of students who would assign the name Tim to the left face when given the same choice we used is between $65.4\%$ and $97.8\%$.
+
+All plausible values in the interval are greater than $50\%$. We can be confident that the true proportion $\pi$ is greater than random chance in this context.
+
 

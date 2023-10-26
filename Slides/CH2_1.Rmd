@@ -63,7 +63,7 @@ knitr::include_graphics("images/sixstepsfourpillars.png", dpi = 100)
 
 ## *So* ... What's Different from Chapter 1?
 
-In Chapter 1, you were generating hypothetical samples from a probability model to reflect our null hypothesis Ho. In that case, $\pi$ is a *hypothetical value* we assumed in Ho.
+In Chapter 1, you were generating hypothetical samples from a probability model to reflect our null hypothesis $H_0$. In that case, $\pi$ is a *hypothetical value* we assumed in $H_0$.
 
 In a test of significance, we use the *hypothetical* $\pi$ to try to make an inference about an *actual population* $\pi$.
 
@@ -143,7 +143,7 @@ Recall *parameter*, *statistic*, and the other vocabulary terms we learned in Ch
 
 **random sample:** a subset of observational units chosen using a probability device or method (*not all units have to have an equal chance to be chosen, just a known probability of being chosen*)
 
-**simple random sample:** a subset of observational units chosen so that every sample of a given size *n* is equally likely to be the sample that we select from the population (*each observational unit has the same chance of being chosen as every other unit*)
+**simple random sample:** a subset of observational units chosen so that every sample of a given size $n$ is equally likely to be the sample that we select from the population (*each observational unit has the same chance of being chosen as every other unit*)
 
 <hr> 
 
@@ -164,7 +164,7 @@ A sampling method is considered to be ***biased*** if the statistics calculated 
 
 <hr>
 
-The ***Central Limit Theorem*** tells us that when we sample from a large finite population, the sampling distribution of the sample proportion $\hat{p}$, calculated from from repeated random samples, will be approximately normal if there are at least 10 successes and at least 10 failures in each sample.
+The ***Central Limit Theorem*** tells us that when we sample from a large finite population, the sampling distribution of the sample proportion $\hat{p}$, calculated from from repeated random samples, will be approximately normal if there are at least $10$ successes and at least $10$ failures in each sample.
 
 <hr>
 
@@ -188,9 +188,9 @@ The Central Limit Theorem describes the sampling distributions of certain statis
 
 * We have a large, finite population with parameter $\pi$. Here, *finite* means it is possible to count the observational units.
 
-* We are taking random samples of size $n$ that are big enough so that there are at least 10 successes and 10 failures in each sample. Sometimes we express this idea by saying $n\pi \ge 10$ and $n(1-\pi) \ge 10$. 
+* We are taking random samples of size $n$ that are big enough so that there are at least $10$ successes and $10$ failures in each sample. Sometimes we express this idea by saying $n\pi \ge 10$ and $n(1-\pi) \ge 10$. 
 
-* Our sample size ($n$) is less than 5% of the overall population. 
+* Our sample size ($n$) is less than $5\%$ of the overall population. 
 
 * We are calculating the sample proportion $\hat{p}$ for each sample.
 
@@ -288,6 +288,7 @@ Observe that $SD(\hat{p})$ gets progressively smaller as $n$ gets larger. If we 
 library(tidyverse)
 df1 <- tibble(n = c(25, 50, 100, 200, 400, 600, 800, 1000), SD = sqrt(0.25 / n))
 ggplot(df1, aes(x = n, y = SD)) +
+  geom_line() +
   geom_point(size = 2) +
   geom_hline(yintercept = 0) +
   geom_vline(xintercept = 0) +
@@ -298,6 +299,44 @@ ggplot(df1, aes(x = n, y = SD)) +
     title = "Relationship Between Sample Size and SD(p̂) for π = 0.5",
     x = "sample size (n)",
     y = "Variability of the Sampling Distribution --- SD(p̂)"
+  ) +
+  annotate(
+    "label",
+    x = 500,
+    y = 0.085,
+    label = "variability (SD) decreases as sample size (n) increases"
+  ) +
+  annotate(
+    "label",
+    x = 335,
+    y = 0.06,
+    label = "n = 100, SD = 0.05",
+    fill = "peachpuff"
+  ) +
+  annotate(
+    "segment",
+    x = 200,
+    xend = 110,
+    y = 0.06,
+    yend = 0.051,
+    arrow = arrow(),
+    color = "darkorange"
+  ) +
+  annotate(
+    "label",
+    x = 644,
+    y = 0.04,
+    label = "n = 200, SD = 0.025",
+    fill = "peachpuff"
+  ) +
+  annotate(
+    "segment",
+    x = 500,
+    xend = 412,
+    y = 0.04,
+    yend = 0.026,
+    arrow = arrow(),
+    color = "darkorange"
   )
 ```
 
@@ -320,6 +359,7 @@ Observe that $SD(\hat{p})$ is largest when $\pi = 0.50$ and gets smaller as $\pi
 ```{r echo = FALSE}
 df2 <- tibble(pi = c(0.01, seq(0.0, 1, 0.10), 0.99), SD = sqrt((pi * (1 - pi)) / 100))
 ggplot(df2, aes(x = pi, y = SD)) +
+  geom_line() +
   geom_point(size = 2) +
   geom_hline(yintercept = 0) +
   geom_vline(xintercept = -0.05) +
@@ -330,6 +370,41 @@ ggplot(df2, aes(x = pi, y = SD)) +
     title = "Relationship Between π and SD(p̂) for n = 100",
     x = "value of π",
     y = "Variability of the Sampling Distribution --- SD(p̂)"
+  ) +
+  annotate(
+    "label",
+    x = 0.5,
+    y = 0.055,
+    label = "for any given n, the largest SD is always when π = 0.5",
+    fill = "peachpuff"
+  ) +
+  annotate(
+    "point",
+    x = 0.5,
+    y = 0.05,
+    color = "darkorange",
+    size = 5
+  ) +
+  annotate(
+    "label",
+    x = 0.175,
+    y = 0.005,
+    label = "SD = 0 when π = 0",
+    fill = "lightblue"
+  ) +
+  annotate(
+    "label",
+    x = 0.825,
+    y = 0.005,
+    label = "SD = 0 when π = 1",
+    fill = "lightblue"
+  ) +
+  annotate(
+    "point",
+    x = c(0, 1),
+    y = 0,
+    color = "blue",
+    size = 5
   )
 ```
 
@@ -356,7 +431,7 @@ The central limit theorem also applies to means when $n$ is large enough. The sa
 
 * If the sample we have is biased, we have to be careful about generalizing to the population the sample came from.
 
-* Population size does not affect sampling variability as long as the population is at least 20 times the size of the sample.
+* Population size does not affect sampling variability as long as the population is at least $20$ times the size of the sample.
 
 * A larger sample size is not helpful if the sampling method is biased. You essentially just get a larger amount of *bad* data (as well as a false sense of confidence in your findings).
 

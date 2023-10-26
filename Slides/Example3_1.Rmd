@@ -1,0 +1,45 @@
+---
+title: "Example 3.1 Can Dogs Sniff Our Cancer?"
+subtitle: "Introduction to Statistical Investigations, 2^nd^ Edition"
+author: "Jill E. Thomley | **STT 1810 BASIC STATISTICS** | Appalachian State University"
+date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
+output: 
+  ioslides_presentation:
+    logo: images/logoASU.jpg
+---
+
+```{r global_options, include = FALSE}
+knitr::opts_chunk$set(
+  message = FALSE,
+  warning = FALSE,
+  comment = NA
+)
+```
+
+## Example 3.1 Can Dogs Sniff Cancer?
+
+Researchers tested a dog named Marine to see whether or not she could detect colorectal cancer via smell. She sniffed breath in 5 bags from 5 different patients, only 1 of which had cancer. Marine chose correctly in 30 of 33 trials ($\hat{p} = 0.909$). 
+
+$H_0: \pi = 0.20$ (Marine is just guessing)
+
+$H_a: \pi > 0.20$ (Marine is doing better than guessing)
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("images/fig_03_01_01.png", dpi = 120)
+```
+
+
+##
+
+We would reject Ho at the 0.05 level of significance. But, what is Marine's true probability $\pi$ of detecting cancer? We can estimate the value by testing many potential values of $\pi$ on either side of our observed sample proportion $\hat{p} = 0.909$.
+
+| $\pi$ tested in Ho | 0.760 | 0.761 | 0.762 | ...   | 0.973 | 0.974 | 0.975 |
+|--------------------|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:------|
+| two-sided *p*-value| 0.043 | 0.063 | 0.063 | ...   | 0.059 | 0.054 | 0.049 |
+| reject Ho?         | Yes   | No    | No    | No    | No    | No    | Yes   |
+| plausible $\pi$?   | No    | *YES* | *YES* | *YES* | *YES* | *YES* | No    |
+
+We are 95% confident that Marine's true probability of detecting cancer ($\pi$) is between 0.761 and 0.974.
+
+This is more informative than just stating $\pi > 0.20$ (as in $H_a$).
+

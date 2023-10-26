@@ -1,7 +1,7 @@
 ---
-title: "STT1810 --- Section 3.4<br>What Affects CI Width?"
+title: "Section 3.4 What Affects the Width of CIs?"
 subtitle: "Introduction to Statistical Investigations, 2^nd^ Edition"
-author: "Author: Jill E. Thomley // Appalachian State University"
+author: "Jill E. Thomley | **STT 1810 BASIC STATISTICS** | Appalachian State University"
 date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
 output: 
   ioslides_presentation:
@@ -15,6 +15,17 @@ knitr::opts_chunk$set(
   comment = NA
 )
 ```
+
+## Before We Begin…
+
+These slides are intended to accompany Section 3.4 Factors That Affect the Width of a Confidence Interval in [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html). 
+
+*This content does not replace reading the textbook section.* It is for class presentation and/or reference.
+
+See also:
+
+* Glossary of ISI Textbook Vocabulary on AsULearn
+* Example 3.4 American Cat Ownership (slides TBA)
 
 
 ## Recall: The Spiral Process & Four Pillars
@@ -71,7 +82,7 @@ In Sections 3.1 and 3.2 you explored some different confidence intervals strateg
 
 * Recognize that all other things being equal, as the confidence level increases, the width of the confidence interval increases.
 
-    in short: ↑ confidence = ↑ width
+    **in short: ↑ confidence = ↑ width**
 
 * Apply the idea that the confidence level of an interval corresponds to its coverage probability (the proportion of confidence intervals containing the true parameter value across many, many random samples) in the interpretation of confidence intervals.
 
@@ -80,11 +91,11 @@ In Sections 3.1 and 3.2 you explored some different confidence intervals strateg
 
 * Recognize that all other things being equal, as the sample size increases, the width of the resulting confidence interval decreases.
 
-    in short: ↑ sample size = ↓ width 
+    **in short: ↑ sample size = ↓ width **
 
 * Recognize that all other things being equal, as the sample proportion gets farther from 0.5, standard error decreases and thus a resulting confidence interval will be narrower.
 
-    in short: 0 ← 0.5 → 1 = ↓ sampling variability = ↓ width 
+    **in short: 0 ← 0.5 → 1 = ↓ sampling variability = ↓ width **
 
 * Recognize that statistical significance on its own does not imply evidence of a large difference from Ho. This issue is especially relevant with large sample sizes. 
 * Know that *p*-values address statistical significance while CIs help assess the plausible size of the parameter.

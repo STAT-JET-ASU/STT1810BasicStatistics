@@ -63,11 +63,11 @@ knitr::include_graphics("images/sixstepsfourpillars.png", dpi = 100)
 
 ## *So* ... What's Different from Chapter 1?
 
-In Chapter 1, you were generating hypothetical samples from a probability model to reflect our null hypothesis $H_0$. In that case, $\pi$ is a *hypothetical value* we assumed in $H_0$.
+In Chapter 1, we generated many hypothetical samples from a specified probability model to coincide with our null hypothesis $H_0$. In those cases, $\pi$ is a *hypothetical value* we assumed.
 
 In a test of significance, we use the *hypothetical* $\pi$ to try to make an inference about an *actual population* $\pi$.
 
-Now, we are taking samples from an actual population. Why? So we can explore what kinds of samples we might get. In this case, $\pi$ is an *actual population value* we specify.
+Now we are taking samples from an actual population. Why? So we can explore what kinds of samples we might get. In this case, $\pi$ is an *actual population value* we specify.
 
 <hr>
 
@@ -76,7 +76,7 @@ We will use the similarity between the two ideas in Section 3.1 to estimate a po
 
 ## Learning Goals for Chapter 2
 
-We will do only Section 2.1: Sampling From a Finite Population. It introduces the idea of the ***sampling distribution of $\hat{p}$***, built from a large number of random samples of size $n$ drawn from a finite population with parameter $\pi$. Also, the ***Central Limit Theorem***.
+We will do only Section 2.1 *Sampling From a Finite Population*. It introduces the idea of the sampling distribution of $\hat{p}$, built from a large number of random samples of size $n$ drawn from a finite population with parameter $\pi$. Also, the ***Central Limit Theorem***.
 
 <hr>
 
@@ -147,11 +147,11 @@ Recall *parameter*, *statistic*, and the other vocabulary terms we learned in Ch
 
 <hr> 
 
-A sampling method is considered to be ***biased*** if the statistics calculated from different samples consistently overestimate or consistently underestimate the population parameter in which we are interested. *Non-random samples tend to be biased.*
+A sampling method is considered to be ***biased*** if the statistics calculated from different samples consistently *overestimate* or consistently *underestimate* the population parameter in which we are interested. *Non-random* samples tend to be biased.
 
 <hr>
 
-**nonsampling concerns:** potential sources of bias (e.g., poorly worded survey questions) that are not related to the way the sample was selected from the population
+**nonsampling concerns:** potential sources of bias (e.g., poorly worded survey questions, people lying) that are not related to the way the sample was selected from the population
 
 
 ## 
@@ -216,13 +216,13 @@ If the key CLT ideas on the previous slide are true, the sampling distribution o
 
 The standard deviation of the sampling distribution of $\hat{p}$ will be
 
-$$SD(\hat{p}) = \sqrt{\frac{\pi(1-\pi)}{n}}.$$
+$$\text{SD of }\hat{p} = SD(\hat{p}) = \sqrt{\frac{\pi(1-\pi)}{n}}.$$
 
 Notice that $n$ is in the fraction denominator. For bigger sample sizes, SD will be smaller! 
 
 *&rarr; We have seen this before, in our Chapter 1 simulations. Larger samples tend to have less variability and converge toward the long-run (population) value.*
 
-Note: We call the SD of a sampling distribution its *standard error*.
+&rarr; We call the SD of a sampling distribution its ***standard error***.
 
 
 ## Two Example Calculations

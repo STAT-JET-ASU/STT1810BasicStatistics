@@ -1,7 +1,7 @@
 ---
-title: "STT1810 --- Section 4.1<br>Association/Confounding"
+title: "Section 4.1 Association<br>and Confounding"
 subtitle: "Introduction to Statistical Investigations, 2^nd^ Edition"
-author: "Author: Jill E. Thomley // Appalachian State University"
+author: "Jill E. Thomley | **STT 1810 BASIC STATISTICS** | Appalachian State University"
 date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
 output: 
   ioslides_presentation:
@@ -15,6 +15,18 @@ knitr::opts_chunk$set(
   comment = NA
 )
 ```
+
+
+## Before We Begin…
+
+These slides are intended to accompany Section 4.1 Association and Confounding in [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html). 
+
+*This content does not replace reading the textbook section.* It is for class presentation and/or reference.
+
+See also:
+
+* Glossary of ISI Textbook Vocabulary on AsULearn
+* Example 4.1 Night Lights and Nearsightedness (slides TBA)
 
 
 ## Recall: The Four Pillars of Inference

@@ -166,15 +166,13 @@ In other words, the observed result *could* be solely a product of random chance
 
 This is a method for assessing the evidence provided by data.
 
-**statistic:** Compute a statistic from your observed sample data. 
+**Statistic:** Compute a statistic from your observed sample data. 
 
-**simulate:** Identify a possible "by-chance-alone" explanation for the data.   Repeatedly simulate values of the statistic that *could* happen when the chance model is true (*purely random results*).  
+**Simulate:** Identify a possible "by-chance-alone" explanation for the data.   Repeatedly simulate values of the statistic that *could* happen when the chance model is true (*purely random results*).  
 
-**strength of evidence:** Compare your observed statistic to the simulated values. As you do this, consider whether the statistic from the sample data is *unlikely* when the chance model is true. 
+**Strength of evidence:** Compare your observed statistic to the simulated values. As you do this, consider whether the statistic from the sample data is *unlikely* when the chance model is true. 
 
-<hr>
-
-If we decide the observed statistic is unlikely to occur by chance alone, we can logically conclude that the observed data provide us strong evidence against the *plausibility* (i.e., the *believability* or the *credibility*) of the chance model --- but *not* "proof". 
+If we decide the observed statistic is unlikely to occur by chance alone, we can logically conclude that the observed data provide us strong evidence against the *plausibility* (i.e., the *believability* or the *credibility*) of the chance model --- but *NOT* "proof". 
 
 
 ## Connecting 3S to the Spiral Approach

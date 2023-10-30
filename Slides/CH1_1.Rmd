@@ -216,9 +216,9 @@ knitr::include_graphics("images/sixstepsfourpillars.png", dpi = 100)
 
 * Number of tosses = $n$ (sample size)
 
-* Number of repetitions = 1000 (or more simulations)
+* Number of repetitions = 1000 (or more) simulations
 
-* Number of heads = from sample data
+* Number of heads = value from sample
 
 :::
 
@@ -247,9 +247,9 @@ knitr::include_graphics("images/OneProportionApplet.png", dpi = 120)
 
 * Probability of heads is 0.5 for a fair coin
 
-* One repetition is 10 flips
+* One repetition is 10 coin flips
 
-* The plot shows us the results from our 1000 reps; it is the distribution of the randomly varying *counts* or *proportions* of heads
+* The plot shows us the results from our 1000 repetitions --- distribution of the randomly varying *counts* or *proportions* of heads
 
 :::
 

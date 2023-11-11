@@ -1,0 +1,43 @@
+---
+title: "STT 1810---Textbook Chapter 06 Learning Goals"
+output: 
+  html_document: 
+    theme: yeti
+    highlight: textmate
+    css: "../css/style.css"
+    keep_md: yes
+---
+
+<hr>
+
+The course textbook for STT 1810 is [***Introduction to Statistical Investigations, 2nd Edition***](http://www.isi-stats.com/isi/index2nd.html) by Nathan Tintle, Beth Chance, George Cobb, Allan Rossman, Soma Roy, Todd Swanson, and Jill VanderStoep. Students have access to the textbook online via [**WileyPLUS**](https://www.wileyplus.com/). We will cover the following sections in STT 1810.
+
+<hr>
+
+### CHAPTER 06 *Comparing Two Means*
+
+#### **Section 6.1** Comparing Two Groups: Quantitative Response
+
+**Chapter Learning Goal: Compare two sample means numerically and graphically.**
+
+**Section Learning Goals:**
+
+* Calculate or estimate the mean, median, quartiles, five number summary, and interquartile range from a dataset and understand what these are measuring.
+* When comparing two quantitative distributions, identify which has the larger mean, median, standard deviation, and inter-quartile range.
+* Identify whether there is likely an association between a binary categorical variable and a quantitative response variable.
+
+#### **Section 6.2** Comparing Two Means: Simulation-Based Approach
+
+**Chapter Learning Goal: Carry out a simulation-based analysis to investigate the difference between two population means.**
+
+**Section Learning Goals:**
+
+* State the null and the alternative hypotheses in terms of “no association” versus “there is an association” as well as in terms of comparing means (i.e., $\mu_1$ and $\mu_2$) for an explanatory variable with two categories.
+* Implement the 3S strategy to compare two means: find a statistic, simulate, and compute the strength of evidence against observed study results happening by chance alone.
+* Describe how to use cards to simulate what outcomes (in terms of difference in means or median) are to be expected in repeated random assignments, if there is no association between the two variables.
+* Use the [ISI Multiple Means applet](http://www.isi-stats.com/isi2nd/ISIapplets2021.html) to conduct a simulation of the null hypothesis and be able to read the applet's output.
+
+<hr>
+
+Updated Saturday, November 11, 2023 @ 05:54 PM
+

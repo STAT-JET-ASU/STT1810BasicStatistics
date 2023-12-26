@@ -93,7 +93,7 @@ knitr::include_graphics("images/privateforum.png", dpi = 75)
 knitr::include_graphics("images/scared.gif")
 ```
 
-Research shows that up to 80% of college students experience “feelings of anxiety ... when taking a statistics course or doing statistical analyses” [(cite)](https://psycnet.apa.org/fulltext/2019-01035-001.html). So it's not unusual, but does *not* have to get in the way of your success in this class!
+Research shows that up to 80% of college students experience “feelings of anxiety ... when taking a statistics course or doing statistical analyses” [(citation)](https://psycnet.apa.org/fulltext/2019-01035-001.html). So it's not unusual, but does *not* have to get in the way of your success in this class!
 
 
 ## YOU Can Succeed in STT 1810
@@ -118,7 +118,7 @@ knitr::include_graphics("images/Bloom.jpg", dpi = 175)
 
 ## How? Active Learning!
 
-It is very difficult to learn statistics by just listening to someone talk. In class, we will be using hands-on activities to engage with multiple parts of your brain.
+It is very difficult to learn statistics by just listening to someone lecture. In class, we will be using hands-on activities to engage with multiple parts of your brain.
 
 ```{r}
 knitr::include_graphics("images/activelearning.png", dpi = 500)

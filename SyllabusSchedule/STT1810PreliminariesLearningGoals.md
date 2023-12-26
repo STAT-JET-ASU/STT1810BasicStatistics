@@ -52,5 +52,5 @@ The course textbook for STT 1810 is [***Introduction to Statistical Investigatio
 
 <hr>
 
-Updated Saturday, November 11, 2023 @ 05:47 PM
+Updated Friday, December 01, 2023 @ 03:19 PM
 

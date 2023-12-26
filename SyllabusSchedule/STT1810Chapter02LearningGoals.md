@@ -32,7 +32,18 @@ The course textbook for STT 1810 is [***Introduction to Statistical Investigatio
 * Apply simulation-based inference methods for a population proportion to research studies involving random samples from finite populations.
 * Identify whether a study may be impacted by non-sampling concerns and explain the potential impact.
 
+#### **Section 2.2** Quantitative Data
+
+**Chapter Learning Goal: Understand and predict sampling distributions for a sample proportion and a sample mean.**
+
+**Section Learning Goals:**
+
+* Describe the distribution of a quantitative variable in terms of shape, center, variability, and unusual observations.
+* Use the skewness of the distribution to predict the relationship between the mean and median.
+* Identify parameters (such as long-run/population means or medians) and statistics (such as sample means or sample medians) in a statistical study.
+* Predict the mean, standard deviation, and shape of the sampling distribution of a sample mean from a random sample of size n, where the population mean, and population standard deviation, are known.
+
 <hr>
 
-Updated Saturday, November 11, 2023 @ 05:49 PM
+Updated Tuesday, December 26, 2023 @ 12:08 PM
 

@@ -99,14 +99,14 @@ The only way to learn statistics is to **DO** statistics. Reading the textbook, 
     * Chapters 2 & 3 Investigation **(8%)**
     * Chapters 4 & 5 Investigation **(12%)**
     * Vietnam Draft Data Investigation **(15%)**
-<br><br>
+<p></p>
 
 * **Research Article Analyses:** You will read three research articles and answer questions about the statistical investigative cycle presented in each article. Two articles will be assigned and you will choose a third article that is relevant your major. You will submit these via AsULearn and they will be scored using a rubric. More information will be provided on AsULearn.
 
     * Research Article Analysis #1 **(5%)**
     * Research Article Analysis #2 **(5%)**
     * Research Article Analysis #3 **(10%)**
-<br><br>
+<p></p>
 
 ##### **Grading Scale** 
 
@@ -149,4 +149,4 @@ This course conforms to all Appalachian State University policies with respect t
 
 <hr>
 
-Updated Saturday, January 13, 2024 @ 04:22 PM
+Updated Sunday, January 14, 2024 @ 04:40 PM

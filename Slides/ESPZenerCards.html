@@ -20,7 +20,7 @@
       // Slide settings
       settings: {
                 title: 'Do You Have ESP?',
-                        subtitle: 'Introductory Zener Card Exploration',
+                        subtitle: 'Zener Card Data Collection &amp; Exploration',
                 useBuilds: true,
         usePrettify: true,
         enableSlideAreas: true,
@@ -31,7 +31,7 @@
       // Author information
       presenters: [
             {
-        name:  'Jill E. Thomley // STT 1810 Basic Statistics // Appalachian State University' ,
+        name:  'Jill E. Thomley | <strong>STT 1810 BASIC STATISTICS</strong> | Appalachian State University' ,
         company: '',
         gplus: '',
         twitter: '',
@@ -3070,18 +3070,21 @@ var loadDeck = function(event) {
   });
 };
 
-if (document.readyState !== "loading" &&
-    document.querySelector('slides') === null) { 
-  // if the document is done loading but our element hasn't yet appeared, defer
-  // loading of the deck
-  window.setTimeout(function() {
-    loadDeck(null);
-  }, 0);
-} else {
-  // still loading the DOM, so wait until it's finished
-  document.addEventListener("DOMContentLoaded", loadDeck);
-}
+if (!window.Shiny) {
+  // If Shiny is loaded, the slide deck is initialized in ioslides template
 
+  if (document.readyState !== "loading" &&
+      document.querySelector('slides') === null) {
+    // if the document is done loading but our element hasn't yet appeared, defer
+    // loading of the deck
+    window.setTimeout(function() {
+      loadDeck(null);
+    }, 0);
+  } else {
+    // still loading the DOM, so wait until it's finished
+    document.addEventListener("DOMContentLoaded", loadDeck);
+  }
+}
 
 
 </script>
@@ -3154,7 +3157,7 @@ line-height: 1.9;
       <h1 data-config-title><!-- populated from slide_config.json --></h1>
       <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
       <p data-config-presenter><!-- populated from slide_config.json --></p>
-            <p style="margin-top: 6px; margin-left: -2px;">Last updated Friday, September 15, 2023 @ 02:57 PM</p>
+            <p style="margin-top: 6px; margin-left: -2px;">Last updated Monday, January 15, 2024 @ 05:16 PM</p>
           </hgroup>
   </slide>
 
@@ -3294,6 +3297,11 @@ ONWARD!
        window.jQuery(document).on('slideenter', function(e) {
          window.jQuery(e.target).trigger('shown');
       });
+    }
+    if (window.Shiny) {
+      // Initialize slides when this script appears on the page, since it
+      // indicates that the <slides> markup has been fully loaded.
+      window.loadDeck();
     }
   })();
 </script>

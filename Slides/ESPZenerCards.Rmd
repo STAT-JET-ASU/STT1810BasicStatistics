@@ -19,7 +19,7 @@ knitr::opts_chunk$set(
 
 ## What is ESP?
 
-The term ESP refers to collection of abilities, including telepathy (mind reading), psychokinesis (moving objects without physical contact) and precognition (predicting the future). Sometimes it is called "the sixth sense" or "psi". 
+ESP refers to a reputed collection of abilities, including telepathy (mind reading), psychokinesis (moving objects without physical contact) and precognition (predicting the future). Sometimes it is called "the sixth sense" or "psi". 
 
 The spiritualist movement in 19th-century Britain and the U.S. led to research societies to study paranormal phenomenon; the [Society for Psychical Research](http://www.aspr.com/) still exists! According to a 2003 study in the *Journal for the Scientific Study of Religion*, about 60% of people in the U.S. believe in extrasensory perception (ESP).
 

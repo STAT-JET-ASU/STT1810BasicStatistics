@@ -143,13 +143,6 @@ knitr::include_graphics("../images/thinkpairshare02.png", dpi = 400)
 ```
 
 
-## Experiential Learning Cycle
-
-```{r}
-knitr::include_graphics("../images/experientialcycle.png", dpi = 400)
-```
-
-
 ## It's Okay to Make Mistakes!
 
 Some activities, like WileyPLUS practice problems, offer multiple tries. Start early to leave time to ask for help! Fixing mistakes is a powerful way to learn.

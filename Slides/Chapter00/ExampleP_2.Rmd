@@ -261,7 +261,7 @@ ggplot(sbdata, aes(x = Year, y = Time, shape = Sex, color = Sex)) +
 
 * How could we use the data we have to make a prediction about how long her performance will last?
 
-* What other information would you like to have that is not included the dataset?
+* What other information would you like to have that is not included in the dataset?
 
 * According to [The Lines](https://www.thelines.com/odds/super-bowl/national-anthem/), "It is likely that McEntire’s National Anthem over under will be well under 2 minutes given her track record of Anthem renditions. The longest McEntire National Anthem available to watch on YouTube is her going just 1 minute and 23 seconds. This is considerably shorter than most modern versions."
 

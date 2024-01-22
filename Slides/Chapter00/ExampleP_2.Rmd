@@ -41,7 +41,7 @@ The [National Anthem dataset](http://www.isi-stats.com/isi/data/prelim/NationalA
 
 ## The SB Anthems Dataset
 
-The dataset included in the [Descriptive Statistics](https://www.isi-stats.com/isi2nd/ISIapplets2021.html) applet has more variables than the example shown in the textbook.
+The dataset that the authors include in the [Descriptive Statistics applet](https://www.isi-stats.com/isi2nd/ISIapplets2021.html) has more variables than the example in the textbook.
 
 * `Year`: the year of the Super Bowl
 * `SuperBowl`: the number of the Super Bowl

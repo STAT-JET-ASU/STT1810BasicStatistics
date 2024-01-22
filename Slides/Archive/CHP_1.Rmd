@@ -1,0 +1,232 @@
+---
+title: "Section P.1 Introduction<br>to the Six-Step Method"
+subtitle: "Introduction to Statistical Investigations, 2^nd^ Edition"
+author: "Jill E. Thomley | **STT 1810 BASIC STATISTICS** | Appalachian State University"
+date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
+output: 
+  ioslides_presentation:
+    logo: images/logoASU.jpg
+---
+
+```{r global_options, include = FALSE}
+knitr::opts_chunk$set(
+  message = FALSE,
+  warning = FALSE,
+  comment = NA
+)
+```
+
+
+## Before We Begin…
+
+These slides are intended to accompany Section P.1 Introduction to the Six-Step Method in [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html). 
+
+*This content does not replace reading the textbook section.* It is for class presentation and/or reference.
+
+See also:
+
+* Glossary of ISI Textbook Vocabulary on AsULearn
+* [Example P.1 Organ Donation](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/ExampleP_1.html)
+
+
+##
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("https://stat-jet-asu.github.io/Moodlepics/admin/statsisascience.png")
+```
+* Tukey pioneered *exploratory data analysis* and other methods
+
+
+## Learning Goals for Preliminaries
+
+* Use the six-step statistical investigation method to carry out any statistical study. [Section P.1]
+* Describe distributions of quantitative variables. [Section P.2]
+* Use simulations to explore and understand probabilities. [Section P.3]
+
+***We will use these investigative methods throughout the course.***
+
+<hr>
+
+One more important goal of this (and every other) section is for you to learn the vocabulary of statistical investigations/thinking. 
+
+You need to **"speak the language"** to understand what is being taught in class, and also to express ideas that will demonstrate your understanding and proficiency with the material. 
+
+
+## Learning Goals for Section P.1
+
+* Describe how the six steps of a statistical investigation (the "Six-Step Method") apply to a particular statistical study.
+
+  *Statistics is not just a methodology, it is a **way of thinking**.*
+
+* Think of / write research questions that could be investigated with a statistical study.
+
+  *Investigation at any level is driven by **questions**; how we ask the question will shape the rest of the steps in the process.*
+
+* Identify observational units / variables in a statistical study.
+
+* Classify variables as categorical or quantitative.
+
+  *These two features of an investigation depend on **study design**.*
+
+
+## Some Essential Vocabulary
+
+Refer to the textbook and AsULearn glossary for definitions of these terms, now and for future sections. These form the first foundation of your statistical vocabulary.
+
+**data / dataset:** the values measured or categories recorded on individual entities of interest (i.e., observational units)
+
+**observational units:** the individual entities on which data are recorded; these may be people, objects, or repeated trials of some process like a game of chance or basketball free-throw
+
+In some situations, an observational unit may be referred to as a *case*, a *subject*, a *participant*, or an *experimental unit*.
+
+Data are often organized in a spreadsheet-type format in which each *row* is an observational unit and each *column* is a variable.
+
+
+## A "Tidy" Dataset
+
+Data are usually stored in a rectangular representation that has various names, including **data table** or **statistical spreadsheet**.
+
+Most of the data we will work with in STT1810 is in this format. Real life data is usually far messier and can require a great deal of tidying up, but that is beyond the scope of this class.
+
+<p style="text-align:center; font-size: 10px;"><img src="https://d33wubrfki0l68.cloudfront.net/6f1ddb544fc5c69a2478e444ab8112fb0eea23f8/91adc/images/tidy-1.png" width = 775><br>Source: [R for Data Science: Tidy Data](http://r4ds.had.co.nz/tidy-data.html) --- note that *observations* is another name for *observational units*<br></p>
+
+
+## 
+
+**variables:** recorded characteristics of the observational units
+
+* **quantitative variable:** numerical characteristics or values on which ordinary arithmetic operations make sense (counts or measurements, which may include *units of measure*)
+
+* **categorical variable:** qualitative characteristics, groupings, or category designations (essentially labels of different kinds for traits; labels may take the form of words or numbers)
+
+* **variable distribution:** describes the pattern of value/category outcomes (what values/categories are possible and how often they occur for the given variable)
+
+Can you think of some examples of quantitative and categorical variables you might encounter in your discipline?
+
+Can you think of a categorical variable that uses a number label?
+
+
+## The "Six-Step Method"
+
+The six steps of a statistical investigation are...
+
+* **STEP 1:** Ask a research question.
+
+* **STEP 2:** Design a study and collect data. 
+
+* **STEP 3:** Explore the data.
+
+* **STEP 4:** Draw inferences beyond the data.
+
+* **STEP 5:** Formulate conclusions.
+
+* **STEP 6:** Look back and ahead.
+
+What is a research question in your field of study that we could potentially answer by collecting data? What interests ***you***?
+
+
+## The Spiral Approach to Investigation
+
+:::::: {style="display: flex;"}
+
+::: {}
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("images/sixstepsfourpillars.png", dpi = 100)
+```
+
+:::
+
+::: {}
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+:::
+
+::: {}
+
+* Statistical investigations typically include these six steps in some form. 
+
+* The steps may not always be followed in this exact order; however, a good statistical investigation will go through all six of these steps before completion.
+
+* The findings of one study typically will generate new research questions; that's how science works!
+
+:::
+
+::::
+
+
+## Four Pillars of Statistical Inference
+
+Consider Step 4 and Step 5 of the "Six-Step Method"...
+
+<hr>
+
+The ***logic*** of inference helps quantify the relative magnitude and strength of the evidence extracted from the data. (@ *Step 4*)
+
+* **Significance:** How *strong* is the evidence of an effect?
+
+* **Estimation:** What is the *size* (magnitude/direction) of effect?
+
+<hr>
+
+The ***scope*** of inference concerns the extent to which results can be generalized and whether we can infer causation. (@ *Step 5*)
+
+* **Generalization:** How *broadly* do our conclusions apply?
+
+* **Causation:** Can we say what *caused* the observed effect?
+
+<hr>
+
+
+## *Think About It #1*
+
+You decide to collect data on all Major League Baseball games (observational units) being played in one week. You could record data on variables such as total number of runs scored, whether the home team wins the game, and the attendance at the game. Is each of these variables *categorical* or *quantitative*?
+
+* total number of runs scored
+* whether the home team wins
+* total attendance at the game
+
+<hr>
+
+Can you think of other categorical variables you might collect?
+
+Can you think of other quantitative variables you might collect?
+
+
+## *Think About It #2*
+
+Study: Ackerman, J. M., Griskevicius, V., & Li, N. P. (2011). Let's get serious: communicating commitment in romantic relationships. Journal of Personality and Social Psychology, 100(6), 1079–1094. https://doi.org/10.1037/a0022412
+
+**Research Question:** Among heterosexual couples who are in committed relationships, are the men or women more likely to confess love first?
+
+<hr>
+
+**Study Questions**
+
+* What are the observational units?
+* What is the variable of interest?
+* What type of variable is it?
+
+
+## Some of the Results
+
+In Section P.2, we will learn how to explore data to describe and compare distributions, and to detect unusual observations. This type of exploratory data analysis (EDA) is a *must* before we try to make inferences and draw conclusions. 
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("images/whosayslovefirst.png", dpi = 175)
+```
+
+
+## The Spiral Process
+
+***Look Back...***
+
+What else would you like to know about the design of this study before you apply the results or try to generalize the findings to a larger group? What might be its limitations?
+
+***Look Ahead...***
+
+What new research questions do the results of this study inspire in you? What related ideas could you to explore?
+
+How would you collect additional data to help you answer these new research questions?
+

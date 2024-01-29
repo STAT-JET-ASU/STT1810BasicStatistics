@@ -118,3 +118,4 @@ How can we simulate the random process using a computer, or alternatively tactil
 ```{r, echo = FALSE, fig.align="center"}
 knitr::include_graphics("../images/tactiletools.jpg", dpi = 175)
 ```
+

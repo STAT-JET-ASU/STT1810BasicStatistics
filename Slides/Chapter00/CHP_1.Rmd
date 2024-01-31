@@ -1,6 +1,6 @@
 ---
 title: "Section P.1 Introduction<br>to the Six-Step Method"
-subtitle: "Introduction to Statistical Investigations, 2^nd^ Ed."
+subtitle: "*Introduction to Statistical Investigations, 2^nd^ Edition*"
 author: "Jill E. Thomley | **STT 1810 BASIC STATISTICS** | Appalachian State University"
 date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
 output: 

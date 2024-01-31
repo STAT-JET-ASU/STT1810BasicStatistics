@@ -1,6 +1,6 @@
 ---
 title: "Example 5.1 Are People Buckling Up?"
-subtitle: "Introduction to Statistical Investigations, 2^nd^ Ed."
+subtitle: "*Introduction to Statistical Investigations, 2^nd^ Edition*"
 author: "Jill E. Thomley | **STT 1810 BASIC STATISTICS** | Appalachian State University"
 date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
 output: 
@@ -19,14 +19,14 @@ knitr::opts_chunk$set(
 
 ## Before We Begin…
 
-These slides are meant to accompany [*Introduction to Statistical Investigations, 2nd Ed.*](http://www.isi-stats.com/isi/index2nd.html) --- Section 4.1 Association and Confounding.
+These slides are meant to accompany [*Introduction to Statistical Investigations, 2nd Ed.*](http://www.isi-stats.com/isi/index2nd.html) --- Section 5.1 Comparing Two Groups: Categorical Response.
 
 *This content does not replace reading the relevant textbook section.* It is for class presentation, review, and reference.
 
 See [AsULearn](https://asulearn.appstate.edu/) for supplemental readings, videos, assignments, and searchable Glossary of ISI Textbook Vocabulary.
 
 
-## The Spiral Approach to Investigation
+## Recall: The Six-Step Spiral Process
 
 :::::: {style="display: flex;"}
 
@@ -46,11 +46,13 @@ knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
 
 ::: {}
 
-* Statistical investigations typically include these six steps in some form. 
+* In Chapters 1 through 4, our research questions usually involved a single proportion parameter $\pi$.
 
-* These six steps may not always be followed in this exact order, but a good statistical investigation will go through all these steps before completion.
+* In Chapter 5 we will look at comparing parameters for two groups ($\pi_1, \pi_2$).
 
-* The findings of one study typically will generate new research questions; that's how science works!
+* The investigative process is the same; the six-step "spiral" we introduced in Section P.1.
+
+* Now Ho will be written as a *difference* in parameters.
 
 :::
 

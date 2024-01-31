@@ -1,11 +1,11 @@
 ---
 title: "STT1810 --- Section 5.2<br>Simulation: Two Props"
-subtitle: "Introduction to Statistical Investigations, 2^nd^ Edition"
+subtitle: "*Introduction to Statistical Investigations, 2^nd^ Edition*"
 author: "Author: Jill E. Thomley // Appalachian State University"
 date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
 output: 
   ioslides_presentation:
-    logo: images/logoASU.jpg
+    logo: ../images/logoASU.jpg
 ---
 
 ```{r global_options, include = FALSE}
@@ -17,6 +17,15 @@ knitr::opts_chunk$set(
 ```
 
 
+## Before We Begin…
+
+These slides are meant to accompany [*Introduction to Statistical Investigations, 2nd Ed.*](http://www.isi-stats.com/isi/index2nd.html) --- Section 5.2 Comparing Two Groups: Categorical Response.
+
+*This content does not replace reading the relevant textbook section.* It is for class presentation, review, and reference.
+
+See [AsULearn](https://asulearn.appstate.edu/) for supplemental readings, videos, assignments, and searchable Glossary of ISI Textbook Vocabulary.
+
+
 ## Recall: The Six-Step Spiral Process
 
 :::::: {style="display: flex;"}
@@ -24,7 +33,7 @@ knitr::opts_chunk$set(
 ::: {}
 
 ```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("images/sixstepsfourpillars.png", dpi = 100)
+knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
 ```
 
 :::
@@ -58,7 +67,7 @@ We can also estimate the size of difference between $\pi_1$ and $\pi_2$.
 
 <hr>
 
-In this chapter, you will learn to: 
+In Chapter 5 (*not including Section 5.3*), you will learn to: 
 
 * Compare two sample proportions numerically and graphically. [Section 5.1]
 * Carry out a simulation-based analysis to investigate the difference between two population proportions. [Section 5.2]
@@ -97,4 +106,13 @@ You may also want to review and solidify all of the vocabulary introduced in Sec
 <hr>
 
 The term *standard error* is not completely new. We mentioned it in Section 2.1 when we explored sampling distributions. Then we encountered it again in Section 3.2 when we introduced 2SD confidence intervals.
+
+
+## The Two-Proportion Applet
+
+Data will be entered as a two-way table in this new applet.
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("../images/TwoPropApplet.PNG", dpi = 125)
+```
 

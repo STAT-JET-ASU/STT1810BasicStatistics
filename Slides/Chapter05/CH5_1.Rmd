@@ -1,6 +1,6 @@
 ---
 title: "Section 5.1 Comparing<br>Two Groups: Categorical"
-subtitle: "Introduction to Statistical Investigations, 2^nd^ Ed."
+subtitle: "*Introduction to Statistical Investigations, 2^nd^ Edition*"
 author: "Jill E. Thomley | **STT 1810 BASIC STATISTICS** | Appalachian State University"
 date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
 output: 
@@ -19,7 +19,7 @@ knitr::opts_chunk$set(
 
 ## Before We Begin…
 
-These slides are meant to accompany [*Introduction to Statistical Investigations, 2nd Ed.*](http://www.isi-stats.com/isi/index2nd.html) --- Section 4.1 Association and Confounding.
+These slides are meant to accompany [*Introduction to Statistical Investigations, 2nd Ed.*](http://www.isi-stats.com/isi/index2nd.html) --- Section 5.1 Comparing Two Groups: Categorical Response.
 
 *This content does not replace reading the relevant textbook section.* It is for class presentation, review, and reference.
 
@@ -61,16 +61,17 @@ knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
 
 ## Learning Goals for Chapter 5
 
-Chapter 5 extends what we learned about statistical significance to compare two groups having parameters $\pi_1$ and $\pi_2$. Typically our null will be $H_0: \pi_1 = \pi_2$ or $H_0: \pi_1 - \pi_2 = 0$ &rarr; there is *no difference* between the proportions. We will also estimate the size of the $\pi_1 - \pi_2$ difference with a confidence interval.
+Chapter 5 extends what we learned about statistical significance in previous chapters to compare two groups with parameters $\pi_1$ and $\pi_2$. In this case, rather than testing a null hypothesis about whether $\pi$ is equal to some value, we will typically have a null of $H_0: \pi_1 = \pi_2$ or $H_0: \pi_1 - \pi_2 = 0$ &rarr; there is *no difference*. 
+
+We can also estimate the size of difference between $\pi_1$ and $\pi_2$.
+
 
 <hr>
 
-In Chapter 5, you will learn to: 
+In Chapter 5 (*not including Section 5.3*), you will learn to: 
 
 * Compare two sample proportions numerically and graphically. [Section 5.1]
 * Carry out a simulation-based analysis to investigate the difference between two population proportions. [Section 5.2]
-
-We will *not* cover the theory-based method found in Section 5.3.
 
 
 ## Learning Goals for Section 5.1

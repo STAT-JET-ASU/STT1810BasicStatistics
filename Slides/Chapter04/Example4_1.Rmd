@@ -1,0 +1,198 @@
+---
+title: "Example 4.1 Night Lights and Nearsightedness"
+subtitle: "Introduction to Statistical Investigations, 2^nd^ Edition"
+author: "Jill E. Thomley | **STT 1810 BASIC STATISTICS** | Appalachian State University"
+date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
+output: 
+  ioslides_presentation:
+    logo: ../images/logoASU.jpg
+---
+
+```{r global_options, include = FALSE}
+knitr::opts_chunk$set(
+  message = FALSE,
+  warning = FALSE,
+  comment = NA
+)
+```
+
+
+## Before We Begin…
+
+These slides are meant to accompany [*Introduction to Statistical Investigations, 2nd Ed.*](http://www.isi-stats.com/isi/index2nd.html) --- Section 4.1 Association and Confounding.
+
+*This content does not replace reading the relevant textbook section.* It is for class presentation, review, and reference.
+
+See [AsULearn](https://asulearn.appstate.edu/) for supplemental readings, videos, assignments, and searchable Glossary of ISI Textbook Vocabulary.
+
+
+## The Spiral Approach to Investigation
+
+:::::: {style="display: flex;"}
+
+::: {}
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
+```
+
+:::
+
+::: {}
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+:::
+
+::: {}
+
+* Statistical investigations typically include these six steps in some form. 
+
+* These six steps may not always be followed in this exact order, but a good statistical investigation will go through all these steps before completion.
+
+* The findings of one study typically will generate new research questions; that's how science works!
+
+:::
+
+::::
+
+
+## STEP 1: Ask a Research Question
+
+**The Problem**
+
+Myopia, or nearsightedness, typically develops during childhood or teen years. 
+
+As explained by the [Mayo Clinic](https://www.mayoclinic.org/diseases-conditions/nearsightedness/symptoms-causes/syc-20375556), "Nearsightedness (myopia) is a common vision condition in which near objects appear clear, but objects farther away look blurry. It occurs when the shape of the eye ... causes light rays to bend (refract) inaccurately. Light rays that should be focused on nerve tissues at the back of the eye (retina) are focused in front of the retina."
+
+**Research Question**
+
+Is there an association between myopia and use of night lights? 
+
+
+## STEP 2: Design a Study / Collect Data
+
+Researchers interviewed the parents of 479 children and asked whether the child slept with the room light on, with a night light on, or in darkness before age two. Children were also separated into two groups: nearsighted or not nearsighted.
+
+* **observational units:** individual children
+* **explanatory variable:** intensity of light in the room when the child slept prior to age two; categorical and *non*-binary (three different categories)
+* **response variable:** whether or not the child had myopia (i.e., was nearsighted); categorical and binary
+* **sample size:** $n$ = 479
+
+
+## STEP 3: Explore the Data
+
+We can display the study data in a *contingency table*. This shows the number of children who are grouped into each combination of the two variables; for example, who are nearsighted *and* slept in darkness. We can also see the total for each variable alone in the *margins* of the table (far right column and bottom row).
+
+
+|                 | Darkness | Night Light | Room Light |    Total |
+|-----------------|:--------:|:-----------:|:----------:|:--------:|
+| Nearsighted     |       18 |          78 |         41 |      137 |
+| Not Nearsighted |      154 |         154 |         34 |      342 |
+| Total           |      172 |         232 |         75 |      479 |
+
+
+<br>*But*...counts can be difficult to interpret in terms of associations.
+
+
+## Compute Conditional Percentages
+
+We can calculate percentages of children with nearsightedness *conditional* on the amount of light in the room at night. In this case, each column (category of light) is treated as a separate group (the two proportions in each group will sum to 100%).
+
+|               | Darkness           | Night Light        | Room Light       | Total              |
+|---------------|:------------------:|:------------------:|:----------------:|:------------------:|
+|Nearsighted    | 18 / 172 =<br>10.5%| 78 / 232 =<br>33.6%|41 / 75 =<br>54.7%|137 / 479 =<br>28.6%|
+|Not Nearsighted|154 / 172 =<br>89.5%|154 / 232 =<br>66.4%|34 / 75 =<br>45.3%|342 / 479 =<br>71.4%|
+|Total          |                100%|                100%|              100%|                100%|
+
+
+## Visualize the % of Nearsighted Children
+
+```{r echo = FALSE}
+library(tidyverse)
+df <- tibble(
+  group = c("Darkness", "Night Light", "Room Light"),
+  nearsighted = c(0.105, 0.336, 0.547)
+)
+ggplot(df, aes(x = group, y = nearsighted * 100)) +
+  geom_col(width = 0.75, fill = "lightblue", color = "darkgray") +
+  geom_hline(yintercept = 0) +
+  scale_y_continuous(breaks = seq(0, 100, 5)) +
+  theme_minimal() +
+  labs(title = "Association Between Nightlights and Myopia",
+    x = "amount of light in the bedroom",
+    y = "% of children who are nearsighted"
+  )
+```
+
+
+## STEP 4: Draw Inferences
+
+There is higher percentage of nearsighted children among those using a room light (54.7%) or with a night light (33.6%) compared to children who slept in darkness (10.5%). 
+
+The observed probability of a child having having myopia is not only different for the three amounts of light, but there seems to be a pattern that connects having more light in a child's room to a greater probability of myopia.
+
+If we did a test of significance (this is covered in Chapter 8), we would reject the null hypothesis that the observed data can be explained by randomness alone (*p*-value < 0.00001).
+
+The variables (amount of light and eye condition) are *associated*. Knowing something about amount of light gives us information about the probability of myopia.
+
+
+## STEP 5: Formulate Conclusions
+
+We have concluded that there is a genuine association between the variables that is not due to pure randomness. 
+
+Should pediatricians recommend that parents not use lights at night in a child's room? Why or why not?
+
+<hr>
+
+Is there another possible explanation that you can think of for the effects that the researchers observed in the data, besides randomness and the amount of light in the room?
+
+In other words, are there any *confounding variables* we need to look at for these data?
+
+
+## Alternative Explanation #1
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("../images/fig_04_01_01.jpg", dpi = 120)
+```
+
+Mopia is often inherited from parents (so *genetics* is a possible confound). Maybe parents who are nearsighted are more likely to use a room light or a night light for their kids.
+
+
+## Alternative Explanation #2
+
+This is an observational study; we will revisit this term in Section 4.2. The researcher did not decide which children would sleep in which levels of light. Thus, even if we find an association, it does not prove that a ***cause and effect*** relationship exists. 
+
+We might even find that the direction of the relationship is the *opposite* of what we first expect, so the explanatory variable is actually the response variable, and vice versa.
+
+In this case, maybe children who are already developing myopia (i.e., starting to get nearsighted) are more likely to want to sleep with some kind of light in their rooms. 
+
+
+## Other Explanations?
+
+Can you think of any other confounding variables or alternative explanations for the association? *Recall that researchers chose to interview the parents of children who were patients in a university pediatric ophthalmology clinic, as a start...*
+
+Some [other variables](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1123161/) potentially associated with myopia:
+
+* race/ethnicity
+* prolonged reading
+* prolonged "close work"
+* level of academic achievement
+* early intervention, such as using bifocals
+* medical conditions, such as congenital ptosis ("droopy eyelid") or keratitis (inflammation of the cornea)
+
+
+## STEP 6: Look Back and Ahead
+
+How could researchers design another study to help remove or lessen the effect of some confounding variables?
+
+What ethical considerations might restrict what the researchers could do? For example, could they purposely assign children to use certain kind of room lighting? Why or why not?
+
+<hr>
+
+*On the topic of ethics in human research...*
+
+The [Belmont Report](https://www.hhs.gov/ohrp/regulations-and-policy/belmont-report/read-the-belmont-report/index.html) outlines ethical principles and guidelines for research involving human subjects.
+
+The [Federal Policy for the Protection of Human Subjects (the "Common Rule")](https://www.hhs.gov/ohrp/regulations-and-policy/regulations/common-rule/index.html) governs human subjects research in the U.S. This policy was last revised in 2018.
+

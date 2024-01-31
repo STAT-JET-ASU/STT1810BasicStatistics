@@ -5,7 +5,7 @@ author: "Jill E. Thomley | **STT 1810 BASIC STATISTICS** | Appalachian State Uni
 date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
 output: 
   ioslides_presentation:
-    logo: images/logoASU.jpg
+    logo: ../images/logoASU.jpg
 ---
 
 ```{r global_options, include = FALSE}
@@ -19,14 +19,11 @@ knitr::opts_chunk$set(
 
 ## Before We Begin…
 
-These slides are intended to accompany Section 4.2 Observational Studies Versus Experiments in [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html). 
+These slides are meant to accompany [*Introduction to Statistical Investigations, 2nd Ed.*](http://www.isi-stats.com/isi/index2nd.html) --- Section 4.2 Observational Studies vs. Experiments.
 
-*This content does not replace reading the textbook section.* It is for class presentation and/or reference.
+*This content does not replace reading the relevant textbook section.* It is for class presentation, review, and reference.
 
-See also:
-
-* Glossary of ISI Textbook Vocabulary on AsULearn
-* Example 4.2 Lying on the Internet (slides TBA)
+See [AsULearn](https://asulearn.appstate.edu/) for supplemental readings, videos, assignments, and searchable Glossary of ISI Textbook Vocabulary.
 
 
 ## Recall: The Four Pillars of Inference
@@ -36,7 +33,7 @@ See also:
 ::: {}
 
 ```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("images/sixstepsfourpillars.png", dpi = 100)
+knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
 ```
 
 :::
@@ -64,11 +61,11 @@ knitr::include_graphics("images/sixstepsfourpillars.png", dpi = 100)
 
 ## Learning Goals for Chapter 4
 
-Chapter 4 focuses on ***causation***, which is one of the four pillars of inference introduced in Section P.1. Overall, the main goal is to explain *when* and *why* we can infer cause-and-effect after we determine there is an ***association*** between two variables. 
+Chapter 4 focuses on ***causation***, which is one of the four pillars of inference introduced in Section P.1. Overall, the main goal is to explain when and why we can infer cause-and-effect after we determine there is an ***association*** between two variables. 
 
 <hr>
 
-In this chapter, you will learn to: 
+In Chapter 4, you will learn to: 
 
 * Identify confounding variables in observational studies. [Section 4.1]
 * Explain how studies using random assignment are able to draw cause-and-effect conclusions. [Section 4.2]
@@ -143,70 +140,27 @@ In this chapter, you will learn to:
 **cause and effect:** in a randomized experiment, we can conclude that the explanatory variable is causing the effect (difference or association) we see in the response variable (*the randomization balances possible confounding variables*)
 
 
-## Example 4.2 Internet Lying
+## What Kind of Study?
 
-Are people more likely to tell lies with e-mail than with pencil and paper? A study reported at the August 2008 meeting of the Academy of Management involved 48 graduate students in business who participated in a “bargaining” game. Researchers kept track of whether students misrepresented (lied about) the size of the pot when they were negotiating with other players.
+**randomized experiment:** 
 
-* **experimental units:** individual graduate students
-* **explanatory variable:** communication method; categorical and binary
-* **response variable:** whether the participant lied; categorical and binary
-* **sample size:** $n$ = 48 overall, with $n_1$ = 26 in the e-mail group and $n_2$ = 22 in the paper and pencil group
+* researchers manipulate the treatments participants receive (i.e., the explanatory variable); may use placebos or blinding
+* researchers also randomly assign participants to treatment groups; may use completely random assignment or blocks
 
+**quasi-experiment:** 
 
-## Study Design
+* researchers manipulate the treatments participants receive
+* researchers **DO NOT** randomly assign participants to groups
 
-The researchers randomly assigned the communication method used by each of the participants, so this study was a *randomized experiment*. Randomization theoretically creates group balance in a study with respect to possible confounding variables.
+**observational study:**
 
-* *Suppose there were 30 male and 18 female subjects and all 30 men in the sample communicated via the Internet, while the 18 women used pencil and paper. If you were concerned that males might be more competitive and thus more likely to lie, how would this limit your ability to draw conclusions?*
-
-In theory, given that this is a randomized experiment, if we find a difference in lying behavior between the Internet and pencil-and-paper players, there are only two explanations: (1) cause-and-effect relationship or (2) random chance from the random assignment process.
+* researchers **DO NOT** manipulate the treatments or randomly assign participants to groups
 
 
-## Explore the Data
-
-We compute the conditional proportions for those who lied in each of the experimental treatment groups.
-
-|             |    E-Mail | Pencil / Paper |     Total |
-|-------------|:---------:|:--------------:|:---------:|
-| Did Not Lie |   2 (8%)  |        8 (36%) | 10 (21%)  |
-| Lied        |  24 (92%) |       14 (64%) | 38 (79%)  |
-| Total       | 26 (100%) |       22 (100%)| 48 (100%) |
-
-<br>
-
-Probability of lying, given e-mail communication: 0.92
-
-Probability of lying, given paper-and-pencil communication: 0.64
-
-
-## Draw Inferences
-
-* Lying was common overall (79%), but lying was more likely in the e-mail group (92%) than the paper/pencil group (64%).
-
-* One possible explanation for the results is that the format of the game influenced how people responded. They feel more comfortable lying in e-mail communication, perhaps because it seems anonymous. 
-
-* Another possible explanation is random chance. We claimed that random assignment balanced the two groups, but there is still a chance that the random assignment process itself resulted in slightly different groups. (Notice the randomness we are considering here is from the random *assignment*, not random choices or random sampling.) 
-
-* *A significance test would show that randomness is implausible.*
-
-
-## Formulate Conclusions
-
-* The study used random assignment to form the groups, so we don’t expect to have any systematic group differences at the start of the study.
-
-* There is a statistically significant difference between the two groups at the end of the study.
-
-* Therefore, a plausible explanation is that the observed effect is due to the treatment group to which the experimental units were assigned (*cause and effect*).
-
-* However, the participants in this study were business school graduate students and volunteers, so we should be cautious about *generalizing* to a larger population. 
-
-* It is common for experiments *not* to have random selection.
-
-
-## Random *Selection* vs. *Assignment*
+## Randomness: *Selection* vs. *Assignment*
 
 ```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("images/fig_04_02_03.jpg", dpi = 100)
+knitr::include_graphics("../images/fig_04_02_03.jpg", dpi = 100)
 ```
 
 A “randomized, double-blind, placebo controlled experiment” is considered by some to be the gold standard in scientific studies.

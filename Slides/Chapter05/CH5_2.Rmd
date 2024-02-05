@@ -1,7 +1,7 @@
 ---
-title: "STT1810 --- Section 5.2<br>Simulation: Two Props"
+title: "Section 5.2 Comparing<br>Two Proportions: Sims"
 subtitle: "*Introduction to Statistical Investigations, 2^nd^ Edition*"
-author: "Author: Jill E. Thomley // Appalachian State University"
+author: "Jill E. Thomley | **STT 1810 BASIC STATISTICS** | Appalachian State University"
 date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
 output: 
   ioslides_presentation:
@@ -75,7 +75,7 @@ In Chapter 5 (*not including Section 5.3*), you will learn to:
 
 ## Learning Goals for Section 5.2
 
-In Section 5.2 we are using all our statistical knowledge gained in Chapters 1 through 4 and applying it to a new scenario.
+In Section 5.2 we will use all our statistical knowledge gained in Chapters 1 through 4 and apply it to a new scenario.
 
 * State Ho and Ha in terms of “no association” versus “there is an association” as well as in terms of comparing probabilities of success for two categories of explanatory variable ($\pi_1$ and $\pi_2$) when exploring the relationship between two categorical variables.
 

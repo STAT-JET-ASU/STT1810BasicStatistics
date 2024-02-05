@@ -85,7 +85,7 @@ In Chapter 5 (*not including Section 5.3*), you will learn to:
 * Calculate and interpret risk ratio (also known as relative risk).
 
 
-## Added Learning Goals (Not in the Text)
+## Added Learning Goals (*Not in the Text*)
 
 * Calculate and interpret percent increased risk.
 

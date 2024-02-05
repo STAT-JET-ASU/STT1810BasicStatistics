@@ -19,7 +19,7 @@ knitr::opts_chunk$set(
 
 ## Before We Begin…
 
-These slides are meant to accompany [*Introduction to Statistical Investigations, 2nd Ed.*](http://www.isi-stats.com/isi/index2nd.html) --- Section 5.2 Comparing Two Groups: Categorical Response.
+These slides are meant to accompany [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html) --- Section 5.2 Comparing Two Groups: Categorical Response.
 
 *This content does not replace reading the relevant textbook section.* It is for class presentation, review, and reference.
 

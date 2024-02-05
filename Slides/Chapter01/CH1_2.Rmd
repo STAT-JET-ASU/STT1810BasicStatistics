@@ -1,11 +1,11 @@
 ---
 title: "Section 1.2 Measuring<br>the Strength of Evidence"
-subtitle: "Introduction to Statistical Investigations, 2^nd^ Edition"
+subtitle: "*Introduction to Statistical Investigations, 2^nd^ Edition*"
 author: "Jill E. Thomley | **STT 1810 BASIC STATISTICS** | Appalachian State University"
 date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
 output: 
   ioslides_presentation:
-    logo: images/logoASU.jpg
+    logo: ../images/logoASU.jpg
 ---
 
 ```{r global_options, include = FALSE}
@@ -19,15 +19,11 @@ knitr::opts_chunk$set(
 
 ## Before We Begin…
 
-These slides are intended to accompany Section 1.2 Measuring Strength of Evidence in [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html). 
+These slides are meant to accompany [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html) --- Section 1.2 Measuring the Strength of Evidence. 
 
 *This content does not replace reading the textbook section.* It is for class presentation and/or reference.
 
-See also:
-
-* Glossary of ISI Textbook Vocabulary on AsULearn
-* [Section 1.1 Introduction to Chance Models](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CH1_1.html)
-* Example 1.2 Rock-Paper-Scissors (slides TBA)
+See [AsULearn](https://asulearn.appstate.edu/) for supplemental readings, videos, assignments, and searchable Glossary of ISI Textbook Vocabulary.
 
 
 ## Recall: Spiral Approach & Four Pillars
@@ -37,7 +33,7 @@ See also:
 ::: {}
 
 ```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("images/sixstepsfourpillars.png", dpi = 100)
+knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
 ```
 
 :::
@@ -138,7 +134,7 @@ In the field of Statistics, a *test of significance* is a procedure for measurin
 
 ## Quantifying Strength of Evidence
 
-One way to assess strength is to use a $p$-value. The *$p$* stands for *probability*---it is the probability of getting a purely random value of the statistic (e.g., from simulation) that is at least as extreme as the observed statistic (*in the direction of $H_a$*) when $H_0$ is true.
+One way to assess strength is to use a $p$-value. The *$p$* stands for *probability*---it is the probability of getting a purely random value of the statistic that is at least as extreme (*in the $H_a$ direction*) as the observed statistic, assuming $H_0$ is true.
 
 | Magnitude               | Guideline for Inference                                           |
 |-------------------------|-------------------------------------------------------------------|
@@ -184,7 +180,7 @@ Why 0.05? Ronald Fisher wrote *Statistical Methods for Research Workers* in 1925
 ::: {}
 
 ```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("images/OneProportionApplet.png", dpi = 120)
+knitr::include_graphics("../images/OneProportionApplet.png", dpi = 120)
 ```
 
 :::
@@ -210,7 +206,7 @@ What *strength of evidence* is provided by these ESP test results?
 ## Simulate & Measure
 
 ```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("images/OneProportionAppletZenerB.png", dpi = 140)
+knitr::include_graphics("../images/OneProportionAppletZenerB.png", dpi = 140)
 ```
 
 

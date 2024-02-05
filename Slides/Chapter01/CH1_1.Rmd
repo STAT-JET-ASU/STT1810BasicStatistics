@@ -19,7 +19,7 @@ knitr::opts_chunk$set(
 
 ## Before We Begin…
 
-These slides are intended to accompany Section 1.1 Intro to Chance Models in [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html). 
+These slides are meant to accompany [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html) --- Section 1.1 Intro to Chance Models. 
 
 *This content does not replace reading the relevant textbook section.* It is for class presentation, review, and reference.
 
@@ -265,3 +265,4 @@ knitr::include_graphics("../images/OneProportionAppletEx.png", dpi = 120)
 :::
 
 ::::
+

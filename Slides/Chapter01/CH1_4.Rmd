@@ -1,11 +1,11 @@
 ---
 title: "Section 1.4 What Impacts Strength of Evidence?"
-subtitle: "Introduction to Statistical Investigations, 2^nd^ Edition"
+subtitle: "*Introduction to Statistical Investigations, 2^nd^ Edition*"
 author: "Jill E. Thomley | **STT 1810 BASIC STATISTICS** | Appalachian State University"
 date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
 output: 
   ioslides_presentation:
-    logo: images/logoASU.jpg
+    logo: ../images/logoASU.jpg
 ---
 
 ```{r global_options, include = FALSE}
@@ -19,16 +19,11 @@ knitr::opts_chunk$set(
 
 ## Before We Begin…
 
-These slides are intended to accompany Section 1.4 What Impacts Strength of Evidence? in [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html). 
+These slides are meant to accompany [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html) --- Section 1.4 What Impacts Strength of Evidence? 
 
-*This content does not replace reading the textbook section.* It is for class presentation and/or reference. Also includes supplemental material about Type I and Type II errors.
+*This content does not replace reading the textbook section.* It is for class presentation and/or reference.
 
-See also:
-
-* Glossary of ISI Textbook Vocabulary on AsULearn
-* [Section 1.2 Measuring the Strength of Evidence](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CH1_2.html)
-* [Section 1.3 Alternative Measure of Strength of Evidence](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CH1_3.html)
-* Example 1.4 Predicting Elections from Faces? (slides TBA)
+See [AsULearn](https://asulearn.appstate.edu/) for supplemental readings, videos, assignments, and searchable Glossary of ISI Textbook Vocabulary.
 
 
 ## Recall: Spiral Approach & Four Pillars
@@ -38,7 +33,7 @@ See also:
 ::: {}
 
 ```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("images/sixstepsfourpillars.png", dpi = 100)
+knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
 ```
 
 :::
@@ -127,34 +122,34 @@ Let's say my results were 6 out of 25 cards correct.
 **INITIAL:** I got 6 of 25 cards correct on my ESP test, so $\hat{p} = 0.24$.
 
 ```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("images/OneProportionAppletZenerA.png", dpi = 150)
+knitr::include_graphics("../images/OneProportionAppletZenerA.png", dpi = 150)
 ```
 
 
 ## 
 
-⬤ I got 12 of 50 cards correct, so $\hat{p}$ is still $0.24$, but now $n = 50$.
+**Larger Sample:** I got 12 of 50 cards correct, so $\hat{p}$ is still $0.24$, but now $n = 50$. The *p*-value is smaller (stronger evidence).
 
 ```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("images/OneProportionAppletZenerC.png", dpi = 150)
+knitr::include_graphics("../images/OneProportionAppletZenerC.png", dpi = 150)
 ```
 
 
 ## 
 
-⬤ I got 9 of 25 cards correct, so $n$ is still $25$, but now $\hat{p} = 0.36$.
+**Larger Proportion:** I got 9 of 25 cards correct, so $n$ is still $25$, but now $\hat{p} = 0.36$. The *p*-value is smaller (stronger evidence).
 
 ```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("images/OneProportionAppletZenerB.png", dpi = 150)
+knitr::include_graphics("../images/OneProportionAppletZenerB.png", dpi = 150)
 ```
 
 
 ## 
 
-⬤ I used a *two*-sided hypothesis instead of *one* on the initial test.
+**Two-Sided Hypothesis:** I used a *two*-sided alternative $H_a$ vs. a *one*-sided alternative. The *p*-value is larger (weaker evidence).
 
 ```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("images/OneProportionAppletZenerD.png", dpi = 150)
+knitr::include_graphics("../images/OneProportionAppletZenerD.png", dpi = 150)
 ```
 
 
@@ -162,12 +157,12 @@ knitr::include_graphics("images/OneProportionAppletZenerD.png", dpi = 150)
 
 Each case changes one input from the baseline test. The table shows the predicted increases or decreases in the $p$-values. We always have the same $H_0$ (*results are due to random chance*).
 
-| null             | alternative         | $n$ | $\hat{p}$ | $p$-value | change      |
-|:----------------:|:-------------------:|:---:|:---------:|:---------:|:-----------:|
-| $H_0:\pi = 0.20$ | $H_a:\pi > 0.20$    | 25  | 0.24      | 0.3810    | (*initial*) |
-| $H_0:\pi = 0.20$ | $H_a:\pi > 0.20$    | 50  | 0.24      | 0.2850    | sample size |
-| $H_0:\pi = 0.20$ | $H_a:\pi > 0.20$    | 25  | 0.36      | 0.0490    | extremeness |
-| $H_0:\pi = 0.20$ | $H_a:\pi \neq 0.20$ | 25  | 0.24      | 0.6173    | alternative |
+| null             | alternative         | $n$ | $\hat{p}$ | $p$-value | change                 |
+|:----------------:|:-------------------:|:---:|:---------:|:---------:|:----------------------:|
+| $H_0:\pi = 0.20$ | $H_a:\pi > 0.20$    | 25  | 0.24      | 0.3810    | (*initial test*)       |
+| $H_0:\pi = 0.20$ | $H_a:\pi > 0.20$    | 50  | 0.24      | 0.2850    | larger sample $n$      | 
+| $H_0:\pi = 0.20$ | $H_a:\pi > 0.20$    | 25  | 0.36      | 0.0490    | more extreme $\hat{p}$ |
+| $H_0:\pi = 0.20$ | $H_a:\pi \neq 0.20$ | 25  | 0.24      | 0.6173    | two-sided $H_a$        |
 
 Remember: Smaller $p$-values provide *more* evidence against $H_0$.
 
@@ -177,7 +172,7 @@ Remember: Smaller $p$-values provide *more* evidence against $H_0$.
 Our estimated $p$-values are probabilities, not proof. When we do a significance test, we might make a decision error. For example, a small sample size is a common reason for a Type II error.
 
 ```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("images/errortypes.png", dpi = 225)
+knitr::include_graphics("../images/errortypes.png", dpi = 225)
 ```
 <p style="text-align:center; font-size: 10px;">Source: [Deepak Chopra | Talking Data Science](https://medium.com/@deepakchopra2911) on Medium</p>
 

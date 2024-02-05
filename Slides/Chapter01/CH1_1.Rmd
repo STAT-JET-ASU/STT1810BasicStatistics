@@ -21,12 +21,9 @@ knitr::opts_chunk$set(
 
 These slides are intended to accompany Section 1.1 Intro to Chance Models in [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html). 
 
-*This content does not replace reading the textbook section.* It is for class presentation and/or reference.
+*This content does not replace reading the relevant textbook section.* It is for class presentation, review, and reference.
 
-See also:
-
-* Glossary of ISI Textbook Vocabulary on AsULearn
-* Example 1.1 Can Dolphins Communicate? (slides TBA)
+See [AsULearn](https://asulearn.appstate.edu/) for supplemental readings, videos, assignments, and searchable Glossary of ISI Textbook Vocabulary.
 
 
 ## Recall: Spiral Approach & Four Pillars
@@ -36,7 +33,7 @@ See also:
 ::: {}
 
 ```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("images/sixstepsfourpillars.png", dpi = 100)
+knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
 ```
 
 :::
@@ -89,7 +86,7 @@ We will *not* be covering Section 1.5, which discusses the theory-based approach
 <h3 style="text-align: center;">What about a *mathematical model* ?</h3>
 
 ```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("images/molecularmodel.jpg", dpi = 110)
+knitr::include_graphics("../images/molecularmodel.jpg", dpi = 110)
 ```
 
 <h3 style="text-align: center;">Building on these two ideas, what is a *chance model* ?</h3>
@@ -182,7 +179,7 @@ If we decide the observed statistic is unlikely to occur by chance alone, we can
 ::: {}
 
 ```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("images/sixstepsfourpillars.png", dpi = 100)
+knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
 ```
 
 :::
@@ -231,7 +228,7 @@ knitr::include_graphics("images/sixstepsfourpillars.png", dpi = 100)
 ::: {}
 
 ```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("images/OneProportionApplet.png", dpi = 120)
+knitr::include_graphics("../images/OneProportionApplet.png", dpi = 120)
 ```
 
 :::
@@ -262,7 +259,7 @@ knitr::include_graphics("images/OneProportionApplet.png", dpi = 120)
 ::: {}
 
 ```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("images/OneProportionAppletEx.png", dpi = 120)
+knitr::include_graphics("../images/OneProportionAppletEx.png", dpi = 120)
 ```
 
 :::

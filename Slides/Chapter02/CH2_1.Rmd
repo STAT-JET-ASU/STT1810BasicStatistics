@@ -73,12 +73,13 @@ We will use the similarity between the two ideas in Section 3.1 to estimate a po
 
 ## Learning Goals for Chapter 2
 
-We will do Sections 2.1 and 2.2. They introduce the idea of the sampling distributions of $\hat{p}$ and $\bar{x}$, built from a large number of random samples of size $n$ drawn from a finite population. Also, the ***Central Limit Theorem***.
+We will do Section 2.1 and Section 2.2. They introduce random samples, the idea of the sampling distributions of $\hat{p}$ and $\bar{x}$, and the ***Central Limit Theorem***.
 
 <hr>
 
 * Describe how to select a random sample.
 * Understand and predict sampling distributions for a sample proportion and a sample mean.
+* *We will not discuss theory-based inference.*
 
 <hr>
 

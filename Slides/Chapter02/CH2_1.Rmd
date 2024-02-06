@@ -1,0 +1,443 @@
+---
+title: "Section 2.1 Sampling Distributions"
+subtitle: "*Introduction to Statistical Investigations, 2^nd^ Edition*"
+author: "Jill E. Thomley | **STT 1810 BASIC STATISTICS** | Appalachian State University"
+date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
+output: 
+  ioslides_presentation:
+    logo: ../images/logoASU.jpg
+---
+
+```{r global_options, include = FALSE}
+knitr::opts_chunk$set(
+  message = FALSE,
+  warning = FALSE,
+  comment = NA
+)
+```
+
+## Before We Begin…
+
+These slides are meant to accompany  [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html) --- Section 2.1 Sampling from a Finite Population: Proportions. 
+
+*This content does not replace reading the relevant textbook section.* It is for class presentation, review, and reference.
+
+See [AsULearn](https://asulearn.appstate.edu/) for supplemental readings, videos, assignments, and searchable Glossary of ISI Textbook Vocabulary.
+
+
+## Recall: Spiral Approach & Four Pillars
+
+:::::: {style="display: flex;"}
+
+::: {}
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
+```
+
+:::
+
+::: {}
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+:::
+
+::: {}
+
+* We addressed *strength* of evidence (**significance**) in Chapter 1. ✔ ***Good job!***
+
+* &#187; We will discuss *breadth* of results (**generalization**) in Chapter 2. &#171;
+
+* We will learn about *size* for an effect (**estimation**) in Chapter 3.
+
+* Chapter 4 will introduce the idea of **causation**, the last of the four pillars. 
+
+:::
+
+::::
+
+
+## *So* ... What's Different from Chapter 1?
+
+In Chapter 1, we generated many hypothetical samples from a specified probability model to coincide with our null hypothesis $H_0$. In those cases, $\pi$ is a *hypothetical value* we assumed.
+
+In a test of significance, we use the *hypothetical* $\pi$ to try to make an inference about an *actual population* $\pi$.
+
+Now we are taking samples from an actual population. Why? So we can explore what kinds of samples we might get. In this case, $\pi$ is an *actual population value* we specify.
+
+<hr>
+
+We will use the similarity between the two ideas in Section 3.1 to estimate a population $\pi$ using a *confidence interval*. We will build on the idea of sampling distributions in Section 3.2.
+
+
+## Learning Goals for Chapter 2
+
+We will do only Section 2.1 *Sampling From a Finite Population*. It introduces the idea of the sampling distribution of $\hat{p}$, built from a large number of random samples of size $n$ drawn from a finite population with parameter $\pi$. Also, the ***Central Limit Theorem***.
+
+<hr>
+
+* Describe how to select a random sample.
+* Understand and predict sampling distributions for a sample proportion.
+
+<hr>
+
+This material builds on the Preliminaries and Chapter 1. You will need to remember and use vocabulary and concepts from those sections to understand the new material in this section. 
+
+Section 2.1 provides a foundation for the upcoming Section 3.2.
+
+
+## Learning Goals for Section 2.1
+
+* Identify parameters (long-run proportion) and statistics (sample proportion) in a statistical study.
+* Identify which statistics (proportions) and graphs (bar graph) are appropriate for categorical variables, construct graphs and calculate statistics with use of technology, and interpret appropriately.
+* Identify the (finite) population and the sample in a statistical study.
+* Identify whether a sampling method is likely to be biased and explain the potential impact.
+* Describe how to select a random sample and recognize that one advantage of a random sample is that it is likely to be representative of the population regardless of sample size.
+
+
+## *More* Learning Goals for Section 2.1
+
+* Fill in a data table where rows are the observational units and columns are the variables.
+* Predict the mean, standard deviation, and shape of the sampling distribution of a sample proportion from a random sample of size n, where the population proportion  is known.
+* Apply simulation-based inference methods for a population proportion to research studies involving random samples from finite populations.
+* Identify whether a study may be impacted by non-sampling concerns and explain the potential impact.
+
+*This chapter is a little more theoretical/conceptual. We will need it going forward to understand some of the upcoming methods. One important idea is generalizing beyond the sample (breadth).*
+
+
+## Section 2.1 New Vocabulary
+
+* bias
+* census
+* nonsampling concerns
+* population
+* sample (*recall, this can be an adjective, noun, or verb*)
+  * convenience sample
+  * random sample
+  * simple random sample
+  * sampling frame
+* sampling distribution / Central Limit Theorem
+* sampling variability
+
+
+## 
+
+Recall *parameter*, *statistic*, and the other vocabulary terms we learned in Chapter 1 and the Preliminaries sections. Review as needed to make sure you have the meanings solidified, so that you can use statistical language effectively as we move on.
+
+**population:** the entire collection of observational units we are interested in (*as determined by the research question*)
+
+**census:** when we collect data on all individuals in a population (*this is the intention of the decennial Census in the U.S.*)
+
+**sample:** a subset of a population on which we actually observe and record data
+
+*There are many ways to choose samples; some methods are better.*
+
+**convenience sample:** non-random subset of a population (e.g., voluntary response, like a phone-in or mail-in survey)
+
+
+##
+
+**random sample:** a subset of observational units chosen using a probability device or method (*not all units have to have an equal chance to be chosen, just a known probability of being chosen*)
+
+**simple random sample:** a subset of observational units chosen so that every sample of a given size $n$ is equally likely to be the sample that we select from the population (*each observational unit has the same chance of being chosen as every other unit*)
+
+<hr> 
+
+A sampling method is considered to be ***biased*** if the statistics calculated from different samples consistently *overestimate* or consistently *underestimate* the population parameter in which we are interested. *Non-random* samples tend to be biased.
+
+<hr>
+
+**nonsampling concerns:** potential sources of bias (e.g., poorly worded survey questions, people lying) that are not related to the way the sample was selected from the population
+
+
+## 
+
+**sampling frame:** a roster or "master list" of every observational unit in a given population of interest; we need this in order to be able to choose a random sample
+
+**sampling variability:** the amount that a statistic changes from sample to sample as we repeatedly observe it (*take a bunch of samples and calculate the same statistic---how different are they?*)
+
+**sampling distribution:** distribution of a statistic for all possible samples of size $n$ randomly selected from the same population
+
+<hr>
+
+The ***Central Limit Theorem*** tells us that when we sample from a large finite population, the sampling distribution of the sample proportion $\hat{p}$, calculated from from repeated random samples, will be approximately normal if there are at least $10$ successes and at least $10$ failures in each sample. (*More on this to come...*)
+
+<hr>
+
+
+## *So* ... What is a Sampling Distribution?
+
+In Section P.2 you learned about the distribution of a variable, which is described using shape, center, spread/variability, and unusual observations/outliers.
+
+For a sampling distribution, the "variable" is a statistic of some kind, like the sample proportion $\hat{p}$. 
+
+If we take many, many random samples of the same size from a population with parameter $\pi$, the value of the statistic $\hat{p}$ will be different from sample to sample, but in a way we can predict *in the long run* from its distribution.
+
+<hr>
+
+*Understanding how statistics from different samples behave helps us develop reliable methods for statistical inference.*
+
+
+## Key Central Limit Theorem Ideas
+
+The Central Limit Theorem describes the sampling distributions of certain statistics from finite populations, like $\hat{p}$, if we meet the necessary criteria... 
+
+* We have a large, finite population with parameter $\pi$. Here, *finite* means it is possible to count the observational units.
+
+* Our sample size ($n$) is less than $5\%$ of the overall population.
+
+* However, we are taking random samples of size $n$ that are big enough so that there are at least $10$ successes and $10$ failures in each sample.  
+
+* We are calculating the sample proportion $\hat{p}$ for each sample.
+
+
+## Shape and Center
+
+If the key CLT ideas on the previous slide are true, the sampling distribution of the sample proportion $\hat{p}$ will have the following properties.
+
+**shape:** the sampling distribution will be approximately normal (*unimodal and mound-shaped---the classic "bell curve"*).
+
+<hr>
+
+&rarr; *Recall that we already observed this in many of our simulations from Chapter 1. The simulated null distribution for null hypotheses about proportions often had a bell shape.*
+
+<hr>
+
+**center:** The mean of the sampling distribution will be equal to $\pi$ (i.e., *all of the possible sample proportions $\hat{p}$ will average out to the population proportion---it is what we will call unbiased*).
+
+
+##  Variability
+
+The standard deviation of the sampling distribution of $\hat{p}$ will be a function of $\pi$ and the sample size.
+
+$$\text{the standard deviation of }\hat{p} = SD(\hat{p}) = \sqrt{\frac{\pi(1-\pi)}{n}}$$
+
+Notice that $n$ is in the fraction denominator. For bigger sample sizes, SD will be smaller! 
+
+*&rarr; We have seen this before, in our Chapter 1 simulations. Larger samples tend to have less variability and converge toward the long-run (population) value.*
+
+&rarr; We call the SD of a sampling distribution its ***standard error***.
+
+
+## Two Example Calculations
+
+Plug in the appropriate values and solve. Notice that the smaller value of $\pi$ (given the same $n$) has a smaller SD.
+
+<hr>
+
+For $\pi = 0.50$ and $n = 100$ ...
+
+$$SD(\hat{p}) = \sqrt{\frac{.50(1-.50)}{100}} = \sqrt{\frac{0.50 \times 0.50}{100}} = 0.05$$
+
+<hr>
+
+For $\pi = 0.10$ and $n = 100$ ...
+
+$$SD(\hat{p}) = \sqrt{\frac{.10(1-.10)}{100}} = \sqrt{\frac{0.10 \times 0.90}{100}} = 0.03$$
+
+<hr>
+
+
+##
+
+Simulating a distribution using the [ISI One-Proportion Applet](http://www.isi-stats.com/isi2nd/ISIapplets2021.html)...
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("../images/SamplingDist50.png", dpi = 100)
+```
+
+<center>$\text{probability of success}(\pi) = 0.50$<br>
+$\text{sample size}(n) = 100$</center>
+
+
+##
+
+Simulating a distribution using the [ISI One-Proportion Applet](http://www.isi-stats.com/isi2nd/ISIapplets2021.html)...
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("../images/SamplingDist10.png", dpi = 100)
+```
+
+<center>$\text{probability of success}(\pi) = 0.10$<br>
+$\text{sample size}(n) = 100$</center>
+
+
+## Increasing $n$, Same $\pi$---Notice $SD(\hat{p})$
+
+| $n$    |  $\text{Mean}(\hat{p}) = \pi$  |  $SD(\hat{p})$  |
+|:------:|:------------------------------:|:---------------:|
+|  25    |             0.50               |     0.1000      |
+|  50    |             0.50               |     0.0707      |
+|  100   |             0.50               |     0.0500      |
+|  200   |             0.50               |     0.0354      |
+|  400   |             0.50               |     0.0250      |
+|  800   |             0.50               |     0.0177      |
+
+Observe that $SD(\hat{p})$ gets progressively smaller as $n$ gets larger. If we quadruple $n$, then $SD(\hat{p})$ gets cut in half.
+
+
+## Visualize $SD(\hat{p})$ for Changing $n$
+
+```{r echo = FALSE}
+library(tidyverse)
+df1 <- tibble(n = c(25, 50, 100, 200, 400, 600, 800, 1000), SD = sqrt(0.25 / n))
+ggplot(df1, aes(x = n, y = SD)) +
+  geom_line() +
+  geom_point(size = 2) +
+  geom_hline(yintercept = 0) +
+  geom_vline(xintercept = 0) +
+  scale_x_continuous(limits = c(0, 1050), breaks = df1$n, expand = c(0, 0)) +
+  scale_y_continuous(limits = c(0, 0.11), expand = c(0, 0)) +
+  theme_minimal() +
+  labs(
+    title = "Relationship Between Sample Size and SD(p̂) for π = 0.5",
+    x = "sample size (n)",
+    y = "Variability of the Sampling Distribution --- SD(p̂)"
+  ) +
+  annotate(
+    "label",
+    x = 500,
+    y = 0.085,
+    label = "variability (SD) decreases as sample size (n) increases"
+  ) +
+  annotate(
+    "label",
+    x = 335,
+    y = 0.06,
+    label = "n = 100, SD = 0.05",
+    fill = "peachpuff"
+  ) +
+  annotate(
+    "segment",
+    x = 200,
+    xend = 110,
+    y = 0.06,
+    yend = 0.051,
+    arrow = arrow(),
+    color = "darkorange"
+  ) +
+  annotate(
+    "label",
+    x = 644,
+    y = 0.04,
+    label = "n = 200, SD = 0.025",
+    fill = "peachpuff"
+  ) +
+  annotate(
+    "segment",
+    x = 500,
+    xend = 412,
+    y = 0.04,
+    yend = 0.026,
+    arrow = arrow(),
+    color = "darkorange"
+  )
+```
+
+
+## Same $n$, Different $\pi$---Notice $SD(\hat{p})$
+
+| $n$   |  $\text{Mean}(\hat{p}) = \pi$  |  $SD(\hat{p})$  |
+|:-----:|:------------------------------:|:---------------:|
+|  100  |              0.10              |     0.0300      |
+|  100  |              0.25              |     0.0433      |
+|  100  |              0.50              |     0.0500      |
+|  100  |              0.75              |     0.0433      |
+|  100  |              0.90              |     0.0300      |
+
+Observe that $SD(\hat{p})$ is largest when $\pi = 0.50$ and gets smaller as $\pi$ gets closer to either $0$ or $1$. We will revisit this idea when we get to confidence interval estimation in Chapter 3.
+
+
+## Visualize $SD(\hat{p})$ for Changing $\pi$
+
+```{r echo = FALSE}
+df2 <- tibble(pi = c(0.01, seq(0.0, 1, 0.10), 0.99), SD = sqrt((pi * (1 - pi)) / 100))
+ggplot(df2, aes(x = pi, y = SD)) +
+  geom_line() +
+  geom_point(size = 2) +
+  geom_hline(yintercept = 0) +
+  geom_vline(xintercept = -0.05) +
+  scale_x_continuous(limits = c(-0.05, 1.05), breaks = seq(0, 1, 0.1), expand = c(0, 0)) +
+  scale_y_continuous(limits = c(0, 0.06), expand = c(0, 0)) +
+  theme_minimal() +
+  labs(
+    title = "Relationship Between π and SD(p̂) for n = 100",
+    x = "value of π",
+    y = "Variability of the Sampling Distribution --- SD(p̂)"
+  ) +
+  annotate(
+    "label",
+    x = 0.5,
+    y = 0.055,
+    label = "for any given n, the largest SD is always when π = 0.5",
+    fill = "peachpuff"
+  ) +
+  annotate(
+    "point",
+    x = 0.5,
+    y = 0.05,
+    color = "darkorange",
+    size = 5
+  ) +
+  annotate(
+    "label",
+    x = 0.175,
+    y = 0.005,
+    label = "SD = 0 when π = 0",
+    fill = "lightblue"
+  ) +
+  annotate(
+    "label",
+    x = 0.825,
+    y = 0.005,
+    label = "SD = 0 when π = 1",
+    fill = "lightblue"
+  ) +
+  annotate(
+    "point",
+    x = c(0, 1),
+    y = 0,
+    color = "blue",
+    size = 5
+  )
+```
+
+
+## Why "Central"?
+
+The term *central* in the name Central Limit Theorem refers to its overall importance; it is **central** to much of statistical theory and methods. Mathematician George Polya is credited with inventing the name (though not the idea) in a 1920 paper.
+
+<hr>
+
+The Central Limit Theorem applies to sample means when $n$ is large enough. The sampling distribution of the sample mean $\bar{x}$ :
+
+* will be will be approximately normal
+
+* will have a mean equal to the population mean $\mu$
+
+* will have $SD(\bar{x})$ equal to the population standard deviation $\sigma$ over the square root of the sample size, $\sigma / \sqrt{n}$
+
+
+
+## Type of Sampling Matters!
+
+* Statistical methods are designed to handle *random sampling variability* in our data.
+
+* If the sample we have is biased, we have to be careful about *generalizing* to the population the sample came from.
+
+* Population size does not affect sampling variability as long as the population is at least $20$ times the size of the sample.
+
+* A larger sample size is not helpful if the sampling method is biased. You essentially just get a larger amount of *bad* data (as well as a false sense of confidence in your findings).
+
+* Bias can get into our data in from both the sampling method (e.g., using convenience samples) and nonsampling sources (e.g., writing bad survey questions).
+
+
+## Imagination & Simulation!
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("../images/spongebobsamplingdist.jpg", dpi = 100)
+```
+
+<div style = "text-align: center; font-size: 18px;">Image from [*Applied Biostatistics*](https://bookdown.org/kmbm92/Applied-Biostats/) by Pleuni Pennings and Kevin Magnaye <div>
+

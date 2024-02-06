@@ -334,6 +334,15 @@ The odds of a woman surviving the sinking of the Titanic were 5.2 times the odds
 *Why the difference? It may have been a "women and children" first policy for loading lifeboats, or having a large fraction of male third class passengers and crew, other social norms, or the ship layout...*
 
 
+## The Two-Proportion Applet
+
+Data will be entered as a two-way table in [this applet](https://www.isi-stats.com/isi2nd/ISIapplets2021.html). It can also calculate RR and OR values.
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("../images/TwoPropApplet.PNG", dpi = 135)
+```
+
+
 ## Another Perspective
 
 ```{r, echo = FALSE, fig.align="center"}

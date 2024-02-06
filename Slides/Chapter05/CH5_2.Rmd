@@ -110,9 +110,9 @@ The term *standard error* is not completely new. We mentioned it in Section 2.1 
 
 ## The Two-Proportion Applet
 
-Data will be entered as a two-way table in this new applet.
+Data will be entered as a two-way table in [this applet](https://www.isi-stats.com/isi2nd/ISIapplets2021.html). It can also calculate RR and OR values, and use them as a test statistic.
 
 ```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("../images/TwoPropApplet.PNG", dpi = 125)
+knitr::include_graphics("../images/TwoPropApplet.PNG", dpi = 135)
 ```
 

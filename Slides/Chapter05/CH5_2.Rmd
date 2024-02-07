@@ -75,18 +75,16 @@ In Chapter 5 (*not including Section 5.3*), you will learn to:
 
 ## Learning Goals for Section 5.2
 
-In Section 5.2 we will use all our statistical knowledge gained in Chapters 1 through 4 and apply it to a new scenario.
-
 * State Ho and Ha in terms of “no association” versus “there is an association” as well as in terms of comparing probabilities of success for two categories of explanatory variable ($\pi_1$ and $\pi_2$) when exploring the relationship between two categorical variables.
 
 * Implement the 3S strategy: find a statistic, simulate the null distribution, and compute the strength of evidence...
 
 * Describe how to use cards to simulate what outcomes (in terms of difference in conditional proportions and/or relative risk) are to be expected in repeated random assignments, if there is no association between the two variables.
 
+* Use the [ISI Two Proportions applet](http://www.isi-stats.com/isi2nd/ISIapplets2021.html) to conduct a simulation of the null hypothesis and be able to read the applet output.
+
 
 ##
-
-* Use the [ISI Two Proportions applet](http://www.isi-stats.com/isi2nd/ISIapplets2021.html) to conduct a simulation of the null hypothesis and be able to read the applet output.
 
 * Find and interpret the standardized statistic and the *p*-value for a test of two proportions.
 
@@ -105,14 +103,122 @@ You may also want to review and solidify all of the vocabulary introduced in Sec
 
 <hr>
 
-The term *standard error* is not completely new. We mentioned it in Section 2.1 when we explored sampling distributions. Then we encountered it again in Section 3.2 when we introduced 2SD confidence intervals.
+The term *standard error* is not completely new. We mentioned it in Section 2.1, when we explored the sampling distribution for a single proportion. 
+
+We also encountered it in Section 3.2 when we introduced 2SD confidence intervals.
+
+We will revisit both of those ideas in Section 5.2!
+
+
+## The Hypotheses: Version 1
+
+Suppose we have two variables, ***explanatory*** and ***response***. We can use the association language learned in Chapter 4 to write hypotheses in the following form.
+
+* $H_0:$ There ***is no association*** between the explanatory variable and the response variable.
+
+In other words, the categories of the explanatory variable have no impact on the response. The conditional proportions for the two groups are the same---*group membership does not matter*.
+
+* $H_a:$ There ***is an association*** between the explanatory variable and the response variable.
+
+Conditional proportions in the explanatory groups are different. Group membership gives you information about the response.
+
+
+## The Hypotheses: Version 2
+
+We can also write our hypotheses using parameters, like we did in Chapter 1 and Chapter 3. We define ***two*** parameters, one for each of the two groups of the explanatory variable.
+
+$\pi_1$ = conditional proportion of successes (***response variable***) in Group 1 of the ***explanatory variable***
+
+$\pi_2$ = conditional proportion of successes (***response variable***) in Group 2 of the ***explanatory variable***
+
+* $H_0:$ The conditional proportion of successes in Group 1 is the same as in Group 2.
+* $H_a:$ The conditional proportion of successes in Group 1 is (*less than*, *different than*, or *greater than*) in Group 2.
+
+
+## Stating the Hypotheses With Symbols
+
+Once again, we can convert the words to symbols.
+
+$$H_0: \pi_1 = \pi_2$$
+
+$$H_a: \pi_1 < \pi_2 \text{ or } H_a: \pi_1 \neq \pi_2 \text{ or } H_a: \pi_1 > \pi_2$$
+
+We are really interested in the *difference* between the groups, so the hypotheses can be expressed as a mathematical difference. Subtract $\pi_2$ from both sides and we get, for example...
+
+$$H_0: \pi_1 - \pi_2 = 0$$
+
+$$H_a: \pi_1 -\pi_2 < 0 \text{ or } H_a: \pi_1 - \pi_2 \neq 0 \text{ or } H_a: \pi_1 -\pi_2 > 0$$
+
+The sample difference ($\hat{p}_1 - \hat{p}_2$) will be the statistic for the test.
+
+
+## Assess Statistical Significance #1
+
+As we did with one-proportion tests, we will find a *p*-value using the test statistic and a simulated null distribution.
+
+<hr>
+
+Recall our guidelines for *p*-values from Section 1.2.
+
+| Magnitude               | Guideline for Inference                                        |
+|-------------------------|----------------------------------------------------------------|
+| *p*-value > 0.10        | not much evidence against the null hypothesis; Ho is plausible |
+| 0.05 < *p*-value ≤ 0.10 | moderate evidence against the null hypothesis                  |
+| 0.01 < *p*-value ≤ 0.05 | strong evidence against the null hypothesis                    |
+| *p*-value ≤ 0.01        | very strong evidence against the null hypothesis               |
 
 
 ## The Two-Proportion Applet
 
-Data will be entered as a two-way table in [this applet](https://www.isi-stats.com/isi2nd/ISIapplets2021.html). It can also calculate RR and OR values, and use them as a test statistic.
+Recall the oral cancer example from Section 5.1. This is a test of significance for that data. The [Two Proportions applet](https://www.isi-stats.com/isi2nd/ISIapplets2021.html) generates the null distribution by randomly *re-shuffling* the data.
 
 ```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("../images/TwoPropApplet.PNG", dpi = 135)
+knitr::include_graphics("../images/twopropapplet2.png", dpi = 135)
 ```
+
+
+## Standardized Score
+
+The general form for a standardized ($z$) score, which we first saw back in Chapter 1, is as follows.
+
+$$z\text{-score} = \frac{\text{statistic} - \text{mean of the null distribution}}{\text{SD of the null distribution}}$$
+
+When $H_0: \pi_1 - \pi_2 = 0$, the mean of the null distribution will be zero. This simplifies it a bit.
+
+$$z\text{-score} = \frac{\hat{p}_1 - \hat{p}_2}{SD(\hat{p}_1 - \hat{p}_2)}$$
+
+<hr>
+
+Recall: $SD(\hat{p}_1 - \hat{p}_2)$ is notation for "SD of the null distribution of $(\hat{p}_1 - \hat{p}_2)$," not multiplication. We estimate SD from the sim.
+
+
+## Assess Statistical Significance #2
+
+Like we did with one-proportion tests, we can use the $z$-score to assess statistical significance.
+
+<hr>
+
+Recall our guidelines for $z$-scores from Section 1.3.
+
+| Magnitude                | Guideline for Inference                       |
+|--------------------------|-----------------------------------------------|
+| between -1.5 and +1.5    | not much evidence against Ho; Ho is plausible |
+| below -1.5 or above +1.5 | moderate evidence against Ho                  |
+| below -2.0 or above +2.0 | strong evidence against Ho                    |
+| below -3.0 or above +3.0 | very strong evidence against Ho               |
+
+
+## 2SD Confidence Interval
+
+Here we will estimate the magnitude of the difference between two parameters with a confidence interval, similar to the way we estimated one parameter. Recall what we learned in Section 3.2 about 2SD confidence intervals.
+
+$$\text{approximate 95% CI} = \hat{p} \pm 2 \times SD(\hat{p})$$
+
+Now our statistic is $(\hat{p}_1 - \hat{p}_2)$ rather than $\hat{p}$, so we substitute it for $\hat{p}$ in the formula above.
+
+$$\text{95% CI} = (\hat{p}_1 - \hat{p}_2) \pm 2 \times SD(\hat{p}_1 - \hat{p}_2)$$
+
+<hr>
+
+Important: *Do not* multiply SD by $(\hat{p}_1 - \hat{p}_2)$ in the 2SD interval. Again, we estimate the SD value from the simulation results.
 

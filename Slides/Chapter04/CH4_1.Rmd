@@ -52,7 +52,7 @@ knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
 
 * We addressed the *size* for an effect (**estimation**) in Chapter 3. ✔ ***Great job!***
 
-* &#187; Chapter 4 introduces the idea of **causation**, the last of the four pillars. &#171;
+* **&#187; Chapter 4 introduces *causation*, the last of the four pillars. &#171;**
 
 :::
 
@@ -61,13 +61,14 @@ knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
 
 ## Learning Goals for Chapter 4
 
-Chapter 4 focuses on ***causation***, which is one of the four pillars of inference introduced in Section P.1. Overall, the main goal is to explain when and why we can infer cause-and-effect after we determine there is an ***association*** between two variables. 
+Chapter 4 focuses on ***causation***, which is one of the four pillars of inference introduced in Section P.1. 
+
+Overall, the main goal is to explain when and why we can infer cause-and-effect after we determine via a significance test that there is an ***association*** between two variables. 
 
 <hr>
 
-In Chapter 4, you will learn to: 
-
 * Identify confounding variables in observational studies. [Section 4.1]
+
 * Explain how studies using random assignment are able to draw cause-and-effect conclusions. [Section 4.2]
 
 
@@ -104,7 +105,7 @@ In Chapter 4, you will learn to:
 
 ## Uncovering Associations
 
-Alternative definition: two variables are *associated* (or related) if the value of one variable gives you information about the value of the other variable. When comparing groups, the proportions or means of one variable (***response** or **dependent** variable*) are different within different groups (*categories of the **explanatory** or **independent** variable*).
+Alternative definition: two variables are *associated* (or related) if the value of one variable gives you information about the value of the other variable. When comparing groups, the proportions or means for one variable (***response** or **dependent** variable*) are different within different sub-groups (*categories that are created by the **explanatory** or **independent** variable*).
 
 <hr>
 

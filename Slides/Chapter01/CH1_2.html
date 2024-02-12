@@ -3157,7 +3157,7 @@ line-height: 1.9;
       <h1 data-config-title><!-- populated from slide_config.json --></h1>
       <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
       <p data-config-presenter><!-- populated from slide_config.json --></p>
-            <p style="margin-top: 6px; margin-left: -2px;">Last updated Monday, February 05, 2024 @ 03:35 PM</p>
+            <p style="margin-top: 6px; margin-left: -2px;">Last updated Monday, February 12, 2024 @ 06:03 PM</p>
           </hgroup>
   </slide>
 
@@ -3195,7 +3195,7 @@ line-height: 1.9;
 <li>Describe how the distance of the observed statistic from the parameter value specified by the null hypothesis, sample size, and one- vs. two-sided tests affect the strength of evidence against the null hypothesis. [Section 1.4]</li>
 </ul>
 
-<p>We will <em>not</em> be covering Section 1.5, which discusses the theory-based approach to inference for a single proportion.</p>
+<p>We will <em>not</em> cover Section 1.5, which discusses the theory-based approach to inference for a single proportion.</p>
 
 </article></slide><slide class=""><hgroup><h2>Learning Goals for Section 1.2</h2></hgroup><article  id="learning-goals-for-section-1.2">
 
@@ -3203,10 +3203,10 @@ line-height: 1.9;
 <li>Use appropriate symbols for parameter and statistic.</li>
 <li>State the null and the alternative hypotheses in words and in terms of the symbol \(\pi\), the long-run proportion.</li>
 <li>Explain how to conduct a simulation using a null hypothesis probability that is not 50-50.</li>
-<li>Use the <a href='http://www.isi-stats.com/isi2nd/ISIapplets2021.html' title=''>ISI One Proportion applet</a> to obtain the \(p\)-value after carrying out an appropriate simulation.</li>
+<li>Use the <a href='http://www.isi-stats.com/isi2nd/ISIapplets2021.html' title=''>ISI One Proportion applet</a> to obtain the <em>p</em>-value after carrying out an appropriate simulation.</li>
 <li>Anticipate the null distribution’s center and how it changes based on using proportion or count as the statistic.</li>
-<li>Interpret the \(p\)-value and explain why a smaller \(p\)-value provides stronger evidence against the null hypothesis.</li>
-<li>State a conclusion about the alternative hypothesis and null hypothesis based on the \(p\)-value.</li>
+<li>Interpret the \(p\)-value and explain why a smaller <em>p</em>-value provides stronger evidence against the null hypothesis.</li>
+<li>State a conclusion about the alternative hypothesis and null hypothesis based on the <em>p</em>-value.</li>
 </ul>
 
 </article></slide><slide class=""><hgroup><h2>Section 1.2 New Vocabulary</h2></hgroup><article  id="section-1.2-new-vocabulary">
@@ -3266,7 +3266,7 @@ line-height: 1.9;
 
 </article></slide><slide class=""><hgroup><h2>Quantifying Strength of Evidence</h2></hgroup><article  id="quantifying-strength-of-evidence">
 
-<p>One way to assess strength is to use a \(p\)-value. The <em>\(p\)</em> stands for <em>probability</em>—it is the probability of getting a purely random value of the statistic that is at least as extreme (<em>in the \(H_a\) direction</em>) as the observed statistic, assuming \(H_0\) is true.</p>
+<p>One way to assess strength is to use a <em>p</em>-value. The <strong><em>p</em></strong> stands for <em>probability</em>—it is the probability of getting a purely random value of the statistic that is at least as extreme (<em>in the \(H_a\) direction</em>) as the observed statistic, assuming \(H_0\) is true.</p>
 
 <table class = 'rmdtable'>
 <col width="27.173913%" />
@@ -3276,28 +3276,28 @@ line-height: 1.9;
 <th align="left">Guideline for Inference</th>
 </tr>
 <tr class="odd">
-<td align="left">\(p\)-value &gt; 0.10</td>
+<td align="left"><em>p</em>-value &gt; 0.10</td>
 <td align="left">not much evidence against the null hypothesis; \(H_0\) is plausible</td>
 </tr>
 <tr class="even">
-<td align="left">0.05 &lt; \(p\)-value ≤ 0.10</td>
+<td align="left">0.05 &lt; <em>p</em>-value ≤ 0.10</td>
 <td align="left">moderate evidence against the null hypothesis</td>
 </tr>
 <tr class="odd">
-<td align="left">0.01 &lt; \(p\)-value ≤ 0.05</td>
+<td align="left">0.01 &lt; <em>p</em>-value ≤ 0.05</td>
 <td align="left">strong evidence against the null hypothesis</td>
 </tr>
 <tr class="even">
-<td align="left">\(p\)-value ≤ 0.01</td>
+<td align="left"><em>p</em>-value ≤ 0.01</td>
 <td align="left">very strong evidence against the null hypothesis</td>
 </tr>
 </table>
 
-</article></slide><slide class=""><hgroup><h2>Additional Guidelines (\(p\)-value ≤ 0.05)</h2></hgroup><article  id="additional-guidelines-p-value-0.05">
+</article></slide><slide class=""><hgroup><h2>Additional Guidelines (<em>p</em>-value ≤ 0.05)</h2></hgroup><article  id="additional-guidelines-p-value-0.05">
 
-<p>Researchers across a variety of disciplines consider a \(p\)-value less than or equal to 0.05 (i.e., at most a 5% chance) to be the threshold where we can claim data have <em>statistical significance</em> and declare the chance model (\(H_0\)) to be implausible.</p>
+<p>Researchers across a variety of disciplines consider a <em>p</em>-value less than or equal to 0.05 (i.e., at most a 5% chance) to be the threshold where we can claim data have <em>statistical significance</em> and declare the chance model (\(H_0\)) to be implausible.</p>
 
-<p>A \(p\)-value ≤ 0.05 corresponds to <em>strong</em> or <em>very strong evidence</em> against the null hypothesis in our textbook guidelines.</p>
+<p>A <em>p</em>-value ≤ 0.05 corresponds to <em>strong</em> or <em>very strong evidence</em> against the null hypothesis in our textbook guidelines.</p>
 
 <p>However, in some situations you may want stronger evidence. For example, in medicine, rejecting \(H_0\) may have life or death consequences, so researchers could choose to use a value like 0.01 (<em>very strong evidence</em>) instead when assessing data.</p>
 
@@ -3340,7 +3340,7 @@ line-height: 1.9;
 
 </article></slide><slide class=""><hgroup><h2>Strength of Evidence/Conclusions</h2></hgroup><article  id="strength-of-evidenceconclusions">
 
-<p>The estimated \(p\)-value from my simulation is 0.0490. The results are statistically significant—that is, unlikely to be due to chance alone. We will conclude \(H_a\) instead. I have ESP!</p>
+<p>The estimated <em>p</em>-value from my simulation is 0.0490. The results are statistically significant—that is, unlikely to be due to chance alone. We will conclude \(H_a\) instead. I have ESP!</p>
 
 <table class = 'rmdtable'>
 <col width="29.069767%" />
@@ -3350,19 +3350,19 @@ line-height: 1.9;
 <th align="left">Guideline for Inference</th>
 </tr>
 <tr class="odd">
-<td align="left">\(p\)-value &gt; 0.10</td>
+<td align="left"><em>p</em>-value &gt; 0.10</td>
 <td align="left">not much evidence; \(H_0\) is plausible</td>
 </tr>
 <tr class="even">
-<td align="left">0.05 &lt; \(p\)-value ≤ 0.10</td>
+<td align="left">0.05 &lt; <em>p</em>-value ≤ 0.10</td>
 <td align="left">moderate evidence against \(H_0\)</td>
 </tr>
 <tr class="odd">
-<td align="left">0.01 &lt; \(p\)-value ≤ 0.05</td>
+<td align="left">0.01 &lt; <em>p</em>-value ≤ 0.05</td>
 <td align="left">strong evidence against \(H_0\) <strong>← 0.0490 falls here!</strong></td>
 </tr>
 <tr class="even">
-<td align="left">\(p\)-value ≤ 0.01</td>
+<td align="left"><em>p</em>-value ≤ 0.01</td>
 <td align="left">very strong evidence against \(H_0\)</td>
 </tr>
 </table>

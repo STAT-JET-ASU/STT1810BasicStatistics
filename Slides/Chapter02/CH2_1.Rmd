@@ -1,5 +1,5 @@
 ---
-title: "Section 2.1 Sampling Distributions"
+title: "Section 2.1<br>Sampling Distributions"
 subtitle: "*Introduction to Statistical Investigations, 2^nd^ Edition*"
 author: "Jill E. Thomley | **STT 1810 BASIC STATISTICS** | Appalachian State University"
 date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
@@ -45,9 +45,9 @@ knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
 
 ::: {}
 
-* We addressed *strength* of evidence (**significance**) in Chapter 1. ✔ ***Good job!***
+* We addressed *strength* of evidence (significance**) in Chapter 1. ✔ ***Good job!***
 
-* &#187; We will discuss *breadth* of results (**generalization**) in Chapter 2. &#171;
+* **&#187; We will discuss *breadth* of results (generalization) in Chapter 2. &#171;**
 
 * We will learn about *size* for an effect (**estimation**) in Chapter 3.
 
@@ -214,7 +214,7 @@ The standard deviation of the sampling distribution of $\hat{p}$ will be a funct
 
 $$\text{the standard deviation of }\hat{p} = SD(\hat{p}) = \sqrt{\frac{\pi(1-\pi)}{n}}$$
 
-Notice that $n$ is in the fraction denominator. For bigger sample sizes, SD will be smaller! 
+Notice that $n$ is in the fraction denominator. For bigger sample sizes, standard deviation will be smaller! 
 
 *&rarr; We have seen this before, in our Chapter 1 simulations. Larger samples tend to have less variability and converge toward the long-run (population) value.*
 

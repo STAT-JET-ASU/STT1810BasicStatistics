@@ -1,10 +1,10 @@
 ---
 title: "Probability of a Perfect March Madness Bracket"
-author: "Author: Jill E. Thomley // Appalachian State University"
+author: "Jill E. Thomley | **STT 1810 BASIC STATISTICS** | Appalachian State University"
 date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
 output: 
   ioslides_presentation:
-    logo: images/logoASU.jpg
+    logo: ../images/logoASU.jpg
 ---
 
 ```{r global_options, include = FALSE}
@@ -34,7 +34,7 @@ Warren Buffett has offered a \$1 billion prize to anyone with a perfect March Ma
 A standard March Madness bracket showing consecutive rounds of the tournament. You predict the winners before play starts. 
 
 ```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("images/MMbracket.png", dpi = 200)
+knitr::include_graphics("../images/MMbracket.png", dpi = 200)
 ```
 
 

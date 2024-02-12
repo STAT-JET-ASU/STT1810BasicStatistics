@@ -1,5 +1,5 @@
 ---
-title: "Section P.2 Exploring Data (*Descriptive Statistics / EDA*)"
+title: "Section P.2<br>Exploring Data (*EDA*)"
 subtitle: "*Introduction to Statistical Investigations, 2^nd^ Edition*"
 author: "Jill E. Thomley | **STT 1810 BASIC STATISTICS** | Appalachian State University"
 date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"

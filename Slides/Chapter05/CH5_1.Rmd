@@ -50,9 +50,9 @@ knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
 
 * In Chapter 5 we will look at comparing parameters for two groups ($\pi_1, \pi_2$).
 
-* The investigative process is the same; the six-step "spiral" we introduced in Section P.1.
+* The investigative process is the same; the six-step "spiral" from Section P.1.
 
-* Now Ho will be written as a *difference* in parameters.
+* Now $H_0$ will be written as a *difference* in parameters.
 
 :::
 
@@ -65,13 +65,12 @@ Chapter 5 extends what we learned about statistical significance in previous cha
 
 We can also estimate the size of difference between $\pi_1$ and $\pi_2$.
 
-
 <hr>
-
-In Chapter 5 (*not including Section 5.3*), you will learn to: 
 
 * Compare two sample proportions numerically and graphically. [Section 5.1]
 * Carry out a simulation-based analysis to investigate the difference between two population proportions. [Section 5.2]
+
+We will *not* cover Section 5.3, regarding theory-based inference.
 
 
 ## Learning Goals for Section 5.1
@@ -85,7 +84,7 @@ In Chapter 5 (*not including Section 5.3*), you will learn to:
 * Calculate and interpret risk ratio (also known as relative risk).
 
 
-## Added Learning Goals (*Not in the Text*)
+## Added Learning Goals (*Not in ISI Book*)
 
 * Calculate and interpret percent increased risk.
 
@@ -97,7 +96,7 @@ These summary values, along with risk ratio (relative risk) are used to compare 
 
 <hr> 
 
-The terms relative risk, increased risk, odds, and odds ratio are commonly found in published research literature, especially in health care studies. Odds ratios are also used with some more advanced analysis methods, such as logistic regression.
+The terms *relative risk*, *increased risk*, *odds*, and *odds ratio* are commonly found in published research literature, especially in health care studies. Odds ratios are also used with some more advanced analysis methods, such as logistic regression.
 
 
 ## Section 5.1 New Vocabulary
@@ -322,9 +321,9 @@ Women had a 248% increased chance of survival versus men when the Titanic sank.
 
 ## Odds and Odds Ratio
 
-Odds for women are 343 (*survivors*) vs. 127 (*fatalities*), which is 2.7 to 1 (*if we divide both counts by the smaller value 127*), so 2.7 we can say women survived for each 1 that did not.
+Odds for women are 343 (*survivors*) vs. 127 (*fatalities*), which is 2.7 to 1 (*if we divide both counts by the smaller value 127*), so 2.7 women survived for each 1 woman that did not.
 
-Odds for men = 710 to 1364 = 1 to 1.9 = about 1 to 2. Therefore, 1 man survived for roughly each two that did not.
+Odds for men = 710 to 1364 = 1 to 1.9 = about 1 to 2. Therefore, 1 man survived for each two men that did not.
 
 $$OR = \frac{\text{odds for women}}{\text{odds for men}} = \frac{343/127}{710/1364} = 5.2$$
 
@@ -335,7 +334,7 @@ The odds of a woman surviving the sinking of the Titanic were 5.2 times the odds
 
 ## The Two-Proportion Applet
 
-Data can be entered as a two-way table in [this applet](https://www.isi-stats.com/isi2nd/ISIapplets2021.html). It can also calculate RR and OR values. Here you see the oral cancer data.
+Data can be entered as a two-way table in [the applet](https://www.isi-stats.com/isi2nd/ISIapplets2021.html). It can also calculate RR and OR values. Here you see the oral cancer data.
 
 ```{r, echo = FALSE, fig.align="center"}
 knitr::include_graphics("../images/twopropapplet.png", dpi = 135)

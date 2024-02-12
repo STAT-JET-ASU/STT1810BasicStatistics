@@ -50,9 +50,9 @@ knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
 
 * In Chapter 5 we will look at comparing parameters for two groups ($\pi_1, \pi_2$).
 
-* The investigative process is the same; the six-step "spiral" we introduced in Section P.1.
+* The investigative process is the same; the six-step "spiral" from Section P.1.
 
-* Now Ho will be written as a *difference* in parameters. 
+* Now $H_0$ will be written as a *difference* in parameters.
 
 :::
 
@@ -67,10 +67,10 @@ We can also estimate the size of difference between $\pi_1$ and $\pi_2$.
 
 <hr>
 
-In Chapter 5 (*not including Section 5.3*), you will learn to: 
-
 * Compare two sample proportions numerically and graphically. [Section 5.1]
 * Carry out a simulation-based analysis to investigate the difference between two population proportions. [Section 5.2]
+
+We will *not* cover Section 5.3, regarding theory-based inference.
 
 
 ## Learning Goals for Section 5.2

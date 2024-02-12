@@ -107,35 +107,35 @@ The term *standard error* is not completely new. We mentioned it in Section 2.1,
 
 We also encountered it in Section 3.2 when we introduced 2SD confidence intervals.
 
-We will revisit both of those ideas in Section 5.2!
+We will revisit these concepts for two proportions in Section 5.2!
 
 
-## The Hypotheses: Version 1
+## Hypotheses #1: Variable *Association*
 
-Suppose we have two variables, ***explanatory*** and ***response***. We can use the association language learned in Chapter 4 to write hypotheses in the following form.
+Suppose we have two variables, ***explanatory*** and ***response***. We can use the association language learned in Chapter 4 to write our hypotheses in the following form.
 
-* $H_0:$ There ***is no association*** between the explanatory variable and the response variable.
+$H_0:$ There ***is no association*** between the explanatory variable and the response variable.
 
 In other words, the categories of the explanatory variable have no impact on the response. The conditional proportions for the two groups are the same---*group membership does not matter*.
 
-* $H_a:$ There ***is an association*** between the explanatory variable and the response variable.
+$H_a:$ There ***is an association*** between the explanatory variable and the response variable.
 
 Conditional proportions in the explanatory groups are different. Group membership gives you information about the response.
 
 
-## The Hypotheses: Version 2
+## Hypotheses #2: Comparing *Parameters*
 
 We can also write our hypotheses using parameters, like we did in Chapter 1 and Chapter 3. We define ***two*** parameters, one for each of the two groups of the explanatory variable.
 
-$\pi_1$ = conditional proportion of successes (***response variable***) in Group 1 of the ***explanatory variable***
+$\pi_1$ = conditional proportion of successes (for *response variable*) in Group 1 of the *explanatory variable*
 
-$\pi_2$ = conditional proportion of successes (***response variable***) in Group 2 of the ***explanatory variable***
+$\pi_2$ = conditional proportion of successes (for *response variable*) in Group 2 of the *explanatory variable*
 
 * $H_0:$ The conditional proportion of successes in Group 1 is the same as in Group 2.
 * $H_a:$ The conditional proportion of successes in Group 1 is (*less than*, *different than*, or *greater than*) in Group 2.
 
 
-## Stating the Hypotheses With Symbols
+## Stating the Hypotheses Using Symbols
 
 Once again, we can convert the words to symbols.
 
@@ -152,9 +152,18 @@ $$H_a: \pi_1 -\pi_2 < 0 \text{ or } H_a: \pi_1 - \pi_2 \neq 0 \text{ or } H_a: \
 The sample difference ($\hat{p}_1 - \hat{p}_2$) will be the statistic for the test.
 
 
+## Oral Cancer Example: Simulation
+
+Recall the oral cancer example from Section 5.1. This is a test of significance for that data. The [Two Proportions applet](https://www.isi-stats.com/isi2nd/ISIapplets2021.html) generates the null distribution by randomly *re-shuffling* the data.
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("../images/twopropapplet2.png", dpi = 135)
+```
+
+
 ## Assess Statistical Significance #1
 
-As we did with one-proportion tests, we will find a *p*-value using the test statistic and a simulated null distribution.
+As we did with one-proportion tests, we can find a *p*-value using the test statistic and a simulated null distribution.
 
 <hr>
 
@@ -168,13 +177,21 @@ Recall our guidelines for *p*-values from Section 1.2.
 | *p*-value ≤ 0.01        | very strong evidence against the null hypothesis               |
 
 
-## The Two-Proportion Applet
+## The Test of Significance
 
-Recall the oral cancer example from Section 5.1. This is a test of significance for that data. The [Two Proportions applet](https://www.isi-stats.com/isi2nd/ISIapplets2021.html) generates the null distribution by randomly *re-shuffling* the data.
+**Research Question:** Is oral cancer more likely among smokers?
 
-```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("../images/twopropapplet2.png", dpi = 135)
-```
+$\pi_1$ = long-run proportion of oral cancer among smokers<br>
+$\pi_2$ = long-run proportion of oral cancer among non-smokers
+
+$$H_0: \pi_1 - \pi_2 = 0$$
+$$H_a: \pi_1 -\pi_2 > 0$$
+
+test statistic = $\hat{p}_1 - \hat{p}_2 = 0.557 - 0.231 = 0.326$
+
+*p*-value = $0.0000$, so there is very strong evidence againt $H_0$ 
+
+So we can conclude that the long-run proportion of oral cancer among smokers is greater than that of non-smokers.
 
 
 ## Standardized Score
@@ -208,9 +225,23 @@ Recall our guidelines for $z$-scores from Section 1.3.
 | below -3.0 or above +3.0 | very strong evidence against Ho               |
 
 
+## Oral Cancer Example: $z$-score
+
+$$H_0: \pi_1 - \pi_2 = 0$$
+$$H_a: \pi_1 -\pi_2 > 0$$
+
+Get the value of $SD(\hat{p}_1 - \hat{p}_2) = 0.050$ from our simulation.
+
+$$z\text{-score} = \frac{\hat{p}_1 - \hat{p}_2}{SD(\hat{p}_1 - \hat{p}_2)} = \frac{0.557 - 0.231}{0.050} = 6.52$$
+
+The observed statistic (difference) from the sample data is $6.52$ standard deviations above the mean. This means that we have very strong evidence against $H_0$.
+
+We conclude that the long-run proportion of oral cancer among smokers is greater than that of non-smokers, as we did before.
+
+
 ## 2SD Confidence Interval
 
-Here we will estimate the magnitude of the difference between two parameters with a confidence interval, similar to the way we estimated one parameter. Recall what we learned in Section 3.2 about 2SD confidence intervals.
+Here we estimate the magnitude of the *difference between two parameters* using a confidence interval, which is similar to the way we estimated the *value* of one parameter. Recall what we learned in Section 3.2 about 2SD confidence intervals.
 
 $$\text{approximate 95% CI} = \hat{p} \pm 2 \times SD(\hat{p})$$
 
@@ -221,4 +252,19 @@ $$\text{95% CI} = (\hat{p}_1 - \hat{p}_2) \pm 2 \times SD(\hat{p}_1 - \hat{p}_2)
 <hr>
 
 Important: *Do not* multiply SD by $(\hat{p}_1 - \hat{p}_2)$ in the 2SD interval. Again, we estimate the SD value from the simulation results.
+
+
+## Oral Cancer Example: 2SD Estimation
+
+How much greater is the risk for smokers versus nonsmokers? We can estimate that from the data.
+
+$$\text{95% CI} = (\hat{p}_1 - \hat{p}_2) \pm 2 \times SD(\hat{p}_1 - \hat{p}_2) =$$
+
+$$(0.557 - 0.231) \pm 2 \times(0.050) =$$
+
+$$0.236 \pm 0.100 =$$
+
+$$(0.136, 0.336)$$
+
+Based on this interval, I am $95\%$ confident that the risk of oral cancer is between $13.6\%$ and $33.6\%$ greater for smokers than for nonsmokers. (*Note that the interval does not include zero.*)
 

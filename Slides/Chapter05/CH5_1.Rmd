@@ -176,7 +176,7 @@ Which group we call Category 1 and which group is Category 2 depends on the prob
 Essentially, **risk** is another word for **probability** or proportion. In everyday English, we usually associate the word "risk" with some kind of bad outcome. However, in statistics we can use the term risk for any outcome we are interested in.
 
 
-## *An Example:*
+## An Example: Risk of Oral Cancer
 
 [Oral cancer](https://www.nidcr.nih.gov/health-info/oral-cancer) is a family of malignancies that includes cancers of the mouth and the back of the throat. Smoking and alcohol use, as well as sun exposure and poor nutrition, are some of the factors that have been found to be associated with this type of cancer. Consider the incidence of oral cancer among a group of smokers and non-smokers. ***Smoking is the explanatory variable.***
 

@@ -94,16 +94,16 @@ In this case, "extreme" would be measured on *both* sides of the null distributi
 
 Three important components of a test of significance influence the strength provided by the data evidence.
 
-* **extremeness:** The farther away the observed statistic is from the average value of the null distribution (i.e., the value that is specified for  $\pi$ in $H_0$), the more evidence there is against $H_0$.
+* **extremeness:** The farther the observed statistic $\hat{p}$ is from the average value of the null distribution (i.e., the value of $\pi$ given in $H_0$), the more evidence there is against $H_0$.
 
-* **sample size:** As the sample size increases (while the value of the observed sample statistic $\hat{p}$ and our $H_a$ stay the same) the strength of evidence against $H_0$ increases.
+* **sample size:** As the sample size increases (while the value of the observed sample statistic $\hat{p}$ and our hypotheses stay the same), the strength of evidence against $H_0$ increases.
 
-* **one- vs. two-sided $H_a$:** Because the *p*-value for a two-sided test is about twice as large as we would get for a one-sided test using the same data, it provides less evidence against $H_0$. (*Two-sided tests are used more often in scientific practice.*)
+* **one- vs. two-sided $H_a$:** Because the *p*-value for a two-sided test is about twice as large as for a one-sided test using the same data, it provides less evidence against $H_0$. (Two-sided tests are used more often in scientific practice.)
 
 
 ## Flashback: [ESP Test](https://stat-jet-asu.github.io/Slides/STT1810/ESPZenerCards.html)
 
-***Example:*** We can use the [One Proportion applet](http://www.isi-stats.com/isi2nd/ISIapplets2021.html) to assess the statistical significance of our Zener card ESP test results from earlier in the semester. 
+***Example:*** We can use the [One Proportion applet](http://www.isi-stats.com/isi2nd/ISIapplets2021.html) to assess the statistical significance of our Zener card ESP test results. 
 
 $$H_0: \pi = 0.20$$
 
@@ -111,10 +111,10 @@ $$H_a: \pi > 0.20$$
 
 Let's say my results were 6 out of 25 cards correct.
 
-* What is the *p*-value for this particular test result?
-* What if I'd done a test with 50 cards and got 12 right?
-* What if I'd scored 9 correct instead of just 6 on the test?
-* What if I'd tested for both psi-hitting and psi-missing? 
+* What is the *p*-value for the result of 6 out of 25 correct?
+* What if I had done a test with 50 cards and got 12 right?
+* What if I had scored 9 out of 25 correct instead of just 6?
+* What if I had tested for both psi-hitting and psi-missing? 
 
 
 ## 
@@ -155,7 +155,7 @@ knitr::include_graphics("../images/OneProportionAppletZenerD.png", dpi = 150)
 
 ## Summary of Results
 
-Each case changes one input from the baseline test. The table shows the predicted increases or decreases in the *p*-values. We always have the same $H_0$ (*results are due to random chance*).
+Each case changes one input from the baseline test. The table shows the predicted increases or decreases in the *p*-values. We always have the same $H_0$.
 
 | null             | alternative         | $n$ | $\hat{p}$ | *p*-value | change                 |
 |:----------------:|:-------------------:|:---:|:---------:|:---------:|:----------------------:|

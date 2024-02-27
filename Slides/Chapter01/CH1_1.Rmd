@@ -59,6 +59,16 @@ knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
 ::::
 
 
+## Learning Goals for Chapter 1
+
+* Use the chance model to determine whether an observed statistic is unlikely to occur. [Section 1.1]
+* Calculate and interpret a *p*-value, and state the strength of evidence it provides against the null hypothesis. [Section 1.2]
+* Calculate a standardized statistic for a single proportion and evaluate the strength of evidence it provides against a null hypothesis. [Section 1.3]
+* Describe how the distance of the observed statistic from the parameter value specified by the null hypothesis, sample size, and one- vs. two-sided tests affect the strength of evidence against the null hypothesis. [Section 1.4]
+
+We will not cover Section 1.5, regarding theory-based inference.
+
+
 ## Learning Goals for Section 1.1
 
 * Recognize the difference between parameters and statistics.
@@ -193,7 +203,7 @@ knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
 ::::
 
 
-## [ISI One Proportion Applet](https://www.isi-stats.com/isi2nd/ISIapplets2021.html)
+## ISI [One Proportion](https://www.isi-stats.com/isi2nd/ISIapplets2021.html) Applet
 
 :::::: {style="display: flex;"}
 

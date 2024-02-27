@@ -65,8 +65,7 @@ knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
 * Calculate and interpret a $p$-value, and state the strength of evidence it provides against the null hypothesis. [Section 1.2]
 * Calculate a standardized statistic for a single proportion and evaluate the strength of evidence it provides against a null hypothesis. [Section 1.3]
 * Describe how the distance of the observed statistic from the parameter value specified by the null hypothesis, sample size, and one- vs. two-sided tests affect the strength of evidence against the null hypothesis. [Section 1.4]
-
-We will *not* cover Section 1.5, which discusses the theory-based approach to inference for a single proportion.
+* Describe how to carry out a theory-based one-proportion $z$-test. [Section 1.5]
 
 
 ## Learning Goals for Section 1.2
@@ -74,7 +73,7 @@ We will *not* cover Section 1.5, which discusses the theory-based approach to in
 * Use appropriate symbols for parameter and statistic.
 * State the null and the alternative hypotheses in words and in terms of the symbol $\pi$, the long-run proportion.
 * Explain how to conduct a simulation using a null hypothesis probability that is not 50-50.
-* Use the [ISI One Proportion applet](http://www.isi-stats.com/isi2nd/ISIapplets2021.html) to obtain the *p*-value after carrying out an appropriate simulation.
+* Use the ISI [One Proportion](http://www.isi-stats.com/isi2nd/ISIapplets2021.html) applet to obtain the *p*-value after carrying out an appropriate simulation.
 * Anticipate the null distribution's center and how it changes based on using proportion or count as the statistic.
 * Interpret the $p$-value and explain why a smaller *p*-value provides stronger evidence against the null hypothesis.
 * State a conclusion about the alternative hypothesis and null hypothesis based on the *p*-value.
@@ -84,20 +83,20 @@ We will *not* cover Section 1.5, which discusses the theory-based approach to in
 
 **binary variable:** a categorical variable with only two outcomes
 
-* can regroup multiple outcomes into two categories
-* one of the groups would be defined to be a “success” 
-* the other group would be defined to be a “failure”
+* we can regroup multiple outcomes into two categories
+* one of the groups would be defined as a “success” 
+* the other group would be defined as a “failure”
 
-***Example:*** The outcome of one coin flip (heads vs. tails) is a very common binary variable. In a pre-game coin flip in football, one team designates what will be a "success" by calling heads or tails before the flip.
+***Example 1:*** The outcome of one coin flip (heads vs. tails) is a very common binary variable. In a pre-game coin flip in football, one team designates what will be a "success" by calling heads or tails before the flip occurs.
 
-***Example:*** The six possible numbers resulting from one roll of a six-sided die can be regrouped into odd vs. even numbers. We could then designate evens as the "success" if that is what our research question is interested in.
+***Example 2:*** The six possible numbers resulting from one roll of a six-sided die can be regrouped into odd vs. even numbers. We could then designate evens as the "success" if that is what our research question is interested in.
 
 
 ##
 
-An essential part of our statistical *logic of inference* is creating a pair of opposing hypotheses that make statements regarding a parameter of the random process we are investigating.
+An essential part of our statistical ***logic of inference*** is creating a pair of opposing hypotheses that make statements regarding a parameter of the random process we are investigating.
 
-*Recall from our Section 1.1 vocabulary: A parameter is a long-run numerical property of some real-world random process.*
+*Recall from our Section 1.1 vocabulary: a parameter is a long-run numerical property of some real-world random process.*
 
 **null hypothesis ($H_0$) :** "by chance alone" or "there is no effect" explanation, which can be modeled by random simulation
 
@@ -112,7 +111,7 @@ We often use symbols to communicate or represent different quantities in a stati
 
 It is common to use Greek letters to represent parameters and Roman letters (our regular English alphabet) for statistics.
 
-$\pi$ : The Greek letter pi (or $p$), pronounced “pie.” This represents a parameter that is a proportion or probability (*not* 3.14159).
+$\pi$ : The Greek letter pi (or *p*), pronounced “pie.” This represents a parameter that is a proportion or probability (*not* 3.14159).
 
 $\hat{p}$ : The Roman letter p with a ^ above it, pronounced as "p-hat." It is the proportion of observational units in a sample that have a particular characteristic (or an *estimated probability*). For a *test of significance*, this would be the observed statistic.
 
@@ -121,7 +120,7 @@ $n$ : sample size; the number of observational units in the sample
 
 ## Test of Significance
 
-In the field of Statistics, a *test of significance* is a procedure for measuring the *strength of evidence* against our null hypothesis regarding the parameter of interest.
+In the field of Statistics, a test of significance is a procedure for measuring the strength of evidence against our null hypothesis regarding the parameter of interest.
 
 (1) make a claim about the parameter of interest ($H_0$ and $H_a$)
 (2) gather and explore data
@@ -146,7 +145,7 @@ One way to assess strength is to use a *p*-value. The ***p*** stands for *probab
 
 ## Additional Guidelines (*p*-value &leq; 0.05)
 
-Researchers across a variety of disciplines consider a *p*-value less than or equal to 0.05 (i.e., at most a 5% chance) to be the threshold where we can claim data have *statistical significance* and declare the chance model ($H_0$) to be implausible. 
+Researchers across a variety of disciplines consider a *p*-value less than or equal to 0.05 (i.e., at most a 5% chance) to be the threshold where we can claim data have ***statistical significance*** and declare the chance model ($H_0$) to be implausible. 
 
 A *p*-value ≤ 0.05 corresponds to *strong* or *very strong evidence* against the null hypothesis in our textbook guidelines.
 
@@ -155,7 +154,7 @@ However, in some situations you may want stronger evidence. For example, in medi
 Why 0.05? Ronald Fisher wrote *Statistical Methods for Research Workers* in 1925 and used 1/20 (5%) as his general guide.
 
 
-## [ISI One Proportion Applet](http://www.isi-stats.com/isi2nd/ISIapplets2021.html)
+## ISI [One Proportion](http://www.isi-stats.com/isi2nd/ISIapplets2021.html) Applet
 
 :::::: {style="display: flex;"}
 
@@ -188,7 +187,7 @@ knitr::include_graphics("../images/OneProportionApplet.png", dpi = 120)
 ::::
 
 
-## Flashback: [ESP Test](https://stat-jet-asu.github.io/Slides/STT1810/ESPZenerCards.html)
+## Example: Recall Our [ESP Test](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/ChapterXX/ESPZenerCards.html)
 
 ***Example:*** If we did a test where someone was presented with 25 cards to guess, how many would they have to get right to make you get suspicious that “something else is going on” besides just random guessing? We can now formally test this.
 
@@ -203,7 +202,7 @@ Suppose I correctly identified 9 cards. My sample proportion is therefore $\hat{
 What *strength of evidence* is provided by these ESP test results?
 
 
-## Simulate & Measure
+## Simulate and Measure
 
 ```{r, echo = FALSE, fig.align="center"}
 knitr::include_graphics("../images/OneProportionAppletZenerB.png", dpi = 140)
@@ -226,7 +225,7 @@ The estimated *p*-value from my simulation is 0.0490. The results are statistica
 
 *Okay, so maybe I don't have ESP... *
 
-From a probability point of view, we *did* reject the plausibility of the chance model, but the breadth of conclusions are limited by the nature of the experiment and our sample.
+From a probability point of view, we *did* reject the plausibility of the chance model, but the breath of our conclusions are limited by the nature of the experiment and our sample.
 
 It's still *possible* that the results were due to random chance and we drew an incorrect decision based on the data.
 

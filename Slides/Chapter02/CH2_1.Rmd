@@ -182,20 +182,20 @@ If we take many, many random samples of the same size from a population with par
 
 ## Key Central Limit Theorem Ideas
 
-The Central Limit Theorem describes the sampling distributions of certain statistics from finite populations, like $\hat{p}$, if we meet the necessary criteria... 
+The Central Limit Theorem describes the sampling distributions of certain statistics from finite populations, like $\hat{p}$ --- if we meet the necessary criteria. 
 
 * We have a large, finite population with parameter $\pi$. Here, *finite* means it is possible to count the observational units.
 
 * Our sample size ($n$) is less than $5\%$ of the overall population.
 
-* However, we are taking random samples of size $n$ that are big enough so that there are at least $10$ successes and $10$ failures in each sample.  
+* However, at the same time, we are taking random samples of size $n$ that are big enough that we have at least $10$ successes and $10$ failures in each sample.  
 
 * We are calculating the sample proportion $\hat{p}$ for each sample.
 
 
 ## Shape and Center
 
-If the key CLT ideas on the previous slide are true, the sampling distribution of the sample proportion $\hat{p}$ will have the following properties.
+If the key CLT ideas on the previous slide are true, the sampling distribution of the sample proportion $\hat{p}$ will have the following distribution properties.
 
 **shape:** the sampling distribution will be approximately normal (*unimodal and mound-shaped---the classic "bell curve"*).
 
@@ -242,7 +242,7 @@ $$SD(\hat{p}) = \sqrt{\frac{.10(1-.10)}{100}} = \sqrt{\frac{0.10 \times 0.90}{10
 
 ##
 
-Simulating a distribution using the [ISI One-Proportion Applet](http://www.isi-stats.com/isi2nd/ISIapplets2021.html)...
+Simulated sampling distribution using [One-Proportion](http://www.isi-stats.com/isi2nd/ISIapplets2021.html) applet:
 
 ```{r, echo = FALSE, fig.align="center"}
 knitr::include_graphics("../images/SamplingDist50.png", dpi = 100)
@@ -254,7 +254,7 @@ $\text{sample size}(n) = 100$</center>
 
 ##
 
-Simulating a distribution using the [ISI One-Proportion Applet](http://www.isi-stats.com/isi2nd/ISIapplets2021.html)...
+Simulated sampling distribution using [One-Proportion](http://www.isi-stats.com/isi2nd/ISIapplets2021.html) applet:
 
 ```{r, echo = FALSE, fig.align="center"}
 knitr::include_graphics("../images/SamplingDist10.png", dpi = 100)

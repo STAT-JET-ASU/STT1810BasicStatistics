@@ -20,7 +20,7 @@ knitr::opts_chunk$set(
 
 These slides are meant to accompany  [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html) --- Section 2.1 Sampling from a Finite Population: Proportions. 
 
-*This content does not replace reading the relevant textbook section.* It is for class presentation, review, and reference.
+*This content does not replace reading the textbook section.* It is for class presentation and/or reference in STT 1810 Basic Statistics.
 
 See [AsULearn](https://asulearn.appstate.edu/) for supplemental readings, videos, assignments, and searchable Glossary of ISI Textbook Vocabulary.
 
@@ -45,13 +45,13 @@ knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
 
 ::: {}
 
-* We addressed *strength* of evidence (significance**) in Chapter 1. ✔ ***Good job!***
+* We addressed strength of evidence (*significance*) in Chapter 1. ✔ ***Good job!***
 
-* **&#187; We will discuss *breadth* of results (generalization) in Chapter 2. &#171;**
+* **We will discuss breadth of results (*generalization*) in Chapter 2.**
 
-* We will learn about *size* for an effect (**estimation**) in Chapter 3.
+* We will learn about effect size of results (*estimation*) in Chapter 3.
 
-* Chapter 4 will introduce the idea of **causation**, the last of the four pillars. 
+* Chapter 4 will introduce the idea of *causation*, the last of the four pillars. 
 
 :::
 

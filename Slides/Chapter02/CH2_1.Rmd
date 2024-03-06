@@ -77,9 +77,9 @@ We will do Section 2.1 and Section 2.2. They introduce random samples, the idea 
 
 <hr>
 
-* Describe how to select a random sample.
-* Understand and predict sampling distributions for a sample proportion and a sample mean.
-* *We will not discuss theory-based inference.*
+* Describe how to select a random sample. [Section 2.1]
+* Understand and predict sampling distributions for a sample proportion and a sample mean. [Section 2.1 and Section 2.2]
+* *We will not cover Sections 2.3 and 2.4 (theory and bootstrapping).*
 
 <hr>
 
@@ -197,7 +197,7 @@ The Central Limit Theorem describes the sampling distributions of certain statis
 
 If the key CLT ideas on the previous slide are true, the sampling distribution of the sample proportion $\hat{p}$ will have the following distribution properties.
 
-**shape:** the sampling distribution will be approximately normal (*unimodal and mound-shaped---the classic "bell curve"*).
+**shape:** The sampling distribution will be approximately normal (*unimodal and mound-shaped---the classic "bell curve"*).
 
 <hr>
 
@@ -210,7 +210,7 @@ If the key CLT ideas on the previous slide are true, the sampling distribution o
 
 ##  Variability
 
-The standard deviation of the sampling distribution of $\hat{p}$ will be a function of $\pi$ and the sample size.
+The standard deviation of the sampling distribution of $\hat{p}$ will be a function of $\pi$ and the sample size $n$.
 
 $$\text{the standard deviation of }\hat{p} = SD(\hat{p}) = \sqrt{\frac{\pi(1-\pi)}{n}}$$
 

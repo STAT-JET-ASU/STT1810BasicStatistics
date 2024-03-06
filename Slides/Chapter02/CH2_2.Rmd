@@ -1,0 +1,173 @@
+---
+title: "Section 2.2<br>Quantitative Data"
+subtitle: "*Introduction to Statistical Investigations, 2^nd^ Edition*"
+author: "Jill E. Thomley | **STT 1810 BASIC STATISTICS** | Appalachian State University"
+date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
+output: 
+  ioslides_presentation:
+    logo: ../images/logoASU.jpg
+---
+
+```{r global_options, include = FALSE}
+knitr::opts_chunk$set(
+  message = FALSE,
+  warning = FALSE,
+  comment = NA
+)
+```
+
+## Before We Begin…
+
+These slides are meant to accompany  [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html) --- Section 2.1 Sampling from a Finite Population: Proportions. 
+
+*This content does not replace reading the textbook section.* It is for class presentation and/or reference in STT 1810 Basic Statistics.
+
+See [AsULearn](https://asulearn.appstate.edu/) for supplemental readings, videos, assignments, and searchable Glossary of ISI Textbook Vocabulary.
+
+
+## Recall: Spiral Approach & Four Pillars
+
+:::::: {style="display: flex;"}
+
+::: {}
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
+```
+
+:::
+
+::: {}
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+:::
+
+::: {}
+
+* We addressed strength of evidence (*significance*) in Chapter 1. ✔ ***Good job!***
+
+* **We will discuss breadth of results (*generalization*) in Chapter 2.**
+
+* We will learn about effect size of results (*estimation*) in Chapter 3.
+
+* Chapter 4 will introduce the idea of *causation*, the last of the four pillars. 
+
+:::
+
+::::
+
+
+## Learning Goals for Chapter 2
+
+We will do Section 2.1 and Section 2.2. They introduce random samples, the idea of the sampling distributions of $\hat{p}$ and $\bar{x}$, and the ***Central Limit Theorem***.
+
+<hr>
+
+* Describe how to select a random sample. [Section 2.1]
+* Understand and predict sampling distributions for a sample proportion and a sample mean. [Section 2.1 and Section 2.2]
+* *We will not cover Sections 2.3 and 2.4 (theory and bootstrapping).*
+
+<hr>
+
+This material builds on the Preliminaries and Chapter 1. You will need to remember and use vocabulary and concepts from those sections to understand the new material in this section. 
+
+Section 2.1 provides a foundation for the upcoming Section 3.2.
+
+
+## Learning Goals for Section 2.2
+
+* Describe the distribution of a quantitative variable in terms of shape, center, variability, and unusual observations.
+* Use the skewness of the distribution to predict the relationship between the mean and median.
+* Identify parameters (such as long-run/population means or medians) and statistics (such as sample means or sample medians) in a statistical study.
+* Predict the mean, standard deviation, and shape of the sampling distribution of a sample mean from a random sample of size *n*, where the population mean ($\mu$) and population standard deviation ($\sigma$) are known.
+
+*Think back to the tools and language we learned in Section P.2 for summarizing and describing quantitative data.*
+
+
+## Section 2.2 New Vocabulary
+
+We were first introduced to these terms in Section P.2.
+
+**skewed:** a data distribution is skewed if it is not symmetric; the bulk of values tend to fall on one side of the distribution with a “longer tail” on the other 
+
+**left skewed:** left-skewed distributions have the bulk or peak on the right and the long tail on the left 
+
+**right skewed:** right-skewed distributions have the bulk or peak on the left and the long tail on the right 
+
+**median:** the middle data value when the data values are sorted in order from smallest to largest
+
+
+## Section 2.2 New Parameters
+
+To distinguish between a quantitative variable and a categorical variable in descriptive and inferential statistics, we use different symbols to refer to the statistics and parameters. Instead of our now-familiar $\pi$ and $\hat{p}$, we will use the following.
+
+$\mu$ : The Greek letter mu, pronounced “mew.” This represents the population or process mean.
+
+$\sigma$ : The Greek letter sigma, which represents the population SD.
+
+$\bar{x}$ : The Roman letter x with a -- above it, pronounced as "x-bar." This is the sample mean. For a *test of significance*, this would be the observed statistic.
+
+$s$ : The Roman letter s, which represents the sample SD.
+
+
+## Key Central Limit Theorem Ideas
+
+The Central Limit Theorem describes the sampling distributions of certain statistics from finite populations, like $\bar{x}$ --- if we meet the necessary criteria. 
+
+* We have a large, finite (i.e., *countable*) population with mean $\mu$ and standard deviation $\sigma$.
+
+* Our sample size ($n$) is less than $5\%$ of the overall population.
+
+* We are taking random samples of size $n$ that are big enough, or the sample comes from a normal population.  
+
+* We are calculating the sample proportion $\bar{x}$ for each sample.
+
+
+## Shape and Center
+
+If the key CLT ideas on the previous slide are true, the sampling distribution of the sample proportion $\bar{x}$ will have the following distribution properties.
+
+**shape:** The sampling distribution will be approximately normal if the population is not too skewed and $n = 20$ or more. 
+
+As a special case, the shape of the sampling distribution of $\bar{x}$ will be *exactly* normal if we are sampling from a normal population.
+
+**center:** The mean of the sampling distribution will be equal to $\mu$ --- like proportions, it is unbiased, so all of the possible values of the sample mean $\bar{x}$ for a given $n$ average out to be $\mu$.
+
+
+##  Variability
+
+The standard deviation of the sampling distribution of $\bar{x}$ will be a function of $\sigma$ and the sample size $n$.
+
+$$\text{the standard deviation of }\bar{x} = SD(\bar{x}) = \frac{\sigma}{\sqrt{n}}$$
+
+Notice that $n$ is in the fraction denominator. For bigger sample sizes, standard deviation will be smaller! 
+
+As before, the SD of a sampling distribution is its ***standard error***.
+
+<hr>
+
+Unlike proportions, where both the mean and SD depend on the single parameter $\pi$ (review Section 2.1), for quantitative data we are working with two independent parameters, $\mu$ and $\sigma$.
+
+
+## Type of Sampling Still Matters!
+
+* Statistical methods are designed to handle *random sampling variability* in our data.
+
+* If the sample we have is biased, we have to be careful about *generalizing* to the population the sample came from.
+
+* Population size does not affect sampling variability as long as the population is at least $20$ times the size of the sample.
+
+* A larger sample size is not helpful if the sampling method is biased. You essentially just get a larger amount of *bad* data (as well as a false sense of confidence in your findings).
+
+* Bias can get into our data in from both the sampling method (e.g., using convenience samples) and nonsampling sources (e.g., writing bad survey questions).
+
+
+## Imagination & Simulation!
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("../images/spongebobsamplingdist.jpg", dpi = 100)
+```
+
+<div style = "text-align: center; font-size: 18px;">Image from [*Applied Biostatistics*](https://bookdown.org/kmbm92/Applied-Biostats/) by Pleuni Pennings and Kevin Magnaye <div>
+

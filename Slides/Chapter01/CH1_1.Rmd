@@ -21,7 +21,7 @@ knitr::opts_chunk$set(
 
 These slides are meant to accompany [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html) --- Section 1.1 Intro to Chance Models. 
 
-*This content does not replace reading the textbook section.* It is for class presentation and/or reference in STT1810 Basic Statistics.
+*This content does not replace reading the textbook section.* It is for class presentation and/or reference in STT 1810 Basic Statistics.
 
 See [AsULearn](https://asulearn.appstate.edu/) for supplemental readings, videos, assignments, and searchable Glossary of ISI Textbook Vocabulary.
 
@@ -46,13 +46,13 @@ knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
 
 ::: {}
 
-* **&#187; We will address *strength* of evidence (significance) in Chapter 1. &#171;**
+* **We will address strength of evidence (*significance*) in Chapter 1.**
 
-* We will discuss *breadth* of results (**generalization**) in Chapter 2.
+* We will discuss breadth of results (*generalization*) in Chapter 2.
 
-* We will learn about *size* for an effect (**estimation**) in Chapter 3.
+* We will learn about effect size of results (*estimation*) in Chapter 3.
 
-* Chapter 4 will introduce the idea of **causation**, the last of the four pillars. 
+* Chapter 4 will introduce the idea of *causation*, the last of the four pillars. 
 
 :::
 
@@ -66,7 +66,7 @@ knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
 * Calculate a standardized statistic for a single proportion and evaluate the strength of evidence it provides against a null hypothesis. [Section 1.3]
 * Describe how the distance of the observed statistic from the parameter value specified by the null hypothesis, sample size, and one- vs. two-sided tests affect the strength of evidence against the null hypothesis. [Section 1.4]
 
-We will not cover Section 1.5, regarding theory-based inference.
+We will not cover Section 1.5, which introduces a theory-based method of inference for a single proportion.
 
 
 ## Learning Goals for Section 1.1
@@ -94,7 +94,7 @@ knitr::include_graphics("../images/molecularmodel.jpg", dpi = 110)
 
 ## Textbook Definitions
 
-(mathematical) **model**
+**model** (mathematical) 
 
 * A mathematical or probabilistic conceptualization meant to closely match reality, but always making assumptions about that reality, which may or may not be true.
 
@@ -165,7 +165,7 @@ This is a method for assessing the evidence provided by data.
 
 **Statistic:** Compute a statistic from your observed sample data. 
 
-**Simulate:** Identify a possible "by-chance-alone" explanation for the data.   Repeatedly simulate values of the statistic that *could* happen when the chance model is true (*purely random results*).  
+**Simulate:** Identify a possible "by-chance-alone" explanation for the data. Repeatedly simulate values of the statistic that *could* happen when the chance model is true---purely random results.  
 
 **Strength of evidence:** Compare your observed statistic to the simulated values. As you do this, consider whether the statistic from the sample data is *unlikely* when the chance model is true. 
 
@@ -192,7 +192,7 @@ knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
 
 ::: {}
 
-* The first S (*compute a statistic from observed sample data*) occurs at Step 3/4 of the process. 
+* The first S (*compute a statistic from observed sample data*) occurs at Step 3 and/or 4. 
 
 * The second S (*devise and perform a simulation to model "by chance alone" outcomes*) and the third S (*compare your observed statistic to the distribution of simulated values*) are the foundation of Step 4. 
 
@@ -209,13 +209,13 @@ knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
 
 ::: {}
 
-* Probability of heads = value of parameter
+* Probability of heads = long run probability
 
-* Number of tosses = $n$ (sample size)
+* Number of tosses = the sample size
 
 * Number of repetitions = 1000 (or more) simulations
 
-* Number of heads = value from sample
+* Number of heads = heads in the sample
 
 :::
 
@@ -227,6 +227,8 @@ knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
 
 ::: {}
 
+*Default setting is a random coin flip model. 
+
 ```{r, echo = FALSE, fig.align="center"}
 knitr::include_graphics("../images/OneProportionApplet.png", dpi = 120)
 ```
@@ -236,17 +238,19 @@ knitr::include_graphics("../images/OneProportionApplet.png", dpi = 120)
 ::::
 
 
-## Modeling 10 Flips of a Fair Coin
+## Model Possible Results of 10 Coin Flips
 
 :::::: {style="display: flex;"}
 
 ::: {}
 
-* Probability of heads is 0.5 for a fair coin
+* Probability of heads is 0.5
 
-* One repetition is 10 coin flips
+* One rep is 10 flips; compute proportion =<br># heads / 10
 
-* The plot shows us the results from our 1000 repetitions --- distribution of the randomly varying *counts* or *proportions* of heads
+* Repeat 10-flip process; plot 1000 random proportions 
+
+* Plot displays the *distribution* of proportions
 
 :::
 

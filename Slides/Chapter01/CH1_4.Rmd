@@ -21,7 +21,7 @@ knitr::opts_chunk$set(
 
 These slides are meant to accompany [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html) --- Section 1.4 What Impacts Strength of Evidence? 
 
-*This content does not replace reading the textbook section.* It is for class presentation and/or reference.
+*This content does not replace reading the textbook section.* It is for class presentation and/or reference in STT 1810 Basic Statistics.
 
 See [AsULearn](https://asulearn.appstate.edu/) for supplemental readings, videos, assignments, and searchable Glossary of ISI Textbook Vocabulary.
 
@@ -48,13 +48,13 @@ knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
 
 ::: {}
 
-* **&#187; We will address *strength* of evidence (significance) in Chapter 1. &#171;**
+* **We will address strength of evidence (*significance*) in Chapter 1.**
 
-* We will discuss *breadth* of results (**generalization**) in Chapter 2.
+* We will discuss breadth of results (*generalization*) in Chapter 2.
 
-* We will learn about *size* for an effect (**estimation**) in Chapter 3.
+* We will learn about effect size of results (*estimation*) in Chapter 3.
 
-* Chapter 4 will introduce the idea of **causation**, the last of the four pillars. 
+* Chapter 4 will introduce the idea of *causation*, the last of the four pillars. 
 
 :::
 
@@ -185,20 +185,20 @@ You decide to get tested for COVID-19 based on mild symptoms. There are two corr
 
 Unknown Truth: You DO NOT have COVID-19.
 
-* Test says you do have the virus---false positive (Type I error)
+* Test says you do have the virus---*false positive* (Type I error)
 * Test says you do not have the virus---yes, a correct decision!
 
 Unknown Truth: You DO have COVID-19.
 
 * Test says you do have the virus---again, a correct decision!
-* Test says you do not have the virus---false negative (Type II error)
+* Test says you do not have the virus---this is a *false negative* (Type II error)
 
 
 ## Type I Error and Significance
 
 A Type I error happens when you conclude that your results are statistically significant when, in reality, they happened purely by chance. Essentially, you had the misfortune of getting a random result that is *improbable* but not *impossible*.
 
-The risk of committing this error is the significance level (α) you choose. That is the value that you set at the start of your study to assess the statistical probability of obtaining your results just by random chance (i.e., your *p*-value).
+The risk of committing this error is the significance level (α) you choose. That is the value that you set at the start of your study as the decision criteria for a *p*-value, like saying strong evidence is a *p*-value ≤ 0.05 (or $z$-score larger than 2).
 
 As discussed before, significance level is commonly set at 0.05 (5%). This means that your results have *at most* a 5% chance of occurring if the null hypothesis is actually true.
 

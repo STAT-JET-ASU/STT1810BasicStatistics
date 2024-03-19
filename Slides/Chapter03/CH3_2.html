@@ -20,7 +20,7 @@
       // Slide settings
       settings: {
                 title: 'Section 3.2<br> ± 2SD Approximate CIs',
-                        subtitle: 'Introduction to Statistical Investigations, 2<sup>nd</sup> Edition',
+                        subtitle: '<em>Introduction to Statistical Investigations, 2<sup>nd</sup> Edition</em>',
                 useBuilds: true,
         usePrettify: true,
         enableSlideAreas: true,
@@ -3157,24 +3157,19 @@ line-height: 1.9;
       <h1 data-config-title><!-- populated from slide_config.json --></h1>
       <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
       <p data-config-presenter><!-- populated from slide_config.json --></p>
-            <p style="margin-top: 6px; margin-left: -2px;">Last updated Friday, October 06, 2023 @ 04:53 PM</p>
+            <p style="margin-top: 6px; margin-left: -2px;">Last updated Tuesday, March 19, 2024 @ 12:07 AM</p>
           </hgroup>
   </slide>
 
 <slide class=""><hgroup><h2>Before We Begin…</h2></hgroup><article  id="before-we-begin">
 
-<p>These slides are intended to accompany Section 3.2 2SD <strike>and Theory-Based</strike> Confidence Intervals for a Single Proportion in <a href='http://www.isi-stats.com/isi/index2nd.html' title=''><em>Introduction to Statistical Investigations, 2nd Edition</em></a>.</p>
+<p>These slides are meant to accompany <a href='http://www.isi-stats.com/isi/index2nd.html' title=''><em>Introduction to Statistical Investigations, 2nd Edition</em></a> — Section 3.2 2SD <strike>and Theory Based</strike> Confidence Intervals for a Single Proportion.</p>
 
-<p><em>This content does not replace reading the textbook section.</em> It is for class presentation and/or reference.</p>
+<p><em>This content does not replace reading the textbook section.</em> It is for class presentation and/or reference in STT 1810 Basic Statistics.</p>
 
-<p>See also:</p>
+<p>See <a href='https://asulearn.appstate.edu/' title=''>AsULearn</a> for supplemental readings, videos, assignments, and searchable Glossary of ISI Textbook Vocabulary.</p>
 
-<ul>
-<li>Glossary of ISI Textbook Vocabulary on AsULearn</li>
-<li>Example 3.2 Cyberbullying (slides TBA)</li>
-</ul>
-
-</article></slide><slide class=""><hgroup><h2>Recall: The Spiral Process &amp; Four Pillars</h2></hgroup><article  id="recall-the-spiral-process-four-pillars">
+</article></slide><slide class=""><hgroup><h2>Recall: Spiral Approach &amp; Four Pillars</h2></hgroup><article  id="recall-spiral-approach-four-pillars">
 
 <div style="display: flex;">
 <div>
@@ -3185,10 +3180,10 @@ line-height: 1.9;
 
 <div>
 <ul>
-<li><p>We addressed <em>strength</em> of evidence (<strong>significance</strong>) in Chapter 1. ✔ <strong><em>Good job!</em></strong></p></li>
-<li><p>We will discuss <em>breadth</em> of results (<strong>generalization</strong>) in Chapter 2. ✔ <strong><em>Good job!</em></strong></p></li>
-<li><p>» We will learn about <em>size</em> for an effect (<strong>estimation</strong>) in Chapter 3. «</p></li>
-<li><p>Chapter 4 will introduce the idea of <strong>causation</strong>, the last of the four pillars.</p></li>
+<li><p>We addressed strength of evidence (<em>significance</em>) in Chapter 1. ✔ <strong><em>Good job!</em></strong></p></li>
+<li><p>We addressed the breadth of results (<em>generalization</em>) in Chapter 2. ✔ <strong><em>Good job!</em></strong></p></li>
+<li><p><strong>We will discuss effect size of results (<em>estimation</em>) in Chapter 3.</strong></p></li>
+<li><p>Chapter 4 will introduce the idea of <em>causation</em>, the last of the four pillars.</p></li>
 </ul></div></div>
 
 </article></slide><slide class=""><hgroup><h2>Learning Goals for Chapter 3</h2></hgroup><article  id="learning-goals-for-chapter-3">
@@ -3197,13 +3192,13 @@ line-height: 1.9;
 
 <hr>
 
-<p>In this chapter, you will learn to:</p>
-
 <ul>
 <li>Construct and interpret a confidence interval for a single population proportion using the range of plausible values technique. [Section 3.1]</li>
 <li>Construct and interpret a confidence interval for a single population proportion using the 2SD method. [Section 3.2]</li>
 <li>Identify how factors (confidence level, sample size, SD) affect the width of the confidence interval. [Section 3.4]</li>
 </ul>
+
+<p>We will not cover Section 3.3, theoretical estimation for a mean.</p>
 
 </article></slide><slide class=""><hgroup><h2>Learning Goals for Section 3.2</h2></hgroup><article  id="learning-goals-for-section-3.2">
 
@@ -3220,7 +3215,7 @@ line-height: 1.9;
 
 </article></slide><slide class=""><hgroup><h2>Section 3.2 New Vocabulary</h2></hgroup><article  id="section-3.2-new-vocabulary">
 
-<p>Recall that you learned about \(SD(\hat{p})\)—standard deviation of \(\hat{p}\)—and the Central Limit Theorem in Section 2.1</p>
+<p>Recall that you learned about \(SD(\hat{p})\), the standard deviation of \(\hat{p}\), and the Central Limit Theorem in Section 2.1</p>
 
 <p><strong>2SD method:</strong> we can approximate a 95% confidence interval (<em>if the sampling distribution of a statistic is approximately normal</em>) by taking the statistic and the SD of the statistic and extending the interval 2 SDs in each direction from the statistic…</p>
 
@@ -3280,7 +3275,7 @@ line-height: 1.9;
 <tr class="even">
 <td align="center">100</td>
 <td align="center">0.50</td>
-<td align="center">0.0500</td>
+<td align="center"><strong>0.0500</strong></td>
 </tr>
 <tr class="odd">
 <td align="center">100</td>
@@ -3317,19 +3312,19 @@ line-height: 1.9;
 
 <p>\[\hat{p} \pm 2 \times SD(\hat{p}) = 0.111 \pm 2 \times 0.096 = 0.111 \pm 0.192\]</p>
 
-<p>We are 95% confident that the long-run probability someone would prefer tap water to bottled water when presented with the kind of choice offered in the experiment is between -0.081 and 0.303, or effectively about 0% to 30.3%</p>
+<p>We are 95% confident that the long-run probability a person would prefer tap water to bottled water when presented with the kind of choice offered in the experiment with four cups is between -0.081 and 0.303, or roughly about 1% to 30%.</p>
 
 <p>Note that \(\pi = 0.25\) is among the plausible values included in the interval. This is consistent with our failure to find statistical significance in Exploration 1.2. <em>Random choice is plausible.</em></p>
 
 </article></slide><slide class=""><hgroup><h2>Flashback: Bob or Tim?</h2></hgroup><article  id="flashback-bob-or-tim">
 
-<p>Across two classes of students, 31 of 38 students \((\hat{p} = 0.816)\) assigned the name Tim to the left face. Using simulation, our estimated \(SD = 0.081\).</p>
+<p>Combining two classes of previous STT 1810 students, 31 of 38 students \((\hat{p} = 0.816)\) assigned the name Tim to the left face. Using simulation, our estimated \(SD = 0.081\).</p>
 
 <p>\[\hat{p} \pm 2 \times SD(\hat{p}) = 0.816 \pm 2 \times 0.081 = 0.816 \pm 0.162\]</p>
 
 <p>We are \(95\%\) confident that the long-run proportion of students who would assign the name Tim to the left face when given the same choice we used is between \(65.4\%\) and \(97.8\%\).</p>
 
-<p>All plausible values in the interval are greater than \(50\%\). We can be confident that the true proportion \(\pi\) is greater than random chance in this context.</p></article></slide>
+<p>All plausible values in the interval are greater than \(50\%\). We can be confident that the true proportion \(\pi\) is greater than random chance in this context, based on our experiment.</p></article></slide>
 
 
   <slide class="backdrop"></slide>

@@ -1,11 +1,11 @@
 ---
 title: "Section 3.2<br> ± 2SD Approximate CIs"
-subtitle: "Introduction to Statistical Investigations, 2^nd^ Edition"
+subtitle: "*Introduction to Statistical Investigations, 2^nd^ Edition*"
 author: "Jill E. Thomley | **STT 1810 BASIC STATISTICS** | Appalachian State University"
 date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
 output: 
   ioslides_presentation:
-    logo: images/logoASU.jpg
+    logo: ../images/logoASU.jpg
 ---
 
 ```{r global_options, include = FALSE}
@@ -18,24 +18,21 @@ knitr::opts_chunk$set(
 
 ## Before We Begin…
 
-These slides are intended to accompany Section 3.2 2SD <strike>and Theory-Based</strike> Confidence Intervals for a Single Proportion in [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html). 
+These slides are meant to accompany  [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html) --- Section 3.2 2SD <strike>and Theory Based</strike> Confidence Intervals for a Single Proportion. 
 
-*This content does not replace reading the textbook section.* It is for class presentation and/or reference.
+*This content does not replace reading the textbook section.* It is for class presentation and/or reference in STT 1810 Basic Statistics.
 
-See also:
-
-* Glossary of ISI Textbook Vocabulary on AsULearn
-* Example 3.2 Cyberbullying (slides TBA)
+See [AsULearn](https://asulearn.appstate.edu/) for supplemental readings, videos, assignments, and searchable Glossary of ISI Textbook Vocabulary.
 
 
-## Recall: The Spiral Process & Four Pillars
+## Recall: Spiral Approach & Four Pillars
 
 :::::: {style="display: flex;"}
 
 ::: {}
 
 ```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("images/sixstepsfourpillars.png", dpi = 100)
+knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
 ```
 
 :::
@@ -48,13 +45,13 @@ knitr::include_graphics("images/sixstepsfourpillars.png", dpi = 100)
 
 ::: {}
 
-* We addressed *strength* of evidence (**significance**) in Chapter 1. ✔ ***Good job!***
+* We addressed strength of evidence (*significance*) in Chapter 1. ✔ ***Good job!***
 
-* We will discuss *breadth* of results (**generalization**) in Chapter 2. ✔ ***Good job!***
+* We addressed the breadth of results (*generalization*) in Chapter 2. ✔ ***Good job!***
 
-* &#187; We will learn about *size* for an effect (**estimation**) in Chapter 3. &#171;
+* **We will discuss effect size of results (*estimation*) in Chapter 3.**
 
-* Chapter 4 will introduce the idea of **causation**, the last of the four pillars. 
+* Chapter 4 will introduce the idea of *causation*, the last of the four pillars. 
 
 :::
 
@@ -67,11 +64,11 @@ Chapter 3 focuses on ***estimation***, which is one of the four pillars of infer
 
 <hr>
 
-In this chapter, you will learn to: 
-
 * Construct and interpret a confidence interval for a single population proportion using the range of plausible values technique. [Section 3.1]
 * Construct and interpret a confidence interval for a single population proportion using the 2SD method. [Section 3.2]
 * Identify how factors (confidence level, sample size, SD) affect the width of the confidence interval. [Section 3.4]
+
+We will not cover Section 3.3, theoretical estimation for a mean.
 
 
 ## Learning Goals for Section 3.2
@@ -88,7 +85,7 @@ In Section 3.1 you learned about estimation using intervals of plausible values.
 
 ## Section 3.2 New Vocabulary
 
-Recall that you learned about $SD(\hat{p})$---standard deviation of $\hat{p}$---and the Central Limit Theorem in Section 2.1 
+Recall that you learned about $SD(\hat{p})$, the standard deviation of $\hat{p}$, and the Central Limit Theorem in Section 2.1 
 
 **2SD method:** we can approximate a 95% confidence interval (*if the sampling distribution of a statistic is approximately normal*) by taking the statistic and the SD of the statistic and extending the interval 2 SDs in each direction from the statistic...
 
@@ -104,7 +101,7 @@ $$\text{for example: } \hat{p} \pm 2 \times SD(\hat{p})$$
 For a bell-shaped (normal) curve, about 95% of the distribution will be within ±2SD of the mean---the basis of the 2SD method.
 
 ```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("images/empiricalrule.png", dpi = 110)
+knitr::include_graphics("../images/empiricalrule.png", dpi = 110)
 ```
 
 We could also create 68% and 99.7% CIs using ±1SD and ±3SD.
@@ -133,7 +130,7 @@ Recall that we use $\pi = 0.5$ because $SD(\hat{p})$ is the biggest then.
 |  100  |  0.10  |     0.0300      |
 |  100  |  0.25  |     0.0433      |
 |  100  |  0.40  |     0.0490      |
-|  100  |  0.50  |     0.0500      |
+|  100  |  0.50  |   **0.0500**    |
 |  100  |  0.60  |     0.0490      |
 |  100  |  0.75  |     0.0433      |
 |  100  |  0.90  |     0.0300      |
@@ -158,19 +155,19 @@ The sample proportion of people who preferred tap water was $\hat{p} = 0.1111$. 
 
 $$\hat{p} \pm 2 \times SD(\hat{p}) = 0.111 \pm 2 \times 0.096 = 0.111 \pm 0.192$$
 
-We are 95% confident that the long-run probability someone would prefer tap water to bottled water when presented with the kind of choice offered in the experiment is between -0.081 and 0.303, or effectively about 0% to 30.3%
+We are 95% confident that the long-run probability a person would prefer tap water to bottled water when presented with the kind of choice offered in the experiment with four cups is between -0.081 and 0.303, or roughly about 1% to 30%.
 
 Note that $\pi = 0.25$ is among the plausible values included in the interval. This is consistent with our failure to find statistical significance in Exploration 1.2. *Random choice is plausible.*
 
 
 ## Flashback: Bob or Tim?
 
-Across two classes of students, 31 of 38 students $(\hat{p} = 0.816)$ assigned the name Tim to the left face. Using simulation, our estimated $SD = 0.081$.
+Combining two classes of previous STT 1810 students, 31 of 38 students $(\hat{p} = 0.816)$ assigned the name Tim to the left face. Using simulation, our estimated $SD = 0.081$.
 
 $$\hat{p} \pm 2 \times SD(\hat{p}) = 0.816 \pm 2 \times 0.081 = 0.816 \pm 0.162$$
 
 We are $95\%$ confident that the long-run proportion of students who would assign the name Tim to the left face when given the same choice we used is between $65.4\%$ and $97.8\%$.
 
-All plausible values in the interval are greater than $50\%$. We can be confident that the true proportion $\pi$ is greater than random chance in this context.
+All plausible values in the interval are greater than $50\%$. We can be confident that the true proportion $\pi$ is greater than random chance in this context, based on our experiment.
 
 

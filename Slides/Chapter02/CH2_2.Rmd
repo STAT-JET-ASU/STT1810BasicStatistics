@@ -18,7 +18,7 @@ knitr::opts_chunk$set(
 
 ## Before We Begin…
 
-These slides are meant to accompany  [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html) --- Section 2.1 Sampling from a Finite Population: Proportions. 
+These slides are meant to accompany  [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html) --- Section 2.2 Quantitative Data. 
 
 *This content does not replace reading the textbook section.* It is for class presentation and/or reference in STT 1810 Basic Statistics.
 

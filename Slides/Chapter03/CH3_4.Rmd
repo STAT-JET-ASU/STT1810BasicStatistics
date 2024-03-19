@@ -1,11 +1,11 @@
 ---
 title: "Section 3.4 What Affects the Width of CIs?"
-subtitle: "Introduction to Statistical Investigations, 2^nd^ Edition"
+subtitle: "*Introduction to Statistical Investigations, 2^nd^ Edition*"
 author: "Jill E. Thomley | **STT 1810 BASIC STATISTICS** | Appalachian State University"
 date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
 output: 
   ioslides_presentation:
-    logo: images/logoASU.jpg
+    logo: ../images/logoASU.jpg
 ---
 
 ```{r global_options, include = FALSE}
@@ -18,24 +18,21 @@ knitr::opts_chunk$set(
 
 ## Before We Begin…
 
-These slides are intended to accompany Section 3.4 Factors That Affect the Width of a Confidence Interval in [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html). 
+These slides are meant to accompany  [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html) --- Section 3.4 Factors That Affect the Width of a Confidence Interval. 
 
-*This content does not replace reading the textbook section.* It is for class presentation and/or reference.
+*This content does not replace reading the textbook section.* It is for class presentation and/or reference in STT 1810 Basic Statistics.
 
-See also:
-
-* Glossary of ISI Textbook Vocabulary on AsULearn
-* Example 3.4 American Cat Ownership (slides TBA)
+See [AsULearn](https://asulearn.appstate.edu/) for supplemental readings, videos, assignments, and searchable Glossary of ISI Textbook Vocabulary.
 
 
-## Recall: The Spiral Process & Four Pillars
+## Recall: Spiral Approach & Four Pillars
 
 :::::: {style="display: flex;"}
 
 ::: {}
 
 ```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("images/sixstepsfourpillars.png", dpi = 100)
+knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
 ```
 
 :::
@@ -48,13 +45,13 @@ knitr::include_graphics("images/sixstepsfourpillars.png", dpi = 100)
 
 ::: {}
 
-* We addressed *strength* of evidence (**significance**) in Chapter 1. ✔ ***Good job!***
+* We addressed strength of evidence (*significance*) in Chapter 1. ✔ ***Good job!***
 
-* We will discuss *breadth* of results (**generalization**) in Chapter 2. ✔ ***Good job!***
+* We addressed the breadth of results (*generalization*) in Chapter 2. ✔ ***Good job!***
 
-* &#187; We will learn about *size* for an effect (**estimation**) in Chapter 3. &#171;
+* **We will discuss effect size of results (*estimation*) in Chapter 3.**
 
-* Chapter 4 will introduce the idea of **causation**, the last of the four pillars. 
+* Chapter 4 will introduce the idea of *causation*, the last of the four pillars. 
 
 :::
 
@@ -63,15 +60,15 @@ knitr::include_graphics("images/sixstepsfourpillars.png", dpi = 100)
 
 ## Learning Goals for Chapter 3
 
-Chapter 3 focuses on ***estimation***, which is one of the four pillars of inference introduced in Section P.1. Often, we use estimation to indicate how large an effect is, not as a single number, but as an ***interval*** of statistically-likely values.
+Chapter 3 focuses on ***estimation***, which is one of the four pillars of inference introduced in Section P.1. Often, we use estimation to indicate how large an effect is, not as a single number, but as an ***interval*** of statistically likely or plausible values.
 
 <hr>
-
-In this chapter, you will learn to: 
 
 * Construct and interpret a confidence interval for a single population proportion using the range of plausible values technique. [Section 3.1]
 * Construct and interpret a confidence interval for a single population proportion using the 2SD method. [Section 3.2]
 * Identify how factors (confidence level, sample size, SD) affect the width of the confidence interval. [Section 3.4]
+
+We will not cover Section 3.3, theoretical estimation for a mean.
 
 
 ## Learning Goals for Section 3.4
@@ -105,11 +102,11 @@ In Sections 3.1 and 3.2 you explored some different confidence intervals strateg
 
 There is no new vocabulary in this section. Review vocabulary from previous sections to solidify concepts.
 
-<br><br><br><br><br>
+<br><br><br><br>
 
 <hr>
 
-A note about 3.4:
+A note about Section 3.4 ...
 
 Much of the specific discussion in Section 3.4 is framed around theoretical confidence intervals, which we did not cover. But, in general, the ideas apply to all confidence intervals. 
 
@@ -149,7 +146,18 @@ $\hat{p} = 0.2543$ &rarr; *larger sample size = narrower interval*
 $n = 41,000$ &rarr; $\hat{p}$ *closer to 0.5 = wider interval*
 
 | $\hat{p} = 0.2543$, 95% CI | $\hat{p} = 0.3840$, 95% CI |  
-|:--------------------------:|:--------------------:|
-| (0.2508, 0.2578)           | **(0.3793, 0.3887)** |
-| width = 0.0070             | **width = 0.0094**   |
+|:--------------------------:|:--------------------------:|
+| (0.2508, 0.2578)           | **(0.3793, 0.3887)**       |
+| width = 0.0070             | **width = 0.0094**         |
+
+
+## Very Large Sample Sizes
+
+In the cat ownership example, we can see how the widths of the intervals change as we vary level of confidence, sample size, and the value of $\hat{p}$. 
+
+But, we also see that a very large sample size like $n = 41,000$ makes all of the intervals using that sample size quite precise. In other words, the set of *plausible values* is quite small in all cases, even for a high level of confidence or $\hat{p} = 0.5$.
+
+Precision refers to the *width* of the interval; it is a separate idea from confidence. 
+
+
 

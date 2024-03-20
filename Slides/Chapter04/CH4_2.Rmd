@@ -21,7 +21,7 @@ knitr::opts_chunk$set(
 
 These slides are meant to accompany [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html) --- Section 4.2 Observational Studies vs. Experiments.
 
-*This content does not replace reading the relevant textbook section.* It is for class presentation, review, and reference.
+*This content does not replace reading the textbook section.* It is for class presentation and/or reference in STT 1810 Basic Statistics.
 
 See [AsULearn](https://asulearn.appstate.edu/) for supplemental readings, videos, assignments, and searchable Glossary of ISI Textbook Vocabulary.
 
@@ -46,13 +46,13 @@ knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
 
 ::: {}
 
-* We addressed *strength* of evidence (**significance)** in Chapter 1. ✔ ***Great job!***
+* We addressed strength of evidence (*significance*) in Chapter 1. ✔ ***Good job!***
 
-* We addressed the  *breadth* of results (**generalization**) in Chapter 2. ✔ ***Great job!***
+* We addressed the breadth of results (*generalization*) in Chapter 2. ✔ ***Good job!***
 
-* We addressed the *size* of an effect (**estimation**) in Chapter 3. ✔ ***Great job!***
+* We addressed the size of an effect (**estimation**) in Chapter 3. ✔ ***Great job!***
 
-* **&#187; Chapter 4 introduces *causation*, the last of the four pillars. &#171;**
+* **Chapter 4 introduces the idea of *causation*, the last of the four pillars.**
 
 :::
 
@@ -88,7 +88,7 @@ Overall, the main goal is to explain when and why we can infer cause-and-effect 
 
 **response variable:** if the alternative hypothesis is true, this is the variable that is impacted by the explanatory variable (also known as the **dependent variable**)
 
-**confounding variable:** a variable that is related to both the explanatory and response variables in such a way that its effects on the response variable cannot be separated from those of the explanatory variable
+**confounding variable:** a variable related to the explanatory and response variables in such a way that its effects on the response variable cannot be separated from the effects of the explanatory variable---it provides another possible "causal" explanation 
 
 
 ## Section 4.2 New Vocabuary

@@ -49,7 +49,7 @@ knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
 
 * We addressed the breadth of results (*generalization*) in Chapter 2. ✔ ***Good job!***
 
-* **We will discuss effect size of results (*estimation*) in Chapter 3.**
+* **We will discuss the effect size of results (*estimation*) in Chapter 3.**
 
 * Chapter 4 will introduce the idea of *causation*, the last of the four pillars. 
 

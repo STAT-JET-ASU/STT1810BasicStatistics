@@ -86,11 +86,11 @@ At least one [animal welfare organization](https://awionline.org/content/swim-at
 
 * **experimental units:** 30 recruited subjects (ages 18–65) with a clinical diagnosis of mild to moderate depression
 
-* **explanatory variable (treatment groups):** (1) one hour of swimming/snorkling each day *with* bottlenose dolphins, or <br>(2) one hour of swimming/snorkling each day *without* any dolphins (control group); binary categorical
+* **explanatory variable (treatment groups):** (1) one hour of swimming/snorkling each day *with* bottlenose dolphins, or <br>(2) one hour of swimming/snorkling each day *without* any dolphins (control group); this is a binary categorical
 
-* **response variable:** whether or not the participants achieved substantial reduction (i.e., improvement) in their depression symptoms, coded as yes or no; binary categorical
+* **response variable:** whether or not the participants achieved substantial reduction (i.e., improvement) in their depression symptoms, coded as yes or no; this is a binary categorical
 
-* **sample size:** 30 total, with $n_{dolphin}$ = 15 and $n_{control}$ = 15
+* **sample size:** $n_{total}$ = 30, with $n_{dolphin}$ = 15 and $n_{control}$ = 15
 
 
 ## The Hypotheses: Two Expressions

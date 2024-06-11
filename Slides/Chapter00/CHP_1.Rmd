@@ -19,9 +19,9 @@ knitr::opts_chunk$set(
 
 ## Before We Begin…
 
-These slides are meant to accompany [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html) --- Section P.1 Introduction to the Six-Step Method.
+These slides are meant to accompany [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html) --- **Section P.1 Introduction to the Six-Step Method**.
 
-*This content does not replace reading the textbook section.* It is for class presentation and/or reference in STT 1810 Basic Statistics.
+*This content does not replace reading the textbook section.* It is for class presentation and/or reference in **STT 1810 Basic Statistics.**
 
 See [AsULearn](https://asulearn.appstate.edu/) for supplemental readings, videos, assignments, and searchable Glossary of ISI Textbook Vocabulary.
 
@@ -68,11 +68,13 @@ You need to **"speak the language"** to understand what is being taught in class
 
 ## Some Essential Vocabulary
 
-Refer to the textbook and AsULearn glossary for definitions of these terms, now and for future sections. These form the first foundation of your statistical vocabulary.
-
 **data / dataset:** the values measured or categories recorded on individual entities of interest (i.e., observational units)
 
 **observational units:** the individual entities on which data are recorded; these may be people, objects, or repeated trials of some process like a game of chance or basketball free-throw
+
+**variables:** recorded characteristics of the observational units
+
+<hr>
 
 In some situations, an observational unit may be referred to as a *case*, a *subject*, a *participant*, or an *experimental unit*.
 
@@ -85,25 +87,25 @@ Data are usually stored in a rectangular representation that has various names, 
 
 Most of the data we will work with in STT 1810 is in this format. Real life data is usually far messier and can require a great deal of tidying up, but that is beyond the scope of this class.
 
-<p style="text-align:center; font-size: 10px;"><img src="https://d33wubrfki0l68.cloudfront.net/6f1ddb544fc5c69a2478e444ab8112fb0eea23f8/91adc/images/tidy-1.png" width = 775><br>Source: [R for Data Science: Tidy Data](http://r4ds.had.co.nz/tidy-data.html) --- note that *observations* is another name for *observational units*<br></p>
+<p style="text-align:center; font-size: 12px;"><img src="https://d33wubrfki0l68.cloudfront.net/6f1ddb544fc5c69a2478e444ab8112fb0eea23f8/91adc/images/tidy-1.png" width = 775><br>Source: [R for Data Science: Tidy Data](https://r4ds.hadley.nz/data-tidy.html) --- note that *observations* is another name for *observational units*<br></p>
 
 
 ## 
-
-**variables:** recorded characteristics of the observational units
 
 * **quantitative variable:** numerical characteristics or values on which ordinary arithmetic operations make sense (counts or measurements, which may include *units of measure*)
 
 * **categorical variable:** qualitative characteristics, groupings, or category designations (essentially labels of different kinds for traits; labels may take the form of words or numbers)
 
-* **variable distribution:** describes the pattern of value/category outcomes (what values/categories are possible and how often they occur for the given variable)
+* **variable distribution:** describes the pattern of value/category outcomes (what values/categories are possible and how often those values/categories occur for the given variable)
+
+<hr>
 
 Can you think of some examples of quantitative and categorical variables you might encounter in your discipline?
 
 Can you think of a categorical variable that uses a number label?
 
 
-## The "Six-Step Method"
+## The Six-Step Method
 
 The six steps of a statistical investigation are...
 
@@ -144,9 +146,9 @@ knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
 
 * Statistical investigations typically include these six steps in some form. 
 
-* The steps may not always be followed in this exact order; however, a good statistical investigation will go through all six of these steps before completion.
+* The steps may not always be followed in this exact order --- however, a good statistical investigation will go through all six of these steps before completion.
 
-* The findings of one study typically will generate new research questions; that's how science works!
+* The findings of one study typically will generate new research questions. That's how science works!
 
 :::
 
@@ -155,7 +157,7 @@ knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
 
 ## Four Pillars of Statistical Inference
 
-Consider **STEP 4** and **STEP 5** of the "Six-Step Method"...
+Consider **STEP 4** and **STEP 5** of the Six-Step Method...
 
 <hr>
 

@@ -12,8 +12,10 @@ output:
 knitr::opts_chunk$set(
   message = FALSE,
   warning = FALSE,
+  echo = FALSE,
   comment = NA
 )
+library(tidyverse)
 ```
 
 
@@ -26,13 +28,23 @@ These slides are meant to accompany [*Introduction to Statistical Investigations
 See [AsULearn](https://asulearn.appstate.edu/) for supplemental readings, videos, assignments, and searchable Glossary of ISI Textbook Vocabulary.
 
 
+## Learning Goals for Section 1.1
+
+* Recognize the difference between parameters and statistics.
+* Describe how to use coin tossing to simulate outcomes from a chance model of a random choice between two events.
+* Use the ISI [One Proportion](http://www.isi-stats.com/isi2nd/ISIapplets2021.html) applet to carry out a coin tossing simulation.
+* Identify whether or not the results of a study are statistically significant and whether or not a chance model is a plausible explanation for the data.
+* Implement the 3S strategy: find a statistic, simulate results from a chance model, and determine strength of evidence.
+* Differentiate between saying a chance model is plausible and a chance model is the correct explanation for observed data (i.e., whether or not we have "proven" a result).
+
+
 ## The Spiral Approach to Investigation
 
 :::::: {style="display: flex;"}
 
 ::: {}
 
-```{r, echo = FALSE, fig.align="center"}
+```{r fig.align="center"}
 knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
 ```
 
@@ -59,55 +71,293 @@ knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
 
 ## STEP 1: Ask a Research Question
 
-**General Question:** Can dolphins communicate with one another in an abstract manner?
+**Research Question:** Can dolphins communicate with each other in an abstract manner?
 
-**Research Question:** TBA?
+*The research question influences our study design and hypotheses.*
 
-[*The research question influences our study design and hypotheses.*]
+<hr>
+
+Why do we care about this?
+
+The research described here was funded by the US Navy as part of its [Marine Mammal Program](https://www.niwcpacific.navy.mil/About/Departments/Intelligence-Surveillance-and-Reconnaissance/Marine-Mammal-Program/). In the early years, beginning in 1959, scientists explored sensory and physical capabilities many species of marine animals.
+
+Today, the Navy uses bottlenose dolphins (*Tursiops truncatus*) and California sea lions (*Zalophus californianus*) for a variety of tasks, including search, recovery, detection, and security.
 
 
-## STEP 2: Design a Study / Collect Data
+## STEP 2: Design a Study and Collect Data
 
-TBA
+First, the dolphins had to be trained to push buttons. Dr. Bastian (the researcher) put buttons underwater on each end of a large pool, two for each dolphin (Doris and Buzz). 
 
-*Can you think of any potential problems with this methodology that might affect the results of the study? What are some positive aspects of this design?*
+Bastien used a light as his signal. When the light shone steadily, this signal meant “push the button on the right.” When it blinked on/off, this meant “push the left button.” Each time the dolphins pushed the correct button, they got a fish. Over time, Doris and Buzz learned to choose the correct button every time.
+
+Next, Dr. Bastian changed the set-up so that Buzz had to push his button before Doris to get a reward. The dolphins adapted and once again learned to perform the task perfectly.  
+
+*Why was this pre-training necessary before the "real" experiment?*
 
 
-## Additional Design Details
+## 
 
-observational units
+Bastian put a curtain across the middle of the pool. Doris could see the light; Buzz could not. Dr. Bastian turned on the light and watched to see what Doris would do. She swam near the curtain and whistled loudly. Buzz whistled back and pressed the correct button. Bastian repeated the process several times, sometimes with a steady light and sometimes with a blinking light. He kept track of Buzz's button choice on each try.
 
-* each of Buzz's attempts (sometimes called *trials*)
+**parameter:** Buzz’s actual long-run proportion (or *probability*) of pushing the correct button based on Doris’s whistles
 
-explanatory variable
+**observational units:** Buzz's individual button-pushing attempts (often called *trials*)
 
-* whether the light was blinking or steady (two treatments)
+**variable of interest:** whether Buzz pushed the correct button or incorrect button on each trial (categorical, binary)
 
-response variable
-
-* whether or not Buzz pushed the correct button on each trial (categorical, binary)
-
-study design
-
-* randomized experiment (*assuming the two light options were randomized across the trials*)
+**sample:** the set of observational units on which we collect data
 
 
 ## STEP 3: Explore the Data
 
-TBA
+In one phase of the study, Dr. Bastian had Buzz attempt to push the correct button a total of 16 times. In this sample of 16 trials, Buzz pushed the correct button 15 out of 16 times. 
+
+```{r fig.align="center"}
+knitr::include_graphics("../images/buzzdataset.png", dpi = 110)
+```
+
+
+##
+
+To summarize these results, we report a numerical summary of the sample data called a  *statistic*. 
+
+**Option 1: Count of Successes**
+
+One way we can summarize the data is to report a count of how many times Buzz was correct. Here, that is $15$.
+
+**Option 2: Proportion of Successes**
+
+A count can be ambiguous to interpret if we do not consider the context and take the total number of observations into account. For example, $15/16$ is much different than $15/100$. Proportion values, however, are always between $0$ and $1$.
+
+Here, that is $15/16 = 0.9375$; we can also say $93.75\%$.
 
 
 ## STEP 4: Draw Inferences
 
-TBA
+Looking at the data, it certainly seems as if Buzz and Doris can communicate. After all, Buzz pushed the correct button almost every time, even though he couldn't see the light himself!
+
+The problem is, it is *possible* to get $15$ out of $16$ just by guessing. 
+
+Therefore, we have two possibilities we have to consider.
+
+* Buzz is just guessing (his probability of a correct button push is 0.50) and just he got lucky in these 16 attempts.
+
+* Buzz is doing something other than just guessing (probability of a correct button push is really larger than 0.50).
+
+We have to work with the data we have, so how do we choose?
+
+
+## The Chance Model
+
+It is fairly straightforward to model what could happen if Buzz is guessing, since the chance of being correct for every trial would be 0.50 --- he has two buttons with no reason to favor either. 
+
+We could use a coin flip as a simple physical / tacile generator.
+
+```{r fig.align="center"}
+knitr::include_graphics("../images/table01_01_01.png", dpi = 75)
+```
+
+
+## Running the Simulation
+
+If we flip the coin 16 times, we replicate the whole experiment once. Each flip is one *purely random guess* by Buzz.
+
+```{r fig.align="center"}
+knitr::include_graphics("../images/fig_01_01_02.jpg", dpi = 100)
+```
+
+**Simulation 1:** We flipped 11 heads (correct guesses) and 5 tails, so the simulated statistic is $11/16 = 0.6875 = 68.75\%$.
+
+```{r fig.align="center"}
+knitr::include_graphics("../images/fig_01_01_03.jpg", dpi = 100)
+```
+
+**Simulation 2:** We flipped 7 heads (correct guesses) and 9 tails, so the simulated statistic is $7/16 = 0.43875 = 43.75\%$.
+
+▶ There is *variability* in our simulation results ... so what now?
+
+
+## The Simulated Distribution
+
+We need to do many, many more simulations do determine the *long-run pattern* in the distribution of the number of heads that we get just from random chance. Remember what you learned about distribution characteristics from Section P.2.
+
+What shape does the distribution have?
+
+What is a center or typical value?
+
+How much variability is there?
+
+What would be unusual? &rarr; We will focus on this one right now!
+
+It would be tedious to do a large number of simulations with an actual coin, so we will use the ISI [One Proportion](https://www.isi-stats.com/isi2nd/ISIapplets2021.html) applet.
+
+
+## Doing 100 Simulations
+
+```{r fig.align="center"}
+knitr::include_graphics("../images/example01_01_100.png", dpi = 160)
+```
+
+Press `Draw Samples` to generate 100 simulated experiments...
+
+
+## Results from 100 Simulations
+
+```{r fig.align="center"}
+knitr::include_graphics("../images/fig_01_01_04A.jpg", dpi = 100)
+```
+
+Any number of successes from 0 to 16 is *possible* if Buzz is just guessing. This plot of simulation results shows us which of the possibilities are more *probable* or *likely* to happen.
+
+
+## Doing 1000 Simulations
+
+```{r fig.align="center"}
+knitr::include_graphics("../images/example01_01_1000.png", dpi = 160)
+```
+
+Press `Draw Samples` to generate 1000 simulated experiments...
+
+
+## Results from 1000 Simulations
+
+```{r fig.align="center"}
+knitr::include_graphics("../images/fig_01_01_04B.jpg", dpi = 100)
+```
+
+Doing a larger number of simulations gives us a better idea of the *long-run* probability for all the possible outcomes. Getting 5 to 11 correct just by guessing is relatively likely. 
+
+
+## If We Did Infinite Simulations...
+
+True long-run probabilities of the possible outcomes 0 to 16, if Buzz is just guessing on each trial. *This requires a bit of math*...
+
+```{r fig.align="center", fig.height = 3.75}
+pmf <- tibble(
+  successes = 0:16,
+  probability = dbinom(successes, 16, 0.5)
+)
+
+ggplot(pmf, aes(x = as.factor(successes), y = probability)) +
+  geom_col(
+    color = "black",
+    fill = "lightblue",
+    width = 0.75) +
+  scale_y_continuous(
+    breaks = seq(0, 1, 0.02),
+    limits = c(0, 0.21),
+    expand = c(0, 0),
+    labels = scales::percent
+  ) +
+  labs(
+    x = "number of successes",
+    y = "probability (shown as %)"
+  ) +
+  theme_minimal() +
+  theme(panel.grid.major.x = element_blank())
+```
+
+
+## Let's Zoom In a Little
+
+If we zoom in on the distribution's upper tail, we can get an idea of how *very* unusual it is to get $15/16$ correct by just randomly guessing. As we said earlier, it is *possible*, but not *probable*.
+
+```{r fig.align="center", fig.height = 3.5}
+pmf <- tibble(
+  successes = 14:16,
+  probability = dbinom(successes, 16, 0.5)
+)
+
+ggplot(pmf, aes(x = as.factor(successes), y = probability, fill = c("A", "B", "A"))) +
+  geom_col(
+    color = "black",
+    width = 0.75) +
+  geom_hline(
+    yintercept = dbinom(15, 16, 0.5), 
+    linetype = "dashed"
+  ) +
+  scale_y_continuous(
+    breaks = seq(0, 1, 0.0002),
+    limits = c(0, 0.0021),
+    expand = c(0, 0)
+  ) +
+  scale_fill_manual(values = c("lightblue", "pink")) +
+  labs(x = "number of successes") +
+  theme_minimal() +
+  theme(
+    legend.position = "none",
+    panel.grid.major.x = element_blank()
+  )
+```
+
+
+## Simulations Get Us Close Enough!
+
+If we *can* do the math, then why don't we?
+
+Most traditional statistical methods are *approximations* that use probability theory and mathematics. You may have seen these in a research methods course or other courses where you have read published research articles.
+
+In this course, we will use simulations to approximate long-run probabilities. In many ways, simulations can be preferable and more flexible than theory-based methods.
+
+In any case, we can see that getting $15$ out of $16$ correct just by randomly guessing is a *very* rare (*very low probability*) outcome, though it is not impossible.
+
+Okay, so what do we conclude from this? 
 
 
 ## STEP 5: Formulate Conclusions
 
-TBA
+**Definition:** A result is deemed to be *statistically significant* if it is unlikely to occur solely by random chance. In other words, the chance model is an *implausible* explanation for the results that were observed in the study being evaluated. 
+
+Notice that the conclusions we make are based on probability; we *cannot* declare that we have proof either way.
+
+Here, the number of correct buttons Buzz pushed is outside the typical variability we would expect if he were just guessing. That means we have strong evidence that he is not just guessing. It is therefore logical to decide that he is *not* guessing.
+
+<hr>
+
+If our observed result appears to be consistent with the chance model, we say the chance model is *plausible* or *believable*.
+
+
+## 
+
+**So ... what additional questions might this conclusion raise?**
+
+* If Buzz is not guessing, then what is he actually doing? 
+* If Buzz and Doris can communicate, can other dolphins?
+
+Some conclusions will depend on how the study was designed and how we view the 16 observed attempts with regard to the bigger picture of the research question.
+
+For example, we have assumed a few things about this study.
+
+* Buzz couldn’t see the light himself;
+* the type of light signal was chosen randomly so Buzz couldn’t figure out a pattern to help him decide which button to push;
+* Buzz’s 16 attempts here represent what Buzz would do given many more attempts under identical conditions.
 
 
 ## STEP 6: Look Back and Ahead
 
-TBA
+After Steps 1–5 of our six-step statistical investigation method, we need to revisit the big picture of our research question. 
 
+We need to reflect on the limitations of this study and analysis, and consider future studies. Overall, we are stepping back and thinking about the big research question more than the specific research conjecture that was being tested in this study. 
+
+In some ways, this is the most important step in the process---it is where we consider the true implications of the scientific study we conducted and where it fits in the body of knowledge. 
+
+For this study, we would critique on Dr. Bastian’s methodology, summarize the results for Buzz, and reflect on ways to improve the study to confirm and enhance our conclusions.
+
+
+## References
+
+Bastian, J., Wall, C., and Anderson, C. L. (1966). The transmission of arbitrary environmental information between bottlenosed dolphins. In R.G. Busnel (Ed.), *Animal Sonar Systems--Biology and Bionics*, Vol. II (pp. 803--873). France: Laboratoire de Physiologie Acoustique. 
+
+Naval Information Warfare Center Pacific. (n.d.). *Marine Mammal Program*. https://www.niwcpacific.navy.mil/About/Departments/Intelligence-Surveillance-and-Reconnaissance/Marine-Mammal-Program/
+
+
+## Other Chapter 1 Slides
+
+* Section 1.1 [Introduction to Chance Models](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/Chapter01/CH1_1.html)
+    * *Example 1.1 Can Dolphins Communicate?*
+* Section 1.2 [Measuring the Strength of Evidence](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/Chapter01/CH1_2.html)
+    * Example 1.2 Rock-Paper-Scissors
+* Section 1.3 [Alternative Measure of Strength of Evidence](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/Chapter01/CH1_3.html)
+    * Example 1.3 Heart Transplant Operations
+* Section 1.4 [What Impacts Strength of Evidence?](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/Chapter01/CH1_4.html)
+    * Example 1.4 Predicting Elections from Faces?

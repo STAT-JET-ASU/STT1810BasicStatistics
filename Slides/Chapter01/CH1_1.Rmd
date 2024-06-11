@@ -69,7 +69,16 @@ knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
 We will not cover Section 1.5, which introduces a theory-based method of inference for a single proportion.
 
 
-## Learning Goals for Section 1.1
+## 
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("../images/statisticsgrammar.jpg", dpi = 150)
+```
+
+Grammar gives us rules that are essential for shared language. Statistics provides frameworks and methods to help make sense of the complex language of data. Thus, researchers can quantify uncertainty, validate hypotheses, and draw valid conclusions. 
+
+
+## Learning Goals for Section 1.1 
 
 * Recognize the difference between parameters and statistics.
 * Describe how to use coin tossing to simulate outcomes from a chance model of a random choice between two events.
@@ -83,7 +92,7 @@ We will not cover Section 1.5, which introduces a theory-based method of inferen
 
 <h3 style="text-align: center;">Generally speaking, what is a *model* ?</h3>
 
-<h3 style="text-align: center;">What about a *mathematical model* ?</h3>
+<h3 style="text-align: center;">So ... what is a *mathematical model* ?</h3>
 
 ```{r, echo = FALSE, fig.align="center"}
 knitr::include_graphics("../images/molecularmodel.jpg", dpi = 110)
@@ -109,6 +118,8 @@ In the real world we are almost always dealing with incomplete data (i.e., *samp
 
 ## Section 1.1 New Vocabulary
 
+Study and learn these new terms so that you can communicate statistical concepts and results effectively.
+
 * chance model
 * parameter
 * sample
@@ -123,36 +134,51 @@ In the real world we are almost always dealing with incomplete data (i.e., *samp
 
 **chance model:** a physical / tactile or computerized process to generate random data according to a "well-understood" set of conditions (i.e., the properties of the real-life random process we are studying; we may need to make some assumptions)
 
+We often use cards, coins, dice, and spinners to help us model random processes, as well as computer programs/applets.
+
 ***Example 1:*** For the ESP test we did, one condition was using an open deck (*sampling with replacement*) so that the probability of random guessing on each trial would stay the same. We also assumed there was no other way for someone to know which card was drawn (e.g., marked cards, cheating).
 
 ***Example 2:*** For the Monty Hall game, we assumed that the prize was equally likely to be placed behind any of the three doors. In our extended version, a condition was that we also opened all of the unchosen doors *except one* after the initial guess.
-
-We often use cards, coins, dice, and spinners to help us model random processes, as well as computer programs/applets.
 
 
 ## 
 
 **parameter:** a long-run numerical property of a random process
 
-***Example 1:*** Across a large number of instances of the Monty Hall game, what is the probability a wins player if they switch? This is the scenario we investigated with our 1000+ simulations of the game using  applets. The long-run probability is a parameter.
+***Example 1:*** For the ESP example, the parameter is each person's innate chance of identifying a card ($1/5$ if they do not have ESP, versus some value more than $1/5$ if they do). This is reflected in their *long-run* test performance---many more trials than 25. 
 
-***Example 2:*** For the ESP example, it is someone's innate chance of identifying a card (1/5 if they do not have ESP, more than 1/5 if they do have ESP.) This would be reflected in their long-term performance on the test---many more trials than 25. Remember, the web site suggested that 50+ trials were necessary for you to get "a reliable indication of your performance".
+Remember, the web site suggested that 50+ trials are needed to get "a reliable indication of your performance".
 
+***Example 2:*** Across a large number of instances of the Monty Hall game, what is the probability a wins player if they switch? This is one scenario we investigated using our 1000+ simulations of the game using applets. 
+
+The *long-run* probability of winning the game if you switch is the parameter for the random process.
+
+
+##
 
 **sample:** the set of observational units on which we collect data
 
-***Examples:*** One round of the Monty Hall game is a unit; one card guessed in our Zener card ESP test is a unit.
+***Example 1:*** One card presented for identification in our Zener card ESP test is an observational unit. The sample is the total number of cards we attempt in the test.
 
+***Example 2:*** Playing one round of the Monty Hall game is a unit; the number of rounds we play is the sample size.
 
-## 
 
 **sample size:** the number of observational units $n$ in a sample
 
-***Examples:*** We initially did $n$ = 15 trials of the Monty Hall game in our investigations. For our ESP test, we attempted $n$ = 25 cards.
+***Example 1:*** For our ESP test, we attempted $n = 25$ cards. Since we took the test twice under identical conditions, we could put the data together for a sample of $n = 50$.
+
+***Example2:*** We initially did $n = 15$ trials of the Monty Hall game. Later, we increased to $n = 100$ and $n = 1000$ trials.
+
+
+##
 
 **statistic:** a numerical value that summarizes results in a sample (i.e., results in the set of *observed data*)
 
-***Examples:*** For Monty Hall, we recorded a win (car) or loss (goat) for each individual trial, then counted the total number of wins and calculated the fraction of wins. For the ESP test, we counted the number of cards we correctly guessed.
+The value of a sample *statistic* we get from observing a random process is a way to estimate the value of the process *parameter*.
+
+***Example 1:*** During the ESP test, our statistic was the number of cards out of 25 that we correctly identified.
+
+***Example 2:*** For Monty Hall, we recorded a win (car) or loss (goat) for each individual game, then we counted the total number of wins and calculated the fraction of wins. Both are statistics. 
 
 **statistically significant:** unlikely to occur just by random chance 
 
@@ -172,101 +198,13 @@ This is a method for assessing the evidence provided by data.
 If we decide the observed statistic is unlikely to occur by chance alone, we can logically conclude that the observed data provide us strong evidence against the *plausibility* (i.e., the *believability* or the *credibility*) of the chance model --- but *NOT* "proof". 
 
 
-## Connecting 3S to the Spiral Approach
+## Other Chapter 1 Slides
 
-:::::: {style="display: flex;"}
-
-::: {}
-
-```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
-```
-
-:::
-
-::: {}
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-:::
-
-::: {}
-
-* The first S (*compute a statistic from observed sample data*) occurs at Step 3 and/or 4. 
-
-* The second S (*devise and perform a simulation to model "by chance alone" outcomes*) and the third S (*compare your observed statistic to the distribution of simulated values*) are the foundation of Step 4. 
-
-* "strength of evidence" &rarr; part of logic of inference
-
-:::
-
-::::
-
-
-## ISI [One Proportion](https://www.isi-stats.com/isi2nd/ISIapplets2021.html) Applet
-
-:::::: {style="display: flex;"}
-
-::: {}
-
-* Probability of heads = long run probability
-
-* Number of tosses = the sample size
-
-* Number of repetitions = 1000 (or more) simulations
-
-* Number of heads = heads in the sample
-
-:::
-
-::: {}
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-:::
-
-::: {}
-
-*Default setting is a random coin flip model. 
-
-```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("../images/OneProportionApplet.png", dpi = 120)
-```
-
-:::
-
-::::
-
-
-## Model Possible Results of 10 Coin Flips
-
-:::::: {style="display: flex;"}
-
-::: {}
-
-* Probability of heads is 0.5
-
-* One rep is 10 flips; compute proportion =<br># heads / 10
-
-* Repeat 10-flip process; plot 1000 random proportions 
-
-* Plot displays the *distribution* of proportions
-
-:::
-
-::: {}
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-:::
-
-::: {}
-
-```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("../images/OneProportionAppletEx.png", dpi = 120)
-```
-
-:::
-
-::::
-
+* *Section 1.1 Introduction to Chance Models*
+    * [Example 1.1 Can Dolphins Communicate?](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/Chapter01/Example1_1.html)
+* Section 1.2 [Measuring the Strength of Evidence](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/Chapter01/CH1_2.html)
+    * Example 1.2 Rock-Paper-Scissors
+* Section 1.3 [Alternative Measure of Strength of Evidence](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/Chapter01/CH1_3.html)
+    * Example 1.3 Heart Transplant Operations
+* Section 1.4 [What Impacts Strength of Evidence?](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/Chapter01/CH1_4.html)
+    * Example 1.4 Predicting Elections from Faces?

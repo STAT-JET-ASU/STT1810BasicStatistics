@@ -40,7 +40,7 @@ Participation in STT 1810 is also designed to meet the following [General Educat
 * Goal 1. Thinking Critically and Creatively
 * Goal 2. Communicating Effectively
 
-Each textbook chapter and section we cover also has [focused goals](https://stat-jet-asu.github.io/STT1810BasicStatistics/SyllabusSchedule/LearningGoals/STT1810CourseLearningGoals.html) that will be used in assessments.
+Each textbook chapter and section we cover also has [focused goals](https://stat-jet-asu.github.io/STT1810BasicStatistics/SyllabusSchedule/Fall2024/STT1810F24CourseLearningGoals.html) that will be used in assessments.
 
 #### **Class Meetings & Attendance**
 
@@ -155,5 +155,5 @@ This course conforms to all Appalachian State University policies with respect t
 
 <hr>
 
-Updated Thursday, August 15, 2024 @ 04:37 PM
+Updated Thursday, August 15, 2024 @ 04:50 PM
 

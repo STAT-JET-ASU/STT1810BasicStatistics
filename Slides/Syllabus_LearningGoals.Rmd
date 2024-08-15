@@ -1,0 +1,51 @@
+---
+title: "Syllabus: Learning Goals"
+subtitle: "*Introduction to Statistical Investigations, 2^nd^ Edition*"
+author: "Jill E. Thomley | **STT 1810 BASIC STATISTICS** | Appalachian State University"
+date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
+output: 
+  ioslides_presentation:
+    logo: images/logoASU.jpg
+---
+
+```{r global_options, include = FALSE}
+knitr::opts_chunk$set(
+  message = FALSE,
+  warning = FALSE,
+  comment = NA
+)
+```
+
+## Bulletin Description
+
+**STT 1810 BASIC STATISTICS** is an introduction to statistical problem solving. Topics include organization and presentation of data; measures of location, variation, and association; the normal distribution, sampling distributions, and statistical inference. Emphasis will be on conceptual understanding and interpretation of results rather than theoretical development. Statistical software will be utilized in the analysis of data and in the development of statistical and probabilistic concepts. 
+
+STT 1810 is not open to students with credit for STT 2810, STT 2820, STT 3850, or STT 4811. (NUMERICAL DATA; COMPUTER; GEN ED: Quantitative Literacy)
+
+Prerequisite: MAT 1010 or higher. Demonstrated readiness for college-level math.
+
+## Course Learning Goals
+
+1. Students will demonstrate effective use of selected descriptive statistics methods.
+2. Students will demonstrate effective use of selected inferential statistics methods.
+3. Students will effectively discuss the roles of randomness in statistical processes.
+4. Students will effectively communicate using statistical frameworks and vocabulary.
+5. Students will use statistical thinking to evaluate scholarly research and popular media.
+6. Students will demonstrate preparedness for continued statistics coursework or research.
+
+## Gen Ed Learning Goals
+
+Participation in STT 1810 is also designed to meet the following General Education Learning Goals.
+
+**Goal 1. Thinking Critically and Creatively**
+
+*Critical thinking* is a habit of mind characterized by the comprehensive exploration of issues, ideas, artifacts, and events before accepting or formulating an opinion or conclusion.
+
+*Creative thinking* is both the capacity to combine or synthesize existing ideas, images, or expertise in original ways and the experience of thinking, reacting, and working in an imaginative way characterized by a high degree of innovation, divergent thinking, and risk taking.
+
+##
+
+**Goal 2. Communicating Effectively**
+
+*Communication* is the development and expression of ideas. [It] involves learning to work in many genres and styles. It can involve working with many different technologies and mixing texts, data, and images. Communication abilities develop through iterative experiences across the curriculum. Effective communication can increase knowledge, foster understanding, entertain, or promote changes in the audience’s attitudes, values, beliefs, or behaviors.
+

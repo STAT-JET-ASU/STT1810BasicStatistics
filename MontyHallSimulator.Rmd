@@ -1,0 +1,88 @@
+---
+title: "Untitled"
+author: "Jill Thomley"
+date: "2023-09-14"
+output: html_document
+---
+
+Set up doors and probabilities
+
+```{r}
+prob1 <- 1/3
+prob2 <- 1/3
+prob3 <- 1/3
+
+doors <- c("Door 1", "Door 2", "Door 3")
+```
+
+Decide which door has the prize
+
+```{r}
+index <- sample(1:3, size = 1, prob = c(prob1, prob2, prob3))
+car  <- doors[index]    # one chosen door
+goat <- doors[-index]   # two not chosen
+```
+
+Decide which door the player chooses
+
+```{r}
+player <- sample(doors, size = 1)
+```
+
+Compare to see whether the player chose the car
+
+```{r}
+car == player
+```
+
+Loop it! Stay version.
+
+```{r}
+# ----------
+
+reps <- 10
+
+prob1 <- 1/3
+prob2 <- 1/3
+prob3 <- 1/3
+
+# ----------
+
+doors <- c("Door 1", "Door 2", "Door 3")
+car      <- character(reps)
+goat01   <- character(reps)
+goat02   <- character(reps)
+player   <- character(reps)
+player01 <- character(reps)
+player02 <- character(reps)
+stay_win <- logical(reps)
+swch_win <- logical(reps)
+
+# ----------
+
+for (i in 1:reps) {
+  index          <- sample(1:3, size = 1, prob = c(prob1, prob2, prob3))  
+  car[i]         <- doors[index] 
+  goat01[i]      <- (doors[-index])[1]
+  goat02[i]      <- (doors[-index])[2]
+  player01[i] <- sample(doors, size = 1)
+  player02[i] <- sample(doors, size = 1)  
+  stay_win[i]    <- car[i] == player01[i]
+  swch_win[i]    <- car[i] == 0 # need player second choice ... 
+}
+
+library(tidyverse)
+tibble(goat01, goat02, car, player01, player02, stay_win, swch_win)
+```
+
+
+
+
+
+
+
+
+
+
+
+

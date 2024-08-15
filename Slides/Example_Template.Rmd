@@ -1,7 +1,7 @@
 ---
-title: "Example X.X NAME<br>NAME"
-subtitle: "Introduction to Statistical Investigations, 2^nd^ Edition"
-author: "Jill E. Thomley // STT1810 Basic Statistics // Appalachian State University"
+title: "Example XXXXX"
+subtitle: "*Introduction to Statistical Investigations, 2^nd^ Edition*"
+author: "Jill E. Thomley | **STT 1810 BASIC STATISTICS** | Appalachian State University"
 date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
 output: 
   ioslides_presentation:
@@ -19,14 +19,11 @@ knitr::opts_chunk$set(
 
 ## Before We Begin…
 
-These slides are intended to accompany Section X.X SECTION NAME in [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html). 
+These slides are meant to accompany [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html) --- Section X.X SECTION NAME. 
 
-*This content does not replace reading the textbook section.* It is for class presentation and reference.
+*This content does not replace reading the textbook section.* It is for presentation and reference in STT 1810 Basic Statistics.
 
-See also:
-
-* Glossary of ISI Textbook Vocabulary on AsULearn
-* [Section X.X SECTION NAME](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CHX_X.html)
+See [AsULearn](https://asulearn.appstate.edu/) for supplemental readings, videos, assignments, and a searchable Glossary of ISI Textbook Vocabulary.
 
 
 ## The Spiral Approach to Investigation
@@ -51,9 +48,9 @@ knitr::include_graphics("images/sixstepsfourpillars.png", dpi = 100)
 
 * Statistical investigations typically include these six steps in some form. 
 
-* These six steps may not always be followed in this exact order, but a good statistical investigation will go through all these steps before completion.
+* These six steps may not always be followed in this order; however, a good statistical investigation will go through all these steps before completion.
 
-* The findings of one study typically will generate new research questions; that's how science works!
+* The findings of one study typically will generate new research questions. That's how science works!
 
 :::
 

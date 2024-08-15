@@ -156,7 +156,6 @@ The course textbook for STT 1810 is [***Introduction to Statistical Investigatio
 * Identify parameters (such as long-run/population means or medians) and statistics (such as sample means or sample medians) in a statistical study.
 * Predict the mean, standard deviation, and shape of the sampling distribution of a sample mean from a random sample of size n, where the population mean, and population standard deviation, are known.
 
-
 <hr>
 
 ### CHAPTER 03 *Estimation: How Large is the Effect?*
@@ -268,27 +267,5 @@ The course textbook for STT 1810 is [***Introduction to Statistical Investigatio
 
 <hr>
 
-### CHAPTER 07 *Paired Data: One Quantitative Variable*
-
-#### **Section 7.1** Paired Designs
-
-**Chapter Learning Goal: Identify a study design as paired using repeated measures or paired using matching.**
-
-**Section Learning Goals:**
-
-* Identify a study design as having pairing or independent groups.
-* Identify a study design as paired using repeated measures or paired using matching.
-
-#### **Section 7.2** Simulation-Based Approach to Analyzing Paired Data
-
-**Chapter Learning Goal: Perform and interpret a simulation-based analysis of paired data for a quantitative response.**
-
-**Section Learning Goals:**
-
-* Understand the difference between independent samples and paired samples in terms of the study design and how variability can be lower in a paired design and how this can influence the strength of evidence.
-* Complete a simulation-based test of significance of a paired design by writing out the hypothesis, determining the observed statistic, computing the p-value, and writing out an appropriate conclusion.
-
-<hr>
-
-Updated Tuesday, December 26, 2023 @ 12:07 PM
+Updated Wednesday, August 14, 2024 @ 10:10 PM
 

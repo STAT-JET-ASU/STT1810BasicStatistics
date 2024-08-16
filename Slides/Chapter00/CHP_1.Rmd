@@ -40,7 +40,7 @@ knitr::include_graphics("https://stat-jet-asu.github.io/Moodlepics/admin/statsis
 * Describe distributions of quantitative variables. [Section P.2]
 * Use simulations to explore and understand probabilities. [Section P.3]
 
-***We will use these investigative methods throughout the course.***
+**We will use this investigative method throughout the course.**
 
 <hr>
 
@@ -76,9 +76,9 @@ You need to **"speak the language"** to understand what is being taught in class
 
 <hr>
 
-In some situations, an observational unit may be referred to as a *case*, a *subject*, a *participant*, or an *experimental unit*.
+In some situations, an **observational unit** may be referred to as a *case*, a *subject*, a *participant*, or an *experimental unit*.
 
-Data are often organized in a spreadsheet-type format in which each *row* is an observational unit and each *column* is a variable.
+**Data** are often organized in a spreadsheet-type format in which each *row* is an observational unit and each *column* is a variable.
 
 
 ## A "Tidy" Dataset
@@ -175,7 +175,38 @@ The ***scope*** of inference concerns the extent to which results can be general
 
 * **Causation:** Can we say what *caused* the observed effect?
 
-<hr>
+
+## Preview: Chapter 1 through Chapter 4
+
+:::::: {style="display: flex;"}
+
+::: {}
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
+```
+
+:::
+
+::: {}
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+:::
+
+::: {}
+
+* We will address strength of evidence (*significance*) in Chapter 1.
+
+* We will discuss breadth of results (*generalization*) in Chapter 2.
+
+* We will learn about effect size of results (*estimation*) in Chapter 3.
+
+* Chapter 4 will introduce the idea of *causation*, the last of the four pillars. 
+
+:::
+
+::::
 
 
 ## *Think About It #1*
@@ -224,8 +255,6 @@ Study: Ackerman, J. M., Griskevicius, V., & Li, N. P. (2011). Let's get serious:
 <hr>
 **Research Question:** Among heterosexual couples who are in committed relationships, are the men or women more likely to confess love first?
 <hr>
-
-<br>
 
 The observational units in this study are **heterosexual couples in committed relationships**.
 

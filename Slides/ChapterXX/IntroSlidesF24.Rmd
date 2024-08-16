@@ -1,6 +1,6 @@
 ---
-title: "Course Introduction"
-subtitle: "Fall 2024"
+title: "Course Introduction F24"
+subtitle: "Introduction and Overview of Course Material"
 author: "Jill E. Thomley | **STT 1810 BASIC STATISTICS** | Appalachian State University"
 date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
 output: 
@@ -20,13 +20,13 @@ knitr::opts_chunk$set(
 
 ## Greetings!
 
-Welcome to the first day of STT1810 Basic Statistics with Dr. Jill Thomley. To prepare for the beginning of our exciting journey...
+Welcome to STT1810 Basic Statistics with Dr. Jill Thomley. To get ready for our exciting journey...
 
 * Log on to [AsULearn](https://asulearn.appstate.edu/)!
 
 * Find and open the link "Day 01 Introduction Slides"
 
-* Find and open the link "STT 1810 Fall 2023 Syllabus"
+* Find and open the link "STT 1810 Fall 2024 Syllabus"
 
 * Begin to familiarize yourself with the course documents and our AsULearn site. **AsULearn is the vital hub of our course for assignments and communication.**
 
@@ -97,7 +97,7 @@ knitr::include_graphics("../images/privateforum.png", dpi = 75)
 
 <hr>
 
-<p style = "text-align: center;">We'll look at this on AsULearn shortly!</p>
+<p style = "text-align: center;">Let's look at this on AsULearn!</p>
 
 
 ## Is This You Right Now?

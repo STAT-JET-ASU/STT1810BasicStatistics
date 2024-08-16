@@ -35,10 +35,11 @@ Prerequisite: MAT 1010 or higher. Demonstrated readiness for college-level math.
 5. Students will use statistical thinking to evaluate scholarly research and popular media.
 6. Students will demonstrate preparedness for continued statistics coursework or research.
 
-Participation in STT 1810 is also designed to meet the following [General Education Learning Goals]((https://universitycollege.appstate.edu/programs/general-education-program/program-goals)).
+Participation in STT 1810 is also designed to meet the following [General Education Learning Goals]((https://irap.appstate.edu/GenEd_Goals)).
 
-* Goal 1. Thinking Critically and Creatively
-* Goal 2. Communicating Effectively
+* Goal 1: Thinking Critically and Creatively
+* Goal 2: Communicating Effectively
+* Goal 3: Quantitative Literacy
 
 Each textbook chapter and section we cover also has [focused goals](https://stat-jet-asu.github.io/STT1810BasicStatistics/SyllabusSchedule/Fall2024/STT1810F24CourseLearningGoals.html) that will be used in assessments.
 
@@ -51,7 +52,7 @@ As stated in the ASU Undergraduate Bulletin, “class attendance is an important
 
 **I will take class attendance for administrative and recordkeeping purposes, but I will *not* directly include attendance in your final grade.**
 
-Our face to face time is only 2.5 hours (sometimes less) each week over 29 class periods, so it is important that your attention be focused on what we are doing in class. There are some additional guidelines to help facilitate the face-to-face learning experience for you and your peers.
+Our face-to-face time is only 2.5 hours (sometimes less) each week over 29 class periods, so it is important that your attention be focused on what we are doing in class. There are some additional guidelines to help facilitate the face-to-face learning experience for you and your peers.
 
 * Do all necessary preparation for class, such as textbook readings and videos.
 * Participate fully in all active learning activities, both individual and in groups.
@@ -155,5 +156,5 @@ This course conforms to all Appalachian State University policies with respect t
 
 <hr>
 
-Updated Thursday, August 15, 2024 @ 04:50 PM
+Updated Friday, August 16, 2024 @ 01:08 PM
 

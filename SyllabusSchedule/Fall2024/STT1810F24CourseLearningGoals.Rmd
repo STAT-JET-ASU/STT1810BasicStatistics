@@ -24,13 +24,21 @@ We will use selected sections of the textbook to facilitate the **Course Learnin
 5. Students will use statistical thinking to evaluate scholarly research and popular media.
 6. Students will demonstrate preparedness for continued statistics coursework or research.
 
-**You may use this as a checklist of knowledge and skills you need to acquire from the text to be successful in this course.**
+### GENERAL EDUCATION GOALS
+
+Participation in STT 1810 is also designed to meet the following **General Education Learning Goals**.
+
+* Goal 1: Thinking Critically and Creatively
+* Goal 2: Communicating Effectively
+* Goal 3: Quantitative Literacy
 
 <hr>
 
 ### TEXTBOOK CITATION & LINKS
 
 The course textbook for STT 1810 is [***Introduction to Statistical Investigations, 2nd Edition***](http://www.isi-stats.com/isi/index2nd.html) by Nathan Tintle, Beth Chance, George Cobb, Allan Rossman, Soma Roy, Todd Swanson, and Jill VanderStoep. Students have access to the textbook online via [**WileyPLUS**](https://www.wileyplus.com/). Each chapter has several broad learning goals, which are broken down into section learning goals that build to the broader goals. We will cover the following sections in STT 1810.
+
+**Use the list below as a checklist of knowledge and skills you need to acquire from the text to be successful in this course.**
 
 <hr>
 

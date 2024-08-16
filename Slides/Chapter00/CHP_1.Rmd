@@ -237,7 +237,7 @@ Examples of other quantitative variables include (1) number of home runs hit (2)
 
 ## *Think About It #2*
 
-Study: Ackerman, J. M., Griskevicius, V., & Li, N. P. (2011). Let's get serious: communicating commitment in romantic relationships. Journal of Personality and Social Psychology, 100(6), 1079–1094. https://doi.org/10.1037/a0022412
+Study: Ackerman, J. M., Griskevicius, V., & Li, N. P. (2011). Let's get serious: communicating commitment in romantic relationships. *Journal of Personality and Social Psychology*, 100(6), 1079--1094. https://doi.org/10.1037/a0022412
 
 **Research Question:** Among heterosexual couples who are in committed relationships, are the men or women more likely to confess love first?
 

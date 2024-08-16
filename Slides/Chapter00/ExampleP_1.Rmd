@@ -141,8 +141,8 @@ The neutral and opt-out conditions yielded higher percentages of organ donors th
 
 ::::
 
-* 82.0 / 41.8 ≈ 2 &rarr; twice as likely to agree to become a donor
-* 78.6 / 41.8 ≈ 1.88 &rarr; 1.88 times (*almost twice*) as likely to agree 
+* 82.0 / 41.8 ≈ 2 &rarr; opt-out was twice as likely to agree as opt-in
+* 78.6 / 41.8 ≈ 1.88 &rarr; neutral was 1.88 times as likely as opt-in 
 
 [*We will explore segmented bar graphs and risk ratios in Chapter 5.*]
 
@@ -158,7 +158,7 @@ Given the sample percentages and the sample size, they could be confident that t
 
 ## STEP 5: Formulate Conclusions
 
-In this study, participants given the “opt-in” strategy were much less likely to agree to become organ donors. People in the opt-out group were twice as likely to agree to be donors compared to opt-in. The neutral group was close to twice as likely to agree compared to the opt-in group.
+In this study, participants given the “opt-in” strategy were much less likely to agree to become organ donors. People in the opt-out group were twice as likely to agree to be donors compared to opt-in. The neutral group was close to twice as likely to agree (1.88 times) compared to the opt-in group.
 
 The researchers conclude that "changes in defaults could [result in] additional thousands of donors a year.” 
 
@@ -166,7 +166,7 @@ The researchers conclude that "changes in defaults could [result in] additional 
 
 <hr>
 
-Johnson, Eric J. and Goldstein, Daniel G., Do Defaults Save Lives? (Nov 21, 2003). *Science*, Vol. 302, pp. 1338-1339. Available SSRN: [https://ssrn.com/abstract=1324774](https://ssrn.com/abstract=1324774)
+Johnson, Eric J. and Goldstein, Daniel G., Do Defaults Save Lives? (Nov 21, 2003). Science, Vol. 302, pp. 1338-1339, 2003, Available at SSRN: [https://ssrn.com/abstract=1324774](https://ssrn.com/abstract=1324774)
 
 
 ## STEP 6: Look Back and Ahead

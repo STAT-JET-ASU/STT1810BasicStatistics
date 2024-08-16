@@ -5,7 +5,7 @@ author: "Jill E. Thomley | **STT 1810 BASIC STATISTICS** | Appalachian State Uni
 date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
 output: 
   ioslides_presentation:
-    logo: images/logoASU.jpg
+    logo: ../images/logoASU.jpg
 ---
 
 ```{r global_options, include = FALSE}
@@ -19,14 +19,29 @@ knitr::opts_chunk$set(
 
 ## What is ESP?
 
-ESP refers to a reputed collection of abilities, including telepathy (mind reading), psychokinesis (moving objects without physical contact) and precognition (predicting the future). Sometimes it is called "the sixth sense" or "psi". 
+ESP refers to a reputed collection of abilities, including telepathy (mind reading), psychokinesis (moving objects without physical contact), and precognition (predicting the future). Sometimes it is called "the sixth sense" or "psi". 
 
 The spiritualist movement in 19th-century Britain and the U.S. led to research societies to study paranormal phenomenon; the [Society for Psychical Research](http://www.aspr.com/) still exists! According to a 2003 study in the *Journal for the Scientific Study of Religion*, about 60% of people in the U.S. believe in extrasensory perception (ESP).
 
 The term "extrasensory perception" was widely popularized by J.B. Rhine in the 1930s. He co-created the [Duke Parapsychology Laboratory](https://library.duke.edu/exhibits/2020/parapsychology) to scientifically study ESP. It lasted 35 years; today it exists as the [Rhine Research Center](https://www.rhineonline.org/about-us) in Durham.
 
 
-## Zener Cards & ESP Test
+## Process & Research Question
+
+<hr>
+**Research Question:** Do I have ESP?
+<hr>
+
+In order to investigate this question, we need to design a study, collect data, and then determine how we will assess that data to make a statement what kind of evidence it provides with respect to our research question. 
+
+We may need to narrow the scope and/or rephrase our research question to make it testable.
+
+In this case, we probably cannot assess telepathy, psychokinesis, and precognition with a single test.
+
+Narrowing the question will affect our scope of inference --- how we can generalize the results.
+
+
+## Zener Cards & Testing for ESP
 
 Psychologists Karl Zener (1903-64) and J.B. Rhine (1895-1980), who worked at Duke University's Parapsychology Laboratory, designed a deck of cards to use in ESP research.
 
@@ -37,7 +52,7 @@ knitr::include_graphics("https://stat-jet-asu.github.io/Moodlepics/admin/zenerca
 The classic Zener card deck has twenty five cards, five of each symbol: a circle, a plus sign, three vertical wavy lines, a square, and a five-pointed star. 
 
 
-##
+## 
 
 In a test for ESP, the experimenter picks a card from a shuffled deck and asks the person being tested to identify which of the five symbols is on the card---without showing them, of course. There are two methods we can use.
 
@@ -56,11 +71,11 @@ If we did a test where someone was presented with 25 cards to guess, how many wo
 Let's get some actual data to use in our discussion. We will use an online test rather than physical cards like Dr. Rhine (below).
 
 ```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("images/josephbanksrhine.jpeg")
+knitr::include_graphics("../images/josephbanksrhine.jpeg")
 ```
 
 <hr>
-<p style="text-align: center;">[Do you have ESP?](https://psychicscience.org/esp3)</p>
+<p style="text-align: center;">[Advanced ESP Test](https://psychicscience.org/esp3) (try to ignore the annoying ads)</p>
 <hr>
 
 
@@ -69,17 +84,28 @@ knitr::include_graphics("images/josephbanksrhine.jpeg")
 Use the default settings: Clairvoyance, Open deck, Cards seen, and 25 cards. Take the test and record your number of "hits".
 
 ```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("images/ESP01.PNG", dpi = 110)
+knitr::include_graphics("../images/ESP01.PNG", dpi = 110)
 ```
 
 
 ## Dr. Thomley's Results
 
-What do you think? Based on the test evidence, is Dr. Thomley psychic? Are you? *Discuss.*
+What do you think? Based on the test evidence, is Dr. Thomley psychic --- specifically, clairvoyant? Are you? *Discuss.*
 
 ```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("images/ESP02.PNG", dpi = 110)
+knitr::include_graphics("../images/ESP02.PNG", dpi = 110)
 ```
+
+
+## "About the Statistical Analysis"
+
+The applet introduces some ideas we will see in later chapters.
+
+* The $z$-score and probability ($p$) of the test results are shown. When the probability is small ($p$-value < 0.05), the results are said to be *statistically significant* and may be evidence of ESP.
+
+* If you get significantly more hits than the number we would expect by chance, it indicates psi-hitting (ESP). Significantly fewer is psi-missing. It can also suggest ESP (awareness and avoidance of the actual target).
+
+* Psi-hitting is indicated by a large positive $z$-score, whereas a large negative $z$-score indicates psi-missing.
 
 
 ## Some Additional Questions...
@@ -115,3 +141,4 @@ What might **anecdotal evidence** (e.g., personal observations of striking examp
 Bill Murray does a *very* unethical Zener card test in *Ghostbusters*.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5ohlA__xABw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+

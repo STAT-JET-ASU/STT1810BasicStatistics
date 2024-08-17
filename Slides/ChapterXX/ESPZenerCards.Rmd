@@ -1,7 +1,7 @@
 ---
 title: "Do You Have ESP?"
 subtitle: "Zener Card Data Collection & Exploration"
-author: "Jill E. Thomley | **STT 1810 BASIC STATISTICS** | Appalachian State University"
+author: "Jill E. Thomley | **STT 4811 Stat Concepts I** | Appalachian State University"
 date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
 output: 
   ioslides_presentation:
@@ -34,11 +34,11 @@ The term "extrasensory perception" was widely popularized by J.B. Rhine in the 1
 
 In order to investigate this question, we need to design a study, collect data, and then determine how we will assess that data to make a statement what kind of evidence it provides with respect to our research question. 
 
-We may need to narrow the scope and/or rephrase our research question to make it testable.
+We may need to narrow the focus and/or rephrase our research question to make it testable.
 
 In this case, we probably cannot assess telepathy, psychokinesis, and precognition with a single test.
 
-Narrowing the question will affect our scope of inference --- how we can generalize the results.
+Narrowing the question will affect our *scope of inference* --- how we can generalize the results.
 
 
 ## Zener Cards & Testing for ESP
@@ -59,7 +59,7 @@ In a test for ESP, the experimenter picks a card from a shuffled deck and asks t
 * Do not replace drawn cards. Deck size diminishes with each draw and the ratios of symbols left in the deck change.
 * Replace previously drawn cards. Deck size and ratios remain the same across all drawings. *We will use type of test.*
 
-If we did a test where someone was presented with 25 cards to guess, how many would they have to get right to make you get suspicious that “something else is going on” --- the person really has ESP, the cards are marked, etc.
+If we did a test where someone was presented with 25 cards to identify, how many would they have to get right to make you get suspicious that “something else is going on” --- the person really has ESP, the cards are marked, etc.
 
 <hr>
 <p style="text-align: center; color: red; font-weight: bold;">DISCUSS</p>
@@ -110,7 +110,7 @@ The applet introduces some ideas we will see in later chapters.
 
 ## Some Additional Questions...
 
-How often would a person who does *not* have any ESP abilities (and who is not cheating) get a "hit"? Is it *never*?
+Recap: How often would a person who does *not* have any ESP abilities (and who is not cheating) get a "hit"? Is it *never*?
 
 How does randomness (chance) play into the overall process of the test? Does randomness help or hurt our scientific method?
 

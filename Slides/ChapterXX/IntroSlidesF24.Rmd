@@ -20,7 +20,7 @@ knitr::opts_chunk$set(
 
 ## Greetings!
 
-Welcome to STT1810 Basic Statistics with Dr. Jill Thomley. To get ready for our exciting journey...
+Welcome to STT 1810 Basic Statistics with Dr. Jill Thomley. To get ready for our exciting journey...
 
 * Log on to [AsULearn](https://asulearn.appstate.edu/)!
 

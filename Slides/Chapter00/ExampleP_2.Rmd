@@ -50,7 +50,7 @@ The [National Anthem dataset](http://www.isi-stats.com/isi/data/prelim/NationalA
 
 ## The SB Anthems Dataset
 
-The dataset that the authors include in the [Descriptive Statistics applet](https://www.isi-stats.com/isi2nd/ISIapplets2021.html) has more variables than the example in the textbook.
+The dataset that the authors include in the [Descriptive Statistics](https://www.isi-stats.com/isi2nd/ISIapplets2021.html) applet has more variables than the textbook example discusses, plus three additional observations (2020, 2021, and 2022).
 
 * `Year`: the year of the Super Bowl
 * `SuperBowl`: the number of the Super Bowl
@@ -214,7 +214,7 @@ Are any sex-based differences in length the same within genres?
 knitr::include_graphics("../images/fig_p_02_07.jpg", dpi = 90)
 ```
 
-To create this kind of plot, we need to paste the dataset into the [Correlation/Regression applet](http://www.isi-stats.com/isi2nd/ISIapplets2021.html).
+To create this kind of plot, we need to paste the dataset into the [Correlation/Regression](http://www.isi-stats.com/isi2nd/ISIapplets2021.html) applet.
 
 
 ## Let's Add Some More Information
@@ -264,13 +264,21 @@ ggplot(sbdata, aes(x = Year, y = Time, shape = Sex, color = Sex)) +
 ```
 
 
-## *Think About It*
+## *Think About It #1*
 
-* [Country Music Hall of Fame performer Reba McEntire will sing the National Anthem at the 2024 Super Bowl.](https://ew.com/super-bowl-2024-performers-usher-halftime-reba-mcentire-national-anthem-8546391) 
+* [Country Music Hall of Fame performer Reba McEntire sang the National Anthem at the 2024 Super Bowl.](https://ew.com/super-bowl-2024-performers-usher-halftime-reba-mcentire-national-anthem-8546391) 
 
 * How could we use the data we have to make a prediction about how long her performance will last?
 
 * What other information would you like to have that is not included in the dataset?
 
 * According to [The Lines](https://www.thelines.com/odds/super-bowl/national-anthem/), "It is likely that McEntire’s National Anthem over under will be well under 2 minutes given her track record of Anthem renditions. The longest McEntire National Anthem available to watch on YouTube is her going just 1 minute and 23 seconds. This is considerably shorter than most modern versions."
+
+
+## 
+
+Reba's performance at Super Bowl LVIII.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FLH8fzAPWYk?si=3KI43RNf3qizov6H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 

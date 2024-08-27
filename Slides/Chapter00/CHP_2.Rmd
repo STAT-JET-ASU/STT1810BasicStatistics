@@ -66,12 +66,12 @@ You need to **"speak the language"** to understand what is being taught in class
 
 <p style="text-align:center;"><img src="../images/analysispyramid.jpg" width = 650></p>
 
-We process raw ***data*** with statistical methods to extract usable ***information***. But that is only part of the story! To give statistical results meaning and learn from them, we must interpet them in the ***appropriate context***. This includes units of measurement.
+We process raw ***data*** with statistical methods to extract usable ***information***. But that is only part of the story! To give statistical results meaning and learn from them, we must interpret them in the ***appropriate context***. This includes units of measurement.
 
 
 ## Section P.2 New Vocabulary
 
-Let's review (Section 1.1) and expand our statistics vocabulary!
+Let's review (Section P.1) and expand our statistics vocabulary!
 
 * data table
 * units of measurement

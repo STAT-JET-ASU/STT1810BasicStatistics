@@ -1,10 +1,10 @@
 ---
 title: "Sort the Spread!"
 subtitle: "Standard Deviation Practice Exploration"
-author: "Jill E. Thomley // STT 1810 Basic Statistics // Appalachian State University"
+author: "Jill E. Thomley | **STT 1810 BASIC STATISTICS** | Appalachian State University"
 output: 
   ioslides_presentation:
-    logo: images/logoASU.jpg
+    logo: ../images/logoASU.jpg
 ---
 
 ```{r global_options, include = FALSE}
@@ -20,11 +20,23 @@ library(kableExtra)
 
 ## Standard Deviation
 
+Standard deviation can be thought of as roughly the average or typical distance of all the data points from the mean. This is not *quite* mathematically true, but it is close enough, and thinking about it this way can be helpful for interpretation, visualization, and comparison when talking about variables.
+
+In statistics, we usually use $n$ to represent the number of data points. For each point, we find the distance from the mean by subtracting the mean value. What happens next?
+
+
+$$\text{standard deviation} = SD = \sqrt{\frac{\sum{(point - mean)^2}}{n-1}}$$
+
+Before we take the $\sqrt{\phantom{a}}$ we have a measure known as *variance*.
+
+
+## Comparing SD 
+
 Standard deviation (SD) is the most commonly used measure of spread / variability in exploratory data analysis. 
 
 <hr>
 
-Consider the six plots on the following slides. 
+Consider the 6 plots on the following slides. All have mean = 10.
 
 Look at the distributions of data points in the plots.
 
@@ -40,7 +52,7 @@ Recall that we can (informally) think of standard deviation as *the average dist
 ## Plot A
 
 ```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("images/SDplotA.png", dpi = 250)
+knitr::include_graphics("../images/SDplotA.png", dpi = 250)
 ```
 
 
@@ -49,7 +61,7 @@ knitr::include_graphics("images/SDplotA.png", dpi = 250)
 <br><br><br><br><br><br><br><br>
 
 ```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("images/SDplotB.png", dpi = 200)
+knitr::include_graphics("../images/SDplotB.png", dpi = 200)
 ```
 
 
@@ -58,7 +70,7 @@ knitr::include_graphics("images/SDplotB.png", dpi = 200)
 <br><br><br><br><br>
 
 ```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("images/SDplotC.png", dpi = 200)
+knitr::include_graphics("../images/SDplotC.png", dpi = 200)
 ```
 
 
@@ -67,7 +79,7 @@ knitr::include_graphics("images/SDplotC.png", dpi = 200)
 <br><br><br><br><br><br><br><br>
 
 ```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("images/SDplotD.png", dpi = 200)
+knitr::include_graphics("../images/SDplotD.png", dpi = 200)
 ```
 
 
@@ -76,7 +88,7 @@ knitr::include_graphics("images/SDplotD.png", dpi = 200)
 <br><br><br><br><br><br><br>
 
 ```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("images/SDplotE.png", dpi = 200)
+knitr::include_graphics("../images/SDplotE.png", dpi = 200)
 ```
 
 
@@ -85,7 +97,7 @@ knitr::include_graphics("images/SDplotE.png", dpi = 200)
 <br><br><br>
 
 ```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("images/SDplotF.png", dpi = 200)
+knitr::include_graphics("../images/SDplotF.png", dpi = 200)
 ```
 
 
@@ -94,28 +106,28 @@ knitr::include_graphics("images/SDplotF.png", dpi = 200)
 | Plot A    | Plot B    | Plot C    |
 |-----------|-----------|-----------|
 
-<img src = "images/SDplotA.png" width = 250>
-<img src = "images/SDplotB.png" width = 250>
-<img src = "images/SDplotC.png" width = 250>
+<img src = "../images/SDplotA.png" width = 250>
+<img src = "../images/SDplotB.png" width = 250>
+<img src = "../images/SDplotC.png" width = 250>
 
 | Plot D    | Plot E    | Plot F    |
 |-----------|-----------|-----------|
 
-<img src = "images/SDplotD.png" width = 250>
-<img src = "images/SDplotE.png" width = 250>
-<img src = "images/SDplotF.png" width = 250>
+<img src = "../images/SDplotD.png" width = 250>
+<img src = "../images/SDplotE.png" width = 250>
+<img src = "../images/SDplotF.png" width = 250>
 
 
 ## Pause for Group Work!
 
 ```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("images/stopsign.png", dpi = 190)
+knitr::include_graphics("../images/stopsign.png", dpi = 190)
 ```
 
 
-## The Solutions
+## 
 
-All plots are symmetric with mean = 10. For Plot D...
+All plots are symmetric with mean = 10. For Plot D (n = 18)...
 
 | point | distance    | point  | distance    | point  | distance    |
 |:-----:|:-----------:|:------:|:-----------:|:------:|:-----------:|
@@ -126,6 +138,23 @@ All plots are symmetric with mean = 10. For Plot D...
 | 9     | 9 - 10 = -1 | **10** | 10 - 10 = 0 | **13** | 13 - 10 = 3 |
 | 9     | 9 - 10 = -1 | **11** | 11 - 10 = 1 | **14** | 14 - 10 = 4 |
 
+Points below the mean have a negative distance, points above have a positive distance. The sum without squaring is zero.
+
+
+## 
+
+We would take all the distances we calculated and square them, then add all the squares together. We divide that sum by $n-1$ $(\text{i.e., } 18 - 1 = 17)$ and, finally, take the square root.
+
+$$\text{standard deviation} = SD = \sqrt{\frac{\sum{(point - mean)^2}}{n-1}}$$
+
+See the provided Google Sheet for the rest of the calculation of standard deviation for Plot D and the data for all six plots.
+
+You can also put the data into the [Descriptive Statistics](https://www.isi-stats.com/isi2nd/ISIapplets2021.html) applet to visualize the plots together and calculate standard deviation.  
+
+<hr>
+
+Note: We will once again consider positive vs. negative distance from the mean in Chapter 1 when we learn about *z*-scores.
+
 
 ## 
 
@@ -133,15 +162,15 @@ All plots are symmetric with mean = 10. For Plot D...
 |-----------|---------------|---------------|
 | SD = 0.00 | **SD = 1.65** | **SD = 2.06** |
 
-<img src = "images/SDplotA.png" width = 250>
-<img src = "images/SDplotF.png" width = 250>
-<img src = "images/SDplotD.png" width = 250>
+<img src = "../images/SDplotA.png" width = 250>
+<img src = "../images/SDplotF.png" width = 250>
+<img src = "../images/SDplotD.png" width = 250>
 
 | Plot E    | Plot B        | Plot C        |
 |-----------|---------------|---------------|
 | SD = 2.38 | **SD = 2.63** | **SD = 2.94** |
 
-<img src = "images/SDplotE.png" width = 250>
-<img src = "images/SDplotB.png" width = 250>
-<img src = "images/SDplotC.png" width = 250>
+<img src = "../images/SDplotE.png" width = 250>
+<img src = "../images/SDplotB.png" width = 250>
+<img src = "../images/SDplotC.png" width = 250>
 

@@ -50,16 +50,17 @@ The [National Anthem dataset](http://www.isi-stats.com/isi/data/prelim/NationalA
 
 ## The SB Anthems Dataset
 
-The dataset that the authors include in the [Descriptive Statistics](https://www.isi-stats.com/isi2nd/ISIapplets2021.html) applet has more variables than the textbook example discusses, plus three additional observations (2020, 2021, and 2022).
+The SB Anthems dataset in the [Descriptive Statistics](https://www.isi-stats.com/isi2nd/ISIapplets2021.html) applet has more variables than the textbook example discusses, plus three additional observations (2020, 2021, and 2022 Super Bowls).
 
 * `Year`: the year of the Super Bowl
 * `SuperBowl`: the number of the Super Bowl
-* `Performer`: name of the performer(s)
-* `Genre`: the performer's musical genre
-* `Genre2`: different genre classification (includes "other")
+* `Performer`: name(s) of the performer(s)
+* `Genre`: musical genre(s) of the performer(s) (13 groupings) 
+* `Genre2`: reduced genre classification (4 groups and "other")
 * `Time`: anthem length in seconds (*source not specified*)
 * `Sex`: sex of the performer(s) --- male, female, mixed
-* `sbdTime`: anthem length from sportsbettingdime.com
+* `Size` : whether the performance was a solo or group
+* `sbdTime`: anthem length from *sportsbettingdime.com*
 
 
 ## 
@@ -73,7 +74,7 @@ knitr::include_graphics("../images/SBappletdata2022.png", dpi = 125)
 
 ## Observational Units and Variables
 
-The textbook states, "So, we collected data on the length of the performance of the national anthem preceding the National Football League’s Super Bowl for games from 1980 (Super Bowl 14) to 2019 (Super Bowl 53). Based on the dataset description in the book and **Table P.2.1** ...
+"So, we collected data on the length of the performance of the national anthem preceding the [NFL's] Super Bowl for games from 1980 (Super Bowl 14) to 2019 (Super Bowl 53). Based on the dataset description in the book and **Table P.2.1** ...
 
 * What are the *observational units* in this dataset?
 
@@ -98,7 +99,7 @@ The textbook states, "So, we collected data on the length of the performance of 
 
 * **shape** (symmetric? skewed? mound-shaped? clusters?)
 * **center** (middle or "typical" value/values; mean and median)
-* **spread** (more properly called variability; SD and range)
+* **spread** (more properly called variability; SD, IQR, and range)
 * **unusual observations** (was someone very quick/very slow?)
 
 *Shape, center, and spread describe the pattern of the distribution. Unusual observations are deviations from the pattern.*

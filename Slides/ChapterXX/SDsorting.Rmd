@@ -149,11 +149,11 @@ $$\text{standard deviation} = SD = \sqrt{\frac{\sum{(point - mean)^2}}{n-1}}$$
 
 See the provided Google Sheet for the rest of the calculation of standard deviation for Plot D and the data for all six plots.
 
-You can also put the data into the [Descriptive Statistics](https://www.isi-stats.com/isi2nd/ISIapplets2021.html) applet to visualize the plots together and calculate standard deviation.  
+You can put the *stacked* plot data into the [Descriptive Statistics](https://www.isi-stats.com/isi2nd/ISIapplets2021.html) applet to visualize the plots together and calculate SD.  
 
 <hr>
 
-Note: We will once again consider positive vs. negative distance from the mean in Chapter 1 when we learn about *z*-scores.
+Note: We will revisit the concept of positive vs. negative distance from the mean in Chapter 1 when we learn about $z$-scores.
 
 
 ## 

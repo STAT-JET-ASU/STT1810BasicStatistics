@@ -79,3 +79,16 @@ In addition, in order to convey mastery of relevant goals:
 ```{r}
 knitr::include_graphics("../images/RubricGrid.jpg")
 ```
+
+
+## Example Rubric Items
+
+```{r}
+knitr::include_graphics("../images/RubricExamples.png", dpi = 110)
+```
+
+
+## Reference
+
+Donati, A., Linkous, C., Ryals, C., & Spanier, S. (2024). Redefining Grades as Feedback, Not a Finish Line. ***Mathematics Teacher: Learning and Teaching PK-12***, 117(6), 406-414. Retrieved Sep 10, 2024, from https://doi.org/10.5951/MTLT.2023.0286
+

@@ -267,7 +267,7 @@ ggplot(sbdata, aes(x = Year, y = Time, shape = Sex, color = Sex)) +
 
 ## *Think About It #1*
 
-* [Country Music Hall of Fame performer Reba McEntire sang the National Anthem at the 2024 Super Bowl.](https://ew.com/super-bowl-2024-performers-usher-halftime-reba-mcentire-national-anthem-8546391) 
+* [Country Music Hall of Fame performer Reba McEntire sang the national anthem at the 2024 Super Bowl.](https://ew.com/super-bowl-2024-performers-usher-halftime-reba-mcentire-national-anthem-8546391) 
 
 * How could we use the data we have to make a prediction about how long her performance will last?
 

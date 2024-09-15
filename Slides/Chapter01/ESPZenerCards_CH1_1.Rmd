@@ -1,0 +1,65 @@
+---
+title: "Do You Have ESP?<br>Using a Chance Model"
+subtitle: "Zener Card Data Collection & Exploration"
+author: "Jill E. Thomley | **STT 1810 BASIC STATISTICS** | Appalachian State University"
+date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
+output: 
+  ioslides_presentation:
+    logo: ../images/logoASU.jpg
+---
+
+```{r global_options, include = FALSE}
+knitr::opts_chunk$set(
+  message = FALSE,
+  warning = FALSE,
+  comment = NA
+)
+```
+
+
+## Example: Recall Our [ESP Test](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/ChapterXX/ESPZenerCards.html)
+
+***Example:*** If we did a test where someone was presented with 25 cards to guess, how many would they have to get right to make you get suspicious that “something else is going on” besides just random guessing? We can now formally test this.
+
+Let $\pi$ be the long-term probability of correctly identifying a card.
+
+$$H_0: \pi = 0.20 \text{ (guessing)}$$ 
+
+$$H_a: \pi > 0.20 \text{ (has ESP)}$$
+
+Suppose I correctly identified 9 cards. My sample proportion is therefore $\hat{p} = 9/25 = 0.36.$
+
+What *strength of evidence* is provided by these ESP test results?
+
+
+## Simulate and Measure Strength
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("../images/OneProportionAppletZenerB.png", dpi = 140)
+```
+
+
+## Strength of Evidence / Conclusions
+
+The estimated *p*-value from my simulation is 0.0490. The results are statistically significant --- that is, unlikely to be due to chance alone. The chance model is thus *implausible* in this situation. We will conclude $H_a$ instead. I have ESP!
+
+| Magnitude               | Guideline for Inference                                     |
+|-------------------------|-------------------------------------------------------------|
+| *p*-value > 0.10        | not much evidence; $H_0$ is plausible                       |
+| 0.05 < *p*-value ≤ 0.10 | moderate evidence against $H_0$                             |
+| 0.01 < *p*-value ≤ 0.05 | strong evidence against $H_0$ **&larr; 0.0490 falls here!** |
+| *p*-value ≤ 0.01        | very strong evidence against $H_0$                          |
+
+
+## Generalization
+
+*Okay, so maybe I don't have ESP... *
+
+From a probability point of view, we *did* reject the plausibility of the chance model, but the breath of our conclusions are limited by the nature of the experiment and our sample.
+
+It's still *possible* that the results were due to random chance and we drew an incorrect decision based on the data.
+
+If our data and testing process lead us to declare our results to be statistically significant and we reject $H_0$ (the chance model), but the study outcomes are actually due solely to chance, that is called a *Type I Error*. We will discuss this more in Section 1.4.
+
+Look back and ahead: how can we improve our data collection?
+

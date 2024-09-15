@@ -157,7 +157,7 @@ You may be wondering: why this particular probability? What's so special about i
 
 ## So Why 0.05?
 
-Ronald Fisher wrote *Statistical Methods for Research Workers* in 1925 and he chose 1 in 20 (5%) as his general guide, because it typically corresponds to roughly two standard deviations from the expected value. (*Though not without some controversy...*)
+Ronald Fisher wrote *Statistical Methods for Research Workers* in 1925 and he chose 1 in 20 (5%) as his general guide, because it typically corresponds to roughly two standard deviations from the expected value. (*Though not without some [controversy](https://www.scientificamerican.com/article/the-significant-problem-of-p-values/)...*)
 
 ```{r, echo = FALSE, fig.align="center"}
 knitr::include_graphics("../images/fisherpvaluequote.png", dpi = 70)
@@ -206,11 +206,9 @@ knitr::include_graphics("../images/OneProportionAppletV2.png", dpi = 120)
 ```
 
 
-## So remember...
+## So remember, our general rule...
 
 ```{r, echo = FALSE, fig.align="center"}
 knitr::include_graphics("../images/freddiemercurypvalue.jfif")
 ```
-
-
 

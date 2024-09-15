@@ -123,13 +123,13 @@ $n$ : sample size; the number of observational units in the sample
 
 In the field of Statistics, a test of significance is a procedure for measuring the strength of evidence against our null hypothesis regarding the parameter of interest.
 
-(1) make a claim about the parameter of interest ($H_0$ and $H_a$)
-(2) gather and explore data
-(3) follow the **3S** strategy to 
+(1) Make a claim about the parameter of interest ($H_0$ and $H_a$)
+(2) Gather and explore data
+(3) Follow the **3S** strategy to 
     * calculate an observed ***Statistic*** from the data
     * ***Simulate*** a null distribution (*scenario assuming $H_0$ is true*)
     * compare the observed statistic to the null distribution to measure the ***Strength of evidence*** it provides *against* $H_0$.  
-(4) draw a conclusion about the plausibility of $H_0$
+(4) Draw a conclusion about the plausibility of $H_0$
 
 
 ## Quantifying Strength of Evidence

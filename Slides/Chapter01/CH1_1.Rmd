@@ -29,10 +29,12 @@ See [AsULearn](https://asulearn.appstate.edu/) for supplemental readings, videos
 ## 
 
 ```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("../images/statisticsgrammar.jpg", dpi = 150)
+knitr::include_graphics("../images/statisticsgrammar.jpg", dpi = 160)
 ```
 
-Grammar gives us rules that are essential for shared language. Statistics provides frameworks and methods to help make sense of the complex language of data. Thus, researchers can *quantify uncertainty*, *validate hypotheses*, and *draw valid conclusions*. 
+*Grammar gives us rules that are essential for any shared language.* 
+
+Statistics provides frameworks and methods to help make sense of the complex language of data. Thus, researchers can *quantify uncertainty*, *validate hypotheses*, and *draw valid conclusions*. 
 
 
 ## Recall: Spiral Approach & Four Pillars
@@ -138,7 +140,7 @@ We often use cards, coins, dice, and spinners to help us model random processes,
 
 ***Example 1:*** For the ESP test we did, one condition was using an open deck (*sampling with replacement*) so that the probability of random guessing on each trial would stay the same. We also assumed there was no other way for someone to know which card was drawn (e.g., marked cards, cheating).
 
-***Example 2:*** For the Monty Hall game, we assumed that the prize was equally likely to be placed behind any of the three doors. In our extended version, a condition was that we also opened all of the unchosen doors *except one* after the initial guess.
+***Example 2:*** For the Monty Hall game, we assumed that the prize was equally likely to be placed behind any of the three doors. In our extended version, another condition was that we opened all of the unchosen doors *except one* after the initial guess.
 
 
 ## 
@@ -158,7 +160,7 @@ The *long-run* probability of winning the game if you switch is the parameter fo
 
 **sample:** the set of observational units on which we collect data
 
-***Example 1:*** One card presented for identification in our Zener card ESP test is an observational unit. The sample is the total number of cards we attempt in the test.
+***Example 1:*** One card presented for identification in our Zener card ESP test is an observational unit. The sample is the total number of cards a person attempts in the test.
 
 ***Example 2:*** Playing one round of the Monty Hall game is a unit; the number of rounds we play is the sample size.
 
@@ -167,7 +169,7 @@ The *long-run* probability of winning the game if you switch is the parameter fo
 
 ***Example 1:*** For our ESP test, we attempted $n = 25$ cards. Since we took the test twice under identical conditions, we could put the data together for a sample of $n = 50$.
 
-***Example2:*** We initially did $n = 15$ trials of the Monty Hall game. Later, we increased to $n = 100$ and $n = 1000$ trials.
+***Example 2:*** We initially did $n = 15$ trials of the Monty Hall game. Later, we increased to $n = 100$ and $n = 1000$ trials.
 
 
 ##

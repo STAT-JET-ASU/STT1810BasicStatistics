@@ -1,6 +1,6 @@
 ---
 title: "Course Introduction F24"
-subtitle: "Introduction and Overview of Course Material"
+subtitle: "Introduction and Overview of F24 Course Material"
 author: "Jill E. Thomley | **STT 1810 BASIC STATISTICS** | Appalachian State University"
 date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
 output: 

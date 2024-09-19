@@ -20,6 +20,15 @@ library(fontawesome)
 ```
 
 
+## Why Research Ethics Training?
+
+The 1946--1947 [*Doctors' Trial*](https://encyclopedia.ushmm.org/content/en/article/the-doctors-trial-the-medical-case-of-the-subsequent-nuremberg-proceedings) was one of twelve war-crimes trials commonly called the *Nuremberg Trials*. Unspeakable horrors had been perpetrated human beings, framed as "medical" research. Unfortunately, these kinds of grossly unethical actions were not limited to the years of WWII, nor isolated to Nazi territory... You will learn about the history and development of human subjects research protections in the United States.
+
+```{r image_grobs, fig.show = "hold", out.width = "50%", fig.align = "default"}
+knitr::include_graphics(c("images/doctorstrial.jpg", "images/tuskegeeexperiment.jpg"))
+```
+
+
 ## CITI Training Website
 
 Go to [https://about.citiprogram.org/](https://about.citiprogram.org/) and choose **Register**.
@@ -33,8 +42,8 @@ knitr::include_graphics("images/CITI_01.jpg", dpi = 200)
 
 Choose **Select Your Organizational Affiliation** to get started.
 
-```{r}
-knitr::include_graphics("images/CITI_02.jpg", dpi = 115)
+```{r out.width = "100%"}
+knitr::include_graphics("images/CITI_02.jpg")
 ```
 
 
@@ -42,8 +51,8 @@ knitr::include_graphics("images/CITI_02.jpg", dpi = 115)
 
 Search for and choose **Appalachian State University (SSO)**. You will be able to sign in with your usual ASU login and password.
 
-```{r}
-knitr::include_graphics("images/CITI_03.jpg", dpi = 115)
+```{r out.width = "100%"}
+knitr::include_graphics("images/CITI_03.jpg")
 ```
 
 
@@ -91,15 +100,6 @@ Click **Social & Behavioral Research Investigators...**, then **Next**.
 
 ```{r}
 knitr::include_graphics("images/CITI_08.jpg", dpi = 125)
-```
-
-
-## Ready to Begin
-
-You should now see the **Social/Behavioral Research Course** in your list of available courses. You do not have to complete the entire course in one sitting. CITI will save your progress.
-
-```{r}
-knitr::include_graphics("images/CITI_09.jpg", dpi = 125)
 ```
 
 
@@ -200,3 +200,4 @@ knitr::include_graphics("images/CITI_18.jpg", dpi = 120)
 <hr>
 <p style="text-align: center; font-size: 36px;">Congratulations on your achievement!</p>
 <hr>
+

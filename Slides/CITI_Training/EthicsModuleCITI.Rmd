@@ -1,5 +1,5 @@
 ---
-title: "Human Subjects Ethics"
+title: "Research Ethics Training"
 subtitle: "Collaborative Institutional Training Initiative (CITI)"
 author: "Jill E. Thomley | **STT 1810 BASIC STATISTICS** | Appalachian State University"
 date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
@@ -16,14 +16,8 @@ knitr::opts_chunk$set(
   echo = FALSE,
   fig.align = "center"
 )
+library(fontawesome)
 ```
-
-## 
-
-
-
-
-
 
 
 ## CITI Training Website
@@ -194,11 +188,15 @@ knitr::include_graphics("images/CITI_17.jpg", dpi = 150)
 
 ## 
 
-Use the **Copy** button to copy the link for submission.
+Click on the **Copy `r fa(name = "copy")`** button to copy the link for your submission.
 
 ```{r}
 knitr::include_graphics("images/CITI_18.jpg", dpi = 120)
 ```
 
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 
-
+<hr>
+<p style="text-align: center; font-size: 36px;">Congratulations on your achievement!</p>
+<hr>

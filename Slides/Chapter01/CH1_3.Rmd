@@ -66,6 +66,8 @@ knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
 * Calculate a standardized statistic for a single proportion and evaluate the strength of evidence it provides against a null hypothesis. [Section 1.3]
 * Describe how the distance of the observed statistic from the parameter value specified by the null hypothesis, sample size, and one- vs. two-sided tests affect the strength of evidence against the null hypothesis. [Section 1.4]
 
+<hr>
+
 We will not cover Section 1.5, which introduces a theory-based method of inference for a single proportion.
 
 
@@ -88,7 +90,7 @@ We will not cover Section 1.5, which introduces a theory-based method of inferen
 (5) Measure the strength of evidence that the observed statistic provides against Ho (using the null distribution as a "ruler")
 (6) Draw a conclusion about the null hypothesis 
 
-*Recall that steps 3, 4, and 5 are the components of the 3S process!*
+*Recall that steps 3, 4, and 5 are the components of the **3S process!***
 
 
 ## Section 1.3 New Vocabulary
@@ -97,9 +99,26 @@ We will not cover Section 1.5, which introduces a theory-based method of inferen
 
 $$\text{std. statistic} = \frac{\text{statistic} - \text{mean of null distribution}}{\text{SD of null distribution}}$$
 
-Mathematically, this is similar to transforming °F to °C --- it's a new scale that doesn't change the *meaning* of the data. 
+<p>&nbsp;<p>
 
-When performing this rescaling, the *units of measurement* cancel out, which is why it's *standardized* and applicable across a broad range of possible problems. // The value tells us how many SDs the observed statistic is above or below the hypothesized mean.
+The standardized statistic tells us how many SDs above or below the hypothesized mean the observed statistic is.
+
+<hr>
+
+The standardized value is also often referred to as the ***z*-score.**
+
+<hr>
+
+
+## 
+
+Mathematically, standardizing is similar to transforming °F to °C. It's a new numerical scale for expressing the quantity, but it does not change the *meaning* of the actual data values. 
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("../images/temprescaling.png", dpi = 130)
+```
+
+When doing this rescaling, the original *units of measurement* for the data cancel out, which is why it's *standardized* and applicable across a broad range of possible problems. 
 
 
 ## Example: Recall Our [ESP Test](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/ChapterXX/ESPZenerCards.html)
@@ -114,7 +133,7 @@ The mean of the null distribution is 0.20 and the SD is 0.08 (*see next slide*).
 
 $$\text{standardized statistic} = z = \frac{9/25 - 0.20}{0.08} = 2.0$$
 
-Since $z = 2.0$, my result is two standard deviations above the mean; i.e., *two times (twice) the average distance from the mean*.
+Since $z = 2.0$, my result is two standard deviations above the mean (i.e., *two times (twice) the average distance from the mean*).
 
 
 ## 
@@ -130,7 +149,6 @@ knitr::include_graphics("../images/OneProportionAppletZener.png", dpi = 150)
 
 | Cards Correct | Proportion Correct | Standardized Score ($z$)    |
 |:-------------:|:------------------:|:---------------------------:|
-| $0$           | $0.00$             |$(0.00 - 0.20) / 0.08 = -2.5$|
 | $1$           | $0.04$             |$(0.04 - 0.20) / 0.08 = -2.0$|
 | $3$           | $0.12$             |$(0.12 - 0.20) / 0.08 = -1.0$|
 | $5$           | $0.20$             |$(0.20 - 0.20) / 0.08 =  0.0$|
@@ -156,7 +174,7 @@ As with $p$-values, there are some guidelines for interpretation. A large standa
 
 My result of 9 (36%) cards correct, with its $z$-score of 2, would be considered *statistically significant*. In other words, it is unlikely to be the result of just random chance. With such strong evidence, I would say the chance model is *implausible*. I have ESP! 
 
-We can see from the various calculations that 9 or more correct would lead to us rejecting $H_0$. Nine (9) correct cards out of 25 is 2 SDs above the mean. Eleven cards is 3SDs. Getting all 25 cards correct is a remarkable 10 SDs above the mean!
+We can see from the various calculations that 9 or more correct would lead to us rejecting $H_0$. Nine (9) correct cards out of 25 is 2 SDs above the mean. Eleven cards is 3SDs. Getting all 25 cards correct is a remarkable TEN (10) SDs above the mean!
 
 A phenomena called "psi-missing" refers to doing much *less* well than chance on an ESP-type test. We would use $H_a: \pi < 0.20$ in this case. What number(s) of cards correct would indicate psi-missing, if we use a $z$-score to measure strength?
 

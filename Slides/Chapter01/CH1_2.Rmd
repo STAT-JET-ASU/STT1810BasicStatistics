@@ -207,11 +207,67 @@ knitr::include_graphics("../images/OneProportionAppletV1.png", dpi = 120)
 
 ## 
 
-If you enter a probability value other than 0.5, the labels change.
+If you enter a probability value other than 0.5, the labels change, even if you go back to 0.5. Notice the more general phrasing...
 
 ```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("../images/OneProportionAppletV2.png", dpi = 120)
+knitr::include_graphics("../images/OneProportionAppletV2.png", dpi = 135)
 ```
+
+
+## Example: Recall Our [ESP Test](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/ChapterXX/ESPZenerCards.html)
+
+For our ESP test using Zener cards, the parameter of interest is $\pi$ = the long-run probability that the person who is being tested can correctly identify the symbol on a card. Our two options are:
+
+* the person is just randomly guessing and therefore $\pi$ = 0.20
+* the person is not guessing and $\pi$ > 0.20 (*better than* guessing)
+
+These two options lead to our null and alternative hypotheses, expressed below in statistical language.
+
+<hr>
+
+$$H_o: \pi = 0.20$$
+
+$$H_a: \pi > 0.20$$
+
+<hr>
+
+
+## The 3S Process
+
+
+**Statistic:** Say I get 9 of 25 cards correct (36%) on my ESP test. We usually use the success proportion as our statistic: $\hat{p} = 0.36$.
+
+**Simulate:** We can simulate a null distribution for our Zener card ESP test using our [One Proportion](http://www.isi-stats.com/isi2nd/ISIapplets2021.html) applet, assuming the person is just guessing. We would set $\pi = 0.20$ and $n = 25$, with 1000 or more samples (repetitions). 
+
+To calculate the *p*-value after simulating the null hypothesis, we will how many simulated samples that are $\ge \hat{p} = 0.36$, since that is the direction indicated in our alternative hypothesis.
+
+In other words, if the actual statistic is unusually large compared to the simulated values that assume pure randomness, then it is evidence that I am *not* randomly guessing.
+
+
+## 
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("../images/OneProportionAppletZenerB.png", dpi = 125)
+```
+
+
+##
+
+**Strength of Evidence:** From my simulation, I obtained a *p*-value of **0.0490**. My actual statistic is located somewhat far out in the upper (right) tail, as we can see on the simulation plot.
+
+According to our guidelines, I have **strong evidence** against the null hypothesis. My results are **statistically significant** (unlikely to be due to just random chance). Therefore, I will reject $H_o$.
+
+| Magnitude               | Guideline for Inference                                           |
+|-------------------------|-------------------------------------------------------------------|
+| *p*-value > 0.10        | not much evidence against the null hypothesis                     |
+| 0.05 < *p*-value ≤ 0.10 | moderate evidence against the null hypothesis                     |
+| 0.01 < *p*-value ≤ 0.05 | strong evidence against the null hypothesis                       |
+| *p*-value ≤ 0.01        | very strong evidence against the null hypothesis                  |
+
+
+## What Does It Mean To Reject $H_o$?
+
+TBA
 
 
 ## So remember our general rule...
@@ -223,3 +279,4 @@ knitr::include_graphics("../images/freddiemercurypvalue.jfif")
 ```
 
 <p style="text-align:center; font-size: 12px;">With all due respect to the [late, great Freddie Mercury](https://youtu.be/FP808MiJUcM).</p>
+

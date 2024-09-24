@@ -66,6 +66,8 @@ knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
 * Calculate a standardized statistic for a single proportion and evaluate the strength of evidence it provides against a null hypothesis. [Section 1.3]
 * Describe how the distance of the observed statistic from the parameter value specified by the null hypothesis, sample size, and one- vs. two-sided tests affect the strength of evidence against the null hypothesis. [Section 1.4]
 
+<hr>
+
 We will not cover Section 1.5, which introduces a theory-based method of inference for a single proportion.
 
 
@@ -84,29 +86,33 @@ We will not cover Section 1.5, which introduces a theory-based method of inferen
 
 **binary variable:** a categorical variable with only two outcomes
 
-* we can regroup multiple outcomes into two categories
-* one of the groups would be defined as a “success” 
-* the other group would be defined as a “failure”
+* we can regroup multiple outcomes into **two** categories
+* one of the categories would be defined as a “success” 
+* the other category would be defined as a “failure”
+
+<hr>
 
 ***Example 1:*** The outcome of one coin flip (heads vs. tails) is a very common binary variable. In a pre-game coin flip in football, one team designates what will be a "success" by calling heads or tails before the flip occurs.
 
-***Example 2:*** The six possible numbers resulting from one roll of a six-sided die can be regrouped into odd vs. even numbers. We could then designate evens as the "success" if that is what our research question is interested in.
+***Example 2:*** The six possible numbers that result from one roll of a six-sided die can be regrouped into odd vs. even numbers. We could then designate even numbers as the "success".
 
 
 ##
 
 An essential part of our statistical ***logic of inference*** is creating a pair of opposing hypotheses that make statements regarding a parameter of the random process we are investigating.
 
-*Recall from our Section 1.1 vocabulary: a parameter is a long-run numerical property of some real-world random process.*
+Recall from our Section 1.1 vocabulary: *a **parameter** is a long-run numerical property of some real-world random process.*
+
+<hr>
 
 **null hypothesis ($H_0$) :** "by chance alone" or "there is no effect" explanation, which can be modeled by random simulation
 
-**null distribution :** a distribution of simulated statistics that are a representation of what *could have* happened in the actual study if the null hypothesis were true (we *assume* $H_0$ is true when we conduct a simulation)
+**null distribution :** a distribution of simulated statistics that are a representation of what *could have* happened in the actual study if $H_0$ were true (we *assume* $H_0$ is true in the simulation)
 
 **alternative hypothesis ($H_a$) :** "not by chance alone" or "there is an effect" explanation, typically reflects our research conjecture (it is also sometimes referred to as the *research hypothesis*)
 
 
-## Symbols
+## Statistical Symbols
 
 We often use symbols to communicate or represent different quantities in a statistical analysis or to express our hypotheses. 
 
@@ -134,11 +140,11 @@ In the field of Statistics, a test of significance is a procedure for measuring 
 
 ## Quantifying Strength of Evidence
 
-One way to assess strength is to use a *p*-value. The ***p*** stands for *probability*---it is the probability of getting a purely random value of the statistic that is at least as extreme (*in the $H_a$ direction*) as the observed statistic, assuming $H_0$ is true.
+Our *p*-value is the probability of getting a purely random value of a statistic that is at least as extreme (*in the $H_a$ direction*) as the observed statistic we are assessing---assuming $H_0$ is true.
 
 | Magnitude               | Guideline for Inference                                           |
 |-------------------------|-------------------------------------------------------------------|
-| *p*-value > 0.10        | not much evidence against the null hypothesis; $H_0$ is plausible |
+| *p*-value > 0.10        | not much evidence against the null hypothesis                     |
 | 0.05 < *p*-value ≤ 0.10 | moderate evidence against the null hypothesis                     |
 | 0.01 < *p*-value ≤ 0.05 | strong evidence against the null hypothesis                       |
 | *p*-value ≤ 0.01        | very strong evidence against the null hypothesis                  |
@@ -146,16 +152,18 @@ One way to assess strength is to use a *p*-value. The ***p*** stands for *probab
 
 ## Additional Guidelines (*p*-value &leq; 0.05)
 
-Researchers across a variety of disciplines consider a *p*-value less than or equal to 0.05 (i.e., at most a 5% chance) to be the threshold where we can claim data have ***statistical significance*** and declare the chance model ($H_0$) to be implausible. 
+Researchers across many of disciplines consider *p*-value ≤ 0.05 (i.e., ≤ 5% chance) to be the threshold where we can claim data have ***statistical significance*** and declare the chance model ($H_0$) to be implausible. 
 
-A *p*-value ≤ 0.05 corresponds to *strong* or *very strong evidence* against the null hypothesis in our textbook guidelines.
+A *p*-value ≤ 0.05 indicates we have *strong* or *very strong evidence* against the null hypothesis in our textbook guidelines.
 
-However, in some situations you may want stronger evidence. For example, in medicine, rejecting $H_0$ may have life or death consequences, so researchers could choose to use a value like 0.01 (*very strong evidence*) instead when assessing data.
+In some situations you may want or need stronger evidence. For example, rejecting $H_0$ may have life or death consequences in a medical study, so the researchers might use *p*-value ≤ 0.01 (*very strong evidence*) instead when assessing data.
+
+<hr>
 
 You may be wondering: why this particular probability? What's so special about it?
 
 
-## So Why 0.05?
+## Why 0.05?
 
 Ronald Fisher wrote *Statistical Methods for Research Workers* in 1925 and he chose 1 in 20 (5%) as his general guide, because it typically corresponds to roughly two standard deviations from the expected value. (*Though not without some [controversy](https://www.scientificamerican.com/article/the-significant-problem-of-p-values/)...*)
 
@@ -206,9 +214,12 @@ knitr::include_graphics("../images/OneProportionAppletV2.png", dpi = 120)
 ```
 
 
-## So remember, our general rule...
+## So remember our general rule...
+
+<p>&nbsp;</p>
 
 ```{r, echo = FALSE, fig.align="center"}
 knitr::include_graphics("../images/freddiemercurypvalue.jfif")
 ```
 
+<p style="text-align:center; font-size: 12px;">With all due respect to the [late, great Freddie Mercury](https://youtu.be/FP808MiJUcM).</p>

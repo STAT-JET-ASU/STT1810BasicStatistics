@@ -77,6 +77,8 @@ knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
 * Calculate a standardized statistic for a single proportion and evaluate the strength of evidence it provides against a null hypothesis. [Section 1.3]
 * Describe how the distance of the observed statistic from the parameter value specified by the null hypothesis, sample size, and one- vs. two-sided tests affect the strength of evidence against the null hypothesis. [Section 1.4]
 
+<hr>
+
 We will not cover Section 1.5, which introduces a theory-based method of inference for a single proportion.
 
 

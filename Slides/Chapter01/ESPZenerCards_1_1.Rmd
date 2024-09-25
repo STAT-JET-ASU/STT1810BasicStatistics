@@ -1,0 +1,22 @@
+---
+title: "Do You Have ESP?<br>Using a Chance Model"
+subtitle: "Zener Card Example Continuation --- Section 1.1"
+author: "Jill E. Thomley | **STT 1810 BASIC STATISTICS** | Appalachian State University"
+date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
+output: 
+  ioslides_presentation:
+    logo: ../images/logoASU.jpg
+---
+
+```{r global_options, include = FALSE}
+knitr::opts_chunk$set(
+  message = FALSE,
+  warning = FALSE,
+  comment = NA
+)
+```
+
+
+## Recall Our [ESP Test and Exploration](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/Chapter00/ESPZenerCards_P_1.html)
+
+If we did a test where someone was presented with 25 cards to identify, how many would they have to get right to make you get suspicious that “something else is going on” --- the person really has ESP, the cards are marked, etc.

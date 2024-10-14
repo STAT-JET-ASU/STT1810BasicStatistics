@@ -73,7 +73,7 @@ We will not cover Section 1.5, which introduces a theory-based method of inferen
 
 ## Learning Goals for Section 1.3
 
-* Find a standardized statistic from the observed proportion of “successes” in the data, the hypothesized mean of the null distribution (i.e., *the value of the parameter that is specified in Ho*), and standard deviation (SD) of the null distribution as produced by the ISI [One Proportion](http://www.isi-stats.com/isi2nd/ISIapplets2021.html) applet (i.e., simulation).
+* Find a standardized statistic from the observed proportion of “successes” in the data, the hypothesized mean of the null distribution, and the standard deviation (SD) of the null distribution as produced by the ISI [One Proportion](http://www.isi-stats.com/isi2nd/ISIapplets2021.html) applet.
 * Interpret a standardized statistic.
 * State a conclusion about the alternative hypothesis (and null hypothesis Ho) based on the magnitude of the standardized statistic.
 * Recognize that standardizing the statistic is an alternative measure of strength of evidence.
@@ -95,7 +95,7 @@ We will not cover Section 1.5, which introduces a theory-based method of inferen
 
 ## Section 1.3 New Vocabulary
 
-**standardize / standardized statistic:** To standardize a statistic, compute the distance of the observed statistic from the mean (hypothesized) of the null distribution, then divide by the SD of the null distribution.
+**standardize / standardized statistic:** To standardize a statistic, compute the distance of the observed statistic from the mean of the null distribution (*corresponding with $H_0$*), then divide by the standard deviation (SD) of the null distribution.
 
 $$\text{std. statistic} = \frac{\text{statistic} - \text{mean of null distribution}}{\text{SD of null distribution}}$$
 
@@ -118,65 +118,7 @@ Mathematically, standardizing is similar to transforming °F to °C. It's a new 
 knitr::include_graphics("../images/temprescaling.png", dpi = 130)
 ```
 
-When doing this rescaling, the original *units of measurement* for the data cancel out, which is why it's *standardized* and applicable across a broad range of possible problems. 
-
-
-## Example: Recall Our [ESP Test](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/ChapterXX/ESPZenerCards.html)
-
-We can [simulate](http://www.isi-stats.com/isi2nd/ISIapplets2021.html) a null distribution for our Zener card ESP test, assuming the person is just guessing ($\pi = 0.20, n = 25$). 
-
-$$H_o: \pi = 0.20$$
-
-$$H_a: \pi > 0.20$$
-
-The mean of the null distribution is 0.20 and the SD is 0.08 (*see next slide*). Suppose I identify 9 out of 25 cards correctly.
-
-$$\text{standardized statistic} = z = \frac{9/25 - 0.20}{0.08} = 2.0$$
-
-Since $z = 2.0$, my result is two standard deviations above the mean (i.e., *two times (twice) the average distance from the mean*).
-
-
-## 
-
-I used 10,000 repetitions to get a more reliable SD estimation.
-
-```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("../images/OneProportionAppletZener.png", dpi = 150)
-```
-
-
-## 
-
-| Cards Correct | Proportion Correct | Standardized Score ($z$)    |
-|:-------------:|:------------------:|:---------------------------:|
-| $1$           | $0.04$             |$(0.04 - 0.20) / 0.08 = -2.0$|
-| $3$           | $0.12$             |$(0.12 - 0.20) / 0.08 = -1.0$|
-| $5$           | $0.20$             |$(0.20 - 0.20) / 0.08 =  0.0$|
-| $7$           | $0.28$             |$(0.28 - 0.20) / 0.08 = +1.0$|
-| $9$           | $0.36$             |$(0.36 - 0.20) / 0.08 = +2.0$|
-| $11$          | $0.44$             |$(0.44 - 0.20) / 0.08 = +3.0$|
-| $13$          | $0.52$             |$(0.52 - 0.20) / 0.08 = +4.0$|
-
-
-## Quantifying Strength of Evidence
-
-As with $p$-values, there are some guidelines for interpretation. A large standardized score generally indicates the observed value is in one of the *tails* of the null distribution rather than near the center. The direction for "extreme" depends on $H_a$.
-
-| Magnitude                | Strength of Evidence                              |
-|--------------------------|---------------------------------------------------|
-| between -1.5 and +1.5    | not much evidence against the null hypothesis     |
-| below -1.5 or above +1.5 | moderate evidence against the null hypothesis     |
-| below -2.0 or above +2.0 | strong evidence against the null hypothesis       |
-| below -3.0 or above +3.0 | very strong evidence against  the null hypothesis |
-
-
-## ESP Statistical Significance
-
-My result of 9 (36%) cards correct, with its $z$-score of 2, would be considered *statistically significant*. In other words, it is unlikely to be the result of just random chance. With such strong evidence, I would say the chance model is *implausible*. I have ESP! 
-
-We can see from the various calculations that 9 or more correct would lead to us rejecting $H_0$. Nine (9) correct cards out of 25 is 2 SDs above the mean. Eleven cards is 3SDs. Getting all 25 cards correct is a remarkable TEN (10) SDs above the mean!
-
-A phenomena called "psi-missing" refers to doing much *less* well than chance on an ESP-type test. We would use $H_a: \pi < 0.20$ in this case. What number(s) of cards correct would indicate psi-missing, if we use a $z$-score to measure strength?
+When we do this rescaling, the original *units of measurement* for the data cancel out and the new units are "SDs". This is why it is *standardized* and applicable across a range of problems. 
 
 
 ## A Mound-Shaped Example

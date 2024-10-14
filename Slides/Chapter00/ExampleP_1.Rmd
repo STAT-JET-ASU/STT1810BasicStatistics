@@ -141,7 +141,7 @@ The neutral and opt-out conditions yielded higher percentages of organ donors th
 
 ::::
 
-* 82.0 / 41.8 ≈ 2 &rarr; opt-out was twice as likely to agree as opt-in
+* 82.0 / 41.8 ≈ 2 &rarr; opt-out was *twice* as likely to agree as opt-in
 * 78.6 / 41.8 ≈ 1.88 &rarr; neutral was 1.88 times as likely as opt-in 
 
 [*We will explore segmented bar graphs and risk ratios in Chapter 5.*]
@@ -153,7 +153,7 @@ Using methods that we will learn in this course, the researchers analyzed whethe
 
 This study reported strong evidence that the neutral and opt-out versions produced a higher chance of a person choosing to be a donor, as compared to the opt-in version used by many states. [*We will learn about strength of evidence in Chapter 1.*]
 
-Given the sample percentages and the sample size, they could be confident that the neutral version increases the chances a person agrees to be a donor by somewhere between 20% and 54%. [*We will learn about estimation in Chapter 3.*]
+Given the sample percentages and the sample size, they could be confident that the neutral version increases the probability a person will agree to be an organ donor by somewhere between 20% and 54%. [*We will learn about estimation in Chapter 3.*]
 
 
 ## STEP 5: Formulate Conclusions
@@ -166,7 +166,7 @@ The researchers conclude that "changes in defaults could [result in] additional 
 
 <hr>
 
-Johnson, Eric J. and Goldstein, Daniel G., Do Defaults Save Lives? (Nov 21, 2003). Science, Vol. 302, pp. 1338-1339, 2003, Available at SSRN: [https://ssrn.com/abstract=1324774](https://ssrn.com/abstract=1324774)
+Johnson, Eric J. and Goldstein, Daniel G., Do Defaults Save Lives? (Nov 21, 2003). Science, ***Vol. 302***, pp. 1338-1339, 2003. Available at SSRN: [https://ssrn.com/abstract=1324774](https://ssrn.com/abstract=1324774)
 
 
 ## STEP 6: Look Back and Ahead
@@ -184,11 +184,11 @@ Part of looking back also considers how a study relates to other similar studies
 *What other factors could impact someone's choice to be a donor?*
 
 
-## Looking Ahead: Variation in Data
+##
 
-ATS (access to transplant) score indicates the probability that a person on the U.S. transplant wait list gets a transplant from a deceased donor. Variation in scores reflects the fairness of the system. *Less* variation means *more* fairness---the probabilities are more alike for all the people on the list. We will learn about standard deviation in Section P.2. (Source: [OTPN / UNOS](https://insights.unos.org/equity-in-access/))
+An ATS (*access to transplant*) score indicates the probability that a person on the U.S. transplant waitlist will get a transplant from a deceased donor. Variation in ATS scores reflects system fairness. *Less* variation means *more* fairness---the probabilities are more alike for all people on the waitlist. We will learn about **standard deviation** in Section P.2. (Source: [OTPN / UNOS](https://insights.unos.org/equity-in-access/))
 
 ```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("../images/accesstotransplants.png", dpi = 150)
+knitr::include_graphics("../images/accesstotransplants.png", dpi = 130)
 ```
 

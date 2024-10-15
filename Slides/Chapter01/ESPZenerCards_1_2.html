@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Do You Have ESP? Strength of Evidence #1</title>
+  <title>Do You Have ESP? Strength Using p-Values</title>
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
@@ -19,7 +19,7 @@
     var SLIDE_CONFIG = {
       // Slide settings
       settings: {
-                title: 'Do You Have ESP?<br>Strength of Evidence #1',
+                title: 'Do You Have ESP?<br>Strength Using <em>p</em>-Values',
                         subtitle: 'Zener Card Example Continuation — Section 1.2',
                 useBuilds: true,
         usePrettify: true,
@@ -3157,7 +3157,7 @@ line-height: 1.9;
       <h1 data-config-title><!-- populated from slide_config.json --></h1>
       <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
       <p data-config-presenter><!-- populated from slide_config.json --></p>
-            <p style="margin-top: 6px; margin-left: -2px;">Last updated Wednesday, September 25, 2024 @ 01:51 AM</p>
+            <p style="margin-top: 6px; margin-left: -2px;">Last updated Monday, October 14, 2024 @ 08:20 PM</p>
           </hgroup>
   </slide>
 
@@ -3178,21 +3178,21 @@ line-height: 1.9;
 
 </article></slide><slide class=""><hgroup><h2></h2></hgroup><article  id="section">
 
-<p><em>Using our parameter definition and two options:</em></p>
+<p>Our hypotheses are formed from our parameter definition (\(\pi\)) and our two stated options.</p>
 
 <p>\(H_0:\) The long-term probability of correctly identifying a card is equal to \(0.20\).</p>
 
 <p>\(H_0:\) The long-term probability of correctly identifying a card is greater than \(0.20\).</p>
 
-<p><em>Rewriting our hypotheses in statistical symbols:</em></p>
+<p>We can concisely rewrite our hypotheses in statistical symbols.</p>
 
-<p>\[H_0: \pi = 0.20\]</p>
+<p>\(H_0: \pi = 0.20\)</p>
 
-<p>\[H_a: \pi &gt; 0.20\]</p>
+<p>\(H_a: \pi &gt; 0.20\)</p>
 
 <hr>
 
-<p>Now that we have established our parameter and hypotheses, we can consider the data we collected.</p>
+<p>Now that we have established our parameter and hypotheses in this context, we can consider the data we collected.</p>
 
 </article></slide><slide class=""><hgroup><h2>The 3S Process</h2></hgroup><article  id="the-3s-process">
 
@@ -3202,7 +3202,7 @@ line-height: 1.9;
 
 <p>To calculate the <em>p</em>-value after simulating the null distribution, we count how many simulated samples are \(\ge \hat{p} = 0.36\), since that is the direction indicated in our alternative hypothesis.</p>
 
-<p>MORE — P-VALUE FRACTION</p>
+<p>Once we get the count, we divide by the number of simulations to get a proportion of values \(\ge \hat{p} = 0.36\).</p>
 
 </article></slide><slide class=""><hgroup><h2></h2></hgroup><article  id="section-1">
 
@@ -3210,7 +3210,7 @@ line-height: 1.9;
 
 </article></slide><slide class=""><hgroup><h2></h2></hgroup><article  id="section-2">
 
-<p><strong>Strength of Evidence:</strong> From my simulation, I obtained a <em>p</em>-value of <strong>0.0490</strong>. My actual statistic is located somewhat far out in the upper (right) tail, as we can also see on the simulation plot.</p>
+<p><strong>Strength of Evidence:</strong> From my simulation, I obtained a <em>p</em>-value of <strong>0.0490</strong>. My actual statistic is located somewhat far out in the upper (right) tail, as we can see on the simulation plot.</p>
 
 <p>Consulting our guidelines, my <em>p</em>-value is between 0.01 and 0.05, so I have <strong>strong evidence</strong> against the null hypothesis.</p>
 
@@ -3241,19 +3241,25 @@ line-height: 1.9;
 
 </article></slide><slide class=""><hgroup><h2>What Does It Mean To Reject \(H_0\)?</h2></hgroup><article  id="what-does-it-mean-to-reject-h_0">
 
-<p>According to our guidelines, I have <strong>strong evidence</strong> against the null hypothesis. My results are <strong>statistically significant</strong> (unlikely to be due to just random chance). Therefore, I will reject \(H_o\).TBA</p>
+<p>According to our guidelines, I have strong evidence against the null hypothesis. My results are <strong>statistically significant</strong> (unlikely to be due to random chance). Therefore, I will reject \(H_0\).</p>
+
+<p>When we reject a null hypothesis, we will accept the alternative (research) hypothesis. Here, that is : &ldquo;The long-term probability of correctly identifying a card is greater than \(0.20\).&rdquo;</p>
+
+<p>Notice that the research hypothesis does not state exactly how strong my ESP ability is, just that my probability of identifying a card is better than guessing (20%)—logically, we can say it must be somewhere between 20% and 100%.</p>
+
+<p>In Chapter 3, we will learn about how to estimate the value of a parameter, to narrow down the set of possible values.</p>
 
 </article></slide><slide class=""><hgroup><h2>Generalization</h2></hgroup><article  id="generalization">
 
-<p><em>Okay, so maybe I don’t have ESP… </em></p>
+<p><em>Okay, but maybe I don’t have ESP…?</em></p>
 
 <p>From a probability point of view, we <em>did</em> reject the plausibility of the chance model, but the breath of our conclusions are limited by the nature of the experiment and our sample.</p>
 
 <p>It’s still <em>possible</em> that the results were due to random chance and we drew an incorrect decision based on the data.</p>
 
-<p>If our data and testing process lead us to declare our results to be statistically significant and we reject \(H_0\) (the chance model), but the study outcomes are actually due solely to chance, that is called a <em>Type I Error</em>. We will discuss this more in Section 1.4.</p>
+<p>If our data and testing process lead us to declare our results to be statistically significant and we reject \(H_0\) (the chance model), but the person really is just guessing, that is called a <em>Type I Error</em>. We will discuss this more in Section 1.4.</p>
 
-<p>Look back and ahead: how can we improve our data collection?</p></article></slide>
+<p><strong>Look back and ahead:</strong> how can we improve our data collection?</p></article></slide>
 
 
   <slide class="backdrop"></slide>

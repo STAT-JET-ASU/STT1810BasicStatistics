@@ -1,5 +1,5 @@
 ---
-title: "Do You Have ESP?<br>Strength of Evidence #1"
+title: "Do You Have ESP?<br>Strength Using *p*-Values"
 subtitle: "Zener Card Example Continuation --- Section 1.2"
 author: "Jill E. Thomley | **STT 1810 BASIC STATISTICS** | Appalachian State University"
 date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
@@ -33,21 +33,21 @@ These options form our null and alternative hypotheses, which we typically expre
 
 ##
 
-*Using our parameter definition and two options:*
+Our hypotheses are formed from our parameter definition ($\pi$) and our two stated options.
 
 $H_0:$ The long-term probability of correctly identifying a card is equal to $0.20$.
 
 $H_0:$ The long-term probability of correctly identifying a card is greater than $0.20$.
 
-*Rewriting our hypotheses in statistical symbols:*
+We can concisely rewrite our hypotheses in statistical symbols.
 
-$$H_0: \pi = 0.20$$ 
+$H_0: \pi = 0.20$
 
-$$H_a: \pi > 0.20$$
+$H_a: \pi > 0.20$
 
 <hr>
 
-Now that we have established our parameter and hypotheses, we can consider the data we collected. 
+Now that we have established our parameter and hypotheses in this context, we can consider the data we collected. 
 
 
 ## The 3S Process
@@ -58,7 +58,7 @@ Now that we have established our parameter and hypotheses, we can consider the d
 
 To calculate the *p*-value after simulating the null distribution, we count how many simulated samples are $\ge \hat{p} = 0.36$, since that is the direction indicated in our alternative hypothesis.
 
-MORE --- P-VALUE FRACTION
+Once we get the count, we divide by the number of simulations to get a proportion of values $\ge \hat{p} = 0.36$.
 
 
 ## 
@@ -70,7 +70,7 @@ knitr::include_graphics("../images/OneProportionAppletZenerB.png", dpi = 125)
 
 ##
 
-**Strength of Evidence:** From my simulation, I obtained a *p*-value of **0.0490**. My actual statistic is located somewhat far out in the upper (right) tail, as we can also see on the simulation plot.
+**Strength of Evidence:** From my simulation, I obtained a *p*-value of **0.0490**. My actual statistic is located somewhat far out in the upper (right) tail, as we can see on the simulation plot.
 
 Consulting our guidelines, my *p*-value is between 0.01 and 0.05, so I have **strong evidence** against the null hypothesis.
 
@@ -84,18 +84,24 @@ Consulting our guidelines, my *p*-value is between 0.01 and 0.05, so I have **st
 
 ## What Does It Mean To Reject $H_0$?
 
-According to our guidelines, I have **strong evidence** against the null hypothesis. My results are **statistically significant** (unlikely to be due to just random chance). Therefore, I will reject $H_o$.TBA
+According to our guidelines, I have strong evidence against the null hypothesis. My results are **statistically significant** (unlikely to be due to random chance). Therefore, I will reject $H_0$.
+
+When we reject a null hypothesis, we will accept the alternative (research) hypothesis. Here, that is : "The long-term probability of correctly identifying a card is greater than $0.20$."
+
+Notice that the research hypothesis does not state exactly how strong my ESP ability is, just that my probability of identifying a card is better than guessing (20%)---logically, we can say it must be somewhere between 20% and 100%.
+
+In Chapter 3, we will learn about how to estimate the value of a parameter, to narrow down the set of possible values. 
 
 
 ## Generalization
 
-*Okay, so maybe I don't have ESP... *
+*Okay, but maybe I don't have ESP...?*
 
 From a probability point of view, we *did* reject the plausibility of the chance model, but the breath of our conclusions are limited by the nature of the experiment and our sample.
 
 It's still *possible* that the results were due to random chance and we drew an incorrect decision based on the data.
 
-If our data and testing process lead us to declare our results to be statistically significant and we reject $H_0$ (the chance model), but the study outcomes are actually due solely to chance, that is called a *Type I Error*. We will discuss this more in Section 1.4.
+If our data and testing process lead us to declare our results to be statistically significant and we reject $H_0$ (the chance model), but the person really is just guessing, that is called a *Type I Error*. We will discuss this more in Section 1.4.
 
-Look back and ahead: how can we improve our data collection?
+**Look back and ahead:** how can we improve our data collection?
 

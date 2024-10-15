@@ -103,6 +103,72 @@ Three important components of a test of significance influence the strength prov
 * **one- vs. two-sided $H_a$:** Because the *p*-value for a two-sided test is about twice as large as for a one-sided test using the same data, it provides less evidence against $H_0$. (Two-sided tests are used more often in scientific practice.)
 
 
+## Example: Recall Our [ESP Test](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/ChapterXX/ESPZenerCards.html)
+
+***Example:*** We can use the [One Proportion](http://www.isi-stats.com/isi2nd/ISIapplets2021.html) applet to assess the statistical significance of our Zener card ESP test results. 
+
+$$H_0: \pi = 0.20$$
+
+$$H_a: \pi > 0.20$$
+
+Let's say my results were 6 out of 25 cards correct.
+
+* What is the *p*-value for the result of 6 out of 25 correct?
+* What if I had done a test with 50 cards and got 12 right?
+* What if I had scored 9 out of 25 correct instead of just 6?
+* What if I had tested for both psi-hitting and psi-missing? 
+
+
+## 
+
+**INITIAL:** I got 6 of 25 cards correct on my ESP test, so $\hat{p} = 0.24$.
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("../images/OneProportionAppletZenerA.png", dpi = 150)
+```
+
+
+## 
+
+**Larger Sample:** I got 12 of 50 cards correct, so $\hat{p}$ is still $0.24$, but now $n = 50$. The *p*-value is smaller (stronger evidence).
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("../images/OneProportionAppletZenerC.png", dpi = 150)
+```
+
+
+## 
+
+**Larger Proportion:** I got 9 of 25 cards correct, so $n$ is still $25$, but now $\hat{p} = 0.36$. The *p*-value is smaller (stronger evidence).
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("../images/OneProportionAppletZenerB.png", dpi = 150)
+```
+
+
+## 
+
+**Two-Sided Hypothesis:** I used a *two*-sided alternative $H_a$ vs. a *one*-sided alternative. The *p*-value is larger (weaker evidence).
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("../images/OneProportionAppletZenerD.png", dpi = 150)
+```
+
+
+## Summary of Results
+
+Each case changes one input from the baseline test. The table shows the predicted increases or decreases in the *p*-values. We always have the same $H_0$.
+
+| null             | alternative         | $n$ | $\hat{p}$ | *p*-value | change                 |
+|:----------------:|:-------------------:|:---:|:---------:|:---------:|:----------------------:|
+| $H_0:\pi = 0.20$ | $H_a:\pi > 0.20$    | 25  | 0.24      | 0.3810    | (*initial test*)       |
+| $H_0:\pi = 0.20$ | $H_a:\pi > 0.20$    | 50  | 0.24      | 0.2850    | larger sample $n$      | 
+| $H_0:\pi = 0.20$ | $H_a:\pi > 0.20$    | 25  | 0.36      | 0.0490    | more extreme $\hat{p}$ |
+| $H_0:\pi = 0.20$ | $H_a:\pi \neq 0.20$ | 25  | 0.24      | 0.6173    | two-sided $H_a$        |
+
+Remember: Smaller *p*-values provide *more* evidence against $H_0$.
+
+
 ## Type I & Type II Errors
 
 Our estimated *p*-values are probabilities, not proof. When we do a significance test, we might make a decision error. For example, a small sample size is a common reason for a Type II error.

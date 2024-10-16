@@ -134,7 +134,7 @@ The farther from zero the standardized statistic is, the stronger the evidence a
 
 ## Standardized Test Scores
 
-A common place to see standardized scores is on standardized tests or IQ tests! This is an example from the [Cora Lee Institute](https://coraleeinstitute.org/understanding-standardized-test-scores/).
+There are other kinds of standardized scores with scaled means and SDs. For example, IQ test scores are often adjusted to have a mean of 100 and SD of 15, similar to how 0 °C can be re-scaled to 32 °F. This is an example from the [Cora Lee Institute](https://coraleeinstitute.org/understanding-standardized-test-scores/).
 
 ```{r, echo = FALSE, fig.align="center"}
 knitr::include_graphics("../images/testscores.jpg", dpi = 130)

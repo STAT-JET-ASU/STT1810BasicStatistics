@@ -81,7 +81,7 @@ knitr::include_graphics("../images/OneProportionAppletZener.png", dpi = 150)
 
 ## Compute the *z*-Score
 
-Plug the mean and SD values from the Summary Statistics into their correct places, along with the statistic we computed from the data, $\hat{p} = 0.36$.
+Plug the mean (0.200) and SD (0.080) values from the Summary Statistics into their correct places in the formula, along with the statistic we computed from the data, $\hat{p} = 0.36$.
 
 <hr>
 

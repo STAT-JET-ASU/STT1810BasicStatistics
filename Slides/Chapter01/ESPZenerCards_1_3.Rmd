@@ -33,7 +33,7 @@ Suppose I correctly identified 9 cards. My sample proportion is therefore $\hat{
 
 <hr>
 
-What *strength of evidence* is provided by these ESP test results? We addressed this using the *p*-value approach in Section 1.2.
+What *strength of evidence* is provided by these ESP test results? In Section 1.2, we addressed this using the *p*-value approach.
 
 
 ## Simulate and Compute *p*-Value
@@ -57,7 +57,8 @@ The estimated *p*-value from my simulation is 0.0490. The results are statistica
 
 ## Alternative Measure of Strength
 
-***Definition***
+This time, we will use the standardized score (*z*-score) approach.
+
 <hr>
 **standardize / standardized statistic:** To standardize a statistic, compute the distance of the observed statistic from the mean, then divide by the SD of the null distribution.
 
@@ -67,12 +68,12 @@ $$\text{std. statistic} = \frac{\text{statistic} - \text{mean of null distributi
 
 We will obtain the standard deviation we need by simulating the null distribution. The settings are the same as they were for our test in Section 1.2, since the scenario is the same.  
 
-Set $\pi = 0.20$ and $n = 25$, with 1000+ samples (or repetitions).
+Set $\pi = 0.20$ and $n = 25$, with 1000+ samples (or repetitions). 
 
 
 ##
 
-I used 10,000 repetitions to get a more reliable SD estimation.
+I used 10,000 repetitions to get a more reliable estimate of SD.
 
 ```{r, echo = FALSE, fig.align="center"}
 knitr::include_graphics("../images/OneProportionAppletZener.png", dpi = 150)

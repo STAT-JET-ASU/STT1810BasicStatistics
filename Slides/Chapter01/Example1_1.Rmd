@@ -81,7 +81,7 @@ Why do we care about this?
 
 The research described here was funded by the US Navy as part of its [Marine Mammal Program](https://www.niwcpacific.navy.mil/About/Departments/Intelligence-Surveillance-and-Reconnaissance/Marine-Mammal-Program/). In the early years, beginning in 1959, scientists explored sensory and physical capabilities many species of marine animals.
 
-Today, the Navy uses bottlenose dolphins (*Tursiops truncatus*) and California sea lions (*Zalophus californianus*) for a variety of tasks, including search, recovery, detection, and security.
+Today, the Navy uses bottlenose dolphins (*Tursiops truncatus*) and California sea lions (*Zalophus californianus*) for a variety of jobs, including search, recovery, detection, and security.
 
 
 ## STEP 2: Design a Study and Collect Data
@@ -99,11 +99,11 @@ Next, Dr. Bastian changed the set-up so that Buzz had to push his button before 
 
 Bastian put a curtain across the middle of the pool. Doris could see the light; Buzz could not. Dr. Bastian turned on the light and watched to see what Doris would do. She swam near the curtain and whistled loudly. Buzz whistled back and pressed the correct button. Bastian repeated the process several times, sometimes with a steady light and sometimes with a blinking light. He kept track of Buzz's button choice on each try.
 
-**parameter:** Buzz’s actual long-run proportion (or *probability*) of pushing the correct button based on Doris’s whistles
+**parameter:** Buzz’s actual long-run proportion (or *probability*) of pushing the correct button based on whistles from Doris.
 
-**observational units:** Buzz's individual button-pushing attempts (often called *trials*)
+**observational units:** Buzz's individual button-pushing attempts (these kinds of attempts are often called *trials*)
 
-**variable of interest:** whether Buzz pushed the correct button or incorrect button on each trial (categorical, binary)
+**variable of interest:** whether Buzz pushed the correct button or incorrect button on each trial (*binary categorical variable*)
 
 **sample:** the set of observational units on which we collect data
 
@@ -119,17 +119,17 @@ knitr::include_graphics("../images/buzzdataset.png", dpi = 110)
 
 ##
 
-To summarize these results, we report a numerical summary of the sample data called a  *statistic*. 
+To summarize these results, we report a numerical summary of the sample data that we will call a  *statistic*. 
 
 **Option 1: Count of Successes**
 
-One way we can summarize the data is to report a count of how many times Buzz was correct. Here, that is $15$.
+One way we can summarize the data is to report a count of how many times Buzz was correct. The count is $15$.
 
 **Option 2: Proportion of Successes**
 
 A count can be ambiguous to interpret if we do not consider the context and take the total number of observations into account. For example, $15/16$ is much different than $15/100$. Proportion values, however, are always between $0$ and $1$.
 
-Here, that is $15/16 = 0.9375$; we can also say $93.75\%$.
+The proportion is $15/16 = 0.9375$. We can also say $93.75\%$.
 
 
 ## STEP 4: Draw Inferences
@@ -225,12 +225,12 @@ Press `Draw Samples` to generate 1000 simulated experiments...
 knitr::include_graphics("../images/fig_01_01_04B.jpg", dpi = 100)
 ```
 
-Doing a larger number of simulations gives us a better idea of the *long-run* probability for all the possible outcomes. Getting 5 to 11 correct just by guessing is relatively likely. 
+Doing a larger number of simulations gives us a better idea of the *long-run* probability for all the possible outcomes. Getting a count of 5 to 11 correct just by guessing is fairly likely (*typical*). 
 
 
 ## If We Did Infinite Simulations...
 
-True long-run probabilities of the possible outcomes 0 to 16, if Buzz is just guessing on each trial. *This requires a bit of math*...
+Below are the true long-run probabilities of getting counts of 0 to 16 correct, if Buzz is just guessing on each trial. Notice that 8 (50%) is the most common. *This requires doing a bit of math*...
 
 ```{r fig.align="center", fig.height = 3.75}
 pmf <- tibble(
@@ -260,9 +260,9 @@ ggplot(pmf, aes(x = as.factor(successes), y = probability)) +
 
 ## Let's Zoom In a Little
 
-If we zoom in on the distribution's upper tail, we can get an idea of how *very* unusual it is to get $15/16$ correct by just randomly guessing. As we said earlier, it is *possible*, but not *probable*.
+If we zoom in on the distribution's upper tail, we can get an idea of how *very* unusual it is to get $15$ trials correct by just randomly guessing. As we said earlier, it is *possible*, but not *probable*.
 
-```{r fig.align="center", fig.height = 3.5}
+```{r fig.align="center", fig.height = 3.75}
 pmf <- tibble(
   successes = 14:16,
   probability = dbinom(successes, 16, 0.5)
@@ -308,7 +308,7 @@ Okay, so what do we conclude from this?
 
 **Definition:** A result is deemed to be *statistically significant* if it is unlikely to occur solely by random chance. In other words, the chance model is an *implausible* explanation for the results that were observed in the study being evaluated. 
 
-Notice that the conclusions we make are based on probability; we *cannot* declare that we have proof either way.
+Notice that the conclusions we make are based on probability. We *cannot* declare that we have proof either way.
 
 Here, the number of correct buttons Buzz pushed is outside the typical variability we would expect if he were just guessing. That means we have strong evidence that he is not just guessing. It is therefore logical to decide that he is *not* guessing.
 
@@ -324,9 +324,9 @@ If our observed result appears to be consistent with the chance model, we say th
 * If Buzz is not guessing, then what is he actually doing? 
 * If Buzz and Doris can communicate, can other dolphins?
 
-Some conclusions will depend on how the study was designed and how we view the 16 observed attempts with regard to the bigger picture of the research question.
+Some conclusions will depend on how the study was designed and how we view this set of 16 observed attempts relative to the bigger picture of the research question.
 
-For example, we have assumed a few things about this study.
+For example, we have assumed some things about this study.
 
 * Buzz couldn’t see the light himself.
 * The type of light signal was chosen randomly so Buzz couldn’t figure out a pattern to help him decide which button to push.

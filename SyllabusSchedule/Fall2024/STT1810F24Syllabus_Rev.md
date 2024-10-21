@@ -93,7 +93,7 @@ The course textbook is ***Introduction to Statistical Investigations (2nd editio
 
 The only way to learn statistics is to **DO** statistics. Reading the textbook, watching the assigned videos, learning the vocabulary, and practicing the methods with software and data are critical to your learning and success. Our class activities and formative / summative assessments have been structured with these principles in mind. It will be easier to participate if you acquire some familiarity with the vocabulary and methods *before* we start to discuss and use them. You must "speak the language" of statistics to effectively demonstrate your knowledge. 
 
-<p style = "color: red;">**Summary of Changes:** <u>*ADDED*</u> Pre-Closure Review and Cumulative Final. <u>*DELETED*</u> Section 2.2 Practice Problems, Research/Media Analyses, and Final Cumulative Investigation. <u>*CHANGED*</u> percentage weighting for Practice Problems (30% to 35%), Chapter 1 Investigation (5% to 8%), Chapters 2 & 3 Investigation (8% to 12%), and Chapters 4 & 5 Investigation (12% to 20%).</p>
+<p style = "color: red;">**Summary of Changes:** <u>*ADDED*</u> --- Pre-Closure Review assignment and Cumulative Final Assessment. <u>*DELETED*</u> --- Section 2.2 Practice Problems, Research/Media Analyses, and Final Cumulative Investigation. <u>*CHANGED*</u> --- percentage weighting for Practice Problems (30% to 35%), Chapter 1 Investigation (5% to 8%), Chapters 2 & 3 Investigation (8% to 12%), and Chapters 4 & 5 Investigation (12% to 20%).</p>
 
 * **Practice Problems (35%):** These WileyPLUS assignments are primarily short, *formative* assessments on the current materials, designed to reinforce recently-introduced concepts and help you figure out where you need to review or seek additional help. On each assignment, you will get three tries per question. You will receive full credit (100%) if you earn **85%** or more of the possible points on a given assignment. If you earn between 60% and 85% of the possible points, your credit will be that percentage. If you earn less than 60% of the possible points, you will get no credit (0). Points earned will be calculated in WileyPLUS; credit will be manually entered into AsULearn. Late submissions are allowed through the end of the semester, for reduced points/credit. 
 
@@ -154,5 +154,5 @@ This course conforms to all Appalachian State University policies with respect t
 
 <hr>
 
-Updated Monday, October 21, 2024 @ 04:45 PM
+Updated Monday, October 21, 2024 @ 05:14 PM
 

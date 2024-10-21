@@ -3157,19 +3157,19 @@ line-height: 1.9;
       <h1 data-config-title><!-- populated from slide_config.json --></h1>
       <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
       <p data-config-presenter><!-- populated from slide_config.json --></p>
-            <p style="margin-top: 6px; margin-left: -2px;">Last updated Monday, October 14, 2024 @ 09:49 PM</p>
+            <p style="margin-top: 6px; margin-left: -2px;">Last updated Monday, October 21, 2024 @ 07:43 PM</p>
           </hgroup>
   </slide>
 
 <slide class=""><hgroup><h2>Before We Begin…</h2></hgroup><article  id="before-we-begin">
 
-<p>These slides are meant to accompany <a href='http://www.isi-stats.com/isi/index2nd.html' title=''><em>Introduction to Statistical Investigations, 2nd Edition</em></a> — Section 1.4 What Impacts Strength of Evidence?</p>
+<p>These slides were created to accompany the text <a href='http://www.isi-stats.com/isi/index2nd.html' title=''><em>Introduction to Statistical Investigations, 2nd Edition</em></a> — Section 1.4 What Impacts Strength of Evidence?</p>
 
-<p><em>This content does not replace reading the textbook section.</em> It is for class presentation and/or reference in STT 1810 Basic Statistics.</p>
+<p><em>This content does not replace reading the relevant textbook section.</em> It is for class presentation, review, and reference.</p>
 
-<p>See <a href='https://asulearn.appstate.edu/' title=''>AsULearn</a> for supplemental readings, videos, assignments, and searchable Glossary of ISI Textbook Vocabulary.</p>
+<p>See <a href='https://asulearn.appstate.edu/' title=''>AsULearn</a> for additional readings, videos, and assignments.</p>
 
-<p>These slides also include information about Type I and Type II errors that is not found in Section 1.4.</p>
+<p>These slides also include supplemental content about Type I and Type II errors that is not found in Section 1.4 of the ISI textbook.</p>
 
 </article></slide><slide class=""><hgroup><h2>Recall: Spiral Approach &amp; Four Pillars</h2></hgroup><article  id="recall-spiral-approach-four-pillars">
 
@@ -3210,7 +3210,7 @@ line-height: 1.9;
 
 </article></slide><slide class=""><hgroup><h2>Section 1.4 New Vocabulary</h2></hgroup><article  id="section-1.4-new-vocabulary">
 
-<p><strong>two-sided test / alternative hypothesis:</strong> a test of significance in which the alternative hypothesis Ha has the form &ldquo;not equal to&rdquo; or &ldquo;does not equal&rdquo; (≠) rather than less or greater (&lt; or &gt;).</p>
+<p><strong><mark>two-sided test / alternative hypothesis</mark> :</strong> a test of significance in which the alternative hypothesis Ha has the form &ldquo;not equal to&rdquo; or &ldquo;does not equal&rdquo; (≠) rather than less or greater (&lt; or &gt;).</p>
 
 <p><strong><em>Example:</em></strong> Our online ESP test mentions both &ldquo;psi-hitting&rdquo; (getting more cards correct than expected by chance) and &ldquo;psi-missing&rdquo; (getting fewer correct). If we are interested in either of those two possibilities, we would write our hypotheses as follows.</p>
 
@@ -3225,9 +3225,9 @@ line-height: 1.9;
 <p>Three important components of a test of significance influence the strength provided by the data evidence.</p>
 
 <ul>
-<li><p><strong>extremeness:</strong> The farther the observed statistic \(\hat{p}\) is from the average value of the null distribution (i.e., the value of \(\pi\) given in \(H_0\)), the more evidence there is against \(H_0\).</p></li>
-<li><p><strong>sample size:</strong> As the sample size increases (while the value of the observed sample statistic \(\hat{p}\) and our hypotheses stay the same), the strength of evidence against \(H_0\) increases.</p></li>
-<li><p><strong>one- vs. two-sided \(H_a\):</strong> Because the <em>p</em>-value for a two-sided test is about twice as large as for a one-sided test using the same data, it provides less evidence against \(H_0\). (Two-sided tests are used more often in scientific practice.)</p></li>
+<li><p><strong><mark>extremeness</mark> :</strong> The farther the observed statistic \(\hat{p}\) is from the average value of the null distribution (i.e., the value of \(\pi\) given in \(H_0\)), the more evidence there is against \(H_0\).</p></li>
+<li><p><strong><mark>sample size</mark> :</strong> As the sample size increases (while the value of the observed sample statistic \(\hat{p}\) and our hypotheses stay the same), the strength of evidence against \(H_0\) increases.</p></li>
+<li><p><strong><mark>one- vs. two-sided \(H_a\)</mark> :</strong> Because the <em>p</em>-value for a two-sided test is about twice as large as for a one-sided test using the same data, it provides less evidence against \(H_0\). (Two-sided tests are used more often in scientific practice.)</p></li>
 </ul>
 
 </article></slide><slide class=""><hgroup><h2>Type I &amp; Type II Errors</h2></hgroup><article  id="type-i-type-ii-errors">
@@ -3242,33 +3242,31 @@ Source: <a href='https://medium.com/@deepakchopra2911' title=''>Deepak Chopra | 
 
 </p>
 
+</article></slide><slide class=""><hgroup><h2>Type I Error and Significance</h2></hgroup><article  id="type-i-error-and-significance">
+
+<p>A <strong><mark>Type I error</mark></strong> happens when you conclude that your results are statistically significant when, in reality, they happened purely by chance (\(H_0\) is really true). Essentially, you had the misfortune of getting a random result that is <em>improbable</em> but not <em>impossible</em>.</p>
+
+<p>The risk of committing this error is the significance level (α) you choose. That is the value that you set at the start of your study as the decision criteria for a <em>p</em>-value, like saying strong evidence is a <em>p</em>-value ≤ 0.05 (or <em>z</em>-score &gt; 2). Significance level is commonly set at 0.05 (5%), so this is our usual chance of Type I error.</p>
+
+<p>A <strong><mark>Type II error</mark></strong> happens when \(H_0\) is genuinely false and we fail to achieve statistically significant results from our data (i.e., we decide \(H_0\) is plausible). The chance depends on many factors, including sample size and how close a false \(H_0\) is to the truth.</p>
+
 </article></slide><slide class=""><hgroup><h2>Example of Type I &amp; II Errors</h2></hgroup><article  id="example-of-type-i-ii-errors">
 
 <p>You decide to get tested for COVID-19 based on mild symptoms. There are two correct decisions and two errors that could occur. Here, the null hypothesis is that you <em>do not</em> have COVID-19.</p>
 
-<p>Unknown Truth: You DO NOT have COVID-19.</p>
+<p>The &ldquo;unknown truth&rdquo; is : You really DO NOT have COVID-19.</p>
 
 <ul>
-<li>Test says you do have the virus—<em>false positive</em> (Type I error)</li>
 <li>Test says you do not have the virus—yes, a correct decision!</li>
+<li>Test says you do have the virus—<em>false positive</em> (Type I error)</li>
 </ul>
 
-<p>Unknown Truth: You DO have COVID-19.</p>
+<p>The &ldquo;unknown truth&rdquo; is : You really DO have COVID-19.</p>
 
 <ul>
 <li>Test says you do have the virus—again, a correct decision!</li>
 <li>Test says you do not have the virus—this is a <em>false negative</em> (Type II error)</li>
-</ul>
-
-</article></slide><slide class=""><hgroup><h2>Type I Error and Significance</h2></hgroup><article  id="type-i-error-and-significance">
-
-<p>A Type I error happens when you conclude that your results are statistically significant when, in reality, they happened purely by chance. Essentially, you had the misfortune of getting a random result that is <em>improbable</em> but not <em>impossible</em>.</p>
-
-<p>The risk of committing this error is the significance level (α) you choose. That is the value that you set at the start of your study as the decision criteria for a <em>p</em>-value, like saying strong evidence is a <em>p</em>-value ≤ 0.05 (or \(z\)-score larger than 2).</p>
-
-<p>As discussed before, significance level is commonly set at 0.05 (5%). This means that your results have <em>at most</em> a 5% chance of occurring if the null hypothesis is actually true.</p>
-
-<p>Type II error depends on many factors, including the sample size and how close a false \(H_0\) is to the truth.</p></article></slide>
+</ul></article></slide>
 
 
   <slide class="backdrop"></slide>

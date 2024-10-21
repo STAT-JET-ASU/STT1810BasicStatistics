@@ -19,11 +19,11 @@ knitr::opts_chunk$set(
 
 ## Before We Begin…
 
-These slides are meant to accompany [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html) --- Section 1.3 Alternative Measure of Strength of Evidence. 
+These slides were created to accompany the text [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html) --- Section 1.3 Alternative Measure of Strength of Evidence. 
 
-*This content does not replace reading the textbook section.* It is for class presentation and/or reference in STT 1810 Basic Statistics.
+*This content does not replace reading the relevant textbook section.* It is for class presentation, review, and reference.
 
-See [AsULearn](https://asulearn.appstate.edu/) for supplemental readings, videos, assignments, and searchable Glossary of ISI Textbook Vocabulary.
+See [AsULearn](https://asulearn.appstate.edu/) for additional readings, videos, and assignments.
 
 
 ## Recall: Spiral Approach & Four Pillars
@@ -95,7 +95,7 @@ We will not cover Section 1.5, which introduces a theory-based method of inferen
 
 ## Section 1.3 New Vocabulary
 
-**standardize / standardized statistic:** To standardize a statistic, compute the distance of the observed statistic from the mean of the null distribution (*corresponding with $H_0$*), then divide by the standard deviation (SD) of the null distribution.
+**<mark>standardize / standardized statistic</mark> :** To standardize a statistic, compute the distance of the observed statistic from the mean of the null distribution (*corresponding with $H_0$*), then divide by the standard deviation (SD) of the null distribution.
 
 $$\text{std. statistic} = \frac{\text{statistic} - \text{mean of null distribution}}{\text{SD of null distribution}}$$
 
@@ -105,7 +105,7 @@ The standardized statistic tells us how many SDs above or below the hypothesized
 
 <hr>
 
-The standardized value is also often referred to as the ***z*-score.**
+The standardized value is also often referred to as the **<mark>*z*-score</mark>**.
 
 <hr>
 

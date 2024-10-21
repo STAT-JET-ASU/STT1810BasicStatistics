@@ -19,11 +19,11 @@ knitr::opts_chunk$set(
 
 ## Before We Begin…
 
-These slides are meant to accompany [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html) --- Section 1.1 Intro to Chance Models. 
+These slides were created to accompany the text [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html) --- Section 1.1 Intro to Chance Models. 
 
 *This content does not replace reading the relevant textbook section.* It is for class presentation, review, and reference.
 
-See [AsULearn](https://asulearn.appstate.edu/) for supplemental readings, videos, assignments, and searchable Glossary of ISI Textbook Vocabulary.
+See [AsULearn](https://asulearn.appstate.edu/) for additional readings, videos, and assignments.
 
 
 ## 
@@ -136,7 +136,7 @@ Study and learn these new terms so that you can communicate statistical concepts
 
 ## 
 
-**chance model:** a physical / tactile or computerized process to generate random data according to a "well-understood" set of conditions (i.e., the properties of the real-life random process we are studying; we may need to make some assumptions)
+**<mark>chance model</mark> :** a physical / tactile or computerized process to generate random data according to a "well-understood" set of conditions (i.e., the properties of the real-life random process we are studying; we may need to make some assumptions)
 
 We often use cards, coins, dice, and spinners to help us model random processes, as well as computer programs/applets.
 
@@ -147,11 +147,11 @@ We often use cards, coins, dice, and spinners to help us model random processes,
 
 ## 
 
-**parameter:** a long-run numerical property of a random process
+**<mark>parameter</mark> :** a long-run numerical property of a random process
 
 ***Example 1:*** For the ESP example, the parameter is each person's innate chance of identifying a card ($1/5$ if they do not have ESP, versus some value more than $1/5$ if they do). This is reflected in their *long-run* test performance---many more trials than 25. 
 
-Remember, the web site suggested that 50+ trials are needed to get "a reliable indication of your performance".
+Remember, the ESP test web site suggested that 50+ trials are needed to get "a reliable indication of your performance".
 
 ***Example 2:*** Across a large number of instances of the Monty Hall game, what is the probability a wins player if they switch? This is one scenario we investigated using our 1000+ simulations of the game using applets. 
 
@@ -160,14 +160,14 @@ The *long-run* probability of winning the game if you switch is the parameter fo
 
 ##
 
-**sample:** the set of observational units on which we collect data
+**<mark>sample</mark> :** the set of observational units on which we collect data
 
 ***Example 1:*** One card presented for identification in our Zener card ESP test is an observational unit. The sample is the total number of cards a person attempts in the test.
 
 ***Example 2:*** Playing one round of the Monty Hall game is a unit; the number of rounds we play is the sample size.
 
 
-**sample size:** the number of observational units $n$ in a sample
+**<mark>sample size</mark> :** the number of observational units $n$ in a sample
 
 ***Example 1:*** For our ESP test, we attempted $n = 25$ cards. Since we took the test twice under identical conditions, we could put the data together for a sample of $n = 50$.
 
@@ -176,7 +176,7 @@ The *long-run* probability of winning the game if you switch is the parameter fo
 
 ##
 
-**statistic:** a numerical value that summarizes results in a sample (i.e., results in the set of *observed data*)
+**<mark>statistic</mark> :** a numerical value that summarizes results in a sample (i.e., results in the set of *observed data*)
 
 The value of a sample *statistic* we get from observing a random process is a way to estimate the value of the process *parameter*.
 
@@ -184,7 +184,7 @@ The value of a sample *statistic* we get from observing a random process is a wa
 
 ***Example 2:*** For Monty Hall, we recorded a win (car) or loss (goat) for each individual game, then we counted the total number of wins and calculated the fraction of wins. Both are statistics. 
 
-**statistically significant:** unlikely to occur just by random chance 
+**<mark>statistically significant</mark> :** unlikely to occur just by random chance 
 
 In other words, the observed result *could* be solely a product of random chance, but it's not *likely* to be just random chance (i.e., random chance alone is not a *plausible* explanation).
 
@@ -193,11 +193,11 @@ In other words, the observed result *could* be solely a product of random chance
 
 This is a method for assessing the evidence provided by data.
 
-**Statistic:** Compute a statistic from your observed sample data. 
+**<mark>Statistic</mark> :** Compute a statistic from your observed sample data. 
 
-**Simulate:** Identify a possible "by-chance-alone" explanation for the data. Repeatedly simulate values of the statistic that *could* happen when the chance model is true---purely random results.  
+**<mark>Simulate</mark> :** Identify a possible "by-chance-alone" explanation for the data. Repeatedly simulate values of the statistic that *could* happen when the chance model is true---purely random results.  
 
-**Strength of evidence:** Compare your observed statistic to the simulated values. As you do this, consider whether the statistic from the sample data is *unlikely* when the chance model is true. 
+**<mark>Strength of evidence</mark> :** Compare your observed statistic to the simulated values. As you do this, consider whether the statistic from the sample data is *unlikely* when the chance model is true. 
 
 If we decide the observed statistic is unlikely to occur by chance alone, we can logically conclude that the observed data provide us strong evidence against the *plausibility* (i.e., the *believability* or the *credibility*) of the chance model --- but *NOT* "proof". 
 

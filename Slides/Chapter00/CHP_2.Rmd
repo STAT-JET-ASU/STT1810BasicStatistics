@@ -19,11 +19,11 @@ knitr::opts_chunk$set(
 
 ## Before We Begin…
 
-These slides are meant to accompany [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html) --- Section P.2 Exploring Data.
+These slides are meant to accompany the text [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html) --- Section P.2 Exploring Data.
 
-*This content does not replace reading the textbook section.* It is for class presentation and/or reference in STT 1810 Basic Statistics.
+*This content does not replace reading the relevant textbook section.* It is for class presentation, review, and reference.
 
-See [AsULearn](https://asulearn.appstate.edu/) for supplemental readings, videos, assignments, and searchable Glossary of ISI Textbook Vocabulary.
+See [AsULearn](https://asulearn.appstate.edu/) for additional readings, videos, and assignments.
 
 
 ## Learning Goals for Preliminaries

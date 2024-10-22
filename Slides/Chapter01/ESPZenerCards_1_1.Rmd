@@ -1,6 +1,6 @@
 ---
 title: "Do You Have ESP?<br>Using a Chance Model"
-subtitle: "Zener Card Example Continuation --- Section 1.1"
+subtitle: "Zener Card ESP Test Continuation --- Section 1.1"
 author: "Jill E. Thomley | **STT 1810 BASIC STATISTICS** | Appalachian State University"
 date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
 output: 
@@ -19,7 +19,7 @@ knitr::opts_chunk$set(
 
 ## Recall Our [ESP Test and Exploration](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/Chapter00/ESPZenerCards_P_1.html)
 
-If we did a test where someone was presented with 25 cards to identify, how many would they have to get right to make you get suspicious that “something else is going on” --- the person really has ESP, the cards are marked, etc?
+If we did a test where someone was presented with 25 cards to identify, how many would they have to get right to make you get suspicious that “something else is going on” --- the person really has ESP, the cards are marked, etc? *Remember, we are assuming that the deck contains five of each symbol on each trial.* 
 
 When we discussed this at the start of the semester, people had different ideas about how many cards the person would have to get right---but, all the answers were based in some way on what kinds of outcomes might be *probable* vs. *improbable*.
 
@@ -30,9 +30,9 @@ To learn more about what would be likely vs. unlikely to happen, we can use a ch
 
 ***Definitions***
 <hr>
-**parameter:** a long-run numerical property of a random process
+**<mark>parameter</mark> :** a long-run numerical property of a random process
 
-**probability:** the long-run proportion of times an outcome from a random process occurs (Section P.3)
+**<mark>probability</mark> :** the long-run proportion of times an outcome from a random process occurs (Section P.3)
 <hr>
 
 Here, the parameter would be the long-run probability that the person can correctly identify the symbol on a Zener card.

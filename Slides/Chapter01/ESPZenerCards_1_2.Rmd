@@ -1,6 +1,6 @@
 ---
 title: "Do You Have ESP?<br>Strength Using *p*-Values"
-subtitle: "Zener Card Example Continuation --- Section 1.2"
+subtitle: "Zener Card ESP Test Continuation --- Section 1.2"
 author: "Jill E. Thomley | **STT 1810 BASIC STATISTICS** | Appalachian State University"
 date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
 output: 
@@ -23,12 +23,12 @@ In our Zener card ESP test, the parameter of interest is the long-run probabilit
 
 <hr>
 
-Let $\pi$ be the long-term probability of correctly identifying a card. In this context, our two options are:
+Let **$\pi$** be the long-term probability of correctly identifying a card. In this context, our two options are:
 
 * the person is just randomly guessing, and therefore $\pi$ = 0.20
 * the person is not guessing and $\pi$ > 0.20 (*better than* guessing)
 
-These options form our null and alternative hypotheses, which we typically express in symbolic statistical language.
+These options form our **null and alternative hypotheses**, which we typically express in symbolic statistical language.
 
 
 ##

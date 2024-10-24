@@ -22,7 +22,7 @@ library(fontawesome)
 
 ## Why Research Ethics Training?
 
-The 1946--1947 [*Doctors' Trial*](https://encyclopedia.ushmm.org/content/en/article/the-doctors-trial-the-medical-case-of-the-subsequent-nuremberg-proceedings) was one of twelve war-crimes trials commonly called the *Nuremberg Trials*. Unspeakable horrors had been perpetrated human beings, framed as "medical" research. Unfortunately, these kinds of grossly unethical actions were not limited to the years of WWII, nor isolated to Nazi territory... You will learn about the history and development of human subjects research protections in the United States.
+The 1946--1947 [*Doctors' Trial*](https://encyclopedia.ushmm.org/content/en/article/the-doctors-trial-the-medical-case-of-the-subsequent-nuremberg-proceedings) was one of twelve WWII war-crimes trials that are known collectively as the *Nuremberg Trials*. Horrors had been committed on human beings in the name of "medical" research. Unfortunately, these kinds of grossly unethical actions were not limited to the war years, nor isolated to Nazi territory. In this training, you will learn about the development of human subjects research protections in the United States.
 
 ```{r image_grobs, fig.show = "hold", out.width = "50%", fig.align = "default"}
 knitr::include_graphics(c("images/doctorstrial.jpg", "images/tuskegeeexperiment.jpg"))

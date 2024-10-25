@@ -60,7 +60,7 @@ You need to **"speak the language"** to understand what is being taught in class
 
 * simulation
 
-When we talk about probabilities and distributions, we need to keep in mind the distinction between what is **possible** (what *can* happen) and what is **probable** (more or less *likely* to happen). 
+When we talk about probabilities and distributions, we need to keep in mind the distinction between what is **<mark>possible</mark>** (what *can* happen) and what is **<mark>probable</mark>** (what is *likely* to happen). 
 
 * If something is *impossible*, its probability is 0. 
 * If something is *certain* to happen, its probability is 1.
@@ -69,20 +69,20 @@ When we talk about probabilities and distributions, we need to keep in mind the 
 
 ## Definitions
 
-**process:** an endless series of potential observations (just about anything we want to explore can be thought of as a process)
+**<mark>process</mark> :** an endless series of potential observations (just about anything we want to explore can be thought of as a process)
 
-**random process:** a process that has unknown individual (short-term) outcomes but a long-run pattern of outcomes; we explore these patterns through repeated observation
+**<mark>random process</mark> :** a process that has unknown individual (short-term) outcomes but a long-run pattern of outcomes; we explore these patterns through repeated observation
 
-**probability:** the long-run proportion of times an outcome from a random process occurs; probability is the language we use to characterize random processes
+**<mark>probability</mark> :** the long-run proportion of times an outcome from a random process occurs; probability is the language we use to characterize random processes
 
-**probability distribution:** the long-run pattern of outcomes from a random process
+**<mark>probability distribution</mark> :** the long-run pattern of outcomes for a random process
 
-**simulation:** an artificial re-creation of a random process using a computer or tactile tools such as coins, dice, cards, or spinners
+**<mark>simulation</mark> :** an artificial re-creation of a random process using a computer or tactile tool such as coins, dice, cards, or spinners
 
 
 ## Exploration P.3 --- "Cars or Goats?"
 
-On the game show *Let’s Make a Deal* (hosted by Monty Hall), new cars were often hidden behind one of three doors. Behind the other doors were lesser prizes. The contestant picked one door, and if they chose correctly, they won the car!
+On the game show *Let’s Make a Deal* (hosted by Monty Hall), new cars were often hidden behind one of three doors. Behind each of the other doors were lesser prizes. The contestant picked one door, and if they chose correctly, they won the car!
 
 ```{r, echo = FALSE, fig.align="center"}
 knitr::include_graphics("../images/montyhalldoors.jpg", dpi = 90)
@@ -113,7 +113,7 @@ What is the *probability* of each outcome in the random process?
 
 Summarized, what is the *probability distribution* for the process?
 
-How can we simulate the random process using a computer, or alternatively tactile tools such as coins, dice, cards, or spinners?
+How can we simulate the random process using a computer, or alternatively a tactile tool like coins, dice, cards, or spinners?
 
 ```{r, echo = FALSE, fig.align="center"}
 knitr::include_graphics("../images/tactiletools.jpg", dpi = 175)

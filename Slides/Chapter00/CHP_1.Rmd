@@ -66,13 +66,13 @@ You need to **"speak the language"** to understand what is being taught in class
   *These two features of an investigation depend on **study design**.*
 
 
-## Some Essential Vocabulary
+## Essential Vocabulary
 
-**data / dataset:** the values measured or categories recorded on individual entities of interest (i.e., observational units)
+**<mark>data / dataset</mark> :** the values measured or categories recorded on individual entities of interest (i.e., observational units)
 
-**observational units:** the individual entities on which data are recorded; these may be people, objects, or repeated trials of some process like a game of chance or basketball free-throw
+**<mark>observational units</mark> :** the individual entities on which data are recorded; these may be people, objects, or repeated trials of some process like a game of chance or basketball free-throw
 
-**variables:** recorded characteristics of the observational units
+**<mark>variables</mark> :** recorded characteristics of the observational units
 
 <hr>
 
@@ -92,22 +92,22 @@ Most of the data we will work with in STT 1810 is in this format. Real life data
 
 ## 
 
-* **quantitative variable:** numerical characteristics or values on which ordinary arithmetic operations make sense (counts or measurements, which may include *units of measure*)
+* **<mark>quantitative variable</mark> :** numerical characteristics or values on which ordinary arithmetic operations make sense (counts or measurements, which may include *units of measure*)
 
-* **categorical variable:** qualitative characteristics, groupings, or category designations (essentially labels of different kinds for traits; labels may take the form of words or numbers)
+* **<mark>categorical variable</mark> :** qualitative characteristics, groupings, or category designations (essentially labels of different kinds for traits; labels may take the form of words or numbers)
 
-* **variable distribution:** describes the pattern of value/category outcomes (what values/categories are possible and how often those values/categories occur for the given variable)
+* **<mark>variable distribution</mark> :** describes the pattern of category or value outcomes (i.e., what categories or values are possible and how often they occur for the given variable)
 
 <hr>
 
-Can you think of some examples of quantitative and categorical variables you might encounter in your discipline?
+Can you think of some examples of categorical or quantitative you might encounter in your discipline?
 
-Can you think of a categorical variable that uses a number label?
+Can you think of any categorical variable that uses a numerical value as a label? One example is Banner ID.
 
 
 ## The Six-Step Method
 
-The six steps of a statistical investigation are...
+The **<mark>six steps of a statistical investigation</mark>** are...
 
 * **STEP 1:** Ask a research question.
 
@@ -265,7 +265,7 @@ The variable type is **categorical (with the possible values being "the man" or 
 
 ## Some of the Results in #2
 
-In Section P.2, we will learn how to explore data to describe and compare distributions, and to detect unusual observations. This type of exploratory data analysis (EDA) is a *must* before we try to make inferences and draw conclusions. 
+In Section P.2, we will learn how to explore data to describe and compare distributions, and to detect unusual observations. This type of <mark>exploratory data analysis (EDA)</mark> is a *must* before we try to make any inferences or draw conclusions. 
 
 ```{r, echo = FALSE, fig.align="center"}
 knitr::include_graphics("../images/whosayslovefirst.png", dpi = 175)

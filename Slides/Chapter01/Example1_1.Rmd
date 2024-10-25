@@ -110,7 +110,7 @@ Bastian put a curtain across the middle of the pool. Doris could see the light; 
 
 ## STEP 3: Explore the Data
 
-In one phase of the study, Dr. Bastian had Buzz attempt to push the correct button a total of 16 times. In this sample of 16 trials, Buzz pushed the correct button 15 out of 16 times. 
+In one phase of the study, Dr. Bastian had Buzz attempt to push the correct button a total of $16$ times. In this sample of $16$ trials, Buzz pushed the correct button $15$ out of $16$ times. 
 
 ```{r fig.align="center"}
 knitr::include_graphics("../images/buzzdataset.png", dpi = 110)
@@ -129,7 +129,7 @@ One way we can summarize the data is to report a count of how many times Buzz wa
 
 A count can be ambiguous to interpret if we do not consider the context and take the total number of observations into account. For example, $15/16$ is much different than $15/100$. Proportion values, however, are always between $0$ and $1$.
 
-The proportion is $15/16 = 0.9375$. We can also say $93.75\%$.
+The proportion is $15/16 = 0.9375$. We could also say $93.75\%$.
 
 
 ## STEP 4: Draw Inferences
@@ -140,16 +140,16 @@ The problem is, it is *possible* to get $15$ out of $16$ just by guessing.
 
 Therefore, we have two possibilities we have to consider.
 
-* Buzz is just guessing (his probability of a correct button push is 0.50) and just he got lucky in these 16 attempts.
+* Buzz is just guessing (his probability of a correct button push is $0.50$) and just he got lucky in these $16$ attempts.
 
-* Buzz is doing something other than just guessing (probability of a correct button push is really larger than 0.50).
+* Buzz is doing something other than just guessing (probability of a correct button push is really larger than $0.50$).
 
 We have to work with the data we have, so how do we choose?
 
 
 ## The Chance Model
 
-It is fairly straightforward to model what could happen if Buzz is guessing, since the chance of being correct for every trial would be 0.50 --- he has two buttons with no reason to favor either. 
+It is fairly straightforward to model what could happen if Buzz is guessing, since the chance of being correct for every trial would be $0.50$ --- he has two buttons with no reason to favor either. 
 
 We could use a coin flip as a simple physical / tacile generator.
 
@@ -160,19 +160,19 @@ knitr::include_graphics("../images/table01_01_01.png", dpi = 75)
 
 ## Running the Simulation
 
-If we flip the coin 16 times, we replicate the whole experiment once. Each flip is one *purely random guess* by Buzz.
+If we flip the coin $16$ times, we replicate the whole experiment once. Each flip is one *purely random guess* by Buzz.
 
 ```{r fig.align="center"}
 knitr::include_graphics("../images/fig_01_01_02.jpg", dpi = 100)
 ```
 
-**Simulation 1:** We flipped 11 heads (correct guesses) and 5 tails, so the simulated statistic is $11/16 = 0.6875 = 68.75\%$.
+**Simulation 1:** We flipped $11$ heads (correct guesses) and $5$ tails, so the simulated statistic is $11/16 = 0.6875 = 68.75\%$.
 
 ```{r fig.align="center"}
 knitr::include_graphics("../images/fig_01_01_03.jpg", dpi = 100)
 ```
 
-**Simulation 2:** We flipped 7 heads (correct guesses) and 9 tails, so the simulated statistic is $7/16 = 0.43875 = 43.75\%$.
+**Simulation 2:** We flipped $7$ heads (correct guesses) and $9$ tails, so the simulated statistic is $7/16 = 0.43875 = 43.75\%$.
 
 ▶ There is *variability* in our simulation results ... so what now?
 
@@ -207,7 +207,7 @@ Press `Draw Samples` to generate 100 simulated experiments...
 knitr::include_graphics("../images/fig_01_01_04A.jpg", dpi = 100)
 ```
 
-Any number of successes from 0 to 16 is *possible* if Buzz is just guessing. This plot of simulation results shows us which of the possibilities are more *probable* or *likely* to happen.
+Any number of successes from $0$ to $16$ is *possible* if Buzz is just guessing. This plot of simulation results shows us which of the possibilities are more *probable* or *likely* to happen.
 
 
 ## Doing 1000 Simulations
@@ -225,12 +225,12 @@ Press `Draw Samples` to generate 1000 simulated experiments...
 knitr::include_graphics("../images/fig_01_01_04B.jpg", dpi = 100)
 ```
 
-Doing a larger number of simulations gives us a better idea of the *long-run* probability for all the possible outcomes. Getting a count of 5 to 11 correct just by guessing is fairly likely (*typical*). 
+Doing a larger number of simulations gives us a better idea of the *long-run* probability for all the possible outcomes. Getting a count of $5$ to $11$ correct just by guessing is fairly likely (*typical*). 
 
 
 ## If We Did Infinite Simulations...
 
-Below are the true long-run probabilities of getting counts of 0 to 16 correct, if Buzz is just guessing on each trial. Notice that 8 (50%) is the most common. *This requires doing a bit of math*...
+The plot shows the true long-run probabilities of getting $0$ to $16$ correct, if Buzz is just guessing on each trial. Notice that $8$ ($50\%$) is the most common. *This requires doing a bit of math*...
 
 ```{r fig.align="center", fig.height = 3.75}
 pmf <- tibble(
@@ -299,7 +299,7 @@ Most traditional statistical methods are *approximations* that use probability t
 
 In this course, we will use simulations to approximate long-run probabilities. In many ways, simulations can be preferable and more flexible than theory-based methods.
 
-In any case, we can see that getting $15$ out of $16$ correct just by randomly guessing is a *very* rare (*very low probability*) outcome, though it is not impossible.
+In any case, we can see that getting $15$ out of $16$ correct just by randomly guessing is a *very* rare (a *very low probability*) outcome, although it is not impossible.
 
 Okay, so what do we conclude from this? 
 

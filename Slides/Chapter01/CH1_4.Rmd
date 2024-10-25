@@ -81,9 +81,9 @@ We will not cover Section 1.5, regarding theory-based inference.
 
 ## Section 1.4 New Vocabulary
 
-**<mark>two-sided test / alternative hypothesis</mark> :** a test of significance in which the alternative hypothesis Ha has the form "not equal to" or "does not equal" (≠) rather than less or greater (< or >). 
+**<mark>two-sided test / alternative hypothesis</mark> :** a test of significance in which the alternative hypothesis has the form "not equal to" or "does not equal" (≠) instead of than less or greater than (< or >). 
 
-***Example:*** Our online ESP test mentions both "psi-hitting" (getting more cards correct than expected by chance) and "psi-missing" (getting fewer correct). If we are interested in either of those two possibilities, we would write our hypotheses as follows.
+***Example:*** Our online ESP test mentions both "psi-hitting" (getting more cards correct than expected by chance) and "psi-missing" (getting fewer correct). If we are interested in both of those two possibilities, we would write our hypotheses as follows.
 
 $$H_0: \pi = 0.20$$
 
@@ -135,5 +135,4 @@ The "unknown truth" is : You really DO have COVID-19.
 
 * Test says you do have the virus---again, a correct decision!
 * Test says you do not have the virus---this is a *false negative* (Type II error)
-
 

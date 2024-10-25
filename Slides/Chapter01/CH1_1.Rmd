@@ -107,11 +107,11 @@ knitr::include_graphics("../images/molecularmodel.jpg", dpi = 110)
 
 ## Textbook Definitions
 
-**model** (mathematical) 
+**<mark>model</mark>** (mathematical) 
 
 * A mathematical or probabilistic conceptualization meant to closely match reality, but always making *assumptions* about that reality, which may or may not be true.
 
-**chance model**
+**<mark>chance model</mark>**
 
 * A real or computerized process to generate data according to a well-understood set of conditions." --- *to model some real-life random process we are interested in studying*
 
@@ -204,7 +204,7 @@ If we decide the observed statistic is unlikely to occur by chance alone, we can
 
 ## Why Not Proof?
 
-Just because we have not yet found evidence for something we are studying, that does not necessarily prove it does not exist. When we use samples, there is always some level of *uncertainty* (due to randomness) in our research findings.
+Just because we have not yet found evidence for something we are studying, that does not automatically prove it does not exist. When we use samples, there is always some level of ***uncertainty*** (due to randomness) in our research findings.
 
 ```{r, echo = FALSE, fig.align="center"}
 knitr::include_graphics("https://stat-jet-asu.github.io/Moodlepics/admin/absenceofevidence.png")

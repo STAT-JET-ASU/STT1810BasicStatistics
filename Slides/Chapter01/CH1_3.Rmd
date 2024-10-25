@@ -1,5 +1,5 @@
 ---
-title: "Section 1.3 Strength of Evidence (an Alternative)"
+title: "Section 1.3 Measuring Strength (an Alternative)"
 subtitle: "*Introduction to Statistical Investigations, 2^nd^ Edition*"
 author: "Jill E. Thomley | **STT 1810 BASIC STATISTICS** | Appalachian State University"
 date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
@@ -81,7 +81,7 @@ We will not cover Section 1.5, which introduces a theory-based method of inferen
 
 ## Recall from Section 1.2
 
-**test of significance (or significance test):** the formal process we usually use for any assessment of strength of evidence
+**<mark>test of significance (or significance test)</mark> :** the formal process we usually use for any assessment of strength of evidence
 
 (1) Make a claim about the parameter of interest ($H_0$ and $H_a$) 
 (2) Gather and explore data relevant to the claim
@@ -123,7 +123,7 @@ When we do this rescaling, the original *units of measurement* for the data canc
 
 ## A Mound-Shaped Example
 
-Notice that the center of the distribution is 0. Values *below* the mean have a negative $z$-score. Observations more than 2 or 3 SDs from the mean can be considered "in the tail".
+Notice that the center of the distribution is 0. Values *below* the mean have a negative *z*-score. Observations more than 2 or 3 SDs from the mean can be considered "in the tail".
 
 ```{r, echo = FALSE, fig.align="center", fig.cap="*standardized values on a bell-shaped distribution.*"}
 knitr::include_graphics("../images/stdstatbellcurve.png", dpi = 120)
@@ -132,11 +132,34 @@ knitr::include_graphics("../images/stdstatbellcurve.png", dpi = 120)
 The farther from zero the standardized statistic is, the stronger the evidence against the null hypothesis. Like a *p*-value, we can directly compare standardized values across datasets. 
 
 
-## Standardized Test Scores
+## Quantifying Strength of Evidence
 
-There are other kinds of standardized scores with scaled means and SDs. For example, IQ test scores are often adjusted to have a mean of 100 and SD of 15, similar to how 0 °C can be re-scaled to 32 °F. This is an example from the [Cora Lee Institute](https://coraleeinstitute.org/understanding-standardized-test-scores/).
+In this context, the **<mark>*z*-score</mark>** measures how extreme the observed statistic is relative to the value hypothesized in $H_0$. The $H_a$ will indicate whether we consider positive values (right tail) and / or negative values (left tail).
+
+| Magnitude                    | Strength of Evidence                                       |
+|------------------------------|------------------------------------------------------------|
+| *z* between -1.5 and +1.5    | **NOT MUCH** evidence against the null hypothesis $H_0$    |
+| *z* below -1.5 or above +1.5 | **MODERATE** evidence against the null hypothesis $H_0$    |
+| *z* below -2.0 or above +2.0 | **STRONG** evidence against the null hypothesis $H_0$      |
+| *z* below -3.0 or above +3.0 | **VERY STRONG** evidence against the null hypothesis $H_0$ |
+
+
+## Our General Rule
+
+<p>We will declare the chance model ***implausible*** and reject $H_0$ if...</p>
 
 ```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("../images/testscores.jpg", dpi = 130)
+knitr::include_graphics("../images/freddiemercuryzscore.jpg", dpi = 100)
+```
+
+<p style="text-align:center; font-size: 12px;">With all due respect to the [late, great Freddie Mercury](https://youtu.be/FP808MiJUcM).</p>
+
+
+## 
+
+There are other versions of standardized scores with non-zero means that you might encounter. For example, IQ test scores are often adjusted to have a mean of 100 and SD of 15, similar to how 0 °C can be re-scaled to 32 °F. This is an example from the [Cora Lee Institute](https://coraleeinstitute.org/understanding-standardized-test-scores/).
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("../images/testscores.jpg", dpi = 140)
 ```
 

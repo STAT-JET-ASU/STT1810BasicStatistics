@@ -142,17 +142,17 @@ In the field of Statistics, a **<mark>test of significance<mark>** is a procedur
 
 Our **<mark>*p*-value</mark>** is the probability of getting a purely random value of a statistic that is at least as extreme (*in the direction of $H_a$*) as the observed statistic we are assessing---assuming $H_0$ is true.
 
-| Magnitude               | Guideline for Inference                                           |
-|-------------------------|-------------------------------------------------------------------|
-| *p*-value > 0.10        | not much evidence against the null hypothesis                     |
-| 0.05 < *p*-value ≤ 0.10 | moderate evidence against the null hypothesis                     |
-| 0.01 < *p*-value ≤ 0.05 | strong evidence against the null hypothesis                       |
-| *p*-value ≤ 0.01        | very strong evidence against the null hypothesis                  |
+| Magnitude               | Guideline for Inference                                    |
+|-------------------------|------------------------------------------------------------|
+| *p*-value > 0.10        | **NOT MUCH** evidence against the null hypothesis $H_0$    |
+| 0.05 < *p*-value ≤ 0.10 | **MODERATE** evidence against the null hypothesis $H_0$    |
+| 0.01 < *p*-value ≤ 0.05 | **STRONG** evidence against the null hypothesis  $H_0$     |
+| *p*-value ≤ 0.01        | **VERY STRONG** evidence against the null hypothesis $H_0$ |
 
 
 ## Additional Guidelines (*p*-value &leq; 0.05)
 
-Researchers across many of disciplines consider **<mark>*p*-value ≤ 0.05</mark>** (i.e., ≤ 5% chance) to be the threshold where we can claim data have ***statistical significance*** and declare the chance model ($H_0$) to be implausible. 
+Researchers across many of disciplines consider **<mark>*p*-value ≤ 0.05</mark>** (i.e., ≤ 5% chance) to be the threshold where we can claim that the data have ***<mark>statistical significance</mark>***, declare the chance model<br>($H_0$) to be implausible, and accept $H_a$ instead. 
 
 A *p*-value ≤ 0.05 indicates we have *strong* or *very strong evidence* against the null hypothesis in our textbook guidelines.
 
@@ -214,9 +214,9 @@ knitr::include_graphics("../images/OneProportionAppletV2.png", dpi = 135)
 ```
 
 
-## Our general rule: reject $H_0$ if...
+## Our General Rule
 
-<p>&nbsp;</p>
+<p>We will declare the chance model ***implausible*** and reject $H_0$ if...</p>
 
 ```{r, echo = FALSE, fig.align="center"}
 knitr::include_graphics("../images/freddiemercurypvalue.jpg", dpi = 100)

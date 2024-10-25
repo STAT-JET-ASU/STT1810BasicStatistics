@@ -186,7 +186,7 @@ Part of looking back also considers how a study relates to other similar studies
 
 ##
 
-An ATS (*access to transplant*) score indicates the probability that a person on the U.S. transplant waitlist will get a transplant from a deceased donor. Variation in ATS scores reflects system fairness. *Less* variation means *more* fairness---the probabilities are more alike for all people on the waitlist. We will learn about **standard deviation** in Section P.2. (Source: [OTPN / UNOS](https://insights.unos.org/equity-in-access/))
+An ATS (*access to transplant*) score indicates the probability that a person on the U.S. transplant waitlist will get a transplant from a deceased donor. Variation in ATS scores reflects system fairness. *Less* variation means *more* fairness --- the probabilities are more similar for all people on the waitlist. We will explore more about **<mark>standard deviation</mark>** in Section P.2. (Source: [OTPN / UNOS](https://insights.unos.org/equity-in-access/))
 
 ```{r, echo = FALSE, fig.align="center"}
 knitr::include_graphics("../images/accesstotransplants.png", dpi = 130)

@@ -17,7 +17,7 @@ knitr::opts_chunk$set(
 ```
 
 
-## Recall Our [ESP Test and Exploration](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/Chapter00/ESPZenerCards_P_1.html)
+## Recall Our [ESP Test / Data Exploration](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/Chapter00/ESPZenerCards_P_1.html)
 
 In our Zener card example for Section 1.2, we discussed defining the parameter and formulating hypotheses.
 
@@ -29,7 +29,7 @@ $$H_0: \pi = 0.20 \text{ (guessing)}$$
 
 $$H_a: \pi > 0.20 \text{ (has ESP)}$$
 
-Suppose I correctly identified 9 cards. My sample proportion is therefore $\hat{p} = 9/25 = 0.36$.
+Suppose I correctly identified $9$ cards. My sample proportion is therefore $\hat{p} = 9/25 = 0.36$.
 
 <hr>
 
@@ -45,7 +45,7 @@ knitr::include_graphics("../images/OneProportionAppletZenerB.png", dpi = 140)
 
 ## Strength of Evidence / Conclusions
 
-The estimated *p*-value from my simulation is 0.0490. The results are statistically significant --- that is, unlikely to be due to chance alone. The chance model is thus *implausible* in this situation. We will conclude $H_a$ instead. I have ESP!
+Recall, the estimated *p*-value from my simulation is $0.0490$. The results are statistically significant --- that is, unlikely to be due to chance alone. The chance model is *implausible* in this situation. We will conclude $H_a$ instead. I have ESP!
 
 | Magnitude               | Guideline for Inference                                     |
 |-------------------------|-------------------------------------------------------------|
@@ -82,7 +82,7 @@ knitr::include_graphics("../images/OneProportionAppletZener.png", dpi = 150)
 
 ## Compute the *z*-Score
 
-Plug the mean (0.200) and SD (0.080) values from the Summary Statistics into their correct places in the formula, along with the statistic we computed from the data, $\hat{p} = 0.36$.
+Plug the mean ($0.200$) and SD ($0.080$) values from the Summary Statistics into their correct places in the formula, along with the statistic we computed from the data, $\hat{p} = 0.36$.
 
 <hr>
 

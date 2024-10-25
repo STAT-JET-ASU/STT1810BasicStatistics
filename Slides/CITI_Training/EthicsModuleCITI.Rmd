@@ -1,5 +1,5 @@
 ---
-title: "Research Ethics Training"
+title: "Human Research Ethics"
 subtitle: "Collaborative Institutional Training Initiative (CITI)"
 author: "Jill E. Thomley | **STT 1810 BASIC STATISTICS** | Appalachian State University"
 date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"

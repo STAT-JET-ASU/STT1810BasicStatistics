@@ -18,11 +18,11 @@ knitr::opts_chunk$set(
 
 ## Before We Begin…
 
-These slides are meant to accompany  [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html) --- Section 2.1 Sampling from a Finite Population: Proportions. 
+These slides are meant to accompany the text [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html) --- Section 2.1 Sampling from a Finite Population: Proportions. 
 
-*This content does not replace reading the textbook section.* It is for class presentation and/or reference in STT 1810 Basic Statistics.
+*This content does not replace reading the relevant textbook section.* It is for class presentation, review, and reference.
 
-See [AsULearn](https://asulearn.appstate.edu/) for supplemental readings, videos, assignments, and searchable Glossary of ISI Textbook Vocabulary.
+See [AsULearn](https://asulearn.appstate.edu/) for additional readings, videos, and assignments.
 
 
 ## Recall: Spiral Approach & Four Pillars
@@ -60,7 +60,7 @@ knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
 
 ## *So* ... What's Different from Chapter 1?
 
-In Chapter 1, we generated many hypothetical samples from a specified probability model to coincide with our null hypothesis $H_0$. In those cases, $\pi$ is a *hypothetical value* we assumed.
+In Chapter 1, we generated many hypothetical samples from a specified probability model to model our null hypothesis $H_0$. In those cases, $\pi$ is a *hypothetical value* we assumed.
 
 In a test of significance, we use the *hypothetical* $\pi$ to try to make an inference about an *actual population* $\pi$.
 
@@ -73,7 +73,7 @@ We will use the similarity between the two ideas in Section 3.1 to estimate a po
 
 ## Learning Goals for Chapter 2
 
-We will do Section 2.1 and Section 2.2. They introduce random samples, the idea of the sampling distributions of $\hat{p}$ and $\bar{x}$, and the ***Central Limit Theorem***.
+We will do Sections 2.1 and 2.2. They introduce the concepts of random samples, the sampling distributions of $\hat{p}$ and $\bar{x}$, and the ***Central Limit Theorem***.
 
 <hr>
 
@@ -124,45 +124,45 @@ Section 2.1 provides a foundation for the upcoming Section 3.2.
 
 ## 
 
-Recall *parameter*, *statistic*, and the other vocabulary terms we learned in Chapter 1 and the Preliminaries sections. Review as needed to make sure you have the meanings solidified, so that you can use statistical language effectively as we move on.
+Recall the terms *parameter*, *statistic*, and the other vocabulary we learned in Chapter 1 and the Preliminaries sections. Review as needed to make sure you have their meanings solidified, so that you can use statistical language effectively as we move on.
 
-**population:** the entire collection of observational units we are interested in (*as determined by the research question*)
+**<mark>population</mark> :** the entire collection of observational units we are interested in (*as determined by the research question*)
 
-**census:** when we collect data on all individuals in a population (*this is the intention of the decennial Census in the U.S.*)
+**<mark>census</mark> :** when we collect data on all individuals in a population (*this is the intention of the decennial Census in the U.S.*)
 
-**sample:** a subset of a population on which we actually observe and record data
+**<mark>sample</mark> :** a subset of a population on which we actually observe and record data
 
 *There are many ways to choose samples; some methods are better.*
 
-**convenience sample:** non-random subset of a population (e.g., voluntary response, like a phone-in or mail-in survey)
+**<mark>convenience sample</mark> :** non-random subset of a population (e.g., voluntary response, like a phone-in or mail-in survey)
 
 
 ##
 
-**random sample:** a subset of observational units chosen using a probability device or method (*not all units have to have an equal chance to be chosen, just a known probability of being chosen*)
+**<mark>random sample</mark> :** a subset of observational units chosen using a probability device or method (*not all units have to have an equal chance to be chosen, just a known probability of being chosen*)
 
-**simple random sample:** a subset of observational units chosen so that every sample of a given size $n$ is equally likely to be the sample that we select from the population (*each observational unit has the same chance of being chosen as every other unit*)
+**<mark>simple random sample</mark> :** a subset of observational units chosen so that every sample of a given size $n$ is equally likely to be the sample that we select from the population (*each observational unit has the same chance of being chosen as every other unit*)
 
 <hr> 
 
-A sampling method is considered to be ***biased*** if the statistics calculated from different samples consistently *overestimate* or consistently *underestimate* the population parameter in which we are interested. *Non-random* samples tend to be biased.
+A sampling method is considered to be ***<mark>biased</mark>*** if the statistics calculated from different samples consistently *overestimate* or consistently *underestimate* the population parameter in which we are interested. *Non-random* samples tend to be biased.
 
 <hr>
 
-**nonsampling concerns:** potential sources of bias (e.g., poorly worded survey questions, people lying) that are not related to the way the sample was selected from the population
+**<mark>nonsampling concerns</mark> :** potential sources of bias (e.g., poorly worded survey questions, people lying) that are not related to the way the sample was selected from the population
 
 
 ## 
 
-**sampling frame:** a roster or "master list" of every observational unit in a given population of interest; we need this in order to be able to choose a random sample
+**<mark>sampling frame</mark> :** a roster or "master list" of every observational unit in a given population of interest; we need this in order to be able to choose a random sample
 
-**sampling variability:** the amount that a statistic changes from sample to sample as we repeatedly observe it (*take a bunch of samples and calculate the same statistic---how different are they?*)
+**<mark>sampling variability</mark> :** the amount that a statistic changes from sample to sample as we repeatedly observe it (*take a bunch of samples and calculate the same statistic---how different are they?*)
 
-**sampling distribution:** distribution of a statistic for all possible samples of size $n$ randomly selected from the same population
+**<mark>sampling distribution</mark> :** distribution of a statistic for all possible samples of size $n$ randomly selected from the same population
 
 <hr>
 
-The ***Central Limit Theorem*** tells us that when we sample from a large finite population, the sampling distribution of the sample proportion $\hat{p}$, calculated from from repeated random samples, will be approximately normal if there are at least $10$ successes and at least $10$ failures in each sample. (*More on this to come...*)
+The ***<mark>Central Limit Theorem</mark>*** tells us that when we sample from a large finite population, the sampling distribution of the sample proportion $\hat{p}$, calculated from from repeated random samples, will be approximately normal if there are at least $10$ successes and at least $10$ failures in each sample.
 
 <hr>
 
@@ -182,7 +182,7 @@ If we take many, many random samples of the same size from a population with par
 
 ## Key Central Limit Theorem Ideas
 
-The Central Limit Theorem describes the sampling distributions of certain statistics from finite populations, like $\hat{p}$ --- if we meet the necessary criteria. 
+The Central Limit Theorem describes the sampling distributions of certain statistics. Here, we are specifically interested in finite populations like most of those we encounter in real life, with our $\hat{p}$ statistic. We must meet some necessary criteria. 
 
 * We have a large, finite population with parameter $\pi$. Here, *finite* means it is possible to count the observational units.
 
@@ -195,7 +195,7 @@ The Central Limit Theorem describes the sampling distributions of certain statis
 
 ## Shape and Center
 
-If the key CLT ideas on the previous slide are true, the sampling distribution of the sample proportion $\hat{p}$ will have the following distribution properties.
+If the key CLT criteria on the previous slide are true for a given scenario, the sampling distribution of the sample proportion $\hat{p}$ will have the following distribution properties.
 
 **shape:** The sampling distribution will be approximately normal (*unimodal and mound-shaped---the classic "bell curve"*).
 
@@ -218,7 +218,7 @@ Notice that $n$ is in the fraction denominator. For bigger sample sizes, standar
 
 *&rarr; We have seen this before, in our Chapter 1 simulations. Larger samples tend to have less variability and converge toward the long-run (population) value.*
 
-&rarr; We call the SD of a sampling distribution its ***standard error***.
+&rarr; We call the SD of a sampling distribution its ***<mark>standard error</mark>***.
 
 
 ## Two Example Calculations
@@ -275,7 +275,7 @@ $\text{sample size}(n) = 100$</center>
 |  400   |             0.50               |     0.0250      |
 |  800   |             0.50               |     0.0177      |
 
-Observe that $SD(\hat{p})$ gets progressively smaller as $n$ gets larger. If we quadruple $n$, then $SD(\hat{p})$ gets cut in half.
+<mark>Observe that $SD(\hat{p})$ gets progressively smaller as $n$ gets larger</mark>. If we quadruple $n$, then $SD(\hat{p})$ gets cut in half.
 
 
 ## Visualize $SD(\hat{p})$ for Changing $n$
@@ -347,7 +347,7 @@ ggplot(df1, aes(x = n, y = SD)) +
 |  100  |              0.75              |     0.0433      |
 |  100  |              0.90              |     0.0300      |
 
-Observe that $SD(\hat{p})$ is largest when $\pi = 0.50$ and gets smaller as $\pi$ gets closer to either $0$ or $1$. We will revisit this idea when we get to confidence interval estimation in Chapter 3.
+<mark>Observe that $SD(\hat{p})$ is largest when $\pi = 0.50$</mark> and gets smaller as $\pi$ gets closer to either $0$ or $1$. We will revisit this idea when we get to confidence interval estimation in Chapter 3.
 
 
 ## Visualize $SD(\hat{p})$ for Changing $\pi$
@@ -371,7 +371,7 @@ ggplot(df2, aes(x = pi, y = SD)) +
     "label",
     x = 0.5,
     y = 0.055,
-    label = "for any given n, the largest SD is always when π = 0.5",
+    label = "for any given sample size (n), the largest SD is always when π = 0.5",
     fill = "peachpuff"
   ) +
   annotate(

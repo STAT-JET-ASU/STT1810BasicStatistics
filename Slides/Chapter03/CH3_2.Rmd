@@ -207,7 +207,7 @@ We can also write the CI as $(0.584, 1.216)$. We know $\pi$ cannot be &geq; 1, s
 Note that all plausible values included in the interval are greater than 50%. Based on this, we can be confident in this context that the true proportion is greater than random chance.
 
 
-## Simulating the SD for Harley's Trials
+## Simulate the SD: Goodest Boy Harley
 
 ```{r, echo = FALSE, fig.align="center"}
 knitr::include_graphics("../images/harleyCIsimulationSD.png", dpi = 120)
@@ -229,7 +229,7 @@ We are $95\%$ confident that the long-run probability a person would prefer tap 
 Note that $\pi = 0.25$ is among the plausible values included in the interval. This is consistent with our failure to find statistical significance in Exploration 1.2. *Random choice is plausible.*
 
 
-## Simulating the SD for Bottled vs. Tap
+## Simulate the SD: Bottled vs. Tap water
 
 ```{r, echo = FALSE, fig.align="center"}
 knitr::include_graphics("../images/waterCIsimulationSD.png", dpi = 120)
@@ -241,7 +241,7 @@ We always use $\pi = 0.5$ to estimate SD in this CI method, even though we DID N
 
 
 
-## Flashback: Bob or Tim?
+## Flashback: Bob or Tim
 
 Combining two classes of previous STT 1810 students, 31 of 38 students $(\hat{p} = 0.816)$ assigned the name Tim to the left face. Using simulation, the estimated $SD(\hat{p}) = 0.081$.
 
@@ -252,7 +252,7 @@ We are $95\%$ confident that the long-run proportion of students who would assig
 All plausible values in the interval are greater than $50\%$. We can be confident that the true proportion $\pi$ is greater than random chance in this context, based on our experiment --- students do have a preference for saying Tim is on the left.
 
 
-## Simulating the SD for "Bob or Tim?"
+## Simulate the SD: Bob or Tim
 
 ```{r, echo = FALSE, fig.align="center"}
 knitr::include_graphics("../images/bobtimCIsimulationSD.png", dpi = 110)

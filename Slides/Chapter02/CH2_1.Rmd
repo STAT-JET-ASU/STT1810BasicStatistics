@@ -14,6 +14,7 @@ knitr::opts_chunk$set(
   warning = FALSE,
   comment = NA
 )
+library(tidyverse)
 ```
 
 ## Before We Begin…
@@ -280,8 +281,7 @@ $\text{sample size}(n) = 100$</center>
 
 ## Visualize $SD(\hat{p})$ for Changing $n$
 
-```{r echo = FALSE}
-library(tidyverse)
+```{r echo = FALSE, fig.align = "center"}
 df1 <- tibble(n = c(25, 50, 100, 200, 400, 600, 800, 1000), SD = sqrt(0.25 / n))
 ggplot(df1, aes(x = n, y = SD)) +
   geom_line() +
@@ -352,7 +352,7 @@ ggplot(df1, aes(x = n, y = SD)) +
 
 ## Visualize $SD(\hat{p})$ for Changing $\pi$
 
-```{r echo = FALSE}
+```{r echo = FALSE, fig.align = "center"}
 df2 <- tibble(pi = c(0.01, seq(0.0, 1, 0.10), 0.99), SD = sqrt((pi * (1 - pi)) / 100))
 ggplot(df2, aes(x = pi, y = SD)) +
   geom_line() +

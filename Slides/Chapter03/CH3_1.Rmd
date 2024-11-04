@@ -18,11 +18,11 @@ knitr::opts_chunk$set(
 
 ## Before We Begin…
 
-These slides are meant to accompany  [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html) --- Section 3.1 Statistical Inference: Confidence Intervals. 
+These slides are meant to accompany the text [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html) --- Section 3.1 Statistical Inference: Confidence Intervals. 
 
-*This content does not replace reading the textbook section.* It is for class presentation and/or reference in STT 1810 Basic Statistics.
+*This content does not replace reading the relevant textbook section.* It is for class presentation, review, and reference.
 
-See [AsULearn](https://asulearn.appstate.edu/) for supplemental readings, videos, assignments, and searchable Glossary of ISI Textbook Vocabulary.
+See [AsULearn](https://asulearn.appstate.edu/) for additional readings, videos, and assignments.
 
 
 ## Recall: Spiral Approach & Four Pillars
@@ -99,15 +99,15 @@ This chapter builds on Chapters 1 and 2, so you also will want to be sure that y
 
 ## 
 
-**confidence interval:** An inference tool used to estimate the value of a parameter such as $\pi$, with an associated measure of uncertainty due to the randomness in the sampling method.
+**<mark>confidence interval</mark> :** An inference tool used to estimate the value of a parameter such as $\pi$, with an associated measure of uncertainty due to the randomness in the sampling method.
 
-**confidence level:** A statement of reliability in the confidence interval method.
+**<mark>confidence level<mark> :** A statement of reliability in the confidence interval method.
 
-**estimation:** In the context of confidence intervals, describes how large an effect is in terms of a range of values for the parameter of interest.
+**<mark>estimation<mark> :** In the context of confidence intervals, describes how large an effect is in terms of a range of values for the parameter of interest.
 
-**plausible value:** A parameter value that is tested under the null hypothesis where, based on the observed data, we do not find strong evidence against the null (Ho is not rejected).
+**<mark>plausible value<mark> :** A parameter value that is tested under the null hypothesis where, based on the observed data, we do not find strong evidence against the null (Ho is not rejected).
 
-**significance level:** A value used as a criterion for deciding how small a *p*-value in a test of significance needs to be to provide convincing evidence against the null hypothesis.
+**<mark>significance level<mark> :** A value used as a criterion for deciding how small a *p*-value in a test of significance needs to be to provide convincing evidence against the null hypothesis.
 
 
 ## Method of Plausible Values
@@ -133,7 +133,7 @@ Let us start with what it does *not* mean. It does not mean that there is a 95% 
 
 The parameter value is fixed and the interval is random. If you chose a different sample, you’d get a different interval, but the parameter value would still be the same. 
 
-What we mean is that 95% of all samples give an interval that covers the true value. The 95% is the “coverage probability” or “capture rate" of the **method** we are using. This is like Section 2.1, where we said that "unbiased" is a property of a sampling method, not an individual sample.
+What we mean is that <mark>95% of all samples give an interval that covers the true value</mark>. The 95% is the “coverage probability” or “capture rate" of the **method** we are using. This is like Section 2.1, where we said that "unbiased" is a property of a sampling method, not an individual sample.
 
 In statistics, we validate our **methods**, because we cannot know for sure how our sample relates to a population.
 
@@ -146,7 +146,7 @@ Picture a game of horseshoes. The parameter is the iron stake in the ground, whi
 knitr::include_graphics("../images/garfieldCI.jpg", dpi = 100)
 ```
 
-We could have a 100% confidence interval for a $\pi$ if we said the value was between 0 and 1 --- but that wouldn't be particularly useful in most contexts, would it?
+We could have a 100% confidence interval for a $\pi$ if we said the value was between 0 and 1 --- but that wouldn't be particularly useful in most real-world research contexts, would it?
 
 
 ## Flashback: Harley the Wonder Doggo
@@ -164,11 +164,11 @@ However, this is sample data, and we all know that it has some random variabilit
 
 We can systematically test different values for $\pi$ on either side of $\pi = 0.90$, until we get to values that are implausible. We will use the same kind of simulation we did for the original test.
 
-| $\pi$ tested in Ho |  0.56 |  0.57 |  ...  |  0.85 |  0.90 |  0.95 |  0.99 |  1.00 |
-|--------------------|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
-| two-sided *p*-value| 0.049 | 0.052 |  ...  | 1.000 | 1.000 | 0.404 | 0.096 | NA    |
-| reject Ho?         | Yes   | No    |  ...  | No    | No    | No    | No    | NA    |
-| plausible $\pi$?   | **NO**| Yes   |  ...  | Yes   | Yes   | Yes   | Yes   | **NO**|
+| $\pi$ tested in Ho |0.56 |0.57 |... |0.85 |0.90 |0.95 |0.99 |1.00 |
+|--------------------|:---:|:---:|:--:|:---:|:---:|:---:|:---:|:---:|
+| two-sided *p*-value|0.049|0.052|... |1.000|1.000|0.404|0.096|NA   |
+| reject Ho?         |Yes  |No   |... |No   |No   |No   |No   |NA   |
+| plausible $\pi$?   |**<mark>NO</mark>**|Yes|...|Yes|Yes|Yes|Yes|**<mark>NO</mark>**|
 
 We know 1 is not possible; that would mean Harley is *guaranteed* to always choose the correct cup. Data shows that is false.
 

@@ -144,7 +144,7 @@ In this context, the **<mark>*z*-score</mark>** measures how extreme the observe
 | *z* below -3.0 or above +3.0 | **VERY STRONG** evidence against the null hypothesis $H_0$ |
 
 
-## Our General Rule
+## General Rule for Statistical Significance
 
 <p>We will declare the chance model ***implausible*** and reject $H_0$ if...</p>
 
@@ -155,9 +155,9 @@ knitr::include_graphics("../images/freddiemercuryzscore.jpg", dpi = 100)
 <p style="text-align:center; font-size: 12px;">With all due respect to the [late, great Freddie Mercury](https://youtu.be/FP808MiJUcM).</p>
 
 
-## 
+## Other Types of Standardized Scores
 
-There are other versions of standardized scores with non-zero means that you might encounter. For example, IQ test scores are often adjusted to have a mean of 100 and SD of 15, similar to how 0 °C can be re-scaled to 32 °F. This is an example from the [Cora Lee Institute](https://coraleeinstitute.org/understanding-standardized-test-scores/).
+There are other versions of standardized scores with non-zero means. For example, IQ test scores are often adjusted to have a mean of 100 and SD of 15, similar to how 0 °C can be re-scaled to 32 °F. Below is an example from the [Cora Lee Institute](https://coraleeinstitute.org/understanding-standardized-test-scores/).
 
 ```{r, echo = FALSE, fig.align="center"}
 knitr::include_graphics("../images/testscores.jpg", dpi = 140)

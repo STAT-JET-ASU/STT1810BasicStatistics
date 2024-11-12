@@ -214,7 +214,7 @@ knitr::include_graphics("../images/OneProportionAppletV2.png", dpi = 135)
 ```
 
 
-## Our General Rule
+## General Rule for Statistical Significance
 
 <p>We will declare the chance model ***implausible*** and reject $H_0$ if...</p>
 

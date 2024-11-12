@@ -19,11 +19,11 @@ knitr::opts_chunk$set(
 
 ## Before We Begin…
 
-These slides are meant to accompany [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html) --- Section 4.1 Association and Confounding.
+These slides are meant to accompany the text [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html) --- Section 4.1 Association and Confounding.
 
-*This content does not replace reading the textbook section.* It is for class presentation and/or reference in STT 1810 Basic Statistics.
+*This content does not replace reading the relevant textbook section.* It is for class presentation, review, and reference.
 
-See [AsULearn](https://asulearn.appstate.edu/) for supplemental readings, videos, assignments, and searchable Glossary of ISI Textbook Vocabulary.
+See [AsULearn](https://asulearn.appstate.edu/) for additional readings, videos, and assignments.
 
 
 ## The Spiral Approach to Investigation
@@ -82,7 +82,7 @@ Researchers interviewed the parents of 479 children and asked whether the child 
 
 ## STEP 3: Explore the Data
 
-We can display the study data in a *contingency table*. This shows the number of children who are grouped into each combination of the two variables; for example, who are nearsighted *and* slept in darkness. We can also see the total for each variable alone in the *margins* of the table (far right column and bottom row).
+We can display the study data in a **<mark>contingency table</mark>**. This shows the number of children who are grouped into each combination of the two variables; for example, who are nearsighted *and* slept in darkness. We can also see the total for each variable alone in the *margins* of the table (far right column and bottom row).
 
 
 |                 | Darkness | Night Light | Room Light |    Total |
@@ -97,7 +97,7 @@ We can display the study data in a *contingency table*. This shows the number of
 
 ## Compute Conditional Percentages
 
-We can calculate percentages of children with nearsightedness *conditional* on the amount of light in the room at night. In this case, each column (category of light) is treated as a separate group (the two proportions in each group will sum to 100%).
+We can calculate percentages of children with nearsightedness *conditional* on the amount of light in their room at night. In this case, each column (the light categories) is treated as a separate group. The proportions of nearsighted or not in each group will sum to 100%, as we can see in the table.
 
 |               | Darkness           | Night Light        | Room Light       | Total              |
 |---------------|:------------------:|:------------------:|:----------------:|:------------------:|
@@ -130,7 +130,7 @@ ggplot(df, aes(x = group, y = nearsighted * 100)) +
 
 There is higher percentage of nearsighted children among those using a room light (54.7%) or with a night light (33.6%) compared to children who slept in darkness (10.5%). 
 
-The observed probability of a child having having myopia is not only different for the three amounts of light, but there seems to be a pattern that connects having more light in a child's room to a greater probability of myopia.
+The observed probability of a child having having myopia is not only different for the three amounts of light, but there seems to be a pattern that connects having more light in a child's room to a greater probability of having myopia.
 
 If we did a test of significance (this is covered in Chapter 8), we would reject the null hypothesis that the observed data can be explained by randomness alone (*p*-value < 0.00001).
 
@@ -145,9 +145,11 @@ Should pediatricians recommend that parents not use lights at night in a child's
 
 <hr>
 
-Is there another possible explanation that you can think of for the effects that the researchers observed in the data, besides randomness and the amount of light in the room?
+Unfortunately, this is not a randomized experiment, so we have to ask ...
 
-In other words, are there any *confounding variables* we need to look at for these data?
+Is there some other possible explanation(s) for the association between light and eye condition that the researchers observed in the data, besides randomness or the amount of light?
+
+In other words, are there any *confounding variables* we need to look at for these data before we draw our conclusions?
 
 
 ## Alternative Explanation #1
@@ -156,12 +158,12 @@ In other words, are there any *confounding variables* we need to look at for the
 knitr::include_graphics("../images/fig_04_01_01.jpg", dpi = 120)
 ```
 
-Mopia is often inherited from parents (so *genetics* is a possible confound). Maybe parents who are nearsighted are more likely to use a room light or a night light for their kids.
+Mopia is often inherited from parents, so *genetics* is one possible confounding variable in the study. Maybe nearsighted parents are more likely to use a room light or a night light for their kids.
 
 
 ## Alternative Explanation #2
 
-This is an observational study; we will revisit this term in Section 4.2. The researcher did not decide which children would sleep in which levels of light. Thus, even if we find an association, it does not prove that a ***cause and effect*** relationship exists. 
+This is an observational study; we will revisit this term in Section 4.2. The researcher did not decide which children would sleep in which levels of light. Thus, even if we find an association, it does not demonstrate that a ***cause and effect*** relationship exists. 
 
 We might even find that the direction of the relationship is the *opposite* of what we first expect, so the explanatory variable is actually the response variable, and vice versa.
 
@@ -170,7 +172,7 @@ In this case, maybe children who are already developing myopia (i.e., starting t
 
 ## Other Explanations?
 
-Can you think of any other confounding variables or alternative explanations for the association? *Recall that researchers chose to interview the parents of children who were patients in a university pediatric ophthalmology clinic, as a start...*
+Can you think of any other confounding variables or alternative explanations for the association? *Recall that researchers chose to interview the parents of children who were patients in a university pediatric ophthalmology clinic, as a starting point...*
 
 Some [other variables](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1123161/) potentially associated with myopia:
 

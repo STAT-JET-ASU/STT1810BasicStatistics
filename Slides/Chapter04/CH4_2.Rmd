@@ -19,11 +19,11 @@ knitr::opts_chunk$set(
 
 ## Before We Begin…
 
-These slides are meant to accompany [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html) --- Section 4.2 Observational Studies vs. Experiments.
+These slides are meant to accompany the text [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html) --- Section 4.2 Observational Studies vs. Experiments.
 
-*This content does not replace reading the textbook section.* It is for class presentation and/or reference in STT 1810 Basic Statistics.
+*This content does not replace reading the relevant textbook section.* It is for class presentation, review, and reference.
 
-See [AsULearn](https://asulearn.appstate.edu/) for supplemental readings, videos, assignments, and searchable Glossary of ISI Textbook Vocabulary.
+See [AsULearn](https://asulearn.appstate.edu/) for additional readings, videos, and assignments.
 
 
 ## Recall: The Four Pillars of Inference
@@ -82,13 +82,13 @@ Overall, the main goal is to explain when and why we can infer cause-and-effect 
 
 ## Review Section 4.1 Vocabulary
 
-**associated:** two variables are associated or related to each other if the distribution of one variable is different across the values of the other variable
+**<mark>associated</mark> :** two variables are associated or related to each other if the distribution of one variable is different across the values of the other variable
 
-**explanatory variable:** if the alternative hypothesis is true, this is the variable that explains changes in the response variable (also known as the **independent** / **predictor variable**). 
+**<mark>explanatory variable</mark> :** if the alternative hypothesis is true, this is the variable that explains changes in the response variable (also known as the **independent** / **predictor variable**). 
 
-**response variable:** if the alternative hypothesis is true, this is the variable that is impacted by the explanatory variable (also known as the **dependent variable**)
+**<mark>response variable</mark> :** if the alternative hypothesis is true, this is the variable that is impacted by the explanatory variable (also known as the **dependent variable**)
 
-**confounding variable:** a variable related to the explanatory and response variables in such a way that its effects on the response variable cannot be separated from the effects of the explanatory variable---it provides another possible "causal" explanation 
+**<mark>confounding variable</mark> :** a variable related to the explanatory and response variables in such a way that its effects on the response variable cannot be separated from the effects of the explanatory variable---it provides another possible "causal" explanation 
 
 
 ## Section 4.2 New Vocabuary
@@ -107,38 +107,38 @@ Overall, the main goal is to explain when and why we can infer cause-and-effect 
 
 ## 
 
-**observational study:** study in which the researchers observe individuals and measure variables of interest, but they do not intervene in order to attempt to influence responses
+**<mark>observational study</mark> :** study in which the researchers observe individuals and measure variables of interest, but they do not intervene in order to attempt to influence responses
 
 ***Examples:*** Example P.2, where we investigated how long it takes performers to sing the national anthem; Exploration 3.1, where we analyzed whether people turn their heads left or right when they kiss. Researchers recorded "naturally occurring" data.
 
-**experiment:** a study in which the researchers manipulate the explanatory variable and actively assign study participants (or subjects) to treatment groups
+**<mark>experiment</mark> :** a study in which the researchers manipulate the explanatory variable and actively assign study participants (or subjects) to treatment groups
 
 ***Examples:*** In a clinical drug trial, the researchers assign some participants to try a new drug for allergies and the rest of the participants to a group that takes a similar-looking inactive pill. In a psychology study, participants are assigned to look at print ads or watch television commercials for candidates.
 
 
 ##
 
-**treatment:** the assigned conditions/experimental groups in an experiment
+**<mark>treatment</mark> :** the assigned conditions or experimental groups in an experiment
 
-**control:** a do-nothing or placebo treatment in an experiment
+**<mark>control</mark> :** a "do-nothing" or placebo treatment in an experiment
 
-**randomized experiment:** a study where experimental units are randomly assigned to two or more treatment conditions and the explanatory variable is actively imposed on the subjects
+**<mark>randomized experiment</mark> :** a study where experimental units are randomly assigned to two or more treatment conditions and the explanatory variable is actively imposed on the subjects
 
-**block study design (randomized block design):** a study design that begins by forming blocks consisting of individuals that are similar in some way that may be related to the response (a way that could be confounding); random assignment of treatments is then carried out separately with each block
+**<mark>block study design (randomized block design)</mark> :** a study design that begins by forming blocks consisting of individuals that are similar in some way that may be related to the response (a way that could be confounding); random assignment of treatments is then carried out separately with each block
 
 ***Example:*** Subjects in an allergy drug experiment are grouped by the severity of their allergies (mild, moderate, severe), then each group is randomized separately into the two treatments.
 
 ##
 
-**quasi-experiment:** an experimental study in which researchers manipulate the explanatory variable, but not randomly
+**<mark>quasi-experiment</mark> :** an experimental study in which researchers manipulate the explanatory variable, but not randomly
 
 ***Example:*** Researchers are studying three methods for stopping smoking (cold turkey, patch, and gum), but participants choose for themselves what method they use.
 
-**experimental unit:** what observational units are often called in an experiment
+**<mark>experimental unit</mark> :** what observational units are often called in an experiment
 
-**double blind:** a study design where neither the subjects nor those evaluating the response know which treatment group each subject is in (usually requires a placebo)
+**<mark>double blind</mark> :** a study design where neither the subjects nor the people who are evaluating the response know which treatment group each subject is in (*usually requires a placebo*)
 
-**cause and effect:** in a randomized experiment, we can conclude that the explanatory variable is causing the effect (difference or association) we see in the response variable (*the randomization balances possible confounding variables*)
+**<mark>cause and effect</mark> :** if we do a randomized experiment, we can conclude that the explanatory variable is causing the effect (difference or association) we see in the response variable (*the randomization balances possible confounding variables*)
 
 
 ## What Kind of Study?

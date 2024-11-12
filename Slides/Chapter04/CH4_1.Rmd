@@ -19,11 +19,11 @@ knitr::opts_chunk$set(
 
 ## Before We Begin…
 
-These slides are meant to accompany [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html) --- Section 4.1 Association and Confounding.
+These slides are meant to accompany the text [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html) --- Section 4.1 Association and Confounding.
 
-*This content does not replace reading the textbook section.* It is for class presentation and/or reference in STT 1810 Basic Statistics.
+*This content does not replace reading the relevant textbook section.* It is for class presentation, review, and reference.
 
-See [AsULearn](https://asulearn.appstate.edu/) for supplemental readings, videos, assignments, and searchable Glossary of ISI Textbook Vocabulary.
+See [AsULearn](https://asulearn.appstate.edu/) for additional readings, videos, and assignments.
 
 
 ## Recall: The Four Pillars of Inference
@@ -83,22 +83,22 @@ Overall, the main goal is to explain when and why we can infer cause-and-effect 
 
 ## Section 4.1 New Vocabulary
 
-**associated:** two variables are associated or related to each other if the distribution of one variable is different across the values of the other variable
+**<mark>associated</mark> :** two variables are associated or related to each other if the distribution of one variable is different across the values of the other variable
 
 ***Example:*** In the game of Monopoly, as you move around the four sides of the board from Go, each side has higher prices than the preceding side. Side and price are associated.
 
-**explanatory variable:** if the alternative hypothesis is true, this is the variable that explains changes in the response variable (also known as the **independent** / **predictor variable**). 
+**<mark>explanatory variable</mark> :** if the alternative hypothesis is true, this is the variable that explains changes in the response variable (also known as the **independent** / **predictor variable**). 
 
 ***Example:*** In Example P.2, we explored the duration (in minutes) of Super Bowl national anthem performances. We considered other variables like gender and musical genre to try to explain observed differences in performance lengths.
 
 
 ##
 
-**response variable:** if the alternative hypothesis is true, this is the variable that is impacted by the explanatory variable (also known as the **dependent variable**)
+**<mark>response variable</mark> :** if the alternative hypothesis is true, this is the variable that is impacted by the explanatory variable (also known as the **dependent** /  **predicted variable**)
 
 ***Example:*** In Example P.2, the response variable is performance length. This variable may depend on a number of other factors, like the gender of the singer, the musical genre, the year of the performance, or whether it is a solo/group performance.
 
-**confounding variable:** a variable related to the explanatory and response variables in such a way that its effects on the response variable cannot be separated from the effects of the explanatory variable---which means that it (*problematically*) provides another possible explanation for the observed results 
+**<mark>confounding variable</mark> :** a variable related to the explanatory and response variables in such a way that its effects on the response variable cannot be separated from the effects of the explanatory variable---which means that it (*problematically*) provides another possible explanation for the observed results 
 
 *We will see examples of confounding variables on upcoming slides.*
 
@@ -112,7 +112,7 @@ Alternative definition: two variables are *associated* (or related) if the value
 The relationship or ***association*** we are trying to study...
 
 ```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("../images/confound01.png", dpi = 100)
+knitr::include_graphics("../images/confound01.png", dpi = 115)
 ```
 <br><div style = "text-align: center; font-size: 18px;">Image from [*Statology: What is a Confounding Variable?*](https://www.statology.org/confounding-variable/) by Zach Bobbitt <div>
 
@@ -122,8 +122,10 @@ knitr::include_graphics("../images/confound01.png", dpi = 100)
 Does regular exercise reduce blood pressure? An example of a ***confounding*** variable (i.e., a possible alternative explanation).
 
 ```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("../images/confound02.png", dpi = 200)
+knitr::include_graphics("../images/confound02.png", dpi = 220)
 ```
+
+<br><div style = "text-align: center; font-size: 18px;">Image from [*Statology: What is a Confounding Variable?*](https://www.statology.org/confounding-variable/) by Zach Bobbitt <div>
 
 
 ## Confounding: Another Example
@@ -131,6 +133,8 @@ knitr::include_graphics("../images/confound02.png", dpi = 200)
 Does buying ice cream cause a person to be more vulnerable to shark attack? I really hope not... 😬
 
 ```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("../images/confound03.png", dpi = 111)
+knitr::include_graphics("../images/confound03.png", dpi = 120)
 ```
+
+<br><div style = "text-align: center; font-size: 18px;">Image from [*Statology: What is a Confounding Variable?*](https://www.statology.org/confounding-variable/) by Zach Bobbitt <div>
 

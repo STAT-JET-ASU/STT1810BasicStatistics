@@ -19,11 +19,11 @@ knitr::opts_chunk$set(
 
 ## Before We Begin…
 
-These slides are meant to accompany [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html) --- Section 4.2 Observational Studies vs. Experiments.
+These slides are meant to accompany the text [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html) --- Section 4.2 Observational Studies vs. Experiments.
 
-*This content does not replace reading the textbook section.* It is for class presentation and/or reference in STT 1810 Basic Statistics.
+*This content does not replace reading the relevant textbook section.* It is for class presentation, review, and reference.
 
-See [AsULearn](https://asulearn.appstate.edu/) for supplemental readings, videos, assignments, and searchable Glossary of ISI Textbook Vocabulary.
+See [AsULearn](https://asulearn.appstate.edu/) for additional readings, videos, and assignments.
 
 
 ## The Spiral Approach to Investigation
@@ -81,7 +81,7 @@ Researchers recruited 48 graduate students in business. These participants engag
 
 ## STEP 2: Study Design / Collect Data #2
 
-The researchers randomly assigned the communication method used by each of the participants, so this study was a *randomized experiment*. Randomization theoretically creates group balance in a study with respect to possible confounding variables.
+The researchers randomly assigned the communication method used by each of the participants, so this study was a *randomized experiment*. Randomization theoretically creates a group balance in a study with respect to possible confounding variables.
 
 * *Suppose there were 30 male and 18 female subjects and all 30 men in the sample communicated via the Internet, while the 18 women used pencil and paper. If you were concerned that males might be more competitive and thus more likely to lie, how would this limit your ability to draw conclusions?*
 

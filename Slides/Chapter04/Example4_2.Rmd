@@ -137,3 +137,47 @@ knitr::include_graphics("../images/fig_04_02_03.jpg", dpi = 100)
 
 A “randomized, double-blind, placebo controlled experiment” is considered by some to be the gold standard in scientific studies.
 
+
+## Preview: Two-Proportion Test
+
+We will learn the significance test required for this experiment in Chapter 5. But as a preview...
+
+Here, we hypothesize that the probability of lying is the same in both groups, versus our stated research conjecture that there is a greater probability of lying in the email group. Notice that each group has its own parameter.
+
+$$H_0: \pi_\text{e-mail} = \pi_\text{paper/pencil} \rightarrow H_0: \pi_\text{e-mail} - \pi_\text{paper/pencil} = 0$$
+
+$$H_a: \pi_\text{e-mail} > \pi_\text{paper/pencil} \rightarrow H_a: \pi_\text{e-mail} - \pi_\text{paper/pencil} > 0$$
+
+<hr>
+
+*Here, we are not hypothesizing a specific probability of lying, we are simply saying that there is zero difference between the probabilities (i.e., that the probabilities are the same).*
+
+
+## Observed Statistic
+
+The statistic is the observed difference in sample proportions. We will use a few more decimal places than we did earlier. We also need to be consistent with our hypotheses---e-mail group on the left and the paper/pencil group on the right.
+
+$$\text{statistic} = \hat{p}_\text{e-mail} - \hat{p}_\text{paper/pencil} = \frac{24}{26} - \frac{14}{22} = 0.2867$$
+
+If the null hypothesis is true, we would expect a difference near zero. This difference is consistent with the research conjecture. But, is it large enough to be statistically significant?
+
+Like we did in Chapter 1, we need to simulate a null distribution to which we can compare this statistic to determine whether the chance model is plausible in this scenario. 
+
+
+## Preview: ISI [Two Proportion](https://www.isi-stats.com/isi2nd/ISIapplets2021.html) Applet
+
+Enter the study data in the two-way table, choose our "success" category, and indicate the observed difference in proportions.
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("../images/twogrouplyingex01.png", dpi = 125)
+```
+
+
+## 
+
+Just like we did with the One Proportion applet, we will perform a simulation and get a *p*-value from the observed statistic, which is interpreted using the same guidelines. Since ***p*-value = 0.0199**, have strong evidence against $H_0$.
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("../images/twogrouplyingex02.png", dpi = 125)
+```
+

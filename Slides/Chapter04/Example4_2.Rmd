@@ -85,7 +85,7 @@ The researchers randomly assigned the communication method used by each of the p
 
 * *Suppose there were 30 male and 18 female subjects and all 30 men in the sample communicated via the Internet, while the 18 women used pencil and paper. If you were concerned that males might be more competitive and thus more likely to lie, how would this limit your ability to draw conclusions?*
 
-In theory, given that this is a randomized experiment, if we find a difference in lying behavior between the Internet and pencil-and-paper players, there are only two explanations: (1) cause-and-effect relationship or (2) random chance from the random assignment process.
+In theory, given that this is a randomized experiment, if we find a difference in lying between the Internet and pencil-and-paper groups, there are only **two possibilities**: (1) ***random chance*** from random assignment, or (2) ***cause-and-effect relationship***.
 
 
 ## STEP 3: Explore the Data

@@ -134,11 +134,11 @@ Overall, the main goal is to explain when and why we can infer cause-and-effect 
 
 ***Example:*** Researchers are studying three methods for stopping smoking (cold turkey, patch, and gum), but participants choose for themselves what method they use.
 
-**<mark>experimental unit</mark> :** what observational units are often called in an experiment
+**<mark>experimental unit</mark> :** what observational units are often called in an experiment (also **subject** or **participant**)
 
 **<mark>double blind</mark> :** a study design where neither the subjects nor the people who are evaluating the response know which treatment group each subject is in (*usually requires a placebo*)
 
-**<mark>cause and effect</mark> :** if we do a randomized experiment, we can conclude that the explanatory variable is causing the effect (difference or association) we see in the response variable (*the randomization balances possible confounding variables*)
+**<mark>cause and effect</mark> :** if we do a randomized experiment, then we can conclude that the explanatory variable is causing the effect (difference or association) we see in the response variable (*the randomization balances possible confounding variables*)
 
 
 ## What Kind of Study?

@@ -83,22 +83,46 @@ Overall, the main goal is to explain when and why we can infer cause-and-effect 
 
 ## Section 4.1 New Vocabulary
 
-**<mark>associated</mark> :** two variables are associated or related to each other if the distribution of one variable is different across the values of the other variable
+**<mark>associated</mark> :** two variables are associated or related to each other if the distribution of one variable is different across the values of the other variable --- knowing something about one variable gives us information about the other
 
-***Example:*** In the game of Monopoly, as you move around the four sides of the board from Go, each side has higher prices than the preceding side. Side and price are associated.
+***Example 1:*** In the game of Monopoly, as you move around the four sides of the board from the starting space **Go**, each side has higher prices than the preceding side. Thus, side and price are associated.
+
+***Example 2:*** People who develop a rare type of cancer known as mesothelioma are more likely to have been previous exposure to asbestos fibers and dust. 
+
+***Example 3:*** Smoking cigarettes is associated with several medical problems, such as lung cancer, heart disease, COPD, and stroke. 
+
+
+##
 
 **<mark>explanatory variable</mark> :** if the alternative hypothesis is true, this is the variable that explains changes in the response variable (also known as the **independent** / **predictor variable**). 
 
-***Example:*** In Example P.2, we explored the duration (in minutes) of Super Bowl national anthem performances. We considered other variables like gender and musical genre to try to explain observed differences in performance lengths.
+***Example 1:*** In Example P.2, we explored the duration (in minutes) of Super Bowl national anthem performances. We considered a few other variables like gender and performer's genre of music to try to explain the differences in performance lengths.
+
+***Example 2:*** In our observed relationship between asbestos and mesothelioma, asbestos exposure is the explanatory variable, since it precedes the person developing the disease. The same would be true for smoking and various diseases.
+
+***Example 3:*** In elementary school, children in higher grades tend to be taller than children in lower grades. In this case, age is the explanatory variable for observed height differences.
 
 
 ##
 
 **<mark>response variable</mark> :** if the alternative hypothesis is true, this is the variable that is impacted by the explanatory variable (also known as the **dependent** /  **predicted variable**)
 
-***Example:*** In Example P.2, the response variable is performance length. This variable may depend on a number of other factors, like the gender of the singer, the musical genre, the year of the performance, or whether it is a solo/group performance.
+***Example 1:*** In Example P.2, the response variable is performance length. This variable may depend on a number of other factors, like the gender of the singer, the musical genre, the year of the performance, or whether it is a solo/group performance.
+
+***Example 2:*** In our observed relationship between asbestos and mesothelioma, or between smoking and a long list of diseases, the diseases are the response variables.
+
+***Example 3:*** In elementary school, children in higher grades tend to be taller than children in lower grades. In this case, age is the response variable is the observed differences in height.
+
+
+##
 
 **<mark>confounding variable</mark> :** a variable related to the explanatory and response variables in such a way that its effects on the response variable cannot be separated from the effects of the explanatory variable---which means that it (*problematically*) provides another possible explanation for the observed results 
+
+You may also see references to what are called **<mark>lurking variables</mark>** in some discussions. The distinction often made between them is that lurking variables are confounding variables that are *not measured or accounted for* in the study. 
+
+We will not make a distinction between the two in this class, and instead use only the term confounding variable. 
+
+<hr>
 
 *We will see examples of confounding variables on upcoming slides.*
 

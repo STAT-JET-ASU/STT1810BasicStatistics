@@ -82,7 +82,7 @@ Researchers interviewed the parents of 479 children and asked whether the child 
 
 ## STEP 3: Explore the Data
 
-We can display the study data in a **<mark>contingency table</mark>**. This shows the number of children who are grouped into each combination of the two variables; for example, who are nearsighted *and* slept in darkness. We can also see the total for each variable alone in the *margins* of the table (far right column and bottom row).
+We can display the study data in a **<mark>contingency table</mark>**. It shows the number of children who are grouped into each combination of the two variables; for example, who are nearsighted *and* slept in darkness. We can also see the total for each variable alone in the *margins* of the table (far right column and bottom row).
 
 
 |                 | Darkness | Night Light | Room Light |    Total |

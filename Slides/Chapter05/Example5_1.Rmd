@@ -19,11 +19,11 @@ knitr::opts_chunk$set(
 
 ## Before We Begin…
 
-These slides are meant to accompany [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html) --- Section 5.1 Comparing Two Groups: Categorical Response.
+These slides are meant to accompany the text [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html) --- Section 5.1 Comparing Two Groups: Categorical Response.
 
-*This content does not replace reading the textbook section.* It is for class presentation and/or reference in STT 1810 Basic Statistics.
+*This content does not replace reading the relevant textbook section.* It is for class presentation, review, and reference.
 
-See [AsULearn](https://asulearn.appstate.edu/) for supplemental readings, videos, assignments, and searchable Glossary of ISI Textbook Vocabulary.
+See [AsULearn](https://asulearn.appstate.edu/) for additional readings, videos, and assignments.
 
 
 ## Recall: The Six-Step Spiral Process
@@ -63,7 +63,7 @@ knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
 
 **Buckle up, it’s the law!** How often do you use your seatbelt? If you are not a regular seatbelt user, is there anything that might change your behavior?
 
-**In North Carolina...**
+***In North Carolina...***
 
 * All drivers and passengers age 16 and older must wear their seatbelts in both the front and back seats. Children less than age 16 are covered by the NC Child Passenger Safety law.
 
@@ -160,13 +160,13 @@ Another way to compare the two conditional proportions is by looking at the rati
 
 $$RR = \frac{\text{proportion in 2018}}{\text{proportion in 2008}} = \frac{0.896}{0.830} = 1.08$$
 
-People in 2018 were 1.08 times as likely to be observed wearing a seatbelt than people in 2008.
+People in 2018 were **1.08 times as likely** to be observed wearing their seatbelt than people in 2008.
 
 Again, while this might seem like a small increase, it represents many more people in a large population.
 
 $$100 \text{ people} \times 1.08 = 108 \text{ people}$$
 
-So for every 100 people observed wearing seatbelts in 2008, we would see an *additional* 8 people in 2018.
+So for every 100 people observed wearing seatbelts in 2008, we would see **an *additional* 8 people** in 2018.
 
 
 ## Increased Risk / Percentage Change
@@ -179,7 +179,7 @@ Alternatively...
 
 $$\%IR = (RR - 1) \times 100\% = (1.08 - 1) \times 100\% = 8\%$$
 
-In 2008, the probability of observing a driver or front passenger wearing a seatbelt was 0.83. In 2018, it was 0.83 plus 8% of 0.83 (0.83 + 0.08 x 0.83), which gives us the observed 0.896 in 2018. There was an 8% *change* in probability from the baseline.
+In 2008, the probability of observing a driver or front passenger wearing a seatbelt was 0.83. In 2018, it was 0.83 plus 8% of 0.83 (0.83 + 0.08 x 0.83), which gives us the observed 0.896 in 2018. There was a positive 8% *change* in probability from the baseline.
 
 
 ## Segmented Bar Plot (3 Variables)
@@ -195,7 +195,7 @@ In June 2008, 26 US states and DC had primary seatbelt laws, 23 states had secon
 
 What have we learned from our exploration of the data?
 
-* There was an increase from 2008 to 2018 in the proportion of people tht were observed using seatbelts.
+* There was an increase from 2008 to 2018 in the proportion of people that were observed using seatbelts.
 
 * There was an increase from 2008 to 2018 in the total number of states that have primary seatbelt laws.
 
@@ -216,7 +216,7 @@ In Section 5.2, you will learn how to use simulation to compare two proportions 
 
 The NOPUS seatbelt study uses “complex, multistage samples” that require additional statistical tools beyond the level of this course --- although the *logic* is the same that you are learning. 
 
-Researchers have to be careful about the scope of conclusions they draw from this kind of observational study; we will discuss this idea further in Step 5.
+Researchers have to be careful about the scope of conclusions they draw from this kind of observational study. We will discuss this idea further in Step 5.
 
 
 ## STEP 5: Formulate Conclusions

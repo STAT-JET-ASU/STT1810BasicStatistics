@@ -19,11 +19,11 @@ knitr::opts_chunk$set(
 
 ## Before We Begin…
 
-These slides are meant to accompany [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html) --- Section 5.1 Comparing Two Groups: Categorical Response.
+These slides are meant to accompany the text [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html) --- Section 5.1 Comparing Two Groups: Categorical Response.
 
-*This content does not replace reading the textbook section.* It is for class presentation and/or reference in STT 1810 Basic Statistics.
+*This content does not replace reading the relevant textbook section.* It is for class presentation, review, and reference.
 
-See [AsULearn](https://asulearn.appstate.edu/) for supplemental readings, videos, assignments, and searchable Glossary of ISI Textbook Vocabulary.
+See [AsULearn](https://asulearn.appstate.edu/) for additional readings, videos, and assignments.
 
 
 ## Recall: The Six-Step Spiral Process
@@ -61,7 +61,7 @@ knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
 
 ## Learning Goals for Chapter 5
 
-Chapter 5 extends what we learned about statistical significance in previous chapters to compare two groups with parameters $\pi_1$ and $\pi_2$. In this case, rather than testing a null hypothesis about whether $\pi$ is equal to some value, we will typically have a null of $H_0: \pi_1 = \pi_2$ or $H_0: \pi_1 - \pi_2 = 0$ &rarr; there is *no difference*. 
+Chapter 5 extends what we learned about statistical significance in previous chapters to compare two groups with parameters $\pi_1$ and $\pi_2$. In this case, rather than testing a null hypothesis about whether $\pi$ is equal to some value, we will typically have a null of $H_0: \pi_1 = \pi_2$ **<u>or</u>** $H_0: \pi_1 - \pi_2 = 0$ &rarr; there is *no difference*. 
 
 We can also estimate the size of difference between $\pi_1$ and $\pi_2$.
 
@@ -116,20 +116,20 @@ The terms *relative risk*, *increased risk*, *odds*, and *odds ratio* are common
 
 ##
 
-**two-way table:** a tabular summary of two categorical variables, also called a contingency table
+**<mark>two-way table</mark> :** a tabular summary of two categorical variables, also called a contingency table
 
-**two by two (2 × 2) table:** a two-way table where the explanatory and response variables each have two categories
+**<mark>two by two (2 × 2) table</mark> :** a two-way table where the explanatory and response variables each have two categories
 
-**cells:** the individual entries in a two-way table that show where the two variables intersect (usually not including the row and column totals)
+**<mark>cells</mark> :** the individual entries in a two-way table that show where the two variables intersect (usually not including the row and column totals)
 
-**conditional proportion:** the proportion of successes for a given category of the explanatory variable, or its **probability**; in some contexts (e.g., health care literature) this value may be called the **absolute risk** for the given category
+**<mark>conditional proportion</mark> :** the proportion of successes for a given category of the explanatory variable, or its **probability**; in some contexts (e.g., health care literature) this value may be called the **absolute risk** for the given category
 
-**no association:** a general statement of the null hypothesis when two or more variables are involved, indicating that two variables are not related to each other
+**<mark>no association</mark> :** a general statement of the null hypothesis when two or more variables are involved, indicating that two variables are not related to each other
 
 
 ##
 
-**segmented bar graph:** a type of graph display for conditional proportions from a two-way table, with equal-width rectangles totaling 1 (100%) for each category of the explanatory variable; each bar is then split up by the conditional proportions for the categories of the response variable
+**<mark>segmented bar graph</mark> :** a type of graph display for conditional proportions from a two-way table, with equal-width rectangles totaling 1 (100%) for each category of the explanatory variable; each bar is then split up by the conditional proportions for the categories of the response variable
 
 ```{r, echo = FALSE, fig.align="center"}
 knitr::include_graphics("../images/titanicsurvival01.png", dpi = 230)
@@ -151,7 +151,7 @@ knitr::include_graphics("../images/titanicsurvival02.png", dpi = 175)
 
 ##
 
-**mosaic plot:** a segmented bar plot where the widths of the bars are proportional to the sample size
+**<mark>mosaic plot</mark> :** a segmented bar plot where the widths of the bars are proportional to the sample size
 
 ```{r, echo = FALSE, fig.align="center"}
 knitr::include_graphics("../images/titanicsurvival03.png", dpi = 230)
@@ -161,23 +161,23 @@ knitr::include_graphics("../images/titanicsurvival03.png", dpi = 230)
 
 <br>
 
-There were more male than female passengers aboard Titanic.
+There were more male passengers than female aboard Titanic.
 
 
 ## 
 
-**relative risk:** the **ratio** of conditional proportions that indicates how many times greater the risk of some observed outcome is for one group, as compared to the risk of the same outcome in another group (also sometimes called **risk ratio**)
+**<mark>relative risk</mark> :** the **ratio** of conditional proportions that indicates how many times greater the risk of some observed outcome is for one group, as compared to the risk of the same outcome in another group (also sometimes called **<mark>risk ratio</mark> **)
 
 $$RR = \frac{\text{proportion (risk) in explanatory category 2}}{\text{proportion (risk) in explanatory category 1}}$$
 
-Which group we call Category 1 and which group is Category 2 depends on the problem context. If we have a control group or "baseline" group for comparison in our study, that group usually will go in the denominator (i.e., on the bottom of the fraction).
+Which group we call Category 1 and which group is Category 2 depends on the problem context. If we have a control group or "baseline" group for comparison in our study, that group usually will go in the denominator (i.e., the bottom of the fraction).
 
-Essentially, **risk** is another word for **probability** or proportion. In everyday English, we usually associate the word "risk" with some kind of bad outcome. However, in statistics we can use the term risk for any outcome we are interested in.
+Essentially, **<mark>risk</mark>** is another word for **probability** or proportion. In everyday English, we usually associate the word "risk" with some kind of bad outcome. However, in statistics we can use the term risk for any outcome we are interested in.
 
 
 ## An Example: Risk of Oral Cancer
 
-[Oral cancer](https://www.nidcr.nih.gov/health-info/oral-cancer) is a family of malignancies that includes cancers of the mouth and the back of the throat. Smoking and alcohol use, as well as sun exposure and poor nutrition, are some of the factors that have been found to be associated with this type of cancer. Consider the incidence of oral cancer among a group of smokers and non-smokers. ***Smoking is the explanatory variable.***
+[Oral cancer](https://www.nidcr.nih.gov/health-info/oral-cancer) is a family of malignancies that includes cancers of the mouth and the back of the throat. Smoking, alcohol use, sun exposure, and poor nutrition are some of the variables that are associated with this type of cancer. Consider here the observed incidence of oral cancer in groups of smokers and non-smokers. ***Smoking is the explanatory variable.***
 
 |Oral Cancer? | Non-Smoker | Smoker     |
 |-------------|:----------:|:----------:|
@@ -203,7 +203,7 @@ These are equivalent expressions, but the first version might be more understand
 
 ## 
 
-**percent increased risk:** this quantity re-expresses the absolute difference in risks as a fraction of the "baseline" risk
+**<mark>percent increased risk</mark> :** this quantity re-expresses the absolute difference in risks as a fraction of the "baseline" risk
 
 $$\%IR = \frac{\text{risk in category 2 - risk in category 1}}{\text{risk in category 1}} \times 100\%$$
 
@@ -235,7 +235,7 @@ A negative percent increased risk is a *decrease*. This should make sense---the 
 
 ##
 
-**odds:** odds is similar to probability (risk), except that instead of looking at the fraction of times an event occurs out of the whole, odds is a ratio of how often an event happens versus how often it does not happen
+**<mark>odds</mark> :** odds is similar to probability (risk), except that instead of looking at the fraction of times an event occurs out of the whole, odds is a ratio of how often an event happens versus how often it does not happen
 
 ***Example 1:*** The odds of getting a head versus a tail on a coin flip are 1:1 (for every 1 time a head occurs, we would expect 1 tail)
 
@@ -248,7 +248,7 @@ For the non-smokers, odds of getting cancer are 27 to 90 or 1 to 3.33. For every
 
 ##
 
-**odds ratio:** odds ratio is similar to risk ratio, except using odds instead of risks; the odds are expressed as fractions in this case
+**<mark>odds ratio</mark> :** odds ratio is similar to risk ratio, except using odds instead of risks; the odds are expressed as fractions in this case
 
 $$OR = \frac{\text{odds in explanatory category 2}}{\text{odds in explanatory category 1}}$$
 
@@ -303,7 +303,7 @@ Consider the survival of women versus men on Titanic (*sex is the explanatory va
 
 
 <br>
-A test of significance would show that these two variables are associated (*p*-value < 0.0001). (*Note: This is observational data, so we cannot assume cause and effect. The variable ticket class is also associated with both sex and survival.*)
+A test of significance would show that these two variables are associated, *p*-value < 0.0001. (*Note: This is observational data, so we cannot assume cause and effect. The variable ticket class is also associated with both sex and survival.*)
 
 
 ## Relative and Increase Risk
@@ -312,11 +312,11 @@ We can see from the conditional probabilities that women were more likely to sur
 
 $$RR = \frac{\text{survival risk for women}}{\text{survival risk for men}} = \frac{0.73}{0.21} = 3.48$$
 
-Women were almost three and a half times as likely to survive the sinking of the Titanic as men.
+Women were almost **three and a half times** as likely to survive the sinking of the Titanic as men.
 
 $$\%IR = \frac{0.73 - 0.21}{0.21} \times 100\% = 248\%$$
 
-Women had a 248% increased chance of survival versus men when the Titanic sank.
+Women had a **248% increased chance** of survival versus men when the Titanic sank.
 
 
 ## Odds and Odds Ratio
@@ -327,14 +327,14 @@ Odds for men = 710 to 1364 = 1 to 1.9 = about 1 to 2. Therefore, 1 man survived 
 
 $$OR = \frac{\text{odds for women}}{\text{odds for men}} = \frac{343/127}{710/1364} = 5.2$$
 
-The odds of a woman surviving the sinking of the Titanic were 5.2 times the odds of a man surviving.
+The odds of a woman surviving the sinking of the Titanic were **5.2 times** the odds of a man surviving.
 
 *Why the difference? It may have been a "women and children" first policy for loading lifeboats, or having a large fraction of male third class passengers and crew, other social norms, or the ship layout...*
 
 
-## The Two-Proportion Applet
+## The [Two-Proportions]((https://www.isi-stats.com/isi2nd/ISIapplets2021.html)) Applet
 
-Data can be entered as a two-way table in [the applet](https://www.isi-stats.com/isi2nd/ISIapplets2021.html). It can also calculate RR and OR values. Here you see the oral cancer data.
+Data can be entered as a two-way table. It can also calculate RR and OR values using the **Statistic:** drop-down menu. Try it!
 
 ```{r, echo = FALSE, fig.align="center"}
 knitr::include_graphics("../images/twopropapplet.png", dpi = 135)
@@ -347,5 +347,5 @@ knitr::include_graphics("../images/twopropapplet.png", dpi = 135)
 knitr::include_graphics("../images/probsvsodds.PNG", dpi = 230)
 ```
 
-A web site aimed at medical students who are prepping for the Step 1 Medical Board Exam includes a summary of [risk vs. odds](https://www.stomponstep1.com/odds-ratio-relative-risk-calculation-definition-probability-odds/) (*just ignore the part clinical trials vs. cohort studies*). 
+A web site aimed at medical students who are prepping for the Step 1 Medical Board Exam includes a summary of [risk vs. odds](https://www.stomponstep1.com/odds-ratio-relative-risk-calculation-definition-probability-odds/) (*ignore the part about clinical trials vs. cohort studies*). 
 

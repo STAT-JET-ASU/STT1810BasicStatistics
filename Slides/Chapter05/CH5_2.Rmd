@@ -19,11 +19,11 @@ knitr::opts_chunk$set(
 
 ## Before We Begin…
 
-These slides are meant to accompany [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html) --- Section 5.2 Comparing Two Groups: Categorical Response.
+These slides are meant to accompany the text [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html) --- Section 5.2 Comparing Two Groups: Categorical Response.
 
-*This content does not replace reading the textbook section.* It is for class presentation and/or reference in STT 1810 Basic Statistics.
+*This content does not replace reading the relevant textbook section.* It is for class presentation, review, and reference.
 
-See [AsULearn](https://asulearn.appstate.edu/) for supplemental readings, videos, assignments, and searchable Glossary of ISI Textbook Vocabulary.
+See [AsULearn](https://asulearn.appstate.edu/) for additional readings, videos, and assignments.
 
 
 ## Recall: The Six-Step Spiral Process
@@ -61,7 +61,7 @@ knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
 
 ## Learning Goals for Chapter 5
 
-Chapter 5 extends what we learned about statistical significance in previous chapters to compare two groups with parameters $\pi_1$ and $\pi_2$. In this case, rather than testing a null hypothesis about whether $\pi$ is equal to some value, we will typically have a null of $H_0: \pi_1 = \pi_2$ or $H_0: \pi_1 - \pi_2 = 0$ &rarr; there is *no difference*. 
+Chapter 5 extends what we learned about statistical significance in previous chapters to compare two groups with parameters $\pi_1$ and $\pi_2$. In this case, rather than testing a null hypothesis about whether $\pi$ is equal to some value, we will typically have a null of $H_0: \pi_1 = \pi_2$ **<u>or</u>** $H_0: \pi_1 - \pi_2 = 0$ &rarr; there is *no difference*. 
 
 We can also estimate the size of difference between $\pi_1$ and $\pi_2$.
 
@@ -81,7 +81,7 @@ We will *not* cover Section 5.3, regarding theory-based inference.
 
 * Describe how to use cards to simulate what outcomes (in terms of difference in conditional proportions and/or relative risk) are to be expected in repeated random assignments, if there is no association between the two variables.
 
-* Use the [ISI Two Proportions applet](http://www.isi-stats.com/isi2nd/ISIapplets2021.html) to conduct a simulation of the null hypothesis and be able to read the applet output.
+* Use the ISI [Two Proportions](http://www.isi-stats.com/isi2nd/ISIapplets2021.html) applet to conduct a simulation of the null hypothesis and be able to read the applet output.
 
 
 ##
@@ -97,7 +97,7 @@ We will *not* cover Section 5.3, regarding theory-based inference.
 
 ## Section 5.2 New Vocabulary
 
-**standard error:** an estimate for the standard deviation of the null distribution of a statistic
+**<mark>standard error</mark> :** an estimate for the standard deviation of the null distribution of a statistic
 
 You may also want to review and solidify all of the vocabulary introduced in Section 5.1, especially the supplemental content like percent increased risk and odds ratio.
 
@@ -105,9 +105,9 @@ You may also want to review and solidify all of the vocabulary introduced in Sec
 
 The term *standard error* is not completely new. We mentioned it in Section 2.1, when we explored the sampling distribution for a single proportion. 
 
-We also encountered it in Section 3.2 when we introduced 2SD confidence intervals.
+We also encountered it in Section 3.2 when we introduced the idea of 2SD confidence intervals.
 
-We will revisit these concepts for two proportions in Section 5.2!
+We will revisit these concepts for two proportions in this section.
 
 
 ## Hypotheses #1: Variable *Association*
@@ -137,24 +137,41 @@ $\pi_2$ = conditional proportion of successes (for *response variable*) in Group
 
 ## Stating the Hypotheses Using Symbols
 
-Once again, we can convert the words to symbols.
+As before, we can convert out hypotheses written words to into more compact statistical symbols.
+
+**Null Hypothesis** (no association/no difference between groups):
 
 $$H_0: \pi_1 = \pi_2$$
 
-$$H_a: \pi_1 < \pi_2 \text{ or } H_a: \pi_1 \neq \pi_2 \text{ or } H_a: \pi_1 > \pi_2$$
+**Alternative Hypothesis** (this depends on the research question):
+
+$$H_a: \pi_1 < \pi_2$$
+
+$$H_a: \pi_1 \neq \pi_2$$
+
+$$H_a: \pi_1 > \pi_2$$
+
+
+## Writing the Hypotheses as Differences
 
 We are really interested in the *difference* between the groups, so the hypotheses can be expressed as a mathematical difference. Subtract $\pi_2$ from both sides and we get, for example...
 
 $$H_0: \pi_1 - \pi_2 = 0$$
 
-$$H_a: \pi_1 -\pi_2 < 0 \text{ or } H_a: \pi_1 - \pi_2 \neq 0 \text{ or } H_a: \pi_1 -\pi_2 > 0$$
+We can do the same for the alternative hypothesis...
+
+$$H_a: \pi_1 -\pi_2 < 0$$
+
+$$H_a: \pi_1 - \pi_2 \neq 0$$
+
+$$H_a: \pi_1 -\pi_2 > 0$$
 
 The sample difference ($\hat{p}_1 - \hat{p}_2$) will be the statistic for the test.
 
 
 ## Oral Cancer Example: Simulation
 
-Recall the oral cancer example from Section 5.1. This is a test of significance for that data. The [Two Proportions applet](https://www.isi-stats.com/isi2nd/ISIapplets2021.html) generates the null distribution by randomly *re-shuffling* the data.
+Recall the oral cancer example from Section 5.1. This is a test of significance for that data. The [Two Proportions](https://www.isi-stats.com/isi2nd/ISIapplets2021.html) applet generates the null distribution by randomly *re-shuffling* the data.
 
 ```{r, echo = FALSE, fig.align="center"}
 knitr::include_graphics("../images/twopropapplet2.png", dpi = 135)
@@ -177,7 +194,7 @@ Recall our guidelines for *p*-values from Section 1.2.
 | *p*-value ≤ 0.01        | very strong evidence against the null hypothesis               |
 
 
-## The Test of Significance
+## The Complete Test of Significance
 
 **Research Question:** Is oral cancer more likely among smokers?
 
@@ -187,16 +204,27 @@ $\pi_2$ = long-run proportion of oral cancer among non-smokers
 $$H_0: \pi_1 - \pi_2 = 0$$
 $$H_a: \pi_1 -\pi_2 > 0$$
 
-test statistic = $\hat{p}_1 - \hat{p}_2 = 0.557 - 0.231 = 0.326$
+statistic for the test = $\hat{p}_1 - \hat{p}_2 = 0.557 - 0.231 = 0.326$
 
 *p*-value = $0.0000$, so there is very strong evidence againt $H_0$ 
 
 So we can conclude that the long-run proportion of oral cancer among smokers is greater than that of non-smokers.
 
 
+## Scope of Inference and Cause/Effect
+
+These data cannot be from an experiment, because there is no way that people were randomized to the two groups (smoking, non-smoking)---that would be completely unethical. 
+
+Since it is observational data, we can conclude that there is an association between smoking and increased risk of oral cancer, but not that a cause and effect relationship exists.
+
+It is also unlikely that these data come from a random sample. That limits our ability to generalize to a larger population. 
+
+If we knew more about the individuals included in this study, we could possibly generalize to people with similar characteristics (*e.g., age, sex, how long they have smoked, presence or absence of other variables associated with oral cancer, etc.*).
+
+
 ## Standardized Score
 
-The general form for a standardized ($z$) score, which we first saw back in Chapter 1, is as follows.
+The general form for a standardized ($z$) score, which we first saw back in Section 1.3, is as follows.
 
 $$z\text{-score} = \frac{\text{statistic} - \text{mean of the null distribution}}{\text{SD of the null distribution}}$$
 

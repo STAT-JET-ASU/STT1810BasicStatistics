@@ -78,7 +78,7 @@ You need to **"speak the language"** to understand what is being taught in class
 
 In some situations, an **observational unit** may be referred to as a *case*, a *subject*, a *participant*, or an *experimental unit*.
 
-**Data** are often organized in a spreadsheet-type format in which each *row* is an observational unit and each *column* is a variable.
+**<mark>Data</mark>** are often organized in a spreadsheet-type format in which each *row* is an observational unit and each *column* is a variable.
 
 
 ## A "Tidy" Dataset
@@ -163,17 +163,17 @@ Consider **STEP 4** and **STEP 5** of the Six-Step Method...
 
 The ***logic*** of inference helps quantify the relative magnitude and strength of the evidence extracted from the data. (@ *Step 4*)
 
-* **Significance:** How *strong* is the evidence of an effect?
+* **<mark>Significance</mark> :** How *strong* is the evidence of an effect?
 
-* **Estimation:** What is the *size* (magnitude/direction) of effect?
+* **<mark>Estimation</mark> :** What is the *size* (magnitude/direction) of effect?
 
 <hr>
 
 The ***scope*** of inference concerns the extent to which results can be generalized and whether we can infer causation. (@ *Step 5*)
 
-* **Generalization:** How *broadly* do our conclusions apply?
+* **<mark>Generalization</mark> :** How *broadly* do our conclusions apply?
 
-* **Causation:** Can we say what *caused* the observed effect?
+* **<mark>Causation</mark> :** Can we say what *caused* the observed effect?
 
 
 ## Preview: Chapter 1 through Chapter 4
@@ -256,16 +256,16 @@ Study: Ackerman, J. M., Griskevicius, V., & Li, N. P. (2011). Let's get serious:
 **Research Question:** Among heterosexual couples who are in committed relationships, are the men or women more likely to confess love first?
 <hr>
 
-The observational units in this study are **heterosexual couples in committed relationships**.
+The observational units in this study are: *heterosexual couples in committed relationships*.
 
-The variable of interest in this study is **which of the partners in the couple said "I love you" first**.
+The variable of interest in this study is: *which of the partners in the couple said "I love you" first*.
 
-The variable type is **categorical (with the possible values being "the man" or "the woman")**.
+The variable type is: *categorical (with the possible values being "the man" or "the woman")*.
 
 
 ## Some of the Results in #2
 
-In Section P.2, we will learn how to explore data to describe and compare distributions, and to detect unusual observations. This type of <mark>exploratory data analysis (EDA)</mark> is a *must* before we try to make any inferences or draw conclusions. 
+In Section P.2, we will learn how to explore data to describe and compare distributions, and to detect unusual observations. This type of **<mark>exploratory data analysis (EDA)</mark>** is a *must* before we try to make any inferences or draw conclusions. 
 
 ```{r, echo = FALSE, fig.align="center"}
 knitr::include_graphics("../images/whosayslovefirst.png", dpi = 175)

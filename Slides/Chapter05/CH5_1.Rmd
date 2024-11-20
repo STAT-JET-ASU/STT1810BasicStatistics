@@ -172,7 +172,7 @@ $$RR = \frac{\text{proportion (risk) in explanatory category 2}}{\text{proportio
 
 Which group we call Category 1 and which group is Category 2 depends on the problem context. If we have a control group or "baseline" group for comparison in our study, that group usually will go in the denominator (i.e., the bottom of the fraction).
 
-Essentially, **<mark>risk</mark>** is another word for **probability** or proportion. In everyday English, we usually associate the word "risk" with some kind of bad outcome. However, in statistics we can use the term risk for any outcome we are interested in.
+Essentially, **<mark>risk</mark>** is another word for **<mark>probability</mark>** or proportion. In everyday English, we usually associate the word "risk" with some kind of bad outcome. However, in statistics we can use the term risk for any outcome we are interested in.
 
 
 ## An Example: Risk of Oral Cancer

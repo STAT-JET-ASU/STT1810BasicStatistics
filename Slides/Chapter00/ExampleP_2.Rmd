@@ -27,6 +27,8 @@ These slides are meant to accompany the text [*Introduction to Statistical Inves
 
 See [AsULearn](https://asulearn.appstate.edu/) for additional readings, videos, and assignments.
 
+You can print these slides to a pdf for offline use using the print function in your browser.
+
 
 ## STEP 1: Ask a Research Question
 
@@ -45,12 +47,12 @@ How long does it take performers to sing the national anthem? (*People actually 
 knitr::include_graphics("../images/table_p_02_01.jpg", dpi = 105)
 ```
 
-The [National Anthem dataset](http://www.isi-stats.com/isi/data/prelim/NationalAnthemTimes.txt) contains data from 1980 to 2019. We can explore it using the [Descriptive Statistics applet](http://www.isi-stats.com/isi2nd/ISIapplets2021.html), which contains updated data (*SB Anthems*) for years after 2019.
+The [National Anthem dataset](http://www.isi-stats.com/isi/data/prelim/NationalAnthemTimes.txt) contains data from 1980 to 2019. We can explore it using the [Descriptive Statistics](http://www.isi-stats.com/isi2nd/ISIapplets2021.html) applet, which contains updated data (*SB Anthems*) for years after 2019.
 
 
 ## The SB Anthems Dataset
 
-The SB Anthems dataset in the [Descriptive Statistics](https://www.isi-stats.com/isi2nd/ISIapplets2021.html) applet has more variables than the textbook example discusses, plus three additional observations (2020, 2021, and 2022 Super Bowls).
+The SB Anthems dataset in the [Descriptive Statistics](https://www.isi-stats.com/isi2nd/ISIapplets2021.html) applet has more observations and variables than the textbook example.
 
 * `Year`: the year of the Super Bowl
 * `SuperBowl`: the number of the Super Bowl
@@ -265,20 +267,13 @@ ggplot(sbdata, aes(x = Year, y = Time, shape = Sex, color = Sex)) +
 ```
 
 
-## *Think About It #1*
+## *Think About It*
 
-* [Country Music Hall of Fame performer Reba McEntire sang the national anthem at the 2024 Super Bowl.](https://ew.com/super-bowl-2024-performers-usher-halftime-reba-mcentire-national-anthem-8546391) 
+* Country Music Hall of Fame performer [Reba McEntire sang the national anthem](https://youtu.be/FLH8fzAPWYk) at the 2024 Super Bowl.
 
 * How could we use the data we have to make a prediction about how long her performance will last?
 
 * What other information would you like to have that is not included in the dataset?
 
-* According to [The Lines](https://www.thelines.com/odds/super-bowl/national-anthem/), "It is likely that McEntire’s National Anthem over under will be well under 2 minutes given her track record of Anthem renditions. The longest McEntire National Anthem available to watch on YouTube is her going just 1 minute and 23 seconds. This is considerably shorter than most modern versions."
-
-
-## 
-
-Reba's performance at Super Bowl LVIII.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/FLH8fzAPWYk?si=3KI43RNf3qizov6H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+* According to [The Lines](https://www.thelines.com/odds/super-bowl/national-anthem/), "It is likely that McEntire’s National Anthem over under will be well under 2 minutes given her track record of Anthem renditions. The longest McEntire National Anthem available to watch on YouTube is her going just 1 minute and 23 seconds. This is considerably shorter than most modern versions." *Did this turn out to be true?*
 

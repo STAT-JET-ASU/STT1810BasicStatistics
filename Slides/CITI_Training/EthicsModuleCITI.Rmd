@@ -38,7 +38,7 @@ knitr::include_graphics("images/CITI_01.jpg", dpi = 200)
 ```
 
 
-## Organizational Affiliation
+## Select Organizational Affiliation
 
 Choose **Select Your Organizational Affiliation** to get started.
 
@@ -47,7 +47,7 @@ knitr::include_graphics("images/CITI_02.jpg")
 ```
 
 
-## Choose Appalachian
+## Choose Appalachian SSO Option
 
 Search for and choose **Appalachian State University (SSO)**. You will be able to sign in with your usual ASU login and password.
 
@@ -56,7 +56,7 @@ knitr::include_graphics("images/CITI_03.jpg")
 ```
 
 
-## Log In Using ASU ID and PW
+## Log In Using Your ASU ID and PW
 
 Check the boxes and **Log In with Appalachian State University**.
 
@@ -65,9 +65,9 @@ knitr::include_graphics("images/CITI_04.jpg", dpi = 125)
 ```
 
 
-## Start to Add Your Course
+## Choose "Add a Course" Link
 
-Click the **Add a Course** link to start the search for your course. From here you will be guided through the process required to add the **Social/Behavioral Research Course---Basic Course**.
+Click the **Add a Course** link to start the search for your course. From here you will be guided through the process required to add the **<mark>Social/Behavioral Research Course---Basic Course</mark>**.
 
 ```{r}
 knitr::include_graphics("images/CITI_05.jpg", dpi = 110)
@@ -83,7 +83,7 @@ knitr::include_graphics("images/CITI_06.jpg", dpi = 125)
 ```
 
 
-## NO to Previous Completion
+## Say NO to Previous Completion
 
 Click **NO, I have NOT completed the Basic Course...**, then **Next**.
 
@@ -103,7 +103,7 @@ knitr::include_graphics("images/CITI_08.jpg", dpi = 125)
 ```
 
 
-## Courses Ready to Begin
+## Course Is Available to Begin
 
 You should now see the **Social/Behavioral Research Course** in your list of available courses. You do not have to complete the entire course in one sitting. CITI will save your progress.
 
@@ -112,7 +112,7 @@ knitr::include_graphics("images/CITI_09.jpg", dpi = 125)
 ```
 
 
-## Start the Course
+## Start the Course When Ready
 
 When you start the course, you will see at the very top that CITI keeps a running total of your module progress and score. I have completed two modules and I earned a cumulative 100% on the two post-module quizzes.
 
@@ -121,9 +121,9 @@ knitr::include_graphics("images/CITI_10.jpg", dpi = 125)
 ```
 
 
-## The Learning Modules
+## Course Learning Modules
 
-The modules are listed below, along with your completion date and quiz scores. This shows the first three---two complete and the third ready to start.
+All course modules are listed, along with your completion dates and quiz scores. This example image shows the first three---two complete and the third ready to start.
 
 ```{r}
 knitr::include_graphics("images/CITI_11.jpg", dpi = 135)
@@ -163,7 +163,7 @@ Each module has a quiz with about 3 multiple choice questions. After you have su
 knitr::include_graphics("images/CITI_15.jpg", dpi = 130)
 ```
 
-These results will also show up in the overall list of modules in the ***Social/Behavioral Research Course---Basic Course*** and your records page. Check your cumulative percentage! You need to get ***80% or better*** overall to pass and get credit.
+These results will also show up in the overall list of modules in the ***Social/Behavioral Research Course---Basic Course*** and your records page. Check your cumulative percentage! <mark>You need to get ***80% or better*** overall to pass and get credit.</mark>
 
 
 ## When You Are Done
@@ -179,7 +179,7 @@ knitr::include_graphics("images/CITI_16.jpg", dpi = 140)
 
 ## Completion Report
 
-Click on **Copy Link** for your **Completion Report**. Submit the link in the appropriate assignment on **AsULearn**. You can see what the report looks like by clicking View/Print.
+<mark>Click on **Copy Link** for your **Completion Report**. Submit the link in the appropriate assignment on **AsULearn**.</mark> You can see what the report looks like by clicking View/Print.
 
 ```{r}
 knitr::include_graphics("images/CITI_17.jpg", dpi = 150)

@@ -25,6 +25,8 @@ These slides were created to accompany the text [*Introduction to Statistical In
 
 See [AsULearn](https://asulearn.appstate.edu/) for additional readings, videos, and assignments.
 
+You can print these slides to a pdf for offline use using the print function in your browser.
+
 
 ##
 
@@ -78,12 +80,12 @@ You need to **"speak the language"** to understand what is being taught in class
 
 In some situations, an **observational unit** may be referred to as a *case*, a *subject*, a *participant*, or an *experimental unit*.
 
-**<mark>Data</mark>** are often organized in a spreadsheet-type format in which each *row* is an observational unit and each *column* is a variable.
+**Data** are often organized in a spreadsheet-type format in which each *row* is an observational unit and each *column* is a variable.
 
 
 ## A "Tidy" Dataset
 
-Data are usually stored in a rectangular representation that has various names, including **data table** or **statistical spreadsheet**.
+Data are usually stored in a rectangular representation that has various names, including **<mark>data table</mark>** or **<mark>statistical spreadsheet</mark>**.
 
 Most of the data we will work with in STT 1810 is in this format. Real life data is usually far messier and can require a great deal of tidying up, but that is beyond the scope of this class.
 
@@ -232,7 +234,7 @@ Can you think of other quantitative variables you might collect?
 
 Examples of other categorical variables include (1) the teams' names, (2) where the game was played, (3) the day of the week, (4) whether it was a day or night game, and (5) whether there were extra innings. Can you think of more?
 
-Examples of other quantitative variables include (1) number of home runs hit (2) total pitch count, (3) number of runs batted in (rbi), (4) number of at-bats, and (5) number of errors comitted. Can you think of more? (*Many of the [common stats](https://www.baseball-reference.com/bullpen/Baseball_statistics) reported for players and teams are quantitative.*)
+Examples of other quantitative variables include (1) number of home runs hit (2) total pitch count, (3) number of runs batted in (rbi), (4) number of at-bats, and (5) number of errors comitted. Can you think of more? (*Note: Many of the [common stats](https://www.baseball-reference.com/bullpen/Baseball_statistics) reported for players and teams are quantitative.*)
 
 
 ## *Think About It #2*

@@ -1,5 +1,5 @@
 ---
-title: "STT 1810 Basic Statistics (Spring 2025)<br>Course & Textbook Learning Goals"
+title: "STT 1810 Basic Statistics<br>Sections 101 & 103  (Spring 2025)<br>Course & Textbook Learning Goals"
 subtitle: "Instructor: Jill E. Thomley"
 output: 
   html_document: 
@@ -276,5 +276,5 @@ The course textbook for STT 1810 is [***Introduction to Statistical Investigatio
 
 <hr>
 
-Updated Thursday, January 09, 2025 @ 07:25 PM
+Updated Thursday, January 09, 2025 @ 07:28 PM
 

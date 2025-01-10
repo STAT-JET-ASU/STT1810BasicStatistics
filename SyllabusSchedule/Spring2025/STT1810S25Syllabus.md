@@ -90,7 +90,7 @@ The course textbook is ***Introduction to Statistical Investigations (2nd editio
 
 **All of our class meetings will be held in a computer lab.** To participate in learning activities and to complete assignments outside of class, you will need access to an updated electronic device on which you can access Zoom, WileyPLUS, the simulation applets that accompany the textbook, and other electronic materials. The applets can be used on a cell phone, tablet, or computer. 
 
-##### **Assessment Items** ***NEED TO UPDATE ASSSESSMENTS***
+##### **Assessment Items**
 
 The only way to learn statistics is to **DO** statistics. Reading the textbook, watching the assigned videos, learning the vocabulary, and practicing the methods with software and data are critical to your learning and success. Our class activities and formative / summative assessments have been structured with these principles in mind. It will be easier to participate if you acquire some familiarity with the vocabulary and methods *before* we start to discuss and use them. You must "speak the language" of statistics to effectively demonstrate your knowledge. 
 
@@ -100,19 +100,21 @@ The only way to learn statistics is to **DO** statistics. Reading the textbook, 
 
     * Preliminaries Investigation **(5%)**
     * Chapter 1 Investigation **(5%)**
-    * Chapters 2 & 3 Investigation **(8%)**
-    * Chapters 4 & 5 Investigation **(12%)**
+    * Chapters 2 & 3 Investigation **(10%)**
+    * Chapters 4 & 5 Investigation **(10%)**
     * Final Cumulative Investigation **(15%)**
 <p></p>
 
-* **Research/Media Analyses (20%):** You will read three scholarly and/or popular media articles that include statistical research and answer relevant questions about the statistical investigative cycle in those contexts. Two will be assigned to you and you will choose a third article that explores a question related to your major. You will submit these via AsULearn and they will be scored using a rubric. More information will be provided on AsULearn.
+* **Research/Media Analyses (15%):** You will read three scholarly and/or popular media articles that include statistical research and answer relevant questions about the statistical investigative cycle in those contexts. Two will be assigned to you and you will choose a third article that explores a question related to your major. You will submit these via AsULearn and they will be scored using a rubric. More information will be provided on AsULearn.
 
     * Article/Media Analysis #1 **(5%)**
     * Article/Media Analysis #2 **(5%)**
-    * Article/Media Analysis #3 **(10%)**
+    * Article/Media Analysis #3 **(5%)**
 <p></p>
 
 * **Research Ethics (5%):** Society benefits from research and decision-making that is supported by ethical statistical practice. All people who engage in research are expected to follow ethical guidelines and encourage others to do the same. Unfortunately, this has not always been the case. You will complete the type of online training required of anyone at Appalachian State University who wishes to engage in human subjects research, and questions related to ethics may appear in other assignments. More information will be provided on AsULearn.
+
+* **Engagement and Self-Assessment (5%):** You will be asked to self-assess your proficiency on course goals, provide data or feedback during activities, and otherwise engage in class content. More information will be provided on AsULearn.
 
 ##### **Grading Scale** 
 
@@ -158,5 +160,5 @@ This course conforms to all Appalachian State University policies with respect t
 
 <hr>
 
-Updated Thursday, January 09, 2025 @ 07:32 PM
+Updated Thursday, January 09, 2025 @ 07:52 PM
 

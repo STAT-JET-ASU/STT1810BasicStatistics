@@ -25,6 +25,8 @@ These slides are meant to accompany the text [*Introduction to Statistical Inves
 
 See [AsULearn](https://asulearn.appstate.edu/) for additional readings, videos, and assignments.
 
+You can print these slides to a pdf for offline use using the print function in your browser.
+
 
 ## Learning Goals for Preliminaries
 
@@ -62,9 +64,9 @@ You need to **"speak the language"** to understand what is being taught in class
 
 When we talk about probabilities and distributions, we need to keep in mind the distinction between what is **<mark>possible</mark>** (what *can* happen) and what is **<mark>probable</mark>** (what is *likely* to happen). 
 
-* If something is *impossible*, its probability is 0. 
-* If something is *certain* to happen, its probability is 1.
-* Something that is *possible* has a probability between 0 and 1.
+* If something is ***impossible***, its probability is 0. 
+* If something is ***certain*** to happen, its probability is 1.
+* Something that is ***possible*** has a probability between 0 and 1.
 
 
 ## Definitions

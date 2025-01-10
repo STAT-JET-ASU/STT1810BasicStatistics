@@ -1,5 +1,5 @@
 ---
-title: "STT 1810 Basic Statistics<br>Syllabus for Spring 2025"
+title: "STT 1810 Basic Statistics<br>Syllabus for Spring 2025<br>Sections 101 & 103"
 subtitle: "Instructor: Jill E. Thomley"
 output:
   html_document: 

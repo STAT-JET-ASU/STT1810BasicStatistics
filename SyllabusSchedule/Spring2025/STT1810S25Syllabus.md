@@ -1,5 +1,5 @@
 ---
-title: "STT 1810 Basic Statistics<br>Syllabus for Spring 2025"
+title: "STT 1810 Basic Statistics<br>Syllabus for Spring 2025<br>Sections 101 & 103"
 subtitle: "Instructor: Jill E. Thomley"
 output: 
   html_document: 
@@ -158,5 +158,5 @@ This course conforms to all Appalachian State University policies with respect t
 
 <hr>
 
-Updated Thursday, January 09, 2025 @ 07:14 PM
+Updated Thursday, January 09, 2025 @ 07:32 PM
 

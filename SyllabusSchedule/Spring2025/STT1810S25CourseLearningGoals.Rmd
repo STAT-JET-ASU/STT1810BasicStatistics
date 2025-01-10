@@ -1,5 +1,6 @@
 ---
-title: "STT 1810 Basic Statistics<br>Course & Textbook Learning Goals"
+title: "STT 1810 Basic Statistics (Spring 2025)<br>Course & Textbook Learning Goals"
+subtitle: "Instructor: Jill E. Thomley"
 output: 
   html_document: 
     theme: yeti

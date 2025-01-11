@@ -94,7 +94,7 @@ The course textbook is ***Introduction to Statistical Investigations (2nd editio
 
 The only way to learn statistics is to **DO** statistics. Reading the textbook, watching the assigned videos, learning the vocabulary, and practicing the methods with software and data are critical to your learning and success. Our class activities and formative / summative assessments have been structured with these principles in mind. It will be easier to participate if you acquire some familiarity with the vocabulary and methods *before* we start to discuss and use them. You must "speak the language" of statistics to effectively demonstrate your knowledge. 
 
-* **Practice Problems (30%):** These WileyPLUS assignments are primarily short, *formative* assessments on the current materials, designed to reinforce recently-introduced concepts and help you figure out where you need to review or seek additional help. On each assignment, you will get three tries per question. You will receive full credit (100%) if you earn 85% or more of the possible points on a given assignment. If you earn between 60% and 85% of the possible points, your credit will be that percentage. If you earn less than 60% of the possible points, you will get no credit (0). Points earned will be calculated in WileyPLUS; credit will be manually entered into AsULearn. Late submissions are allowed through the end of the semester, for reduced points/credit. 
+* **Practice Problems (30%):** These WileyPLUS assignments are primarily short, *formative* assessments on the current materials, designed to reinforce recently-introduced concepts and help you figure out where you need to review or seek additional help. On each assignment, you will get three tries per question. You will receive full credit (100%) if you earn 90% or more of the possible points on a given assignment. If you earn between 60% and 90% of the possible points, your credit will be that percentage. If you earn less than 60% of the possible points, you will get no credit (0). Points earned will be calculated in WileyPLUS. Credit will be manually entered into AsULearn. Late submissions are allowed through the end of the semester, for reduced points/credit. 
 
 * **Chapter Investigations (45%):** You will complete several cumulative guided investigations that apply course material in a different context than the in-class explorations or WileyPLUS practice problems. These assignments will require you to work independently, integrate course concepts across chapters, and explain statistical ideas in your own words using appropriate statistical vocabulary. You will submit these via AsULearn and they will be scored using a rubric. More information will be provided on AsULearn.
 
@@ -160,5 +160,5 @@ This course conforms to all Appalachian State University policies with respect t
 
 <hr>
 
-Updated Thursday, January 09, 2025 @ 07:52 PM
+Updated Saturday, January 11, 2025 @ 02:48 PM
 

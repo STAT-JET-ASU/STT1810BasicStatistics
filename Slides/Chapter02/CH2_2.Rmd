@@ -24,6 +24,8 @@ These slides are meant to accompany the text [*Introduction to Statistical Inves
 
 See [AsULearn](https://asulearn.appstate.edu/) for additional readings, videos, and assignments.
 
+You can print these slides to a pdf for offline use using the print function in your browser.
+
 
 ## Recall: Spiral Approach & Four Pillars
 
@@ -113,7 +115,7 @@ To distinguish between a quantitative variable and a categorical variable in des
 
 ## Key Central Limit Theorem Ideas
 
-The Central Limit Theorem describes the sampling distributions of certain statistics from finite populations, like $\bar{x}$ --- if we meet the necessary criteria. As in Section 2.1, here we are considering statistics from large, finite populations.
+The **<mark>Central Limit Theorem</mark>** describes the sampling distributions of some statistics from finite populations, like $\bar{x}$ --- if we meet the necessary criteria. As in Section 2.1, here we are considering statistics from large, finite populations.
 
 * We have a large, finite (i.e., *countable*) population with mean $\mu$ and standard deviation $\sigma$.
 
@@ -128,11 +130,11 @@ The Central Limit Theorem describes the sampling distributions of certain statis
 
 If the key CLT ideas on the previous slide are true, the sampling distribution of the sample proportion $\bar{x}$ will have the following distribution properties.
 
-**shape:** The sampling distribution will be approximately normal if the population is not too skewed and $n = 20$ or more. 
+**shape :** The sampling distribution will be approximately normal if the population is not too skewed and $n = 20$ or more. (*Many other sources will say 30 or more, but that is meant to account for more skewed distributions.*)
 
 As a special case, the shape of the sampling distribution of $\bar{x}$ will be *exactly* normal if we are sampling from a normal population.
 
-**center:** The mean of the sampling distribution will be equal to $\mu$ --- like proportions, it is unbiased, so all of the possible values of the sample mean $\bar{x}$ for a given $n$ average out to be $\mu$.
+**center :** The mean of the sampling distribution will be equal to $\mu$ --- like proportions, it is unbiased, so all of the possible values of the sample mean $\bar{x}$ for a given $n$ average out to be $\mu$.
 
 
 ##  Variability

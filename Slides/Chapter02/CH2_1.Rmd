@@ -25,6 +25,8 @@ These slides are meant to accompany the text [*Introduction to Statistical Inves
 
 See [AsULearn](https://asulearn.appstate.edu/) for additional readings, videos, and assignments.
 
+You can print these slides to a pdf for offline use using the print function in your browser.
+
 
 ## Recall: Spiral Approach & Four Pillars
 
@@ -65,7 +67,7 @@ In Chapter 1, we generated many hypothetical samples from a specified probabilit
 
 In a test of significance, we use the *hypothetical* $\pi$ to try to make an inference about an *actual population* $\pi$.
 
-Now we are taking samples from an actual population. Why? So we can explore what kinds of samples we might get. In this case, $\pi$ is an *actual population value* we specify.
+Now we are taking samples from an actual population. Why? So we can explore what kinds of samples we might get. In this case, $\pi$ is an actual population value we theoretically specify.
 
 <hr>
 
@@ -125,7 +127,7 @@ Section 2.1 provides a foundation for the upcoming Section 3.2.
 
 ## 
 
-Recall the terms *parameter*, *statistic*, and the other vocabulary we learned in Chapter 1 and the Preliminaries sections. Review as needed to make sure you have their meanings solidified, so that you can use statistical language effectively as we move on.
+Recall ***<mark>parameter</mark>***, ***<mark>statistic</mark>***, and the other vocabulary terms we learned in Chapter 1 and the Preliminaries sections. Review as needed to make sure you have the meanings solidified, so that you can use statistical language effectively as we move on.
 
 **<mark>population</mark> :** the entire collection of observational units we are interested in (*as determined by the research question*)
 
@@ -163,7 +165,7 @@ A sampling method is considered to be ***<mark>biased</mark>*** if the statistic
 
 <hr>
 
-The ***<mark>Central Limit Theorem</mark>*** tells us that when we sample from a large finite population, the sampling distribution of the sample proportion $\hat{p}$, calculated from from repeated random samples, will be approximately normal if there are at least $10$ successes and at least $10$ failures in each sample.
+The ***<mark>Central Limit Theorem</mark>*** tells us that when we sample from a large finite population, the sampling distribution of the sample proportion $\hat{p}$, calculated from from repeated random samples, will be approximately normal if there are at least $10$ successes and at least $10$ failures in each sample. (*More on this to come...*)
 
 <hr>
 
@@ -174,7 +176,7 @@ In Section P.2 you learned about the distribution of a variable, which is descri
 
 For a sampling distribution, the "variable" is a statistic of some kind, like the sample proportion $\hat{p}$. 
 
-If we take many, many random samples of the same size from a population with parameter $\pi$, the value of the statistic $\hat{p}$ will be different from sample to sample, but in a way we can predict *in the long run* from its distribution.
+If we take many, many random samples of the same size from a population with parameter $\pi$, the value of the statistic $\hat{p}$ will be different from sample to sample, but in a way we can predict *in the long run* by understanding its distribution.
 
 <hr>
 
@@ -183,7 +185,7 @@ If we take many, many random samples of the same size from a population with par
 
 ## Key Central Limit Theorem Ideas
 
-The Central Limit Theorem describes the sampling distributions of certain statistics. Here, we are specifically interested in finite populations like most of those we encounter in real life, with our $\hat{p}$ statistic. We must meet some necessary criteria. 
+The **<mark>Central Limit Theorem</mark>** describes the sampling distributions of some statistics from finite populations, like $\hat{p}$ --- assuming we meet the necessary criteria or conditions. 
 
 * We have a large, finite population with parameter $\pi$. Here, *finite* means it is possible to count the observational units.
 
@@ -196,9 +198,9 @@ The Central Limit Theorem describes the sampling distributions of certain statis
 
 ## Shape and Center
 
-If the key CLT criteria on the previous slide are true for a given scenario, the sampling distribution of the sample proportion $\hat{p}$ will have the following distribution properties.
+If the four CLT ideas on the previous slide are true for a given situation, the sampling distribution of the sample proportion $\hat{p}$ will have the following distribution properties.
 
-**shape:** The sampling distribution will be approximately normal (*unimodal and mound-shaped---the classic "bell curve"*).
+**shape :** the sampling distribution will be approximately normal (*unimodal and mound-shaped---the classic "bell curve"*).
 
 <hr>
 
@@ -206,12 +208,12 @@ If the key CLT criteria on the previous slide are true for a given scenario, the
 
 <hr>
 
-**center:** The mean of the sampling distribution will be equal to $\pi$ (i.e., *all of the possible sample proportions $\hat{p}$ will average out to the population proportion---it is what we will call unbiased*).
+**center :** The mean of the sampling distribution will be equal to $\pi$ (i.e., *all of the possible sample proportions $\hat{p}$ will average out to the population proportion---it is what we will call unbiased*).
 
 
 ##  Variability
 
-The standard deviation of the sampling distribution of $\hat{p}$ will be a function of $\pi$ and the sample size $n$.
+The standard deviation of the sampling distribution of $\hat{p}$ will be a function of $\pi$ and the sample size.
 
 $$\text{the standard deviation of }\hat{p} = SD(\hat{p}) = \sqrt{\frac{\pi(1-\pi)}{n}}$$
 
@@ -243,10 +245,10 @@ $$SD(\hat{p}) = \sqrt{\frac{.10(1-.10)}{100}} = \sqrt{\frac{0.10 \times 0.90}{10
 
 ##
 
-Simulated sampling distribution using [One-Proportion](http://www.isi-stats.com/isi2nd/ISIapplets2021.html) applet:
+Simulated sampling distribution using [One-Proportion](http://www.isi-stats.com/isi2nd/ISIapplets2021.html) applet. Notice the bell shape along with the mean and SD values.
 
 ```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("../images/SamplingDist50.png", dpi = 100)
+knitr::include_graphics("../images/SamplingDist50.png", dpi = 120)
 ```
 
 <center>$\text{probability of success}(\pi) = 0.50$<br>
@@ -255,10 +257,10 @@ $\text{sample size}(n) = 100$</center>
 
 ##
 
-Simulated sampling distribution using [One-Proportion](http://www.isi-stats.com/isi2nd/ISIapplets2021.html) applet:
+Simulated sampling distribution using [One-Proportion](http://www.isi-stats.com/isi2nd/ISIapplets2021.html) applet. Notice the shape is *slightly* right skewed. *Why is that true?*
 
 ```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("../images/SamplingDist10.png", dpi = 100)
+knitr::include_graphics("../images/SamplingDist10.png", dpi = 120)
 ```
 
 <center>$\text{probability of success}(\pi) = 0.10$<br>
@@ -276,12 +278,13 @@ $\text{sample size}(n) = 100$</center>
 |  400   |             0.50               |     0.0250      |
 |  800   |             0.50               |     0.0177      |
 
-<mark>Observe that $SD(\hat{p})$ gets progressively smaller as $n$ gets larger</mark>. If we quadruple $n$, then $SD(\hat{p})$ gets cut in half.
+<mark>Observe that $SD(\hat{p})$ gets progressively smaller as $n$ gets larger.</mark> If we quadruple $n$, then $SD(\hat{p})$ gets cut in half.
 
 
 ## Visualize $SD(\hat{p})$ for Changing $n$
 
-```{r echo = FALSE, fig.align = "center"}
+```{r echo = FALSE}
+library(tidyverse)
 df1 <- tibble(n = c(25, 50, 100, 200, 400, 600, 800, 1000), SD = sqrt(0.25 / n))
 ggplot(df1, aes(x = n, y = SD)) +
   geom_line() +
@@ -352,7 +355,7 @@ ggplot(df1, aes(x = n, y = SD)) +
 
 ## Visualize $SD(\hat{p})$ for Changing $\pi$
 
-```{r echo = FALSE, fig.align = "center"}
+```{r echo = FALSE}
 df2 <- tibble(pi = c(0.01, seq(0.0, 1, 0.10), 0.99), SD = sqrt((pi * (1 - pi)) / 100))
 ggplot(df2, aes(x = pi, y = SD)) +
   geom_line() +
@@ -371,7 +374,7 @@ ggplot(df2, aes(x = pi, y = SD)) +
     "label",
     x = 0.5,
     y = 0.055,
-    label = "for any given sample size (n), the largest SD is always when π = 0.5",
+    label = "for any given n, the largest SD is always when π = 0.5",
     fill = "peachpuff"
   ) +
   annotate(

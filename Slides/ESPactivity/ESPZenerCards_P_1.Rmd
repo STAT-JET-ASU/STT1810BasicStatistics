@@ -29,7 +29,7 @@ The term "extrasensory perception" was widely popularized by J.B. Rhine in the 1
 ## Process & Research Question
 
 <hr>
-**Research Question:** Do I have ESP?
+**<mark>Research Question</mark> :** Do I have ESP?
 <hr>
 
 In order to investigate this question, we need to design a study, collect data, and then determine how we will assess that data to make a statement what kind of evidence it provides with respect to our research question. 
@@ -38,7 +38,7 @@ We may need to narrow the focus and/or rephrase our research question to make it
 
 In this case, we probably cannot assess telepathy, psychokinesis, and precognition with a single test.
 
-Narrowing the question will affect our *scope of inference* --- how we can generalize the results.
+Narrowing the question will affect our ***scope of inference*** --- how we can generalize the results.
 
 
 ## Zener Cards & Testing for ESP
@@ -57,7 +57,7 @@ The classic Zener card deck has twenty five cards, five of each symbol: a circle
 In a test for ESP, the experimenter picks a card from a shuffled deck and asks the person being tested to identify which of the five symbols is on the card---without showing them, of course. There are two methods we can use.
 
 * Do not replace drawn cards. Deck size diminishes with each draw and the ratios of symbols left in the deck change.
-* Replace previously drawn cards. Deck size and ratios remain the same across all drawings. *We will use type of test.*
+* <mark>Replace the drawn card before choosing again. Deck size and symbol ratios are always the same.</mark> *We will use type of test.*
 
 If we did a test where someone was presented with 25 cards to identify, how many would they have to get right to make you get suspicious that “something else is going on” --- the person really has ESP, the cards are marked, etc.
 
@@ -75,7 +75,7 @@ knitr::include_graphics("../images/josephbanksrhine.jpeg")
 ```
 
 <hr>
-<p style="text-align: center;">[Advanced ESP Test](https://psychicscience.org/esp3) (try to ignore the annoying ads)</p>
+<p style="text-align: center;">[Advanced ESP Test](https://psychicscience.org/esp3) (*try to ignore the annoying ads*)</p>
 <hr>
 
 
@@ -99,11 +99,11 @@ knitr::include_graphics("../images/ESP02.PNG", dpi = 110)
 
 ## "About the Statistical Analysis"
 
-The applet introduces some ideas we will see in later chapters.
+The applet introduces some ideas we will see in Chapter 1, and we will revisit these data as examples.
 
-* The *z*-score and probability (*p*) of the test results are shown. When the probability is small (*p*-value < 0.05), the results are said to be *statistically significant* and may be evidence of ESP.
+* If you get significantly more hits than the number we would expect by purely random chance, it may indicate psi-hitting (ESP). Significantly fewer is psi-missing, which also suggests ESP (awareness and avoidance of the actual target).
 
-* If you get significantly more hits than the number we would expect by chance, it indicates psi-hitting (ESP). Significantly fewer is psi-missing. It can also suggest ESP (awareness and avoidance of the actual target).
+* The probability (*p*) and *z*-score of results are shown. When the probability is small (less than 0.05), the test results are said to be *statistically significant* and may be evidence of ESP.
 
 * Psi-hitting is indicated by a large positive *z*-score, whereas a large negative *z*-score indicates psi-missing.
 

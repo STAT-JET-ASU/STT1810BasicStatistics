@@ -1,6 +1,6 @@
 ---
-title: "Do You Have ESP?<br>Strength Using *p*-Values"
-subtitle: "Zener Card ESP Test Continuation --- Section 1.2"
+title: "Do You Have ESP?<br>Evidence Using *p*-Values"
+subtitle: "Zener Card ESP Data Continuation --- Section 1.2"
 author: "Jill E. Thomley | **STT 1810 BASIC STATISTICS** | Appalachian State University"
 date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
 output: 
@@ -19,7 +19,7 @@ knitr::opts_chunk$set(
 
 ## Recall Our [ESP Test / Data Exploration](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/Chapter00/ESPZenerCards_P_1.html)
 
-In our Zener card ESP test, the parameter of interest is the long-run probability that the person who is being tested can correctly identify the symbol on a card. Logically, given the testing set-up, we would expect someone who is purely guessing to get 20% of presented cards correct.
+In our Zener card ESP test, the ***parameter of interest*** is the long-run probability that the person who is being tested can correctly identify the symbol on a card. Logically, given the testing set-up, we would expect someone who is purely guessing to get 20% of the presented cards correct by random chance.
 
 <hr>
 
@@ -28,12 +28,12 @@ Let **$\pi$** be the long-term probability of correctly identifying a card. In t
 * the person is just randomly guessing, and therefore $\pi$ = 0.20
 * the person is not guessing and $\pi$ > 0.20 (*better than* guessing)
 
-These options form our **null and alternative hypotheses**, which we typically express in symbolic statistical language.
+These options form our ***null and alternative hypotheses***, which we typically express in symbolic statistical language.
 
 
 ##
 
-Our hypotheses are formed from our parameter definition ($\pi$) and our two stated options.
+Our hypotheses are formed from our parameter definition ($\pi$) and our two possible options in this scenario.
 
 $H_0:$ The long-term probability of correctly identifying a card is equal to $0.20$.
 
@@ -52,7 +52,7 @@ Now that we have established our parameter and hypotheses in this context, we ca
 
 ## The 3S Process
 
-**Statistic:** Suppose I got $9$ of $25$ cards correct on my ESP test. We will use the proportion of successes as our statistic: $\hat{p} = 0.36$.
+**Statistic:** Suppose I got $9$ of $25$ cards correct on my ESP test. We will use the proportion of successes as our statistic : $\hat{p} = 0.36$.
 
 **Simulate:** We can simulate a null distribution for our Zener card ESP test using our [One Proportion](http://www.isi-stats.com/isi2nd/ISIapplets2021.html) applet, assuming the person being tested is just guessing. We will set $\pi = 0.20$ and $n = 25$, with 1000 or more samples (repetitions). 
 
@@ -72,19 +72,19 @@ knitr::include_graphics("../images/OneProportionAppletZenerB.png", dpi = 125)
 
 **Strength of Evidence:** From my simulation, I obtained a *p*-value of $0.0490$. My statistic $0.36$ is located fairly far out in the upper tail of the null distribution, as shown on the simulation plot.
 
-Consulting our guidelines, my *p*-value is between 0.01 and 0.05. This means I have **strong evidence** against the null hypothesis.
+Consulting our guidelines, my *p*-value is between 0.01 and 0.05. This means I have ***strong evidence*** against the null hypothesis.
 
-| Magnitude               | Guideline for Inference                                     |
-|-------------------------|-------------------------------------------------------------|
-| *p*-value > 0.10        | not much evidence against $H_0$                             |
-| 0.05 < *p*-value ≤ 0.10 | moderate evidence against $H_0$                             |
-| 0.01 < *p*-value ≤ 0.05 | strong evidence against $H_0$ **&larr; 0.0490 falls here!** |
-| *p*-value ≤ 0.01        | very strong evidence against $H_0$                          |
+| Magnitude of *p*-value  | Guideline for Inference                                  |
+|-------------------------|----------------------------------------------------------|
+| *p*-value > 0.10        | not much evidence against $H_0$                          |
+| 0.05 < *p*-value ≤ 0.10 | moderate evidence against $H_0$                          |
+| 0.01 < *p*-value ≤ 0.05 | strong evidence against $H_0$ **&larr; 0.0490 is here!** |
+| *p*-value ≤ 0.01        | very strong evidence against $H_0$                       |
 
 
 ## What Does It Mean To Reject $H_0$?
 
-According to our guidelines, I have strong evidence against the null hypothesis. My results are ***statistically significant***; unlikely to be due to random chance. Therefore, I will reject $H_0$.
+According to our guidelines, I have **strong evidence** against the null hypothesis. My results are ***statistically significant***&mdash;unlikely to be due to random chance. Therefore, I will reject $H_0$.
 
 When we reject a null hypothesis, we will accept the alternative (*research*) hypothesis. Here, that is : "The long-run probability of correctly identifying a card is greater than $0.20$."
 
@@ -97,11 +97,11 @@ In Chapter 3, we will learn about how to estimate the value of a parameter, to n
 
 *Okay, but maybe I really don't have ESP...?*
 
-From a probability point of view, we *did* reject the plausibility of the chance model, but the breath of our conclusions are limited by the nature of the experiment and our sample.
+From a probability point of view, we *did* reject the chance model (*it is implausibile*), but the breadth of our conclusions are limited by the nature of the experiment and our sample.
 
 It's still *possible* that the results were due to random chance and we drew an incorrect decision based on the data.
 
-If our data and testing process lead us to declare our results to be statistically significant and we reject $H_0$ (the chance model), but the person really is just guessing, that is called a *Type I Error*. We will discuss this more in Section 1.4.
+If our data and testing process lead us to declare our results to be statistically significant and we reject $H_0$ (the chance model), but the person really is just guessing on each card, that is called a ***Type I Error***. We will discuss this more in Section 1.4.
 
 **Look back and ahead:** how can we improve our data collection?
 

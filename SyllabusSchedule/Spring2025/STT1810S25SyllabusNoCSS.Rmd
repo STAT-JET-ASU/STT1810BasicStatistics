@@ -1,12 +1,9 @@
 ---
-title: "STT 1810 Basic Statistics<br>Syllabus for Spring 2025<br>Sections 101 & 103"
-subtitle: "Instructor: Jill E. Thomley"
+title: "STT 1810 Basic Statistics Syllabus<br>Sections 101 & 103 --- Spring 2025"
 output:
   html_document: 
     theme: cosmo
     highlight: textmate
-    toc: true
-    toc_depth: 5
 ---
 
 <hr>

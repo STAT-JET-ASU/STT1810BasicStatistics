@@ -77,7 +77,7 @@ So what probability of choosing a game winner is implied by "if you know a littl
 
 ## Model: Guessing a Perfect Bracket
 
-We can think of the tournament as another random process.
+***We can think of the tournament as another random process ...***
 
 What if someone is just randomly guessing the winner of every game? They would have a 50% chance of correctly choosing the winner of each game. If we assume the games are independent of each other, like flips of a coin...
 

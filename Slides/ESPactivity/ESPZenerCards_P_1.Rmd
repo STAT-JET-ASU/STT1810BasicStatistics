@@ -29,7 +29,7 @@ The term "extrasensory perception" was widely popularized by J.B. Rhine in the 1
 ## Process & Research Question
 
 <hr>
-**<mark>Research Question</mark> :** Do I have ESP?
+**Research Question:** Do I have ESP?
 <hr>
 
 In order to investigate this question, we need to design a study, collect data, and then determine how we will assess that data to make a statement what kind of evidence it provides with respect to our research question. 
@@ -52,18 +52,44 @@ knitr::include_graphics("https://stat-jet-asu.github.io/Moodlepics/admin/zenerca
 The classic Zener card deck has twenty five cards, five of each symbol: a circle, a plus sign, three vertical wavy lines, a square, and a five-pointed star. 
 
 
-## 
+## How Will We Do a Test?
 
 In a test for ESP, the experimenter picks a card from a shuffled deck and asks the person being tested to identify which of the five symbols is on the card---without showing them, of course. There are two methods we can use.
 
 * Do not replace drawn cards. Deck size diminishes with each draw and the ratios of symbols left in the deck change.
-* <mark>Replace the drawn card before choosing again. Deck size and symbol ratios are always the same.</mark> *We will use type of test.*
 
-If we did a test where someone was presented with 25 cards to identify, how many would they have to get right to make you get suspicious that “something else is going on” --- the person really has ESP, the cards are marked, etc.
+* Replace the drawn card before choosing again. Deck size and symbol ratios are always the same. ***We will use type of test.***
+
+**observational unit:** each trial, or each attempt by the person to identify one card, is the observational unit
+
+**variable:** the variable is whether or not the person can correctly identify the card; it is a categorical variable
+
+
+## ESP Test Dataset
+
+A dataset for this study might look something like the following table. Rows are observational units; columns are variables. 
+
+Recall, the variable that is relevant for the research question we posed is the result of the person's attempt to identify a card.
+
+| Trial  |  Card  | Guess  | Result  |
+|:------:|:------:|:------:|:-------:|
+|    1   | star   |square  |incorrect|
+|    2   | waves  |waves   |correct  | 
+|&#10247;|&#10247;|&#10247;|&#10247; | 
+|   25   | plus   |circle  |incorrect| 
+
+
+## Assessing the Evidence
+
+Suppose we performed a test where the person was presented with 25 Zener cards to identify. Consider what we might observe in the results of the test.
+
+* How many cards would you expect someone to get correct if they were just randomly guessing (*no ESP ability*)?
+
+* How many cards would they have to get right to make you get suspicious that “something else is going on” besides random guessing---the person really has ESP, the cards are marked in some way, there is some other kind of influence, etc.
 
 <hr>
-<p style="text-align: center; color: red; font-weight: bold;">DISCUSS</p>
-<hr>
+
+In Chapter 4 we will talk about how to design research to avoid extraneous influences (i.e., *confounding variables*). The idea is to identify pure randomness versus some genuine effect like ESP.
 
 
 ## Take the Test!
@@ -110,7 +136,7 @@ The applet introduces some ideas we will see in Chapter 1, and we will revisit t
 
 ## Some Additional Questions...
 
-Recap: How often would a person who does *not* have any ESP abilities (and who is not cheating) get a "hit"? Is it *never*?
+**Recap:** How often would a person who does *not* have ESP (and who is not cheating) get a "hit"? Would it be *never*? Why?
 
 How does randomness (chance) play into the overall process of the test? Does randomness help or hurt our scientific method?
 
@@ -119,7 +145,7 @@ The online test says, "choose at least 50 trials to obtain a reliable indication
 Is there a way we can logically/scientifically quantify the strength of the evidence provided by our data?
 
 <hr>
-<p style="text-align: center; color: red; font-weight: bold;">DISCUSS</p>
+<p style="text-align: center; color: red; font-weight: bold;">Think about the role randomness plays in our research process and in making sense of our data and results.</p>
 <hr>
 
 

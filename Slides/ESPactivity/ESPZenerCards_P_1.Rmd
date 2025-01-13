@@ -71,7 +71,7 @@ A dataset for this study might look something like the following table. Rows are
 
 Recall, the variable that is relevant for the research question we posed is the result of the person's attempt to identify a card.
 
-| Trial  |  Card  | Guess  | Result  |
+| Trial  | Actual | Choice | RESULT  |
 |:------:|:------:|:------:|:-------:|
 |    1   | star   |square  |incorrect|
 |    2   | waves  |waves   |correct  | 

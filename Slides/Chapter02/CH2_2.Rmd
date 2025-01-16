@@ -128,7 +128,7 @@ The **<mark>Central Limit Theorem</mark>** describes the sampling distributions 
 
 ## Shape and Center
 
-If the key CLT ideas on the previous slide are true, the sampling distribution of the sample proportion $\bar{x}$ will have the following distribution properties.
+If all key CLT ideas on the previous slide are true, the sampling distribution of the sample proportion $\bar{x}$ will have the following distribution properties.
 
 **shape :** The sampling distribution will be approximately normal if the population is not too skewed and $n = 20$ or more. (*Many other sources will say 30 or more, but that is meant to account for more skewed distributions.*)
 

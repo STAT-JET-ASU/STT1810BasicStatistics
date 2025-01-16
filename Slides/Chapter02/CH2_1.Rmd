@@ -198,7 +198,7 @@ The **<mark>Central Limit Theorem</mark>** describes the sampling distributions 
 
 ## Shape and Center
 
-If the four CLT ideas on the previous slide are true for a given situation, the sampling distribution of the sample proportion $\hat{p}$ will have the following distribution properties.
+If all the CLT ideas on the previous slide are true for a given situation, the sampling distribution of the sample proportion $\hat{p}$ will have the following distribution properties.
 
 **shape :** the sampling distribution will be approximately normal (*unimodal and mound-shaped---the classic "bell curve"*).
 

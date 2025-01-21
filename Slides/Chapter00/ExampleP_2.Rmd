@@ -275,5 +275,23 @@ ggplot(sbdata, aes(x = Year, y = Time, shape = Sex, color = Sex)) +
 
 * What other information would you like to have that is not included in the dataset?
 
-* According to [The Lines](https://www.thelines.com/odds/super-bowl/national-anthem/), "It is likely that McEntire’s National Anthem over under will be well under 2 minutes given her track record of Anthem renditions. The longest McEntire National Anthem available to watch on YouTube is her going just 1 minute and 23 seconds. This is considerably shorter than most modern versions." *Did this turn out to be true?*
+* According to [The Lines](https://www.thelines.com/odds/super-bowl/national-anthem/), "It is likely that McEntire’s National Anthem over under will be well under 2 minutes given her track record of Anthem renditions. The longest McEntire National Anthem available to watch on YouTube is her going just 1 minute and 23 seconds. This is considerably shorter than most modern versions." ***Did this turn out to be true?***
+
+
+## The Star Spangled Banner
+
+*O say can you see, by the dawn's early light,  
+What so proudly we hailed at the twilight's last gleaming,  
+Whose broad stripes and bright stars through the perilous fight,  
+O'er the ramparts we watched, were so gallantly streaming?  
+And the rocket's red glare, the bombs bursting in air,  
+Gave proof through the night that our flag was still there;  
+O say does that star-spangled banner yet wave  
+O'er the land of the free and the home of the brave?*
+
+<hr>
+
+Did you know our national anthem, [originally written as a poem by Francis Scott Key](https://amhistory.si.edu/starspangledbanner/the-lyrics.aspx), has a total of four verses? 
+
+How long would it take to sing the entire thing?
 

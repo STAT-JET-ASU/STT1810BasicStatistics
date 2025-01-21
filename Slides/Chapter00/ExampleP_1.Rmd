@@ -65,7 +65,7 @@ knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
 
 However, this question is simply too broad to design a study for. We need to focus it more into a question about which we could reasonably collect data to produce an answer.
 
-Consider: In the United States, everyone 18 years of age or older is eligible to register as an organ donor on their driver's license. What is the ***process*** of asking people to be donors?
+Consider: In the United States, everyone 18 years of age or older is [eligible to register as an organ donor](https://www.organdonor.gov/sign-up) on their driver's license. What is the ***process*** of asking people to be donors?
 
 **Research Question:** Does the default option that is presented to driver’s license applicants influence the probability that a person will choose to become an organ donor?
 

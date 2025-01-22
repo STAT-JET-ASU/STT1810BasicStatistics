@@ -91,7 +91,7 @@ knitr::include_graphics("../images/montyhalldoors.jpg", dpi = 90)
 ```
 
 
-## Winner!
+## You're a winner!
 
 One actual prize, a vintage Pontiac LeMans T-37 (1970 to 1972).
 
@@ -109,13 +109,13 @@ knitr::include_graphics("../images/sillygoat.jpeg", dpi = 190)
 
 ## Probabilistic Properties of the Game
 
-What is the *random process*? What are its possible outcomes?
+What is the random process? What are its *possible* outcomes?
 
 What is the *probability* of each outcome in the random process? 
 
 Summarized, what is the *probability distribution* for the process?
 
-How can we simulate the random process using a computer, or alternatively a tactile tool like coins, dice, cards, or spinners?
+How can we simulate the random process [using a computer](https://www.random.org/), or a physical/tactile tool like coins, dice, cards, or spinners?
 
 ```{r, echo = FALSE, fig.align="center"}
 knitr::include_graphics("../images/tactiletools.jpg", dpi = 175)

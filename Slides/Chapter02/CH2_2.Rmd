@@ -115,26 +115,26 @@ To distinguish between a quantitative variable and a categorical variable in des
 
 ## Key Central Limit Theorem Ideas
 
-The **<mark>Central Limit Theorem</mark>** describes the sampling distributions of some statistics from finite populations, like $\bar{x}$ --- if we meet the necessary criteria. As in Section 2.1, here we are considering statistics from large, finite populations.
+The **<mark>Central Limit Theorem</mark>** describes the sampling distributions of certain statistics from finite populations, like $\bar{x}$ --- if we meet the necessary criteria. As we did Section 2.1, we are considering statistics from large, finite populations.
 
-* We have a large, finite (i.e., *countable*) population with mean $\mu$ and standard deviation $\sigma$.
+* We have a large, finite (i.e., *countable*) population with a mean symbolized by $\mu$ and a standard deviation symbolized by $\sigma$.
 
 * Our sample size ($n$) is less than $5\%$ of the overall population.
 
 * We are taking random samples of size $n$ that are big enough, or the sample comes from a normal population.  
 
-* We are calculating the sample proportion $\bar{x}$ for each sample.
+* We are calculating the sample proportion $\bar{x}$ for each sample that we take from the population.
 
 
 ## Shape and Center
 
-If all key CLT ideas on the previous slide are true, the sampling distribution of the sample proportion $\bar{x}$ will have the following distribution properties.
+If all of the key CLT ideas included on the previous slide are true, then the sampling distribution of the sample mean ($\bar{x}$) will have the following distribution properties.
 
-**shape :** The sampling distribution will be approximately normal if the population is not too skewed and $n = 20$ or more. (*Many other sources will say 30 or more, but that is meant to account for more skewed distributions.*)
+**<mark>shape</mark> :** The sampling distribution will be approximately normal if the population is not too skewed and $n = 20$ or more. (*Many other sources will say $n = 30$ or more, to help account for skewed distributions and be more conservative.*)
 
 As a special case, the shape of the sampling distribution of $\bar{x}$ will be *exactly* normal if we are sampling from a normal population.
 
-**center :** The mean of the sampling distribution will be equal to $\mu$ --- like proportions, it is unbiased, so all of the possible values of the sample mean $\bar{x}$ for a given $n$ average out to be $\mu$.
+**<mark>center</mark> :** The mean of the sampling distribution will be equal to $\mu$ --- it is unbiased like proportions, so all possible values of the sample mean $\bar{x}$ for a given $n$ average out to be $\mu$.
 
 
 ##  Variability
@@ -149,7 +149,7 @@ As before, the SD of a sampling distribution is its ***<mark>standard error</mar
 
 <hr>
 
-Unlike proportions, where both the mean and SD depend on the single parameter $\pi$ (review Section 2.1), for quantitative data we are working with two independent parameters, $\mu$ and $\sigma$.
+Unlike proportions, where both the mean and SD depend on the single parameter $\pi$ (review Section 2.1), for quantitative data we are working with two independent parameters $\mu$ and $\sigma$.
 
 
 ## Type of Sampling Still Matters!

@@ -193,7 +193,7 @@ The **<mark>Central Limit Theorem</mark>** describes the sampling distributions 
 
 * However, at the same time, we are taking random samples of size $n$ that are big enough that we have at least $10$ successes and $10$ failures in each sample.  
 
-* We are calculating the sample proportion $\hat{p}$ for each sample.
+* We are calculating the sample proportion $\hat{p}$ for each sample that we take from the population..
 
 
 ## Shape and Center

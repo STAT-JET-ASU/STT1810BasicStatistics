@@ -25,6 +25,8 @@ These slides were created to accompany the text [*Introduction to Statistical In
 
 See [AsULearn](https://asulearn.appstate.edu/) for additional readings, videos, and assignments.
 
+You can print these slides to a pdf for offline use using the print function in your browser.
+
 
 ## 
 
@@ -109,7 +111,7 @@ knitr::include_graphics("../images/molecularmodel.jpg", dpi = 110)
 
 **<mark>model</mark>** (mathematical) 
 
-* A mathematical or probabilistic conceptualization meant to closely match reality, but always making *assumptions* about that reality, which may or may not be true.
+* A representation using math or probability tools that is meant to closely match reality, but always making *assumptions* about that reality, which may or may not be true.
 
 **<mark>chance model</mark>**
 
@@ -136,22 +138,22 @@ Study and learn these new terms so that you can communicate statistical concepts
 
 ## 
 
-**<mark>chance model</mark> :** a physical / tactile or computerized process to generate random data according to a "well-understood" set of conditions (i.e., the properties of the real-life random process we are studying; we may need to make some assumptions)
+**<mark>chance model</mark> :** a physical / tactile or computerized process to generate random data according to a "well-understood" set of conditions&mdash;with some necessary assumptions
 
-We often use cards, coins, dice, and spinners to help us model random processes, as well as computer programs/applets.
+The model reflects important properties of the real-life random process we are studying. We use cards, coins, dice, and spinners to make models, as well as computer programs / applets.
 
-***Example 1:*** For the ESP test we did, one condition was using an open deck (*sampling with replacement*) so that the probability of random guessing on each trial would stay the same. We also assumed there was no other way for someone to know which card was drawn (e.g., marked cards, cheating).
+***Example 1:*** For the ESP test we did, one condition was using an "open deck" (*sampling with replacement*) so that the probability of randomly guessing the correct symbol on each trial would stay the same. We *assumed* there was no other way for someone to know which card was drawn (e.g., marked cards, cheating).
 
-***Example 2:*** For the Monty Hall game, we assumed that the prize was equally likely to be placed behind any of the three doors. In our extended version, another condition was that we opened all of the unchosen doors *except one* after the initial guess.
+***Example 2:*** For the Monty Hall game, we *assumed* that the prize was equally likely to be placed behind any of the three doors. In our extended version, another condition was that we opened all of the unchosen doors *except one* after the initial guess.
 
 
 ## 
 
 **<mark>parameter</mark> :** a long-run numerical property of a random process
 
-***Example 1:*** For the ESP example, the parameter is each person's innate chance of identifying a card ($1/5$ if they do not have ESP, versus some value more than $1/5$ if they do). This is reflected in their *long-run* test performance---many more trials than 25. 
+***Example 1:*** For the ESP example, the parameter is each person's innate chance of correctly identifying a card. That chance is 0.2 if they do not have ESP, versus *more than* 0.2 if they do have ESP. This probability is reflected in their *long-run* test performance---many more trials than 25. 
 
-Remember, the ESP test web site suggested that 50+ trials are needed to get "a reliable indication of your performance".
+Remember, the ESP testing web site suggests that 50+ trials are needed to get "a reliable indication of your performance".
 
 ***Example 2:*** Across a large number of instances of the Monty Hall game, what is the probability a wins player if they switch? This is one scenario we investigated using our 1000+ simulations of the game using applets. 
 
@@ -162,14 +164,14 @@ The *long-run* probability of winning the game if you switch is the parameter fo
 
 **<mark>sample</mark> :** the set of observational units on which we collect data
 
-***Example 1:*** One card presented for identification in our Zener card ESP test is an observational unit. The sample is the total number of cards a person attempts in the test.
+***Example 1:*** One card presented for identification in our Zener card ESP test is an observational unit. The sample is the total number of cards a person attempts in their test.
 
 ***Example 2:*** Playing one round of the Monty Hall game is a unit; the number of rounds we play is the sample size.
 
 
-**<mark>sample size</mark> :** the number of observational units $n$ in a sample
+**<mark>sample size</mark> :** the number of observational units ($n$) in a sample
 
-***Example 1:*** For our ESP test, we attempted $n = 25$ cards. Since we took the test twice under identical conditions, we could put the data together for a sample of $n = 50$.
+***Example 1:*** For our ESP test, we attempted $n = 25$ cards. If we took the test twice under identical conditions, we could put the data together for a sample of $n = 50$.
 
 ***Example 2:*** We initially did $n = 15$ trials of the Monty Hall game. Later, we increased to $n = 100$ and $n = 1000$ trials.
 
@@ -182,7 +184,7 @@ The value of a sample *statistic* we get from observing a random process is a wa
 
 ***Example 1:*** During the ESP test, our statistic was the number of cards out of 25 that we correctly identified.
 
-***Example 2:*** For Monty Hall, we recorded a win (car) or loss (goat) for each individual game, then we counted the total number of wins and calculated the fraction of wins. Both are statistics. 
+***Example 2:*** For Monty Hall, we recorded a win (car) or loss (goat) for each game we played, then we counted the total number of wins and calculated the fraction of wins. Both are statistics. 
 
 **<mark>statistically significant</mark> :** unlikely to occur just by random chance 
 
@@ -204,7 +206,7 @@ If we decide the observed statistic is unlikely to occur by chance alone, we can
 
 ## Why Not Proof?
 
-Just because we have not yet found evidence for something we are studying, that does not automatically prove it does not exist. When we use samples, there is always some level of ***uncertainty*** (due to randomness) in our research findings.
+Just because we have not yet found evidence for something we are studying, that does not automatically prove it does not exist. When we use samples, there is always ***uncertainty*** (randomness) in our research findings&mdash;think *improbable* vs. *impossible*.
 
 ```{r, echo = FALSE, fig.align="center"}
 knitr::include_graphics("https://stat-jet-asu.github.io/Moodlepics/admin/absenceofevidence.png")

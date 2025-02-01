@@ -21,11 +21,13 @@ library(tidyverse)
 
 ## Before We Begin…
 
-These slides were created to accompany the text [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html) --- Section 1.1 Introduction to Chance Models. 
+These slides are meant to accompany the text [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html) --- Section P.1 Introduction to the Six-Step Method.
 
 *This content does not replace reading the relevant textbook section.* It is for class presentation, review, and reference.
 
 See [AsULearn](https://asulearn.appstate.edu/) for additional readings, videos, and assignments.
+
+You can print these slides to a pdf for offline use using the print function in your browser.
 
 
 ## Learning Goals for Section 1.1
@@ -207,7 +209,7 @@ Press `Draw Samples` to generate 100 simulated experiments...
 knitr::include_graphics("../images/fig_01_01_04A.jpg", dpi = 100)
 ```
 
-Any number of successes from $0$ to $16$ is *possible* if Buzz is just guessing. This plot of simulation results shows us which of the possibilities are more *probable* or *likely* to happen.
+Any number of successes from $0$ to $16$ is *possible* if Buzz is just guessing. This dotplot of simulation results shows us which of these possible values are more *probable* or *likely* to happen.
 
 
 ## Doing 1000 Simulations
@@ -225,12 +227,12 @@ Press `Draw Samples` to generate 1000 simulated experiments...
 knitr::include_graphics("../images/fig_01_01_04B.jpg", dpi = 100)
 ```
 
-Doing a larger number of simulations gives us a better idea of the *long-run* probability for all the possible outcomes. Getting a count of $5$ to $11$ correct just by guessing is fairly likely (*typical*). 
+Doing a larger number of simulations gives us a better idea of the long-run probability for all the possible outcomes. Getting a count of $5$ to $11$ correct just by guessing is fairly common. 
 
 
 ## If We Did Infinite Simulations...
 
-The plot shows the true long-run probabilities of getting $0$ to $16$ correct, if Buzz is just guessing on each trial. Notice that $8$ ($50\%$) is the most common. *This requires doing a bit of math*...
+The plot shows the true long-run probabilities of getting $0$ to $16$ correct, if Buzz is just guessing on each trial. Notice that $8$ ($50\%$ correct) is most common. *This requires doing a bit of math*...
 
 ```{r fig.align="center", fig.height = 3.75}
 pmf <- tibble(
@@ -295,13 +297,11 @@ ggplot(pmf, aes(x = as.factor(successes), y = probability, fill = c("A", "B", "A
 
 If we *can* do the math, then why don't we?
 
-Most traditional statistical methods are *approximations* that use probability theory and mathematics. You may have seen these in a research methods course or other courses where you have read published research articles.
+Most traditional statistical methods are *approximations* that use probability theory and mathematics. We will see this in Section 1.5, where we will learn a method that approximates a solution using the Normal distribution.
 
-In this course, we will use simulations to approximate long-run probabilities. In many ways, simulations can be preferable and more flexible than theory-based methods.
+In this course, we will use simulations to approximate long-run probabilities. In many ways, simulations can be preferable and more flexible than theory-based methods. You will be asked to compare simulations to theory-based results.
 
 In any case, we can see that getting $15$ out of $16$ correct just by randomly guessing is a *very* rare (a *very low probability*) outcome, although it is not impossible.
-
-Okay, so what do we conclude from this? 
 
 
 ## STEP 5: Formulate Conclusions

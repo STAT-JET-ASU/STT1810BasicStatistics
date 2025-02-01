@@ -21,7 +21,7 @@ library(tidyverse)
 
 ## Before We Begin…
 
-These slides are meant to accompany the text [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html) --- Section P.1 Introduction to the Six-Step Method.
+These slides were created to accompany the text [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html) --- Section 1.1 Introduction to Chance Models. 
 
 *This content does not replace reading the relevant textbook section.* It is for class presentation, review, and reference.
 

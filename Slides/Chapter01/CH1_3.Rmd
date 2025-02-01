@@ -25,6 +25,8 @@ These slides were created to accompany the text [*Introduction to Statistical In
 
 See [AsULearn](https://asulearn.appstate.edu/) for additional readings, videos, and assignments.
 
+You can print these slides to a pdf for offline use using the print function in your browser.
+
 
 ## Recall: Spiral Approach & Four Pillars
 
@@ -134,7 +136,7 @@ The farther from zero the standardized statistic is, the stronger the evidence a
 
 ## Quantifying Strength of Evidence
 
-In this context, the **<mark>*z*-score</mark>** measures how extreme the observed statistic is relative to the value hypothesized in $H_0$. The $H_a$ will indicate whether we consider positive values (right tail) and / or negative values (left tail).
+In this context, the **<mark>*z*-score</mark>** measures how extreme the observed statistic is relative to the value hypothesized in $H_0$. The sign in $H_a$ will indicate whether we consider positive values (right tail), negative values (left tail), or both (two-tailed).
 
 | Magnitude                    | Strength of Evidence                                       |
 |------------------------------|------------------------------------------------------------|

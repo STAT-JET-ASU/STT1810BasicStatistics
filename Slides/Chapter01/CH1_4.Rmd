@@ -81,9 +81,9 @@ We will not cover Section 1.5, regarding theory-based inference.
 
 ## Section 1.4 New Vocabulary
 
-**<mark>two-sided test / alternative hypothesis</mark> :** a test of significance in which the alternative hypothesis has the form "not equal to" or "does not equal" (≠) instead of than less or greater than (< or >). 
+**<mark>two-sided test / alternative hypothesis</mark> :** a test of significance in which the alternative hypothesis has the form "not equal to" (≠) or "does not equal" instead of than less (<) or greater (>) than. 
 
-***Example:*** Our online ESP test mentions both "psi-hitting" (getting more cards correct than expected by chance) and "psi-missing" (getting fewer correct). If we are interested in both of those two possibilities, we would write our hypotheses as follows.
+***Example:*** Our online ESP test mentions "psi-hitting" (*getting more cards correct than expected by chance*) as well as a concept called "psi-missing" (*getting fewer cards correct*). To investigate both of these possibilities, we would write our hypotheses as follows.
 
 $$H_0: \pi = 0.20$$
 
@@ -100,39 +100,70 @@ Three important components of a test of significance influence the strength prov
 
 * **<mark>sample size</mark> :** As the sample size increases (while the value of the observed sample statistic $\hat{p}$ and our hypotheses stay the same), the strength of evidence against $H_0$ increases.
 
-* **<mark>one- vs. two-sided $H_a$</mark> :** Because the *p*-value for a two-sided test is about twice as large as for a one-sided test using the same data, it provides less evidence against $H_0$. (Two-sided tests are used more often in scientific practice.)
+* **<mark>one- vs. two-sided $H_a$</mark> :** Because the *p*-value for a two-sided test is about twice as large as for a one-sided test using the same data, it provides less evidence against $H_0$. Two-sided tests are used more often in scientific practice.
 
 
 ## Type I & Type II Errors
 
-Our estimated *p*-values are probabilities, not proof. When we do a significance test, we might make a decision error. For example, a small sample size is a common reason for a Type II error.
+Our estimated *p*-values are probabilities, not proof. When we do a significance test, we might make a decision error. For example, a small sample size is a very common reason for a Type II error. There are four possibilities when we do a test of significance.
 
-```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("../images/errortypes.png", dpi = 225)
-```
-<p style="text-align:center; font-size: 10px;">Source: [Deepak Chopra | Talking Data Science](https://medium.com/@deepakchopra2911) on Medium</p>
+|Reality vs. Test         | We decide Ho is plausible<br>based on a significance test | We decide Ho is not plausible<br>based on a significance test | 
+|:-----------------------:|:---------------------------------------------------------:|:-------------------------------------------------------------:|
+| $H_0$ is actually<br>true  |<mark style = "background: #9aff9a;">**Correct decision!**</mark><br>We did not reject an $H_0$<br>that was really true.|<mark style = "background: #ffcdcd;">**Type I Error ($\alpha$)**</mark><br>We rejected an $H_0$<br>that was actually true.|
+| $H_0$ is actually false |<mark style = "background: #ffcdcd;">**Type II Error ($\beta$)**</mark><br>We failed to reject an $H_0$<br>that was actually false.|<mark style = "background: #9aff9a;">**Correct decision! (*power*)**</mark><br>We rejected an $H_0$<br>that was really false.|
 
 
 ## Type I Error and Significance
 
 A **<mark>Type I error</mark>** happens when you conclude that your results are statistically significant when, in reality, they happened purely by chance ($H_0$ is really true). Essentially, you had the misfortune of getting a random result that is *improbable* but not *impossible*.
 
-The risk of committing this error is the significance level (α) you choose. That is the value that you set at the start of your study as the decision criteria for a *p*-value, like saying strong evidence is a *p*-value ≤ 0.05 (or *z*-score > 2). Significance level is commonly set at 0.05 (5%), so this is our usual chance of Type I error.
+The risk of committing a Type I error is the significance level ($\alpha$) you choose&mdash;the value that you set at the start of your study as the decision criteria, such as strong evidence is a *p*-value ≤ 0.05. Significance level is usually set at 0.05 (5%), so this is our chance of Type I error.
 
-A **<mark>Type II error</mark>** happens when $H_0$ is genuinely false and we fail to achieve statistically significant results from our data (i.e., we decide $H_0$ is plausible). The chance depends on many factors, including sample size and how close a false $H_0$ is to the truth. 
+A **<mark>Type II error</mark>** happens when $H_0$ is genuinely false, but we fail to get statistically significant results from study data and decide $H_0$ is plausible. This error depends on many situational factors, including the ideas presented in this chapter. 
 
 
-## Example of Type I & II Errors
+## Statistical Power
 
-You decide to get tested for COVID-19 based on mild symptoms. There are two correct decisions and two errors that could occur. Here, the null hypothesis is that you *do not* have COVID-19.
+When we talk about the **<mark>power</mark>** of a test of significance, what we are referring to is the probability that our study data will provide evidence to reject the null hypothesis when it is really false.
 
-The "unknown truth" is : You really DO NOT have COVID-19.
+Remember, the alternative hypothesis is also referred to as the research hypothesis, so researchers usually *want* to reject $H_0$ in favor of $H_a$ (when $H_0$ is false, of course).
+
+Power and Type II error have complimentary probabilities. If the chance of Type II error is $\beta$, then the power is $1-\beta$.
+
+Often, researchers can make educated guesses about unknown parameters to try to estimate power for their study. Calculations like these help them choose the right sample size.
+
+
+## Example of Type I & II Errors #1
+
+Recall Exploration P.1 "Do You Have ESP?" Anyone who got 9/25 or more cards correct was told they had evidence of ESP, but we know such a high score can sometimes happen randomly. 
+
+Reality : You *do not* have ESP.<br>
+$H_0$ : You *do not* have ESP.
+
+* Test says there is no evidence of ESP---yes, a correct decision!
+* Test says there is evidence of ESP---*false positive* (Type I error)
+
+Reality : You *do* have ESP.<br>
+$H_0$ : You *do not* have ESP.
+
+* Test says there is no evidence of ESP---*false negative* (Type II)
+* Test says there is evidence of ESP---again, a correct decision!
+
+
+## Example of Type I & II Errors #2
+
+You decide to get tested for COVID-19 based on mild symptoms. There are two correct decisions and two errors that could occur.
+
+Reality : You *do not* have COVID-19.<br>
+$H_0$ : You *do not* have COVID-19.
 
 * Test says you do not have the virus---yes, a correct decision!
 * Test says you do have the virus---*false positive* (Type I error)
 
-The "unknown truth" is : You really DO have COVID-19.
+Reality : You *do* have COVID-19.<br>
+$H_0$ : You *do not* have COVID-19.
 
+* Test says you do not have the virus---*false negative* (Type II)
 * Test says you do have the virus---again, a correct decision!
-* Test says you do not have the virus---this is a *false negative* (Type II error)
+
 

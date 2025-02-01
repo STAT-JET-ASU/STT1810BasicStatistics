@@ -25,6 +25,8 @@ These slides were created to accompany the text [*Introduction to Statistical In
 
 See [AsULearn](https://asulearn.appstate.edu/) for additional readings, videos, and assignments.
 
+You can print these slides to a pdf for offline use using the print function in your browser.
+
 
 ## Recall: Spiral Approach & Four Pillars
 
@@ -140,7 +142,7 @@ In the field of Statistics, a **<mark>test of significance<mark>** is a procedur
 
 ## Quantifying Strength of Evidence
 
-Our **<mark>*p*-value</mark>** is the probability of getting a purely random value of a statistic that is at least as extreme (*in the direction of $H_a$*) as the observed statistic we are assessing---assuming $H_0$ is true.
+Assuming $H_0$ is true, our **<mark>*p*-value</mark>** is the probability of getting a purely random value of a statistic that is at least as extreme (in the direction of $H_a$) as the observed statistic we are assessing.
 
 | Magnitude               | Guideline for Inference                                    |
 |-------------------------|------------------------------------------------------------|
@@ -156,16 +158,16 @@ Researchers across many of disciplines consider **<mark>*p*-value ≤ 0.05</mark
 
 A *p*-value ≤ 0.05 indicates we have *strong* or *very strong evidence* against the null hypothesis in our textbook guidelines.
 
-In some situations you may want or need stronger evidence. For example, rejecting $H_0$ may have life or death consequences in a medical study, so the researchers might use *p*-value ≤ 0.01 (*very strong evidence*) instead when assessing data.
+In some situations you may want or need stronger evidence. For example, rejecting $H_0$ may have life or death consequences in a medical study, so the researchers might use *p*-value ≤ 0.01 (*very strong evidence*) as the threshold for significance.
 
 <hr>
 
-You may be wondering: why this particular probability? What's so special about it?
+You may be wondering, why this particular probability (≤ 0.05)? What's so special about it?
 
 
 ## Why 0.05?
 
-Ronald Fisher wrote *Statistical Methods for Research Workers* in 1925 and he chose 1 in 20 (5%) as his general guide, because it typically corresponds to roughly two standard deviations from the expected value. (*Though not without some [controversy](https://www.scientificamerican.com/article/the-significant-problem-of-p-values/)...*)
+Ronald Fisher wrote *Statistical Methods for Research Workers* in 1925 and he chose 1 in 20 (5%) as his general guide, because it typically corresponds to roughly two standard deviations from the expected value. (*Though not without [controversy](https://www.scientificamerican.com/article/the-significant-problem-of-p-values/)...*)
 
 ```{r, echo = FALSE, fig.align="center"}
 knitr::include_graphics("../images/fisherpvaluequote.png", dpi = 70)

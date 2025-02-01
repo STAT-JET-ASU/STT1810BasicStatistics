@@ -17,9 +17,9 @@ knitr::opts_chunk$set(
 ```
 
 
-## Recall Our [ESP Test / Data Exploration](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/Chapter00/ESPZenerCards_P_1.html)
+## Recall Our [ESP Test / Data Exploration](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/ESPactivity/ESPZenerCards_P_1.html)
 
-In our Zener card ESP test, the ***parameter of interest*** is the long-run probability that the person who is being tested can correctly identify the symbol on a card. Logically, given the testing set-up, we would expect someone who is purely guessing to get 20% of the presented cards correct by random chance.
+In our Zener card ESP test, the ***parameter of interest*** is the long-run probability that the person who is being tested can correctly identify the symbol on a card. Logically, given the testing set-up, we would expect someone who is purely guessing to get 20% of the cards presented to them correct by random chance.
 
 <hr>
 

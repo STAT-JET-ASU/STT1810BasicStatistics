@@ -17,7 +17,7 @@ knitr::opts_chunk$set(
 ```
 
 
-## Recall Our [ESP Test / Data Exploration](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/Chapter00/ESPZenerCards_P_1.html)
+## Recall Our [ESP Test / Data Exploration](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/ESPactivity/ESPZenerCards_P_1.html)
 
 In our Zener card example for Section 1.2, we discussed defining the parameter and formulating hypotheses.
 
@@ -111,13 +111,13 @@ My *z*-score is exactly +2 --- we have ***strong evidence*** against $H_0$.
 
 ## 
 
-Scores for other $\hat{p}$ values below, above, and equal to the mean*.
+The *z*-scores for $\hat{p}$ values below, equal to, and above the mean.
 
 | Cards Correct | Proportion Correct $\hat{p}$ | Standardized Score ($z$) |
 |:-------------:|:------------------:|:----------------------------------:|
 | $1$           | $0.04$             |$(0.04 - 0.200) / 0.080 = -2.00$    |
 | $3$           | $0.12$             |$(0.12 - 0.200) / 0.080 = -1.00$    |
-| * $5$ *       | * $0.20$ *         |* $(0.20 - 0.200) / 0.080 =  0.00$ *|
+| $5$           | $0.20$             |$(0.20 - 0.200) / 0.080 =  0.00$    |
 | $7$           | $0.28$             |$(0.28 - 0.200) / 0.080 = +1.00$    |
 | $9$           | $0.36$             |$(0.36 - 0.200) / 0.080 = +2.00$    |
 | $11$          | $0.44$             |$(0.44 - 0.200) / 0.080 = +3.00$    |
@@ -126,9 +126,11 @@ Scores for other $\hat{p}$ values below, above, and equal to the mean*.
 
 ## Statistical Significance
 
-My result of 9 (36%) cards correct, with its *z*-score of 2, would be considered ***statistically significant***, which means it is unlikely to be the result of just random chance. With such strong evidence, we would say the chance model is ***implausible*** and reject $H_0$. So, we accept $H_a$. This finding agrees with my *p*-value results. 
+My result of 9 (36%) cards correct, with its *z*-score of 2, would be considered ***statistically significant***, which means it is unlikely to be the result of just random chance. 
+
+With this strong evidence against $H_0$, we would say the chance model is ***implausible*** and reject $H_0$ (we accept $H_a$). This finding agrees with the *p*-value results in Section 1.2. 
 
 We can see from the various calculations that 9 or more correct would lead to us rejecting $H_0$. Nine (9) correct cards out of 25 is 2 SDs above the mean. Eleven cards is 3SDs. Getting all 25 cards correct is a remarkable TEN (10) SDs above the mean!
 
-A phenomena called "psi-missing" refers to doing much *less* well than chance on an ESP-type test. We would use $H_a: \pi < 0.20$ in this case. What number(s) of cards correct would indicate psi-missing, if we use a $z$-score to measure strength?
+"Psi-missing" refers to doing much *less* well than chance on the ESP test and we would use $H_a: \pi < 0.20$. What number(s) of cards correct would indicate psi-missing, using *z*-scores?
 

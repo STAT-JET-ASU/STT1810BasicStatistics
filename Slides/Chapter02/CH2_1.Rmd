@@ -65,7 +65,7 @@ knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
 
 In Chapter 1, we generated many hypothetical samples from a specified probability model to model our null hypothesis $H_0$. In those cases, $\pi$ is a *hypothetical value* we assumed.
 
-In a test of significance, we use the *hypothetical* $\pi$ to try to make an inference about an *actual population* $\pi$.
+In a test of significance, we use the hypothetical $\pi$ to try to make an inference about an *actual population* $\pi$.
 
 Now we are taking samples from an actual population. Why? So we can explore what kinds of samples we might get. In this case, $\pi$ is an actual population value we theoretically specify.
 
@@ -76,7 +76,7 @@ We will use the similarity between the two ideas in Section 3.1 to estimate a po
 
 ## Learning Goals for Chapter 2
 
-We will do Sections 2.1 and 2.2. They introduce the concepts of random samples, the sampling distributions of $\hat{p}$ and $\bar{x}$, and the ***Central Limit Theorem***.
+We will do Sections 2.1 and 2.2 in our course. They introduce the concepts of random samples, sampling distributions of $\hat{p}$ and $\bar{x}$, and the ***Central Limit Theorem***.
 
 <hr>
 
@@ -86,7 +86,7 @@ We will do Sections 2.1 and 2.2. They introduce the concepts of random samples, 
 
 <hr>
 
-This material builds on the Preliminaries and Chapter 1. You will need to remember and use vocabulary and concepts from those sections to understand the new material in this section. 
+This material builds on the Preliminaries and Chapter 1. You will need to remember and use vocabulary and concepts from those Chapters to understand the new material in this section. 
 
 Section 2.1 provides a foundation for the upcoming Section 3.2.
 
@@ -142,30 +142,30 @@ Recall ***<mark>parameter</mark>***, ***<mark>statistic</mark>***, and the other
 
 ##
 
-**<mark>random sample</mark> :** a subset of observational units chosen using a probability device or method (*not all units have to have an equal chance to be chosen, just a known probability of being chosen*)
+**<mark>random sample</mark> :** a subset of observational units chosen using a probability device or method; not all units have to have an equal chance to be chosen, just a *known probability* of being chosen
 
-**<mark>simple random sample</mark> :** a subset of observational units chosen so that every sample of a given size $n$ is equally likely to be the sample that we select from the population (*each observational unit has the same chance of being chosen as every other unit*)
+**<mark>simple random sample</mark> :** a subset of observational units chosen so that every sample of a given size ($n$) is equally likely to be the sample we select from the population; **also**, each observational unit has the same chance of being chosen as every other unit
 
 <hr> 
 
-A sampling method is considered to be ***<mark>biased</mark>*** if the statistics calculated from different samples consistently *overestimate* or consistently *underestimate* the population parameter in which we are interested. *Non-random* samples tend to be biased.
+Our sampling method is ***<mark>biased</mark>*** if we calculate the same statistic from different samples and those statistics tend to  *overestimate* or tend to *underestimate* the population parameter that we are interested in. *Non-random* samples tend to be biased.
 
 <hr>
 
-**<mark>nonsampling concerns</mark> :** potential sources of bias (e.g., poorly worded survey questions, people lying) that are not related to the way the sample was selected from the population
+**<mark>nonsampling concerns</mark> :** potential sources of bias that are not related to the way the sample was selected (e.g., poorly worded survey questions, people misremembering, people lying)
 
 
 ## 
 
 **<mark>sampling frame</mark> :** a roster or "master list" of every observational unit in a given population of interest; we need this in order to be able to choose a random sample
 
-**<mark>sampling variability</mark> :** the amount that a statistic changes from sample to sample as we repeatedly observe it (*take a bunch of samples and calculate the same statistic---how different are they?*)
+**<mark>sampling variability</mark> :** the amount that a statistic changes from one sample to another---take a bunch of samples, calculate the same statistic, and summarize how different they are
 
 **<mark>sampling distribution</mark> :** distribution of a statistic for all possible samples of size $n$ randomly selected from the same population
 
 <hr>
 
-The ***<mark>Central Limit Theorem</mark>*** tells us that when we sample from a large finite population, the sampling distribution of the sample proportion $\hat{p}$, calculated from from repeated random samples, will be approximately normal if there are at least $10$ successes and at least $10$ failures in each sample. (*More on this to come...*)
+The ***<mark>Central Limit Theorem</mark>*** says that when we randomly sample from a large finite population, then the sampling distribution of the sample proportion $\hat{p}$ will be approximately normal in shape if there are at least $10$ successes and $10$ failures in each sample. (*More on this coming up...*)
 
 <hr>
 
@@ -185,22 +185,22 @@ If we take many, many random samples of the same size from a population with par
 
 ## Key Central Limit Theorem Ideas
 
-The **<mark>Central Limit Theorem</mark>** describes the sampling distributions of some statistics from finite populations, like $\hat{p}$ --- assuming we meet the necessary criteria or conditions. 
+The **<mark>Central Limit Theorem</mark>** describes the sampling distributions of some statistics from finite populations, such as $\hat{p}$---if we meet the necessary validity conditions. 
 
-* We have a large, finite population with parameter $\pi$. Here, *finite* means it is possible to count the observational units.
+* We have a large, finite population with a parameter $\pi$. Here, *finite* means it is possible to count the observational units.
 
 * Our sample size ($n$) is less than $5\%$ of the overall population.
 
-* However, at the same time, we are taking random samples of size $n$ that are big enough that we have at least $10$ successes and $10$ failures in each sample.  
+* However, at the same time, we are taking random samples of size $n$ that are large enough to observe at least $10$ successes and $10$ failures in each sample.  
 
-* We are calculating the sample proportion $\hat{p}$ for each sample that we take from the population..
+* We are calculating the sample proportion $\hat{p}$ for each sample that we take from the population.
 
 
 ## Shape and Center
 
-If all the CLT ideas on the previous slide are true for a given situation, the sampling distribution of the sample proportion $\hat{p}$ will have the following distribution properties.
+If all the key CLT ideas on the previous slide are true for a given situation, the sampling distribution of the sample proportion $\hat{p}$ will have the following distribution properties.
 
-**shape :** the sampling distribution will be approximately normal (*unimodal and mound-shaped---the classic "bell curve"*).
+**<mark>shape</mark> :** the sampling distribution will be approximately normal (*unimodal and mound-shaped---the classic "bell curve"*).
 
 <hr>
 
@@ -208,7 +208,7 @@ If all the CLT ideas on the previous slide are true for a given situation, the s
 
 <hr>
 
-**center :** The mean of the sampling distribution will be equal to $\pi$ (i.e., *all of the possible sample proportions $\hat{p}$ will average out to the population proportion---it is what we will call unbiased*).
+**<mark>center</mark> :** The mean of the sampling distribution will be equal to $\pi$ (i.e., *all of the possible sample proportions $\hat{p}$ will average out to the population proportion---it is what we will call unbiased*).
 
 
 ##  Variability
@@ -219,24 +219,24 @@ $$\text{the standard deviation of }\hat{p} = SD(\hat{p}) = \sqrt{\frac{\pi(1-\pi
 
 Notice that $n$ is in the fraction denominator. For bigger sample sizes, standard deviation will be smaller! 
 
-*&rarr; We have seen this before, in our Chapter 1 simulations. Larger samples tend to have less variability and converge toward the long-run (population) value.*
+*&rarr; We saw this in Chapter 1 simulations. Larger samples typically have less variability and converge to a long-run (population) value.*
 
-&rarr; We call the SD of a sampling distribution its ***<mark>standard error</mark>***.
+&rarr; We call the SD of a sampling distribution its ***<mark>standard error</mark>***. In statistics, error does not mean mistake; it refers to variability.
 
 
 ## Two Example Calculations
 
-Plug in the appropriate values and solve. Notice that the smaller value of $\pi$ (given the same $n$) has a smaller SD.
+Plug in the values and solve. Notice that when the sample size $n$ is the same, the smaller value of $\pi$ produces a smaller $SD(\hat{p})$.
 
 <hr>
 
-For $\pi = 0.50$ and $n = 100$ ...
+For $n = 100$ and $\pi = 0.50$ ...
 
 $$SD(\hat{p}) = \sqrt{\frac{.50(1-.50)}{100}} = \sqrt{\frac{0.50 \times 0.50}{100}} = 0.05$$
 
 <hr>
 
-For $\pi = 0.10$ and $n = 100$ ...
+For $n = 100$ and $\pi = 0.10$ ...
 
 $$SD(\hat{p}) = \sqrt{\frac{.10(1-.10)}{100}} = \sqrt{\frac{0.10 \times 0.90}{100}} = 0.03$$
 
@@ -245,7 +245,7 @@ $$SD(\hat{p}) = \sqrt{\frac{.10(1-.10)}{100}} = \sqrt{\frac{0.10 \times 0.90}{10
 
 ##
 
-Simulated sampling distribution using [One-Proportion](http://www.isi-stats.com/isi2nd/ISIapplets2021.html) applet. Notice the bell shape along with the mean and SD values.
+Simulate the sampling distribution using [One-Proportion](http://www.isi-stats.com/isi2nd/ISIapplets2021.html) applet. Notice the bell shape along with the mean and SD values, which match the CLT and our $SD(\hat{p})$ calculation.
 
 ```{r, echo = FALSE, fig.align="center"}
 knitr::include_graphics("../images/SamplingDist50.png", dpi = 120)
@@ -257,7 +257,7 @@ $\text{sample size}(n) = 100$</center>
 
 ##
 
-Simulated sampling distribution using [One-Proportion](http://www.isi-stats.com/isi2nd/ISIapplets2021.html) applet. Notice the shape is *slightly* right skewed. *Why is that true?*
+Simulate the sampling distribution using [One-Proportion](http://www.isi-stats.com/isi2nd/ISIapplets2021.html) applet. Notice that the shape is *slightly* right skewed. What key CLT idea might not be not met in this example?
 
 ```{r, echo = FALSE, fig.align="center"}
 knitr::include_graphics("../images/SamplingDist10.png", dpi = 120)

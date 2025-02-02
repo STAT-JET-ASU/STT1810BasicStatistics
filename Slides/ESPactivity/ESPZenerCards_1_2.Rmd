@@ -37,7 +37,7 @@ Our hypotheses are formed from our parameter definition ($\pi$) and our two poss
 
 $H_0:$ The long-term probability of correctly identifying a card is equal to $0.20$.
 
-$H_0:$ The long-term probability of correctly identifying a card is greater than $0.20$.
+$H_a:$ The long-term probability of correctly identifying a card is greater than $0.20$.
 
 We can concisely rewrite our hypotheses in statistical symbols.
 

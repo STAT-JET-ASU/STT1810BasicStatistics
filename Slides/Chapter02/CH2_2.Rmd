@@ -89,7 +89,7 @@ Section 2.1 provides a foundation for the upcoming Section 3.2.
 
 ## Section 2.2 New Vocabulary
 
-We were first introduced to these terms in Section P.2.
+We were first introduced to these terms back in Section P.2, and we need them now that we are investigating quantitative data.
 
 **<mark>skewed</mark> :** a data distribution is skewed if it is not symmetric; the bulk of values tend to fall on one side of the distribution with a “longer tail” on the other 
 
@@ -102,7 +102,7 @@ We were first introduced to these terms in Section P.2.
 
 ## Section 2.2 New Parameters
 
-To distinguish between a quantitative variable and a categorical variable in descriptive and inferential statistics, we use different symbols to refer to the statistics and parameters. Instead of our now-familiar $\pi$ and $\hat{p}$, we will use the following.
+To distinguish between a quantitative variable and a categorical variable in descriptive and inferential statistics, we use different symbols to refer to the statistics and parameters. Instead of the proportions $\pi$ and $\hat{p}$, we will use the following.
 
 <mark>$\mu$</mark> : The Greek letter mu, pronounced “mew.” This represents the population or process mean.
 
@@ -115,26 +115,26 @@ To distinguish between a quantitative variable and a categorical variable in des
 
 ## Key Central Limit Theorem Ideas
 
-The **<mark>Central Limit Theorem</mark>** describes the sampling distributions of certain statistics from finite populations, like $\bar{x}$ --- if we meet the necessary criteria. As we did Section 2.1, we are considering statistics from large, finite populations.
+The **<mark>Central Limit Theorem</mark>** describes the sampling distributions of certain statistics from finite populations, like $\bar{x}$, if we meet the validity criteria. Just like Section 2.1, we are sampling from large, finite populations.
 
 * We have a large, finite (i.e., *countable*) population with a mean symbolized by $\mu$ and a standard deviation symbolized by $\sigma$.
 
 * Our sample size ($n$) is less than $5\%$ of the overall population.
 
-* We are taking random samples of size $n$ that are big enough, or the sample comes from a normal population.  
+* However, we are taking random samples of size $n$ that are big enough, or the sample comes from a normal population.  
 
-* We are calculating the sample proportion $\bar{x}$ for each sample that we take from the population.
+* We calculate a sample mean $\bar{x}$ for each sample we take from the population.
 
 
 ## Shape and Center
 
 If all of the key CLT ideas included on the previous slide are true, then the sampling distribution of the sample mean ($\bar{x}$) will have the following distribution properties.
 
-**<mark>shape</mark> :** The sampling distribution will be approximately normal if the population is not too skewed and $n = 20$ or more. (*Many other sources will say $n = 30$ or more, to help account for skewed distributions and be more conservative.*)
+**<mark>shape</mark> :** The sampling distribution will be approximately normal if the population is not too skewed and $n = 20$ or more. (*Many other sources will say $n = 30$ or more, to help account for skewed distributions and to be more cautious/conservative.*)
 
-As a special case, the shape of the sampling distribution of $\bar{x}$ will be *exactly* normal if we are sampling from a normal population.
+As a special case, the shape of the sampling distribution of $\bar{x}$ will be *exactly* normal if we sample from a normal population.
 
-**<mark>center</mark> :** The mean of the sampling distribution will be equal to $\mu$ --- it is unbiased like proportions, so all possible values of the sample mean $\bar{x}$ for a given $n$ average out to be $\mu$.
+**<mark>center</mark> :** The mean of the sampling distribution will be equal to the population mean $\mu$ and $\bar{x}$ is unbiased like $\hat{p}$, so all possible values of the sample mean $\bar{x}$ for a given $n$ average out to be $\mu$.
 
 
 ##  Variability

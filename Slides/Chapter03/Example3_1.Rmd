@@ -54,54 +54,54 @@ We would reject $H_0$ at the 0.05 level of significance. But, what is Marine's t
 
 ## The Test for $H_0: \pi = 0.760$
 
-The two-sided *p*-value is less than 0.05, so we reject $0.760$ as a plausible value for $\pi$. It *will not* be in the confidence interval.
+The two-sided *p*-value ≤ 0.05, so we reject $0.760$ as a plausible value for $\pi$. It *will not* be in our confidence interval. Any value even farther below $\hat{p} = 0.909$ also *will not* be in the interval.
 
 ```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("../images/marineCIexample01.png", dpi = 120)
+knitr::include_graphics("../images/marineCIexample01.png", dpi = 140)
 ```
 
 
 ## The Test for $H_0: \pi = 0.761$
 
-The two-sided *p*-value is greater than 0.05, so $\pi = 0.761$ will be considered a plausible value. It will be in the interval.
+The two-sided *p*-value > 0.05, so $\pi = 0.761$ will be considered a plausible value. **It will be included the confidence interval.** Any value between $0.761$ and $\hat{p} = 0.909$ also will be in the interval.
 
 ```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("../images/marineCIexample02.png", dpi = 120)
+knitr::include_graphics("../images/marineCIexample02.png", dpi = 140)
 ```
 
 
 ## The Test for $H_0: \pi = 0.909$
 
-When $\pi = \hat{p}$, the *p*-value is 1. Note that all tests use $\hat{p} = 0.909$ to assess the hypothesized value  of $\pi$. *The data is our evidence.*
+When $\pi = \hat{p}$, the *p*-value is $1.000$. Note that all the tests in this method use $\hat{p} = 0.909$ to assess the potential values of $\pi$. *The data is the evidence on which our estimate is based.*
 
 ```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("../images/marineCIexample03.png", dpi = 120)
+knitr::include_graphics("../images/marineCIexample03.png", dpi = 140)
 ```
 
 
 ## The Test for $H_0: \pi = 0.974$
 
-The two-sided *p*-value is greater than 0.05, so $\pi = 0.974$ will be considered a plausible value. It will be in the interval.
+The two-sided *p*-value > 0.05, so $\pi = 0.974$ will be considered a plausible value. **It will be included the confidence interval.** Any value between $\hat{p} = 0.909$ and $0.974$ also will be in the interval.
 
 ```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("../images/marineCIexample04.png", dpi = 120)
+knitr::include_graphics("../images/marineCIexample04.png", dpi = 140)
 ```
 
 
 ## The Test for $H_0: \pi = 0.975$
 
-The two-sided *p*-value is less than 0.05, so we reject $0.975$ as a plausible value for $\pi$. It *will not* be in the confidence interval.
+The two-sided *p*-value ≤ 0.05, so we reject $0.975$ as a plausible value for $\pi$. It *will not* be in our confidence interval. Any value even farther above $\hat{p} = 0.909$ also *will not* be in the interval.
 
 ```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("../images/marineCIexample05.png", dpi = 120)
+knitr::include_graphics("../images/marineCIexample05.png", dpi = 140)
 ```
 
 
-## How Many Tests?
+## So Many Tests!
 
 In this context, finding a 95% confidence interval with 3 decimal places, using the method of plausible values, would require over 200 significance tests like the ones on the previous slides---one for every potential value of $\pi$ we need to evaluate to determine the endpoints of the interval. Using logic, we can reduce this.
 
-A 99% confidence interval determined by this method would be wider and require even more tests! More confidence means the interval will contain more plausible values.
+A 99% confidence interval determined by this method would be wider and require even more tests! *More* confidence means the interval will contain *more* plausible values.
 
 So why did we do this? The point is to connect our significance testing to confidence intervals, and level of significance to level of confidence. The two methods are inherently connected. 
 

@@ -24,6 +24,8 @@ These slides are meant to accompany the text [*Introduction to Statistical Inves
 
 See [AsULearn](https://asulearn.appstate.edu/) for additional readings, videos, and assignments.
 
+You can print these slides to a pdf for offline use using the print function in your browser.
+
 
 ## Recall: Spiral Approach & Four Pillars
 
@@ -73,7 +75,7 @@ We will not cover Section 3.3, theoretical estimation for a mean.
 
 ## Learning Goals for Section 3.1
 
-In Chapter 3, you will learn two different ways to find confidence intervals, based on methods from Chapters 1 and 2. The first is an interval of plausible values --- those values of the parameter that are *not* rejected in a two-sided test of significance. 
+In Chapter 3, you will learn two different ways to find confidence intervals, based on methods from Chapters 1 and 2. The first is an interval of plausible values --- those values of the parameter that are *not* rejected using a two-sided test of significance. 
 
 <hr>
 
@@ -99,54 +101,51 @@ This chapter builds on Chapters 1 and 2, so you also will want to be sure that y
 
 ## 
 
-**<mark>confidence interval</mark> :** An inference tool used to estimate the value of a parameter such as $\pi$, with an associated measure of uncertainty due to the randomness in the sampling method.
+**<mark>confidence interval</mark> :** An inference tool we use to estimate the value of a parameter such as $\pi$, with an associated measure of uncertainty due to randomness in the sampling method.
 
-**<mark>confidence level<mark> :** A statement of reliability in the confidence interval method.
+**<mark>confidence level</mark> :** A statement of reliability we make about the confidence interval method.
 
-**<mark>estimation<mark> :** In the context of confidence intervals, describes how large an effect is in terms of a range of values for the parameter of interest.
+**<mark>estimation</mark> :** In the context of confidence intervals, it describes how large an effect is, expressed as a range of values for the parameter we are interested in.
 
-**<mark>plausible value<mark> :** A parameter value that is tested under the null hypothesis where, based on the observed data, we do not find strong evidence against the null (Ho is not rejected).
+**<mark>plausible value</mark> :** A parameter value that we test under the null hypothesis and where we *do not* find strong evidence against the null ($H_0$ is not rejected)---based on the observed data.
 
-**<mark>significance level<mark> :** A value used as a criterion for deciding how small a *p*-value in a test of significance needs to be to provide convincing evidence against the null hypothesis.
+**<mark>significance level</mark> :** A value used as a criterion for deciding how small a *p*-value in a test of significance needs to be to provide convincing evidence against the null hypothesis.
 
 
 ## Method of Plausible Values
 
-Test many different values of $\pi$ as the null hypothesis.
+First, we test many different values of $\pi$ in the null hypothesis.
 
 $$H_0: \pi = \text{value being tested}$$
 
 $$H_a: \pi \ne \text{value being tested}$$
 
-Calculate a two-sided *p*-value using the observed data.
+Calculate a two-sided *p*-value using the observed data, like we learned to do in Section 1.4.
 
-Reject Ho *or* fail to reject Ho using the *p*-value and the chosen level of significance (most commonly $\alpha = 0.05$).
+Reject $H_0$ *or* fail to reject $H_0$ using the *p*-value and the chosen level of significance (usually $\alpha = 0.05$). If you fail to reject $H_0$, the tested $\pi$ is a *plausible value* and part of the interval.
 
-If you fail to reject Ho, then the tested value of $\pi$ is a *plausible value* and therefore it belongs in the confidence interval.
-
-The interval boundaries are the smallest and largest plausible values, often written as (*lower boundary*, *upper boundary*).
+The confidence interval boundaries are the smallest and largest plausible values, written as (*lower boundary*, *upper boundary*).
 
 
 ## What Does 95% Confidence Mean?
 
-Let us start with what it does *not* mean. It does not mean that there is a 95% chance that the actual value of the parameter is in the 95% confidence interval. *Why not?*
+Let us start with what it does *not* mean. It does not mean that there is a 95% chance that the actual value of the parameter is in the 95% confidence interval. Why not?
 
 The parameter value is fixed and the interval is random. If you chose a different sample, you’d get a different interval, but the parameter value would still be the same. 
 
-What we mean is that <mark>95% of all samples give an interval that covers the true value</mark>. The 95% is the “coverage probability” or “capture rate" of the **method** we are using. This is like Section 2.1, where we said that "unbiased" is a property of a sampling method, not an individual sample.
+What we mean is that 95% of all samples give an interval that covers the true value. The 95% is the “coverage probability” or “capture rate" of the method we are using.
 
-In statistics, we validate our **methods**, because we cannot know for sure how our sample relates to a population.
+Picture a game of horseshoes. The parameter is the iron stake in the ground, which does not move. Each toss of a horseshoe is an interval. Our method is a like really good player who can get a horseshoe around the stake 95% of the time.
 
-
-## Another Analogy
-
-Picture a game of horseshoes. The parameter is the iron stake in the ground, which does not move. Each toss of a horseshoe is an interval. We might barely catch the stake, or we might get a solid ringer. Both count! Our method is a like really good player who can get a horseshoe around the stake 95% of the time.
+## Why Can't we Be Sure?
 
 ```{r, echo = FALSE, fig.align="center"}
 knitr::include_graphics("../images/garfieldCI.jpg", dpi = 100)
 ```
 
-We could have a 100% confidence interval for a $\pi$ if we said the value was between 0 and 1 --- but that wouldn't be particularly useful in most real-world research contexts, would it?
+We could have a 100% confidence interval for a $\pi$ if we said the value was definitely between 0 and 1 --- but that would not be useful in most real-world research contexts, would it?
+
+Theory-based confidence intervals for many statistics are based on the Normal distribution. The tails of the bell curve extend to infinity in both directions, so a 100% confidence interval would be infinitely wide, which is also not useful!
 
 
 ## Flashback: Harley the Wonder Doggo
@@ -155,22 +154,59 @@ In Section 1.1, we explored the question "Can Dogs Understand Human Cues?" In a 
 
 So, if Harley is not purely guessing when the experimenter bows toward the cup, what is his true long-run probability $\pi$ of picking the correct cup? After the test we just know $H_a: \pi > 0.5$.
 
-Given that $\hat{p}$ is 0.90, that might be a good estimate (i.e., *informed guess*) for the value of $\pi$. We call that a *point estimate*.
+Given that $\hat{p} = 0.90$, that might be a good estimate (i.e., *best statistical guess*) for the value of $\pi$. We call that a *point estimate*.
 
-However, this is sample data, and we all know that it has some random variability. Maybe $\pi$ is a little bit different than 0.90, like 0.89. Could it be more different, like 0.80? Or even 0.70? 
+However, this is sample data, and we all know that it has some random variability. Maybe $\pi$ is slightly different than $0.90$, like $0.89$. Could it be more different, like $0.80$? Or even $0.70$? 
 
 
 ##
 
-We can systematically test different values for $\pi$ on either side of $\pi = 0.90$, until we get to values that are implausible. We will use the same kind of simulation we did for the original test.
+We systematically test values for $\pi$ on either side of $\pi = 0.90$, until we get $\pi$ values that are implausible. We will use the [One Proportion](https://www.isi-stats.com/isi2nd/ISIapplets2021.html) applet like the original test, with a two-tailed $H_a$.
 
-| $\pi$ tested in Ho |0.56 |0.57 |... |0.85 |0.90 |0.95 |0.99 |1.00 |
-|--------------------|:---:|:---:|:--:|:---:|:---:|:---:|:---:|:---:|
-| two-sided *p*-value|0.049|0.052|... |1.000|1.000|0.404|0.096|NA   |
-| reject Ho?         |Yes  |No   |... |No   |No   |No   |No   |NA   |
-| plausible $\pi$?   |**<mark>NO</mark>**|Yes|...|Yes|Yes|Yes|Yes|**<mark>NO</mark>**|
+| Value of $\pi$ tested in $H_0$ |0.56 |0.57 |... |0.85 |0.90 |0.95 |0.99 |1.00 |
+|--------------------------------|:---:|:---:|:--:|:---:|:---:|:---:|:---:|:---:|
+| Two-sided *p*-value            |0.049|0.052|... |1.000|1.000|0.404|0.096|NA   |
+| Reject Ho?                     |Yes  |No   |... |No   |No   |No   |No   |NA   |
+| Plausible $\pi$?|**<mark style = "background: #ffcdcd;">NO</mark>**|<mark>Yes</mark>|...|Yes|Yes|Yes|<mark>Yes</mark>|**<mark style = "background: #ffcdcd;">NO</mark>**|
 
-We know 1 is not possible; that would mean Harley is *guaranteed* to always choose the correct cup. Data shows that is false.
+We know 1 is impossible. That would mean Harley is *guaranteed* to always choose the correct cup. Data shows that is false.
 
-We are 95% confident that $\pi$ is between 0.57 and 0.99. We need more data if we want a narrower interval of plausible values.
+<mark>We are 95% confident that $\pi$ is between $0.57$ and $0.99$.</mark> To get a narrower interval of plausible values, we would need more data.
+
+
+## Flashback: Bottled Water vs. Tap Water
+
+In Section 1.2, we explored whether or not people prefer bottled water to tap water. The sample proportion of people who chose bottled water in the experiment was $\hat{p}= 24/27 = 0.89$. 
+
+Testing values less than $0.89$ for the smallest plausible value of $\pi$, using a series of two-tailed tests, we get $0.71$.
+
+| Value of $\pi$ tested in $H_0$ |0.70 |0.71 |0.72 |0.73 |0.74 |0.75 |...  |0.89 |
+|--------------------------------|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| Two-sided *p*-value            |0.039|0.052|0.064|0.085|0.094|0.109|...  |1.000| 
+| Reject Ho?                     |Yes  |No   |No   |No   |No   |No   |...  |No   |  
+| Plausible $\pi$?|**<mark style = "background: #ffcdcd;">NO</mark>**|<mark>Yes</mark>|Yes|Yes|Yes|Yes|...|Yes|
+
+
+## An Example of Testing 
+
+The image below comes from the [One Proportion](https://www.isi-stats.com/isi2nd/ISIapplets2021.html) applet for the test to evaluate $H_0: \pi = 0.71$. Notice the process settings for $\pi$ and $n$, sample statistic $0.89$, and "Two-sided" *p*-value option.
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("../images/bottledwaterCI.png", dpi = 140)
+```
+
+
+## 
+
+Testing values more than $0.89$ for the largest plausible $\pi$ value.
+
+| Value of $\pi$ tested in $H_0$ |0.89 |...  |0.92 |0.93 |0.94 |0.95 |0.96 |0.97 |
+|--------------------------------|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| Two-sided *p*-value            |1.000|...  |0.484|0.429|0.207|0.136|0.084|0.047| 
+| Reject Ho?                     |No   |...  |No   |No   |No   |No   |...  |Yes  |  
+| Plausible $\pi$?|Yes|Yes|Yes|Yes|...|Yes|<mark>Yes</mark>|**<mark style = "background: #ffcdcd;">NO</mark>**|
+
+<br><mark>We are 95% confident that $\pi$ is between $0.71$ and $0.96$.</mark> 
+
+The way the bottled versus tap water experiment was done, the probability value for people randomly choosing a cup was $0.75$. The fact that $0.75$ is inside our interval means we cannot reject the idea that people have no preference.
 

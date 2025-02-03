@@ -25,6 +25,8 @@ These slides are meant to accompany the text [*Introduction to Statistical Inves
 
 See [AsULearn](https://asulearn.appstate.edu/) for additional readings, videos, and assignments.
 
+You can print these slides to a pdf for offline use using the print function in your browser.
+
 
 ## Recall: Spiral Approach & Four Pillars
 
@@ -86,20 +88,20 @@ In Section 3.1 you learned about estimation using intervals of plausible values.
 
 ## Section 3.2 New Vocabulary
 
-Recall that you learned about $SD(\hat{p})$, the standard deviation of $\hat{p}$, and the Central Limit Theorem in Section 2.1 
+Recall, you learned about $SD(\hat{p})$---the standard deviation of a $\hat{p}$ statistic---and the Central Limit Theorem in Section 2.1 
 
-**<mark>2SD method (for CI)<mark> :** if a sampling distribution is approximately normal, we can approximate a 95% confidence interval by taking the statistic and the SD of the statistic and extending the interval 2 SDs in each direction from the statistic
+**<mark>2SD method</mark> :** we can approximate a 95% confidence interval (*if the sampling distribution of a statistic is approximately normal*) by taking the statistic and the SD of the statistic and extending the interval 2 SDs in each direction from the statistic...
 
-$$\text{approximate 95% CI for } \hat{p} = \hat{p} \pm 2 \times SD(\hat{p})$$
+$$\text{for example: } \hat{p} \pm 2 \times SD(\hat{p})$$
 
-**<mark>margin of error<mark> :** the half-width of a confidence interval (for the 2SD method, this is the ± 2SD value)
+**<mark>margin of error</mark> :** the half-width of a confidence interval; for the 2SD method, this is the ± 2SD component
 
-**<mark>standard error / SE<mark> :** an estimate of the standard deviation of a statistic that is based on observed data
+**<mark>standard error / SE</mark> :** an estimate of the standard deviation of a statistic that is based on observed data
 
 
-## Empirical Rule: Why 2SD Works
+## Empirical Rule: Why the 2SD Works
 
-For a bell-shaped (normal) curve, about 95% of the distribution will be within ±2SD of the mean---the basis of the 2SD method.
+For a bell-shaped (Normal) curve, about 95% of the distribution will be within ±2SD of the mean---the basis of the 2SD method.
 
 ```{r, echo = FALSE, fig.align="center"}
 knitr::include_graphics("../images/empiricalrule.png", dpi = 110)
@@ -108,7 +110,7 @@ knitr::include_graphics("../images/empiricalrule.png", dpi = 110)
 We could also create 68% and 99.7% CIs using ±1SD and ±3SD.
 
 
-## The 2 Standard Deviation (SD) Method
+## The Two Standard Deviation Method
 
 Calculate the observed sample proportion $\hat{p}$.
 
@@ -124,140 +126,37 @@ $$\hat{p} \pm 2 \times SD(\hat{p})$$
 
 Recall that we use $\pi = 0.5$ because $SD(\hat{p})$ is the biggest then.
 
-## Example: Largest SD for $n = 100$?
+## Where is the Largest SD? At $\pi = 0.50!$
 
-| $n$   |  $\pi$ |     $SD(\hat{p})$     |
-|:-----:|:------:|:---------------------:|
-|  100  |  0.10  |        0.0300         |
-|  100  |  0.25  |        0.0433         |
-|  100  |  0.40  |        0.0490         |
-|  100  |  0.50  |**<mark>0.0500</mark>**|
-|  100  |  0.60  |        0.0490         |
-|  100  |  0.75  |        0.0433         |
-|  100  |  0.90  |        0.0300         |
-
-
-## Recall Learning in Section 2.1
-
-```{r echo = FALSE, fig.align = "center"}
-df2 <- tibble(pi = c(0.01, seq(0.0, 1, 0.10), 0.99), SD = sqrt((pi * (1 - pi)) / 100))
-ggplot(df2, aes(x = pi, y = SD)) +
-  geom_line() +
-  geom_point(size = 2) +
-  geom_hline(yintercept = 0) +
-  geom_vline(xintercept = -0.05) +
-  scale_x_continuous(limits = c(-0.05, 1.05), breaks = seq(0, 1, 0.1), expand = c(0, 0)) +
-  scale_y_continuous(limits = c(0, 0.06), expand = c(0, 0)) +
-  theme_minimal() +
-  labs(
-    title = "Relationship Between π and SD(p̂) for n = 100",
-    x = "value of π",
-    y = "Variability of the Sampling Distribution --- SD(p̂)"
-  ) +
-  annotate(
-    "label",
-    x = 0.5,
-    y = 0.055,
-    label = "for any given sample size (n), the largest SD is always when π = 0.5",
-    fill = "peachpuff"
-  ) +
-  annotate(
-    "point",
-    x = 0.5,
-    y = 0.05,
-    color = "darkorange",
-    size = 5
-  ) +
-  annotate(
-    "label",
-    x = 0.175,
-    y = 0.005,
-    label = "SD = 0 when π = 0",
-    fill = "lightblue"
-  ) +
-  annotate(
-    "label",
-    x = 0.825,
-    y = 0.005,
-    label = "SD = 0 when π = 1",
-    fill = "lightblue"
-  ) +
-  annotate(
-    "point",
-    x = c(0, 1),
-    y = 0,
-    color = "blue",
-    size = 5
-  )
-```
-
-Using the largest SD helps us not to overstate our confidence.
+|  $n$  |        $\pi$        |      $SD(\hat{p})$    |
+|:-----:|:-------------------:|:---------------------:|
+|  100  |        0.10         |        0.0300         |
+|  100  |        0.25         |        0.0433         |
+|  100  |        0.40         |        0.0490         |
+|  100  |**<mark>0.50</mark>**|**<mark>0.0500</mark>**|
+|  100  |        0.60         |        0.0490         |
+|  100  |        0.75         |        0.0433         |
+|  100  |        0.90         |        0.0300         |
 
 
-## Flashback: Harley the Wonder Doggo
+## Example 3.2 Cyberbullying
 
-Use the sample proportion $0.90$ and the simulated SD = $0.158$ (refer to Exploration 1.1 if needed) in the calculation.
-
-$$\hat{p} \pm 2 \times SD(\hat{p}) = 0.90 \pm 2 \times 0.158 = 0.90 \pm 0.316$$
-
-We are 95% confident that Harley's true chance of choosing the correct cup is is between $0.90 \pm 0.316$. The margin of error on the estimate is $0.316$ or $31.6\%$.
-
-We can also write the CI as $(0.584, 1.216)$. We know $\pi$ cannot be &geq; 1, so the interval is effectively $(0.584, 0.999)$
-
-Note that all plausible values included in the interval are greater than 50%. Based on this, we can be confident in this context that the true proportion is greater than random chance.
-
-
-## Simulate the SD: Goodest Boy Harley
+In a March 7–April 10, 2018 survey of a random sample of 743 U.S. teenagers (ages 13 to 17 years), the Pew Research Center found that 59% said they had experienced cyberbullying. Use the [ISI One-Proportion](http://www.isi-stats.com/isi2nd/ISIapplets2021.html) applet to estimate the SD.
 
 ```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("../images/harleyCIsimulationSD.png", dpi = 120)
+knitr::include_graphics("../images/2SD95CI.PNG", dpi = 100)
 ```
 
-<hr>
 
-We always use $\pi = 0.5$ to estimate SD in this CI method. Notice how larger sample sizes yield smaller SDs in the next examples.
+## Calculating the Interval
 
+Use the sample $\hat{p} = 0.59$ and the simulated $SD(\hat{p}) = 0.018$.
 
-## Flashback: Bottled vs. Tap Water
+$$\hat{p} \pm 2 \times SD(\hat{p}) = 0.59 \pm 2 \times 0.018 = 0.59 \pm 0.036$$
 
-The sample proportion of people who preferred **tap water** was $\hat{p} = 0.1111$. Use the sample size $n = 27$ and $\pi = 0.5$ to find the simulated $SD(\hat{p}$, which should be about $0.096$.
+We are 95% confident that the true proportion of U.S. teens who had experienced cyberbullying (defined by the Pew survey) was between $0.59 \pm 0.036$. The margin of error on this estimate is the $\pm 0.036$ or $3.6\%$.
 
-$$\hat{p} \pm 2 \times SD(\hat{p}) = 0.111 \pm 2 \times 0.096 = 0.111 \pm 0.192$$
+We can also express the confidence interval as $(0.554, 0.626)$, or as percentages, such as $55.4\%$ to $62.6\%$ of kids.
 
-We are $95\%$ confident that the long-run probability a person would prefer tap water to bottled water when presented with the kind of choice offered in the experiment with four cups is between $-0.081$ and $0.303$, or roughly about $1\%$ to $30\%$.
+Note that all the plausible values are greater than $50\%$. Based on this, we can be (*sadly*) confident that a majority of U.S. teens 13-17 years old had experienced cyberbullying in 2018.
 
-Note that $\pi = 0.25$ is among the plausible values included in the interval. This is consistent with our failure to find statistical significance in Exploration 1.2. *Random choice is plausible.*
-
-
-## Simulate the SD: Bottled vs. Tap water
-
-```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("../images/waterCIsimulationSD.png", dpi = 120)
-```
-
-<hr>
-
-We always use $\pi = 0.5$ to estimate SD in this CI method, even though we DID NOT use $H_0: \pi = 0.5$ in our significance test.
-
-
-
-## Flashback: Bob or Tim
-
-Combining two classes of previous STT 1810 students, 31 of 38 students $(\hat{p} = 0.816)$ assigned the name Tim to the left face. Using simulation, the estimated $SD(\hat{p}) = 0.081$.
-
-$$\hat{p} \pm 2 \times SD(\hat{p}) = 0.816 \pm 2 \times 0.081 = 0.816 \pm 0.162$$
-
-We are $95\%$ confident that the long-run proportion of students who would assign the name Tim to the left face when given the same choice we used is between $65.4\%$ and $97.8\%$.
-
-All plausible values in the interval are greater than $50\%$. We can be confident that the true proportion $\pi$ is greater than random chance in this context, based on our experiment --- students do have a preference for saying Tim is on the left.
-
-
-## Simulate the SD: Bob or Tim
-
-```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("../images/bobtimCIsimulationSD.png", dpi = 110)
-```
-
-<hr>
-
-Remember, use $\pi = 0.5$ here regardless of the null hypothesis.

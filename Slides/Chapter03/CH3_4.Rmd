@@ -24,6 +24,8 @@ These slides are meant to accompany the text [*Introduction to Statistical Inves
 
 See [AsULearn](https://asulearn.appstate.edu/) for additional readings, videos, and assignments.
 
+You can print these slides to a pdf for offline use using the print function in your browser.
+
 
 ## Recall: Spiral Approach & Four Pillars
 
@@ -79,9 +81,9 @@ In Sections 3.1 and 3.2 you explored some different confidence intervals strateg
 
 * Recognize that all other things being equal, as the confidence level increases, the width of the confidence interval increases.
 
-    **in short: ↑ confidence = ↑ width**
+    **in short: increased ↑ confidence = increased ↑ width**
 
-* Apply the idea that the confidence level of an interval corresponds to its coverage probability (the proportion of confidence intervals containing the true parameter value across many, many random samples) in the interpretation of confidence intervals.
+* Apply the idea that the confidence level of an interval corresponds to its coverage probability (*the proportion of confidence intervals containing the true parameter value across many, many random samples*) in the interpretation of confidence intervals.
 
 
 ##
@@ -160,4 +162,6 @@ In the cat ownership example, we can see how the widths of the intervals change 
 **<mark>Precision</mark>** refers to the overall *width* of the confidence interval. It is a separate idea from level of confidence. 
 
 But, we also see that a very large sample size like $n = 41,000$ makes all of the intervals using that sample size quite precise. In other words, the set of *plausible values* is quite small in all cases, even for a high level of confidence or $\hat{p} = 0.5$.
+
+**Remember:** While level of confidence does impact the width of a confidence interval, how wide it is and the probability that the interval captures the true value are separate ideas.
 

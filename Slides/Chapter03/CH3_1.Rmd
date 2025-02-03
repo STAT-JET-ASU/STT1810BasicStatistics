@@ -203,8 +203,8 @@ Testing values more than $0.89$ for the largest plausible $\pi$ value.
 | Value of $\pi$ tested in $H_0$ |0.89 |...  |0.92 |0.93 |0.94 |0.95 |0.96 |0.97 |
 |--------------------------------|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | Two-sided *p*-value            |1.000|...  |0.484|0.429|0.207|0.136|0.084|0.047| 
-| Reject Ho?                     |No   |...  |No   |No   |No   |No   |...  |Yes  |  
-| Plausible $\pi$?|Yes|Yes|Yes|Yes|...|Yes|<mark>Yes</mark>|**<mark style = "background: #ffcdcd;">NO</mark>**|
+| Reject Ho?                     |No   |...  |No   |No   |No   |No   |No   |Yes  |  
+| Plausible $\pi$?|Yes|...|Yes|Yes|Yes|Yes|<mark>Yes</mark>|**<mark style = "background: #ffcdcd;">NO</mark>**|
 
 <br><mark>We are 95% confident that $\pi$ is between $0.71$ and $0.96$.</mark> 
 

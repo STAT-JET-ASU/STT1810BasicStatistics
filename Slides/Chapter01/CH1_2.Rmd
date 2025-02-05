@@ -154,9 +154,9 @@ Assuming $H_0$ is true, our **<mark>*p*-value</mark>** is the probability of get
 
 ## Additional Guidelines (*p*-value &leq; 0.05)
 
-Researchers across many of disciplines consider **<mark>*p*-value ≤ 0.05</mark>** (i.e., ≤ 5% chance) to be the threshold where we can claim that the data have ***<mark>statistical significance</mark>***, declare the chance model<br>($H_0$) to be implausible, and accept $H_a$ instead. 
+Researchers across many of disciplines consider **<mark>*p*-value ≤ 0.05</mark>** (i.e., ≤ 5% chance) to be the threshold where we can claim that the data have ***<mark>statistical significance</mark>***, declare the chance model<br>(the $H_0$) to be implausible, and accept $H_a$ instead. 
 
-A *p*-value ≤ 0.05 indicates we have *strong* or *very strong evidence* against the null hypothesis in our textbook guidelines.
+A *p*-value ≤ 0.05 indicates we have *strong* or *very strong evidence* against the null hypothesis, as per our textbook guidelines.
 
 In some situations you may want or need stronger evidence. For example, rejecting $H_0$ may have life or death consequences in a medical study, so the researchers might use *p*-value ≤ 0.01 (*very strong evidence*) as the threshold for significance.
 
@@ -165,16 +165,16 @@ In some situations you may want or need stronger evidence. For example, rejectin
 You may be wondering, why this particular probability (≤ 0.05)? What's so special about it?
 
 
-## Why 0.05?
+## So Why 0.05?
 
-Ronald Fisher wrote *Statistical Methods for Research Workers* in 1925 and he chose 1 in 20 (5%) as his general guide, because it typically corresponds to roughly two standard deviations from the expected value. (*Though not without [controversy](https://www.scientificamerican.com/article/the-significant-problem-of-p-values/)...*)
+Ronald Fisher wrote *Statistical Methods for Research Workers* in 1925 and he chose 1 in 20 (5%) as his general guide, because it typically corresponds to roughly two standard deviations from the expected value. (*Though there is some [disagreement](https://www.scientificamerican.com/article/the-significant-problem-of-p-values/)...*)
 
 ```{r, echo = FALSE, fig.align="center"}
 knitr::include_graphics("../images/fisherpvaluequote.png", dpi = 70)
 ```
 
 
-## Connection: ISI [One Proportion](http://www.isi-stats.com/isi2nd/ISIapplets2021.html) Applet
+## ISI [One Proportion](http://www.isi-stats.com/isi2nd/ISIapplets2021.html) Applet
 
 :::::: {style="display: flex;"}
 

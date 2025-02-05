@@ -36,7 +36,7 @@ knitr::include_graphics("../images/statisticsgrammar.jpg", dpi = 160)
 
 *Grammar gives us rules that are essential for any shared language.* 
 
-Statistics provides frameworks and methods to help make sense of the complex language of data. Thus, researchers can *quantify uncertainty*, *validate hypotheses*, and *draw valid conclusions*. 
+Statistics provides frameworks and methods to help make sense of the complex language of data. Thus, researchers can ***quantify uncertainty***, ***validate hypotheses***, and ***draw valid conclusions***. 
 
 
 ## Recall: Spiral Approach & Four Pillars

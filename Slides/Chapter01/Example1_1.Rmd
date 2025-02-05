@@ -227,12 +227,12 @@ Press `Draw Samples` to generate 1000 simulated experiments...
 knitr::include_graphics("../images/fig_01_01_04B.jpg", dpi = 100)
 ```
 
-Doing a larger number of simulations gives us a better idea of the long-run probability for all the possible outcomes. Getting a count of $5$ to $11$ correct just by guessing is fairly common. 
+Doing a larger number of simulations gives us a better idea of the long-run probability for all the possible outcomes. Getting between $5$ and $11$ just by guessing is not all that unusual. 
 
 
 ## If We Did Infinite Simulations...
 
-The plot shows the true long-run probabilities of getting $0$ to $16$ correct, if Buzz is just guessing on each trial. Notice that $8$ ($50\%$ correct) is most common. *This requires doing a bit of math*...
+The plot shows the true long-run probabilities of getting $0$ to $16$ correct, if Buzz is just guessing on each trial. Notice that $8$ ($50\%$ correct) is most common. *This requires several calculations*...
 
 ```{r fig.align="center", fig.height = 3.75}
 pmf <- tibble(

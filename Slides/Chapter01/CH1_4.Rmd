@@ -25,7 +25,9 @@ These slides were created to accompany the text [*Introduction to Statistical In
 
 See [AsULearn](https://asulearn.appstate.edu/) for additional readings, videos, and assignments.
 
-These slides also include supplemental content about Type I and Type II errors that is not found in Section 1.4 of the ISI textbook.
+You can print these slides to a pdf for offline use using the print function in your browser.
+
+<p style = "background: lightgray;">These slides include supplemental content regarding Type I and Type II errors that is not found in Section 1.4 of the ISI textbook.</p>
 
 
 ## Recall: Spiral Approach & Four Pillars
@@ -103,7 +105,7 @@ Three important components of a test of significance influence the strength prov
 * **<mark>one- vs. two-sided $H_a$</mark> :** Because the *p*-value for a two-sided test is about twice as large as for a one-sided test using the same data, it provides less evidence against $H_0$. Two-sided tests are used more often in scientific practice.
 
 
-## Type I & Type II Errors
+## Type I and Type II Errors
 
 Our estimated *p*-values are probabilities, not proof. When we do a significance test, we might make a decision error. For example, a small sample size is a very common reason for a Type II error. There are four possibilities when we do a test of significance.
 
@@ -133,7 +135,7 @@ Power and Type II error have complimentary probabilities. If the chance of Type 
 Often, researchers can make educated guesses about unknown parameters to try to estimate power for their study. Calculations like these help them choose the right sample size.
 
 
-## Example of Type I & II Errors #1
+## Example of Type I and II Errors #1
 
 Recall Exploration P.1 "Do You Have ESP?" Anyone who got 9/25 or more cards correct was told they had evidence of ESP, but we know such a high score can sometimes happen randomly. 
 
@@ -150,7 +152,7 @@ $H_0$ : You *do not* have ESP.
 * Test says there is evidence of ESP---again, a correct decision!
 
 
-## Example of Type I & II Errors #2
+## Example of Type I and II Errors #2
 
 You decide to get tested for COVID-19 based on mild symptoms. There are two correct decisions and two errors that could occur.
 

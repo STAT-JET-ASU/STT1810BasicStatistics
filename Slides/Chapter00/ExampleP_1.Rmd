@@ -80,37 +80,37 @@ Participants did not know that organ donation was the focus of the study or that
 
 Before data analysis, the researchers removed data where there were repeat responses from the same IP address, where surveys were completed in less than five seconds, or where people had addresses that could not be verified (*... they might be bots*).
 
-*Can you think of any potential problems with this methodology that might affect the results of the study? What are some positive aspects of this design?* [*We will learn about study design in Chapter 4.*]
+*Can you think of any potential problems with this methodology that might affect the results of the study? What are some positive aspects of this design? We will learn more about study design in Chapter 4.*
 
 
-## Organ Donation Options
+## Three Organ Donation Options
 
-Participants were asked to imagine they moved into a new state. When they apply for a driver’s license, they have to decide about being an organ donor. 
+Participants were asked to imagine they moved into a new state. When they apply for a driver’s license, they have to decide about whether or not to be an organ donor. 
 
-Each person was given one of three possible scenarios (choices).
+Each person was presented with one of three choice scenarios.
 
-* *Opt-in* group : The default option in the application was *not* to be a donor. Participants had to choose to become a donor.
+* ***Opt-in*** : The default option in the application was *not* to be a donor. Participants had to choose to become a donor if they wanted---no action was required if they did not want to.
 
-* *Opt-out* group : The default option in the application was to be a donor. People had to choose *not* to become a donor.
+* ***Opt-out*** : The default option was to be a donor. People had to explicitly choose if they did *not* want to become a donor.
 
-* *Neutral group* : There was no default option in the application. People had to specifically choose to become an organ donor or not to become a donor.
+* ***Neutral*** : There was no default option in the application. That means people had to specifically make a choice either way---to become an organ donor or not to become a donor.
 
 
-## Additional Design Details
+## Additional Study Design Details
 
-observational units
+**observational units**
 
 * 161 recruited volunteers
 
-explanatory variable
+**explanatory variable**
 
 * default donation option (categorical, three treatment groups)
 
-response variable
+**response variable**
 
 * choice *to be* or *not to be* an organ donor (categorical, binary)
 
-study design
+**study design**
 
 * randomized experiment (*assuming participants were randomly assigned to the three donation options*)
 
@@ -135,22 +135,22 @@ knitr::include_graphics("../images/fig_p_01_01.png", dpi = 110)
 
 ::: {}
 
-Who agreed to become donors?
+How many agreed to become donors?
 
-* **opt-in** group : 41.8% yes
-* **opt-out** group : 82.0% yes
-* **neutral group** : 78.6% yes 
+* **opt-in** : 41.8% of participants
+* **opt-out** : 82.0% of participants 
+* **neutral** : 78.6% of participants 
 
-The neutral and opt-out groups had higher percentages of organ donors.
+The opt-out and neutral groups had higher rates compared to opt-in...
 
 :::
 
 ::::
 
-* $\frac{82.0}{41.8}$ ≈ 2 &rarr; opt-out was about twice as likely vs. opt-in
-* $\frac{78.6}{41.8}$ ≈ 1.9 &rarr; neutral was 1.9 times as likely to say yes 
+* $\frac{82.0}{41.8}$ ≈ 2 &rarr; opt-out were two times as likely to be donors
+* $\frac{78.6}{41.8}$ ≈ 1.9 &rarr; neutral were 1.9 times as likely to be donors 
 
-[*We will explore segmented bar graphs and risk ratios in Chapter 5.*]
+*We will explore segmented bar graphs and risk ratios in Chapter 5.*
 
 
 ## STEP 4: Draw Inferences
@@ -159,9 +159,9 @@ Using methods that we will learn in this course, the researchers analyzed whethe
 
 They also estimated the size of the differences that they found. 
 
-This study reported strong evidence that the neutral and opt-out defaults produced a higher chance of a person choosing to be a donor, as compared to the opt-in version used by many states. [*We will learn about strength of evidence in Chapter 1.*]
+This study reported strong evidence that the neutral and opt-out defaults produced a higher chance of a person choosing to be a donor, as compared to the opt-in version used by many states. *We will learn about strength of evidence in Chapter 1.*
 
-Given the sample characteristics, they could be confident that the neutral version increases the chance a person will agree to be a donor by somewhere between 20% and 54% compared to opt-in. [*We will learn about estimation in Chapter 3.*]
+Given the sample characteristics, they could be confident that the neutral version increases the chance a person will agree to be a donor by somewhere between 20% and 54% compared to opt-in. *We will learn about estimation in Chapter 3.*
 
 
 ## STEP 5: Formulate Conclusions
@@ -170,7 +170,7 @@ In this study, participants given the “opt-in” strategy were much less likel
 
 The researchers conclude that "changes in defaults could [result in] additional thousands of donors a year.” 
 
-[*We will learn more about making generalizations in Chapter 2 and cause-and-effect conclusions in Chapter 4.*]
+*We will learn more about making generalizations in Chapter 2 and cause-and-effect conclusions in Chapter 4.*
 
 <hr>
 
@@ -192,11 +192,11 @@ Part of looking back also considers how a study relates to other similar studies
 *What other factors could impact someone's choice to be a donor?*
 
 
-## Looking Ahead: Variation in Data
+## 
 
-ATS (access to transplant) score indicates the probability that a person on the U.S. transplant wait list gets a transplant from a deceased donor. Variation in scores reflects the fairness of the system. *Less* variation means *more* fairness---the probabilities are more alike for all the people on the list. We will learn about standard deviation in Section P.2. (Source: [OTPN / UNOS](https://insights.unos.org/equity-in-access/))
+ATS (access to transplant) score indicates the probability that a person on the U.S. transplant wait list gets a transplant from a deceased donor. **Variation** in scores reflects the fairness of the system. *Less* variation means *more* fairness---the probabilities are more alike for all the people on the list. We will learn about standard deviation in Section P.2. (Source: [OTPN / UNOS](https://insights.unos.org/equity-in-access/))
 
 ```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("../images/accesstotransplants.png", dpi = 150)
+knitr::include_graphics("../images/accesstotransplants.png", dpi = 130)
 ```
 

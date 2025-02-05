@@ -297,9 +297,9 @@ ggplot(pmf, aes(x = as.factor(successes), y = probability, fill = c("A", "B", "A
 
 If we *can* do the math, then why don't we?
 
-Most traditional statistical methods are *approximations* that use probability theory and mathematics. We will see this in Section 1.5, where we will learn a method that approximates a solution using the Normal distribution.
+Most traditional statistical methods are *approximations* that use probability theory and mathematics. Section 1.5 (which we will not cover) presents a method that approximates a probability using the Normal distribution ("bell curve"). You may have seen this method in AP Statistics or a research methods class.
 
-In this course, we will use simulations to approximate long-run probabilities. In many ways, simulations can be preferable and more flexible than theory-based methods. You will be asked to compare simulations to theory-based results.
+In this course, we will use simulations to approximate long-run probabilities. In many ways, simulations can be preferable and more flexible than theory-based methods. 
 
 In any case, we can see that getting $15$ out of $16$ correct just by randomly guessing is a *very* rare (a *very low probability*) outcome, although it is not impossible.
 

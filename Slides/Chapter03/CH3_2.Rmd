@@ -101,10 +101,10 @@ $$\text{for example: } \hat{p} \pm 2 \times SD(\hat{p})$$
 
 ## Empirical Rule: Why the 2SD Works
 
-For a bell-shaped (Normal) curve, about 95% of the distribution will be within ±2SD of the mean---the basis of the 2SD method.
+For a bell-shaped (Normal) curve, about 95% of the distribution will be within ±2SD of the mean---the basis of the 2SD method. The 2SD method is valid as long as the sampling distribution is symmetric and roughly bell-shaped.
 
 ```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("../images/empiricalrule.png", dpi = 110)
+knitr::include_graphics("../images/empiricalrule.png", dpi = 130)
 ```
 
 We could also create 68% and 99.7% CIs using ±1SD and ±3SD.
@@ -126,6 +126,7 @@ $$\hat{p} \pm 2 \times SD(\hat{p})$$
 
 Recall that we use $\pi = 0.5$ because $SD(\hat{p})$ is the biggest then.
 
+
 ## Where is the Largest SD? At $\pi = 0.50!$
 
 |  $n$  |        $\pi$        |      $SD(\hat{p})$    |
@@ -141,7 +142,7 @@ Recall that we use $\pi = 0.5$ because $SD(\hat{p})$ is the biggest then.
 
 ## Example 3.2 Cyberbullying
 
-In a March 7–April 10, 2018 survey of a random sample of 743 U.S. teenagers (ages 13 to 17 years), the Pew Research Center found that 59% said they had experienced cyberbullying. Use the [ISI One-Proportion](http://www.isi-stats.com/isi2nd/ISIapplets2021.html) applet to estimate the SD.
+In a March 7–April 10, 2018 survey of a random sample of 743 U.S. teenagers (ages 13 to 17 years), the Pew Research Center found that 59% said they had experienced cyberbullying. Use the [One-Proportion](http://www.isi-stats.com/isi2nd/ISIapplets2021.html) applet to estimate the SD.
 
 ```{r, echo = FALSE, fig.align="center"}
 knitr::include_graphics("../images/2SD95CI.PNG", dpi = 100)
@@ -154,7 +155,7 @@ Use the sample $\hat{p} = 0.59$ and the simulated $SD(\hat{p}) = 0.018$.
 
 $$\hat{p} \pm 2 \times SD(\hat{p}) = 0.59 \pm 2 \times 0.018 = 0.59 \pm 0.036$$
 
-We are 95% confident that the true proportion of U.S. teens who had experienced cyberbullying (defined by the Pew survey) was between $0.59 \pm 0.036$. The margin of error on this estimate is the $\pm 0.036$ or $3.6\%$.
+We are 95% confident that the population proportion of U.S. teens who had experienced cyberbullying (as defined by Pew) was $0.59 \pm 0.036$. The ***margin of error*** is $\pm 0.036$ or $\pm 3.6\%$.
 
 We can also express the confidence interval as $(0.554, 0.626)$, or as percentages, such as $55.4\%$ to $62.6\%$ of kids.
 

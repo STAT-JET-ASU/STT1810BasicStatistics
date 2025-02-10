@@ -137,6 +137,34 @@ Often, researchers can make educated guesses about unknown parameters to try to 
 
 ## Example of Type I and II Errors #1
 
+Consider the way in which the U.S. court system works. We are instructed to start off with a presumption of innocence, which is like our null hypothesis in a statistical test.  
+
+Reality : The person is genuinely innocent (they are not guilty).<br>
+$H_0$ : The defendant is innocent.
+
+* Jury verdict is not guilty---yes, a correct decision!
+* Jury verdict is guilty---*false positive* (Type I error)
+
+Reality : The person is genuinely *not* innocent (they are guilty).<br>
+$H_0$ : The defendant is innocent.
+
+* Jury verdict is not guilty---*false negative* (Type II)
+* Jury verdict is guilty---again, a correct decision!
+
+
+## The Language of the Decision
+
+Just like in statistical hypothesis testing, a jury verdict does not declare that the assumption of innocence ($H_0$) is true. Both of these processes rely on weighing imperfect evidence. 
+
+The jury verdict of "not guilty" essentially translates as, "We have weighed the presented evidence and there is not enough to find the person guilty." This is like saying $H_0$ is plausible.
+
+Similarly, the criterion for finding a defendant guilty is "beyond a reasonable doubt," *not* absolute proof---despite the oft-repeated phrase "innocent until proven guilty."
+
+Reasonable doubt is essentially a subjective probability that the jury member decides for themselves. Is the evidence consistent with or guilt innocence?
+
+
+## Example of Type I and II Errors #2
+
 Recall Exploration P.1 "Do You Have ESP?" Anyone who got 9/25 or more cards correct was told they had evidence of ESP, but we know such a high score can sometimes happen randomly. 
 
 Reality : You *do not* have ESP.<br>
@@ -152,9 +180,9 @@ $H_0$ : You *do not* have ESP.
 * Test says there is evidence of ESP---again, a correct decision!
 
 
-## Example of Type I and II Errors #2
+## Example of Type I and II Errors #3
 
-You decide to get tested for COVID-19 based on mild symptoms. There are two correct decisions and two errors that could occur.
+You decide to get tested for COVID-19 based on mild symptoms. There are two correct decisions and two errors that could occur (with this or most medical tests).
 
 Reality : You *do not* have COVID-19.<br>
 $H_0$ : You *do not* have COVID-19.
@@ -167,5 +195,4 @@ $H_0$ : You *do not* have COVID-19.
 
 * Test says you do not have the virus---*false negative* (Type II)
 * Test says you do have the virus---again, a correct decision!
-
 

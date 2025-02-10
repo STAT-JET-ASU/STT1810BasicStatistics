@@ -19,7 +19,7 @@ knitr::opts_chunk$set(
 
 ## Recall Our [ESP Test / Data Exploration](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/ESPactivity/ESPZenerCards_P_1.html)
 
-In our Zener card example for Section 1.2, we discussed defining the parameter and formulating hypotheses.
+In our [Zener card example for Section 1.2](https://stat-jet-asu.github.io/STT48114812StatConcepts/Slides/ESPactivity/ESPZenerCards_1_2.html), we discussed defining the parameter and formulating hypotheses.
 
 <hr>
 

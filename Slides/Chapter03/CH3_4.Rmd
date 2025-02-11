@@ -88,13 +88,13 @@ In Sections 3.1 and 3.2 you explored some different confidence intervals strateg
 
 ##
 
-* Recognize that all other things being equal, as the sample size increases, the width of the resulting confidence interval decreases.
+* Recognize that all other things being equal, as sample size increases, the resulting confidence interval width decreases.
 
-    **in short: ↑ sample size = ↓ width **
+    *In short*: **increased ↑ sample size = decreased ↓ width **
 
 * Recognize that all other things being equal, as the sample proportion gets farther from 0.5, standard error decreases and thus a resulting confidence interval will be narrower.
 
-    **in short: 0 ← 0.5 → 1 = ↓ sampling variability = ↓ width **
+    *In short*: **probability being farther from 0.05 (0 ← 0.5 → 1) in either direction = ↓ sampling variability = ↓ width **
 
 * Recognize that statistical significance on its own does not imply evidence of a large difference from Ho. This issue is especially relevant with large sample sizes. 
 * Know that *p*-values address statistical significance while CIs help assess the plausible size of the parameter.

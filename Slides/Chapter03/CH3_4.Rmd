@@ -81,22 +81,23 @@ In Sections 3.1 and 3.2 you explored some different confidence intervals strateg
 
 * Recognize that all other things being equal, as the confidence level increases, the width of the confidence interval increases.
 
-    **in short: increased ↑ confidence = increased ↑ width**
+<p style = "text-align: center;">**increased ↑ confidence = increased ↑ width**</p>
 
-* Apply the idea that the confidence level of an interval corresponds to its coverage probability (*the proportion of confidence intervals containing the true parameter value across many, many random samples*) in the interpretation of confidence intervals.
+* When in interpreting confidence intervals, apply the idea that the confidence level of an interval corresponds to its coverage probability (*i.e., a level of confidence like 95% is the proportion of confidence intervals that contain the true parameter value across many, many random samples*).
 
 
 ##
 
 * Recognize that all other things being equal, as sample size increases, the resulting confidence interval width decreases.
 
-    *In short*: **increased ↑ sample size = decreased ↓ width **
+<p style = "text-align: center;">**increased ↑ sample size = decreased ↓ width **</p>
 
 * Recognize that all other things being equal, as the sample proportion gets farther from 0.5, standard error decreases and thus a resulting confidence interval will be narrower.
 
-    *In short*: **probability being farther from 0.05 (0 ← 0.5 → 1) in either direction = ↓ sampling variability = ↓ width **
+<p style = "text-align: center;">**the proportion being farther from 0.05 in either direction<br>(0 ← 0.5 → 1) = ↓ sampling variability = ↓ width **</p>
 
 * Recognize that statistical significance on its own does not imply evidence of a large difference from Ho. This issue is especially relevant with large sample sizes. 
+
 * Know that *p*-values address statistical significance while CIs help assess the plausible size of the parameter.
 
 
@@ -161,7 +162,7 @@ In the cat ownership example, we can see how the widths of the intervals change 
 
 **<mark>Precision</mark>** refers to the overall *width* of the confidence interval. It is a separate idea from level of confidence. 
 
-But, we also see that a very large sample size like $n = 41,000$ makes all of the intervals using that sample size quite precise. In other words, the set of *plausible values* is quite small in all cases, even for a high level of confidence or $\hat{p} = 0.5$.
+But, we also see that a very large sample size like $n = 41,000$ makes all of the intervals using that sample size very precise. In other words, the set of *plausible values* is quite small in all cases, even for a high level of confidence or $\hat{p} = 0.5$.
 
 **Remember:** While level of confidence does impact the width of a confidence interval, how wide it is and the probability that the interval captures the true value are separate ideas.
 

@@ -25,6 +25,8 @@ These slides are meant to accompany the text [*Introduction to Statistical Inves
 
 See [AsULearn](https://asulearn.appstate.edu/) for additional readings, videos, and assignments.
 
+You can print these slides to a pdf for offline use using the print function in your browser.
+
 
 ## Recall: The Four Pillars of Inference
 
@@ -83,24 +85,13 @@ Overall, the main goal is to explain when and why we can infer cause-and-effect 
 
 ## Section 4.1 New Vocabulary
 
-**<mark>associated</mark> :** two variables are associated or related to each other if the distribution of one variable is different across the values of the other variable --- knowing something about one variable gives us information about the other
+**<mark>associated</mark> :** two variables are associated or related to each other if the distribution of one variable is different across the values of the other variable
 
-***Example 1:*** In the game of Monopoly, as you move around the four sides of the board from the starting space **Go**, each side has higher prices than the preceding side. Thus, side and price are associated.
-
-***Example 2:*** People who develop a rare type of cancer known as mesothelioma are more likely to have been previous exposure to asbestos fibers and dust. 
-
-***Example 3:*** Smoking cigarettes is associated with several medical problems, such as lung cancer, heart disease, COPD, and stroke. 
-
-
-##
+***Example:*** In the game of Monopoly, as you move around the four sides of the board from Go, each side has higher prices than the preceding side. Side and price are associated.
 
 **<mark>explanatory variable</mark> :** if the alternative hypothesis is true, this is the variable that explains changes in the response variable (also known as the **independent** / **predictor variable**). 
 
-***Example 1:*** In Example P.2, we explored the duration (in minutes) of Super Bowl national anthem performances. We considered a few other variables like gender and performer's genre of music to try to explain the differences in performance lengths.
-
-***Example 2:*** In our observed relationship between asbestos and mesothelioma, asbestos exposure is the explanatory variable, since it precedes the person developing the disease. The same would be true for smoking and various diseases.
-
-***Example 3:*** In elementary school, children in higher grades tend to be taller than children in lower grades. In this case, age is the explanatory variable for observed height differences.
+***Example:*** In Example P.2, we explored the duration (in minutes) of Super Bowl national anthem performances. We considered other variables like gender and musical genre to try to explain observed differences in performance lengths.
 
 
 ##
@@ -111,7 +102,7 @@ Overall, the main goal is to explain when and why we can infer cause-and-effect 
 
 ***Example 2:*** In our observed relationship between asbestos and mesothelioma, or between smoking and a long list of diseases, the diseases are the response variables.
 
-***Example 3:*** In elementary school, children in higher grades tend to be taller than children in lower grades. In this case, age is the response variable is the observed differences in height.
+***Example 3:*** In elementary school, children in higher grades tend to be taller than children in lower grades. In this case, the response variable is the observed differences in height.
 
 
 ##
@@ -129,7 +120,7 @@ We will not make a distinction between the two in this class, and instead use on
 
 ## Uncovering Associations
 
-Alternative definition: two variables are *associated* (or related) if the value of one variable gives you information about the value of the other variable. When comparing groups, the proportions or means for one variable (***response** or **dependent** variable*) are different within different sub-groups (*categories that are created by the **explanatory** or **independent** variable*).
+<mark>**Alternate definition</mark> :** two variables are *associated* (or related) if the value of one variable gives you information about the value of the other variable. When comparing groups, the proportions or means for one variable (***<mark>response</mark>** or **<mark>dependent</mark>** variable*) are different within different sub-groups (*categories that are created by the **<mark>explanatory</mark>** or **<mark>independent</mark>** variable*).
 
 <hr>
 
@@ -161,4 +152,17 @@ knitr::include_graphics("../images/confound03.png", dpi = 120)
 ```
 
 <br><div style = "text-align: center; font-size: 18px;">Image from [*Statology: What is a Confounding Variable?*](https://www.statology.org/confounding-variable/) by Zach Bobbitt <div>
+
+
+## Association vs. Correlation
+
+In everyday speech, we often say two things are ***correlated*** when they are related to one another.
+
+In statistics, we generally say that variables are ***associated*** when they are related to one another. 
+
+A correlation, on the other hand, is a specific kind of relationship or association between quantitative variables---usually that they have a linear relationship when plotted against one another on a scatterplot. In other words, they roughly form a line.
+
+There are several special correlation statistics for other kinds of associations, but we will not cover those in this class.
+
+*In general, do not use correlation when the appropriate word is the more general association.*
 

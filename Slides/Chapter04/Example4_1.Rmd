@@ -25,6 +25,8 @@ These slides are meant to accompany the text [*Introduction to Statistical Inves
 
 See [AsULearn](https://asulearn.appstate.edu/) for additional readings, videos, and assignments.
 
+You can print these slides to a pdf for offline use using the print function in your browser.
+
 
 ## The Spiral Approach to Investigation
 

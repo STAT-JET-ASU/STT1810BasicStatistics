@@ -25,6 +25,8 @@ These slides are meant to accompany the text [*Introduction to Statistical Inves
 
 See [AsULearn](https://asulearn.appstate.edu/) for additional readings, videos, and assignments.
 
+You can print these slides to a pdf for offline use using the print function in your browser.
+
 
 ## Recall: The Four Pillars of Inference
 
@@ -88,7 +90,7 @@ Overall, the main goal is to explain when and why we can infer cause-and-effect 
 
 **<mark>response variable</mark> :** if the alternative hypothesis is true, this is the variable that is impacted by the explanatory variable (also known as the **dependent variable**)
 
-**<mark>confounding variable</mark> :** a variable related to the explanatory and response variables in such a way that its effects on the response variable cannot be separated from the effects of the explanatory variable---it provides another possible "causal" explanation 
+**<mark>confounding variable<mark> :** a variable that is related to both the explanatory and response variables in such a way that its effects on the response variable cannot be separated from those of the explanatory variable
 
 
 ## Section 4.2 New Vocabuary
@@ -118,9 +120,9 @@ Overall, the main goal is to explain when and why we can infer cause-and-effect 
 
 ##
 
-**<mark>treatment</mark> :** the assigned conditions or experimental groups in an experiment
+**<mark>treatment</mark> :** the assigned conditions/experimental groups in an experiment
 
-**<mark>control</mark> :** a "do-nothing" or placebo treatment in an experiment
+**<mark>control</mark> :** a do-nothing or placebo treatment in an experiment
 
 **<mark>randomized experiment</mark> :** a study where experimental units are randomly assigned to two or more treatment conditions and the explanatory variable is actively imposed on the subjects
 
@@ -134,16 +136,16 @@ Overall, the main goal is to explain when and why we can infer cause-and-effect 
 
 ***Example:*** Researchers are studying three methods for stopping smoking (cold turkey, patch, and gum), but participants choose for themselves what method they use.
 
-**<mark>experimental unit</mark> :** what observational units are often called in an experiment (also **subject** or **participant**)
+**<mark>experimental unit</mark> :** what observational units are often called in an experiment
 
-**<mark>double blind</mark> :** a study design where neither the subjects nor the people who are evaluating the response know which treatment group each subject is in (*usually requires a placebo*)
+**<mark>double blind</mark> :** a study design where neither the subjects nor those evaluating the response know which treatment group each subject is in (usually requires a placebo)
 
-**<mark>cause and effect</mark> :** if we do a randomized experiment, then we can conclude that the explanatory variable is causing the effect (difference or association) we see in the response variable (*the randomization balances possible confounding variables*)
+**<mark>cause and effect</mark> :** in a randomized experiment, we can conclude that the explanatory variable is causing the effect (difference or association) we see in the response variable (*the randomization balances possible confounding variables*)
 
 
 ## What Kind of Study?
 
-**randomized experiment:** 
+**randomized experiment:**
 
 * researchers manipulate the treatments participants receive (i.e., the explanatory variable); may use placebos or blinding
 * researchers also randomly assign participants to treatment groups; may use completely random assignment or blocks

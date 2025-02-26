@@ -90,7 +90,7 @@ Overall, the main goal is to explain when and why we can infer cause-and-effect 
 
 **<mark>response variable</mark> :** if the alternative hypothesis is true, this is the variable that is impacted by the explanatory variable (also known as the **dependent variable**)
 
-**<mark>confounding variable<mark> :** a variable that is related to both the explanatory and response variables in such a way that its effects on the response variable cannot be separated from those of the explanatory variable
+**<mark>confounding variable</mark> :** a variable that is related to both the explanatory and response variables in such a way that its effects on the response variable cannot be separated from those of the explanatory variable
 
 
 ## Section 4.2 New Vocabuary

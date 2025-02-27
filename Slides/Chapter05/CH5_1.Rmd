@@ -25,6 +25,10 @@ These slides are meant to accompany the text [*Introduction to Statistical Inves
 
 See [AsULearn](https://asulearn.appstate.edu/) for additional readings, videos, and assignments.
 
+You can print these slides to a pdf for offline use using the print function in your browser.
+
+<p style = "background: lightgray;">These slides include supplemental content about the measures percent increased risk, odds, and odds ratio that is not found in Section 5.1 of the ISI textbook.</p>
+
 
 ## Recall: The Six-Step Spiral Process
 
@@ -106,7 +110,7 @@ The terms *relative risk*, *increased risk*, *odds*, and *odds ratio* are common
 * percent increased risk*
 * mosaic plot
 * no association
-* odds*
+* odds *
 * odds ratio*
 * relative risk*
 * segmented bar graph
@@ -140,10 +144,10 @@ knitr::include_graphics("../images/titanicsurvival01.png", dpi = 230)
 
 ##
 
-An example with three variables: sex, survival, and ticket class. Does ticket class seem to be associated with sex and survival?
+An example with three variables: sex, survival, and ticket class. Does ticket class seem to be associated with sex and survival? Look at the different survivor proportions between the graphs. Which sex and ticket class had the highest probability?
 
 ```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("../images/titanicsurvival02.png", dpi = 175)
+knitr::include_graphics("../images/titanicsurvival02.png", dpi = 210)
 ```
 
 <div style = "font-size: 18px; text-align: center;">Survival Rates for Titanic Passengers by Sex and Class</div>
@@ -161,23 +165,23 @@ knitr::include_graphics("../images/titanicsurvival03.png", dpi = 230)
 
 <br>
 
-There were more male passengers than female aboard Titanic.
+There were more male than female passengers aboard Titanic.
 
 
 ## 
 
-**<mark>relative risk</mark> :** the **ratio** of conditional proportions that indicates how many times greater the risk of some observed outcome is for one group, as compared to the risk of the same outcome in another group (also sometimes called **<mark>risk ratio</mark> **)
+**<mark>relative risk</mark> :** the **ratio** of conditional proportions that indicates how many times greater the risk of some observed outcome is for one group, as compared to the risk of the same outcome in another group (also sometimes called **risk ratio**)
 
 $$RR = \frac{\text{proportion (risk) in explanatory category 2}}{\text{proportion (risk) in explanatory category 1}}$$
 
-Which group we call Category 1 and which group is Category 2 depends on the problem context. If we have a control group or "baseline" group for comparison in our study, that group usually will go in the denominator (i.e., the bottom of the fraction).
+Which group we call Category 1 and which group is Category 2 depends on the problem context. If we have a control group or "baseline" group for comparison in our study, that group usually will go in the denominator (i.e., on the bottom of the fraction).
 
-Essentially, **<mark>risk</mark>** is another word for **<mark>probability</mark>** or proportion. In everyday English, we usually associate the word "risk" with some kind of bad outcome. However, in statistics we can use the term risk for any outcome we are interested in.
+Essentially, **risk** is another word for **probability** or proportion. In everyday English, we usually associate the word "risk" with some kind of bad outcome. However, in statistics we can use the term risk for any outcome we are interested in.
 
 
 ## An Example: Risk of Oral Cancer
 
-[Oral cancer](https://www.nidcr.nih.gov/health-info/oral-cancer) is a family of malignancies that includes cancers of the mouth and the back of the throat. Smoking, alcohol use, sun exposure, and poor nutrition are some of the variables that are associated with this type of cancer. Consider here the observed incidence of oral cancer in groups of smokers and non-smokers. ***Smoking is the explanatory variable.***
+[Oral cancer](https://www.nidcr.nih.gov/health-info/oral-cancer) is a family of malignancies that includes cancers of the mouth and the back of the throat. Smoking and alcohol use, as well as sun exposure and poor nutrition, are some of the factors that have been found to be associated with this type of cancer. Consider the incidence of oral cancer among a group of smokers and non-smokers. ***Smoking is the explanatory variable.***
 
 |Oral Cancer? | Non-Smoker | Smoker     |
 |-------------|:----------:|:----------:|
@@ -199,6 +203,7 @@ $$RR = \frac{\text{oral cancer risk for non-smokers}}{\text{oral cancer risk for
 The decimal value 0.41 is about 2/5, so we can say non-smokers are about ***two-fifths as likely*** to develop oral cancer as smokers.
 
 These are equivalent expressions, but the first version might be more understandable. We just need to be clear how the groups are being compared when stating risk ratios.
+
 
 
 ## 
@@ -271,7 +276,7 @@ Suppose the two probabilities being compared are the same. Let's choose 0.25 for
 
 $$RR = \frac{\text{risk in explanatory category 2}}{\text{risk in explanatory category 1}} = \frac{0.25}{0.25} = 1$$
 
-When the two probabilities are the same, their risk ratio is 1 --- probability in one group is ***one times*** the probability in the other. 
+When the two probabilities are the same, their risk ratio is 1, so probability in one group is ***one times*** the probability in the other. 
 
 The more difference there is between the two probabilities, the farther from 1 the relative risk value will get. Possible values for relative risk are 0 to $\infty$---*never* negative.
 
@@ -288,12 +293,12 @@ $$OR = \frac{\text{odds in explanatory category 2}}{\text{odds in explanatory ca
 
 When the two probabilities are the same, their odds ratio is 1, as we saw with relative risk.
 
-Additionally, like relative risk, values for OR can range between 0 and $\infty$---*never* negative.
+Like relative risk, values for odds ratio (OR) can range between 0 and $\infty$---*never* negative.
 
 
 ## Back to Titanic
 
-Consider the survival of women versus men on Titanic (*sex is the explanatory variable in this case*).
+Consider the survival of women versus men on Titanic. **Sex** is the explanatory variable in this case.
 
 | Outcome  | Female     | Male        |
 |----------|:----------:|:-----------:|
@@ -310,13 +315,13 @@ A test of significance would show that these two variables are associated, *p*-v
 
 We can see from the conditional probabilities that women were more likely to survive (73%) compared to men (21%). How else can we express the relative magnitude or size of that chance?
 
-$$RR = \frac{\text{survival risk for women}}{\text{survival risk for men}} = \frac{0.73}{0.21} = 3.48$$
+$$RR = \frac{\text{survival risk for women}}{\text{survival risk for men}} = \frac{0.73}{0.21} = 3.48 \approx 3.5$$
 
-Women were almost **three and a half times** as likely to survive the sinking of the Titanic as men.
+Women were about three and a half times as likely to survive the sinking of the Titanic as men.
 
-$$\%IR = \frac{0.73 - 0.21}{0.21} \times 100\% = 248\%$$
+$$\%IR = \frac{0.73 - 0.21}{0.21} \times 100\% = 248\% \approx 250\%$$
 
-Women had a **248% increased chance** of survival versus men when the Titanic sank.
+Women had about a 250% increased chance of survival versus men when the Titanic sank.
 
 
 ## Odds and Odds Ratio
@@ -327,14 +332,14 @@ Odds for men = 710 to 1364 = 1 to 1.9 = about 1 to 2. Therefore, 1 man survived 
 
 $$OR = \frac{\text{odds for women}}{\text{odds for men}} = \frac{343/127}{710/1364} = 5.2$$
 
-The odds of a woman surviving the sinking of the Titanic were **5.2 times** the odds of a man surviving.
+The odds of a woman surviving the sinking of the Titanic were 5.2 times the odds of a man surviving.
 
 *Why the difference? It may have been a "women and children" first policy for loading lifeboats, or having a large fraction of male third class passengers and crew, other social norms, or the ship layout...*
 
 
-## The [Two-Proportions]((https://www.isi-stats.com/isi2nd/ISIapplets2021.html)) Applet
+## The Two-Proportion Applet
 
-Data can be entered as a two-way table. It can also calculate RR and OR values using the **Statistic:** drop-down menu. Try it!
+Data can be entered as a two-way table in [the applet](https://www.isi-stats.com/isi2nd/ISIapplets2021.html). It can also calculate RR and OR values. Here you see the oral cancer data.
 
 ```{r, echo = FALSE, fig.align="center"}
 knitr::include_graphics("../images/twopropapplet.png", dpi = 135)

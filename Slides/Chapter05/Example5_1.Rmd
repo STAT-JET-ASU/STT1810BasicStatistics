@@ -25,8 +25,12 @@ These slides are meant to accompany the text [*Introduction to Statistical Inves
 
 See [AsULearn](https://asulearn.appstate.edu/) for additional readings, videos, and assignments.
 
+You can print these slides to a pdf for offline use using the print function in your browser.
 
-## Recall: The Six-Step Spiral Process
+<p style = "background: lightgray;">These slides include supplemental content about the measures percent increased risk, odds, and odds ratio that is not found in Section 5.1 of the ISI textbook.</p>
+
+
+## The Spiral Approach to Investigation
 
 :::::: {style="display: flex;"}
 
@@ -46,13 +50,11 @@ knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
 
 ::: {}
 
-* In Chapters 1 through 4, our research questions usually involved a single proportion parameter $\pi$.
+* Statistical investigations typically include these six steps in some form. 
 
-* In Chapter 5 we will look at comparing parameters for two groups ($\pi_1, \pi_2$).
+* These six steps may not always be followed in this exact order, but a good statistical investigation will go through all these steps before completion.
 
-* The investigative process is the same; the six-step "spiral" we introduced in Section P.1.
-
-* Now Ho will be written as a *difference* in parameters.
+* The findings of one study typically will generate new research questions; that's how science works!
 
 :::
 
@@ -63,7 +65,7 @@ knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
 
 **Buckle up, it’s the law!** How often do you use your seatbelt? If you are not a regular seatbelt user, is there anything that might change your behavior?
 
-***In North Carolina...***
+**In North Carolina...**
 
 * All drivers and passengers age 16 and older must wear their seatbelts in both the front and back seats. Children less than age 16 are covered by the NC Child Passenger Safety law.
 
@@ -115,7 +117,7 @@ The study report for 2003 with more details can be found at [crashstats.nhtsa.do
 
 ## STEP 3: Explore the Data
 
-Has the rate of seatbelt usage changed from 2008 to 2018?
+Does seatbelt use seem to have changed from 2008 to 2018?
 
 | Wearing a seatbelt? | 2008    | 2018    | Total   |
 |---------------------|:-------:|:-------:|:-------:|
@@ -130,8 +132,6 @@ The observed count of seatbelt users is smaller in 2018, but it is also true tha
 
 ## Conditional Proportions
 
-What is the % of seatbelt use, conditional on (*within each*) year?
-
 | Wearing a seatbelt? | 2008    | 2018    | Total   |
 |---------------------|:-------:|:-------:|:-------:|
 | Yes                 | 83.0%   | 89.6%   | 85.9%   |
@@ -140,18 +140,20 @@ What is the % of seatbelt use, conditional on (*within each*) year?
 
 <br>
 
-(2018 rate of use) &ndash; (2008 rate of use) = 89.6% &ndash; 83.0% = 6.6% 
+rate of use in 2018 &ndash; rate of use in 2008 = 89.6% &ndash; 83.0% = 6.6% 
 
-A greater percentage of people used seatbelts in 2018 vs. 2008. This represents *thousands* of drivers and passengers.
+More people are using seatbelts! This 6.6% difference would be thousands of drivers and passengers, given the sample size.
+
+Perhaps visualizing proportions for these two years would help.
 
 
-## Visualize with a Mosaic Plot
+## Mosaic Plot
 
 ```{r, echo = FALSE, fig.align="center"}
 knitr::include_graphics("../images/fig_05_01_02.jpg", dpi = 100)
 ```
 
-The bar for 2008 is wider because the sample size was larger.
+*The bar for 2008 is wider because the total sample size was larger.*
 
 
 ## Relative Risk
@@ -160,13 +162,13 @@ Another way to compare the two conditional proportions is by looking at the rati
 
 $$RR = \frac{\text{proportion in 2018}}{\text{proportion in 2008}} = \frac{0.896}{0.830} = 1.08$$
 
-People in 2018 were **1.08 times as likely** to be observed wearing their seatbelt than people in 2008.
+People in 2018 were 1.08 times as likely to be observed wearing a seatbelt than people in 2008.
 
 Again, while this might seem like a small increase, it represents many more people in a large population.
 
 $$100 \text{ people} \times 1.08 = 108 \text{ people}$$
 
-So for every 100 people observed wearing seatbelts in 2008, we would see **an *additional* 8 people** in 2018.
+So for every 100 people observed wearing seatbelts in 2008, we would see an *additional* 8 people in 2018.
 
 
 ## Increased Risk / Percentage Change
@@ -179,7 +181,7 @@ Alternatively...
 
 $$\%IR = (RR - 1) \times 100\% = (1.08 - 1) \times 100\% = 8\%$$
 
-In 2008, the probability of observing a driver or front passenger wearing a seatbelt was 0.83. In 2018, it was 0.83 plus 8% of 0.83 (0.83 + 0.08 x 0.83), which gives us the observed 0.896 in 2018. There was a positive 8% *change* in probability from the baseline.
+In 2008, the probability of observing a driver or front passenger wearing a seatbelt was 0.83. In 2018, it was 0.83 plus 8% of 0.83 (0.83 + 0.08 x 0.83), which gives us our observed 0.896 in 2018. There was an 8% *change* in probability from the baseline.
 
 
 ## Segmented Bar Plot (3 Variables)
@@ -193,30 +195,30 @@ In June 2008, 26 US states and DC had primary seatbelt laws, 23 states had secon
 
 ## Summary of Explorations
 
-What have we learned from our exploration of the data?
+So what have we learned from the data?
 
-* There was an increase from 2008 to 2018 in the proportion of people that were observed using seatbelts.
+* There was an increase from 2008 to 2018 in the proportion of people observed using seatbelts.
 
 * There was an increase from 2008 to 2018 in the total number of states that have primary seatbelt laws.
 
-* In 2008 and 2018, the percentage of seatbelt use appears to be larger in the states that have primary seatbelt laws versus states with only secondary seatbelt laws.
+* In 2008 and 2018, the percentage of seatbelt use appears to be larger in the states that have primary seatbelt laws versus secondary seatbelt laws.
 
-Can we therefore potentially infer the following: *time &rarr; changes in seatbelt laws &rarr; increases in seatbelt use*? Why or why not?
+Can we therefore infer that: time &rarr; changes in seatbelt laws &rarr; greater seatbelt use? (**Hint:** what kind of study is this?)
 
 Would the relationship here be an *association* or *causation*?
 
 
 ## STEP 4: Draw Inferences
 
-Before thinking about *p*-values and confidence intervals, does using those kinds of inferential methods make sense here? 
+Before thinking about *p*-values and confidence intervals, does using those methods make sense here? 
 
-With such a large sample size, almost any observed difference might be found to be statistically significant.
+With such a large sample size, almost any difference might be found to be statistically significant.
 
 In Section 5.2, you will learn how to use simulation to compare two proportions (e.g., difference in conditional proportions). 
 
-The NOPUS seatbelt study uses “complex, multistage samples” that require additional statistical tools beyond the level of this course --- although the *logic* is the same that you are learning. 
+The NOPUS seatbelt study uses “complex, multistage samples” that require additional statistical tools beyond the level of this course --- though the *logic* is the same that you are learning. 
 
-Researchers have to be careful about the scope of conclusions they draw from this kind of observational study. We will discuss this idea further in Step 5.
+Researchers have to be careful about the scope of conclusions they draw from this kind of observational study; we will discuss this idea further in Step 5.
 
 
 ## STEP 5: Formulate Conclusions
@@ -225,9 +227,9 @@ One motivation for this study is the idea that wearing seatbelts saves lives. If
 
 This is an observational study. Even though there is a very large sample size (hundreds of thousands of people), we *cannot* draw a cause and effect conclusion from observational data.
 
-One confounding variable could be that states enacting primary seatbelt laws also have more miles of interstate, and people are more likely to wear seatbelts on interstates than smaller roads. 
+One confounding variable could be that states with primary seatbelt laws also have more interstates and folks are more likely to wear seatbelts on interstates than on smaller roads. 
 
-We also have not considered any “margin of error” in these data. Even if we find a meaningful difference, it is only about seatbelt usage, not about traffic fatalities or other driver metrics.
+We also have not considered any “margin of error” in these data. Even if we find a meaningful difference, it is only about seatbelt usage, not about traffic fatalities.
 
 
 ## STEP 6: Look Back and Ahead
@@ -244,7 +246,7 @@ Other variables could be included, such as type of street, speed of traffic, hea
 
 ## Some Published Findings
 
-From the Insurance Institute for Highway Safety [web site](https://www.iihs.org/topics/seat-belts) ...
+From the Insurance Institute for Highway Safety [web site](https://www.iihs.org/topics/seat-belts)...
 
 ```{r, echo = FALSE, fig.align="center"}
 knitr::include_graphics("../images/seatbeltuse.png", dpi = 130)

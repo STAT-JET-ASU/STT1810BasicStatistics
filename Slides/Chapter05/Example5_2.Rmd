@@ -19,14 +19,16 @@ knitr::opts_chunk$set(
 
 ## Before We Begin…
 
-These slides are meant to accompany the text [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html) --- Section 5.2 Comparing Two Groups: Categorical Response.
+These slides are meant to accompany the text [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html) --- Section 5.2 Comparing Two Proportions: Simulation-Based Approach.
 
 *This content does not replace reading the relevant textbook section.* It is for class presentation, review, and reference.
 
 See [AsULearn](https://asulearn.appstate.edu/) for additional readings, videos, and assignments.
 
+You can print these slides to a pdf for offline use using the print function in your browser.
 
-## Recall: The Six-Step Spiral Process
+
+## The Spiral Approach to Investigation
 
 :::::: {style="display: flex;"}
 
@@ -46,13 +48,11 @@ knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
 
 ::: {}
 
-* In Chapters 1 through 4, our research questions usually involved a single proportion parameter $\pi$.
+* Statistical investigations typically include these six steps in some form. 
 
-* In Chapter 5 we will look at comparing parameters for two groups ($\pi_1, \pi_2$).
+* These six steps may not always be followed in this exact order, but a good statistical investigation will go through all these steps before completion.
 
-* The investigative process is the same; the six-step "spiral" we introduced in Section P.1.
-
-* Now Ho will be written as a *difference* in parameters.
+* The findings of one study typically will generate new research questions; that's how science works!
 
 :::
 
@@ -90,15 +90,15 @@ At least one [animal welfare organization](https://awionline.org/content/swim-at
 
 * **response variable:** whether or not the participants achieved substantial reduction (i.e., improvement) in their depression symptoms, coded as yes or no; this is a binary categorical
 
-* **sample size:** $n_{total}$ = 30, with $n_{dolphin}$ = 15 and $n_{control}$ = 15
+* **sample size:** $n_{dolphin} = 15$, $n_{control} = 15$, $n_{total} = 30$ 
 
 
 ## The Hypotheses: Two Expressions
 
 **Using the association language of Chapter 4...**
 
-* Ho: Presence of dolphins does not help (i.e., whether or not someone swims with dolphins has *no association* with their depression symptoms).
-* Ha: Presence of dolphins helps (i.e., there *is an association* and swimming with dolphins will increase the probability of substantial improvement in depression symptoms).
+* $H_0$ : Presence of dolphins does not help (i.e., whether or not someone swims with dolphins has *no association* with their depression symptoms).
+* $H_a$ : Presence of dolphins helps (i.e., there *is an association* and swimming with dolphins will increase the probability of substantial improvement in depression symptoms).
 
 <hr>
 
@@ -111,8 +111,8 @@ Hypotheses expressed in this form generally would be assessed with a procedure c
 
 State hypotheses in words, based on the research question.
 
-* Ho: Probability of substantial improvement after swimming with dolphins is *the same as* probability without dolphins.
-* Ha: Probability of substantial improvement after swimming with dolphins is *greater than* probability without dolphins.
+* $H_0$ : Probability of substantial improvement after swimming with dolphins is *the same as* probability without dolphins.
+* $H_a$ : Probability of substantial improvement after swimming with dolphins is *greater than* probability without dolphins.
 
 <hr>
 

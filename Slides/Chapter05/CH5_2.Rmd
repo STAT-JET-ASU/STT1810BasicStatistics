@@ -19,11 +19,13 @@ knitr::opts_chunk$set(
 
 ## Before We Begin…
 
-These slides are meant to accompany the text [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html) --- Section 5.2 Comparing Two Groups: Categorical Response.
+These slides are meant to accompany the text [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html) --- Section 5.2 Comparing Two Proportions: Simulation-Based Approach.
 
 *This content does not replace reading the relevant textbook section.* It is for class presentation, review, and reference.
 
 See [AsULearn](https://asulearn.appstate.edu/) for additional readings, videos, and assignments.
+
+You can print these slides to a pdf for offline use using the print function in your browser.
 
 
 ## Recall: The Six-Step Spiral Process

@@ -1,11 +1,11 @@
 ---
-title: "STT1810 --- Section 6.2<br>Simulation: Two Means"
-subtitle: "Introduction to Statistical Investigations, 2^nd^ Edition"
-author: "Author: Jill E. Thomley // Appalachian State University"
+title: "Section 6.2 Comparing<br>Two Means: Simulation"
+subtitle: "*Introduction to Statistical Investigations, 2^nd^ Edition*"
+author: "Jill E. Thomley | **STT 1810 BASIC STATISTICS** | Appalachian State University"
 date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
 output: 
   ioslides_presentation:
-    logo: images/logoASU.jpg
+    logo: ../images/logoASU.jpg
 ---
 
 ```{r global_options, include = FALSE}
@@ -18,17 +18,14 @@ knitr::opts_chunk$set(
 
 ## Before We Begin…
 
-These slides are intended to accompany Section 6.2 Comparing Two Means: Simulation-Based Approach in [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html). 
+These slides are meant to accompany the text [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html) --- Section 6.1 Comparing Two Groups: Quantitative Response.
 
-*This content does not replace reading the textbook section.* It is for class presentation and reference.
+*This content does not replace reading the relevant textbook section.* It is for class presentation, review, and reference.
 
-See Also:
+See [AsULearn](https://asulearn.appstate.edu/) for additional readings, videos, and assignments.
 
-* [Section P.2 Exploring Data](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CHP_2.html)
-* [Example P.2 Oh, Say Can You Sing?](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/ExampleP_2.html)
-* [Section 6.1 Comparing Two Groups: Quantitative Response](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/CH6_1.html)
-* [Example 6.1 Geyser Eruptions](https://stat-jet-asu.github.io/STT1810BasicStatistics/Slides/Example6_1.html)
-* Example 6.2 Dung Beetles (TBA)
+You can print these slides to a pdf for offline use using the print function in your browser.
+
 
 ## Recall: The Six-Step Spiral Process
 
@@ -37,7 +34,7 @@ See Also:
 ::: {}
 
 ```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("images/sixstepsfourpillars.png", dpi = 100)
+knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
 ```
 
 :::
@@ -86,7 +83,7 @@ In this chapter, you will learn to:
 
 * Describe how to use cards to simulate what outcomes (in terms of difference in means or median) are to be expected in repeated random assignments, if there is no association between the two variables.
 
-* Use the [ISI Multiple Means applet](http://www.isi-stats.com/isi2nd/ISIapplets2021.html) to conduct a simulation of the null hypothesis and be able to read the applet's output.
+* Use the ISI [Multiple Means](http://www.isi-stats.com/isi2nd/ISIapplets2021.html) applet to conduct a simulation of the null hypothesis and be able to read the applet's output.
 
 
 ##

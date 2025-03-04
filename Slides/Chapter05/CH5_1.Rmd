@@ -54,7 +54,7 @@ knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
 
 * In Chapter 5 we will look at comparing parameters for two groups ($\pi_1, \pi_2$).
 
-* The investigative process is the same; the six-step "spiral" from Section P.1.
+* The investigative process is the same---the six-step "spiral" from Section P.1.
 
 * Now $H_0$ will be written as a *difference* in parameters.
 

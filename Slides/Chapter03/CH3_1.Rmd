@@ -137,7 +137,7 @@ What we mean is that 95% of all samples give an interval that covers the true va
 
 Picture a game of horseshoes. The parameter is the iron stake in the ground, which does not move. Each toss of a horseshoe is an interval. Our method is a like really good player who can get a horseshoe around the stake 95% of the time.
 
-## Why Can't we Be Sure?
+## Why Can't We Be Sure?
 
 ```{r, echo = FALSE, fig.align="center"}
 knitr::include_graphics("../images/garfieldCI.jpg", dpi = 100)
@@ -156,7 +156,7 @@ So, if Harley is not purely guessing when the experimenter bows toward the cup, 
 
 Given that $\hat{p} = 0.90$, that might be a good estimate (i.e., *best statistical guess*) for the value of $\pi$. We call that a *point estimate*.
 
-However, this is sample data, and we all know that it has some random variability. Maybe $\pi$ is slightly different than $0.90$, like $0.89$. Could it be more different, like $0.80$? Or even $0.70$? 
+However, this is sample data, and we all know that it has some random variability. Maybe $\pi$ is slightly different than $0.90$, like $0.89$. Could it be even more different, like $0.80$? Or $0.70$? 
 
 
 ##
@@ -169,7 +169,7 @@ We systematically test values for $\pi$ on either side of $\pi = 0.90$, until we
 | Reject Ho?                     |Yes  |No   |... |No   |No   |No   |No   |NA   |
 | Plausible $\pi$?|**<mark style = "background: #ffcdcd;">NO</mark>**|<mark>Yes</mark>|...|Yes|Yes|Yes|<mark>Yes</mark>|**<mark style = "background: #ffcdcd;">NO</mark>**|
 
-We know 1 is impossible. That would mean Harley is *guaranteed* to always choose the correct cup. Data shows that is false.
+We know 1 is impossible. That would mean Harley is guaranteed to *always* choose the correct cup. Data shows that is false.
 
 <mark>We are 95% confident that $\pi$ is between $0.57$ and $0.99$.</mark> To get a narrower interval of plausible values, we would need more data.
 
@@ -178,7 +178,7 @@ We know 1 is impossible. That would mean Harley is *guaranteed* to always choose
 
 In Section 1.2, we explored whether or not people prefer bottled water to tap water. The sample proportion of people who chose bottled water in the experiment was $\hat{p}= 24/27 = 0.89$. 
 
-Testing values less than $0.89$ for the smallest plausible value of $\pi$, using a series of two-tailed tests, we get $0.71$.
+Performing two-tailed significance tests on potential values of $\pi$ that are less than $\hat{p} = 0.89$, we get $0.71$ as a lower boundary.
 
 | Value of $\pi$ tested in $H_0$ |0.70 |0.71 |0.72 |0.73 |0.74 |0.75 |...  |0.89 |
 |--------------------------------|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|

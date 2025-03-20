@@ -105,16 +105,19 @@ The only way to learn statistics is to **DO** statistics. Reading the textbook, 
     * Final Cumulative Investigation **(15%)**
 <p></p>
 
-* **Research/Media Analyses (15%):** You will read three scholarly and/or popular media articles that include statistical research and answer relevant questions about the statistical investigative cycle in those contexts. Two will be assigned to you and you will choose a third article that explores a question related to your major. You will submit these via AsULearn and they will be scored using a rubric. More information will be provided on AsULearn.
+* <strike>**Research/Media Analyses (15%):** You will read three scholarly and/or popular media articles that include statistical research and answer relevant questions about the statistical investigative cycle in those contexts. Two will be assigned to you and you will choose a third article that explores a question related to your major. You will submit these via AsULearn and they will be scored using a rubric. More information will be provided on AsULearn.
 
     * Article/Media Analysis #1 **(5%)**
     * Article/Media Analysis #2 **(5%)**
-    * Article/Media Analysis #3 **(5%)**
+    * Article/Media Analysis #3 **(5%)**</strike>
 <p></p>
 
 * **Research Ethics (5%):** Society benefits from research and decision-making that is supported by ethical statistical practice. All people who engage in research are expected to follow ethical guidelines and encourage others to do the same. Unfortunately, this has not always been the case. You will complete the type of online training required of anyone at Appalachian State University who wishes to engage in human subjects research, and questions related to ethics may appear in other assignments. More information will be provided on AsULearn.
 
 * **Engagement and Self-Assessment (5%):** You will be asked to self-assess your proficiency on course goals, provide data or feedback during activities, and otherwise engage in class content. More information will be provided on AsULearn.
+
+* <span style = "color: red;">**NEW ITEM Course Explorations (15%):** You will submit your class Explorations beginning with Exploration 3.1 & 3.2. Grading criteria can be found on AsULearn. This change was made to increase course engagement and student learning, given class attendance rates of < 50% for several weeks and a significant number of students either failing to turn in major assessments (15% on the Preliminaries Investigation and 32% on the Chapter 1 Investigation) or performing poorly on those assessments.</span>
+
 
 ##### **Grading Scale** 
 
@@ -160,5 +163,5 @@ This course conforms to all Appalachian State University policies with respect t
 
 <hr>
 
-Updated Saturday, January 11, 2025 @ 02:48 PM
+Updated Wednesday, March 19, 2025 @ 10:11 PM
 

@@ -117,8 +117,8 @@ Quantitative data are described by how / where they occur on the number line. Di
 
 **<mark>shape</mark> :** the overall pattern and "clumping" of the data when we graph it (e.g., using a dotplot or histogram)
 
-* Is the distribution symmetric or asymmetric? 
-* Is the distribution mound shaped (one peak)? 
+* Is the distribution symmetric or asymmetric (skewed)? 
+* Is the distribution mound shaped (has one peak)? 
 * Are there several distinct peaks or clusters?
 
 Sometimes we need to make more than one graph to decide.
@@ -126,7 +126,7 @@ Sometimes we need to make more than one graph to decide.
 
 ## Some Possible Shapes
 
-We often see symmetric, mound-shaped distributions like the top left. However, infinitely many shapes are possible.
+We often see symmetric, mound-shaped distributions like the top left. Does it look familiar to you? However, infinitely many shapes are possible.
 
 ```{r, echo = FALSE, fig.align="center"}
 knitr::include_graphics("../images/histogramshapes.png", dpi = 75)
@@ -135,7 +135,7 @@ knitr::include_graphics("../images/histogramshapes.png", dpi = 75)
 
 ## Dotplots
 
-A dotplot is a type of graph that displays each observation for a given numerical variable as a dot on a number line. These plots work well for small to moderately-sized datasets.
+A <mark>**dotplot**</mark> is a type of graph that displays each observation for a given numerical variable as a dot on a number line. These plots work well for small to moderately-sized datasets.
 
 If two or more observations share the same value, which is very common, the dots are stacked vertically.
 
@@ -148,7 +148,7 @@ knitr::include_graphics("https://stat-jet-asu.github.io/Moodlepics/glossary/dotp
 
 ## Histograms
 
-A histogram displays the distribution of a numerical variable by dividing the number line into several categories called "bins". 
+A <mark>**histogram**</mark> displays the distribution of a numerical variable by dividing the number line into several categories called "bins". 
 
 The y-axis shows the count of data points in each bin (height of the bars). Every data point must be included in exactly one bin.
 
@@ -169,7 +169,7 @@ knitr::include_graphics("https://stat-jet-asu.github.io/Moodlepics/glossary/hist
 
 **<mark>unusual observations / features</mark> :** points that deviate markedly from the overall pattern of the other data values (i.e., outliers); also other unusual features such as multiple modes
     
-* sometimes we can explain unusual features or outliers using another variable (e.g., some kind of grouping)
+* sometimes we can explain unusual features or <mark>**outliers**</mark> using another variable (e.g., some kind of grouping)
 
 
 ## Possible Reasons for Outliers

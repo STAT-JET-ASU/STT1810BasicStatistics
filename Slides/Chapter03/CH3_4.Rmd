@@ -75,7 +75,7 @@ We will not cover Section 3.3, theoretical estimation for a mean.
 
 ## Learning Goals for Section 3.4
 
-In Sections 3.1 and 3.2 you explored some different confidence intervals strategies. Despite using different methods, the results was interpreted the same way. Section 3.4 explores how sample characteristics can influence confidence interval ***width***. 
+In Sections 3.1 and 3.2, you explored two methods for creating confidence intervals. Despite some differences, we interpreted the resulting intervals the same way. Section 3.4 explores how sample characteristics can influence confidence interval ***width***. 
 
 <hr>
 
@@ -83,7 +83,9 @@ In Sections 3.1 and 3.2 you explored some different confidence intervals strateg
 
 <p style = "text-align: center;">**increased ↑ confidence = increased ↑ width**</p>
 
-* When in interpreting confidence intervals, apply the idea that the confidence level of an interval corresponds to its coverage probability (*i.e., a level of confidence like 95% is the proportion of confidence intervals that contain the true parameter value across many, many random samples*).
+* When in interpreting confidence intervals, apply the idea that the confidence level of an interval corresponds to its coverage probability 
+
+**A confidence level like 95% reflects the long-run proportion of confidence intervals that contain the true parameter value.**
 
 
 ##
@@ -92,13 +94,32 @@ In Sections 3.1 and 3.2 you explored some different confidence intervals strateg
 
 <p style = "text-align: center;">**increased ↑ sample size = decreased ↓ width **</p>
 
+**A larger sample sizes leads to a smaller standard error for the sampling distribution, thus a smaller margin of error.**
+
+<hr>
+
 * Recognize that all other things being equal, as the sample proportion gets farther from 0.5, standard error decreases and thus a resulting confidence interval will be narrower.
 
-<p style = "text-align: center;">**the proportion being farther from 0.05 in either direction<br>(0 ← 0.5 → 1) = ↓ sampling variability = ↓ width **</p>
+<p style = "text-align: center;">**the proportion $\hat{p}$ being farther from 0.50 =<br>the proportion $\hat{p}$ is closer to 0 or closer to 1 =<br>decreased ↓ sampling variability = decreased ↓ width **</p>
+
+**As we learned in earlier sections, the largest standard error for any given sample size occurs when the proportion is 0.50.**
+
+
+##
 
 * Recognize that statistical significance on its own does not imply evidence of a large difference from Ho. This issue is especially relevant with large sample sizes. 
 
+**This difference is sometimes known as *statistical significance* versus *practical significance*. The latter implies that what we find is big enough to be useful.**
+
 * Know that *p*-values address statistical significance while CIs help assess the plausible size of the parameter.
+
+**But ... significance level and confidence level *are* connected.**
+
+<hr>
+
+If we change more than one factor at the same time, then these may combine effects to make the interval wider or narrower, or they may have opposite effects (e.g., taking a larger sample, but also using a larger level of confidence). 
+
+<hr>
 
 
 ## Section 3.4 New Vocabulary
@@ -116,53 +137,4 @@ A note about Section 3.4 ...
 Much of the specific discussion in Section 3.4 is framed around theoretical confidence intervals, which we did not cover. But, in general, the ideas apply to all confidence intervals. 
 
 <hr>
-
-
-## Example 3.4 American Cat Ownership
-
-In a 2016 poll by the American Veterinary Medical Association, $25.43\%$ of $41,000$ respondents said they own at least one cat.
-
-<hr>
-
-$\hat{p} = 0.2543$
-
-$n = 41,000$
-
-*larger % confidence = wider confidence interval (CI)*
-
-| 90% confidence   | 95% confidence       | 99% confidence       |  
-|:----------------:|:--------------------:|:--------------------:|
-| (0.2508, 0.2578) | **(0.2501, 0.2585)** | **(0.2488, 0.2598)** |
-| width = 0.0070   | **width = 0.0084**   | **width = 0.0110**   |
-
-
-##
-
-$\hat{p} = 0.2543$ &rarr; *larger sample size = narrower confidence interval*
-
-| $n = 500$, 95% CI | $n = 1000$, 95% CI   | $n = 2000$, 95% CI   |  
-|:-----------------:|:--------------------:|:--------------------:|
-| (0.2158, 0.2922)  | **(0.2270, 0.2810)** | **(0.2349, 0.2731)** |
-| width = 0.0764    | **width = 0.0540**   | **width = 0.0382**   |
-
-<br>
-<hr>
-
-$n = 41,000$ &rarr; $\hat{p}$ *closer to 0.5 = wider confidence interval*
-
-| $\hat{p} = 0.2543$, 95% CI | $\hat{p} = 0.3840$, 95% CI |  
-|:--------------------------:|:--------------------------:|
-| (0.2508, 0.2578)           | **(0.3793, 0.3887)**       |
-| width = 0.0070             | **width = 0.0094**         |
-
-
-## Very Large Sample Sizes
-
-In the cat ownership example, we can see how the widths of the intervals change as we vary level of confidence, sample size, and the value of $\hat{p}$. 
-
-**<mark>Precision</mark>** refers to the overall *width* of the confidence interval. It is a separate idea from level of confidence. 
-
-But, we also see that a very large sample size like $n = 41,000$ makes all of the intervals using that sample size very precise. In other words, the set of *plausible values* is quite small in all cases, even for a high level of confidence or $\hat{p} = 0.5$.
-
-**Remember:** While level of confidence does impact the width of a confidence interval, how wide it is and the probability that the interval captures the true value are separate ideas.
 

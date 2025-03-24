@@ -1,0 +1,107 @@
+---
+title: "Example 3.4 Can Dogs<br>American Cat Ownership"
+subtitle: "Introduction to Statistical Investigations, 2^nd^ Edition"
+author: "Jill E. Thomley | **STT 1810 BASIC STATISTICS** | Appalachian State University"
+date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
+output: 
+  ioslides_presentation:
+    logo: ../images/logoASU.jpg
+---
+
+```{r global_options, include = FALSE}
+knitr::opts_chunk$set(
+  message = FALSE,
+  warning = FALSE,
+  comment = NA
+)
+```
+
+## Before We Begin…
+
+These slides are meant to accompany the text [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html) --- Section 3.4 Factors That Affect the Width of a Confidence Interval. 
+
+*This content does not replace reading the relevant textbook section.* It is for class presentation, review, and reference.
+
+See [AsULearn](https://asulearn.appstate.edu/) for additional readings, videos, and assignments.
+
+You can print these slides to a pdf for offline use using the print function in your browser.
+
+
+## Pet Ownership Survey
+
+Cats are the second-most most popular pet in the United States, after dogs. In a 2016 poll conducted by the American Veterinary Medical Association, $25.43\%$ of $41,000$ respondents said they owned at least one cat. This result did not come from a random sample, but the researchers believe it is representative of adult Americans, since the demographics of the survey respondents closely match that of the population.
+
+<hr>
+
+We want to estimate the population proportion of cat ownership among U.S. adults using the sample data. We will consider more than one level of confidence.
+
+$\hat{p} = 0.2543$
+
+$n = 41,000$
+
+
+## Different Levels of Confidence
+
+The width of the confidence interval is the distance between the boundaries: (upper boundary -- lower lower boundary).
+
+| 90% confidence   | 95% confidence       | 99% confidence       |  
+|:----------------:|:--------------------:|:--------------------:|
+| (0.2508, 0.2578) | **(0.2501, 0.2585)** | **(0.2488, 0.2598)** |
+| width = 0.0070   | **width = 0.0084**   | **width = 0.0110**   |
+
+
+<br>*As we can see, larger % confidence = wider confidence interval (CI)*
+
+<hr>
+
+**Note :** The confidence intervals in this example were calculated using a theory-based method that is related to our 2SD method; the ideas apply to any confidence interval.
+
+
+## Different Sample Sizes
+
+Suppose that, instead of the large sample of $41,000$ people, the statistic $\hat{p} = 0.2543$ had come from different-sized samples. In this case, the sample proportion and level of confidence are the same for all three intervals.
+
+| $n = 500$, 95% CI | $n = 1000$, 95% CI   | $n = 2000$, 95% CI   |  
+|:-----------------:|:--------------------:|:--------------------:|
+| (0.2158, 0.2922)  | **(0.2270, 0.2810)** | **(0.2349, 0.2731)** |
+| width = 0.0764    | **width = 0.0540**   | **width = 0.0382**   |
+
+<br>*As we can see, larger sample size = narrower confidence interval (CI)*
+
+
+## Different Sample Proportions
+
+For the sample of $n = 41,000$, suppose the proportion was a different value than $\hat{p} = 0.2543$. In this case, compare it to the $38.4\%$ of respondents who reported owning a dog. In this case, the sample size and level of confidence are the same for both intervals.
+
+| $\hat{p} = 0.2543$, 95% CI | $\hat{p} = 0.3840$, 95% CI |  
+|:--------------------------:|:--------------------------:|
+| (0.2508, 0.2578)           | **(0.3793, 0.3887)**       |
+| width = 0.0070             | **width = 0.0094**         |
+
+<br>*As we can see, value closer to 0.50 = wider confidence interval (CI)*
+
+
+## Very Large Sample Sizes
+
+In the cat ownership example, we can see how the widths of the intervals change as we vary level of confidence, sample size, and the value of the sample proportion $\hat{p}$. 
+
+**<mark>Precision</mark>** refers to the overall *width* of the confidence interval. It is a separate idea from level of confidence. 
+
+But, we also see that a very large sample size like $n = 41,000$ makes all of the intervals using that sample size very precise. In other words, the set of *plausible values* is quite small in all cases, even for a high level of confidence or $\hat{p} = 0.5$.
+
+**Remember:** While level of confidence does impact the width of a confidence interval, how wide it is and the probability that the interval captures the true value are separate ideas.
+
+## Strong Evidence = Large Difference?
+
+***Key Idea about Very Large Sample Sizes***
+
+<hr>
+
+Especially with large sample sizes, even a fairly small difference between an observed proportion and hypothesized proportion can be statistically significant. 
+
+In such cases, making a confidence interval for the population parameter can help us to decide whether or not the difference is large (and how meaningful it might be in real life).
+
+This is true for other summary values as well, such as means of quantitative variables.
+
+<hr>
+

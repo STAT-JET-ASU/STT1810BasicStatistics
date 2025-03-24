@@ -89,29 +89,29 @@ Overall, the main goal is to explain when and why we can infer cause-and-effect 
 
 ***Example:*** In the game of Monopoly, as you move around the four sides of the board from Go, each side has higher prices than the preceding side. Side and price are associated.
 
-**<mark>explanatory variable</mark> :** if the alternative hypothesis is true, this is the variable that explains changes in the response variable (also known as the **independent** / **predictor variable**). 
+**<mark>explanatory variable</mark> :** if the alternative hypothesis is true, this is the variable that explains changes in the response variable (it may also be called an **independent** or **predictor variable**). 
 
 ***Example:*** In Example P.2, we explored the duration (in minutes) of Super Bowl national anthem performances. We considered other variables like gender and musical genre to try to explain observed differences in performance lengths.
 
 
 ##
 
-**<mark>response variable</mark> :** if the alternative hypothesis is true, this is the variable that is impacted by the explanatory variable (also known as the **dependent** /  **predicted variable**)
+**<mark>response variable</mark> :** if the alternative hypothesis is true, this is the variable that is impacted by the explanatory variable (it is also sometimes known as a **dependent** or  **predicted variable**)
 
 ***Example 1:*** In Example P.2, the response variable is performance length. This variable may depend on a number of other factors, like the gender of the singer, the musical genre, the year of the performance, or whether it is a solo/group performance.
 
-***Example 2:*** In our observed relationship between asbestos and mesothelioma, or between smoking and a long list of diseases, the diseases are the response variables.
+***Example 2:*** In our observed relationship between asbestos and mesothelioma in a previous example, or between smoking and a long list of diseases, the presence or absence of the diseases (or their severity) are the response variables to the explanatory variable of smoking.
 
-***Example 3:*** In elementary school, children in higher grades tend to be taller than children in lower grades. In this case, the response variable is the observed differences in height.
+***Example 3:*** In elementary school, children in higher grades tend to be taller than children in lower grades. The response variable is the children's heights.
 
 
 ##
 
 **<mark>confounding variable</mark> :** a variable related to the explanatory and response variables in such a way that its effects on the response variable cannot be separated from the effects of the explanatory variable---which means that it (*problematically*) provides another possible explanation for the observed results 
 
-You may also see references to what are called **<mark>lurking variables</mark>** in some discussions. The distinction often made between them is that lurking variables are confounding variables that are *not measured or accounted for* in the study. 
+You may also see references to what are called **<mark>lurking variables</mark>** in some texts or videos. The distinction often made between the two is that lurking variables are confounding variables that are *not measured or accounted for* in the study. 
 
-We will not make a distinction between the two in this class, and instead use only the term confounding variable. 
+We will not make a distinction between the two in this class, and instead we will use only the term confounding variable. 
 
 <hr>
 
@@ -120,7 +120,7 @@ We will not make a distinction between the two in this class, and instead use on
 
 ## Uncovering Associations
 
-<mark>**Alternate definition</mark> :** two variables are *associated* (or related) if the value of one variable gives you information about the value of the other variable. When comparing groups, the proportions or means for one variable (***<mark>response</mark>** or **<mark>dependent</mark>** variable*) are different within different sub-groups (*categories that are created by the **<mark>explanatory</mark>** or **<mark>independent</mark>** variable*).
+**Alternate definition :** two variables are *associated* (or related) if the value of one variable gives you information about the value of the other variable. When comparing groups, the proportions or means for one variable (***response** or **dependent** variable*) are different within different sub-groups (*categories that are created by the **explanatory** or **independent** variable*).
 
 <hr>
 

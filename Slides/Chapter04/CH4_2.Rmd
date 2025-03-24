@@ -152,7 +152,7 @@ Overall, the main goal is to explain when and why we can infer cause-and-effect 
 
 **quasi-experiment:** 
 
-* researchers manipulate the treatments participants receive
+* researchers **DO** manipulate treatments participants receive
 * researchers **DO NOT** randomly assign participants to groups
 
 **observational study:**

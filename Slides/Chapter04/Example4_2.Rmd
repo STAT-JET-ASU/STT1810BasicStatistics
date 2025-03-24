@@ -166,7 +166,7 @@ If the null hypothesis is true, we would expect a difference near zero. This dif
 Like we did in Chapter 1, we need to simulate a null distribution to which we can compare this statistic to determine whether the chance model is plausible in this scenario. 
 
 
-## Preview: ISI [Two Proportion](https://www.isi-stats.com/isi2nd/ISIapplets2021.html) Applet
+## ISI [Two Proportion](https://www.isi-stats.com/isi2nd/ISIapplets2021.html) Applet
 
 Enter the study data in the two-way table, choose our "success" category, and indicate the observed difference in proportions.
 

@@ -72,13 +72,25 @@ As explained by the [Mayo Clinic](https://www.mayoclinic.org/diseases-conditions
 Is there an association between myopia and use of night lights? 
 
 
+## Myopic vs. Normal Vision Eyeball
+
+A myopic eyeball is longer front to back than a normal eyeball, so light passing through the lens focuses too far in front of the retina, making distance objects blurry.
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("../images/myopiaeyeballs.jpg", dpi = 110)
+```
+
+
 ## STEP 2: Design a Study / Collect Data
 
 Researchers interviewed the parents of 479 children and asked whether the child slept with the room light on, with a night light on, or in darkness before age two. Children were also separated into two groups: nearsighted or not nearsighted.
 
 * **observational units:** individual children
+
 * **explanatory variable:** intensity of light in the room when the child slept prior to age two; categorical and *non*-binary (three different categories)
+
 * **response variable:** whether or not the child had myopia (i.e., was nearsighted); categorical and binary
+
 * **sample size:** $n$ = 479
 
 

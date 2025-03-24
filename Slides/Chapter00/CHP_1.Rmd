@@ -98,7 +98,7 @@ Most of the data we will work with in STT 1810 is in this format. Real life data
 
 * **<mark>categorical variable</mark> :** qualitative characteristics, groupings, or category designations (essentially labels of different kinds for traits; labels may take the form of words or numbers)
 
-* **<mark>variable distribution</mark> :** describes the pattern of category or value outcomes (i.e., what categories or values are possible and how often they occur for the given variable)
+* **<mark>variable distribution</mark> :** describes the pattern of the outcome categories or values (i.e., what categories or numerical values are possible and how often they occur for a given variable)
 
 <hr>
 

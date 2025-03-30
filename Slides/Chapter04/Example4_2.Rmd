@@ -177,7 +177,7 @@ knitr::include_graphics("../images/twogrouplyingex01.png", dpi = 125)
 
 ## 
 
-Just like we did with the One Proportion applet, we will perform a simulation and get a *p*-value from the observed statistic, which is interpreted using the same guidelines. Since ***p*-value = 0.0199**, have strong evidence against $H_0$.
+Just like we did with the One Proportion applet, we will perform a simulation and get a *p*-value from the observed statistic, which is interpreted using the same guidelines. Since ***p*-value = 0.0199**, have strong evidence against $H_0$. **People do lie more via email!**
 
 ```{r, echo = FALSE, fig.align="center"}
 knitr::include_graphics("../images/twogrouplyingex02.png", dpi = 125)

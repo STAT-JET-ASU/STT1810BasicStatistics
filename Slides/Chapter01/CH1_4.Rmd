@@ -135,7 +135,7 @@ Power and Type II error have complimentary probabilities. If the chance of Type 
 Often, researchers can make educated guesses about unknown parameters to try to estimate power for their study. Calculations like these help them choose the right sample size.
 
 
-## Example of Type I and II Errors #1
+## Type I and II Errors: Example 1
 
 Consider the way in which the U.S. court system works. We are instructed to start off with a presumption of innocence, which is like our null hypothesis in a statistical test.  
 
@@ -163,7 +163,7 @@ Similarly, the criterion for finding a defendant guilty is "beyond a reasonable 
 Reasonable doubt is essentially a subjective probability that the jury member decides for themselves. Is the evidence consistent with or guilt innocence?
 
 
-## Example of Type I and II Errors #2
+## Type I and II Errors: Example 2
 
 Recall Exploration P.1 "Do You Have ESP?" Anyone who got 9/25 or more cards correct was told they had evidence of ESP, but we know such a high score can sometimes happen randomly. 
 
@@ -180,7 +180,7 @@ $H_0$ : You *do not* have ESP.
 * Test says there is evidence of ESP---again, a correct decision!
 
 
-## Example of Type I and II Errors #3
+## Type I and II Errors: Example 3
 
 You decide to get tested for COVID-19 based on mild symptoms. There are two correct decisions and two errors that could occur (with this or most medical tests).
 

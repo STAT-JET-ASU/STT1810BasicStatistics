@@ -65,7 +65,7 @@ knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
 
 Chapter 4 focuses on ***causation***, which is one of the four pillars of inference introduced in Section P.1. 
 
-Overall, the main goal is to explain when and why we can infer cause-and-effect after we determine via a significance test that there is an ***association*** between two variables. 
+Overall, the main goal is to explain when and why we can infer ***cause-and-effect*** after we determine via a significance test that there is an ***association*** between two variables.  
 
 <hr>
 
@@ -100,7 +100,7 @@ Overall, the main goal is to explain when and why we can infer cause-and-effect 
 
 ***Example 1:*** In Example P.2, the response variable is performance length. This variable may depend on a number of other factors, like the gender of the singer, the musical genre, the year of the performance, or whether it is a solo/group performance.
 
-***Example 2:*** In our observed relationship between asbestos and mesothelioma in a previous example, or between smoking and a long list of diseases, the presence or absence of the diseases (or their severity) are the response variables to the explanatory variable of smoking.
+***Example 2:*** Researchers have established a relationship between asbestos and mesothelioma, or between smoking and a long list of diseases. The presence or absence of such diseases (or their severity) are the response variables to the explanatory variables of asbestos exposure or smoking.
 
 ***Example 3:*** In elementary school, children in higher grades tend to be taller than children in lower grades. The response variable is the children's heights.
 
@@ -115,7 +115,7 @@ We will not make a distinction between the two in this class, and instead we wil
 
 <hr>
 
-*We will see examples of confounding variables on upcoming slides.*
+*You will see examples of confounding variables on upcoming slides.*
 
 
 ## Uncovering Associations
@@ -154,7 +154,7 @@ knitr::include_graphics("../images/confound03.png", dpi = 120)
 <br><div style = "text-align: center; font-size: 18px;">Image from [*Statology: What is a Confounding Variable?*](https://www.statology.org/confounding-variable/) by Zach Bobbitt <div>
 
 
-## Association vs. Correlation
+## Vocabulary: Association vs. Correlation
 
 In everyday speech, we often say two things are ***correlated*** when they are related to one another.
 
@@ -164,5 +164,5 @@ A correlation, on the other hand, is a specific kind of relationship or associat
 
 There are several special correlation statistics for other kinds of associations, but we will not cover those in this class.
 
-*In general, do not use correlation when the appropriate word is the more general association.*
+<mark>*To summarize, do not use correlation when the appropriate term is the more general descriptor **association.***</mark>
 

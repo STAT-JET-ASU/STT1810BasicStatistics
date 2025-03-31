@@ -166,12 +166,13 @@ Since the groups are equal in size ($n = 15$ each), a barplot and a mosaic plot 
 
 ## STEP 4: Draw Inferences
 
-We can use the ISI [Two-Proportion](http://www.isi-stats.com/isi2nd/ISIapplets2021.html) applet to obtain a simulated *p*-value. The two groups are shuffled together and randomly re-divided between the two treatment groups. From the regrouped data we recalculate the statistic to get a null distribution. Where would the observed statistic be on this plot?
+We can use the ISI [Two-Proportion](http://www.isi-stats.com/isi2nd/ISIapplets2021.html) applet to obtain a simulated *p*-value. The two groups are shuffled together and randomly re-divided between the two treatment groups. From the regrouped data we recalculate the statistic to get a null distribution. Where would the observed difference $0.4667$ be on this plot?
 
 ```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("../images/fig_05_02_05.jpg", dpi = 120)
+knitr::include_graphics("../images/fig_05_02_05.jpg", dpi = 150)
 ```
 
+***Note:** See the last 2 slides for an example of how to use the applet.*
 
 ## Assess Statistical Significance
 
@@ -257,4 +258,24 @@ We can also compute the relative risk, which is $\frac{0.6667}{0.2000} = 3.33$.
 Participants in the dolphin therapy treatment group were 3.33 times as likely to improve as control subjects.
 
 However, participants were not randomly selected, so we would be limited in our ability to generalize these results.
+
+
+## Two-Proportion Applet: Data and Plots
+
+Enter the two-way table in the applet and choose <mark style = "background: lightgray;">&nbsp;Use Table&nbsp;</mark> to use the data in the analysis. Notice ***Observed Diff in proportions***.<br>
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("../images/dolphintherapy01.png", dpi = 175)
+```
+
+
+## Two-Proportion Applet: Significance
+
+Choose at least 1000 shuffles (repetitions of the simulation), and enter the observed difference in the <mark style = "background: lightgray;">&nbsp;Count Samples&nbsp;</mark> box. Make sure the sign matches alternative hypothesis.
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("../images/dolphintherapy02.png", dpi = 185)
+```
+
+The *p*-value is $0.0137$, very similar to the earlier $0.013$ *p*-value.
 

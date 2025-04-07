@@ -119,7 +119,7 @@ We also will revisit several vocab terms from the Preliminaries and introduce a 
 
 **<mark>interquartile range</mark> :** a measure of spread for the middle 50% of the data values, which is found by taking the distance between the upper and lower quartiles; i.e., IQR = Q<sub>3</sub> and Q<sub>1</sub>
 
-**<mark>boxplot</mark> :** a visual display of the five-number summary, which can help us identify symmetry and outliers (**note:** the image below is flawed---the fences are too close to Q<sub>1</sub> and Q<sub>3</sub>)
+**<mark>boxplot</mark> :** a visual display of the five-number summary, which can help us identify symmetry and outliers (**note:** the picture below is a bit off-scale---the fences are too close to Q<sub>1</sub> and Q<sub>3</sub>)
 
 ```{r, echo = FALSE, fig.align="center"}
 knitr::include_graphics("../images/boxplotkernler01.gif", dpi = 225)
@@ -204,4 +204,15 @@ knitr::include_graphics("../images/meanmedianmode.png", dpi = 210)
 <br>
 
 Outliers tend to pull the mean in their direction---large outliers pull the mean up, small outliers pull the mean down.
+
+
+## Possible Reasons for Outliers
+
+This information is not in your textbook, but it is good to know when discussing outliers! We first saw these in Section P.2.
+
+* The outlier is a legitimate value and it represents the natural variability for the group and variable measured. Sometimes these are the *most* interesting data points!
+
+* The outlier is a mistake in measurement, recording, or data entry. *It should be corrected or discarded.*
+
+* The measurement is accurate, but the observational unit it was collected from does not belong to the group we intended to measure; for example, including a kindergartener's height in a dataset that is meant to answer a question about college students' measurements. *It should be discarded.*
 

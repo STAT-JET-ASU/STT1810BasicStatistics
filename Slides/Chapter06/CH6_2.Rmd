@@ -99,22 +99,81 @@ In this chapter, you will learn to:
 
 None! However, you will want to review and be familiar with the vocabulary and methods from previous chapters. Everything we do here builds on the Preliminaries through Chapter 5.
 
+In particular, there are strong similarities between Section 5.2 and Section 6.2. The primary difference is that we are focused on means rather than proportions in Chapter 6.
+
+We also will be using quantitative summaries from Section P.2.
+
 <hr>
 
-Also, keep in mind the new symbols for this chapter...
+Keep in mind the new symbols for this chapter...
 
-* $\mu$ = population mean (Greek letter mu, pronounced "mew")
+* <mark>$\mu$</mark> = population mean (Greek letter mu, pronounced "mew")
 
-* $\bar{x}$ = sample mean (usually pronounced "x-bar")
+* <mark>$\bar{x}$</mark> = sample mean (usually pronounced "x-bar")
 
 
-## Comments on Strength of Evidence
+## Hypotheses: Comparing Parameters
 
-In earlier chapters we talked about factors that impact the size of the *p*-value in a test of significance. The extremeness of the statistic relative to $H_0$, sample size, and one-sided versus two-sided tests still matter in much the same way. 
+We will write our hypotheses using parameters, like we did in Chapter 5. We define ***two*** parameters, one for each of the two groups of the explanatory variable.
 
-With quantitative data there is another aspect that impacts size of the *p*-value: the underlying data variability, as measured by the standard deviations in each group. 
+$\mu_1$ = conditional mean of the quantitative *response variable* in Group 1 of the *explanatory variable*
 
-If there is more variability in the data (larger SD values in the groups), the variability in the null distribution would be larger and so the *p*-value would be larger as well.
+$\mu_2$ = conditional mean of the quantitative *response variable* in Group 2 of the *explanatory variable*
 
-Basically, if there is more variability *within* each group, then it becomes harder to tell a difference *between* the groups.
+* $H_0:$ The conditional mean in Group 1 is the same as the conditional mean in Group 2.
+* $H_a:$ The conditional mean in Group 1 is (*less than*, *different than*, or *greater than*) the conditional mean in Group 2.
+
+
+## Stating the Hypotheses Using Symbols
+
+As before, we can convert out hypotheses written words to into more compact statistical symbols.
+
+**Null Hypothesis** (no association/no difference between groups in terms of the mean of the quantitative response variable):
+
+$$H_0: \mu_1 = \mu_2$$
+
+**Alternative Hypothesis** (this depends on the research question):
+
+$$H_a: \mu_1 < \mu_2$$
+
+$$H_a: \mu_1 \neq \mu_2$$
+
+$$H_a: \mu_1 > \mu_2$$
+
+
+## Writing the Hypotheses as Differences
+
+We are really interested in the *difference* between the groups, so the hypotheses can be expressed as a mathematical difference. Subtract $\mu_2$ from both sides and we get, for example...
+
+$$H_0: \mu_1 - \mu_2 = 0$$
+
+We can do the same for the alternative hypothesis...
+
+$$H_a: \mu_1 -\mu_2 < 0$$
+
+$$H_a: \mu_1 - \mu_2 \neq 0$$
+
+$$H_a: \mu_1 -\mu_2 > 0$$
+
+The sample difference ($\bar{x}_1 - \bar{x}_2$) will be the statistic for the test.
+
+
+## SD Effects on Strength of Evidence
+
+In earlier chapters we talked about factors that impact the size of the *p*-value in a test of significance. The extremeness of the statistic relative to $H_0$, the sample size, and one-sided versus two-sided tests still matter when we compare means. 
+
+For proportions, variability was a function of $\pi$. For quantitative data there is a separate parameter that impacts the size of the *p*-value: the underlying variability of the data in each group, as measured by the standard deviations. 
+
+If there is more variability in the data (larger group SD values), then the variability of the null distribution will be be greater and the *p*-value will be larger (less significant) as well.
+
+Essentially, if there is more variability *within* each group, then it will be harder to find a difference *between* the groups.
+
+
+## The [Multiple Means](https://www.isi-stats.com/isi2nd/ISIapplets2021.html) Applet
+
+As we did in the *Two Proportions* applet, we will simulate a null distribution by re-shuffling the data between the two groups.
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("../images/multiplemeansapplet.png", dpi = 200)
+```
 

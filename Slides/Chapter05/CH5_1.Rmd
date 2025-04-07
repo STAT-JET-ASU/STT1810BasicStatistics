@@ -144,7 +144,7 @@ knitr::include_graphics("../images/titanicsurvival01.png", dpi = 230)
 
 ##
 
-An example with three variables: sex, survival, and ticket class. Does ticket class seem to be associated with sex and survival? Look at the different survivor proportions between the graphs. Which sex and ticket class had the highest probability?
+An example with three variables: sex, survival, and ticket class. Does ticket class seem to be associated with sex and survival? Look at the different survivor proportions between the graphs. Which sex and ticket class had the highest survival probability?
 
 ```{r, echo = FALSE, fig.align="center"}
 knitr::include_graphics("../images/titanicsurvival02.png", dpi = 210)

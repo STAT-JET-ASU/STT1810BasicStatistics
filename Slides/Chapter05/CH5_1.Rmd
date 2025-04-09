@@ -107,12 +107,12 @@ The terms *relative risk*, *increased risk*, *odds*, and *odds ratio* are common
 
 * cells
 * conditional proportion
-* percent increased risk*
+* percent increased risk *
 * mosaic plot
 * no association
 * odds *
-* odds ratio*
-* relative risk*
+* odds ratio *
+* relative risk *
 * segmented bar graph
 * two by two (2 × 2) table
 * two-way table
@@ -131,6 +131,20 @@ The terms *relative risk*, *increased risk*, *odds*, and *odds ratio* are common
 **<mark>no association</mark> :** a general statement of the null hypothesis when two or more variables are involved, indicating that two variables are not related to each other
 
 
+## Example: Survival Associated with Sex?
+
+Consider the probability of survival for women and men aboard the infamous ship Titanic. In this case, sex (male, female) is the explanatory variable and whether or not the person survived is the response variable. 
+
+| Outcome  | Female     | Male        |
+|----------|:----------:|:-----------:|
+| Died     | 127 (27%)  | 1364 (79%)  |
+| Survived | 343 (73%)  |  710 (21%)  |
+| Total    | 470 (100%) | 1731 (100%) |
+
+<br>
+Does it look like a passenger's survival may have been related to (*associated with*) their sex?
+
+
 ##
 
 **<mark>segmented bar graph</mark> :** a type of graph display for conditional proportions from a two-way table, with equal-width rectangles totaling 1 (100%) for each category of the explanatory variable; each bar is then split up by the conditional proportions for the categories of the response variable
@@ -144,7 +158,7 @@ knitr::include_graphics("../images/titanicsurvival01.png", dpi = 230)
 
 ##
 
-An example with three variables: sex, survival, and ticket class. Does ticket class seem to be associated with sex and survival? Look at the different survivor proportions between the graphs. Which sex and ticket class had the highest survival probability?
+An example with three variables: sex, survival, and ticket class. Does ticket class seem to be associated with sex and survival? Look at the different survivor proportions between the graphs. Which ***sex*** and ***ticket class*** had the greatest survival probability?
 
 ```{r, echo = FALSE, fig.align="center"}
 knitr::include_graphics("../images/titanicsurvival02.png", dpi = 210)
@@ -165,7 +179,7 @@ knitr::include_graphics("../images/titanicsurvival03.png", dpi = 230)
 
 <br>
 
-There were more male than female passengers aboard Titanic.
+There were almost twice as many men vs. women on the Titanic.
 
 
 ## 
@@ -179,15 +193,15 @@ Which group we call Category 1 and which group is Category 2 depends on the prob
 Essentially, **risk** is another word for **probability** or proportion. In everyday English, we usually associate the word "risk" with some kind of bad outcome. However, in statistics we can use the term risk for any outcome we are interested in.
 
 
-## An Example: Risk of Oral Cancer
+## Example: Risk of Oral Cancer
 
 [Oral cancer](https://www.nidcr.nih.gov/health-info/oral-cancer) is a family of malignancies that includes cancers of the mouth and the back of the throat. Smoking and alcohol use, as well as sun exposure and poor nutrition, are some of the factors that have been found to be associated with this type of cancer. Consider the incidence of oral cancer among a group of smokers and non-smokers. ***Smoking is the explanatory variable.***
 
-|Oral Cancer? | Non-Smoker | Smoker     |
+|Oral Cancer? | Smoker     | Non-Smoker |
 |-------------|:----------:|:----------:|
-| Yes         | 27 (23%)   | 484 (56%)  |
-| No          | 90 (77%)   | 385 (44%)  |
-| Total       | 117 (100%) | 869 (100%) |
+| Yes         | 484 (56%)  | 27 (23%)   |
+| No          | 385 (44%)  | 90 (77%)   |
+| Total       | 869 (100%) | 117 (100%) |
 
 
 ##
@@ -298,7 +312,7 @@ Like relative risk, values for odds ratio (OR) can range between 0 and $\infty$-
 
 ## Back to Titanic
 
-Consider the survival of women versus men on Titanic. **Sex** is the explanatory variable in this case.
+Consider again the survival of women versus men on Titanic. 
 
 | Outcome  | Female     | Male        |
 |----------|:----------:|:-----------:|
@@ -308,7 +322,7 @@ Consider the survival of women versus men on Titanic. **Sex** is the explanatory
 
 
 <br>
-A test of significance would show that these two variables are associated, *p*-value < 0.0001. (*Note: This is observational data, so we cannot assume cause and effect. The variable ticket class is also associated with both sex and survival.*)
+A test of significance, which we will learn in Section 5.2, would show that these two variables are associated, *p*-value < 0.0001. (Note: *This is observational data, so we cannot assume cause and effect. Ticket class is a confounding variable.*)
 
 
 ## Relative and Increase Risk
@@ -317,11 +331,11 @@ We can see from the conditional probabilities that women were more likely to sur
 
 $$RR = \frac{\text{survival risk for women}}{\text{survival risk for men}} = \frac{0.73}{0.21} = 3.48 \approx 3.5$$
 
-Women were about three and a half times as likely to survive the sinking of the Titanic as men.
+Women passengers were about three and a half times as likely to survive the sinking of the Titanic as men.
 
 $$\%IR = \frac{0.73 - 0.21}{0.21} \times 100\% = 248\% \approx 250\%$$
 
-Women had about a 250% increased chance of survival versus men when the Titanic sank.
+Women had about a 250% increased chance of survival vs. men when the Titanic sank.
 
 
 ## Odds and Odds Ratio
@@ -335,15 +349,6 @@ $$OR = \frac{\text{odds for women}}{\text{odds for men}} = \frac{343/127}{710/13
 The odds of a woman surviving the sinking of the Titanic were 5.2 times the odds of a man surviving.
 
 *Why the difference? It may have been a "women and children" first policy for loading lifeboats, or having a large fraction of male third class passengers and crew, other social norms, or the ship layout...*
-
-
-## The Two-Proportion Applet
-
-Data can be entered as a two-way table in [the applet](https://www.isi-stats.com/isi2nd/ISIapplets2021.html). It can also calculate RR and OR values. Here you see the oral cancer data.
-
-```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("../images/twopropapplet.png", dpi = 135)
-```
 
 
 ## Another Perspective

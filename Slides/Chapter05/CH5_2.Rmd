@@ -63,7 +63,7 @@ knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
 
 ## Learning Goals for Chapter 5
 
-Chapter 5 extends what we learned about statistical significance in previous chapters to compare two groups with parameters $\pi_1$ and $\pi_2$. In this case, rather than testing a null hypothesis about whether $\pi$ is equal to some value, we will typically have a null of $H_0: \pi_1 = \pi_2$ **<u>or</u>** $H_0: \pi_1 - \pi_2 = 0$ &rarr; there is *no difference*. 
+Chapter 5 extends what we learned about statistical significance in previous chapters to compare two groups with parameters $\pi_1$ and $\pi_2$. In this case, rather than testing a null hypothesis about whether $\pi$ is equal to some value, we will typically have a null of ***no difference***, written as $H_0: \pi_1 = \pi_2$ or $H_0: \pi_1 - \pi_2 = 0$. 
 
 We can also estimate the size of difference between $\pi_1$ and $\pi_2$.
 
@@ -101,18 +101,18 @@ We will *not* cover Section 5.3, regarding theory-based inference.
 
 **<mark>standard error</mark> :** an estimate for the standard deviation of the null distribution of a statistic
 
-You may also want to review and solidify all of the vocabulary introduced in Section 5.1, especially the supplemental content like percent increased risk and odds ratio.
+You may also want to review and solidify all of the vocabulary introduced in Section 5.1, especially the supplemental content such as percent increased risk and odds ratio.
 
 <hr>
 
-The term *standard error* is not completely new. We mentioned it in Section 2.1, when we explored the sampling distribution for a single proportion. 
+The term *standard error* is not completely new. We first saw it in Section 2.1, when we introduced the sampling distribution for a single proportion and the Central Limit Theorem. 
 
-We also encountered it in Section 3.2 when we introduced the idea of 2SD confidence intervals.
+We also encountered it in Section 3.2 when we explored the idea of ±2SD confidence intervals for one proportion.
 
 We will revisit these concepts for two proportions in this section.
 
 
-## Hypotheses #1: Variable *Association*
+## Hypotheses: Variable *Association*
 
 Suppose we have two variables, ***explanatory*** and ***response***. We can use the association language learned in Chapter 4 to write our hypotheses in the following form.
 
@@ -125,27 +125,28 @@ $H_a:$ There ***is an association*** between the explanatory variable and the re
 Conditional proportions in the explanatory groups are different. Group membership gives you information about the response.
 
 
-## Hypotheses #2: Comparing *Parameters*
+## Hypotheses: Comparing *Parameters*
 
-We can also write our hypotheses using parameters, like we did in Chapter 1 and Chapter 3. We define ***two*** parameters, one for each of the two groups of the explanatory variable.
+We can also write our hypotheses using parameters, like we did in Chapter 1 and Chapter 3. We will define ***two*** parameters, one for each of the two groups of the explanatory variable.
 
-$\pi_1$ = conditional proportion of successes (for *response variable*) in Group 1 of the *explanatory variable*
+$\pi_1$ = the conditional population proportion of successes for the *response variable* within Group 1 of the *explanatory variable*
 
-$\pi_2$ = conditional proportion of successes (for *response variable*) in Group 2 of the *explanatory variable*
+$\pi_2$ = the conditional population proportion of successes for the *response variable* within Group 2 of the *explanatory variable*
 
-* $H_0:$ The conditional proportion of successes in Group 1 is the same as in Group 2.
+* $H_0:$ The conditional proportion of successes in Group 1 is the same as the conditional proportion in Group 2.
+
 * $H_a:$ The conditional proportion of successes in Group 1 is (*less than*, *different than*, or *greater than*) in Group 2.
 
 
 ## Stating the Hypotheses Using Symbols
 
-As before, we can convert out hypotheses written words to into more compact statistical symbols.
+As before, we can convert our hypotheses written in words into more compact statements using statistical symbols.
 
 **Null Hypothesis** (no association/no difference between groups):
 
 $$H_0: \pi_1 = \pi_2$$
 
-**Alternative Hypothesis** (this depends on the research question):
+**Alternative Hypothesis** (there is some association or difference; the specific choice depends on the research question):
 
 $$H_a: \pi_1 < \pi_2$$
 
@@ -171,18 +172,41 @@ $$H_a: \pi_1 -\pi_2 > 0$$
 The sample difference ($\hat{p}_1 - \hat{p}_2$) will be the statistic for the test.
 
 
-## Oral Cancer Example: Simulation
+## Example: Risk of Oral Cancer
 
-Recall the oral cancer example from Section 5.1. This is a test of significance for that data. The [Two Proportions](https://www.isi-stats.com/isi2nd/ISIapplets2021.html) applet generates the null distribution by randomly *re-shuffling* the data.
+[Oral cancer](https://www.nidcr.nih.gov/health-info/oral-cancer) is a family of malignancies that includes cancers of the mouth and the back of the throat. Smoking has been found to be associated with this type of cancer. Consider the rates of oral cancer among smokers and non-smokers from one study.
+
+|Oral Cancer? | Smoker      | Non-Smoker |
+|-------------|:-----------:|:----------:|
+| Yes         | 484 (0.557) | 27 (0.231) |
+| No          | 385 (0.443) | 90 (0.769) |
+| Total       | 869         | 117        |
+
+<br>
+Our statistic: $\hat{p}_{smoker} - \hat{p}_{nonsmoker} = 0.557 - 0.231 = 0.326$
+
+
+## Simulating the Null Distribution
+
+The [Two Proportions](https://www.isi-stats.com/isi2nd/ISIapplets2021.html) applet generates a null distribution for this test by randomly *re-shuffling* the data from the study.
 
 ```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("../images/twopropapplet2.png", dpi = 135)
+knitr::include_graphics("../images/twopropapplet2.png", dpi = 125)
 ```
 
 
-## Assess Statistical Significance #1
+## Why Re-shuffling the Data?
 
-As we did with one-proportion tests, we can find a *p*-value using the test statistic and a simulated null distribution.
+Recall our explorations in Section 4.2, where we looked at what happens when we randomly assign people into two groups. We saw that random assignment tends to equalize all the variables between the two groups, so they are the same *on average*.
+
+The logic of this test is that we will look at what happens to our response variable when we randomize or shuffle the people in the sample between the two groups. We can see how large the difference between the groups tends to be if everything is just random (i.e., $H_0$ is true).
+
+Once we know how the system behaves when everything is just random, we will compare our actual data to this distribution and see how unusual our statistic is. Just like previous chapters/tests, we will quantify this with a *p*-value.
+
+
+## Statistical Significance: *p*-value
+
+As we did with one-proportion tests, we will find a *p*-value using the test statistic and the simulated null distribution.
 
 <hr>
 
@@ -196,7 +220,7 @@ Recall our guidelines for *p*-values from Section 1.2.
 | *p*-value ≤ 0.01        | **VERY STRONG** evidence against the null hypothesis $H_0$ |
 
 
-## The Complete Test of Significance
+## The Test of Significance
 
 **Research Question:** Is oral cancer more likely among smokers?
 
@@ -224,7 +248,7 @@ It is also unlikely that these data come from a random sample. That limits our a
 If we knew more about the individuals included in this study, we could possibly generalize to people with similar characteristics (*e.g., age, sex, how long they have smoked, presence or absence of other variables associated with oral cancer, etc.*).
 
 
-## Standardized Score
+## Statistical Significance: *z*-score
 
 The general form for a standardized (*z*) score, which we first saw back in Section 1.3, is as follows.
 
@@ -239,7 +263,7 @@ $$z\text{-score} = \frac{\hat{p}_1 - \hat{p}_2}{SD(\hat{p}_1 - \hat{p}_2)}$$
 Recall: $SD(\hat{p}_1 - \hat{p}_2)$ is notation for "SD of the null distribution of $(\hat{p}_1 - \hat{p}_2)$," not multiplication. We estimate SD from the sim.
 
 
-## Assess Statistical Significance #2
+## Evidence Using the *z*-score
 
 Like we did with one-proportion tests, we can use the *z*-score to assess statistical significance.
 
@@ -255,16 +279,16 @@ Recall our guidelines for *z*-scores from Section 1.3.
 | *z* below -3.0 or above +3.0 | **VERY STRONG** evidence against the null hypothesis $H_0$ |
 
 
-## Oral Cancer Example: *z*-score
+## Let's Calculate!
 
 $$H_0: \pi_1 - \pi_2 = 0$$
 $$H_a: \pi_1 -\pi_2 > 0$$
 
-Get the value of $SD(\hat{p}_1 - \hat{p}_2) = 0.050$ from our simulation.
+Use the value of $SD(\hat{p}_1 - \hat{p}_2) = 0.050$ from our simulation.
 
 $$z\text{-score} = \frac{\hat{p}_1 - \hat{p}_2}{SD(\hat{p}_1 - \hat{p}_2)} = \frac{0.557 - 0.231}{0.050} = 6.52$$
 
-The observed statistic (difference) from the sample data is $6.52$ standard deviations above the mean. This means that we have very strong evidence against $H_0$.
+The observed statistic (difference) from the sample data is $6.52$ standard deviations above the mean. This result indicates that the study data provide very strong evidence against $H_0$.
 
 We conclude that the long-run proportion of oral cancer among smokers is greater than that of non-smokers, as we did before.
 
@@ -284,7 +308,7 @@ $$\text{95% CI} = (\hat{p}_1 - \hat{p}_2) \pm 2 \times SD(\hat{p}_1 - \hat{p}_2)
 Important: *Do not* multiply SD by $(\hat{p}_1 - \hat{p}_2)$ in the 2SD interval. Again, we estimate the SD value from the simulation results.
 
 
-## Oral Cancer Example: 2SD Estimation
+## Calculate the 2SD Estimate
 
 How much greater is the risk for smokers versus nonsmokers? We can estimate that from the data.
 

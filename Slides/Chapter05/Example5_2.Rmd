@@ -235,7 +235,7 @@ $$0.4667 \pm 2 \times 0.185 = 0.4667 \pm 0.370$$
 
 We are 95% confident that the estimated interval (0.097, 0.837) captures the true value of $\pi_\text{dolphin} - \pi_\text{control}$.
 
-Notice that zero is *not* within the interval. This is consistent with rejecting Ho. Zero is not a plausible value for the difference.
+Notice that zero is *not* within the interval. This is consistent with rejecting $H_0$. Zero is not a plausible value for the difference.
 
 
 ## STEP 5: Formulate Conclusions
@@ -249,15 +249,15 @@ knitr::include_graphics("../images/fig_04_02_03.jpg", dpi = 105)
 
 ## Discussion of Findings
 
-This study was a randomized experiment and the data provided strong evidence against the null hypothesis, so we can conclude that swimming with dolphins caused a significant improvement in depression symptoms. 
+This study was a randomized experiment and the data provided strong evidence against the null hypothesis, so we can conclude that swimming with dolphins *caused* a significant improvement in depression symptoms aong participants. 
 
-The magnitude of the difference in the probability of patients showing significant improvement is somewhere between 9.7% and 83.7%. *To get a narrower interval, we'd need more data.*
+The magnitude of the difference in the probability that a patient will show significant improvement is between 9.7% and 83.7%. *To get a narrower interval, we would need more data.*
 
 We can also compute the relative risk, which is $\frac{0.6667}{0.2000} = 3.33$.
 
-Participants in the dolphin therapy treatment group were 3.33 times as likely to improve as control subjects.
+Participants in the dolphin therapy treatment group were 3.33 times as likely to improve compared to the control subjects.
 
-However, participants were not randomly selected, so we would be limited in our ability to generalize these results.
+However, participants were *not* randomly selected, so we would be limited in our ability to generalize these results.
 
 
 ## Two-Proportion Applet: Data and Plots

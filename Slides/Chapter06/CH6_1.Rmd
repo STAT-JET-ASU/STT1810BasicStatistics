@@ -65,13 +65,14 @@ knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
 
 Chapter 6 extends what we learned about statistical significance in previous chapters to compare two groups with parameters $\mu_1$ and $\mu_2$, where $\mu$ is the population *mean*. A sample mean will be designated with $\bar{x}$. We typically will have a null of $H_0: \mu_1 = \mu_2$ or $H_0: \mu_1 - \mu_2 = 0$ (i.e., *no difference* between groups). 
 
-We can also estimate the size of difference $\mu_1 - \mu_2$.
+We can also estimate the size of the difference $\mu_1 - \mu_2$.
 
 <hr>
 
 * Compare two sample means numerically and graphically. [Section 6.1]
 * Carry out a simulation-based analysis to investigate the difference between two population means. [Section 6.2]
-* Carry out a theory-based analysis to investigate the difference between two population means. [Section 6.3]
+
+We will *not* cover Section 6.3, regarding theory-based inference.
 
 
 ## Learning Goals for Section 6.1
@@ -117,14 +118,13 @@ We also will revisit several vocab terms from the Preliminaries and introduce a 
 
 **<mark>five-number summary</mark> :** a set of five data summaries composed of minimum, lower quartile, median, upper quartile, maximum. These five values break the data into four parts, with each part containing 25% of the data points.
 
-**<mark>interquartile range</mark> :** a measure of spread for the middle 50% of the data values, which is found by taking the distance between the upper and lower quartiles; i.e., IQR = Q<sub>3</sub> and Q<sub>1</sub>
+**<mark>interquartile range</mark> :** a measure of spread for the middle 50% of the data values, which is found by taking the distance between the upper and lower quartiles; i.e., IQR = Q<sub>3</sub> -- Q<sub>1</sub>
 
-**<mark>boxplot</mark> :** a visual display of the five-number summary, which can help us identify symmetry and outliers (**note:** the picture below is a bit off-scale---the fences are too close to Q<sub>1</sub> and Q<sub>3</sub>)
+**<mark>boxplot</mark> :** a visual display of the five-number summary, which can help us identify symmetry and outliers 
 
-```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("../images/boxplotkernler01.gif", dpi = 225)
-```
-<p style = "text-align: center; font-size: 10px;"><br>Image Source: [Prof. Dan Kernler for Mth120 Statistics I at Elgin Community College](https://faculty.elgin.edu/dkernler/statistics/ch03/3-5.html)</p>
+**<mark>resistant measure</mark> :** a statistical summary measure that is not strongly affected by skewness or outliers in a dataset
+
+Two resistant measures are the **median** and **IQR** (including Q<sub>1</sub> and Q<sub>3</sub>). In contrast, mean, standard deviation, minimum, and maximum are *non*-resistant measures.
 
 
 ## Recall: Exploring Data (Section P.2)
@@ -142,14 +142,28 @@ Quantitative data are described by how / where they occur on the number line. Di
 
 ## Anatomy of a Boxplot
 
-Boxplots may be drawn horizontally or vertically (*left* = *lower*).
+Boxplots may be drawn horizontally or vertically (*left* = *lower*). In a plot like the one below, the number line is drawn vertically.
 
 ```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("../images/boxplotanatomy.png", dpi = 100)
+knitr::include_graphics("../images/boxplotanatomy.png", dpi = 80)
 ```
 
-* lower outlier = data value < $\text{lower quartile} - 1.5 * IQR$
-* upper outlier = data value > $\text{upper quartile} + 1.5 * IQR$
+
+## Fences and Outliers
+
+We determine outliers in the distribution using "fences," which are based on the width of the box (the IQR). Recall that the box contains the middle 50% of the data.
+
+* lower fence = $\text{lower quartile } Q_1 - 1.5 \times IQR$
+
+A lower outlier is any data value less than the lower fence.
+
+* upper fence = $\text{upper quartile } Q_3 + 1.5 \times IQR$
+
+An upper outlier is any data value greater than the upper fence.
+
+<hr>
+**In other words, an outlier is any data point that is farther than 1.5 times the IQR from the edges of the box.**
+<hr>
 
 
 ## Boxplots and Skewness
@@ -179,6 +193,70 @@ knitr::include_graphics("../images/boxplotkernler04.gif")
 <p style = "text-align: center; font-size: 10px;"><br>Image Source: [Prof. Dan Kernler for Mth120 Statistics I at Elgin Community College](https://faculty.elgin.edu/dkernler/statistics/ch03/3-5.html)</p>
 
 
+## Skewness Statistic
+
+Some computer programs and applets will compute a skewness measure using deviations from the mean (similar to SD).
+
+*In theory, for a distribution that is unimodal ...*
+
+* A perfectly symmetric distribution has a skewness of 0.
+* A left (*negatively*) skewed distribution has a skewness < 0.
+* A right (*positively*) skewed distribution has a skewness > 0.
+
+*When interpreting a skewness statistic for a sample ...*
+
+* A value between ±0.5 indicates approximate symmetry.
+* Between 0.5 and 1 (or -0.5 and -1) indicates moderate skew.
+* Larger than 1 (or smaller than -1) indicates strong skew.
+
+
+## Impact of Skewness / Outliers
+
+The greater the skew, the more different the mean and median will tend to be for a given distribution.
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("../images/meanmedianmode.png", dpi = 200)
+```
+<p style = "text-align: center; font-size: 10px;"><br>Image Source: [Author Diva Jain on Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Relationship_between_mean_and_median_under_different_skewness.png)</p>
+
+<br>
+
+Outliers tend to pull the mean in their direction --- large outliers pull the mean up, small outliers pull the mean down.
+
+
+## Example: National Anthem Length
+
+In Section P.2, we explored the length of time that singers took to sing the National Anthem at the Super Bowl. At the time, we decided that a histogram of times looked relatively symmetric. The skewness statistic of 0.20 supports that.
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("../images/skewness01.png", dpi = 110)
+```
+
+For the SB Anthems dataset in the [Descriptive Statistics](https://www.isi-stats.com/isi2nd/ISIapplets2021.html) applet, the mean is 109 minutes and the median is 111 minutes --- not too different, given the large variability (SD ≈ 19 minutes).
+
+
+## Example: Gettysburg Word Lengths
+
+In Section 2.2, while studying properties of random samples, we explored the lengths of all the words in the Gettysburg Address. Skewness is moderate to strong (0.98 ≈ 1), using our guidelines.
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("../images/skewness02.png", dpi = 145)
+```
+
+Here, the mean is 4.295 and the median is 4. That may not seem much different, but variability in word lengths is also fairly small, ranging from 1 to 11 letters. Words with 9+ letters are outliers.
+
+
+## Example: Old Faithful Eruptions
+
+Example 6.1 summarizes the intervals between eruptions of Old Faithful in two different years. The skewness statistic for 2003 is strongly negatively, largely because of the low outliers at 56 and 58 minutes. If those are removed, the skewness is only 0.11. We can see that the rest of the data appear roughly symmetric.
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("../images/skewness03.png", dpi = 160)
+```
+
+The 1978 plot is bimodal; the skewness measure is not reliable.
+
+
 ## Which Measures Do We Use?
 
 Why do we need more than one measure to quantify / describe center and variability?
@@ -189,21 +267,7 @@ Skewness and outliers, especially in extreme cases, impact some measures more st
 
 * IQR is a resistant measure of variability, whereas the standard deviation is sensitive to extreme values and skewness.
 
-Our preference is usually to use mean and standard deviation, but for strongly skewed data or data with large outliers, we may choose median and IQR instead.
-
-
-## Impact of Skewness / Outliers
-
-The greater the skew, the more different the mean and median will tend to be for a given distribution.
-
-```{r, echo = FALSE, fig.align="center"}
-knitr::include_graphics("../images/meanmedianmode.png", dpi = 210)
-```
-<p style = "text-align: center; font-size: 10px;"><br>Image Source: [Author Diva Jain on Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Relationship_between_mean_and_median_under_different_skewness.png)</p>
-
-<br>
-
-Outliers tend to pull the mean in their direction---large outliers pull the mean up, small outliers pull the mean down.
+Our preference is usually to use mean and standard deviation, but for data that is strongly skewed data with large outliers, we may choose median and IQR instead. --- *Note that our skewness statistic is not a resistant measure. Always look at a plot!*
 
 
 ## Possible Reasons for Outliers

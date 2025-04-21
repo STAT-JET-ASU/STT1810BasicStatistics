@@ -110,23 +110,6 @@ knitr::include_graphics("../images/fig_06_01_01.jpg", dpi = 150)
 * How do the two distributions compare to one another?
 
 
-##
-
-| Year | Mean |  SD  | Minimum | Lower<br>Quartile | Median | Upper<br>Quartile | Maximum | Interquartile<br>Range (IQR) |
-|:----:|:----:|:----:|:-------:|:-----------------:|:------:|:-----------------:|:-------:|:----------------------------:|
-| 1978 | 71.1 | 12.9 |    42   |         58        |   75   |         81        |    95   |              23              | 
-| 2003 | 91.2 |  8.5 |    56   |         87        |   91   |         98        |   110   |              11              |
-| Diff |+20.1 | -4.4 |   +14   |        +29        |  +16   |        +17        |   +15   |             -12              |
-
-<br>
-
-* The measures of center *increased* --- the mean time went up by 20.1 minutes and the median time went up by 14 minutes
-
-* The measures of variability *decreased* --- the SD went down by 4.4 minutes and the IQR went down by 12 minutes
-
-* The five-number summary increased (min, Q<sub>1</sub>, med, Q<sub>3</sub>, max)
-
-
 ## Comparing with Boxplots
 
 The box displays the middle 50% of the distribution; its width  is the IQR. The whiskers extend to the smallest and largest values in the dataset *that are not outliers*.
@@ -159,6 +142,34 @@ $\text{lower quartile} - 1.5 * IQR = 87 - (1.5 * 11) = 70.5$
 $\text{upper quartile} + 1.5 * IQR = 98 + (1.5 * 11) = 114.5$ 
 
 *As the plots show, there are two 2003 data points < 70.5 minutes.*
+
+
+## We Need More Than One Plot
+
+The skewness statistic for 2003 is strongly negatively, largely due to the two low outliers identified (56 and 58 minutes). If they are removed, skewness drops to 0.11. The distribution plot appears to be roughly symmetric if we disregard the two outliers.
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("../images/skewness03.png", dpi = 150)
+```
+
+The 1978 plot is bimodal; the skewness measure is not reliable.
+
+
+##
+
+| Year | Mean |  SD  | Minimum | Lower<br>Quartile | Median | Upper<br>Quartile | Maximum | Interquartile<br>Range (IQR) |
+|:----:|:----:|:----:|:-------:|:-----------------:|:------:|:-----------------:|:-------:|:----------------------------:|
+| 1978 | 71.1 | 12.9 |    42   |         58        |   75   |         81        |    95   |              23              | 
+| 2003 | 91.2 |  8.5 |    56   |         87        |   91   |         98        |   110   |              11              |
+| Diff |+20.1 | -4.4 |   +14   |        +29        |  +16   |        +17        |   +15   |             -12              |
+
+<br>
+
+* The measures of center *increased* --- the mean time went up by 20.1 minutes and the median time went up by 14 minutes
+
+* The measures of variability *decreased* --- the SD went down by 4.4 minutes and the IQR went down by 12 minutes
+
+* The five-number summary increased (min, Q<sub>1</sub>, med, Q<sub>3</sub>, max)
 
 
 ## STEP 4: Draw Inferences

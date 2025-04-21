@@ -63,16 +63,16 @@ knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
 
 ## Learning Goals for Chapter 6
 
-Chapter 6 extends what we learned about statistical significance in previous chapters to compare two groups with parameters $\mu_1$ and $\mu_2$, where $\mu$ is the population *mean*. A sample mean will be designated with $\bar{x}$. We typically will have a null of $H_0: \mu_1 = \mu_2$ or $H_0: \mu_1 - \mu_2 = 0$ (i.e., *no difference*). 
+Chapter 6 extends what we learned about statistical significance in previous chapters to compare two groups with parameters $\mu_1$ and $\mu_2$, where $\mu$ is the population *mean*. A sample mean will be designated with $\bar{x}$. We typically will have a null of $H_0: \mu_1 = \mu_2$ or $H_0: \mu_1 - \mu_2 = 0$ (i.e., *no difference* between groups). 
 
-We can also estimate the size of difference between $\mu_1$ and $\mu_2$.
+We can also estimate the size of the difference $\mu_1 - \mu_2$.
 
 <hr>
 
-In this chapter, you will learn to: 
-
 * Compare two sample means numerically and graphically. [Section 6.1]
 * Carry out a simulation-based analysis to investigate the difference between two population means. [Section 6.2]
+
+We will *not* cover Section 6.3, regarding theory-based inference.
 
 
 ## Learning Goals for Section 6.2
@@ -99,7 +99,7 @@ In this chapter, you will learn to:
 
 None! However, you will want to review and be familiar with the vocabulary and methods from previous chapters. Everything we do here builds on the Preliminaries through Chapter 5.
 
-In particular, there are strong similarities between Section 5.2 and Section 6.2. The primary difference is that we are focused on means rather than proportions in Chapter 6.
+In particular, there are strong similarities between Section 5.2 and Section 6.2. The primary difference in Chapter 6 is that we will be focused on *means* rather than *proportions*.
 
 We also will be using quantitative summaries from Section P.2.
 

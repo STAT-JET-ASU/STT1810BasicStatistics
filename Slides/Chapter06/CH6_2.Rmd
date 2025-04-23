@@ -114,14 +114,17 @@ Keep in mind the new symbols for this chapter...
 
 ## Hypotheses: Comparing Parameters
 
-We will write our hypotheses using parameters, like we did in Chapter 5. We define ***two*** parameters, one for each of the two groups of the explanatory variable.
+We will write our hypotheses using population parameters, like we did in Chapter 5. We define two parameters, one for each of the two groups of the explanatory variable.
 
-$\mu_1$ = conditional mean of the quantitative *response variable* in Group 1 of the *explanatory variable*
+* $\mu_1$ = conditional mean of the quantitative *response variable* in Group 1 of the *explanatory variable*
 
-$\mu_2$ = conditional mean of the quantitative *response variable* in Group 2 of the *explanatory variable*
+* $\mu_2$ = conditional mean of the quantitative *response variable* in Group 2 of the *explanatory variable*
 
-* $H_0:$ The conditional mean in Group 1 is the same as the conditional mean in Group 2.
-* $H_a:$ The conditional mean in Group 1 is (*less than*, *different than*, or *greater than*) the conditional mean in Group 2.
+<hr>
+
+$H_0:$ The mean in Group 1 is the same as the mean in Group 2.
+
+$H_a:$ The mean in Group 1 is (*less than*, *greater than*, or *different than*) the mean in Group 2.
 
 
 ## Stating the Hypotheses Using Symbols
@@ -136,9 +139,9 @@ $$H_0: \mu_1 = \mu_2$$
 
 $$H_a: \mu_1 < \mu_2$$
 
-$$H_a: \mu_1 \neq \mu_2$$
-
 $$H_a: \mu_1 > \mu_2$$
+
+$$H_a: \mu_1 \neq \mu_2$$
 
 
 ## Writing the Hypotheses as Differences
@@ -151,9 +154,9 @@ We can do the same for the alternative hypothesis...
 
 $$H_a: \mu_1 -\mu_2 < 0$$
 
-$$H_a: \mu_1 - \mu_2 \neq 0$$
+$$H_a: \mu_1 - \mu_2 > 0$$
 
-$$H_a: \mu_1 -\mu_2 > 0$$
+$$H_a: \mu_1 -\mu_2 \neq 0$$
 
 The sample difference ($\bar{x}_1 - \bar{x}_2$) will be the statistic for the test.
 

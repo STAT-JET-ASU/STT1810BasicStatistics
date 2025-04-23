@@ -71,11 +71,11 @@ knitr::include_graphics("../images/oldfaithfulsign.jpg", dpi = 175)
 
 The National Park Service's website presents a question that has been asked many times: "I heard Old Faithful isn’t as faithful as it used to be. Is it slowing down?"
 
-Their answer is the information presented on the previous slide about being able to predict eruptions, and also that the number *may* have decreased a little over time. Perhaps we can better explore this question by examining some data.
+Their answer is the information presented on the previous slide about being able to predict eruptions, and also that the number *might* have decreased a little over time. Perhaps we can better explore this question by examining some data.
 
 **Research Question:** Has there been a change in Old Faithful's eruption pattern between 1978 and 2003? Is it slowing down?
 
-**Note:** We will be exploring *time between eruptions*. However, if the time between eruptions changes, then so does the number or pattern of eruptions per day.
+**Note:** We will be looking at the *time between eruptions*. However, if the time between eruptions changes, then so does the overall number or pattern of eruptions per day.
 
 
 ## STEP 2: Design a Study / Collect Data
@@ -127,9 +127,9 @@ A data point may be an outlier *relative to the group it belongs to*.
 
 **For 1978:**
 
-$\text{lower quartile} - 1.5 * IQR = 58 - (1.5 * 23) = 23.5$ 
+$\text{lower quartile} - 1.5 \times IQR = 58 - (1.5 \times 23) = 23.5$ 
 
-$\text{upper quartile} + 1.5 * IQR = 81 + (1.5 * 23) = 115.5$ 
+$\text{upper quartile} + 1.5 \times IQR = 81 + (1.5 \times 23) = 115.5$ 
 
 *None of the data points in 1978 fall outside these two boundaries.*
 
@@ -137,11 +137,11 @@ $\text{upper quartile} + 1.5 * IQR = 81 + (1.5 * 23) = 115.5$
 
 **For 2003:**
 
-$\text{lower quartile} - 1.5 * IQR = 87 - (1.5 * 11) = 70.5$ 
+$\text{lower quartile} - 1.5 \times IQR = 87 - (1.5 \times 11) = 70.5$ 
 
-$\text{upper quartile} + 1.5 * IQR = 98 + (1.5 * 11) = 114.5$ 
+$\text{upper quartile} + 1.5 \times IQR = 98 + (1.5 \times 11) = 114.5$ 
 
-*As the plots show, there are two 2003 data points < 70.5 minutes.*
+*As the plots show, there are two 2003 data points $< 70.5$ minutes.*
 
 
 ## We Need More Than One Plot

@@ -146,7 +146,7 @@ $\text{upper quartile} + 1.5 \times IQR = 98 + (1.5 \times 11) = 114.5$
 
 ## We Need More Than One Plot
 
-The skewness statistic for 2003 is strongly negatively, largely due to the two low outliers identified (56 and 58 minutes). If they are removed, skewness drops to 0.11. The distribution plot appears to be roughly symmetric if we disregard the two outliers.
+The skewness statistic for 2003 is strongly negatively, largely due to the two low outliers we identified (56 and 58 minutes). If they are removed, then the skewness drops to 0.11. The plot appears roughly symmetric if we disregard outliers. Maybe bimodal?
 
 ```{r, echo = FALSE, fig.align="center"}
 knitr::include_graphics("../images/skewness03.png", dpi = 150)

@@ -71,7 +71,7 @@ knitr::include_graphics("../images/oldfaithfulsign.jpg", dpi = 175)
 
 The National Park Service's website presents a question that has been asked many times: "I heard Old Faithful isn’t as faithful as it used to be. Is it slowing down?"
 
-Their answer is the information presented on the previous slide about being able to predict eruptions, and also that the number *might* have decreased a little over time. Perhaps we can better explore this question by examining some data.
+Their answer is the information presented on the previous slide about being able to predict eruptions, and also that the number *might* have decreased over time. Perhaps we can better explore this question by examining some data.
 
 **Research Question:** Has there been a change in Old Faithful's eruption pattern between 1978 and 2003? Is it slowing down?
 
@@ -80,7 +80,7 @@ Their answer is the information presented on the previous slide about being able
 
 ## STEP 2: Design a Study / Collect Data
 
-**type of study:** observational study (*why*?)
+**type of study:** observational study
 
 **observational units:** individual geyser eruptions
 
@@ -174,18 +174,18 @@ The 1978 plot is bimodal; the skewness measure is not reliable.
 
 ## STEP 4: Draw Inferences
 
-In Section 6.2, you will learn how to use simulation to compare two group means to assess a statistical significance.
+In Section 6.2, you will learn how to use simulation to compare two group means to assess statistical significance.
 
-As we did with proportions, we will be looking at the difference between the two groups. We will use $\mu_1 - \mu_2$ to represent the difference in the population and $\bar{x}_1 - \bar{x}_2$ for the sample.
+We will be looking at the *difference* between the two groups. The population difference can be written symbolically as $\mu_1 - \mu_2$. For the sample difference, we will use $\bar{x}_1 - \bar{x}_2$. 
 
 Here we have $\bar{x}_{2003} - \bar{x}_{1978} = 91.2 - 71.1 = 20.1$ minutes. Is this difference just random chance or did Old Faithful's eruption process really change between 1978 and 2003?
 
-The same method could also be used to compare two *medians*, if we think the median is a better measure of center. 
+The same method could also be used to compare two *medians*. 
 
 Researchers have to be careful about the scope of conclusions they draw from this kind of observational study.
 
 
-## Think About It...
+## Think About It ...
 
 Based on the distributions of times between eruptions, in which year would you have preferred to be a tourist waiting to see the next eruption of Old Faithful?
 
@@ -202,7 +202,7 @@ $$H_0: \mu_{2003} = \mu_{1978} \text{ vs. } H_a: \mu_{2003} > \mu_{1978}$$
 knitr::include_graphics("../images/oldfaithfultest.png", dpi = 150)
 ```
 
-Based on the data, what should we conclude about Old Faithful?
+Based on the *p*-value, what can we conclude about Old Faithful?
 
 
 ##

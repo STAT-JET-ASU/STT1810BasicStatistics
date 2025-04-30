@@ -140,9 +140,9 @@ The observed count of seatbelt users is smaller in 2018, but it is also true tha
 
 <br>
 
-rate of use in 2018 &ndash; rate of use in 2008 = 89.6% &ndash; 83.0% = 6.6% 
+(2018 use rate) -- (2008 use rate) = $89.6\% - 83.0\% = 6.6\%$
 
-More people are using seatbelts! This 6.6% difference would be thousands of drivers and passengers, given the sample size.
+More people are using seatbelts! This $6.6\%$ difference would be thousands of drivers and passengers, given the sample size.
 
 Perhaps visualizing proportions for these two years would help.
 
@@ -181,7 +181,7 @@ Alternatively...
 
 $$\%IR = (RR - 1) \times 100\% = (1.08 - 1) \times 100\% = 8\%$$
 
-In 2008, the probability of observing a driver or front passenger wearing a seatbelt was 0.83. In 2018, it was 0.83 plus 8% of 0.83 (0.83 + 0.08 x 0.83), which gives us our observed 0.896 in 2018. There was an 8% *change* in probability from the baseline.
+In 2008, the probability of observing a driver or front passenger wearing a seatbelt was 0.83. In 2018, it was 0.83 plus 8% of 0.83 (0.83 + 0.08 x 0.83), which gives us an observed of 0.896 in 2018. There was an 8% *change* in probability from the baseline.
 
 
 ## Segmented Bar Plot (3 Variables)

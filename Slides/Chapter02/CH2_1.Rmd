@@ -52,9 +52,9 @@ knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
 
 * **We will discuss *breadth* of results (generalization) in Chapter 2.**
 
-* We will learn about size for an effect (estimation) in Chapter 3.
+* We will discover the *size* of an effect (estimation) in Chapter 3.
 
-* Chapter 4 will introduce the idea of causation, the last of the four pillars. 
+* Chapter 4 will introduce the concept of causation, the last of the four pillars.  
 
 :::
 
@@ -81,14 +81,13 @@ We will do Sections 2.1 and 2.2 in our course. They introduce the concepts of ra
 <hr>
 
 * Describe how to select a random sample. [Section 2.1]
-* Understand and predict sampling distributions for a sample proportion and a sample mean. [Section 2.1 and Section 2.2]
-* *We will not cover Sections 2.3 and 2.4 (theory and bootstrapping).*
+* Understand and predict sampling distributions for a sample proportion and a sample mean. [Sections 2.1 and 2.2]
+
+We will *not* cover Sections 2.3 and 2.4 (theory / bootstrapping).
 
 <hr>
 
-This material builds on the Preliminaries and Chapter 1. You will need to remember and use vocabulary and concepts from those Chapters to understand the new material in this section. 
-
-Section 2.1 provides a foundation for the upcoming Section 3.2.
+This material builds on the Preliminaries and Chapter 1. You will need to remember and use vocabulary and concepts from those Chapters to understand new material in this section. Section 2.1 provides a foundation for the upcoming Section 3.2.
 
 
 ## Learning Goals for Section 2.1
@@ -185,7 +184,7 @@ If we take many, many random samples of the same size from a population with par
 
 ## Key Central Limit Theorem Ideas
 
-The **<mark>Central Limit Theorem</mark>** describes the sampling distributions of some statistics from finite populations, such as $\hat{p}$---if we meet the necessary validity conditions. 
+The **<mark>Central Limit Theorem</mark>** describes the sampling distributions of some statistics from finite populations, such as $\hat{p}$---if we meet the necessary validity conditions, shown below. 
 
 * We have a large, finite population with a parameter $\pi$. Here, *finite* means it is possible to count the observational units.
 

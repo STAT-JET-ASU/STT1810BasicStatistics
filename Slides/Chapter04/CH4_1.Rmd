@@ -50,11 +50,11 @@ knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
 
 * We addressed strength of evidence (significance) in Chapter 1. ✔ ***Great job!***
 
-* We addressed the breadth of results (generalization) in Chapter 2. ✔ ***Great job!***
+* We addressed breadth of results (generalization) in Chapter 2. ✔ ***Great job!***
 
-* We addressed the size for an effect (estimation) in Chapter 3. ✔ ***Great job!***
+* We addressed the size of an effect (estimation) in Chapter 3. ✔ ***Great job!***
 
-* **Chapter 4 introduces *causation*, the last of the four pillars.**
+* **Chapter 4 introduces the concept of *causation*, the last of the four pillars.**
 
 :::
 
@@ -85,18 +85,18 @@ Overall, the main goal is to explain when and why we can infer ***cause-and-effe
 
 ## Section 4.1 New Vocabulary
 
-**<mark>associated</mark> :** two variables are associated or related to each other if the distribution of one variable is different across the values of the other variable
+**<mark>association</mark> :** two variables are associated or related to each other if the distribution of one variable is different across the values of the other variable
 
 ***Example:*** In the game of Monopoly, as you move around the four sides of the board from Go, each side has higher prices than the preceding side. Side and price are associated.
 
-**<mark>explanatory variable</mark> :** if the alternative hypothesis is true, this is the variable that explains changes in the response variable (it may also be called an **independent** or **predictor variable**). 
+**<mark>explanatory variable</mark> :** if the alternative hypothesis is true, this is the variable that explains changes in the response variable (it may also be called an **<mark>independent / predictor variable</mark>**). 
 
 ***Example:*** In Example P.2, we explored the duration (in minutes) of Super Bowl national anthem performances. We considered other variables like gender and musical genre to try to explain observed differences in performance lengths.
 
 
 ##
 
-**<mark>response variable</mark> :** if the alternative hypothesis is true, this is the variable that is impacted by the explanatory variable (it is also sometimes known as a **dependent** or  **predicted variable**)
+**<mark>response variable</mark> :** if the alternative hypothesis is true, this is the variable that is impacted by the explanatory variable (it is also sometimes known as a **<mark>dependent / predicted variable</mark>**)
 
 ***Example 1:*** In Example P.2, the response variable is performance length. This variable may depend on a number of other factors, like the gender of the singer, the musical genre, the year of the performance, or whether it is a solo/group performance.
 
@@ -109,7 +109,7 @@ Overall, the main goal is to explain when and why we can infer ***cause-and-effe
 
 **<mark>confounding variable</mark> :** a variable related to the explanatory and response variables in such a way that its effects on the response variable cannot be separated from the effects of the explanatory variable---which means that it (*problematically*) provides another possible explanation for the observed results 
 
-You may also see references to what are called **<mark>lurking variables</mark>** in some texts or videos. The distinction often made between the two is that lurking variables are confounding variables that are *not measured or accounted for* in the study. 
+You may also see references to what is called a **<mark>lurking variable</mark>** in texts or videos. The distinction often made between the two is that a lurking variables is a type of confounding variable that was  *not measured or accounted for* in the study. 
 
 We will not make a distinction between the two in this class, and instead we will use only the term confounding variable. 
 
@@ -160,7 +160,7 @@ In everyday speech, we often say two things are ***correlated*** when they are r
 
 In statistics, we generally say that variables are ***associated*** when they are related to one another. 
 
-A correlation, on the other hand, is a specific kind of relationship or association between quantitative variables---usually that they have a linear relationship when plotted against one another on a scatterplot. In other words, they roughly form a line.
+A correlation, on the other hand, is a specific kind of relationship or association between quantitative variables---it describes how strongly they show a linear (straight-line) relationship when they are plotted as the X and Y variables on a scatterplot.
 
 There are several special correlation statistics for other kinds of associations, but we will not cover those in this class.
 

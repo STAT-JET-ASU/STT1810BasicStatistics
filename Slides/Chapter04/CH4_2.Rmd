@@ -50,11 +50,11 @@ knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
 
 * We addressed strength of evidence (significance) in Chapter 1. ✔ ***Great job!***
 
-* We addressed the breadth of results (generalization) in Chapter 2. ✔ ***Great job!***
+* We addressed breadth of results (generalization) in Chapter 2. ✔ ***Great job!***
 
-* We addressed the size for an effect (estimation) in Chapter 3. ✔ ***Great job!***
+* We addressed the size of an effect (estimation) in Chapter 3. ✔ ***Great job!***
 
-* **Chapter 4 introduces *causation*, the last of the four pillars.**
+* **Chapter 4 introduces the concept of *causation*, the last of the four pillars.**
 
 :::
 
@@ -111,24 +111,33 @@ Overall, the main goal is to explain when and why we can infer cause-and-effect 
 
 **<mark>observational study</mark> :** study in which the researchers observe individuals and measure variables of interest, but they do not intervene in order to attempt to influence responses
 
-***Examples:*** Example P.2, where we investigated how long it takes performers to sing the national anthem; Exploration 3.1, where we analyzed whether people turn their heads left or right when they kiss. Researchers recorded "naturally occurring" data.
+***Example 1:*** In Example P.2, we explored how long (in minutes) it takes performers to sing the national anthem at the Super Bowl, and whether it differs based on variables like performer gender, genre of music, solo versus group performance, or year. 
 
-**<mark>experiment</mark> :** a study in which the researchers manipulate the explanatory variable and actively assign study participants (or subjects) to treatment groups
+***Example 3:*** In Exploration 1.4, we considered whether uniform color (red or blue) seems to give a competitor an advantage in the combat sport events at the Olympics. 
 
-***Examples:*** In a clinical drug trial, the researchers assign some participants to try a new drug for allergies and the rest of the participants to a group that takes a similar-looking inactive pill. In a psychology study, participants are assigned to look at print ads or watch television commercials for candidates.
+***Example 3:*** In Exploration 3.1, we analyzed whether people turn their heads left or right when they kiss. 
+
+In all three of these examples, researchers recorded "naturally occurring" data. They did not influence the process / variables.
 
 
 ##
 
-**<mark>treatment</mark> :** the assigned conditions/experimental groups in an experiment
+**<mark>treatment</mark> :** the assigned conditions or experimental groups in an experiment
 
-**<mark>control</mark> :** a do-nothing or placebo treatment in an experiment
+**<mark>control</mark> :** a "do-nothing" or placebo treatment in an experiment
+
+**<mark>experiment</mark> :** a study in which the researchers manipulate the explanatory variable and actively assign study participants (i.e., subjects or experimental units) to treatment groups
+
+***Examples:*** In a clinical drug trial, the researchers assign some participants to take a new drug for allergies and the rest to take a similar-looking inactive pill (placebo). In a psychological study, some participants are assigned to look at print ads while others watch television commercials for political candidates.
 
 **<mark>randomized experiment</mark> :** a study where experimental units are randomly assigned to two or more treatment conditions and the explanatory variable is actively imposed on the subjects
 
+
+##
+
 **<mark>block study design (randomized block design)</mark> :** a study design that begins by forming blocks consisting of individuals that are similar in some way that may be related to the response (a way that could be confounding); random assignment of treatments is then carried out separately with each block
 
-***Example:*** Subjects in an allergy drug experiment are grouped by the severity of their allergies (mild, moderate, severe), then each group is randomized separately into the two treatments.
+***Example:*** The participants in a new allergy drug experiment are first "blocked" (split into groups) by the severity of their allergies (mild, moderate, severe). The individuals in each block are then randomized separately into the new drug and placebo groups, which ensures that all three allergy severities are represented in both experimental groups.
 
 ##
 

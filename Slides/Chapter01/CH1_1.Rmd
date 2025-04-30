@@ -65,7 +65,7 @@ knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
 
 * We will learn about effect size of results (*estimation*) in Chapter 3.
 
-* Chapter 4 will introduce the idea of *causation*, the last of the four pillars. 
+* Chapter 4 will introduce the concept of *causation*, the last of the four pillars. 
 
 :::
 
@@ -81,7 +81,7 @@ knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
 
 <hr>
 
-We will not cover Section 1.5, which introduces a theory-based method of inference for a single proportion.
+We will *not* cover Section 1.5, which introduces a theory-based method of inference for a single proportion.
 
 
 ## Learning Goals for Section 1.1 

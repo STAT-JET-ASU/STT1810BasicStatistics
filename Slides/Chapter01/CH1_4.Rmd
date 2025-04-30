@@ -56,7 +56,7 @@ knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
 
 * We will learn about effect size of results (*estimation*) in Chapter 3.
 
-* Chapter 4 will introduce the idea of *causation*, the last of the four pillars. 
+* Chapter 4 will introduce the concept of *causation*, the last of the four pillars. 
 
 :::
 
@@ -70,7 +70,7 @@ knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
 * Calculate a standardized statistic for a single proportion and evaluate the strength of evidence it provides against a null hypothesis. [Section 1.3]
 * Describe how the distance of the observed statistic from the parameter value specified by the null hypothesis, sample size, and one- vs. two-sided tests affect the strength of evidence against the null hypothesis. [Section 1.4]
 
-We will not cover Section 1.5, regarding theory-based inference.
+We will *not* cover Section 1.5, regarding theory-based inference.
 
 
 ## Learning Goals for Section 1.4

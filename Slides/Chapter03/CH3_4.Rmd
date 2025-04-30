@@ -49,11 +49,11 @@ knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
 
 * We addressed strength of evidence (significance) in Chapter 1. ✔ ***Good job!***
 
-* We will discuss breadth of results (generalization) in Chapter 2. ✔ ***Good job!***
+* We addressed breadth of results (generalization) in Chapter 2. ✔ ***Great job!***
 
-* **We will learn about *size* for an effect (estimation) in Chapter 3.**
+* **We will discover the *size* of an effect (estimation) in Chapter 3.**
 
-* Chapter 4 will introduce the idea of causation, the last of the four pillars. 
+* Chapter 4 will introduce the concept of causation, the last of the four pillars. 
 
 :::
 
@@ -70,7 +70,7 @@ Chapter 3 focuses on ***estimation***, which is one of the four pillars of infer
 * Construct and interpret a confidence interval for a single population proportion using the 2SD method. [Section 3.2]
 * Identify how factors (confidence level, sample size, SD) affect the width of the confidence interval. [Section 3.4]
 
-We will not cover Section 3.3, theoretical estimation for a mean.
+We will *not* cover Section 3.3, theoretical estimation for a mean.
 
 
 ## Learning Goals for Section 3.4

@@ -65,7 +65,7 @@ knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
 
 ## Learning Goals for Chapter 5
 
-Chapter 5 extends what we learned about statistical significance in previous chapters to compare two groups with parameters $\pi_1$ and $\pi_2$. In this case, rather than testing a null hypothesis about whether $\pi$ is equal to some value, we will typically have a null of $H_0: \pi_1 = \pi_2$ **<u>or</u>** $H_0: \pi_1 - \pi_2 = 0$ &rarr; there is *no difference*. 
+Chapter 5 extends what we learned about statistical significance in previous chapters to compare two groups with parameters $\pi_1$ and $\pi_2$. In this case, rather than testing a null hypothesis about whether $\pi$ is equal to some value, we will typically have a null of ***no difference***, written as $H_0: \pi_1 = \pi_2$ or $H_0: \pi_1 - \pi_2 = 0$. 
 
 We can also estimate the size of difference between $\pi_1$ and $\pi_2$.
 

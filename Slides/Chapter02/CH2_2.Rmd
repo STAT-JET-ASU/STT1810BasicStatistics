@@ -51,9 +51,9 @@ knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
 
 * **We will discuss *breadth* of results (generalization) in Chapter 2.**
 
-* We will learn about size for an effect (estimation) in Chapter 3.
+* We will discover the *size* of an effect (estimation) in Chapter 3.
 
-* Chapter 4 will introduce the idea of causation, the last of the four pillars. 
+* Chapter 4 will introduce the concept of causation, the last of the four pillars. 
 
 :::
 
@@ -62,19 +62,18 @@ knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
 
 ## Learning Goals for Chapter 2
 
-We will do Sections 2.1 and 2.2. They introduce the concepts of random samples, the sampling distributions of $\hat{p}$ and $\bar{x}$, and the ***Central Limit Theorem***.
+We will do Sections 2.1 and 2.2 in our course. They introduce the concepts of random samples, sampling distributions of $\hat{p}$ and $\bar{x}$, and the ***Central Limit Theorem***.
 
 <hr>
 
 * Describe how to select a random sample. [Section 2.1]
-* Understand and predict sampling distributions for a sample proportion and a sample mean. [Section 2.1 and Section 2.2]
-* *We will not cover Sections 2.3 and 2.4 (theory and bootstrapping).*
+* Understand and predict sampling distributions for a sample proportion and a sample mean. [Sections 2.1 and 2.2]
+
+We will *not* cover Sections 2.3 and 2.4 (theory / bootstrapping).
 
 <hr>
 
-This material builds on the Preliminaries and Chapter 1. You will need to remember and use vocabulary and concepts from those sections to understand the new material in this section. 
-
-Section 2.1 provides a foundation for the upcoming Section 3.2.
+This material builds on the Preliminaries and Chapter 1. You will need to remember and use vocabulary and concepts from those Chapters to understand new material in this section. Section 2.1 provides a foundation for the upcoming Section 3.2.
 
 
 ## Learning Goals for Section 2.2
@@ -115,7 +114,7 @@ To distinguish between a quantitative variable and a categorical variable in des
 
 ## Key Central Limit Theorem Ideas
 
-The **<mark>Central Limit Theorem</mark>** describes the sampling distributions of certain statistics from finite populations, like $\bar{x}$, if we meet the validity criteria. Just like Section 2.1, we are sampling from large, finite populations.
+The **<mark>Central Limit Theorem</mark>** describes the sampling distributions of certain statistics, like $\bar{x}$, when we randomly sample from large finite populations. The CLT will apply when we meet the **<mark>validity criteria</mark>**, which are listed below.
 
 * We have a large, finite (i.e., *countable*) population with a mean symbolized by $\mu$ and a standard deviation symbolized by $\sigma$.
 
@@ -130,16 +129,16 @@ The **<mark>Central Limit Theorem</mark>** describes the sampling distributions 
 
 If all of the key CLT ideas included on the previous slide are true, then the sampling distribution of the sample mean ($\bar{x}$) will have the following distribution properties.
 
-**<mark>shape</mark> :** The sampling distribution will be approximately normal if the population is not too skewed and $n = 20$ or more. (*Many other sources will say $n = 30$ or more, to help account for skewed distributions and to be more cautious/conservative.*)
+**<mark>shape</mark> :** The sampling distribution will be approximately normal if the population is not too skewed and $n = 20$ or more. (*Many other sources will say $n = 30$ or more, to help account for skewed populations and to be more cautious/conservative.*)
 
 As a special case, the shape of the sampling distribution of $\bar{x}$ will be *exactly* normal if we sample from a normal population.
 
-**<mark>center</mark> :** The mean of the sampling distribution will be equal to the population mean $\mu$ and $\bar{x}$ is unbiased like $\hat{p}$, so all possible values of the sample mean $\bar{x}$ for a given $n$ average out to be $\mu$.
+**<mark>center</mark> :** The mean of the sampling distribution of $\bar{x}$ will be equal to the population mean $\mu$, because the statistic $\bar{x}$ is an unbiased estimator of $\mu$. This is the same as we saw for $\pi$ and $\hat{p}$.
 
 
 ##  Variability
 
-The standard deviation of the sampling distribution of $\bar{x}$ will be a function of $\sigma$ and the sample size $n$.
+The standard deviation of the sampling distribution of $\bar{x}$ will be a function of the population SD $\sigma$ and the sample size $n$.
 
 $$\text{the standard deviation of }\bar{x} = SD(\bar{x}) = \frac{\sigma}{\sqrt{n}}$$
 

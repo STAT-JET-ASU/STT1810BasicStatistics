@@ -19,8 +19,67 @@ knitr::opts_chunk$set(
 library(fontawesome)
 ```
 
+##
 
-## Why Research Ethics Training?
+***Definition***
+<hr>
+**professional ethics:** Generally, a set of principles that governs how a person in a particular discipline performs their work and relates with fellow professionals, stakeholders, clients, and the public. Most specialty fields have their own rules of conduct.
+<hr>
+
+&nbsp;
+
+***Definition***
+<hr>
+**human subject research ethics:** Moral principles for the design and conduct of research involving living people, to ensure that research is done in a way that respects their rights, welfare, and dignity. Key aspects include informed consent, minimizing risks, privacy, and fairly balancing benefits and burdens. 
+<hr>
+
+
+## American Statistical Association | Ethical Guidelines for Statistical Practice (Updated Feb 2022)
+
+The American Statistical Association (ASA) has a [code of ethics](https://www.amstat.org/your-career/ethical-guidelines-for-statistical-practice) for statistical practitioners. This includes everyone who engages in statistical practice, regardless of education level, degree field, job title, or profession. 
+
+The first work on the guidelines began in 1949, but ASA did not formally adopt any code until 1989. A 1999 update emphasized the rights of human/animal subjects and clear communication. Other revisions addressed new challenges such as Big Data. In the future, ASA will likely have to revise the guidelines again to address topics like artificial intelligence.
+
+<mark>We are expected to follow the guidelines and encourage others to do the same.</mark>
+
+
+## The Principles
+
+**Principle A: Professional Integrity and Accountability** --- Take responsibility for your work. Use valid / appropriate methods. Represent your capabilities and activities honestly.
+
+**Principle B: Integrity of Data and Methods** --- Understand and reduce limitations, defects, and biases in the data and methods. Communicate the potential impacts on results.
+
+**Principle C: Responsibilities to Stakeholders** --- Stakeholders fund, contribute to, use, or are affected by statistical practices. Respect their interests, but they do not supersede ethics.
+
+**Principle D: Responsibilities to Research and Data Subjects, or Those Directly Affected** --- Do not misuse or condone  misuse of data. Protect and respect the rights human and animal subjects, and those who will be directly affected by statistical practices.
+
+
+##
+
+**Principle E: Responsibilities to Members of Multidisciplinary Teams** --- Statistical practice is often done in teams where the members have different professional standards. The statistical practitioner must know how to work ethically in such a team.
+
+**Principle F: Responsibilities to Fellow Statistical Practitioners and the Profession** --- Treat those who practice statistics and the profession with respect, in ways that strengthen our work.
+
+**Principle G: Responsibilities of Leaders/Supervisors/Mentors in Statistical Practice** --- Those who lead, supervise, or mentor people in statistical practice have a specific obligation to follow and promote these ethical guidelines.
+
+**Principle H: Responsibilities Regarding Potential Misconduct** --- We need to understand these guidelines, use due diligence to avoid false allegations while not overlooking possible violations, and adjudicate matters fairly, discreetly, and transparently. 
+
+
+## 
+
+**APPENDIX: Responsibilities of Organizations/Institutions** --- Organizations that collection, summarize, process, analyze, interpret, or present data, or develop and/or deploy models or algorithms, have the responsibility to use statistical practice in ways that are consistent with ASA guidelines, and to promote ethical statistical practice.
+
+<hr>   
+<hr>
+   
+As a statistics instructor and ASA member, it is my responsibility to promote ethical statistical practice among my students.
+
+In this class, we will not be designing studies and collecting data from human subjects for broad research purposes, but at times we will be working with data that was collected from people. In the future, you might also be involved in such research, and we are all increasingly exposed to research results via media.
+
+<hr>   
+<hr>
+
+## CITI Research Ethics Training
 
 The 1946--1947 [*Doctors' Trial*](https://encyclopedia.ushmm.org/content/en/article/the-doctors-trial-the-medical-case-of-the-subsequent-nuremberg-proceedings) was one of twelve WWII war-crimes trials that are known collectively as the *Nuremberg Trials*. Horrors had been committed on human beings in the name of "medical" research. Unfortunately, these kinds of grossly unethical actions were not limited to the war years, nor isolated to Nazi territory. In this training, you will learn about the development of human subjects research protections in the United States.
 

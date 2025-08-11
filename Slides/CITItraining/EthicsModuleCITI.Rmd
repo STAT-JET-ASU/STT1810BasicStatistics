@@ -21,14 +21,14 @@ library(fontawesome)
 
 ##
 
-***Definition***
+***Key Idea***
 <hr>
 **professional ethics:** Generally, a set of principles that governs how a person in a particular discipline performs their work and relates with fellow professionals, stakeholders, clients, and the public. Most specialty fields have their own rules of conduct.
 <hr>
 
 &nbsp;
 
-***Definition***
+***KeyIdea***
 <hr>
 **human subject research ethics:** Moral principles for the design and conduct of research involving living people, to ensure that research is done in a way that respects their rights, welfare, and dignity. Key aspects include informed consent, minimizing risks, privacy, and fairly balancing benefits and burdens. 
 <hr>
@@ -43,7 +43,7 @@ The first work on the guidelines began in 1949, but ASA did not formally adopt a
 <mark>We are expected to follow the guidelines and encourage others to do the same.</mark>
 
 
-## The Principles
+## ASA Ethical Principles
 
 **Principle A: Professional Integrity and Accountability** --- Take responsibility for your work. Use valid / appropriate methods. Represent your capabilities and activities honestly.
 
@@ -51,7 +51,7 @@ The first work on the guidelines began in 1949, but ASA did not formally adopt a
 
 **Principle C: Responsibilities to Stakeholders** --- Stakeholders fund, contribute to, use, or are affected by statistical practices. Respect their interests, but they do not supersede ethics.
 
-**Principle D: Responsibilities to Research and Data Subjects, or Those Directly Affected** --- Do not misuse or condone  misuse of data. Protect and respect the rights human and animal subjects, and those who will be directly affected by statistical practices.
+**Principle D: Responsibilities to Research and Data Subjects, or Those Directly Affected** --- Do not misuse or condone  misuse of data. Protect and respect the rights of subjects, and anyone who will be directly affected by statistical practices.
 
 
 ##
@@ -67,7 +67,7 @@ The first work on the guidelines began in 1949, but ASA did not formally adopt a
 
 ## 
 
-**APPENDIX: Responsibilities of Organizations/Institutions** --- Organizations that collection, summarize, process, analyze, interpret, or present data, or develop and/or deploy models or algorithms, have the responsibility to use statistical practice in ways that are consistent with ASA guidelines, and to promote ethical statistical practice.
+**APPENDIX: Responsibilities of Organizations/Institutions** --- Organizations or institutions that collect, summarize, process, analyze, interpret, or present data, or that work with models or algorithms, have the responsibility to use statistical practice in ways that are consistent with ASA guidelines, and to promote ethical statistical practice.
 
 <hr>   
 <hr>

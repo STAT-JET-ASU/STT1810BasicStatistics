@@ -115,7 +115,7 @@ What is the *probability* of each outcome in the random process?
 
 Summarized, what is the *probability distribution* for the process?
 
-How can we simulate the random process [using a computer](https://www.random.org/), or a physical/tactile tool like coins, dice, cards, or [spinners](https://shodor-education.github.io/interactivate/activities/AdjustableSpinner/#gsc.tab=0)?
+How can we simulate the random process [using a computer](https://www.random.org/), or a physical/tactile tool like coins, dice, cards, or a [spinner](https://shodor-education.github.io/interactivate/activities/AdjustableSpinner/#gsc.tab=0)?
 
 ```{r, echo = FALSE, fig.align="center"}
 knitr::include_graphics("../images/tactiletools.jpg", dpi = 175)

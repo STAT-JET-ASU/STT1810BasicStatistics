@@ -1,0 +1,105 @@
+---
+title: "Example 1.4 NAME"
+subtitle: "*Introduction to Statistical Investigations, 2^nd^ Edition*"
+author: "Jill E. Thomley | **STT 1810 BASIC STATISTICS** | Appalachian State University"
+date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
+output: 
+  ioslides_presentation:
+    logo: ../images/logoASU.jpg
+---
+
+```{r global_options, include = FALSE}
+knitr::opts_chunk$set(
+  message = FALSE,
+  warning = FALSE,
+  echo = FALSE,
+  comment = NA
+)
+library(tidyverse)
+```
+
+
+## Before We Begin…
+
+These slides were created to accompany the text [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html) --- Section 1.1 Introduction to Chance Models. 
+
+*This content does not replace reading the relevant textbook section.* It is for class presentation, review, and reference.
+
+See [AsULearn](https://asulearn.appstate.edu/) for additional readings, videos, and assignments.
+
+You can print these slides to a pdf for offline use using the print function in your browser.
+
+
+## Learning Goals for Section 1.4
+
+* Anticipate and explain why, when everything else remains the same, the *p*-value is smaller when the observed proportion of successes is farther away from the hypothesized value of the long-run proportion of successes.
+* Anticipate and explain why, when everything else remains the same, the *p*-value is smaller when the sample size is larger.
+* Recognize when a two-sided test / alternative hypothesis is suggested by the research question.
+* Anticipate and explain why, when everything else remains the same, the *p*-value is larger when the alternative hypothesis is two-sided.
+
+
+## The Spiral Approach to Investigation
+
+:::::: {style="display: flex;"}
+
+::: {}
+
+```{r fig.align="center"}
+knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
+```
+
+:::
+
+::: {}
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+:::
+
+::: {}
+
+* Statistical investigations typically include these six steps in some form. 
+
+* These six steps may not always be followed in this exact order, but a good statistical investigation will go through all these steps before completion.
+
+* The findings of one study typically will generate new research questions; that's how science works!
+
+:::
+
+::::
+
+
+## STEP 1: Ask a Research Question
+
+**Research Question:** TBA
+
+
+## STEP 2: Design a Study and Collect Data
+
+TBA
+
+
+## STEP 3: Explore the Data
+
+TBA
+
+
+## STEP 4: Draw Inferences
+
+TBA
+
+
+## STEP 5: Formulate Conclusions
+
+TBA
+
+
+## STEP 6: Look Back and Ahead
+
+TBA
+
+
+## References
+
+TBA
+

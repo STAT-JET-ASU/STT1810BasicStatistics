@@ -28,9 +28,20 @@ See [AsULearn](https://asulearn.appstate.edu/) for additional readings, videos, 
 You can print these slides to a pdf for offline use using the print function in your browser.
 
 
-## The Spiral Approach & The Four Pillars
+## 
 
-:::: {style="display: flex;"}
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("../images/statisticsgrammar.jpg", dpi = 160)
+```
+
+*Grammar gives us rules that are essential for any shared language.* 
+
+Statistics provides frameworks and methods to help make sense of the complex language of data. Thus, researchers can ***quantify uncertainty***, ***validate hypotheses***, and ***draw valid conclusions***. 
+
+
+## Recall: Spiral Approach & Four Pillars
+
+:::::: {style="display: flex;"}
 
 ::: {}
 
@@ -63,7 +74,7 @@ knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
 
 ## Learning Goals for Chapter 1
 
-* **Use the chance model to determine whether an observed statistic is unlikely to occur. [Section 1.1]**
+* Use the chance model to determine whether an observed statistic is unlikely to occur. [Section 1.1]
 * Calculate and interpret a *p*-value, and state the strength of evidence it provides against the null hypothesis. [Section 1.2]
 * Calculate a standardized statistic for a single proportion and evaluate the strength of evidence it provides against a null hypothesis. [Section 1.3]
 * Describe how the distance of the observed statistic from the parameter value specified by the null hypothesis, sample size, and one- vs. two-sided tests affect the strength of evidence against the null hypothesis. [Section 1.4]
@@ -98,17 +109,17 @@ knitr::include_graphics("../images/molecularmodel.jpg", dpi = 110)
 
 ## Textbook Definitions
 
-**model** (general)
-
-* A representation that is meant to emulate reality, but which is often smaller or simpler than the real process or object.
-
 **<mark>model</mark>** (mathematical) 
 
 * A representation using math or probability tools that is meant to closely match reality, but always making *assumptions* about that reality, which may or may not be true.
 
 **<mark>chance model</mark>**
 
-* A real or computerized process to generate data according to a well-understood set of conditions. --- *to model some real-life random process we are interested in studying*
+* A real or computerized process to generate data according to a well-understood set of conditions." --- *to model some real-life random process we are interested in studying*
+
+<hr> 
+
+In the real world we are almost always dealing with incomplete data (i.e., *samples*). Therefore, in statistics, we logically compare outcomes we observe in the real world to hypothetical chance models. This is the foundation of *statistical inference*.
 
 
 ## Section 1.1 New Vocabulary
@@ -133,18 +144,18 @@ The model reflects important properties of the real-life random process we are s
 
 ***Example 1:*** For the ESP test we did, one condition was using an "open deck" (*sampling with replacement*) so that the probability of randomly guessing the correct symbol on each trial would stay the same. We *assumed* there was no other way for someone to know which card was drawn (e.g., marked cards, cheating).
 
-***Example 2:*** For the Monty Hall game, we *assumed* that the prize was equally likely to be placed behind any of the three doors. In a different version, we might assume unequal probabilities.
+***Example 2:*** For the Monty Hall game, we *assumed* that the prize was equally likely to be placed behind any of the three doors. In our extended version, another condition was that we opened all of the unchosen doors *except one* after the initial guess.
 
 
 ## 
 
 **<mark>parameter</mark> :** a long-run numerical property of a random process
 
-***Example 1:*** For the ESP example, the parameter is each person's innate chance of correctly identifying a card. If they do not have ESP, that chance is 0.2, versus *more than* 0.2 if they do have ESP. This probability is reflected in their *long-run* performance on the test---many, many more trials than 25. 
+***Example 1:*** For the ESP example, the parameter is each person's innate chance of correctly identifying a card. That chance is 0.2 if they do not have ESP, versus *more than* 0.2 if they do have ESP. This probability is reflected in their *long-run* test performance---many more trials than 25. 
 
 Remember, the ESP testing web site suggests that 50+ trials are needed to get "a reliable indication of your performance".
 
-***Example 2:*** Across a large number of instances of the Monty Hall game, what is the probability a wins player if they switch? This is one scenario we investigated using our 1000+ simulations of the game using the applet to simulate playing the game. 
+***Example 2:*** Across a large number of instances of the Monty Hall game, what is the probability a wins player if they switch? This is one scenario we investigated using our 1000+ simulations of the game using applets. 
 
 The *long-run* probability of winning the game if you switch is the parameter for the random process.
 
@@ -155,7 +166,7 @@ The *long-run* probability of winning the game if you switch is the parameter fo
 
 ***Example 1:*** One card presented for identification in our Zener card ESP test is an observational unit. The sample is the total number of cards a person attempts in their test.
 
-***Example 2:*** Playing one trial of the Monty Hall game is a unit; the number of rounds we play is the sample size.
+***Example 2:*** Playing one round of the Monty Hall game is a unit; the number of rounds we play is the sample size.
 
 
 **<mark>sample size</mark> :** the number of observational units ($n$) in a sample
@@ -188,9 +199,9 @@ This is a method for assessing the evidence provided by data.
 
 **<mark>Simulate</mark> :** Identify a possible "by-chance-alone" explanation for the data. Repeatedly simulate values of the statistic that *could* happen when the chance model is true---purely random results.  
 
-**<mark>Strength of evidence</mark> :** Compare your observed statistic to many simulated values of the same statistic that you generate using a chance model that fits the situation you are investigating. 
+**<mark>Strength of evidence</mark> :** Compare your observed statistic to the simulated values. As you do this, consider whether the statistic from the sample data is *unlikely* when the chance model is true. 
 
-If we decide the observed statistic is unlikely to occur by chance alone, we can logically conclude that the observed data provide strong evidence against the *plausibility* (*believability* or *credibility*) of the chance model --- but *NOT* "proof". 
+If we decide the observed statistic is unlikely to occur by chance alone, we can logically conclude that the observed data provide us strong evidence against the *plausibility* (i.e., the *believability* or the *credibility*) of the chance model --- but *NOT* "proof". 
 
 
 ## Why Not Proof?

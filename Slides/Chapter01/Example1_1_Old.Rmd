@@ -81,29 +81,27 @@ knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
 
 Why do we care about this?
 
-The research described here was funded by the US Navy as part of its [Marine Mammal Program](https://www.niwcpacific.navy.mil/About/Departments/Intelligence-Surveillance-and-Reconnaissance/Marine-Mammal-Program/). In the early years, beginning in 1959, scientists explored sensory and physical capabilities many different species of marine animals.
+The research described here was funded by the US Navy as part of its [Marine Mammal Program](https://www.niwcpacific.navy.mil/About/Departments/Intelligence-Surveillance-and-Reconnaissance/Marine-Mammal-Program/). In the early years, beginning in 1959, scientists explored sensory and physical capabilities many species of marine animals.
 
 Today, the Navy uses bottlenose dolphins (*Tursiops truncatus*) and California sea lions (*Zalophus californianus*) for a variety of jobs, including search, recovery, detection, and security.
 
 
 ## STEP 2: Design a Study and Collect Data
 
-First, the dolphins had to be trained to push buttons. Dr. Bastian (the researcher) put buttons underwater on each end of a large pool, two for each dolphin---Doris and Buzz. 
+First, the dolphins had to be trained to push buttons. Dr. Bastian (the researcher) put buttons underwater on each end of a large pool, two for each dolphin (Doris and Buzz). 
 
-Bastian used two light signals. (1) Steadily on meant “push the button on the right.” (2) Blinking meant “push the button on the left.” Correct pushes were rewarded with a fish. Doris and Buzz learned to choose the correct button every time.
+Bastien used a light as his signal. When the light shone steadily, this signal meant “push the button on the right.” When it blinked on/off, this meant “push the left button.” Each time the dolphins pushed the correct button, they got a fish. Over time, Doris and Buzz learned to choose the correct button every time.
 
 Next, Dr. Bastian changed the set-up so that Buzz had to push his button before Doris to get a reward. The dolphins adapted and once again learned to perform the task perfectly.  
-
-<hr>
 
 *Why was this pre-training necessary before the "real" experiment?*
 
 
 ## 
 
-Bastian put a curtain across the middle of the pool. Doris could see the light signal, but Buzz could not. When the light came on, Doris swam near the curtain and whistled. Buzz whistled back and pressed the correct button. Bastian repeated this process many times with both the steady light and the blinking light. He observed and recorded Buzz's button choice on each trial.
+Bastian put a curtain across the middle of the pool. Doris could see the light; Buzz could not. Dr. Bastian turned on the light and watched to see what Doris would do. She swam near the curtain and whistled loudly. Buzz whistled back and pressed the correct button. Bastian repeated the process several times, sometimes with a steady light and sometimes with a blinking light. He kept track of Buzz's button choice on each try.
 
-**parameter ($\pi$):** Buzz’s actual long-run proportion (or *probability*) of pushing the correct button based on whistles from Doris
+**parameter:** Buzz’s actual long-run proportion (or *probability*) of pushing the correct button based on whistles from Doris.
 
 **observational units:** Buzz's individual button-pushing attempts (these kinds of attempts are often called *trials*)
 
@@ -123,7 +121,7 @@ knitr::include_graphics("../images/buzzdataset.png", dpi = 110)
 
 ##
 
-To summarize these results, we report a numerical summary of the sample data that we call a  *statistic*. 
+To summarize these results, we report a numerical summary of the sample data that we will call a  *statistic*. 
 
 **Option 1: Count of Successes**
 
@@ -133,12 +131,12 @@ One way we can summarize the data is to report a count of how many times Buzz wa
 
 A count can be ambiguous to interpret if we do not consider the context and take the total number of observations into account. For example, $15/16$ is much different than $15/100$. Proportion values, however, are always between $0$ and $1$.
 
-The proportion is $15/16 = 0.9375$. We could also say $93.75\%$. We use the symbol $\hat{p}$ to represent a sample proportion.
+The proportion is $15/16 = 0.9375$. We could also say $93.75\%$.
 
 
 ## STEP 4: Draw Inferences
 
-Looking at the data, it certainly seems as if Buzz and Doris can communicate. After all, Buzz pushed the correct button almost every time, even though he couldn't see the light himself.
+Looking at the data, it certainly seems as if Buzz and Doris can communicate. After all, Buzz pushed the correct button almost every time, even though he couldn't see the light himself!
 
 The problem is, it is *possible* to get $15$ out of $16$ just by guessing. 
 
@@ -196,43 +194,37 @@ What would be unusual? &rarr; We will focus on this one right now!
 It would be tedious to do a large number of simulations with an actual coin, so we will use the ISI [One Proportion](https://www.isi-stats.com/isi2nd/ISIapplets2021.html) applet.
 
 
-## 
-
-We will do $100$ simulations of the experiment, $16$ trials in each, assuming a purely random chance of correctly choosing ($0.5$).
+## Doing 100 Simulations
 
 ```{r fig.align="center"}
-knitr::include_graphics("../images/example01_01_100.png", dpi = 170)
+knitr::include_graphics("../images/example01_01_100.png", dpi = 160)
 ```
 
 Press `Draw Samples` to generate 100 simulated experiments...
 
 
-## 
-
-The results of the simulation are displayed using a dotplot or a histogram so we can see the *null distribution* of the statistic.
+## Results from 100 Simulations
 
 ```{r fig.align="center"}
-knitr::include_graphics("../images/fig_01_01_04A.jpg", dpi = 110)
+knitr::include_graphics("../images/fig_01_01_04A.jpg", dpi = 100)
 ```
 
-Any number of successes from $0$ to $16$ is *possible* if Buzz is just guessing. This dotplot of our simulation results shows us which of these possible values are more *probable* or *likely* to happen.
+Any number of successes from $0$ to $16$ is *possible* if Buzz is just guessing. This dotplot of simulation results shows us which of these possible values are more *probable* or *likely* to happen.
 
 
-## 
-
-When we talk about a long-term probability, $100$ simulations is not really very long-term. The textbook suggests at least 1000.
+## Doing 1000 Simulations
 
 ```{r fig.align="center"}
-knitr::include_graphics("../images/example01_01_1000.png", dpi = 170)
+knitr::include_graphics("../images/example01_01_1000.png", dpi = 160)
 ```
 
 Press `Draw Samples` to generate 1000 simulated experiments...
 
 
-## 
+## Results from 1000 Simulations
 
 ```{r fig.align="center"}
-knitr::include_graphics("../images/fig_01_01_04B.jpg", dpi = 85)
+knitr::include_graphics("../images/fig_01_01_04B.jpg", dpi = 100)
 ```
 
 Doing a larger number of simulations gives us a better idea of the long-run probability for all the possible outcomes. Getting between $5$ and $11$ just by guessing is not all that unusual. 
@@ -240,9 +232,9 @@ Doing a larger number of simulations gives us a better idea of the long-run prob
 
 ## If We Did Infinite Simulations...
 
-The plot shows the true long-run probabilities of getting $0$ to $16$ correct, if Buzz is just guessing on each trial. Notice that getting $8$ of $16$ ($50\%$ correct) is the most common outcome.
+The plot shows the true long-run probabilities of getting $0$ to $16$ correct, if Buzz is just guessing on each trial. Notice that $8$ ($50\%$ correct) is most common. *This requires several calculations*...
 
-```{r fig.align="center", fig.height = 3.5}
+```{r fig.align="center", fig.height = 3.75}
 pmf <- tibble(
   successes = 0:16,
   probability = dbinom(successes, 16, 0.5)
@@ -272,7 +264,7 @@ ggplot(pmf, aes(x = as.factor(successes), y = probability)) +
 
 If we zoom in on the distribution's upper tail, we can get an idea of how *very* unusual it is to get $15$ trials correct by just randomly guessing. As we said earlier, it is *possible*, but not *probable*.
 
-```{r fig.align="center", fig.height = 3.5}
+```{r fig.align="center", fig.height = 3.75}
 pmf <- tibble(
   successes = 14:16,
   probability = dbinom(successes, 16, 0.5)
@@ -303,22 +295,13 @@ ggplot(pmf, aes(x = as.factor(successes), y = probability, fill = c("A", "B", "A
 
 ## Simulations Get Us Close Enough!
 
-Most traditional statistical methods are *approximations* that use probability theory and mathematics. Section 1.5 (which we will not cover) presents a method that approximates probabilities using the Normal distribution ("bell curve"). You may have seen this method in AP Statistics or a research methods class.
+If we *can* do the math, then why don't we?
 
-Historically, we used these methods because of the challenges of calculating the values we needed without technology.
+Most traditional statistical methods are *approximations* that use probability theory and mathematics. Section 1.5 (which we will not cover) presents a method that approximates a probability using the Normal distribution ("bell curve"). You may have seen this method in AP Statistics or a research methods class.
 
-In this course, we will use simulations to approximate long-run probabilities. In many ways, simulations can be preferable and more flexible than theory-based methods.
+In this course, we will use simulations to approximate long-run probabilities. In many ways, simulations can be preferable and more flexible than theory-based methods. 
 
-In any case, we can see that getting $15$ out of $16$ correct just by randomly guessing is a *very* unlikely, but not impossible.
-
-
-## When is the Probability Small Enough?
-
-We saw that the probability of Buzz getting $15$ of $16$ correct just by randomly guessing is very, very small---somewhere between $0.0002$ and $0.0003$. At that level, it is probably safe to say that most people would agree with the conclusion that Buzz was not just guessing. 
-
-But what if the probability had not been quite so low? What if it was 1%? Or 4% or 12%?
-
-Overall, we need a quantifiable and consistent way to make our statistical decisions. In upcoming sections, you will learn about *p*-values and *z*-scores, two methods for assessing the plausibility of "just randomness" as an explanation for the observed results of a research study.
+In any case, we can see that getting $15$ out of $16$ correct just by randomly guessing is a *very* rare (a *very low probability*) outcome, although it is not impossible.
 
 
 ## STEP 5: Formulate Conclusions
@@ -327,7 +310,7 @@ Overall, we need a quantifiable and consistent way to make our statistical decis
 
 Notice that the conclusions we make are based on probability. We *cannot* declare that we have proof either way.
 
-Here, the number of correct buttons Buzz pushed is outside the typical variability we would expect if he were just guessing. That means we have *strong evidence* that he is not just guessing. It is therefore logical to decide that he is *not* guessing.
+Here, the number of correct buttons Buzz pushed is outside the typical variability we would expect if he were just guessing. That means we have strong evidence that he is not just guessing. It is therefore logical to decide that he is *not* guessing.
 
 <hr>
 

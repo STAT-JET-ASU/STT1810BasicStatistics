@@ -65,7 +65,7 @@ knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
 
 Chapter 6 extends what we learned about statistical significance in previous chapters to compare two groups with parameters $\mu_1$ and $\mu_2$, where $\mu$ is the population *mean*. A sample mean will be designated with $\bar{x}$. We typically will have a null of $H_0: \mu_1 = \mu_2$ or $H_0: \mu_1 - \mu_2 = 0$ (i.e., *no difference* between groups). 
 
-We can also estimate the size of the difference $\mu_1 - \mu_2$.
+We can also estimate the magnitude of the difference $\mu_1 - \mu_2$.
 
 <hr>
 
@@ -105,7 +105,7 @@ We also will be using quantitative summaries from Section P.2.
 
 <hr>
 
-Keep in mind the new symbols for this chapter...
+Keep in mind the quantitative data symbols for this chapter...
 
 * <mark>$\mu$</mark> = population mean (Greek letter mu, pronounced "mew")
 

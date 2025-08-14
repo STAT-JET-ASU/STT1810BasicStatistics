@@ -3157,7 +3157,7 @@ line-height: 1.9;
       <h1 data-config-title><!-- populated from slide_config.json --></h1>
       <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
       <p data-config-presenter><!-- populated from slide_config.json --></p>
-            <p style="margin-top: 6px; margin-left: -2px;">Last updated Wednesday, April 30, 2025 @ 02:13 PM</p>
+            <p style="margin-top: 6px; margin-left: -2px;">Last updated Sunday, May 18, 2025 @ 03:00 PM</p>
           </hgroup>
   </slide>
 
@@ -3200,10 +3200,10 @@ These slides include supplemental content regarding Type I and Type II errors th
 <li>Use the chance model to determine whether an observed statistic is unlikely to occur. [Section 1.1]</li>
 <li>Calculate and interpret a <em>p</em>-value, and state the strength of evidence it provides against the null hypothesis. [Section 1.2]</li>
 <li>Calculate a standardized statistic for a single proportion and evaluate the strength of evidence it provides against a null hypothesis. [Section 1.3]</li>
-<li>Describe how the distance of the observed statistic from the parameter value specified by the null hypothesis, sample size, and one- vs. two-sided tests affect the strength of evidence against the null hypothesis. [Section 1.4]</li>
+<li><strong>Describe how the distance of the observed statistic from the parameter value specified by the null hypothesis, sample size, and one- vs. two-sided tests affect the strength of evidence against the null hypothesis. [Section 1.4]</strong></li>
 </ul>
 
-<p>We will <em>not</em> cover Section 1.5, regarding theory-based inference.</p>
+<p>We will <em>not</em> cover Section 1.5, which introduces a theory-based method of inference for a single proportion.</p>
 
 </article></slide><slide class=""><hgroup><h2>Learning Goals for Section 1.4</h2></hgroup><article  id="learning-goals-for-section-1.4">
 
@@ -3214,11 +3214,19 @@ These slides include supplemental content regarding Type I and Type II errors th
 <li>Anticipate and explain why, when everything else remains the same, the <em>p</em>-value is larger when the alternative hypothesis is two-sided.</li>
 </ul>
 
+</article></slide><slide class=""><hgroup><h2>Supplemental Goal for Section 1.4</h2></hgroup><article  id="supplemental-goal-for-section-1.4">
+
+<p>These slides include supplemental content regarding Type I and Type II errors that is not found in Section 1.4 of the ISI textbook. These concepts are discussed in FAQ 2.3.3 and Exercises 2.3.27 through 2.3.42. However, they apply to any test of significance, so we can talk about them here.</p>
+
+<ul>
+<li>Recognize that even with appropriately gathered and analyzed data there is a chance of arriving at an incorrect decision, and depending on the conclusion drawn these decision errors are very different.</li>
+</ul>
+
 </article></slide><slide class=""><hgroup><h2>Section 1.4 New Vocabulary</h2></hgroup><article  id="section-1.4-new-vocabulary">
 
-<p><strong><mark>two-sided test / alternative hypothesis</mark> :</strong> a test of significance in which the alternative hypothesis has the form &ldquo;not equal to&rdquo; (≠) or &ldquo;does not equal&rdquo; instead of than less (&lt;) or greater (&gt;) than.</p>
+<p><strong><mark>two-sided test / alternative hypothesis</mark> :</strong> a test of significance in which the alternative hypothesis (\(H_a\)) states &ldquo;not equal to&rdquo; (≠) or &ldquo;does not equal&rdquo; instead of than less (&lt;) or greater (&gt;) than.</p>
 
-<p><strong><em>Example:</em></strong> Our online ESP test mentions &ldquo;psi-hitting&rdquo; (<em>getting more cards correct than expected by chance</em>) as well as a concept called &ldquo;psi-missing&rdquo; (<em>getting fewer cards correct</em>). To investigate both of these possibilities, we would write our hypotheses as follows.</p>
+<p><strong><em>Example:</em></strong> Our online ESP test mentions &ldquo;psi-hitting&rdquo; (<em>getting more cards correct than expected by chance</em>) as well as a concept called &ldquo;psi-missing&rdquo; (<em>getting too few cards correct</em>). To investigate both of these possibilities, we would write our hypotheses as follows.</p>
 
 <p>\[H_0: \pi = 0.20\]</p>
 
@@ -3251,33 +3259,35 @@ These slides include supplemental content regarding Type I and Type II errors th
 </tr>
 <tr class="odd">
 <td align="center">\(H_0\) is actually<br>true</td>
-<td align="center"><mark style = "background: #9aff9a;"><strong>Correct decision!</strong></mark><br>We did not reject an \(H_0\)<br>that was really true.</td>
+<td align="center"><mark style = "background: #9aff9a;"><strong>Correct decision! (\(1 - \alpha)\)</strong></mark><br>We did not reject an \(H_0\)<br>that was really true.</td>
 <td align="center"><mark style = "background: #ffcdcd;"><strong>Type I Error (\(\alpha\))</strong></mark><br>We rejected an \(H_0\)<br>that was actually true.</td>
 </tr>
 <tr class="even">
 <td align="center">\(H_0\) is actually false</td>
 <td align="center"><mark style = "background: #ffcdcd;"><strong>Type II Error (\(\beta\))</strong></mark><br>We failed to reject an \(H_0\)<br>that was actually false.</td>
-<td align="center"><mark style = "background: #9aff9a;"><strong>Correct decision! (<em>power</em>)</strong></mark><br>We rejected an \(H_0\)<br>that was really false.</td>
+<td align="center"><mark style = "background: #9aff9a;"><strong>Correct decision! (\(1 - \beta\))</strong></mark><br>We rejected an \(H_0\)<br>that was really false.</td>
 </tr>
 </table>
 
-</article></slide><slide class=""><hgroup><h2>Type I Error and Significance</h2></hgroup><article  id="type-i-error-and-significance">
+<p><sub><strong>Note:</strong> Here, <em>error</em> is mistake. We also sometimes use error to mean variability.</sub></p>
+
+</article></slide><slide class=""><hgroup><h2>Error Types and Significance</h2></hgroup><article  id="error-types-and-significance">
 
 <p>A <strong><mark>Type I error</mark></strong> happens when you conclude that your results are statistically significant when, in reality, they happened purely by chance (\(H_0\) is really true). Essentially, you had the misfortune of getting a random result that is <em>improbable</em> but not <em>impossible</em>.</p>
 
-<p>The risk of committing a Type I error is the significance level (\(\alpha\)) you choose—the value that you set at the start of your study as the decision criteria, such as strong evidence is a <em>p</em>-value ≤ 0.05. Significance level is usually set at 0.05 (5%), so this is our chance of Type I error.</p>
+<p>The risk of committing a Type I error is the significance level (\(\alpha\)) you choose—the value that you set at the start of your study as the decision criteria, such as strong evidence is a <em>p</em>-value ≤ 0.05. Significance level is usually set at 0.05 (5%), and in that case our chance of Type I error is also 0.05.</p>
 
 <p>A <strong><mark>Type II error</mark></strong> happens when \(H_0\) is genuinely false, but we fail to get statistically significant results from study data and decide \(H_0\) is plausible. This error depends on many situational factors, including the ideas presented in this chapter.</p>
 
-</article></slide><slide class=""><hgroup><h2>Statistical Power</h2></hgroup><article  id="statistical-power">
+</article></slide><slide class=""><hgroup><h2><em>Power</em> of a Significance Test</h2></hgroup><article  id="power-of-a-significance-test">
 
 <p>When we talk about the <strong><mark>power</mark></strong> of a test of significance, what we are referring to is the probability that our study data will provide evidence to reject the null hypothesis when it is really false.</p>
 
 <p>Remember, the alternative hypothesis is also referred to as the research hypothesis, so researchers usually <em>want</em> to reject \(H_0\) in favor of \(H_a\) (when \(H_0\) is false, of course).</p>
 
-<p>Power and Type II error have complimentary probabilities. If the chance of Type II error is \(\beta\), then the power is \(1-\beta\).</p>
+<p>Power and Type II error have complimentary probabilities. If the chance of Type II error is \(\beta\), then the test’s power is \(1-\beta\).</p>
 
-<p>Often, researchers can make educated guesses about unknown parameters to try to estimate power for their study. Calculations like these help them choose the right sample size.</p>
+<p>Often, researchers can make educated guesses about unknown parameters to try to estimate power for their study. Calculations like these help them choose the right sample size. The ISI <a href='https://www.isi-stats.com/isi2nd/ISIapplets2021.html' title=''>Power Simulation</a> applet can help us explore power.</p>
 
 </article></slide><slide class=""><hgroup><h2>Type I and II Errors: Example 1</h2></hgroup><article  id="type-i-and-ii-errors-example-1">
 

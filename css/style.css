@@ -68,3 +68,18 @@ h1{
   padding: 10px;
   background-color: black
 }
+
+mark {
+  background: linear-gradient(-100deg, hsla(48,92%,75%,.3), hsla(48,92%,75%,.7) 95%, hsla(48,92%,75%,.1));
+  border-radius: 1em 0;
+  padding: 0.4rem;
+}
+
+.yellowbox {
+  padding: 1em;
+  background: white;
+  color: black;
+  border: 2px solid #FFD700;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}

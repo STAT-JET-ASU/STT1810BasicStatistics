@@ -1,0 +1,199 @@
+---
+title: "STT 1810 Basic Statistics<br>Syllabus for Fall 2025<br>Sections 101 & 102"
+subtitle: "Instructor: Jill E. Thomley"
+output: 
+  html_document: 
+    theme: cosmo
+    highlight: textmate
+    toc: true
+    toc_depth: 5
+    css: "../css/style.css"
+    keep_md: yes
+---
+
+<hr>
+
+### **Instructor Information** 
+
+Dr. Jill E. Thomley<br>
+Walker Hall 228<br>
+828-773-3273<br>
+ASU Email: thomleyje@appstate.edu<br>
+Web Page: <https://jillthomley.github.io/>
+
+### **Undergraduate Bulletin Description**  
+
+STT 1810 is an introduction to statistical problem solving. Topics include organization and presentation of data; measures of location, variation, and association; the normal distribution, sampling distributions, and statistical inference. Emphasis will be on conceptual understanding and interpretation of results rather than theoretical development. Statistical software will be utilized in the analysis of data and in the development of statistical and probabilistic concepts. STT 1810 is not open to students with credit for STT 2810, STT 2820, STT 3850, or STT 4811. (NUMERICAL DATA; COMPUTER; *GEN ED: Quantitative Literacy*)
+
+Prerequisite: MAT 1010 or higher. Demonstrated readiness for college-level math. 
+
+### **Course Learning Goals**
+
+1. Students will demonstrate effective use of selected descriptive statistics methods.
+2. Students will demonstrate effective use of selected inferential statistics methods.
+3. Students will effectively discuss the roles of randomness in statistical processes.
+4. Students will effectively communicate using statistical frameworks and vocabulary.
+5. Students will use statistical thinking to evaluate scholarly research and popular media.
+6. Students will demonstrate preparedness for continued statistics coursework or research.
+
+Participation in STT 1810 is also designed to meet the following [General Education Learning Goals]((https://irap.appstate.edu/GenEd_Goals)).
+
+* Goal 1: Thinking Critically and Creatively
+
+Each textbook chapter and section we cover also has [focused goals](https://stat-jet-asu.github.io/STT1810BasicStatistics/SyllabusSchedule/STT1810CourseLearningGoals.html) that will be used in assessments.
+
+### **Course Communication**
+
+* I use the **Course Announcements** forum on AsULearn to send out major announcements/information. 
+* I use the **Bulletin Board** section at the top of our AsULearn page to post announcements and information.
+* You are responsible for knowing the content of all postings on AsULearn, as well as anything I say or post in class. 
+* Except for major emergencies, all written communication must be handled through your **Private Forum on AsULearn**. I prefer this method because it stores all course-related messages and conversations in a place where we can easily access them throughout the semester. Like e-mail, you can include images and attachments. These forums keep my student/class communications separate from the rest of my email and provide notifications in AsULearn&mdash;a system I have found highly effective over many years. **Generally, I do not reply to student emails that are not about major emergency matters. Use your private forum.**
+* Monday through Friday, I typically will check our AsULearn Private Forums for messages at least once per day between the hours of 10:00 am and 7:00 pm. I may check more than once on weekdays, since I am often on AsULearn grading or updating. I will try to check forums at least once on Saturdays, depending on my weekend schedule. Please do not expect replies on Sundays.
+
+**Title IX Information Disclosure:** I care about you inside and outside of my classroom, and I want you to get the help and support you need. Given my role as an instructor at Appalachian State University, you should be informed about your choices regarding disclosure of sensitive information. If a student tells an instructor that they have experienced an act of interpersonal violence, then that faculty member is **required** to report it to the campus Title IX Coordinator. If you prefer to speak to someone who can keep your conversations confidential, I recommend the [Counseling Center](https://counseling.appstate.edu/) (828-262-3180). They also offer walk-in and after-hours coverage.
+
+### **Student Help / Office Hours** 
+
+* **MON:** None, but I will check AsULearn Private Forum messages
+* **TUE:** 2:00pm to 3:15pm and 5:00pm to 6:00pm (WA 228 or Zoom)
+* **WED:** None, but I will check AsULearn Private Forum messages
+* **TUE:** 2:00pm to 3:15pm and 5:00pm to 6:00pm (WA 228 or Zoom)
+* **FRI:** None, but I will check AsULearn Private Forum messages
+* I may schedule student appointments at other times, if needed.
+
+Any changes to Dr. Thomley's student help / office hours will be posted on [AsULearn](https://asulearn.appstate.edu/).
+
+You must [book an appointment](https://calendar.app.google/L5hqPjsUDaitKtdr7) for office hours, preferably 24 hours in advance, though I do accept walk-ins. Appointments will take precedence. Appointments are available in 15-minute increments. If you feel like you need more than 15 minutes, book more than one time slot. On TUE/THU we can meet in-person in Walker Hall 228 or we can meet via Zoom. On other days, we will meet via Zoom. You may find yourself temporarily in a Zoom waiting room if I am interacting with a previous appointment, but I *will* get to you.
+
+**Drop-In Tutoring:** In-person, drop-in tutoring for statistics is offered on Monday through Thursday from 4:30pm to 7:30pm in DD Dougherty 208. Please be aware of [Tutee Responsibilities](https://studentlearningcenter.appstate.edu/tutoring/expectations) related to this service. 
+
+**Appointment-Based Tutoring:** Some tutors offer online or in-person appointments on Monday through Thursday from 9:00am to 4:00pm and Fridays from 9:00am to 2:00pm. Because of the evening drop-in hours, any appointments at 4:00pm or later on Monday through Thursday will be online only. You can find more information at [Tutoring Options](https://studentlearningcenter.appstate.edu/tutoring).
+
+**Other Assistance:** I urge any student who has difficulty affording groceries or accessing sufficient food every day, or who lacks a safe and stable place to live, to contact the [Dean of Students](https://deanofstudents.appstate.edu/) for assistance and support. The [Mountaineer Food Hub & Free Store](https://sustain.appstate.edu/initiatives/food-pantry/) is a free resource with pantry and personal care items. See [Campus Resources](https://studentsuccess.appstate.edu/campus-resources) for more resources available to ASU students.
+
+**Dr. Thomley may request reports about tutoring attendance for administrative purposes.** This notification complies with FERPA policies.
+
+### **Class Meetings & Attendance**
+
+* Section 101 will meet Tuesdays and Thursdays from 11:00 am to 12:15 pm in Walker Hall 303 computer lab.
+* Section 101 will meet Tuesdays and Thursdays from 12:30 pm to 01:45 pm in Walker Hall 303 computer lab.
+
+As stated in the ASU Undergraduate Bulletin, “class attendance is an important part of a student’s educational experience. Students are expected to attend every meeting of their classes and are responsible for class attendance. Regardless of what reasons there may be for absence, students are accountable for all academic activities, and faculty may require special work or tests to make up for the missed class or classes.” 
+
+<div class="yellowbox">**I take attendance for administrative purposes, because I am often asked to submit student progress reports. If you are absent from too many classes, especially without explanation, I may submit an [Academic Referral](https://studentsuccess.appstate.edu/student-referrals) to Appalachian's Center for Student Success.**</div>
+
+### **Class Structure & Expectations**
+
+Our course is structured primarily as a flipped classroom. This is a pedagogical (teaching) approach that inverts or "flips" traditional approaches where information is provided via lecture in class and practice is done alone at home. Direct instruction is moved out of the group learning space (classroom) and into the individual learning space, in this case via readings, videos, and other materials. This way, the classroom is an interactive environment where students actively engage with the material, alone or in groups, and the teacher acts as a facilitator. Our scheduled class time is only 2.5 hours (sometimes less) each week over 29 class periods, so it is important that your attention be focused and engaged in class. 
+
+<div class="yellowbox">**We are a hybrid class, with a combination of face-to-face and asynchronous class periods. Even during asynchronous class days, it is important that you remember our "class time" (or the equivalent) is still reserved for our course activities.**</div>
+
+There are three components to each class, as you will see more fully on [AsULearn](https://asulearn.appstate.edu/).
+
+* **Before Class:** Read the relevant textbook section, view any assigned videos, and engage with other provided content. This will be your first introduction to the class material and prepare you for class activities.
+* **During Class:** Come to class and engage in the hands-on activities during our class period. You will apply, build on, and clarify content from the Before Class work. During asynchronous days, you typically will work alone on a larger assessment assignment. In some cases, you will be required to meet with Dr. Thomley about your course progress before proceeding to the assessment. 
+* **After Class:** Practice the knowledge and skills you gained from your Before Class work and During Class activities. Also, review notes, work with tutors, come to office hours, self-assess your progress. In general, actively solidify your learning.
+
+To help facilitate the face-to-face learning experience for you and your peers:
+
+* Participate fully in all active learning activities, both individual and in groups.
+* Be ready to participate when class starts (e.g., notebooks and materials out).
+* Do not pack up at the end of class until I am finished teaching and dismiss you.
+* Do not try to multitask, such as web surfing or doing work for other classes.
+* Do not sit in the back and "check out" during the class---yes, it is obvious.
+
+<div class="yellowbox">**You have the right to make choices about your own learning, but you do not have the right to choose for others. Failing to engage in a professional manner in class activities can be a significant distraction for those around you. Your cell phone must be silenced and out of sight. If you are using your own laptop or tablet during class activities, close all chat apps. I may ask students to move around or change seats during our class, to better facilitate peer interaction.**</div>
+
+### **AI Policy and Course Work**
+
+The overall objective of this course is for you to develop strong statistical reasoning and problem-solving skills. Like any other technology, such as calculators and statistical software, AI tools should enhance---not replace---your learning. AI is not always reliable for solving statistical problems, especially when it comes to the kinds of simulation-based methods we will use in this class. Misuse of these tools can prevent you from grasping key concepts and solidifying your own knowledge. Instructions about AI use on specific assignments will be given below and on AsULearn. **If you have a question about when and how AI is permitted in Dr. Thomley's STT 1810 courses, ask before you proceed. Misuse of AI tools, even unintentionally, is a violation of course policy and could constitute academic misconduct under Appalachian's [Academic Integrity Code](https://academicintegrity.appstate.edu/).** Please be aware, some popular writing tools such as Grammarly *do* incorporate AI, so research any tool you consider using.
+
+When completing course work, you are to respond in your own words, specifically using the language of our class. By "language of our class," I mean the ideas, definitions, concepts, notation, formulas, approaches, explanations, reasoning, and justifications from our readings, assigned materials, and class activities---limited to what we have covered so far. Engaging with course-specific language ensures effective and meaningful participation that strengthens collaboration in group work, class discussions, and written assessments. This also helps in upcoming activities as our course concepts build on each other. If you consult other people or sources on assignments where this is allowed, you must give proper credit and you must still respond in your own words and connect your response to the language of our course.
+
+### **Assessment & Grading**
+
+#### **Course Text & Technology**
+
+The course textbook is ***Introduction to Statistical Investigations (2nd edition)*** by Nathan Tintle, Beth Chance, George Cobb, Allan Rossman, Soma Roy, Todd Swanson, and Jill VanderStoep. Access to the textbook is included in your rental system fee and you will be done electronically via WileyPLUS. All course materials will be found either on [AsULearn](https://asulearn.appstate.edu/) (our primary course hub) or [WileyPLUS](https://www.wileyplus.com/).
+
+**All in-person class meetings will be held in a computer lab.** To participate in learning activities and to complete assignments outside of class, you will need access to an updated electronic device on which you can access Zoom, WileyPLUS, the simulation applets from the textbook, and other electronic materials. Outside of class, the applets can be used on a cell phone, tablet, or computer. There is no need for cell phones in class, other than for logging into lab computers using Appalachian's dual authentication protocol.
+
+#### **Assessment Items**
+
+The only way to learn statistics is to **DO** statistics. Reading the textbook, watching the assigned videos, learning the vocabulary, and practicing the methods with software and data are critical to your learning and success. Our class activities and formative / summative assessments have been structured with these principles in mind. It will be easier to participate if you acquire some familiarity with the vocabulary and methods *before* we start to discuss and use them. You must "speak the language" of statistics to effectively demonstrate your knowledge. 
+
+* **Practice Problems (15%):** These WileyPLUS assignments are primarily *formative* assessments on the current materials, designed for you to reinforce recently-introduced concepts and help you figure out where you need to review or seek additional help. On each assignment, you will get three tries per question and receive full credit (marked as 1) if you earn at least 85% of the possible points. If you earn between 60% and 84.99999% of the possible points, your credit will be half (0.5). If you earn less than 60%, you will get 0 credit. Points earned will be calculated in WileyPLUS. Credit will be manually entered into AsULearn. Some late submissions are allowed, for reduced points/credit. The late interval depends on the due date of the related Chapter Investigation and is shown in WileyPLUS. **You must get full credit on Practice Problems to proceed to the related Chapter Investigation. Otherwise, you will need to meet with Dr. Thomley.**
+
+    <div class = "yellowbox">All WileyPLUS content is copyright-protected. You **MAY NOT** enter any portion of WileyPLUS Practice Problem assignments into any AI tool. If you choose to use Google to search for vocabulary and concepts, be aware that its Gemini AI may not give you reliable results. This is true for most AI tools. You may discuss these problems with peers or tutors, but all submitted answers must be your own work.</div>
+
+* **Chapter Investigations (75%):** You will complete several cumulative guided investigations that apply course material in a different context than the in-class explorations or WileyPLUS practice problems. These assignments will require you to work independently, integrate course concepts across chapters, and explain statistical ideas in your own words using appropriate statistical vocabulary. You will submit these via AsULearn and they will be scored using a rubric. More information will be provided on AsULearn.
+
+    * Preliminaries Investigation **(5%)**
+    * Chapter 1 Investigation **(10%)**
+    * Chapters 2 & 3 Investigation **(10%)**
+    * Chapters 4 & 5 Investigation **(15%)**
+    * Final Cumulative Investigation **(20%)**
+<p></p>
+
+    <div class = "yellowbox">All textbook content is copyright-protected, and the activity worksheets are the instructor's intellectual property. You **MAY NOT** enter any portion of these Investigations assessments into any AI tool for any reason, especially for the purpose of generating answers. You may use AI to assist with editing and grammar for answers you have written. If you choose to use Google or any other AI tool to search for vocabulary/concepts, be aware that they may not give you reliable results, and likely will not fully reflect the language of our class. You will be required to cite/explain any AI use. You **MAY NOT** discuss these assessments with anyone other than Dr. Thomley.</div>
+
+* **Research Article Analyses (10%):** You will read two scholarly articles that include statistical research and answer relevant questions about the statistical investigative cycle in those contexts, appropriate to the course content covered. You will submit these via AsULearn and they will be scored using a rubric. More information will be provided on AsULearn.
+
+    * Article/Media Analysis #1 **(5%)**
+    * Article/Media Analysis #2 **(5%)**
+<p></p>
+
+    <div class = "yellowbox">All textbook content is copyright-protected, and the activity worksheets are the instructor's intellectual property. You **MAY NOT** enter any portion of these Investigations assessments into any AI tool for any reason, especially for the purpose of generating answers. You may use AI to assist with editing and grammar for answers you have written. If you choose to use Google or any other AI tool to search for vocabulary/concepts, be aware that they may not give you reliable results, and likely will not fully reflect the language of our class. You will be required to cite/explain any AI use. You **MAY NOT** discuss these assessments with anyone other than Dr. Thomley.</div>
+
+* **Research Ethics (5%):** Society benefits from research and decision-making that is supported by ethical statistical practice. All people who engage in research are expected to follow ethical guidelines and encourage others to do the same. Unfortunately, this has not always been the case. You will complete the type of online training required of anyone at Appalachian State University who wishes to engage in human subjects research, and questions related to ethics may appear in other assignments. More information will be provided on AsULearn.
+
+    <div class = "yellowbox">All CITI content is copyright-protected. You **MAY NOT** enter any portion of CITI content or quizzes into any AI tool. If you choose to use Google to search, be aware that its Gemini AI may not give you reliable results. This is true for most AI. You may discuss these training exercises with peers or tutors, but all submitted answers must be your own work.</div>
+
+* **Engagement and Self-Assessment (10%):** You will be asked to self-assess your proficiency on course goals, provide data or feedback during activities, and otherwise engage in class content. More information will be provided on AsULearn. **You must get full credit on all Self-Assessment items related to Practice Problems to proceed to the related Chapter Investigation. Otherwise, you will need to meet with Dr. Thomley.**
+
+    <div class = "yellowbox">You **MAY NOT** use AI---most items are credit/no credit, awarded for completion. You may discuss these items with peers or tutors, and for some class activities you will be required to, but all submitted answers must be your own work.</div>
+    
+#### **Grading Scale** 
+
+This course will use the standard 10-point +/- grading scale (93--100 = A, 90--92 = A--, 87--89 = B+, etc.) to determine final grades. *I do not round up.* Accommodations *may* be made for documented extenuating circumstances that prevent you from completing work early/on time. Grades will be kept on [AsULearn](https://asulearn.appstate.edu/). You should monitor your grades throughout the term to make sure they are complete and accurate. Contact the instructor via your Private Forum or office hours if you have questions.   
+
+#### **Sharing Materials**
+
+All course materials may be subject to intellectual property protections under applicable law and regulation, including videos and slides. They are for the sole use of students enrolled in this class. Students **may** copy or record materials for personal use, study, and tutoring in the context of this class, but students **DO NOT** have permission to share any class materials in any manner, on any physical or digital platform, without prior express permission of the faculty member teaching this course. This violates Appalachian's [Academic Integrity Code](https://academicintegrity.appstate.edu/) (see Misuse of Academic Materials). 
+**If you are unsure about whether or not something is appropriate, ask first.**
+
+#### **Academic Integrity**
+
+Appalachian's [Academic Integrity Code](https://academicintegrity.appstate.edu/) is designed to create an atmosphere of trust, respect, fairness, honesty, and responsibility. All members of the ASU community are responsible for promoting an ethical learning environment. Students attending ASU agree to abide by the following:
+
+* Students will not lie, cheat, or steal to gain academic advantage.
+* Students will oppose every instance of academic dishonesty.
+
+By submitting work under your name, you are attesting that you have abided by the Academic Integrity Code, including all class policies regarding AI and collaboration. Violations of Academic Integrity will be treated very seriously. **The [Penalties](https://academicintegrity.appstate.edu/pagesmith/13) for academic integrity violations can include a reduced grade for the assignment or course, removal from the course, academic probation, or expulsion.**
+
+### **Student Expectations**
+
+#### **Engage with the Content**
+
+**Be proactive and take charge of your own learning!** Appalachian students are expected to make engagement with courses their first priority. If you have not done the assigned textbook readings and other class prep assignments before coming to class, or if you have not tried the problems on WileyPLUS or other assignments before coming to office hours, you likely will be confused, feel lost, and have a poor experience in this course. I DO NOT WANT THAT TO HAPPEN! Please help me to help you.
+
+Each of you has the capability to succeed in STT 1810. However, sometimes we have to change certain behaviors, study habits, and/or emotional reactions to achieve that success. In this course, you will be challenged with concepts and problems you have never seen before. I do not expect you to be able to understand them all immediately. A critical first step in learning new material is seeing what you can do on your own. This may feel uncomfortable and frustrating. Success in statistics is not based on whether it "comes naturally" to you or whether a topic seems “clear” the first time you are introduced to it. Instead, success is about learning to use mistakes and material we may be struggling with to grow. Each time we get stuck, it teaches us something about the problem we are working on and leads us to develop greater skill and better understanding of the content---a firm foundation for the next layer of course material. 
+
+#### **Invest Appropriate Time**
+
+As per the University-wide Statement on Student Engagement with Courses (see University Policies below), you should expect to spend 2-3 hours on course work outside class for every hour you spend in class. **STT 1810 is a 3-credit course, which means course work and assessments are structured around 3 hours of class attendance and 6-9 hours of outside work per week.** All students are different, but I have used the [Rice Course Workload Estimator](https://cte.rice.edu/workload) and other tools to help estimate how long assigned course activities will take. If you find that you are spending fewer hours than these guidelines suggest, you can probably improve your understanding and grade by studying more. If you are consistently spending more hours than these guidelines suggest, you may be studying inefficiently; in that case, you should come see me to help identify where you can make some changes. Many students work during the school year to finance their educations; however, that does not change the requirements of this (or any) course. Budget your time accordingly and pace yourself to maximize your learning and achievement. 
+
+#### **Communicate with Others**
+
+Knowing what you can do on your own is important, but in the real world, people are not generally expected to work alone. In fact, teamwork is frequently required to achieve good outcomes. You will be expected to share with your peers to help develop your own and their proficiencies. I encourage you to talk to me and to your classmates in person or electronically even when you are not specifically assigned by me to do so. Asking questions and explaining things to others is one of the best ways to improve your understanding. Together we will create an environment in which everyone is respectful to one another and feels comfortable asking questions, making mistakes, and offering good guesses. Explore concepts and write out your thinking in a way that can be shared with others. Try everything that is asked of you, even if only to say, “I do not understand such and such” or “I am stuck here.” Be as specific as possible. *Consider. Conjecture*. I will try to give you hints and direction to help you understand. At times though, to encourage the exploration process, I may direct you to rethink a problem and then come back to discuss it with me  afterwards. This occurs when I believe that the struggle to understand is imperative for your deep understanding.  
+
+#### **Additional Class Policies**
+
+This course conforms to all Appalachian State University policies with respect to academic integrity, disability services, and class attendance. The details of these policies may be found at <http://academicaffairs.appstate.edu/resources/syllabi>.
+
+**OVERALL CLASS ENVIRONMENT**: I intend this class is to be a welcoming environment where everyone can explore, engage, and learn in order to achieve their full potential. To make this possible, we need to be respectful to each other in all interactions, regardless of gender, political party, race, religion, sexuality, disability, etc. This includes others' choices about COVID precautions, such as masks and social distancing. Activities that distract or disrupt your fellow students or the instructor may result in a lowered grade. First offenses typically will be dealt with by the instructor. Subsequent or serious behavior issues will be referred to the [Office of Student Conduct](https://studentconduct.appstate.edu/).
+
+<hr>
+
+Updated Thursday, August 14, 2025 @ 07:01 PM
+

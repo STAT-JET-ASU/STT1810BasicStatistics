@@ -81,15 +81,15 @@ You must [book an appointment](https://calendar.app.google/L5hqPjsUDaitKtdr7) fo
 
 As stated in the ASU Undergraduate Bulletin, “class attendance is an important part of a student’s educational experience. Students are expected to attend every meeting of their classes and are responsible for class attendance. Regardless of what reasons there may be for absence, students are accountable for all academic activities, and faculty may require special work or tests to make up for the missed class or classes.” 
 
-<div class="yellowbox">**I take attendance for administrative purposes, because I am often asked to submit student progress reports. If you are absent from too many classes, especially without explanation, I may submit an [Academic Referral](https://studentsuccess.appstate.edu/student-referrals) to Appalachian's Center for Student Success.**</div>
+<div class="yellowbox">I take attendance for administrative purposes, because I am often asked to submit student progress reports. If you are absent from too many classes, especially without explanation, I may submit an [Academic Referral](https://studentsuccess.appstate.edu/student-referrals) to Appalachian's Center for Student Success.</div>
 
 ### **Class Structure & Expectations**
 
 Our course is structured primarily as a flipped classroom. This is a pedagogical (teaching) approach that inverts or "flips" traditional approaches where information is provided via lecture in class and practice is done alone at home. Direct instruction is moved out of the group learning space (classroom) and into the individual learning space, in this case via readings, videos, and other materials. This way, the classroom is an interactive environment where students actively engage with the material, alone or in groups, and the teacher acts as a facilitator. Our scheduled class time is only 2.5 hours (sometimes less) each week over 29 class periods, so it is important that your attention be focused and engaged in class. 
 
-<div class="yellowbox">**We are a hybrid class, with a combination of face-to-face and asynchronous class periods. Even during asynchronous class days, it is important that you remember our "class time" (or the equivalent) is still reserved for our course activities.**</div>
+<div class="yellowbox">We are a hybrid class (< 50% online), with a mix of face-to-face and asynchronous class periods. Even during our asynchronous class days, it is important that you remember our "class time" (or the equivalent) is reserved for STT 4811 course activities.</div>
 
-There are three components to each class, as you will see more fully on [AsULearn](https://asulearn.appstate.edu/).
+There are three components to each class, as you will see more fully on AsULearn.
 
 * **Before Class:** Read the relevant textbook section, view any assigned videos, and engage with other provided content. This will be your first introduction to the class material and prepare you for class activities.
 * **During Class:** Come to class and engage in the hands-on activities during our class period. You will apply, build on, and clarify content from the Before Class work. During asynchronous days, you typically will work alone on a larger assessment assignment. In some cases, you will be required to meet with Dr. Thomley about your course progress before proceeding to the assessment. 
@@ -103,7 +103,7 @@ To help facilitate the face-to-face learning experience for you and your peers:
 * Do not try to multitask, such as web surfing or doing work for other classes.
 * Do not sit in the back and "check out" during the class---yes, it is obvious.
 
-<div class="yellowbox">**You have the right to make choices about your own learning, but you do not have the right to choose for others. Failing to engage in a professional manner in class activities can be a significant distraction for those around you. Your cell phone must be silenced and out of sight. If you are using your own laptop or tablet during class activities, close all chat apps. I may ask students to move around or change seats during our class, to better facilitate peer interaction.**</div>
+<div class="yellowbox">You have the right to make choices about your own learning, but you do not have the right to choose for your classmates. Failing to engage in a professional manner during class activities can be a significant distraction for those around you. **Your cell phone must be silenced and out of sight.** If you are using your own laptop or tablet in class, close all chat apps and social media. I may ask students to move and change seats during our class, to better facilitate peer interaction.</div>
 
 ### **AI Policy and Course Work**
 
@@ -118,6 +118,8 @@ When completing course work, you are to respond in your own words, specifically 
 The course textbook is ***Introduction to Statistical Investigations (2nd edition)*** by Nathan Tintle, Beth Chance, George Cobb, Allan Rossman, Soma Roy, Todd Swanson, and Jill VanderStoep. Access to the textbook is included in your rental system fee and you will be done electronically via WileyPLUS. All course materials will be found either on [AsULearn](https://asulearn.appstate.edu/) (our primary course hub) or [WileyPLUS](https://www.wileyplus.com/).
 
 **All in-person class meetings will be held in a computer lab.** To participate in learning activities and to complete assignments outside of class, you will need access to an updated electronic device on which you can access Zoom, WileyPLUS, the simulation applets from the textbook, and other electronic materials. Outside of class, the applets can be used on a cell phone, tablet, or computer. There is no need for cell phones in class, other than for logging into lab computers using Appalachian's dual authentication protocol.
+
+<div class = "yellowbox">See AsULearn and WileyPLUS for assessment due dates, as well as in-person and asynchronous class days.</div>
 
 #### **Assessment Items**
 
@@ -156,12 +158,11 @@ The only way to learn statistics is to **DO** statistics. Reading the textbook, 
     
 #### **Grading Scale** 
 
-This course will use the standard 10-point +/- grading scale (93--100 = A, 90--92 = A--, 87--89 = B+, etc.) to determine final grades. *I do not round up.* Accommodations *may* be made for documented extenuating circumstances that prevent you from completing work early/on time. Grades will be kept on [AsULearn](https://asulearn.appstate.edu/). You should monitor your grades throughout the term to make sure they are complete and accurate. Contact the instructor via your Private Forum or office hours if you have questions.   
+This course will use the standard 10-point +/- grading scale (93--100 = A, 90--92 = A--, 87--89 = B+, etc.) to determine final grades. *I do not round up.* Accommodations *may* be made for documented extenuating circumstances that prevent you from completing work early/on time. Grades will be kept on AsULearn. You should monitor your grades throughout the term to make sure they are complete and accurate. Contact the instructor via your Private Forum or office hours if you have questions.   
 
 #### **Sharing Materials**
 
-All course materials may be subject to intellectual property protections under applicable law and regulation, including videos and slides. They are for the sole use of students enrolled in this class. Students **may** copy or record materials for personal use, study, and tutoring in the context of this class, but students **DO NOT** have permission to share any class materials in any manner, on any physical or digital platform, without prior express permission of the faculty member teaching this course. This violates Appalachian's [Academic Integrity Code](https://academicintegrity.appstate.edu/) (see Misuse of Academic Materials). 
-**If you are unsure about whether or not something is appropriate, ask first.**
+All course materials may be subject to intellectual property protections under applicable law and regulation, including videos and slides. They are for the sole use of students enrolled in this class. Students **may** copy or record materials for personal use, study, and tutoring in the context of this class, but students **DO NOT** have permission to share any class materials in any manner, on any physical or digital platform, without prior express permission of the faculty member teaching this course. This violates Appalachian's [Academic Integrity Code](https://academicintegrity.appstate.edu/) (see Misuse of Academic Materials). **If you are unsure about whether or not something is appropriate, ask first.**
 
 #### **Academic Integrity**
 

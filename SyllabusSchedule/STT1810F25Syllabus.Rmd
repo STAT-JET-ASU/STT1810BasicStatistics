@@ -48,7 +48,8 @@ Each textbook chapter and section we cover also has [focused goals](https://stat
 * I use the **Bulletin Board** section at the top of our AsULearn page to post announcements and information.
 * You are responsible for knowing the content of all postings on AsULearn, as well as anything I say or post in class. 
 * Except for major emergencies, all written communication must be handled through your **Private Forum on AsULearn**. I prefer this method because it stores all course-related messages and conversations in a place where we can easily access them throughout the semester. Like e-mail, you can include images and attachments. These forums keep my student/class communications separate from the rest of my email and provide notifications in AsULearn&mdash;a system I have found highly effective over many years. **Generally, I do not reply to student emails that are not about major emergency matters. Use your private forum.**
-* Monday through Friday, I typically will check our AsULearn Private Forums for messages at least once per day between the hours of 10:00 am and 7:00 pm. I may check more than once on weekdays, since I am often on AsULearn grading or updating. I will try to check forums at least once on Saturdays, depending on my weekend schedule. Please do not expect replies on Sundays.
+* Monday through Friday, I typically will check our AsULearn Private Forums for messages at least once per day between the hours of 10:00 am and 7:00 pm. I may check more than once on weekdays, since I am often on AsULearn grading or updating. 
+* University workload policy indicates that tenure-track faculty should spend about 60% of their time (about 24 hours of a 40-hour week) on all teaching-related activities. This necessarily limits my availability to students outside of designated times.
 
 **Title IX Information Disclosure:** I care about you inside and outside of my classroom, and I want you to get the help and support you need. Given my role as an instructor at Appalachian State University, you should be informed about your choices regarding disclosure of sensitive information. If a student tells an instructor that they have experienced an act of interpersonal violence, then that faculty member is **required** to report it to the campus Title IX Coordinator. If you prefer to speak to someone who can keep your conversations confidential, I recommend the [Counseling Center](https://counseling.appstate.edu/) (828-262-3180). They also offer walk-in and after-hours coverage.
 
@@ -126,7 +127,7 @@ The only way to learn statistics is to **DO** statistics. Reading the textbook, 
 
     <div class = "yellowbox">All WileyPLUS content is copyright-protected. You **MAY NOT** enter any portion of WileyPLUS Practice Problem assignments into any AI tool. If you choose to use Google to search for vocabulary and concepts, be aware that its Gemini AI may not give you reliable results. This is true for most AI tools. You may discuss these problems with peers or tutors, but all submitted answers must be your own work.</div>
 
-* **Chapter Investigations (75%):** You will complete several cumulative guided investigations that apply course material in a different context than the in-class explorations or WileyPLUS practice problems. These assignments will require you to work independently, integrate course concepts across chapters, and explain statistical ideas in your own words using appropriate statistical vocabulary. You will submit these via AsULearn and they will be scored using a rubric. More information will be provided on AsULearn.
+* **Chapter Investigations (60%):** You will complete several cumulative guided investigations that apply course material in a different context than the in-class explorations or WileyPLUS practice problems. These assignments will require you to work independently, integrate course concepts across chapters, and explain statistical ideas in your own words using appropriate statistical vocabulary. You will submit these via AsULearn and they will be scored using a rubric. More information will be provided on AsULearn.
 
     * Preliminaries Investigation **(5%)**
     * Chapter 1 Investigation **(10%)**
@@ -137,10 +138,10 @@ The only way to learn statistics is to **DO** statistics. Reading the textbook, 
 
     <div class = "yellowbox">All textbook content is copyright-protected, and the activity worksheets are the instructor's intellectual property. You **MAY NOT** enter any portion of these Investigations assessments into any AI tool for any reason, especially for the purpose of generating answers. You may use AI to assist with editing and grammar for answers you have written. If you choose to use Google or any other AI tool to search for vocabulary/concepts, be aware that they may not give you reliable results, and likely will not fully reflect the language of our class. You will be required to cite/explain any AI use. You **MAY NOT** discuss these assessments with anyone other than Dr. Thomley.</div>
 
-* **Research Article Analyses (10%):** You will read two scholarly articles that include statistical research and answer relevant questions about the statistical investigative cycle in those contexts, appropriate to the course content covered. You will submit these via AsULearn and they will be scored using a rubric. More information will be provided on AsULearn.
+* **Research Article Analyses (15%):** You will read two scholarly articles that include statistical research and answer relevant questions about the statistical investigative cycle in those contexts, appropriate to the course content covered. You will submit these via AsULearn and they will be scored using a rubric. More information will be provided on AsULearn.
 
-    * Article/Media Analysis #1 **(5%)**
-    * Article/Media Analysis #2 **(5%)**
+    * Research Article Analysis #1 **(5%)**
+    * Research Article Analysis #2 **(10%)**
 <p></p>
 
     <div class = "yellowbox">All textbook content is copyright-protected, and the activity worksheets are the instructor's intellectual property. You **MAY NOT** enter any portion of these Investigations assessments into any AI tool for any reason, especially for the purpose of generating answers. You may use AI to assist with editing and grammar for answers you have written. If you choose to use Google or any other AI tool to search for vocabulary/concepts, be aware that they may not give you reliable results, and likely will not fully reflect the language of our class. You will be required to cite/explain any AI use. You **MAY NOT** discuss these assessments with anyone other than Dr. Thomley.</div>
@@ -149,7 +150,7 @@ The only way to learn statistics is to **DO** statistics. Reading the textbook, 
 
     <div class = "yellowbox">All CITI content is copyright-protected. You **MAY NOT** enter any portion of CITI content or quizzes into any AI tool. If you choose to use Google to search, be aware that its Gemini AI may not give you reliable results. This is true for most AI. You may discuss these training exercises with peers or tutors, but all submitted answers must be your own work.</div>
 
-* **Engagement and Self-Assessment (10%):** You will be asked to self-assess your proficiency on course goals, provide data or feedback during activities, and otherwise engage in class content. More information will be provided on AsULearn. **You must get full credit on all Self-Assessment items related to Practice Problems to proceed to the related Chapter Investigation. Otherwise, you will need to meet with Dr. Thomley.**
+* **Engagement and Self-Assessment (5%):** You will be asked to self-assess your proficiency on course goals, provide data or feedback during activities, and otherwise engage in class content. More information will be provided on AsULearn. **You must get full credit on all Self-Assessment items related to Practice Problems to proceed to the related Chapter Investigation. Otherwise, you will need to meet with Dr. Thomley.**
 
     <div class = "yellowbox">You **MAY NOT** use AI---most items are credit/no credit, awarded for completion. You may discuss these items with peers or tutors, and for some class activities you will be required to, but all submitted answers must be your own work.</div>
     

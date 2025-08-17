@@ -105,7 +105,7 @@ To help facilitate the face-to-face learning experience for you and your peers:
 
 <div class="yellowbox">You have the right to make choices about your own learning, but you do not have the right to choose for your classmates. Failing to engage in a professional manner during class activities can be a significant distraction for those around you. **Your cell phone must be silenced and out of sight.** If you are using your own laptop or tablet in class, close all chat apps and social media. I may ask students to move and change seats during our class, to better facilitate peer interaction.</div>
 
-### **AI Policy and Course Work**
+### **AI Policy & Course Work**
 
 The overall objective of this course is for you to develop strong statistical reasoning and problem-solving skills. Like any other technology, such as calculators and statistical software, AI tools should enhance---not replace---your learning. AI is not always reliable for solving statistical problems, especially when it comes to the kinds of simulation-based methods we will use in this class. Misuse of these tools can prevent you from grasping key concepts and solidifying your own knowledge. Instructions about AI use on specific assignments will be given below and on AsULearn. **If you have a question about when and how AI is permitted in Dr. Thomley's STT 1810 courses, ask before you proceed. Misuse of AI tools, even unintentionally, is a violation of course policy and could constitute academic misconduct under Appalachian's [Academic Integrity Code](https://academicintegrity.appstate.edu/).** Please be aware, some popular writing tools such as Grammarly *do* incorporate AI, so research any tool you consider using.
 
@@ -197,5 +197,5 @@ This course conforms to all Appalachian State University policies with respect t
 
 <hr>
 
-Updated Friday, August 15, 2025 @ 04:36 PM
+Updated Sunday, August 17, 2025 @ 01:35 PM
 

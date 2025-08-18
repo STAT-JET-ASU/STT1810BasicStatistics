@@ -28,7 +28,7 @@ library(fontawesome)
 
 &nbsp;
 
-***KeyIdea***
+***Key Idea***
 <hr>
 **human subject research ethics:** Moral principles for the design and conduct of research involving living people, to ensure that research is done in a way that respects their rights, welfare, and dignity. Key aspects include informed consent, minimizing risks, privacy, and fairly balancing benefits and burdens. 
 <hr>

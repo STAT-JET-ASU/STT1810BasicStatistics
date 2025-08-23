@@ -1,6 +1,6 @@
 ---
 title: "Example 3.4 American<br>Ownership of Cats"
-subtitle: "Introduction to Statistical Investigations, 2^nd^ Edition"
+subtitle: "*Introduction to Statistical Investigations, 2^nd^ Edition*"
 author: "Jill E. Thomley | **STT 1810 BASIC STATISTICS** | Appalachian State University"
 date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
 output: 
@@ -54,7 +54,7 @@ The width of the confidence interval is the distance between the boundaries: (up
 
 <hr>
 
-**Note :** The confidence intervals in this example were calculated using a theory-based method that is related to our 2SD method; the ideas apply to any confidence interval.
+**Note :** The confidence intervals in this example were calculated using a theory-based method that is related to our 2SD method, but the ideas apply to all types of confidence intervals.
 
 
 ## Different Sample Sizes

@@ -48,7 +48,7 @@ knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
 
 ::: {}
 
-* **We will address strength of evidence (*significance*) in Chapter 1.**
+* We will address strength of evidence (*significance*) in Chapter 1.
 
 * We will discuss breadth of results (*generalization*) in Chapter 2.
 
@@ -63,7 +63,7 @@ knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
 
 ## Learning Goals for Chapter 1
 
-* **Use the chance model to determine whether an observed statistic is unlikely to occur. [Section 1.1]**
+* Use the chance model to determine whether an observed statistic is unlikely to occur. [Section 1.1]
 * Calculate and interpret a *p*-value, and state the strength of evidence it provides against the null hypothesis. [Section 1.2]
 * Calculate a standardized statistic for a single proportion and evaluate the strength of evidence it provides against a null hypothesis. [Section 1.3]
 * Describe how the distance of the observed statistic from the parameter value specified by the null hypothesis, sample size, and one- vs. two-sided tests affect the strength of evidence against the null hypothesis. [Section 1.4]
@@ -142,12 +142,11 @@ The model reflects important properties of the real-life random process we are s
 
 ***Example 1:*** For the ESP example, the parameter is each person's innate chance of correctly identifying a card. If they do not have ESP, that chance is 0.2, versus *more than* 0.2 if they do have ESP. This probability is reflected in their *long-run* performance on the test---many, many more trials than 25. 
 
-Remember, the ESP testing web site suggests that 50+ trials are needed to get "a reliable indication of your performance".
-
 ***Example 2:*** Across a large number of instances of the Monty Hall game, what is the probability a wins player if they switch? This is one scenario we investigated using our 1000+ simulations of the game using the applet to simulate playing the game. 
 
 The *long-run* probability of winning the game if you switch is the parameter for the random process.
 
+***Example 3:*** For a "fair" coin, the parameter might be the chance of getting a head when the coin is flipped, which is 50%.
 
 ##
 

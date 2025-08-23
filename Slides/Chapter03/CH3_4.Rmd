@@ -49,7 +49,7 @@ knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
 
 * We addressed strength of evidence (significance) in Chapter 1. ✔ ***Good job!***
 
-* We addressed breadth of results (generalization) in Chapter 2. ✔ ***Great job!***
+* We addressed breadth of results (generalization) in Chapter 2. ✔ ***Great work!***
 
 * **We will discover the *size* of an effect (estimation) in Chapter 3.**
 
@@ -81,7 +81,7 @@ In Sections 3.1 and 3.2, you explored two methods for creating confidence interv
 
 * Recognize that all other things being equal, as the confidence level increases, the width of the confidence interval increases.
 
-<p style = "text-align: center;">**increased ↑ confidence = increased ↑ width**</p>
+<p style = "text-align: center; background: yellow;">increased ↑ confidence = increased ↑ width</p>
 
 * When in interpreting confidence intervals, apply the idea that the confidence level of an interval corresponds to its coverage probability 
 
@@ -92,7 +92,7 @@ In Sections 3.1 and 3.2, you explored two methods for creating confidence interv
 
 * Recognize that all other things being equal, as sample size increases, the resulting confidence interval width decreases.
 
-<p style = "text-align: center;">**increased ↑ sample size = decreased ↓ width **</p>
+<p style = "text-align: center; background: yellow;">increased ↑ sample size = decreased ↓ width</p>
 
 **A larger sample sizes leads to a smaller standard error for the sampling distribution, thus a smaller margin of error.**
 
@@ -100,7 +100,7 @@ In Sections 3.1 and 3.2, you explored two methods for creating confidence interv
 
 * Recognize that all other things being equal, as the sample proportion gets farther from 0.5, standard error decreases and thus a resulting confidence interval will be narrower.
 
-<p style = "text-align: center;">**the proportion $\hat{p}$ being farther from 0.50 =<br>the proportion $\hat{p}$ is closer to 0 or closer to 1 =<br>decreased ↓ sampling variability = decreased ↓ width **</p>
+<p style = "text-align: center; background: yellow;">the proportion $\hat{p}$ being farther from 0.50 =<br>the proportion $\hat{p}$ is closer to 0 or closer to 1 =<br>decreased ↓ sampling variability = decreased ↓ width</p>
 
 **As we learned in earlier sections, the largest standard error for any given sample size occurs when the proportion is 0.50.**
 
@@ -109,7 +109,7 @@ In Sections 3.1 and 3.2, you explored two methods for creating confidence interv
 
 * Recognize that statistical significance on its own does not imply evidence of a large difference from Ho. This issue is especially relevant with large sample sizes. 
 
-**This difference is sometimes known as *statistical significance* versus *practical significance*. The latter implies that what we find is big enough to be useful.**
+**This difference is sometimes known as *statistical significance* versus *practical significance*. The latter (*practical*) implies that what we find is big enough to be useful in real life.**
 
 * Know that *p*-values address statistical significance while CIs help assess the plausible size of the parameter.
 
@@ -134,7 +134,7 @@ Confidence intervals and significance testing are two aspects of the same genera
 
 A note about Section 3.4 ...
 
-Much of the specific discussion in Section 3.4 is framed around theoretical confidence intervals, which we did not cover. But, in general, the ideas apply to all confidence intervals. 
+Much of the specific discussion in Section 3.4 is framed around theoretical confidence intervals, which we did not cover. But, in general, the ideas apply to all types of confidence intervals. 
 
 <hr>
 

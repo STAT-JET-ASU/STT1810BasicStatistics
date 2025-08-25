@@ -56,9 +56,9 @@ Each textbook chapter and section we cover also has [focused goals](https://stat
 ### **Student Help / Office Hours** 
 
 * **MON:** None, but I will check AsULearn Private Forum messages
-* **TUE:** 2:00pm to 3:15pm and 5:00pm to 6:00pm (WA 228 or Zoom)
+* **TUE:** 2:00 pm to 3:15 pm and 5:00 pm to 6:00 pm (WA 228 or Zoom)
 * **WED:** None, but I will check AsULearn Private Forum messages
-* **TUE:** 2:00pm to 3:15pm and 5:00pm to 6:00pm (WA 228 or Zoom)
+* **TUE:** 2:00 pm to 3:15 pm and 5:00 pm to 6:00 pm (WA 228 or Zoom)
 * **FRI:** None, but I will check AsULearn Private Forum messages
 * I may schedule student appointments at other times, if needed.
 
@@ -66,9 +66,9 @@ Any changes to Dr. Thomley's student help / office hours will be posted on [AsUL
 
 You must [book an appointment](https://calendar.app.google/L5hqPjsUDaitKtdr7) for office hours, preferably 24 hours in advance, though I do accept walk-ins. Appointments will take precedence. Appointments are available in 15-minute increments. If you feel like you need more than 15 minutes, book more than one time slot. On TUE/THU we can meet in-person in Walker Hall 228 or we can meet via Zoom. On other days, we will meet via Zoom. You may find yourself temporarily in a Zoom waiting room if I am interacting with a previous appointment, but I *will* get to you.
 
-**Drop-In Tutoring:** In-person, drop-in tutoring for statistics is offered on Monday through Thursday from 4:30pm to 7:30pm in DD Dougherty 208. Please be aware of [Tutee Responsibilities](https://studentlearningcenter.appstate.edu/tutoring/expectations) related to this service. 
+**Drop-In Tutoring:** In-person, drop-in tutoring for statistics is offered on Monday through Thursday from 4:30 pm to 7:30 pm in DD Dougherty 208. Please be aware of [Tutee Responsibilities](https://studentlearningcenter.appstate.edu/tutoring/expectations) related to this service. 
 
-**Appointment-Based Tutoring:** Some tutors offer online or in-person appointments on Monday through Thursday from 9:00am to 4:00pm and Fridays from 9:00am to 2:00pm. Because of the evening drop-in hours, any appointments at 4:00pm or later on Monday through Thursday will be online only. You can find more information at [Tutoring Options](https://studentlearningcenter.appstate.edu/tutoring).
+**Appointment-Based Tutoring:** Some tutors offer online or in-person appointments on Monday through Thursday from 9:00 am to 4:00 pm and Fridays from 9:00 am to 2:00 pm. Because of the evening drop-in hours, any appointments at 4:00 pm or later on Monday through Thursday will be online only. You can find more information at [Tutoring Options](https://studentlearningcenter.appstate.edu/tutoring).
 
 **Other Assistance:** I urge any student who has difficulty affording groceries or accessing sufficient food every day, or who lacks a safe and stable place to live, to contact the [Dean of Students](https://deanofstudents.appstate.edu/) for assistance and support. The [Mountaineer Food Hub & Free Store](https://sustain.appstate.edu/initiatives/food-pantry/) is a free resource with pantry and personal care items. See [Campus Resources](https://studentsuccess.appstate.edu/campus-resources) for more resources available to ASU students.
 
@@ -197,5 +197,5 @@ This course conforms to all Appalachian State University policies with respect t
 
 <hr>
 
-Updated Sunday, August 17, 2025 @ 01:35 PM
+Updated Monday, August 25, 2025 @ 12:46 PM
 

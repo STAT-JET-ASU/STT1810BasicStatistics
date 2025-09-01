@@ -39,6 +39,8 @@ Prerequisite: MAT 1010 or higher. Demonstrated readiness for college-level math.
 Participation in STT 1810 is also designed to meet the following [General Education Learning Goals]((https://irap.appstate.edu/GenEd_Goals)).
 
 * Goal 1: Thinking Critically and Creatively
+* Goal 2: Communicating Effectively
+* Goal 3: Quantitative Literacy
 
 Each textbook chapter and section we cover also has [focused goals](https://stat-jet-asu.github.io/STT1810BasicStatistics/SyllabusSchedule/STT1810CourseLearningGoals.html) that will be used in assessments.
 
@@ -197,5 +199,5 @@ This course conforms to all Appalachian State University policies with respect t
 
 <hr>
 
-Updated Monday, August 25, 2025 @ 12:46 PM
+Updated Monday, September 01, 2025 @ 05:56 PM
 

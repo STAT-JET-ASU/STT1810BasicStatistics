@@ -240,9 +240,9 @@ Doing a larger number of simulations gives us a better idea of the long-run prob
 
 ## If We Did Infinite Simulations...
 
-The plot shows the true long-run probabilities of getting $0$ to $16$ correct, if Buzz is just guessing on each trial. Notice that getting $8$ of $16$ ($50\%$ correct) is the most common outcome.
+The plot shows the true long-run probabilities of getting $0$ to $16$ correct, if Buzz is guessing on each trial. Getting $8$ of $16$ ($50\%$) is the most common outcome, as we would predict, with numbers of successes becoming less likely as we go lower or higher.
 
-```{r fig.align="center", fig.height = 3.5}
+```{r fig.align="center", fig.height = 3.2}
 pmf <- tibble(
   successes = 0:16,
   probability = dbinom(successes, 16, 0.5)
@@ -316,7 +316,7 @@ In any case, we can see that getting $15$ out of $16$ correct just by randomly g
 
 We saw that the probability of Buzz getting $15$ of $16$ correct just by randomly guessing is very, very small---somewhere between $0.0002$ and $0.0003$. At that level, it is probably safe to say that most people would agree with the conclusion that Buzz was not just guessing. 
 
-But what if the probability had not been quite so low? What if it was 1%? Or 4% or 12%?
+But what if the probability had not been quite so low? What if it was $1\%$? Or $4\%$? Or $12\%$?
 
 Overall, we need a quantifiable and consistent way to make our statistical decisions. In upcoming sections, you will learn about *p*-values and *z*-scores, two methods for assessing the plausibility of "just randomness" as an explanation for the observed results of a research study.
 

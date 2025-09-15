@@ -88,13 +88,13 @@ Today, the Navy uses bottlenose dolphins (*Tursiops truncatus*) and California s
 
 ## STEP 2: Design a Study and Collect Data
 
+Button-pushing is the **random process** we are observing here.
+
 First, the dolphins had to be trained to push buttons. Dr. Bastian (the researcher) put buttons underwater on each end of a large pool, two for each dolphin---Doris and Buzz. 
 
 Bastian used two light signals. (1) Steadily on meant “push the button on the right.” (2) Blinking meant “push the button on the left.” Correct pushes were rewarded with a fish. Doris and Buzz learned to choose the correct button every time.
 
 Next, Dr. Bastian changed the set-up so that Buzz had to push his button before Doris to get a reward. The dolphins adapted and once again learned to perform the task perfectly.  
-
-<hr>
 
 *Why was this pre-training necessary before the "real" experiment?*
 

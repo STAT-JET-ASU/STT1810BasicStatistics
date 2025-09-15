@@ -1,5 +1,5 @@
 ---
-title: "Example 1.2 NAME"
+title: "Example 1.2 Is the Game<br>Rock-Paper-Scissors Fair?"
 subtitle: "*Introduction to Statistical Investigations, 2^nd^ Edition*"
 author: "Jill E. Thomley | **STT 1810 BASIC STATISTICS** | Appalachian State University"
 date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
@@ -74,35 +74,169 @@ knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
 
 ## STEP 1: Ask a Research Question
 
-**Research Question:** TBA
+The game [rock-paper-scissors](https://wrpsa.com/) (or *Rochambeau*) is played by two people who simultaneously display one of three hand gestures (rock, paper, or scissors). The goal is to pick a gesture that beats the one chosen by your opponent: rock breaks scissor, scissors cut paper, and paper covers rock.
+
+This game is usually considered to be “fair" because the players are theoretically equally likely to win (like a coin toss). But, some players may have patterns. For example, researchers observed that players, especially new ones, tend to use scissors less often.
+
+**Research Question:** Do people choose scissors less often when playing rock-paper-scissors (i.e., less than 1/3 of the time)?
+
+A player choosing which hand gesture to use in each repeat play of the game is the **random process** we are observing here.
+
+
+## The Hypotheses
+
+Generally we form our hypotheses from the research question, *before* we collect any data. Later in the process, our data will be the evidence we use to assess our hypotheses.
+
+Hypotheses are always about a **parameter of interest**. Recall, in Section 1.1, you learned that a *parameter* is a long-run numerical property of a random process. 
+
+We define the parameter in the context of the current question and scenario we are investigating.
+
+<hr>
+**parameter ($\pi$):** the actual long-run proportion (or *probability*) of a player choosing scissors as the hand gesture used
+<hr>
+
+
+## Null and Alternative Hypotheses
+
+In the current question and context, one of two things could be true about or parameter. We can write these ideas in words and in statistical symbols.
+
+**Possibility 1:** The player randomly chooses one of the symbols (rock, paper, or scissors), so the parameter value is $1/3$.
+
+$$H_0: \pi = \frac{1}{3}$$
+
+**Possibility 2:** The player uses scissors less often than the other symbols, so the parameter value is *less than* $1/3$. 
+
+$$H_a: \pi < \frac{1}{3}$$
 
 
 ## STEP 2: Design a Study and Collect Data
 
-TBA
+You play rock-paper-scissors with a friend who has never played the game before. You explain the [official rules of the game](https://wrpsa.com/). Your friend uses scissors four times in 20 games.
+
+**observational units:** the individual games of rock-paper-scissors
+
+**variable of interest:** whether your friend uses scissors versus a rock or paper; this is a binary categorical variables because they use scissors or "other" --- we do not care if their other gesture is rock or paper for this particular research question
+
+**sample:** the set of 20 observational units (games) on which you collected data
+
+*We will use the **3S Process** to assess statistical significance in Step 4.*
 
 
 ## STEP 3: Explore the Data
 
-TBA
+Your friend used scissors four times in the 20 games played. The other sixteen times they used another symbol. 
+
+The *count* of successes (i.e., scissors played) is 4, but counts can be more difficult to interpret more generally. 
+
+The observed *proportion* of successes here is $\frac{4}{20} = \frac{1}{5} = 0.20$.
+
+```{r, fig.align = "center", fig.height = 2.5}
+data <- tibble(plays = c(rep("scissors", 4), rep("not scissors", 16)))
+ggplot(data, aes(x = plays)) +
+  geom_bar(aes(y = ..prop.., group = 1), 
+           fill = c("lightgray", "steelblue"),
+           color = c("gray", "steelblue4")) +
+  geom_hline(yintercept = 0.2, linetype = "dashed", color = "gray50") +
+  theme_minimal() +
+  theme(legend.position = "none") +
+  labs(x = "symbol", y = "proportion")
+```
 
 
 ## STEP 4: Draw Inferences
 
-TBA
+The first step of the 3S Process is to specify the **Statistic** used to test our hypotheses about the population proportion $\pi$. Here, it is the sample proportion of successes $\hat{p} = 0.20$.
+
+Next, we perform a **Simulation** to replicate playing rock-paper-scissors a large number of times, assuming the player does in fact randomly choose which symbol they play each time. 
+
+| Observational Unit | Success      | Failure          | Chance of Success| One Repetition |
+|:------------------:|:------------:|:----------------:|:----------------:|:--------------:|
+| one game           | **scissors** | **not scissors** | **π = 1/3**      | **20 games**   |
+
+We could use three playing cards for our simulation, like we did for Monty Hall, or a spinner with three equal sections. We could also roll a die where 1 to 2 = scissors and 3 to 6 = not scissors.
+
+
+##
+
+We can use the ISI [One Proportion](http://www.isi-stats.com/isi2nd/ISIapplets2021.html) applet for our simulation.
+
+```{r fig.align="center"}
+knitr::include_graphics("../images/example01_02_1000A.png", dpi = 135)
+```
+
+Notice how the settings correspond to the table on the previous page. The sample size ($n = 20$) corresponds to the $20$ games in the actual data collection, and $1000$ is the number of times that we repeat the whole experiment (each repetition is $20$ games).
+
+The distribution's mode is about $0.3333$, the chance of success.
+
+
+## 
+
+We will compare results from the actual games you played with your friend to the $1000$ simulation results to decide whether the real-life results "look like" the random outcomes---are the results what we would expect if someone is randomly choosing?
+
+```{r fig.align="center"}
+knitr::include_graphics("../images/example01_02_1000B.png", dpi = 135)
+```
+
+Looking at the plot, $\hat{p} = 0.20$ is somewhat closer to the middle of the distribution, not very far out in the tail ("extreme").  
+
+
+## 
+
+The vertical red line is our **Statistic** of $\hat{p} = 0.20$. We count how many simulated results are $\leq 0.20$ because $H_a: \pi < \frac{1}{3}$. This quantifies how far out in the tail the statistic lies.
+
+From the count we determine a *p*-value, which helps determine the **Strength of evidence** against $H_o$ provided by the data from the real-life study. 
+
+The *p*-value is the proportion of simulated values $\leq 0.20$, which is $127/1000 = 0.1270$. This is slightly different than the results shown in the textbook, since both are approximate answers.
+
+Recall the definition of *p*-value:
+
+The *p*-value is the probability of obtaining a value of the statistic that is *at least as extreme* as the observed statistic, when the null hypothesis is true.
+
+
+## 
+
+We can compare our *p*-value to some agreed-upon guidelines to interpret it and determine statistical significance.
+
+The observed statistic of playing $4$ scissors in $20$ games is not unusual or extreme enough to provide much evidence against the idea that the person was randomly choosing which symbol to play. Randomness is therefore a *plausible* explanation.
+
+| Magnitude of *p*-value  | Guideline for Inference                                    |
+|-------------------------|------------------------------------------------------------|
+| *p*-value > 0.10        | not much evidence against $H_0$ **&larr; 0.1270 is here!** |
+| 0.05 < *p*-value ≤ 0.10 | moderate evidence against $H_0$                            |
+| 0.01 < *p*-value ≤ 0.05 | strong evidence against $H_0$                              |
+| *p*-value ≤ 0.01        | very strong evidence against $H_0$                         |
 
 
 ## STEP 5: Formulate Conclusions
 
-TBA
+The results of the study in which we played $20$ real-life games of rock-paper-scissors were *not* statistically significant. They did not provide convincing (i.e., strong or very strong) evidence against the idea that people randomly choose which symbol to play in a game of rock-paper-scissors. 
+
+However, we have *not proven* that null hypothesis is true. 
+
+The results of a simulation do not "support" the null hypothesis. We say is that these results are not inconsistent with the type of result we would expect to see when the null hypothesis is true. In other words, the null hypothesis is a plausible explanation for the data in this particular instance.
+
+We can always collect more data to investigate this question. For example, we might play more games, or observe more players.
 
 
-## STEP 6: Look Back and Ahead
+## Alternate Scenario: Fewer Scissors
 
-TBA
+Suppose your friend had played scissors only $2$ times instead of $4$ in the $20$ games? That would give us $\hat{p} = 0.10$. The *p*-value of $0.0130$ would be strong evidence against the null hypothesis of randomness and our results would be statistically significant. In this case, the statistic is more extreme (out in the tail).
+
+```{r fig.align="center"}
+knitr::include_graphics("../images/example01_02_1000C.png", dpi = 135)
+```
+
+
+## Alternate Scenario: More Games
+
+What if your friend played $16$ scissors in $80$ games? Like earlier, $\hat{p} = 0.20$, but now from a larger sample. The *p*-value of $0.0060$ provides very strong evidence against $H_0$. For this sample size, randomness is not a plausible explanation for getting only $20\%$ scissors. We would decide players *do* choose scissors less often. 
+
+```{r fig.align="center"}
+knitr::include_graphics("../images/example01_02_1000D.png", dpi = 135)
+```
 
 
 ## References
 
-TBA
+Eyler, D., Shalla, Z., Doumaux, A., & McDevitt, T. (2009). Winning at Rock-Paper-Scissors. *The College Mathematics Journal*, 40(2), 125–128. http://www.jstor.org/stable/25653686
 

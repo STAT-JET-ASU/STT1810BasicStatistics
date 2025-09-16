@@ -85,6 +85,8 @@ We will *not* cover Section 1.5, which introduces a theory-based method of infer
 
 These slides include supplemental content regarding Type I and Type II errors that is not found in Section 1.4 of the ISI textbook. These concepts are discussed in FAQ 2.3.3 and Exercises 2.3.27 through 2.3.42. However, they apply to any test of significance, so we can talk about them here.
 
+**Additional Learning Goal for Section 1.4**
+
 * Recognize that even with appropriately gathered and analyzed data there is a chance of arriving at an incorrect decision, and depending on the conclusion drawn these decision errors are very different.
 
 
@@ -92,24 +94,24 @@ These slides include supplemental content regarding Type I and Type II errors th
 
 **<mark>two-sided test / alternative hypothesis</mark> :** a test of significance in which the alternative hypothesis ($H_a$) states "not equal to" (≠) or "does not equal" instead of than less (<) or greater (>) than. 
 
-***Example:*** Our online ESP test mentions "psi-hitting" (*getting more cards correct than expected by chance*) as well as a concept called "psi-missing" (*getting too few cards correct*). To investigate both of these possibilities, we would write our hypotheses as follows.
+***Example:*** In ESP testing, we can investigate "psi-hitting" (*getting more cards correct than expected by chance*) as well as an idea we did not address in P.1 called "psi-missing" (*too few cards correct*). To investigate both, we would write our hypotheses as follows.
 
 $$H_0: \pi = 0.20$$
 
 $$H_a: \pi \neq 0.20$$
 
-In this case, "extreme" would be measured on *both* sides of the null distribution, not just the upper side like $H_a: \pi > 0.20$.
+In this case, "extreme" would be measured on ***both*** sides of the null distribution, not just the upper side like $H_a: \pi > 0.20$.
 
 
 ## What Impacts Strength of Evidence?
 
 Three important components of a test of significance influence the strength provided by the data evidence.
 
-* **<mark>extremeness</mark> :** The farther the observed statistic $\hat{p}$ is from the average value of the null distribution (i.e., the value of $\pi$ given in $H_0$), the more evidence there is against $H_0$.
+* **<mark>extremeness</mark> :** The farther the observed statistic $\hat{p}$ is from the mean value of the null distribution (i.e., the value of $\pi$ given in $H_0$), the more evidence $\hat{p}$ typically provides against $H_0$. This is sometimes referred to as an *effect size*.
 
 * **<mark>sample size</mark> :** As the sample size increases (while the value of the observed sample statistic $\hat{p}$ and our hypotheses stay the same), the strength of evidence against $H_0$ increases.
 
-* **<mark>one- vs. two-sided $H_a$</mark> :** Because the *p*-value for a two-sided test is about twice as large as for a one-sided test using the same data, it provides less evidence against $H_0$. Two-sided tests are used more often in scientific practice.
+* **<mark>one- vs. two-sided $H_a$</mark> :** Because the *p*-value for a two-sided test is about twice as large as for a one-sided test using the same data, it provides less (weaker) evidence against $H_0$. Two-sided tests are used more often in scientific practice.
 
 
 ## Type I and Type II Errors
@@ -133,7 +135,7 @@ The risk of committing a Type I error is the significance level ($\alpha$) you c
 A **<mark>Type II error</mark>** happens when $H_0$ is genuinely false, but we fail to get statistically significant results from study data and decide $H_0$ is plausible. This error depends on many situational factors, including the ideas presented in this chapter. 
 
 
-## *Power* of a Significance Test
+## Power of a Significance Test
 
 When we talk about the **<mark>power</mark>** of a test of significance, what we are referring to is the probability that our study data will provide evidence to reject the null hypothesis when it is really false.
 
@@ -148,13 +150,13 @@ Often, researchers can make educated guesses about unknown parameters to try to 
 
 Consider the way in which the U.S. court system works. We are instructed to start off with a presumption of innocence, which is like our null hypothesis in a statistical test.  
 
-Reality : The person is genuinely innocent (they are not guilty).<br>
+**Reality :** The person is genuinely innocent (they are not guilty).<br>
 $H_0$ : The defendant is innocent.
 
 * Jury verdict is not guilty---yes, a correct decision!
 * Jury verdict is guilty---*false positive* (Type I error)
 
-Reality : The person is genuinely *not* innocent (they are guilty).<br>
+**Reality :** The person is genuinely *not* innocent (they are guilty).<br>
 $H_0$ : The defendant is innocent.
 
 * Jury verdict is not guilty---*false negative* (Type II)
@@ -176,13 +178,13 @@ Reasonable doubt is essentially a subjective probability that the jury member de
 
 Recall Exploration P.1 "Do You Have ESP?" Anyone who got 9/25 or more cards correct was told they had evidence of ESP, but we know such a high score can sometimes happen randomly. 
 
-Reality : You *do not* have ESP.<br>
+**Reality :** You *do not* have ESP.<br>
 $H_0$ : You *do not* have ESP.
 
 * Test says there is no evidence of ESP---yes, a correct decision!
 * Test says there is evidence of ESP---*false positive* (Type I error)
 
-Reality : You *do* have ESP.<br>
+**Reality :** You *do* have ESP.<br>
 $H_0$ : You *do not* have ESP.
 
 * Test says there is no evidence of ESP---*false negative* (Type II)
@@ -191,15 +193,15 @@ $H_0$ : You *do not* have ESP.
 
 ## Type I and II Errors: Example 3
 
-You decide to get tested for COVID-19 based on mild symptoms. There are two correct decisions and two errors that could occur (with this or most medical tests).
+You decide to get tested for COVID-19 based on mild symptoms. There are two correct decisions and two errors that could occur (this is true of most medical tests).
 
-Reality : You *do not* have COVID-19.<br>
+**Reality :** You *do not* have COVID-19.<br>
 $H_0$ : You *do not* have COVID-19.
 
 * Test says you do not have the virus---yes, a correct decision!
 * Test says you do have the virus---*false positive* (Type I error)
 
-Reality : You *do* have COVID-19.<br>
+**Reality :** You *do* have COVID-19.<br>
 $H_0$ : You *do not* have COVID-19.
 
 * Test says you do not have the virus---*false negative* (Type II)

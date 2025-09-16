@@ -3157,7 +3157,7 @@ line-height: 1.9;
       <h1 data-config-title><!-- populated from slide_config.json --></h1>
       <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
       <p data-config-presenter><!-- populated from slide_config.json --></p>
-            <p style="margin-top: 6px; margin-left: -2px;">Last updated Saturday, August 23, 2025 @ 12:32 AM</p>
+            <p style="margin-top: 6px; margin-left: -2px;">Last updated Tuesday, September 16, 2025 @ 12:01 PM</p>
           </hgroup>
   </slide>
 
@@ -3218,6 +3218,8 @@ These slides include supplemental content regarding Type I and Type II errors th
 
 <p>These slides include supplemental content regarding Type I and Type II errors that is not found in Section 1.4 of the ISI textbook. These concepts are discussed in FAQ 2.3.3 and Exercises 2.3.27 through 2.3.42. However, they apply to any test of significance, so we can talk about them here.</p>
 
+<p><strong>Additional Learning Goal for Section 1.4</strong></p>
+
 <ul>
 <li>Recognize that even with appropriately gathered and analyzed data there is a chance of arriving at an incorrect decision, and depending on the conclusion drawn these decision errors are very different.</li>
 </ul>
@@ -3226,22 +3228,22 @@ These slides include supplemental content regarding Type I and Type II errors th
 
 <p><strong><mark>two-sided test / alternative hypothesis</mark> :</strong> a test of significance in which the alternative hypothesis (\(H_a\)) states &ldquo;not equal to&rdquo; (≠) or &ldquo;does not equal&rdquo; instead of than less (&lt;) or greater (&gt;) than.</p>
 
-<p><strong><em>Example:</em></strong> Our online ESP test mentions &ldquo;psi-hitting&rdquo; (<em>getting more cards correct than expected by chance</em>) as well as a concept called &ldquo;psi-missing&rdquo; (<em>getting too few cards correct</em>). To investigate both of these possibilities, we would write our hypotheses as follows.</p>
+<p><strong><em>Example:</em></strong> In ESP testing, we can investigate &ldquo;psi-hitting&rdquo; (<em>getting more cards correct than expected by chance</em>) as well as an idea we did not address in P.1 called &ldquo;psi-missing&rdquo; (<em>too few cards correct</em>). To investigate both, we would write our hypotheses as follows.</p>
 
 <p>\[H_0: \pi = 0.20\]</p>
 
 <p>\[H_a: \pi \neq 0.20\]</p>
 
-<p>In this case, &ldquo;extreme&rdquo; would be measured on <em>both</em> sides of the null distribution, not just the upper side like \(H_a: \pi &gt; 0.20\).</p>
+<p>In this case, &ldquo;extreme&rdquo; would be measured on <strong><em>both</em></strong> sides of the null distribution, not just the upper side like \(H_a: \pi &gt; 0.20\).</p>
 
 </article></slide><slide class=""><hgroup><h2>What Impacts Strength of Evidence?</h2></hgroup><article  id="what-impacts-strength-of-evidence">
 
 <p>Three important components of a test of significance influence the strength provided by the data evidence.</p>
 
 <ul>
-<li><p><strong><mark>extremeness</mark> :</strong> The farther the observed statistic \(\hat{p}\) is from the average value of the null distribution (i.e., the value of \(\pi\) given in \(H_0\)), the more evidence there is against \(H_0\).</p></li>
+<li><p><strong><mark>extremeness</mark> :</strong> The farther the observed statistic \(\hat{p}\) is from the mean value of the null distribution (i.e., the value of \(\pi\) given in \(H_0\)), the more evidence \(\hat{p}\) typically provides against \(H_0\). This is sometimes referred to as an <em>effect size</em>.</p></li>
 <li><p><strong><mark>sample size</mark> :</strong> As the sample size increases (while the value of the observed sample statistic \(\hat{p}\) and our hypotheses stay the same), the strength of evidence against \(H_0\) increases.</p></li>
-<li><p><strong><mark>one- vs. two-sided \(H_a\)</mark> :</strong> Because the <em>p</em>-value for a two-sided test is about twice as large as for a one-sided test using the same data, it provides less evidence against \(H_0\). Two-sided tests are used more often in scientific practice.</p></li>
+<li><p><strong><mark>one- vs. two-sided \(H_a\)</mark> :</strong> Because the <em>p</em>-value for a two-sided test is about twice as large as for a one-sided test using the same data, it provides less (weaker) evidence against \(H_0\). Two-sided tests are used more often in scientific practice.</p></li>
 </ul>
 
 </article></slide><slide class=""><hgroup><h2>Type I and Type II Errors</h2></hgroup><article  id="type-i-and-type-ii-errors">
@@ -3279,7 +3281,7 @@ These slides include supplemental content regarding Type I and Type II errors th
 
 <p>A <strong><mark>Type II error</mark></strong> happens when \(H_0\) is genuinely false, but we fail to get statistically significant results from study data and decide \(H_0\) is plausible. This error depends on many situational factors, including the ideas presented in this chapter.</p>
 
-</article></slide><slide class=""><hgroup><h2><em>Power</em> of a Significance Test</h2></hgroup><article  id="power-of-a-significance-test">
+</article></slide><slide class=""><hgroup><h2>Power of a Significance Test</h2></hgroup><article  id="power-of-a-significance-test">
 
 <p>When we talk about the <strong><mark>power</mark></strong> of a test of significance, what we are referring to is the probability that our study data will provide evidence to reject the null hypothesis when it is really false.</p>
 
@@ -3293,14 +3295,14 @@ These slides include supplemental content regarding Type I and Type II errors th
 
 <p>Consider the way in which the U.S. court system works. We are instructed to start off with a presumption of innocence, which is like our null hypothesis in a statistical test.</p>
 
-<p>Reality : The person is genuinely innocent (they are not guilty).<br> \(H_0\) : The defendant is innocent.</p>
+<p><strong>Reality :</strong> The person is genuinely innocent (they are not guilty).<br> \(H_0\) : The defendant is innocent.</p>
 
 <ul>
 <li>Jury verdict is not guilty—yes, a correct decision!</li>
 <li>Jury verdict is guilty—<em>false positive</em> (Type I error)</li>
 </ul>
 
-<p>Reality : The person is genuinely <em>not</em> innocent (they are guilty).<br> \(H_0\) : The defendant is innocent.</p>
+<p><strong>Reality :</strong> The person is genuinely <em>not</em> innocent (they are guilty).<br> \(H_0\) : The defendant is innocent.</p>
 
 <ul>
 <li>Jury verdict is not guilty—<em>false negative</em> (Type II)</li>
@@ -3321,14 +3323,14 @@ These slides include supplemental content regarding Type I and Type II errors th
 
 <p>Recall Exploration P.1 &ldquo;Do You Have ESP?&rdquo; Anyone who got 9/25 or more cards correct was told they had evidence of ESP, but we know such a high score can sometimes happen randomly.</p>
 
-<p>Reality : You <em>do not</em> have ESP.<br> \(H_0\) : You <em>do not</em> have ESP.</p>
+<p><strong>Reality :</strong> You <em>do not</em> have ESP.<br> \(H_0\) : You <em>do not</em> have ESP.</p>
 
 <ul>
 <li>Test says there is no evidence of ESP—yes, a correct decision!</li>
 <li>Test says there is evidence of ESP—<em>false positive</em> (Type I error)</li>
 </ul>
 
-<p>Reality : You <em>do</em> have ESP.<br> \(H_0\) : You <em>do not</em> have ESP.</p>
+<p><strong>Reality :</strong> You <em>do</em> have ESP.<br> \(H_0\) : You <em>do not</em> have ESP.</p>
 
 <ul>
 <li>Test says there is no evidence of ESP—<em>false negative</em> (Type II)</li>
@@ -3337,16 +3339,16 @@ These slides include supplemental content regarding Type I and Type II errors th
 
 </article></slide><slide class=""><hgroup><h2>Type I and II Errors: Example 3</h2></hgroup><article  id="type-i-and-ii-errors-example-3">
 
-<p>You decide to get tested for COVID-19 based on mild symptoms. There are two correct decisions and two errors that could occur (with this or most medical tests).</p>
+<p>You decide to get tested for COVID-19 based on mild symptoms. There are two correct decisions and two errors that could occur (this is true of most medical tests).</p>
 
-<p>Reality : You <em>do not</em> have COVID-19.<br> \(H_0\) : You <em>do not</em> have COVID-19.</p>
+<p><strong>Reality :</strong> You <em>do not</em> have COVID-19.<br> \(H_0\) : You <em>do not</em> have COVID-19.</p>
 
 <ul>
 <li>Test says you do not have the virus—yes, a correct decision!</li>
 <li>Test says you do have the virus—<em>false positive</em> (Type I error)</li>
 </ul>
 
-<p>Reality : You <em>do</em> have COVID-19.<br> \(H_0\) : You <em>do not</em> have COVID-19.</p>
+<p><strong>Reality :</strong> You <em>do</em> have COVID-19.<br> \(H_0\) : You <em>do not</em> have COVID-19.</p>
 
 <ul>
 <li>Test says you do not have the virus—<em>false negative</em> (Type II)</li>

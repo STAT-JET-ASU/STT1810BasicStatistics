@@ -27,7 +27,7 @@ See [AsULearn](https://asulearn.appstate.edu/) for additional readings, videos, 
 
 You can print these slides to a pdf for offline use using the print function in your browser.
 
-<p style = "background: lightgray;">These slides include supplemental content about the measures percent increased risk, odds, and odds ratio that is not found in Section 5.1 of the ISI textbook.</p>
+<p style = "background: lightgray;">These slides include supplemental content about the measure percent increased risk that is not found in Section 5.1 of the ISI textbook.</p>
 
 
 ## The Spiral Approach to Investigation

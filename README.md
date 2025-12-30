@@ -1,5 +1,5 @@
 # STT1810 Basic Statistics
-# @Appalachian State University
+## Appalachian State University
 
 ### Catalogue Description
 

@@ -11,7 +11,7 @@ STT 1810 is an introduction to the statistical investigative process. Topics inc
 
 ### **Textbook**
 
-Tintle, N., Chance, B., Cobb, G., Rossman, A., Roy, S., Swanson, T., VanderStoep, J. (2021). [***Introduction to Statistical Investigations, 2nd Edition***](http://www.isi-stats.com/isi/index2nd.html). John Wiley & Sons, Inc.
+Tintle, N., Chance, B., Cobb, G., Rossman, A., Roy, S., Swanson, T., VanderStoep, J. (2020). [***Introduction to Statistical Investigations, 2nd Edition***](http://www.isi-stats.com/isi/index2nd.html). John Wiley & Sons, Inc.
 
 * [Textbook Applets and Data](http://www.isi-stats.com/isi2nd/ISIapplets2021.html)
 

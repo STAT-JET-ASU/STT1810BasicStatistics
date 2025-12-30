@@ -17,4 +17,4 @@ Tintle, N., Chance, B., Cobb, G., Rossman, A., Roy, S., Swanson, T., VanderStoep
 
 ### **Textbook-Related Materials**
 
-This material is released under an [Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/) license. Original author: [Jill E. Thomley](https://jillthomley.github.io/), using content from the textbook and supplemental materials.
+This material is released under an [Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/) license. The original author is [Jill E. Thomley](https://jillthomley.github.io/), using content from the textbook and supplemental materials.

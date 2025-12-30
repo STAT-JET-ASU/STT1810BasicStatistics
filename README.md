@@ -3,7 +3,7 @@
 
 ### Catalogue Description
 
-An introduction to the statistical investigative process. Topics include exploratory data analysis emphasizing the shape, center, and variability of distributions; the normal distribution; simulation-based sampling distributions, confidence intervals, and statistical inference; and introductory topics in survey sampling and design of experiments. Emphasis will be on conceptual understanding rather than theoretical development, focusing on the statistical investigative process from question to conclusion. Statistical software will be used in the analysis of data and in the development of statistical and probabilistic concepts. STT 1810 is not open to students with credit for STT 2810, STT 2820, STT 3850, or STT 4811.
+STT 1810 is an introduction to the statistical investigative process. Topics include exploratory data analysis emphasizing the shape, center, and variability of distributions; the normal distribution; simulation-based sampling distributions, confidence intervals, and statistical inference; and introductory topics in survey sampling and design of experiments. Emphasis will be on conceptual understanding rather than theoretical development, focusing on the statistical investigative process from question to conclusion. Statistical software will be used in the analysis of data and in the development of statistical and probabilistic concepts. STT 1810 is not open to students with credit for STT 2810, STT 2820, STT 3850, or STT 4811.
 
 * When Offered: Fall; Spring
 * GEN ED: Quantitative Literacy

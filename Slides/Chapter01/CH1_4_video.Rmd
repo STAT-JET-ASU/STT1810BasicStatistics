@@ -1,0 +1,205 @@
+---
+title: "Section 1.4 What Impacts Strength of Evidence?"
+subtitle: "*Introduction to Statistical Investigations, 2^nd^ Edition*"
+author: "Jill E. Thomley | **STT 1810 STATISTICAL INVESTIGATIVE PROCESS** | AppState"
+date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
+output: ioslides_presentation
+---
+
+```{r global_options, include = FALSE}
+knitr::opts_chunk$set(
+  message = FALSE,
+  warning = FALSE,
+  comment = NA
+)
+```
+
+
+## Before We Begin…
+
+These slides were created to accompany the text [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html) --- Section 1.4 What Impacts Strength of Evidence? 
+
+*This content does not replace reading the relevant textbook section.* It is for class presentation, review, and reference.
+
+<p style = "background: lightgray;">These slides include supplemental content regarding Type I and Type II errors that is not found in Section 1.4 of the ISI textbook.</p>
+
+
+## Recall: Spiral Approach & Four Pillars
+
+:::::: {style="display: flex;"}
+
+::: {}
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
+```
+
+:::
+
+::: {}
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+:::
+
+::: {}
+
+* **We will address strength of evidence (*significance*) in Chapter 1.**
+
+* We will discuss breadth of results (*generalization*) in Chapter 2.
+
+* We will learn about effect size of results (*estimation*) in Chapter 3.
+
+* Chapter 4 will introduce the concept of *causation*, the last of the four pillars. 
+
+:::
+
+::::
+
+
+## Learning Goals for Chapter 1
+
+* Use the chance model to determine whether an observed statistic is unlikely to occur. [Section 1.1]
+* Calculate and interpret a *p*-value, and state the strength of evidence it provides against the null hypothesis. [Section 1.2]
+* Calculate a standardized statistic for a single proportion and evaluate the strength of evidence it provides against a null hypothesis. [Section 1.3]
+* Describe how the distance of the observed statistic from the parameter value specified by the null hypothesis, sample size, and one- vs. two-sided tests affect the strength of evidence against the null hypothesis. [Section 1.4]
+
+We will *not* cover Section 1.5, which introduces a theory-based method of inference for a single proportion.
+
+
+## Learning Goals for Section 1.4
+
+* Anticipate and explain why, when everything else remains the same, the *p*-value is smaller when the observed proportion of successes is farther away from the hypothesized value of the long-run proportion of successes.
+* Anticipate and explain why, when everything else remains the same, the *p*-value is smaller when the sample size is larger.
+* Recognize when a two-sided test / alternative hypothesis is suggested by the research question.
+* Anticipate and explain why, when everything else remains the same, the *p*-value is larger when the alternative hypothesis is two-sided.
+
+
+## Supplemental Goal for Section 1.4
+
+These slides include supplemental content regarding Type I and Type II errors that is not found in Section 1.4 of the ISI textbook. These concepts are discussed in FAQ 2.3.3 and Exercises 2.3.27 through 2.3.42. However, they apply to any test of significance, so we can talk about them here.
+
+**Additional Learning Goal for Section 1.4**
+
+* Recognize that, even when we collect and analyze data using appropriate methods, there is a chance that we will make an incorrect decision.
+* Recognize that, depending on the conclusion we draw, these potential decision errors (Type I vs. Type II) are very different.
+
+
+## Section 1.4 New Vocabulary
+
+**<mark>two-sided test / alternative hypothesis</mark> :** a test of significance in which the alternative hypothesis ($H_a$) states "not equal to" (≠) or "does not equal" instead of than less (<) or greater (>) than. 
+
+***Example:*** Administrators at a particular university advertise that $85\%$ of their undergraduate students support renewable energy initiatives on campus. Researchers design a study to assess this claim. The research question is whether student support differs (more *or* less) from the stated value.
+
+$$H_0: \pi = 0.85$$
+
+$$H_a: \pi \neq 0.85$$
+
+In this case, "extreme" would be measured on ***both*** sides of the null distribution to account for both possibilities.
+
+
+## What Impacts Strength of Evidence?
+
+Three important test components affect strength of evidence.
+
+* **<mark>extremeness</mark> :** The farther the observed statistic $\hat{p}$ is from the mean value of the null distribution (i.e., the value of $\pi$ given in $H_0$), the more evidence $\hat{p}$ typically provides against $H_0$. This is sometimes referred to as an *effect size*.
+
+* **<mark>sample size</mark> :** As the sample size increases (while the value of the observed sample statistic $\hat{p}$ and our hypotheses stay the same), the strength of evidence against $H_0$ increases.
+
+* **<mark>one- vs. two-sided $H_a$</mark> :** Because the *p*-value for a two-sided test is about twice as large as for a one-sided test using the same data, it provides less (i.e., weaker) evidence against $H_0$. **Two-sided tests are used more often in scientific practice.**
+
+
+## Type I and Type II Errors
+
+Our estimated *p*-values are probabilities, not proof. When we do a significance test, we might make a decision error. For example, a small sample size is a very common reason for a Type II error. There are four possibilities when we do a test of significance.
+
+|Reality vs. Test         | We decide Ho is plausible<br>based on a significance test | We decide Ho is not plausible<br>based on a significance test | 
+|:-----------------------:|:---------------------------------------------------------:|:-------------------------------------------------------------:|
+| $H_0$ is actually<br>true  |<mark style = "background: #9aff9a;">**Correct decision! ($1 - \alpha)$**</mark><br>We did not reject an $H_0$<br>that was really true.|<mark style = "background: #ffcdcd;">**Type I Error ($\alpha$)**</mark><br>We rejected an $H_0$<br>that was actually true.|
+| $H_0$ is actually false |<mark style = "background: #ffcdcd;">**Type II Error ($\beta$)**</mark><br>We failed to reject an $H_0$<br>that was actually false.|<mark style = "background: #9aff9a;">**Correct decision! ($1 - \beta$)**</mark><br>We rejected an $H_0$<br>that was really false.|
+
+<sub>**Note:** Here, *error* is mistake. We also sometimes use error to mean variability.</sub>
+
+
+## Error Types and Significance
+
+A **<mark>Type I error</mark>** happens when you conclude that your results are statistically significant when, in reality, they happened purely by chance ($H_0$ is really true). Essentially, you had the misfortune of getting a random result that is *improbable* but not *impossible*.
+
+The risk of committing a Type I error is the significance level ($\alpha$) you choose&mdash;the value that you set at the start of your study as the decision criteria, such as strong evidence is a *p*-value ≤ 0.05. Significance level is usually set at 0.05 (5%), and in that case our chance of Type I error is also 0.05.
+
+A **<mark>Type II error</mark>** happens when $H_0$ is genuinely false, but we fail to get statistically significant results from study data and decide $H_0$ is plausible. This error depends on many situational factors, including the ideas presented in this chapter. 
+
+
+## Power of a Significance Test
+
+When we talk about the **<mark>power</mark>** of a test of significance, what we are referring to is the probability that our study data will provide evidence to reject the null hypothesis when it is really false.
+
+Remember, the alternative hypothesis is also referred to as the research hypothesis, so researchers usually *want* to reject $H_0$ in favor of $H_a$ (when $H_0$ is false, of course).
+
+Power and Type II error have complimentary probabilities. If the chance of Type II error is $\beta$, then the test's power is $1-\beta$.
+
+Often, researchers can make educated guesses about unknown parameters to try to estimate power for their study. Calculations like these help them choose the right sample size. The ISI [Power Simulation](https://www.isi-stats.com/isi2nd/ISIapplets2021.html) applet can help us explore power.
+
+
+## Type I and II Errors: Example 1
+
+Consider the way in which the U.S. court system works. We are instructed to start off with a presumption of innocence, which is like our null hypothesis in a statistical test. Thus, for each court trial, we are testing $H_0$ : The defendant is innocent.
+
+**Reality :** The person is genuinely innocent (they are not guilty).<br>
+
+* Jury verdict is not guilty---yes, a correct decision!
+* Jury verdict is guilty---*false positive* (Type I error)
+
+**Reality :** The person is genuinely *not* innocent (they are guilty).<br>
+
+* Jury verdict is not guilty---*false negative* (Type II)
+* Jury verdict is guilty---again, a correct decision!
+
+
+## Example 1 in Table Form
+
+|Reality vs. Test         | Jury decides "not guilty" | Jury decides "guilty" | 
+|:-----------------------:|:---------------------------------------------------------:|:-------------------------------------------------------------:|
+| Defendant<br>is innocent  |<mark style = "background: #9aff9a;">**Correct decision! ($1 - \alpha)$**</mark><br>Jury correctly freed <br>an innocent person. |<mark style = "background: #ffcdcd;">**Type I Error ($\alpha$)**</mark><br>Jury mistakenly convicted<br>an innocent person. | 
+| Defendant<br>is guilty  |<mark style = "background: #ffcdcd;">**Type II Error ($\beta$)**</mark><br>Jury mistakenly freed<br>a guilty person. |<mark style = "background: #9aff9a;">**Correct decision! ($1 - \beta$)**</mark><br>Jury correctly convicted<br>a guilty person. |
+
+<br>
+In this example, we cannot quantify $\alpha$ like we can in a statistical hypothesis test, since probabilities are based on jury members' subjective assessments of the unique evidence, versus random (repeatable) processes we can model.
+
+## The Language of the Decision
+
+Just like in statistical hypothesis testing, a jury verdict does not declare that the assumption of innocence ($H_0$) is true. Both of these processes rely on weighing imperfect evidence. 
+
+The jury verdict of "not guilty" essentially translates as, "We have weighed the presented evidence and there is not enough to find the person guilty." This is like saying $H_0$ is plausible.
+
+Similarly, the criterion for finding a defendant guilty is "beyond a reasonable doubt," *not* absolute proof---despite the oft-repeated phrase "innocent until proven guilty."
+
+Reasonable doubt is essentially a subjective probability that the jury member decides for themselves. Is the evidence consistent with innocence or not? Is innocence *plausible* here?
+
+
+## Type I and II Errors: Example 2
+
+You decide to get tested for COVID-19 based on mild symptoms that subjectively seem consistent with COVID-19. There are two correct decisions and two errors that could occur (this is true of most medical tests). $H_0$ : You *do not* have COVID-19.
+
+**Reality :** You *do not* have COVID-19.<br>
+
+* Test comes back negative---yes, a correct decision!
+* Test comes back positive---*false positive* (Type I error)
+
+**Reality :** You *do* have COVID-19.<br>
+
+* Test comes back negative---*false negative* (Type II)
+* Test comes back positive---again, a correct decision!
+
+
+## Example 2 in Table Form
+
+|Reality vs. Test         | Test comes back negative | Test comes back positive | 
+|:-----------------------:|:---------------------------------------------------------:|:-------------------------------------------------------------:|
+| Do not have<br>COVID-19 |<mark style = "background: #9aff9a;">**Correct decision! ($1 - \alpha)$**</mark><br>TRUE NEGATIVE (specificity)|<mark style = "background: #ffcdcd;">**Type I Error ($\alpha$)**</mark><br>FALSE POSITIVE | 
+| Do have<br>COVID-19 |<mark style = "background: #ffcdcd;">**Type II Error ($\beta$)**</mark><br>FALSE NEGATIVE |<mark style = "background: #9aff9a;">**Correct decision! ($1 - \beta$)**</mark><br>TRUE POSITIVE (sensitivity) |
+
+<br>
+In medical testing, the **sensitivity** of a test is the probability that the test gives a true positive result in someone with the disease. This is the same idea as the **power** of a statistical test. 
+
+Test **specificity** is the probability of a true negative result. These probabilities are found by testing people with known status.

@@ -76,7 +76,7 @@ This material builds on the Preliminaries and Chapter 1. You will need to rememb
 * Describe the distribution of a quantitative variable in terms of shape, center, variability, and unusual observations.
 * Use the skewness of the distribution to predict the relationship between the mean and median.
 * Identify parameters (such as long-run/population means or medians) and statistics (such as sample means or sample medians) in a statistical study.
-* Predict the mean, standard deviation, and shape of the sampling distribution of a sample mean from a random sample of size *n*, where the population mean ($\mu$) and population standard deviation ($\sigma$) are known.
+* Predict the mean, standard deviation, and shape of the sampling distribution of a sample mean from a random sample of size $n$, where the population mean ($\mu$) and population standard deviation ($\sigma$) are known.
 
 *Think back to the tools and language we learned in Section P.2 for summarizing and describing quantitative data.*
 
@@ -150,7 +150,7 @@ Unlike proportions, where *both* the mean and SD depend on the single parameter 
 
 An airplane with 200 seats has a total baggage limit of 6000 kg, or about 30 kg per passenger. The distribution of the weight of individual passenger bags has a mean of 28 kg and SD of 15 kg.
 
-The population parameters are $\mu = 28 \text{ kg}$ and $\sigma = 0.15 \text{ kg}$. We can use the CLT to find the sampling distribution of baggage weights for random groups of 200 passengers.
+The population parameters are $\mu = 28 \text{ kg}$ and $\sigma = 15 \text{ kg}$. We can use the CLT to find the sampling distribution of the baggage weights for random groups of 200 passengers.
 
 $$\text{mean of } \bar{x} = 28 \text{ kg (same as the population mean)}$$
 

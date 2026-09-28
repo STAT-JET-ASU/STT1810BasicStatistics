@@ -96,7 +96,7 @@ This material builds on the Preliminaries and Chapter 1. You will need to rememb
 ## *More* Learning Goals for Section 2.1
 
 * Fill in a data table where rows are the observational units and columns are the variables.
-* Predict the mean, standard deviation, and shape of the sampling distribution of a sample proportion from a random sample of size n, where the population proportion  is known.
+* Predict the mean, standard deviation, and shape of the sampling distribution of a sample proportion from a random sample of size $n$, where the population proportion is known.
 * Apply simulation-based inference methods for a population proportion to research studies involving random samples from finite populations.
 * Identify whether a study may be impacted by non-sampling concerns and explain the potential impact.
 

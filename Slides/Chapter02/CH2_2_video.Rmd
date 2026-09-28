@@ -68,7 +68,7 @@ We will *not* cover Sections 2.3 and 2.4 (theory / bootstrapping).
 
 <hr>
 
-This material builds on the Preliminaries and Chapter 1. You will need to remember and use vocabulary and concepts from those Chapters to understand new material in this section. Section 2.1 provides a foundation for the upcoming Section 3.2.
+This material builds on the Preliminaries and Chapter 1. You will need to remember and use vocabulary and concepts from those Chapters to understand new material in this section. Section 2.2 provides a foundation for the upcoming Section 3.3.
 
 
 ## Learning Goals for Section 2.2

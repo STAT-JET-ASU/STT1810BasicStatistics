@@ -1,11 +1,9 @@
 ---
 title: "Section 3.4 What Affects the Width of CIs?"
 subtitle: "*Introduction to Statistical Investigations, 2^nd^ Edition*"
-author: "Jill E. Thomley | **STT 1810 BASIC STATISTICS** | Appalachian State University"
+author: "Jill E. Thomley | **STT 1810 STATISTICAL INVESTIGATIVE PROCESS** | AppState"
 date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
-output: 
-  ioslides_presentation:
-    logo: ../images/logoASU.jpg
+output: ioslides_presentation
 ---
 
 ```{r global_options, include = FALSE}
@@ -21,10 +19,6 @@ knitr::opts_chunk$set(
 These slides are meant to accompany the text [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html) --- Section 3.4 Factors That Affect the Width of a Confidence Interval. 
 
 *This content does not replace reading the relevant textbook section.* It is for class presentation, review, and reference.
-
-See [AsULearn](https://asulearn.appstate.edu/) for additional readings, videos, and assignments.
-
-You can print these slides to a pdf for offline use using the print function in your browser.
 
 
 ## Recall: Spiral Approach & Four Pillars
@@ -134,7 +128,7 @@ Confidence intervals and significance testing are two aspects of the same genera
 
 A note about Section 3.4 ...
 
-Much of the specific discussion in Section 3.4 is framed around theoretical confidence intervals, which we did not cover. But, in general, the ideas apply to all types of confidence intervals. 
+Much of the specific discussion in Section 3.4 is framed around theoretical confidence intervals. But, in general, the ideas apply to *all* types of confidence intervals. 
 
 <hr>
 

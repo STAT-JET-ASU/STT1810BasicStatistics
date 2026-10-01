@@ -1,11 +1,9 @@
 ---
 title: "Section 3.2<br> ± 2SD Approximate CIs"
 subtitle: "*Introduction to Statistical Investigations, 2^nd^ Edition*"
-author: "Jill E. Thomley | **STT 1810 BASIC STATISTICS** | Appalachian State University"
+author: "Jill E. Thomley | **STT 1810 STATISTICAL INVESTIGATIVE PROCESS** | AppState"
 date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
-output: 
-  ioslides_presentation:
-    logo: ../images/logoASU.jpg
+output: ioslides_presentation
 ---
 
 ```{r global_options, include = FALSE}
@@ -22,10 +20,6 @@ library(tidyverse)
 These slides are meant to accompany the text [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html) --- Section 3.2 2SD and Theory Based Confidence Intervals for a Single Proportion. 
 
 *This content does not replace reading the relevant textbook section.* It is for class presentation, review, and reference.
-
-See [AsULearn](https://asulearn.appstate.edu/) for additional readings, videos, and assignments.
-
-You can print these slides to a pdf for offline use using the print function in your browser.
 
 
 ## Recall: Spiral Approach & Four Pillars
@@ -127,7 +121,7 @@ $$\hat{p} \pm 2 \times SD(\hat{p})$$
 Recall that we use $\pi = 0.5$ because $SD(\hat{p})$ is the biggest then.
 
 
-## Where is the Largest SD? At $\pi = 0.50!$
+## Largest SD for a given $n$? At $\pi = 0.50!$
 
 |  $n$  |        $\pi$        |      $SD(\hat{p})$    |
 |:-----:|:-------------------:|:---------------------:|
@@ -172,7 +166,7 @@ Using the 2SD method with a simulated estimate of the SD:
 
 $0.89 \pm 2 \times 0.096 = 0.89 \pm 0.192 = (0.698, 1.082)$ 
 
-We would round the upper limits to 1, since $\pi$ cannot exceed 1.
+We could round the upper limits to 1, since $\pi$ cannot exceed 1.
 
 The study probability for people randomly choosing a cup was $0.75$. Since $0.75$ is in our ± 2SD confidence interval, we cannot reject the idea that people have no preference---it is plausible.
 

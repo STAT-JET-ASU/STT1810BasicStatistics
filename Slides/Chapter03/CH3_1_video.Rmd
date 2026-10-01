@@ -55,12 +55,12 @@ knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
 
 ## Learning Goals for Chapter 3
 
-Chapter 3 focuses on ***estimation***, which is one of the four pillars of inference introduced in Section P.1. Often, we use estimation to indicate how large an effect is, not as a single number, but as an ***interval*** of statistically likely or plausible values.
+Chapter 3 focuses on ***estimation***. We can estimate how large an effect is using an ***interval*** of statistically likely or plausible values.
 
 <hr>
 
 * Construct and interpret a confidence interval for a single population proportion using the range of plausible values technique. [Section 3.1]
-* Construct and interpret a confidence interval for a single population proportion using the 2SD method. [Section 3.2]
+* Construct and interpret a confidence interval for a single population proportion using both 2SD and theory-based methods. [Section 3.2]
 * Construct and interpret a confidence interval for a single population mean using both 2SD and theory-based methods. [Section 3.3]
 * Identify how factors (confidence level, sample size, SD) affect the width of the confidence interval. [Section 3.4]
 

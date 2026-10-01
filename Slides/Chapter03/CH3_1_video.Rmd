@@ -61,9 +61,8 @@ Chapter 3 focuses on ***estimation***, which is one of the four pillars of infer
 
 * Construct and interpret a confidence interval for a single population proportion using the range of plausible values technique. [Section 3.1]
 * Construct and interpret a confidence interval for a single population proportion using the 2SD method. [Section 3.2]
+* Construct and interpret a confidence interval for a single population mean using both 2SD and theory-based methods. [Section 3.3]
 * Identify how factors (confidence level, sample size, SD) affect the width of the confidence interval. [Section 3.4]
-
-We will *not* cover Section 3.3, theoretical estimation for a mean.
 
 
 ## Learning Goals for Section 3.1

@@ -1,0 +1,179 @@
+---
+title: "Example 4.2 Lying on the Internet; Is It More Likely?"
+subtitle: "*Introduction to Statistical Investigations, 2^nd^ Edition*"
+author: "Jill E. Thomley | **STT 1810 STATISTICAL INVESTIGATIVE PROCESS** | AppState"
+date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
+output: ioslides_presentation
+---
+
+```{r global_options, include = FALSE}
+knitr::opts_chunk$set(
+  message = FALSE,
+  warning = FALSE,
+  comment = NA
+)
+```
+
+
+## Before We Begin…
+
+These slides are meant to accompany the text [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html) --- Section 4.2 Observational Studies vs. Experiments.
+
+*This content does not replace reading the relevant textbook section.* It is for class presentation, review, and reference.
+
+
+## The Spiral Approach to Investigation
+
+:::::: {style="display: flex;"}
+
+::: {}
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
+```
+
+:::
+
+::: {}
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+:::
+
+::: {}
+
+* Statistical investigations typically include these six steps in some form. 
+
+* These six steps may not always be followed in this exact order, but a good statistical investigation will go through all these steps before completion.
+
+* The findings of one study typically will generate new research questions; that's how science works!
+
+:::
+
+::::
+
+
+## STEP 1: Ask a Research Question
+
+**The Problem**
+
+In research examining social behavior and cooperation between people, multiple studies have found that face-to-face interaction and communication has a positive influence in a variety of social scenarios. Some believe this is result is due to the fact that such communication emphasizes pro-social norms and expectations in people, which facilitates cooperation. Can the same behavior emerge in computer-mediated environments? (*We have all seen how badly some people behave online, right?*)
+ 
+
+**Research Question**
+
+Are people more likely to lie when they communicate via e-mail than when they use pencil and paper to communicate? 
+
+
+## STEP 2: Study Design / Collect Data #1
+
+Researchers recruited 48 graduate students in business. These participants engaged in a “bargaining” game using one of two different methods of communication. Researchers recorded the whether or not students misrepresented (lied about) the size of the game's prize (or "pot") when they were negotiating with the other players.
+
+* **experimental units:** individual graduate students
+* **explanatory variable:** communication method; categorical and binary
+* **response variable:** whether the participant lied; categorical and binary
+* **sample size:** $n$ = 48 overall, with $n_1$ = 26 in the e-mail group and $n_2$ = 22 in the paper and pencil group
+
+
+## STEP 2: Study Design / Collect Data #2
+
+The researchers randomly assigned the communication method used by each of the participants, so this study was a *randomized experiment*. Randomization theoretically creates a group balance in a study with respect to possible confounding variables.
+
+* *Suppose there were 30 male and 18 female subjects and all 30 men in the sample communicated via the Internet, while the 18 women used pencil and paper. If you were concerned that males might be more competitive and thus more likely to lie, how would this limit your ability to draw conclusions?*
+
+In theory, given that this is a randomized experiment, if we find a difference in lying between the Internet and pencil-and-paper groups, there are only **two possibilities**: (1) ***random chance*** from random assignment, or (2) ***cause-and-effect relationship***.
+
+
+## STEP 3: Explore the Data
+
+We compute the conditional proportions for those who lied in each of the experimental treatment groups.
+
+|             |    E-Mail | Pencil / Paper |     Total |
+|-------------|:---------:|:--------------:|:---------:|
+| Did Not Lie |   2 (8%)  |        8 (36%) | 10 (21%)  |
+| Lied        |  24 (92%) |       14 (64%) | 38 (79%)  |
+| Total       | 26 (100%) |       22 (100%)| 48 (100%) |
+
+<br>
+
+Probability of lying, given e-mail communication: 0.92
+
+Probability of lying, given paper-and-pencil communication: 0.64
+
+
+## STEP 4: Draw Inferences
+
+* Lying was common overall (79%), but lying was more likely in the e-mail group (92%) than the paper/pencil group (64%).
+
+* One possible explanation for the results is that the format of the game influenced how people responded. They might feel more comfortable lying via e-mail communication, perhaps because it seems more distant or anonymous. 
+
+* Another possible explanation is random chance. We claimed that random assignment balanced the two groups, but there is still a chance that the random assignment process itself resulted in slightly different groups. (*Notice the randomness we are considering here is from the random assignment, not random choices or random sampling.*) 
+
+* *A significance test would show that randomness is implausible.*
+
+
+## STEP 5: Formulate Conclusions
+
+* The study used random assignment to form the groups, so we *do not* expect to have any systematic group differences at the start of the study.
+
+* There is a statistically significant difference between the two groups at the end of the study.
+
+* Therefore, a plausible explanation is that the observed effect is due to the treatment group to which the experimental units were assigned (*cause and effect*).
+
+* However, the participants in this study were business school graduate students and volunteers, so we should be cautious about *generalizing* to a larger population. 
+
+* It is common for experiments *not* to have random selection.
+
+
+## Random *Selection* vs. *Assignment*
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("../images/fig_04_02_03.jpg", dpi = 100)
+```
+
+A “randomized, double-blind, placebo controlled experiment” is considered by some to be the gold standard in scientific studies.
+
+
+## Preview: Two-Proportion Test
+
+We will learn the significance test required for this experiment in Chapter 5. But as a preview...
+
+Here, we hypothesize that the probability of lying is the same in both groups, versus our stated research conjecture that there is a greater probability of lying in the email group. Notice that each group has its own parameter.
+
+$$H_0: \pi_\text{e-mail} = \pi_\text{paper/pencil} \rightarrow H_0: \pi_\text{e-mail} - \pi_\text{paper/pencil} = 0$$
+
+$$H_a: \pi_\text{e-mail} > \pi_\text{paper/pencil} \rightarrow H_a: \pi_\text{e-mail} - \pi_\text{paper/pencil} > 0$$
+
+<hr>
+
+*Here, we are not hypothesizing a specific probability of lying, we are simply saying that there is zero difference between the probabilities (i.e., that the probabilities are the same).*
+
+
+## Observed Statistic
+
+The statistic is the observed difference in sample proportions. We will use a few more decimal places than we did earlier. We also need to be consistent with our hypotheses---e-mail group on the left and the paper/pencil group on the right.
+
+$$\text{statistic} = \hat{p}_\text{e-mail} - \hat{p}_\text{paper/pencil} = \frac{24}{26} - \frac{14}{22} = 0.2867$$
+
+If the null hypothesis is true, we would expect a difference near zero. This difference is consistent with the research conjecture. But, is it large enough to be statistically significant?
+
+Like we did in Chapter 1, we need to simulate a null distribution to which we can compare this statistic to determine whether the chance model is plausible in this scenario. 
+
+
+## ISI [Two Proportion](https://www.isi-stats.com/isi2nd/ISIapplets2021.html) Applet
+
+Enter the study data in the two-way table, choose our "success" category, and indicate the observed difference in proportions.
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("../images/twogrouplyingex01.png", dpi = 125)
+```
+
+
+## 
+
+Just like we did with the One Proportion applet, we will perform a simulation and get a *p*-value from the observed statistic, which is interpreted using the same guidelines. Since ***p*-value = 0.0199**, have strong evidence against $H_0$. **People do lie more via email!**
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("../images/twogrouplyingex02.png", dpi = 125)
+```
+

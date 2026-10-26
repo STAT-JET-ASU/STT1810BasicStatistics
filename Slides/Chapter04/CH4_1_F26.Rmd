@@ -1,0 +1,162 @@
+---
+title: "Section 4.1 Association<br>and Confounding"
+subtitle: "*Introduction to Statistical Investigations, 2^nd^ Edition*"
+author: "Jill E. Thomley | **STT 1810 STATISTICAL INVESTIGATIVE PROCESS** | AppState"
+date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
+output: ioslides_presentation
+---
+
+```{r global_options, include = FALSE}
+knitr::opts_chunk$set(
+  message = FALSE,
+  warning = FALSE,
+  comment = NA
+)
+```
+
+
+## Before We Begin…
+
+These slides are meant to accompany the text [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html) --- Section 4.1 Association and Confounding.
+
+*This content does not replace reading the relevant textbook section.* It is for class presentation, review, and reference.
+
+
+## Recall: The Four Pillars of Inference
+
+:::::: {style="display: flex;"}
+
+::: {}
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("../images/sixstepsfourpillars.png", dpi = 100)
+```
+
+:::
+
+::: {}
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+:::
+
+::: {}
+
+* We addressed strength of evidence (significance) in Chapter 1. ✔ ***Great job!***
+
+* We addressed breadth of results (generalization) in Chapter 2. ✔ ***Great job!***
+
+* We addressed the size of an effect (estimation) in Chapter 3. ✔ ***Great job!***
+
+* **Chapter 4 introduces the concept of *causation*, the last of the four pillars.**
+
+:::
+
+::::
+
+
+## Learning Goals for Chapter 4
+
+Chapter 4 focuses on ***causation***, which is one of the four pillars of inference introduced in Section P.1. 
+
+Overall, the main goal is to explain when and why we can infer ***cause-and-effect*** after we determine via a significance test that there is an ***association*** between two variables.  
+
+<hr>
+
+* Identify confounding variables in observational studies. [Section 4.1]
+
+* Explain how studies using random assignment are able to draw cause-and-effect conclusions. [Section 4.2]
+
+
+## Learning Goals for Section 4.1
+
+* Calculate and interpret conditional proportions.
+* Interpret conditional proportions as to whether they give any indication of an association between the explanatory and response variables.
+* Identify which variable is the explanatory variable and which is response in a study involving two variables.
+* Identify potential confounding variables and explain how they provide an alternative explanation for the observed association between the explanatory variable and the response variable.
+* Draw a diagram to show how the confounding variable provides an alternative explanation for the observed association between the explanatory variable and the response variable.
+
+
+## Section 4.1 New Vocabulary
+
+**<mark>association</mark> :** two variables are associated or related to each other if the distribution of one variable is different across the values of the other variable
+
+***Example:*** In the game of Monopoly, as you move around the four sides of the board from Go, each side has higher prices than the preceding side. Side and price are associated.
+
+**<mark>explanatory variable</mark> :** if the alternative hypothesis is true, this is the variable that explains changes in the response variable; it may also be called an **<mark>independent / predictor variable</mark>** 
+
+***Example:*** In Example P.2, we explored the duration (in minutes) of Super Bowl national anthem performances. We considered other variables like gender and musical genre to try to explain observed differences in performance lengths.
+
+
+##
+
+**<mark>response variable</mark> :** if the alternative hypothesis is true, this is the variable that is impacted by the explanatory variable; it is also sometimes known as a **<mark>dependent / predicted variable</mark>**
+
+***Example 1:*** In Example P.2, the response variable is performance length. This variable may depend on a number of other factors, like the gender of the singer, the musical genre, the year of the performance, or whether it is a solo/group performance.
+
+***Example 2:*** Researchers have established a relationship between asbestos and mesothelioma, or between smoking and a long list of diseases. The presence or absence of such diseases (or their severity) are the response variables to the explanatory variables of asbestos exposure or smoking.
+
+***Example 3:*** In elementary school, children in higher grades tend to be taller than children in lower grades. The response variable is the children's heights.
+
+
+##
+
+**<mark>confounding variable</mark> :** a variable related to the explanatory and response variables in such a way that its effects on the response variable cannot be separated from the effects of the explanatory variable---which means that it (*problematically*) provides another possible explanation for the observed results 
+
+You may also see references to what is called a **<mark>lurking variable</mark>** in texts or videos. The distinction often made between the two is that a lurking variables is a type of confounding variable that was  *not measured or accounted for* in the study. 
+
+We will not make a distinction between the two in this class, and instead we will use only the term confounding variable. 
+
+<hr>
+
+*You will see examples of confounding variables on upcoming slides.*
+
+
+## Uncovering Associations
+
+**Alternate definition :** two variables are *associated* (or related) if the value of one variable gives you information about the value of the other variable. When comparing groups, the proportions or means for one variable (***response** or **dependent** variable*) are different within different sub-groups (*categories that are created by the **explanatory** or **independent** variable*).
+
+<hr>
+
+The relationship or ***association*** we are trying to study...
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("../images/confound01.png", dpi = 115)
+```
+<br><div style = "text-align: center; font-size: 18px;">Image from [*Statology: What is a Confounding Variable?*](https://www.statology.org/confounding-variable/) by Zach Bobbitt <div>
+
+
+## Confounding: Alternative Explanation
+
+Does regular exercise reduce blood pressure? An example of a ***confounding*** variable (i.e., a possible alternative explanation).
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("../images/confound02.png", dpi = 220)
+```
+
+<br><div style = "text-align: center; font-size: 18px;">Image from [*Statology: What is a Confounding Variable?*](https://www.statology.org/confounding-variable/) by Zach Bobbitt <div>
+
+
+## Confounding: Another Example
+
+Does buying ice cream cause a person to be more vulnerable to shark attack? I really hope not... 😬
+
+```{r, echo = FALSE, fig.align="center"}
+knitr::include_graphics("../images/confound03.png", dpi = 120)
+```
+
+<br><div style = "text-align: center; font-size: 18px;">Image from [*Statology: What is a Confounding Variable?*](https://www.statology.org/confounding-variable/) by Zach Bobbitt <div>
+
+
+## Vocabulary: Association vs. Correlation
+
+In everyday speech, we often say two things are ***correlated*** when they are related to one another.
+
+In statistics, we generally say that variables are ***associated*** when they are related to one another. 
+
+A correlation, on the other hand, is a specific kind of relationship or association between quantitative variables---it describes how strongly they show a linear (straight-line) relationship when they are plotted as the X and Y variables on a scatterplot.
+
+There are several special correlation statistics for other kinds of associations, but we will not cover those in this class.
+
+<mark>*To summarize, do not use correlation when the appropriate term in statistics is the more general descriptor **association.***</mark>
+

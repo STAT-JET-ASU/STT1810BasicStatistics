@@ -1,5 +1,5 @@
 ---
-title: "Example 4.2 Lying on the Internet; Is It More Likely?"
+title: "Example 4.2 Is Lying on<br>the Internet More Likely?"
 subtitle: "*Introduction to Statistical Investigations, 2^nd^ Edition*"
 author: "Jill E. Thomley | **STT 1810 STATISTICAL INVESTIGATIVE PROCESS** | AppState"
 date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"

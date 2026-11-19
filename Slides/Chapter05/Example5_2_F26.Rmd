@@ -1,9 +1,11 @@
 ---
 title: "Example 5.2 Swimming with Dolphins"
 subtitle: "*Introduction to Statistical Investigations, 2^nd^ Edition*"
-author: "Jill E. Thomley | **STT 1810 STATISTICAL INVESTIGATIVE PROCESS** | AppState"
+author: "Jill E. Thomley | **STT 1810 BASIC STATISTICS** | Appalachian State University"
 date: "Last updated `r format(Sys.time(), '%A, %B %d, %Y @ %I:%M %p')`"
-output: ioslides_presentation
+output: 
+  ioslides_presentation:
+    logo: ../images/logoASU.jpg
 ---
 
 ```{r global_options, include = FALSE}
@@ -20,6 +22,10 @@ knitr::opts_chunk$set(
 These slides are meant to accompany the text [*Introduction to Statistical Investigations, 2nd Edition*](http://www.isi-stats.com/isi/index2nd.html) --- Section 5.2 Comparing Two Proportions: Simulation-Based Approach.
 
 *This content does not replace reading the relevant textbook section.* It is for class presentation, review, and reference.
+
+See [AsULearn](https://asulearn.appstate.edu/) for additional readings, videos, and assignments.
+
+You can print these slides to a pdf for offline use using the print function in your browser.
 
 
 ## The Spiral Approach to Investigation
